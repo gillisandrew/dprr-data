@@ -40,11 +40,6 @@ dprr:isOtherNamesUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean>
 	rdfs:domain dprr:Person ;
 	rdfs:comment "if true indicates that the DPRR team believe that the \"other names\" provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:isNovusUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
-	rdfs:label "Person novus_uncertain" ;
-	rdfs:domain dprr:Person ;
-	rdfs:comment "if true indicates that the DPRR team believe that the assertion that this person was considered a Novus that is provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:isNovus rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
 	rdfs:label "Person novus" ;
 	rdfs:domain dprr:Person ;
@@ -54,11 +49,6 @@ dprr:isNomenUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
 	rdfs:label "Person nomen_uncertain" ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "if true indicates that the DPRR team believe that the recorded Nomen provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
-	a owl:DatatypeProperty , rdf:Property .
-dprr:isNobilisUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
-	rdfs:label "Person nobilis_uncertain" ;
-	rdfs:domain dprr:Person ;
-	rdfs:comment "if true indicates that the DPRR team believe that the recorded \"nobilis\" provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
 	a owl:DatatypeProperty , rdf:Property .
 dprr:isNobilis rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
 	rdfs:label "Person nobilis" ;
@@ -102,10 +92,6 @@ dprr:hasStatusAssertionNote rdfs:range dprr:StatusAssertionNote ;
 	rdfs:domain dprr:StatusAssertion ;
 	rdfs:comment "links the assertion to the particular note (:StatusAssertionNote) that applies" ;
 	a owl:ObjectProperty , rdf:Property .
-dprr:hasStatusAssertion rdfs:range dprr:StatusAssertion ;
-	rdfs:domain dprr:StatusAssertionProvince ;
-	rdfs:comment "connects a :Province to a :StatusAssertion" ;
-	a owl:ObjectProperty , rdf:Property .
 dprr:hasStatus rdfs:range dprr:Status ;
 	rdfs:domain dprr:StatusAssertion ;
 	rdfs:comment "links a status assertion to the particular status that applies" ;
@@ -125,18 +111,9 @@ dprr:hasSecondarySource rdfs:range dprr:SecondarySource ;
 dprr:hasRelationshipReference rdfs:range dprr:RelationshipAssertionReference ;
 	rdfs:domain dprr:RelationshipAssertion ;
 	a owl:ObjectProperty , rdf:Property .
-dprr:hasRelationshipNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
-	rdfs:label "RelationshipAssertion relationship_number" ;
-	rdfs:domain dprr:RelationshipAssertion ;
-	rdfs:comment "allows collection of relationahip assertions for a particular person to be sorted in the most temporarily appropriate order: sons usually after brothers, wives in the right order, etc etc." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasRelationship rdfs:range dprr:Relationship ;
 	rdfs:domain dprr:RelationshipAssertion ;
 	rdfs:comment "points to the particular :Relationship that this relationahip assertion is making." ;
-	a owl:ObjectProperty , rdf:Property .
-dprr:hasRelatedRelationship rdfs:range dprr:RelationshipAssertion ;
-	rdfs:domain dprr:RelationshipAssertion ;
-	rdfs:comment "allows two relationship assertions that are related in DPRR's view to be connected." ;
 	a owl:ObjectProperty , rdf:Property .
 dprr:hasRelatedPerson rdfs:seeAlso "If A is mother of B, the person pointer shared by all assertions (:hasPerson) will point to A." ;
 	rdfs:range dprr:Person ;
@@ -184,11 +161,6 @@ dprr:hasPostAssertion rdfs:range dprr:PostAssertion ;
 	rdfs:domain dprr:PostAssertionProvince ;
 	rdfs:comment "A :PostAssertionProvince class is mean to link a :PostAssertion to a :Province.  This is the pointer to the :PostAssertion" ;
 	a owl:ObjectProperty , rdf:Property .
-dprr:hasPosition rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
-	rdfs:label "PostAssertion position" ;
-	rdfs:domain dprr:PostAssertion ;
-	rdfs:comment "A numeric value provided to assist web display mechanism to order posts in the most historically useful order." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasPersonNote rdfs:range dprr:PersonNote ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "links to one or more notes about the person that DPRR has recorded as :PersonNote instances." ;
@@ -198,11 +170,6 @@ dprr:hasPersonName rdfs:subPropertyOf rdfs:label , dprr:hasName ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "The DPRR name-identifier assigned to a DPRR historical person. E.g. \"L. Iunius (46a, Supb. 5.356ff.) M. f. Brutus\" (for Person/1)" ;
 	a owl:DatatypeProperty , owl:AnnotationProperty .
-dprr:hasPatricianNotes rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
-	rdfs:label "Person patrician_notes" ;
-	rdfs:domain dprr:Person ;
-	rdfs:comment "A note that records the reason why DPRR considers this person to have been thought of as a \"patrician\".  Usually this takes the form of one or two brief primary source references. This field was very rarely used by the DPRR team." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasParent rdfs:range dprr:HierarchicalAuthority ;
 	rdfs:label "Province Parent" ;
 	rdfs:domain dprr:HierarchicalAuthority ;
@@ -291,11 +258,6 @@ dprr:hasEraFrom rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "A numeric field that provides the beginning date (year) for a date range in whid DPRR believes the person lived.  Often no birth or death date is available from the surviving record, so this is an estimate only." ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:hasEraDisplayText rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
-	rdfs:label "Person era display text" ;
-	rdfs:domain dprr:Person ;
-	rdfs:comment "A field to contain a comment about the range of dates when DPRR believed a person lived.  Rarely used." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasDprrID rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "Person DPRR ID" ;
 	rdfs:domain dprr:Person ;
@@ -335,12 +297,6 @@ dprr:hasDateEnd rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
 	rdfs:domain dprr:AssertionWithDateRange ;
 	rdfs:comment "provides a date (a year) which is the endpoint for the period of time covered by the assertion." ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:hasDateDisplayText rdfs:seeAlso "See :hasDisplaySourceText" ;
-	rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
-	rdfs:label "StatusAssertion date_display_text" , "PostAssertion date_display_text" ;
-	rdfs:domain dprr:AssertionWithDateRange ;
-	rdfs:comment "A field to contain a comment about the range of dates when DPRR believed a status or post applied.  Rarely used." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasCognomen rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "Person cognomen" ;
 	rdfs:domain dprr:Person ;
@@ -351,8 +307,6 @@ dprr:hasBiblio rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:domain dprr:Source ;
 	rdfs:comment "A bilbiographic reference for the source." ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:hasAssociatedWebpage rdfs:label "associated Webpage for Person" ;
-	a rdf:Property .
 dprr:hasAltPraenomen rdfs:range dprr:Praenomen ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "provides what DPRR considers to be an alternative Praenomen for the person." ;
