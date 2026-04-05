@@ -223,11 +223,6 @@ dprr:hasOrigin rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "A short bit of text that specifies what DPRR believes to be a plausible geographic origin for the person, as provided in the secondary and primary sources." ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:hasOrderNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
-	rdfs:label "Relationship order number" ;
-	rdfs:domain dprr:Relationship ;
-	rdfs:comment "A number that provides a mechanism which provides a helpful ordering of a list of relationships from this table. If a list of relationships are generated, this number can be used to order them." ;
-	a owl:DatatypeProperty , rdf:Property .
 dprr:hasOfficeXref rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "PostAssertion office_xref" ;
 	rdfs:domain dprr:PostAssertion ;
@@ -270,15 +265,6 @@ dprr:hasName rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "Tribe name" , "Status name" , "Sex name" , "SecondarySource name" , "Relationship name" , "Province name" , "PrimarySource name" , "Praenomen name" , "Office name" , "NoteType name" , "DateType name" ;
 	rdfs:domain dprr:ThingWithName ;
 	rdfs:comment "The name of the thing." ;
-	a owl:DatatypeProperty , rdf:Property .
-dprr:hasInverseRelationship rdfs:range dprr:Relationship ;
-	rdfs:domain dprr:RelationshipInverse ;
-	rdfs:comment "A mechanism to allow DPRR to assert the particular inverse relationship that applies for the particular relationship being specified. For example, if A is father of B there are two possible inverse relationships: B is son of A or B is daughter of A.  This mechanism allows DPRR to make explicit which one applies." ;
-	a owl:ObjectProperty , rdf:Property .
-dprr:hasID rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
-	rdfs:label "TribeAssertion id" , "Tribe id" , "StatusAssertionProvince id" , "StatusAssertionNote id" , "StatusAssertion id" , "Status id" , "Sex id" , "SecondarySource id" , "RelationshipType id" , "RelationshipAssertionReference id" , "Relationship Inverse id" , "Province id" , "PrimarySourceReference id" , "PrimarySource id" , "Praenomen id" , "PostAssertionProvince id" , "PostAssertionNote id" , "PostAssertion id" , "PersonNote id" , "Person id" , "NoteType id" , "DateType id" , "DateInformation id" ;
-	rdfs:domain dprr:ThingWithID ;
-	rdfs:comment "The ID associated with an instance of class :ThingWithID.  All DPRR classes are subclasses of :ThingWithID, so all instances of all classes have a value for :hasID" ;
 	a owl:DatatypeProperty , rdf:Property .
 dprr:hasHighestOffice rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "Person Highest Office" ;
@@ -367,9 +353,6 @@ dprr:hasBiblio rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	a owl:DatatypeProperty , rdf:Property .
 dprr:hasAssociatedWebpage rdfs:label "associated Webpage for Person" ;
 	a rdf:Property .
-dprr:hasAssertedRelationshipInverse rdfs:range dprr:RelationshipAssertion ;
-	rdfs:domain dprr:RelationshipAssertion ;
-	a owl:ObjectProperty , rdf:Property .
 dprr:hasAltPraenomen rdfs:range dprr:Praenomen ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "provides what DPRR considers to be an alternative Praenomen for the person." ;
@@ -379,16 +362,6 @@ dprr:hasAbbreviation rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:domain dprr:AuthorityWithAbbreviation ;
 	rdfs:comment "Provides a text string that is the abbreviated form of the name for the authority list item" ;
 	a owl:DatatypeProperty , rdf:Property .
-dprr:forSex rdfs:seeAlso "to use :RelationshipInverse as a lookup mechanism, one must also provide :forRelationship" ;
-	rdfs:range dprr:Sex ;
-	rdfs:domain dprr:RelationshipInverse ;
-	rdfs:comment "use this property with :forRelationship to look up the inverse of a given relationship" ;
-	a owl:ObjectProperty , rdf:Property .
-dprr:forRelationship rdfs:seeAlso "The other \"lookup\" property is :forSex" ;
-	rdfs:range dprr:Relationship ;
-	rdfs:domain dprr:RelationshipInverse ;
-	rdfs:comment "use this property (one of two, see also :forSex) to lookup the inverse of a given relationship" ;
-	a owl:ObjectProperty , rdf:Property .
 dprr:forAssertion rdfs:range dprr:Assertion ;
 	rdfs:label "PrimarySourceReference postAssertion_id" ;
 	rdfs:domain dprr:PrimarySourceReference ;
@@ -435,10 +408,6 @@ dprr:Sex rdfs:subClassOf dprr:AuthorityList ;
 dprr:SecondarySource rdfs:subClassOf dprr:Source ;
 	rdfs:label "SecondarySource" , "Secondary Source" ;
 	rdfs:comment "A modern source.  DPRR is primarily built by harvesting data from 19th, 20th and 21st century scholarship." ;
-	a owl:Class , rdfs:Class .
-dprr:RelationshipInverse rdfs:subClassOf dprr:ThingWithID ;
-	rdfs:label "Relationship Inverse" ;
-	rdfs:comment "A class used to provide inverse relationships implied by primary ones.  For instance, A is father of B implies B is daughter of A is B is female, and B is son of A if B is male. In this class, for type or relationship in :forRelationship, when the sex of B is as provided in :forSex, then the appropriate inverse relationship is in :hasInverseRelationship" ;
 	a owl:Class , rdfs:Class .
 dprr:RelationshipAssertionReference rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
 	rdfs:label "RelationshipAssertionReference" , "Relationship Assertion Reference" ;
