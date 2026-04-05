@@ -23,27 +23,29 @@ jobs:
         run: |
           uv run --with pyoxigraph python -c "
           from pathlib import Path
-          from pyoxigraph import Store, RdfFormat
+          from pyoxigraph import Store, RdfFormat, serialize
 
-          out = Path('dprr.ttl')
-          parts = sorted(Path('.').glob('**/*.ttl'))
-          # Exclude output file and sidecars
-          parts = [p for p in parts if p.name != 'dprr.ttl' and not p.name.startswith('_')]
-
-          with open(out, 'w') as f:
-              for p in parts:
-                  f.write(f'# Source: {p}\n')
-                  f.write(p.read_text())
-                  f.write('\n\n')
-
-          # Verify
+          # Load each file separately (they have different prefix declarations)
           s = Store()
-          s.bulk_load(path=str(out), format=RdfFormat.TURTLE)
-          count = len(s)
-          print(f'Assembled dprr.ttl: {count:,} triples')
+          parts = sorted(Path('.').glob('ontology.ttl')) + \
+                  sorted(Path('reference').glob('*.ttl')) + \
+                  sorted(Path('persons').glob('**/*.ttl'))
+          print(f'Loading {len(parts)} files...')
+          for p in parts:
+              s.bulk_load(path=str(p), format=RdfFormat.TURTLE)
 
+          count = len(s)
+          print(f'Loaded: {count:,} triples')
           if count < 400000:
               raise SystemExit(f'Triple count regression: {count:,} < 400,000')
+
+          # Serialize to single Turtle file
+          out = Path('dprr.ttl')
+          out.write_bytes(serialize(
+              s.quads_for_pattern(None, None, None, None),
+              format=RdfFormat.TURTLE,
+          ))
+          print(f'Wrote dprr.ttl ({out.stat().st_size:,} bytes)')
           "
 
       - name: Install ORAS CLI
