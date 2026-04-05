@@ -1,0 +1,84 @@
+name: Publish to OCI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "persons/**"
+      - "reference/**"
+      - "ontology.ttl"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v8
+        with:
+          enable-cache: false
+
+      - name: Install pyoxigraph
+        run: uv pip install --system pyoxigraph
+
+      - name: Assemble and verify
+        run: |
+          python3 -c "
+          from pathlib import Path
+          from pyoxigraph import Store, RdfFormat
+
+          out = Path('dprr.ttl')
+          parts = sorted(Path('.').glob('**/*.ttl'))
+          # Exclude output file and sidecars
+          parts = [p for p in parts if p.name != 'dprr.ttl' and not p.name.startswith('_')]
+
+          with open(out, 'w') as f:
+              for p in parts:
+                  f.write(f'# Source: {p}\n')
+                  f.write(p.read_text())
+                  f.write('\n\n')
+
+          # Verify
+          s = Store()
+          s.bulk_load(path=str(out), format=RdfFormat.TURTLE)
+          count = len(s)
+          print(f'Assembled dprr.ttl: {count:,} triples')
+
+          if count < 400000:
+              raise SystemExit(f'Triple count regression: {count:,} < 400,000')
+          "
+
+      - name: Install ORAS CLI
+        run: |
+          ORAS_VERSION="1.2.2"
+          curl -sLO "https://github.com/oras-project/oras/releases/download/v${ORAS_VERSION}/oras_${ORAS_VERSION}_linux_amd64.tar.gz"
+          tar xzf "oras_${ORAS_VERSION}_linux_amd64.tar.gz"
+          sudo mv oras /usr/local/bin/
+
+      - name: Login to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | oras login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Push raw artifact
+        run: |
+          oras push ghcr.io/gillisandrew/linked-past/raw/dprr:latest \
+            dprr.ttl:application/x-turtle \
+            --annotation "org.opencontainers.image.source=https://github.com/gillisandrew/dprr-data" \
+            --annotation "org.opencontainers.image.description=Digital Prosopography of the Roman Republic — persons, offices, relationships (509-31 BC)" \
+            --annotation "org.opencontainers.image.licenses=CC-BY-NC-4.0" \
+            --annotation "io.github.gillisandrew.linked-past.dataset=dprr" \
+            --annotation "io.github.gillisandrew.linked-past.format=turtle" \
+            --annotation "io.github.gillisandrew.linked-past.citation=Mouritsen et al. (2017) Digital Prosopography of the Roman Republic, King's College London, https://romanrepublic.ac.uk/"
+
+      - name: Trigger clean pipeline
+        if: github.event_name == 'push'
+        run: |
+          gh workflow run clean-datasets.yml \
+            -R gillisandrew/dprr-tool \
+            -f dataset=dprr \
+            -f version=latest
+        env:
+          GH_TOKEN: ${{ secrets.DPRR_TOOL_TOKEN }}
+        continue-on-error: true
