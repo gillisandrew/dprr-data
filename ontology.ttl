@@ -322,137 +322,138 @@ dprr:forAssertion rdfs:range dprr:Assertion ;
 	a owl:ObjectProperty , rdf:Property .
 dprr:TribeAssertion rdfs:subClassOf dprr:Assertion ;
 	rdfs:label "TribeAssertion" , "Tribe Assertion" ;
-	rdfs:comment "An assertion that a DPRR person belonged to a particular tribe." ;
+	rdfs:comment "An assertion that a person belonged to a particular Roman voting tribe." ;
 	a owl:Class , rdfs:Class .
 dprr:Tribe rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:AuthorityWithAbbreviation ;
 	rdfs:label "Tribe" ;
-	rdfs:comment "The tribes into which the ancient Roman's grouped themselves." ;
+	rdfs:comment "A Roman voting tribe (e.g., Cornelia, Palatina). 37 instances." ;
 	a owl:Class , rdfs:Class .
 dprr:ThingWithName rdfs:subClassOf dprr:ThingWithID ;
 	rdfs:label "Thing with Name" ;
-	rdfs:comment "An entity in DPRR that has a name.  Many DPRR classes represent things that have names, and are, thus, subclasses of this class." ;
+	rdfs:comment "Base type for entities with a name property." ;
 	a owl:Class .
-dprr:ThingWithID rdfs:comment "DPRR's source for RDF data is a relational database, and its mapping to RDF follows rather closely the DB's structure, in particular DPRR's tables to owl:Classes.  Thus, since all of DPRR's tables have ID keys, all DPRR[s classes have ID, and, hence, all DPRR classes are subclasses of :ThingWithID" ;
+dprr:ThingWithID rdfs:comment "Base type for all DPRR entities." ;
 	a owl:Class .
 dprr:ThingWithExtraInfo rdfs:subClassOf dprr:ThingWithID ;
+	rdfs:comment "Base type for entities that may carry a hasExtraInfo annotation." ;
 	a owl:Class .
 dprr:StatusAssertionProvince rdfs:subClassOf dprr:NoteForProvince ;
 	rdfs:label "StatusAssertionProvince" , "Status Assertion Province" ;
-	rdfs:comment "is used to link a :StatusAssertion to an associated :Province." ;
+	rdfs:comment "Links a StatusAssertion to a Province." ;
 	a owl:Class , rdfs:Class .
 dprr:StatusAssertionNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
 	rdfs:label "StatusAssertionNote" , "Status Assertion Note" ;
-	rdfs:comment "for notes associated with status assertions" ;
+	rdfs:comment "A scholarly note attached to a StatusAssertion." ;
 	a owl:Class , rdfs:Class .
 dprr:StatusAssertion rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:AssertionWithDateRange ;
 	rdfs:label "StatusAssertion" , "Status Assertion" ;
-	rdfs:comment "provides a mechanism to assert that a person had a particular status at a particular time." ;
+	rdfs:comment "An assertion that a person held a particular social or political status (senator or eques Romanus)." ;
 	a owl:Class , rdfs:Class .
 dprr:Status rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
 	rdfs:label "Status" ;
-	rdfs:comment "an authority list of status terms used for people in DPRR.  At present, only two are identified in this way, \"eques\" and \"senator\"" ;
+	rdfs:comment "A social or political status: senator or eques Romanus." ;
 	a owl:Class , rdfs:Class .
 dprr:Source rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
-	rdfs:comment "Represents a primary or secondary source that provided information for DPRR.  There are two subclasses :PrimarySource and :SecondarySource, but, because of time pressures, in fact only :SecondarySource has been populated by DPRR." ;
+	rdfs:comment "A primary or secondary source that provided information for DPRR. See PrimarySource and SecondarySource." ;
 	a owl:Class .
 dprr:Sex rdfs:subClassOf dprr:AuthorityList ;
 	rdfs:label "Sex" ;
-	rdfs:comment "The person's Sex: Male or Female." ;
+	rdfs:comment "Sex classification: Male or Female." ;
 	a owl:Class , rdfs:Class .
 dprr:SecondarySource rdfs:subClassOf dprr:Source ;
 	rdfs:label "SecondarySource" , "Secondary Source" ;
-	rdfs:comment "A modern source.  DPRR is primarily built by harvesting data from 19th, 20th and 21st century scholarship." ;
+	rdfs:comment "A modern scholarly work used as a source for DPRR data (e.g., Broughton's MRR, Zmeskal 2009). Shared across many assertions." ;
 	a owl:Class , rdfs:Class .
 dprr:RelationshipAssertionReference rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
 	rdfs:label "RelationshipAssertionReference" , "Relationship Assertion Reference" ;
-	rdfs:comment "This class allows Relationahip Assertions to be connected to Secondary Sources from which the information in the assertion was drawn." ;
+	rdfs:comment "A secondary source citation supporting a RelationshipAssertion." ;
 	a owl:Class , rdfs:Class .
 dprr:RelationshipAssertion rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Assertion ;
 	rdfs:label "RelationshipAssertion" , "Relationship Assertion" ;
-	rdfs:comment "Provides information about an assertion about a familial relationship between two people." ;
+	rdfs:comment "An assertion of a family or social relationship between two persons (e.g., father of, married to). Links one Person (via isAboutPerson) to another (via hasRelatedPerson) through a Relationship type." ;
 	a owl:Class , rdfs:Class .
 dprr:Relationship rdfs:subClassOf dprr:AuthorityWithDescription ;
 	rdfs:label "RelationshipType" , "Relationship Type" ;
-	rdfs:comment "This is the authority list for kinds of familial relationships that appear in DPRR." ;
+	rdfs:comment "A type of family or social relationship (e.g., father of, married to, cousin of). 44 types. Inverse pairs are declared with owl:inverseOf." ;
 	a owl:Class , rdfs:Class .
 dprr:Province rdfs:subClassOf dprr:HierarchicalAuthority , dprr:AuthorityWithDescription ;
 	rdfs:label "Province" ;
-	rdfs:comment "An area of jurisdition for an office (such as governor) in the Roman State. Most are geographic areas, but some represent domains of authority within the state, e.g. \"cum imperio consulari\"." ;
+	rdfs:comment "A Roman province or territorial jurisdiction (e.g., Sicilia, Africa, Asia). Provinces form a hierarchy via hasParent." ;
 	a owl:Class , rdfs:Class .
 dprr:PrimarySourceReference rdfs:subClassOf dprr:NoteContainer ;
 	rdfs:label "PrimarySourceReference" , "Primary Source Reference" ;
-	rdfs:comment "A place to record primary source references.  The primary source data has not been worked on in DPRR.  It is a :NoteContainer because, as well as its primary founction, it also can carry a note." ;
+	rdfs:comment "A citation of an ancient source attached to a specific PostAssertion (e.g., 'Liv. 25.14.4'). Each reference belongs to exactly one assertion." ;
 	a owl:Class , rdfs:Class .
 dprr:PrimarySource rdfs:subClassOf dprr:Source ;
 	rdfs:label "PrimarySource" , "Primary Source" ;
-	rdfs:comment "An historical textual source" ;
+	rdfs:comment "An ancient textual source (e.g., Livy, Cicero). Only 2 instances — most primary source data is recorded as free text in PrimarySourceReference." ;
 	a owl:Class , rdfs:Class .
 dprr:Praenomen rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
 	rdfs:label "Praenomen" ;
-	rdfs:comment "A list of ancient Roman's first or personal name, for example *Marcus* Tullius Cicero.  The Romans seem to have used a relatively small numer of names as Praenomen." ;
+	rdfs:comment "A Roman first name (e.g., Lucius, Marcus, Gaius). 45 instances." ;
 	a owl:Class , rdfs:Class .
 dprr:PostAssertionProvince rdfs:subClassOf dprr:NoteForProvince ;
 	rdfs:label "PostAssertionProvince" , "Post Assertion Province" ;
-	rdfs:comment "is used to link a :PostAssertion to an associated :Province." ;
+	rdfs:comment "Links a PostAssertion to a Province, recording the territorial assignment of an office-holding." ;
 	a owl:Class , rdfs:Class .
 dprr:PostAssertionNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
 	rdfs:label "PostAssertionNote" , "Post Assertion Note" ;
-	rdfs:comment "for notes associated with post assertions.  Broughton often provides text that supports his assertions, and many of the :PostAssertionNote items are from his book." ;
+	rdfs:comment "A scholarly note attached to a PostAssertion — typically source citations or editorial commentary from Broughton's MRR." ;
 	a owl:Class , rdfs:Class .
 dprr:PostAssertion rdfs:subClassOf dprr:AssertionWithDateRange ;
 	rdfs:label "PostAssertion" , "Post Assertion" ;
-	rdfs:comment "provides an mechanism that a DPRR person held a particular office at a particular date or date range." ;
+	rdfs:comment "An assertion that a person held a political or religious office. Links a Person to an Office with a date range and scholarly sources." ;
 	a owl:Class , rdfs:Class .
 dprr:PersonNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
 	rdfs:label "PersonNote" , "Person Note" ;
-	rdfs:comment "A note attached to a DPRR person" ;
+	rdfs:comment "A scholarly note attached directly to a Person (not to a specific assertion)." ;
 	a owl:Class , rdfs:Class .
 dprr:Person rdfs:subClassOf dprr:ThingWithName , dprr:ThingWithExtraInfo ;
 	rdfs:label "Person" ;
-	rdfs:comment "A DPRR historical person." ;
+	rdfs:comment "A historical person from the Roman Republic (c. 509–31 BC). Central entity: assertions, notes, and relationships attach to persons." ;
 	a owl:Class , rdfs:Class .
 dprr:Office rdfs:subClassOf dprr:HierarchicalAuthority , dprr:AuthorityWithDescription , dprr:AuthorityWithAbbreviation ;
 	rdfs:label "Office" ;
-	rdfs:comment "An office in the Roman state, such as consul or praetor." ;
+	rdfs:comment "A political or religious office in the Roman state (e.g., consul, praetor, tribune). Offices form a hierarchy via hasParent." ;
 	a owl:Class , rdfs:Class .
 dprr:NoteType rdfs:subClassOf dprr:AuthorityWithDescription ;
 	rdfs:label "NoteType" , "Note Type" ;
-	rdfs:comment "A scheme for classifying notes.  Draws almost exclusively on the classification of materials used by Broughton and Ruepke" ;
+	rdfs:comment "A classification scheme for scholarly notes, drawn from Broughton and Rüpke's categorization of source material." ;
 	a owl:Class , rdfs:Class .
 dprr:NoteForProvince rdfs:subClassOf dprr:NoteContainer ;
-	rdfs:comment "This is a note about an association to a Province made by an assertion." ;
+	rdfs:comment "Base type for province linkages. Subtypes: PostAssertionProvince, StatusAssertionProvince." ;
 	a owl:Class .
 dprr:NoteContainer rdfs:subClassOf dprr:ThingWithID ;
-	rdfs:comment "A note container is an object that contains a note:  a bit of text, often provided by the source to say something further about the information provided by it.  A note container object may also contain other information provided by the source, whereas its subclass :Note is purely a note with no other semantic significance." ;
+	rdfs:comment "Base type for entities that carry note text (hasNoteText). Subtypes: Note, PrimarySourceReference." ;
 	a owl:Class .
 dprr:Note rdfs:subClassOf dprr:NoteContainer ;
-	rdfs:comment "A note is  a bit of text, often provided by the source to say something further about the information provided by it.  :Note is a subclass of :NoteContainer.  Whereas a note is purely and simply a note, its :NoteContainer superclass may also contain other information as well as the note." ;
+	rdfs:comment "Base type for scholarly notes. Subtypes: PostAssertionNote, StatusAssertionNote, PersonNote." ;
 	a owl:Class .
 dprr:HierarchicalAuthority rdfs:subClassOf dprr:AuthorityList ;
-	rdfs:comment "this authority list has an hierarichal structure between its members." ;
+	rdfs:comment "An authority list with parent-child hierarchy (offices, provinces)." ;
 	a owl:Class .
 dprr:DateType rdfs:subClassOf dprr:AuthorityWithDescription ;
 	rdfs:label "DateType" , "Date Type" ;
-	rdfs:comment "A classification scheme for kinds of life dates.  Examples, birth, death, exiled, etc." ;
+	rdfs:comment "A classification of biographical dates: birth, death, violent death, attestation, proscription, exile, expulsion from Senate, extradition, recall, restoration." ;
 	a owl:Class , rdfs:Class .
 dprr:DateInformation rdfs:subClassOf dprr:Assertion ;
 	rdfs:label "Life Date Information" , "DateInformation" ;
-	rdfs:comment "An :Assertion for life date information for DPRR's historial persons." ;
+	rdfs:comment "A dated biographical event for a person — birth, death, attestation, exile, proscription, etc. Classified by DateType." ;
 	a owl:Class , rdfs:Class .
 dprr:AuthorityWithDescription rdfs:subClassOf dprr:AuthorityList ;
-	rdfs:comment "In DPRR several authority lists provide not only names for their instances, but also brief descriptions of that the instance is.  This is the place where the description is recorded." ;
+	rdfs:comment "An authority list entry with a prose description." ;
 	a owl:Class .
 dprr:AuthorityWithAbbreviation rdfs:subClassOf dprr:AuthorityList ;
-	rdfs:comment "In DPRR several authority lists provide not only names for their instances, but also abbreviated forms of the name.  This is the place where the abbreviated form is recorded." ;
+	rdfs:comment "An authority list entry with an abbreviated form (e.g., 'cos.' for consul)." ;
 	a owl:Class .
 dprr:AuthorityList rdfs:subClassOf dprr:ThingWithName ;
-	rdfs:comment "represents a list of a particular kind of things that might be thought of as functioning like what in library science is called an Authority File.  Two examples: one Authority list in DPRR is the list of offices, another is the list of secondary sources." ;
+	rdfs:comment "Base type for controlled vocabulary lists (offices, provinces, etc.)." ;
 	a owl:Class .
 dprr:AssertionWithDateRange rdfs:subClassOf dprr:Assertion ;
-	rdfs:comment "some assertions come with a date period (year in which a post was held, for example).  This kind of :Assertion supports the recording of a date." ;
+	rdfs:comment "An assertion that includes a date range (hasDateStart/hasDateEnd). Subtypes: PostAssertion, StatusAssertion." ;
 	a owl:Class .
 dprr:Assertion rdfs:subClassOf dprr:ThingWithID ;
-	rdfs:comment "In DPRR an :Assertion is a statement made about a DPRR person in a secondary source." ;
+	rdfs:comment "Base type for all scholarly assertions about a person. Subtypes: PostAssertion, StatusAssertion, TribeAssertion, RelationshipAssertion, DateInformation." ;
 	a owl:Class .
 dprr:Abbreviation rdfs:label "Praenomen abbreviation" ;
 	a rdf:Property .
