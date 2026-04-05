@@ -5,25 +5,12 @@
 @prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
 @prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
 
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
-	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
-	dprr:hasAbbreviation "Broughton MRR III" .
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
-	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
-	dprr:hasAbbreviation "Broughton MRR II" .
 <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3731> rdfs:label "Relationship Assertion: #3731" ;
 	a dprr:RelationshipAssertion ;
 	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3329> ;
 	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
 	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
 	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3328> .
-<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
-	a dprr:Relationship ;
-	dprr:hasName "son of" .
 <http://romanrepublic.ac.uk/rdf/entity/Person/3329> a dprr:Person ;
 	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
 	dprr:isCognomenUncertain true ;
@@ -47,9 +34,6 @@
 	dprr:hasEraFrom -75 ;
 	dprr:hasDprrID "AQUI3328" ;
 	dprr:hasCognomen "Florus" .
-<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
-	a dprr:DateType ;
-	dprr:hasName "death" .
 <http://romanrepublic.ac.uk/rdf/entity/DateInformation/824> rdfs:label "Date Information: #824" ;
 	a dprr:DateInformation ;
 	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3329> ;

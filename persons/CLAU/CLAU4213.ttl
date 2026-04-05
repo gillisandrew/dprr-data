@@ -5,16 +5,6 @@
 @prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
 @prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
 
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "DPRR Team" ;
-	dprr:hasBiblio "DPRR Team" ;
-	dprr:hasAbbreviation "DPRR Team" .
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
-	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
-	dprr:hasAbbreviation "Zmeskal 2009" .
 <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1101> rdfs:label "Relationship Assertion Reference: #1101" ;
 	a dprr:RelationshipAssertionReference ;
 	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
@@ -34,12 +24,6 @@
 	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
 	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
 	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1570> .
-<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
-	a dprr:Relationship ;
-	dprr:hasName "married to" .
-<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
-	a dprr:Relationship ;
-	dprr:hasName "related to" .
 <http://romanrepublic.ac.uk/rdf/entity/Person/4214> a dprr:Person ;
 	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
 	dprr:isNobilis true ;
@@ -75,9 +59,6 @@
 	dprr:hasEraFrom -175 ;
 	dprr:hasDprrID "CLAU1570" ;
 	dprr:hasCognomen "Asellus" .
-<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
-	a dprr:DateType ;
-	dprr:hasName "death - violent" .
 <http://romanrepublic.ac.uk/rdf/entity/DateInformation/895> rdfs:label "Date Information: #895" ;
 	a dprr:DateInformation ;
 	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4213> ;

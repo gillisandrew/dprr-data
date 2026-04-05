@@ -5,25 +5,12 @@
 @prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
 @prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
 
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
-	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
-	dprr:hasAbbreviation "Broughton MRR I" .
-<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
-	a dprr:SecondarySource ;
-	dprr:hasName "RE" ;
-	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
-	dprr:hasAbbreviation "RE" .
 <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2492> rdfs:label "Relationship Assertion: #2492" ;
 	a dprr:RelationshipAssertion ;
 	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/125> ;
 	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
 	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
 	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> .
-<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
-	a dprr:Relationship ;
-	dprr:hasName "brother of" .
 <http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/419> rdfs:label "Primary Source Reference: #419" ;
 	a dprr:PrimarySourceReference ;
 	dprr:hasNoteText "Cic. de orat. III 13" ;
@@ -263,9 +250,6 @@
 	dprr:hasEraFrom -525 ;
 	dprr:hasDprrID "POST0125" ;
 	dprr:hasCognomen "Albus" .
-<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
-	a dprr:DateType ;
-	dprr:hasName "death" .
 <http://romanrepublic.ac.uk/rdf/entity/DateInformation/125> rdfs:label "Date Information: #125" ;
 	a dprr:DateInformation ;
 	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/125> ;
