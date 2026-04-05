@@ -35,6 +35,12 @@ VOCAB = "http://romanrepublic.ac.uk/rdf/ontology#"
 ENTITY = "http://romanrepublic.ac.uk/rdf/entity/"
 RDF_TYPE = NamedNode("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
+# Predicates to strip — implementation details with no semantic value.
+# hasID is always the numeric suffix of the entity URI (100% redundant).
+STRIP_PREDICATES = frozenset({
+    NamedNode(VOCAB + "hasID"),
+})
+
 PREFIXES = """\
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -89,7 +95,9 @@ def collect_person_triples(store: Store, person: NamedNode) -> list[Quad]:
         if key in collected:
             return
         collected.add(key)
-        triples.extend(store.quads_for_pattern(subj, None, None, None))
+        for q in store.quads_for_pattern(subj, None, None, None):
+            if q.predicate not in STRIP_PREDICATES:
+                triples.append(q)
 
     # The person itself
     collect_subject(person)
@@ -236,7 +244,9 @@ def main(input_path: str, output_dir: str):
         for q in store.quads_for_pattern(None, RDF_TYPE, NamedNode(owl_type), None):
             ontology_subjects.add(q.subject)
     for subj in ontology_subjects:
-        ontology_quads.extend(store.quads_for_pattern(subj, None, None, None))
+        for q in store.quads_for_pattern(subj, None, None, None):
+            if q.predicate not in STRIP_PREDICATES:
+                ontology_quads.append(q)
 
     content = serialize_ttl(ontology_quads)
     changed = write_file(output_dir / "ontology.ttl", content)
@@ -250,7 +260,9 @@ def main(input_path: str, output_dir: str):
             all_ref_types.add(type_name)
             type_uri = NamedNode(VOCAB + type_name)
             for q in store.quads_for_pattern(None, RDF_TYPE, type_uri, None):
-                ref_quads.extend(store.quads_for_pattern(q.subject, None, None, None))
+                for rq in store.quads_for_pattern(q.subject, None, None, None):
+                    if rq.predicate not in STRIP_PREDICATES:
+                        ref_quads.append(rq)
 
         content = serialize_ttl(ref_quads)
         path = output_dir / "reference" / f"{filename}.ttl"
