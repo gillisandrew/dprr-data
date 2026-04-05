@@ -39,6 +39,7 @@ RDF_TYPE = NamedNode("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 # hasID is always the numeric suffix of the entity URI (100% redundant).
 STRIP_PREDICATES = frozenset({
     NamedNode(VOCAB + "hasID"),
+    NamedNode(VOCAB + "hasOrderNumber"),
 })
 
 # Types to strip entirely — all triples where subject has this type are dropped.
