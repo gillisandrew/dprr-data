@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6318> rdfs:label "Relationship Assertion: #6318" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3553> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3175> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1894> rdfs:label "Relationship Assertion: #1894" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3553> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1589> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9367> rdfs:label "Post Assertion Note: #9367" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 282" ;
+	dprr:hasID 9367 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7636> rdfs:label "Post Assertion Note: #7636" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.437, and Index, 557, refer also to Crawford, RRC 1.298-299, no. 282, 118 B.C. Crawford associates him and the other curatores denariorum flandorum with the founders of the colony of Narbo.\n" ;
+	dprr:hasID 7636 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8627> rdfs:label "Post Assertion: #8627" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3553> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Narbo" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9367> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7636> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Cosconius, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/185> ;
+	dprr:hasID 8627 ;
+	dprr:hasDateStart -118 ;
+	dprr:hasDateSourceText "118" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -118 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3553> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "COSC3553 L. Cosconius (6) M. f." ;
+	dprr:hasNomen "Cosconius" ;
+	dprr:hasID 3553 ;
+	dprr:hasHighestOffice "son of? M. Cosconius (8) C. f. (pr. 135)" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "COSC3553" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3553> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3175> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "9, cf. 8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "COSC3175 M. Cosconius (9, cf. 8) M. f. Ter." ;
+	dprr:hasNomen "Cosconius" ;
+	dprr:hasID 3175 ;
+	dprr:hasHighestOffice "sen. 129" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "COSC3175" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3175> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1589> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "COSC1589 M. Cosconius (8) C. f." ;
+	dprr:hasNomen "Cosconius" ;
+	dprr:hasID 1589 ;
+	dprr:hasHighestOffice "pr. 135" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "COSC1589" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1589> .

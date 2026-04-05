@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2439> rdfs:label "Status Assertion: #2439" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1719> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2439 ;
+	dprr:hasDateStart -111 ;
+	dprr:hasDateEnd -111 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3436> rdfs:label "Post Assertion Note: #3436" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See below, on Memmius." ;
+	dprr:hasID 3436 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4127> rdfs:label "Post Assertion: #4127" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1719> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3436> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Baebius (10)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4127 ;
+	dprr:hasDateStart -111 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -111 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1719> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "BAEB1719 C. Baebius (10)" ;
+	dprr:hasNomen "Baebius" ;
+	dprr:hasID 1719 ;
+	dprr:hasHighestOffice "tr. pl. 111" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "BAEB1719" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1719> .

@@ -1,0 +1,254 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1993> rdfs:label "Status Assertion: #1993" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1993 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -41 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1384> rdfs:label "Status Assertion: #1384" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1384 ;
+	dprr:hasDateStart -40 ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1849> rdfs:label "Relationship Assertion: #1849" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3180> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7418> rdfs:label "Post Assertion Note: #7418" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 35. Tr. pl. 43. His tribunate, like that of Agrippa, depends on Niccolini's view (FTP 355) that they were tribunes when Cornificius prosecuted Brutus and Agrippa Cassius. This is improbable, since the actions were apparently taken before a quaestio. See below, on Agrippa. Consul 35. In MRR 2.406, refer also to ILLRP 1271b.\n" ;
+	dprr:hasID 7418 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6480> rdfs:label "Post Assertion Note: #6480" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Africa, he celebrated a triumph ex Africa on December 3 (Fast. Barb., Degrassi 342f., 570, without the number of the year). He rebuilt the temple of Diana on the Aventine (Suet. Aug. 29.5; cf. CIL 6.4305-ILS 1732; and see Shipley, MAAR 9 [1931] 30-32). See PIR² 2.373, no. 1503; De Laet no. 151; and above, on Claudius Pulcher." ;
+	dprr:hasID 6480 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6467> rdfs:label "Post Assertion Note: #6467" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Africa (see 34, and 32, Promagistrates). See PIR² 2.373, no. 1503; De Laet no. 151." ;
+	dprr:hasID 6467 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6440> rdfs:label "Post Assertion Note: #6440" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Succeeded T. Statilius Taurus in Africa, almost certainly as Proconsul (see 33, Promagistrates). See PIR² 2.373, no. 1503; De Laet no. 15 1." ;
+	dprr:hasID 6440 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6399> rdfs:label "Post Assertion Note: #6399" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "BCH 54 (1930) 490f.; names supplied in SC de, Aphrodisiensibus (Viereck, Sermo Graec. p. VII, and addenda to no. 19, p. 40)\" office-xref=\"; Fast. Mag. Vic., Degrassi 283, 288; ibid. 136, 508f.; Dio, 49, Index, and 18.6, and 33.1; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Cornificiums, NS 1933, 331, no. 421; on Pompeius, see D.-G. 4.324, no. 18; on Cornificius, PIR² 2.373, no. 1503; Do Laet no. 151." ;
+	dprr:hasID 6399 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6387> rdfs:label "Post Assertion Note: #6387" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Octavian (Vell. 2.79.4) in command of the three legions which landed at Tauromenium and were cut off. He saved them by means of a hazardous march to Agrippa near Mylae (App. BC 5.111-115; Dio 49.5-7; cf. Vell. 2.79.4). See PIR² 2.373, no. 1503; De Laet no. 15 1." ;
+	dprr:hasID 6387 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6336> rdfs:label "Post Assertion Note: #6336" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No title preserved. Commander of a fleet under Octavian (probably a Legate; see 36, Legates), he brought a fleet from Ravenna to Tarentum (App. BC 5.80), and in the naval battle at the Sicilian straits rammed the flagship of Sextus Pompey's Lieutenant Demochares (App. BC 5.86; cf. Liv. Per. 128; see above, Triumviri R. P. C., on Octavian). See PIR² 2.373, no. 1503; De Laet no. 151." ;
+	dprr:hasID 6336 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6047> rdfs:label "Post Assertion Note: #6047" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The accuser of Brutus in the trials instituted under the Lex Pedia (see above, Consuls; Plut. Brut. 27.3-5; cf. Vell. 2.69.5)." ;
+	dprr:hasID 6047 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10054> rdfs:label "Post Assertion Note: #10054" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph ex Africa. MRR II.419, Itgenshorst no. 286 (33/32), Rich no. 287 (33)." ;
+	dprr:hasID 10054 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7236> rdfs:label "Post Assertion: #7236" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6480> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7236 ;
+	dprr:hasDateStart -32 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7220> rdfs:label "Post Assertion: #7220" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6467> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7220 ;
+	dprr:hasDateStart -33 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -33 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7191> rdfs:label "Post Assertion: #7191" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6440> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7191 ;
+	dprr:hasDateStart -34 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -34 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7149> rdfs:label "Post Assertion: #7149" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7418> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6399> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornificius L. f. (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 7149 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7136> rdfs:label "Post Assertion: #7136" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6387> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7136 ;
+	dprr:hasDateStart -36 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7077> rdfs:label "Post Assertion: #7077" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6336> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7077 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6753> rdfs:label "Post Assertion: #6753" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7418> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6047> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornificius (5)" ;
+	dprr:hasOfficeXref "Cos. 35" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 6753 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10449> rdfs:label "Post Assertion: #10449" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2717> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10054> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10449 ;
+	dprr:hasDateStart -33 ;
+	dprr:hasDateSourceText "33" ;
+	dprr:hasDateEnd -33 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3180> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN3180 L. Cornificius (4)" ;
+	dprr:hasNomen "Cornificius" ;
+	dprr:hasID 3180 ;
+	dprr:hasHighestOffice "sen. 52" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CORN3180" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3180> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2717> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN2717 L. Cornificius (5) L. f." ;
+	dprr:hasNomen "Cornificius" ;
+	dprr:hasID 2717 ;
+	dprr:hasHighestOffice "cos. 35" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CORN2717" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2717> .

@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4217> rdfs:label "Post Assertion Note: #4217" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Asia by Sulla to order Murena to cease invading the territory of Mithridates (App. Mith. 66; cf. Cic. Leg. Man. 8)." ;
+	dprr:hasID 4217 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4073> rdfs:label "Post Assertion Note: #4073" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Plut. Sull. 16.8, #. According to Plutarch he received charge of the town of Chaeronea (Plut. Sull. 16.8; 17.6-7; cf. 18.1; and for the praenomen, App. Mith. 66)." ;
+	dprr:hasID 4073 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4813> rdfs:label "Post Assertion: #4813" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1962> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4217> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "A. Gabinius (10)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 4813 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4677> rdfs:label "Post Assertion: #4677" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1962> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4073> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Gabinius (10)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 4677 ;
+	dprr:hasDateStart -86 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -86 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1962> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "GABI1962 A. Gabinius (10)" ;
+	dprr:hasNomen "Gabinius" ;
+	dprr:hasID 1962 ;
+	dprr:hasHighestOffice "leg. env. 81" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "GABI1962" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1962> .

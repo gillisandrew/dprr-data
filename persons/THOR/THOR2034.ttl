@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/477> rdfs:label "Tribe Assertion: #477" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2034> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/17> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p259. From Lanuvium" ;
+	dprr:hasID 477 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/17> rdfs:label "Tribe: Maecia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Maecia" ;
+	dprr:hasID 17 ;
+	dprr:hasAbbreviation "Mae." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9582> rdfs:label "Post Assertion Note: #9582" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 316" ;
+	dprr:hasID 9582 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7745> rdfs:label "Post Assertion Note: #7745" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.453, and Index, 625, refer also to Crawford, RRC 1.323, no. 316, 105 B.C. Legatus in Spain, 79. See MRR 2.84, but read, \"Flor. 2.10.6; cf. Cic. Fin. 2.63-64.\"\n" ;
+	dprr:hasID 7745 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4278> rdfs:label "Post Assertion Note: #4278" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Caecilius Metellus Pius in Farther Spain. Defeated and killed at Consabura on the Anas by Sertorius (Plut. Sert. 12.3, #; Flor. 2.7.6; of. Cic. Fin. 2.63)." ;
+	dprr:hasID 4278 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8825> rdfs:label "Post Assertion: #8825" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9582> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Thorius Balbus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8825 ;
+	dprr:hasDateStart -105 ;
+	dprr:hasDateSourceText "105" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -105 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4868> rdfs:label "Post Assertion: #4868" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Ulterior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7745> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4278> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Thorius Balbus (4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4868 ;
+	dprr:hasDateStart -79 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -79 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2034> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "THOR2034 L. Thorius (4) Mae. Balbus" ;
+	dprr:hasOrigin "Lanuvium (Farney E10)" ;
+	dprr:hasNomen "Thorius" ;
+	dprr:hasID 2034 ;
+	dprr:hasHighestOffice "leg. lieut. 79" ;
+	dprr:hasEraTo -79 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "THOR2034" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2034> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/503> rdfs:label "Date Information: #503" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2034> ;
+	dprr:hasValue -79 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "KIA, against forces of Sertorius." ;
+	dprr:hasID 503 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

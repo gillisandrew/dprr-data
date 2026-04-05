@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/220> rdfs:label "Status Assertion Note: #220" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 360. Cic. 2 Verr. 3.167. magister societatis scripturae Siciliae" ;
+	dprr:hasID 220 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/220> rdfs:label "Status Assertion: #220" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4586> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/220> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. TULLIUS (8)" ;
+	dprr:hasID 220 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9761> rdfs:label "Post Assertion Note: #9761" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 360." ;
+	dprr:hasID 9761 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9496> rdfs:label "Post Assertion: #9496" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4586> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9761> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. TULLIUS (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/203> ;
+	dprr:hasID 9496 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateSourceText "71" ;
+	dprr:hasDateEnd -71 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4586> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "TULL4586 L. Tullius (8)" ;
+	dprr:hasNomen "Tullius" ;
+	dprr:hasID 4586 ;
+	dprr:hasHighestOffice "eq. R.? late C2/C1" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TULL4586" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4586> .

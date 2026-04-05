@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6757> rdfs:label "Post Assertion Note: #6757" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Illyricum against the Iapydes (Frontin. Str. 2.5.28, date uncertain)." ;
+	dprr:hasID 6757 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7512> rdfs:label "Post Assertion: #7512" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3102> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6757> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Licinius (27)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7512 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSourceText "uncertain - between 171 and 34?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -34 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3102> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "LICI3102 P. Licinius (27)" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 3102 ;
+	dprr:hasHighestOffice "procos. against the Iapydes" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "LICI3102" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3102> .

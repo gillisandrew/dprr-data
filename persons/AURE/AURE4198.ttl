@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/947> rdfs:label "Relationship Assertion Reference: #947" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ohne den Namen des Sohnes zu nennen, aber Cottas Sohn als Ankläger des Anklägers von M. Cotta." ;
+	dprr:hasID 947 ;
+	dprr:hasExtraInfo "Dio XXXVI 40" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1870> rdfs:label "Relationship Assertion Reference: #1870" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1870 ;
+	dprr:hasExtraInfo "Val. Max. V 4.4" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/882> rdfs:label "Relationship Assertion: #882" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4198> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/947> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1870> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2026> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4198> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "108" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "AURE4198 M. Aurelius (108) Cotta Cotta" ;
+	dprr:hasOtherNames "Cotta" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 4198 ;
+	dprr:hasHighestOffice "son of M. Aurelius (107) M. f. Cotta (cos. 74)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "AURE4198" ;
+	dprr:hasCognomen "Cotta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4198> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2026> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "107" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/292> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/291> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/290> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/289> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/288> ;
+	dprr:hasPersonName "AURE2026 M. Aurelius (107) M. f. Cotta" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 2026 ;
+	dprr:hasHighestOffice "cos. 74" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -120 ;
+	dprr:hasDprrID "AURE2026" ;
+	dprr:hasCognomen "Cotta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2026> .

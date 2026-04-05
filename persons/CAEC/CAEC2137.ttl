@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/265> rdfs:label "Status Assertion Note: #265" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 58. Cic. Div. Caec. 29. quaestor" ;
+	dprr:hasID 265 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/265> rdfs:label "Status Assertion: #265" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2137> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/265> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Q. CAECILIUS (101) (Niger 7)" ;
+	dprr:hasID 265 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1047> rdfs:label "Status Assertion: #1047" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2137> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1047 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7303> rdfs:label "Post Assertion Note: #7303" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor under Verres in Sicily at Lilybaeum in 73 (Cic. Div. in Caec. 4, cf. 30). He was involved in the case of Agonis (ibid. 55). Probably among those of his staff who left Verres at the end of his first year ( Verr. 2.2.49). See also MRR 2.117 for other references. On the legati and quaestores under Verres in Sicily from 73 to 71, see now N. Marinone, AAT 100, 1965-66, 219-252, who distributes them as follows:\nQuaestores. 73: Syracuse M. Postumius (19), Lilybaeum Q. Caecilius Niger (101). 72: Syracuse T. Vettius (11), Lilybaeum P. Caesetius (3, cf. 5). 71: Syracuse T. Vettius (11), Lilybaeum P. Caesetius (3, cf. 5). Legati. 73: P. Tadius (1), and others. 72: P. Cervius (1), and others. 71: P. Tadius (1), alone? See below, under the names of each.\n" ;
+	dprr:hasID 7303 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7030> rdfs:label "Post Assertion Note: #7030" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 60. In MRR 2.539, Index, delete Leg., Lieut. and read Tr. mil. The tribune of the plebs, Q. Caecilius, in 68 (MRR 2.138) could be Q. Caecilius Niger, quaestor in 72 (MRR 2.117), but if he was Celer he might be the Q. Metellus who was tribune of the plebs one year and a legatus the next (Cic. Leg. Man. 58), as he was Pompey's legatus in 66 and possibly 67. An aedileship in 67 is very doubtful (Sumner, Orators 132-133; Syme, RP 2.557-565). Praetor 63. In MRR 2.166 the Q. Metellus named as praetor urbanus in Val. Max. 7.7.7 has been mistakenly identified with the pr. of 63, a year when L. Valerius Flaccus was pr. urbanus (Cic. Flacc. 6, and 100). See below, on Q. Caecilius Metellus Creticus (87). Cos. 69, Pr. urbanus, probably in 73. Proconsul 62. Celer was already in his province, Gallia Cisalpina, by December 63, and cut off Catiline's retreat to the north over the Apennines (Sall. Cat. 57.2-4; Sumner, CPh 58, 1963, 215-219). On his filiation, see Sumner, Orators 132; Shackleton Bailey, Studies 107; cf. Wiseman, CQ 21, 1971, 180ff.[37]\n" ;
+	dprr:hasID 7030 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4496> rdfs:label "Post Assertion Note: #4496" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Verres in Sicily (Cic. Div. in Caec. 4, 28, 31-35, 39, 60-73; Ps.-Ascon. 185, 195 Stangl), probably in Western Sicily (Cic. Div. in Caec. 39 and 55-58). Cf. Quintil. Inst. Or. 5.13.18; Plut. Cic. 7.5." ;
+	dprr:hasID 4496 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9559> rdfs:label "Post Assertion: #9559" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2137> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7030> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 9559 ;
+	dprr:hasDateStart -68 ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5100> rdfs:label "Post Assertion: #5100" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2137> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Sicily" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7303> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4496> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Caecilius Niger (101)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 5100 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2137> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "101" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "CAEC2137 Q. Caecilius (101) Niger" ;
+	dprr:hasOrigin "Lilybaeum?" ;
+	dprr:hasNomen "Caecilius" ;
+	dprr:hasID 2137 ;
+	dprr:hasHighestOffice "tr. pl.? 68" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CAEC2137" ;
+	dprr:hasCognomen "Niger" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2137> .

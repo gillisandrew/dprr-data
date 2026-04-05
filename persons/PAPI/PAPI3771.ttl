@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/149> rdfs:label "Tribe Assertion: #149" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3771> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/39> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 149 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/39> rdfs:label "Tribe: Velina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Velina" ;
+	dprr:hasID 39 ;
+	dprr:hasAbbreviation "Vel." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1816> rdfs:label "Status Assertion: #1816" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3771> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1816 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7535> rdfs:label "Post Assertion Note: #7535" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Mil., Aed. pl., Q. Iud., Cur. Fru. (ILS 907-CIL 6.1480, 1481). Possibly, but not certainly, a senator by 31. Cf. CIL 11.2526-6.39770. See Suolahti, Junior Officers 316, 406; De Laet no. 278. (TJC, LRT)\n" ;
+	dprr:hasID 7535 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10355> rdfs:label "Post Assertion Note: #10355" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A.272" ;
+	dprr:hasID 10355 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9096> rdfs:label "Post Assertion: #9096" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3771> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7535> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 9096 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10750> rdfs:label "Post Assertion: #10750" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3771> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10355> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 10750 ;
+	dprr:hasDateStart -30 ;
+	dprr:hasDateSourceText "Before 29" ;
+	dprr:hasDateEnd -30 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3771> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "60" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "PAPI3771 C. Papirius (60) C. f. Vel. Maso" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 3771 ;
+	dprr:hasHighestOffice "sen. 31" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PAPI3771" ;
+	dprr:hasCognomen "Maso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3771> .

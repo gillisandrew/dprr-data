@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2503> rdfs:label "Post Assertion Note: #2503" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Had charge of the Adriatic coast from Ancona to Tarentum (Liv. 41.1.3). See 180, 179.{397}" ;
+	dprr:hasID 2503 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2480> rdfs:label "Post Assertion Note: #2480" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 180 and 178. Was probably in office during the intervening year." ;
+	dprr:hasID 2480 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2462> rdfs:label "Post Assertion Note: #2462" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His refusal to abdicate this office prevented his inauguration as Rex sacrorum (Liv. 40.42.8-10)." ;
+	dprr:hasID 2462 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3045> rdfs:label "Post Assertion: #3045" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1282> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2503> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius (Dolabella) Pat. (29, 137)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/49> ;
+	dprr:hasID 3045 ;
+	dprr:hasDateStart -178 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -178 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3004> rdfs:label "Post Assertion: #3004" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1282> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2480> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Dolabella Pat. (137)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/49> ;
+	dprr:hasID 3004 ;
+	dprr:hasDateStart -179 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -179 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2974> rdfs:label "Post Assertion: #2974" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1282> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2462> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Dolabella Pat. (137)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/49> ;
+	dprr:hasID 2974 ;
+	dprr:hasDateStart -180 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -180 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1282> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "137" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN1282 L. Cornelius (137) Dolabella" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1282 ;
+	dprr:hasHighestOffice "II vir naval. 178" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "CORN1282" ;
+	dprr:hasCognomen "Dolabella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1282> .

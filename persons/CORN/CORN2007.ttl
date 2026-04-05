@@ -1,0 +1,214 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2575> rdfs:label "Status Assertion: #2575" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2575 ;
+	dprr:hasDateStart -83 ;
+	dprr:hasDateEnd -78 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> rdfs:label "Secondary Source: Kelly 2006" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Kelly HERR" ;
+	dprr:hasID 19 ;
+	dprr:hasBiblio "Kelly, G. P., A history of exile in the Roman Republic. Cambridge ; New York : Cambridge University Press, c2006." ;
+	dprr:hasAbbreviation "Kelly 2006" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/732> rdfs:label "Relationship Assertion Reference: #732" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 732 ;
+	dprr:hasExtraInfo "Cic. Scaur. 45" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/708> rdfs:label "Relationship Assertion: #708" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/732> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1796> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 81 ;
+	dprr:hasName "related to" ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9803> rdfs:label "Post Assertion Note: #9803" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cichorius identifies him as a Tribune of the Soldiers based on the list of members of the staff of Pompeius Strabo at Asculum (ILS 8888; RS 144-155)." ;
+	dprr:hasID 9803 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8731> rdfs:label "Post Assertion Note: #8731" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 750, footnote 345" ;
+	dprr:hasID 8731 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7483> rdfs:label "Post Assertion Note: #7483" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. 81, procos. in Cilicia 80-79. See MRR 2.76, 80, 84. On his return he was prosecuted by M. Aemilius Scaurus, the younger, and condemned. See Badian, PBSR 33, 1965, 48-51, with his probable filiation. See also Cic. Scaur. 45-46; Ascon. 16C, 74C.\n" ;
+	dprr:hasID 7483 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7175> rdfs:label "Post Assertion Note: #7175" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 72. Sumner presents a good case for identifying the Cn. Cornelius Cn. f. Pal. in Pompeius Strabo's consilium at Asculum with the consul of 72 (Orators 124-126; Shackleton Bailey, Studies 112-113). The filiation given above assumes that he was an adoptive son of Cn. Cornelius Lentulus (178). Cos. 97. See Sumner and Shackleton Bailey, above, and also Criniti, L'Epigrafe di Asculum 108-110; who favors Cn. Cornelius Dolabella (135), Pr. urb. 81. Monetalis: Cn. (Cornelius) (Cn. f.) Lentul(us) (Clodianus). Add in MRR 2.437, and refer to Crawford, RRC 1.356-357, no. 345, 88? B.C.\n" ;
+	dprr:hasID 7175 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4269> rdfs:label "Post Assertion Note: #4269" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Cilicia. See 80, Promagistrates." ;
+	dprr:hasID 4269 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4242> rdfs:label "Post Assertion Note: #4242" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul (Ps.-Ascon. 208 Stangl; Schol. Gron. 325 Stangl) in Cilicia (Cic. Verr. 1.11; 2.1.41-102 passim; 2.2.109; 2.3.177; Ascon. 26, and 74C; Ps.-Ascon. 194, 206, 208, 234, 236, 240, 242, 245 Stangl; Schol. Gron. 325, 329, 333 Stangl; of. Iuv. Sat. 8. 105; see Legates, on Verres; and above, Quaestors, on Malleolus). See 79, Promagistrates." ;
+	dprr:hasID 4242 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4199> rdfs:label "Post Assertion Note: #4199" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Quinct. 30; Corn. in Ascon. 74C; see 80, Promagistrates." ;
+	dprr:hasID 4199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3923> rdfs:label "Post Assertion Note: #3923" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "11 The cognomen might also be Blasio or Lentulus. Cichorius favors Dolabella beeause the later careers of the known Dolabellas parallel so closely that of Lepidus." ;
+	dprr:hasID 3923 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9468> rdfs:label "Post Assertion: #9468" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9803> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7175> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3923> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Cn. Cornelius Cn. f. Pal. (Dolabella?) Pat. (22a, Supb. 3.258, cf. 134, 135)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 9468 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4862> rdfs:label "Post Assertion: #4862" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Cilicia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7483> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4269> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Cn. Cornelius Dolabella Pat. (135)" ;
+	dprr:hasOfficeXref "Pr. 81" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4862 ;
+	dprr:hasDateStart -79 ;
+	dprr:hasDateSourceText "80-79" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -79 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4837> rdfs:label "Post Assertion: #4837" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Cilicia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7483> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4242> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "Cn. Cornelius Dolabella Pat. (135)" ;
+	dprr:hasOfficeXref "Pr. 81" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4837 ;
+	dprr:hasDateStart -80 ;
+	dprr:hasDateSourceText "80-79" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -80 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4795> rdfs:label "Post Assertion: #4795" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8731> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4199> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Cn. Cornelius Dolabella Pat. (135)" ;
+	dprr:hasOfficeXref "Pr. Urbanus?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4795 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2007> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "135" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN2007 Cn. Cornelius (135) (Cn. f. Cn. n.?) Dolabella" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasNobilisNotes "Cic. Quinct. 8.31" ;
+	dprr:hasID 2007 ;
+	dprr:hasHighestOffice "pr. 81" ;
+	dprr:hasFiliation "(Cn. f. Cn. n.?)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN2007" ;
+	dprr:hasCognomen "Dolabella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2007> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1796> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "50" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "SERV1796 Q. Servilius (50) Caepio" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasNobilisNotes "Eutrop. 5.3" ;
+	dprr:hasID 1796 ;
+	dprr:hasHighestOffice "pr. before 90" ;
+	dprr:hasEraTo -90 ;
+	dprr:hasEraFrom -131 ;
+	dprr:hasDprrID "SERV1796" ;
+	dprr:hasCognomen "Caepio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1796> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/6> rdfs:label "Date Type: exiled" ;
+	a dprr:DateType ;
+	dprr:hasName "exiled" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/486> rdfs:label "Date Information: #486" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2007> ;
+	dprr:hasValue -78 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> ;
+	dprr:hasNotes "no record of restoration. Kelly Exile no.33." ;
+	dprr:hasID 486 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/6> ;
+	dprr:hasDateInterval "S" .

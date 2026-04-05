@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/169> rdfs:label "Tribe Assertion: #169" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4390> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/32> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 169 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/32> rdfs:label "Tribe: Sabatina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Sabatina" ;
+	dprr:hasID 32 ;
+	dprr:hasAbbreviation "Sab." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/23> rdfs:label "Status Assertion Note: #23" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 62. Plin. N.H. 10.71. equestris ordinis" ;
+	dprr:hasID 23 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/23> rdfs:label "Status Assertion: #23" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4390> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/23> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "-. CAECINA (5) " ;
+	dprr:hasID 23 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "C1" ;
+	dprr:hasDateEnd -1 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4390> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CAEC4390 -. Caecina (5) Sab." ;
+	dprr:hasOrigin "Volaterrae" ;
+	dprr:hasNomen "Caecina" ;
+	dprr:hasID 4390 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CAEC4390" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4390> .

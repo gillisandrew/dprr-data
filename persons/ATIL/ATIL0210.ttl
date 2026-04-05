@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/384> rdfs:label "Primary Source Reference: #384" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Cluent. 135" ;
+	dprr:hasID 384 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/379> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/297> rdfs:label "Post Assertion Note: #297" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.6.6-12, and 7.1; Diod. 12.32.1; Dion. Hal. 11.61.3; Chr. 354 (Siculo et Luscino); Degrassi 95, 368f. The first college elected to this{53} office. But after three months they abdicated because of flaws in the auspices at their election (Liv. 4.7.2-3; Dion. Hal. 11.62.1-2; cf. Zon. 7.19)." ;
+	dprr:hasID 297 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/296> rdfs:label "Post Assertion Note: #296" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. omits Sempronius' cognomen; his filiation is inferred from Fast. Cap. on 416. For Cloelius, Liv. has Caecilius (but cf. 4.11.5), Dion. Hal. {Gr}, and Diod. {Gr}; while the cognomen Siculus is also preserved in Chr. 354. Atilius' cognomen appears as {Gr} in Dion. Hal. and Luscinus in Chr. 354." ;
+	dprr:hasID 296 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/379> rdfs:label "Post Assertion: #379" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/210> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/297> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/296> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Atilius - f. - n. Luscus Pat. ? (41)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 379 ;
+	dprr:hasDateStart -444 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -444 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/210> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ATIL0210 L. Atilius (41) Luscus" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 210 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 444" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "ATIL0210" ;
+	dprr:hasCognomen "Luscus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/210> .

@@ -1,0 +1,285 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2426> rdfs:label "Status Assertion: #2426" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2426 ;
+	dprr:hasDateStart -121 ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1028> rdfs:label "Relationship Assertion Reference: #1028" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1028 ;
+	dprr:hasExtraInfo "Frontin. strat. II 4.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/900> rdfs:label "Relationship Assertion: #900" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1028> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1687> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8668> rdfs:label "Post Assertion Note: #8668" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 742" ;
+	dprr:hasID 8668 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7307> rdfs:label "Post Assertion Note: #7307" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 110, Procos. 109-106. Honored by inscriptions of Demetrias (IG 9.2.1135; Bull. Epig. 1954, no. 152; 1955, no. 136a) and one also of Europus of Macedonia for his victories over Gallic Scordisci, and Bessi, and other Thracian tribes (S. Kougeas, Hellenika 5, 1932, 5-16, reported by Roussel, REG 47, 1934, 230; Bull. Epig. 1934, p. 230). On SIG(3) 710, from Delphi ? ILLRP 337, see Aepig. 1967, no. 453." ;
+	dprr:hasID 7307 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3522> rdfs:label "Post Assertion Note: #3522" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Celebrated as Proconsul (Pro cos., Act. Tr.) a triumph over Scordisci and other Thracian tribes (Act. Tr., Degrassi 84f., 561; Vell. 2.8.3; cf. SIG(3) 710- CIL 1(2).2.692, and p. 726; Liv. Per. 65; see 110, Consuls). He was honoured by Europos of Macedonia for his victory over the Gallic Scordisci, the Bessi and the rest of the Thracians (S. Kougeas, Hellenika 5 [1932] 5-16, reported by Roussel in REG 47 [1934] 230)." ;
+	dprr:hasID 3522 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3506> rdfs:label "Post Assertion Note: #3506" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Macedonia and Thrace (see 110, Consuls, and 109-106, Promagistrates)." ;
+	dprr:hasID 3506 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3487> rdfs:label "Post Assertion Note: #3487" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul (Act. Tr.) in Macedonia and Thrace, where he probably won a victory this year (Liv. Per. 65; see 110, Consuls and 106, Promagistrates)." ;
+	dprr:hasID 3487 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3467> rdfs:label "Post Assertion Note: #3467" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Macedonia and Thrace (see 110, Consuls, and 108-106, Promagistrates).{547}" ;
+	dprr:hasID 3467 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3448> rdfs:label "Post Assertion Note: #3448" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1\n     .2.674, and on Minucius, 584; Fast. Ant., Degrassi 162f. ([- - - -] Rufus); Fast. Cap., Degrassi 54f. ([- - - - Albi]nus), 127, 474f.; Sall. Iug. 35.2; Chr. 354 (Rufo et Albino), so also Fast. Hyd. and Chr. Pasc.; Cassiod.; and on Postumius, Cic. Brut. 128; Oros. 5.15.6. Minucius campaigned in Macedonia and Thrace during this and succeeding years (see 109-106, Promagistrates) against the Scordisci, the Bessi and other Thracian tribes, and the Dacians (SIG(3) 710- CIL 1(2).2.692; Liv. Per. 65; Vell. 2.8.3; Frontin. Str. 2.4.3; Flor. 1.39.5; Ruf. Fest. Brev. 9.2; Amm. Marc. 27.4.10; cf. Act. Tr. for 106). Postumius was foiled in Numidia by Jugurtha's delaying tactics, and when he returned to Rome to hold the elections, his army suffered defeat and disgrace under the leadership of his brother and Legate (Sall. Iug. 35-38, and 77.3; Liv. Per. 64; Flor. 1.36.9; Eutrop. 4.26.3; Oros. 5.15.6; cf. App. Num. 1; Plut. Mar. 9.3; Schol. Bern. on Lucan 4.319, p. 131 U), and event which ruined his influence at home and in the army, and led to the establishment of the Mamilian commission (Sall. Iug. 39-43; Cic. Brut. 128; see 109, Tribunes of the Plebs). On Postumius, see Lübker no. 14." ;
+	dprr:hasID 3448 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3404> rdfs:label "Post Assertion Note: #3404" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest date possible for their praetorships under the Lex Villia." ;
+	dprr:hasID 3404 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3367> rdfs:label "Post Assertion Note: #3367" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Acted as judges in the dispute between the Genuates and the Langenses Viturii (CIL 1\n     .2.584).{530}" ;
+	dprr:hasID 3367 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3302> rdfs:label "Post Assertion Note: #3302" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proposed bills to annul legislation of C. Gracchus, and in particular the colony at Carthage (FOR 2.141- Fest. 220 L; Flor. 2.3.4; Auct. Vir. Ill. 65.5; Oros. 5.12.5; cf. Cic. Cat. 4.4; Plut. CG 13.1-2; App. BC 1.24; Lib. 136)." ;
+	dprr:hasID 3302 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3301> rdfs:label "Post Assertion Note: #3301" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The texts do not cite the praenomen. I have suggested M. because an M could more easily have fallen out before the M of Minucius, and because M. was the one of the two brothers who attained the consulship. On the careers of M. and of Q. Minucius, see Index." ;
+	dprr:hasID 3301 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10162> rdfs:label "Post Assertion Note: #10162" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Scordisteis et Thraecibus. MRR I.554, Itgenshorst no. 231, Rich no. 231." ;
+	dprr:hasID 10162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4211> rdfs:label "Post Assertion: #4211" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7307> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3522> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4211 ;
+	dprr:hasDateStart -106 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4195> rdfs:label "Post Assertion: #4195" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7307> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3506> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4195 ;
+	dprr:hasDateStart -107 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -107 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4179> rdfs:label "Post Assertion: #4179" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7307> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3487> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4179 ;
+	dprr:hasDateStart -108 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -108 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4162> rdfs:label "Post Assertion: #4162" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7307> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3467> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4162 ;
+	dprr:hasDateStart -109 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -109 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4137> rdfs:label "Post Assertion: #4137" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3448> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Minucius Q. f. - n. Rufus (54)" ;
+	dprr:hasOfficeXref "Pr. by 113" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4137 ;
+	dprr:hasDateStart -110 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -110 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4093> rdfs:label "Post Assertion: #4093" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8668> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3404> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4093 ;
+	dprr:hasDateStart -113 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -113 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4057> rdfs:label "Post Assertion: #4057" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3367> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Minucius Rufus (54)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/23> ;
+	dprr:hasID 4057 ;
+	dprr:hasDateStart -117 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -117 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3992> rdfs:label "Post Assertion: #3992" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3302> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3301> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. ? Minucius Rufus (54, cf. 48)" ;
+	dprr:hasOfficeXref "Cos. 110" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3992 ;
+	dprr:hasDateStart -121 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -121 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10557> rdfs:label "Post Assertion: #10557" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1686> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10162> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10557 ;
+	dprr:hasDateStart -106 ;
+	dprr:hasDateSourceText "106" ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1687> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "56" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU1687 Q. Minucius (56) Rufus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 1687 ;
+	dprr:hasHighestOffice "pr. before 110" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MINU1687" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1687> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1686> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "54" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "MINU1686 M. Minucius (54) Q. f. Rufus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 1686 ;
+	dprr:hasHighestOffice "cos. 110" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MINU1686" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1686> .

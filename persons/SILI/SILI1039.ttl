@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2372> rdfs:label "Primary Source Reference: #2372" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 1.1" ;
+	dprr:hasID 2372 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2180> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2371> rdfs:label "Primary Source Reference: #2371" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Brut. 222" ;
+	dprr:hasID 2371 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2180> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1810> rdfs:label "Post Assertion Note: #1810" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried a law of very uncertain date to establish standards of weight (Fest. 288 L; cf. Niccolini FTP 394f.)." ;
+	dprr:hasID 1810 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2180> rdfs:label "Post Assertion: #2180" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1039> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1810> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "? P. Silius (6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 2180 ;
+	dprr:hasDateStart -204 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -204 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1039> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SILI1039 P. Silius (6)" ;
+	dprr:hasNomen "Silius" ;
+	dprr:hasID 1039 ;
+	dprr:hasHighestOffice "tr. pl.? 204" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SILI1039" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1039> .

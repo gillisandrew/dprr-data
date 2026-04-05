@@ -1,0 +1,216 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/535> rdfs:label "Status Assertion: #535" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 535 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateEnd -140 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2163> rdfs:label "Status Assertion: #2163" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2163 ;
+	dprr:hasDateStart -139 ;
+	dprr:hasDateEnd -139 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1667> rdfs:label "Relationship Assertion: #1667" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1085> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9446> rdfs:label "Post Assertion Note: #9446" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 189" ;
+	dprr:hasID 9446 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8943> rdfs:label "Post Assertion Note: #8943" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 741, footnote 143" ;
+	dprr:hasID 8943 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7359> rdfs:label "Post Assertion Note: #7359" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.436, and Index, 551, refer also to Crawford, RRC[63] 1.239-241, no. 189, 169-158 B.C. Crawford would date his praetorship to the late 140s, but Sherk, RDGE no. 4, p. 39, to 165-160 B.C.; see MRR 1.438, 165 B.C.; but cf. H. B. Mattingly, NC 1969, 103-104, who makes a good case for a later date; and below, on Cn. Egnatius, Procos. Macedonia.\n" ;
+	dprr:hasID 7359 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2813> rdfs:label "Post Assertion Note: #2813" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Author of a letter to the Corcyreans containing a copy of a Senatus Consultum (Holleaux, BCH 48 [1924] 389ff.- SEG 3.451)." ;
+	dprr:hasID 2813 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2812> rdfs:label "Post Assertion Note: #2812" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Holleaux suggests a date for Blasio between 175 and 160. He was a Legate in 170 and served on a special commission in 168. He could possibly be one of the uncertain Praetors of 175 or 174, but more probably (see these years) attained his office very soon after 166." ;
+	dprr:hasID 2812 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2769> rdfs:label "Post Assertion Note: #2769" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to investigate and decide boundary disputes between Pisa and the colony of Luna (Liv. 45.13.10-11; see 180 and 177)." ;
+	dprr:hasID 2769 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2686> rdfs:label "Post Assertion Note: #2686" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to the Carni, Istri, and Iapydes to answer their complaints regarding the misdeeds of the Consul Cassius in 171 (Liv. 43.5.7 and 10)." ;
+	dprr:hasID 2686 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9137> rdfs:label "Post Assertion: #9137" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9446> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7359> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Cornelius Blasio, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 9137 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSourceText "169 - 158" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7944> rdfs:label "Post Assertion: #7944" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "urbanus" ;
+	dprr:hasProvinceOriginal "U" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8943> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Cornelius (76) Blasio" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7944 ;
+	dprr:hasDateStart -140 ;
+	dprr:hasDateSourceText "ca. 140" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -140 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3438> rdfs:label "Post Assertion: #3438" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7359> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2813> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2812> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. (Cornelius) P. f. Blasio (cf. 76)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3438 ;
+	dprr:hasDateStart -165 ;
+	dprr:hasDateSourceText "165" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -165 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3373> rdfs:label "Post Assertion: #3373" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2769> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Cornelius Blasio Pat. (76)" ;
+	dprr:hasOfficeXref "Pr. ca. 165" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/97> ;
+	dprr:hasID 3373 ;
+	dprr:hasDateStart -168 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -168 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3273> rdfs:label "Post Assertion: #3273" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2686> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Cornelius Blasio Pat. (76)" ;
+	dprr:hasOfficeXref "Pr. ca. 165?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3273 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1390> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "76" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN1390 P. Cornelius (76) P. f. Blasio" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1390 ;
+	dprr:hasHighestOffice "pr. c. 165 or c. 140" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "CORN1390" ;
+	dprr:hasCognomen "Blasio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1390> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1085> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "74" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN1085 Cn. Cornelius (74) Blasio" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1085 ;
+	dprr:hasHighestOffice "pr. 194" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CORN1085" ;
+	dprr:hasCognomen "Blasio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1085> .

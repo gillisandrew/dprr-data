@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1527> rdfs:label "Status Assertion: #1527" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3061> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1527 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9698> rdfs:label "Post Assertion Note: #9698" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 526" ;
+	dprr:hasID 9698 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7713> rdfs:label "Post Assertion Note: #7713" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis and Quaestor designatus. In MRR 2.455, 477, and Index, 635, refer also to Crawford, RRC 1.530-531, no. 526, 40 B.C. or later. He issued coins with Ti. Sempronius Gracchus (56).\n" ;
+	dprr:hasID 7713 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6709> rdfs:label "Post Assertion Note: #6709" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Q. Desig. in inscriptions on coins of ca. 37 B. C. (Grueber, CRRBM 1.591f.)." ;
+	dprr:hasID 6709 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8915> rdfs:label "Post Assertion: #8915" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3061> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9698> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7713> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Voconius Vitulus, Q." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8915 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateSourceText "after 40" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -39 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7464> rdfs:label "Post Assertion: #7464" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3061> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7713> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6709> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Voconius Vitulus (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7464 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateSourceText "after 40" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -39 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3061> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "VOCO3061 Q. Voconius (5) Vitulus" ;
+	dprr:hasNomen "Voconius" ;
+	dprr:hasID 3061 ;
+	dprr:hasHighestOffice "q.? after 40" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "VOCO3061" ;
+	dprr:hasCognomen "Vitulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3061> .

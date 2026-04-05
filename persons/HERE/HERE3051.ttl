@@ -1,0 +1,148 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/72> rdfs:label "Tribe Assertion: #72" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/17> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "CIL 1(2) 827" ;
+	dprr:hasID 72 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/17> rdfs:label "Tribe: Maecia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Maecia" ;
+	dprr:hasID 17 ;
+	dprr:hasAbbreviation "Mae." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2913> rdfs:label "Status Assertion: #2913" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2913 ;
+	dprr:hasDateStart -86 ;
+	dprr:hasDateEnd -87 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3918> rdfs:label "Relationship Assertion: #3918" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1819> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3917> rdfs:label "Relationship Assertion: #3917" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1819> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7210> rdfs:label "Post Assertion Note: #7210" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor, and praefectus Capuam Cumas. See MRR 2.476 and 483. Add a reference to ILLRP 441, and note Degrassi's comment that these prefects lost their power with the refounding of Capua in 59, and were abolished before 13 (cf. Mommsen, StR 2(3).609-610). In MRR 2.476, he is listed as a quaestor before 90, but Badian (Dial. Archeol. 4-5, no. 2-3, 1970-71, 376, note 14) dates him some time after the Social War, and adds 'must surely be the son or the grandson of the consul of 93' (cf. Historia 12, 1963, 134). See also L. R. Taylor, VDRR 220.\n" ;
+	dprr:hasID 7210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6780> rdfs:label "Post Assertion Note: #6780" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1(2).2.827-ILS 910, before 90 (Praef. Cap. Cum.)." ;
+	dprr:hasID 6780 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6699> rdfs:label "Post Assertion Note: #6699" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1(2).2.827, before 90 B. C." ;
+	dprr:hasID 6699 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7535> rdfs:label "Post Assertion: #7535" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7210> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6780> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Herennius M. f. Mae. (41) Rufus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/175> ;
+	dprr:hasID 7535 ;
+	dprr:hasDateStart -87 ;
+	dprr:hasDateSourceText "after Social War" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -87 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7454> rdfs:label "Post Assertion: #7454" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3051> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7210> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6699> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Herennius M. f. Mae. (41) Rufus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7454 ;
+	dprr:hasDateStart -87 ;
+	dprr:hasDateSourceText "after Social War" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -87 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3051> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "HERE3051 M. Herennius (41) M. f. Mae. Rufus" ;
+	dprr:hasNomen "Herennius" ;
+	dprr:hasID 3051 ;
+	dprr:hasHighestOffice "q. after 88" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "HERE3051" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3051> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1819> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "HERE1819 M. Herennius (10) M. f." ;
+	dprr:hasNomen "Herennius" ;
+	dprr:hasID 1819 ;
+	dprr:hasHighestOffice "cos. 93" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -136 ;
+	dprr:hasDprrID "HERE1819" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1819> .

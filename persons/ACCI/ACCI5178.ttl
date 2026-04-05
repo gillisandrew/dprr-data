@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2436> rdfs:label "Person Note: #2436" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p9. Arch. 27, Sest.  (120, 122), 123, (Planc. 59), Phil. I.36. dramatist" ;
+	dprr:hasID 2436 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5178> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1, 20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2436> ;
+	dprr:hasPersonName "ACCI5178 L. Accius (1, 20)" ;
+	dprr:hasNomen "Accius" ;
+	dprr:hasID 5178 ;
+	dprr:hasEraTo -80 ;
+	dprr:hasEraFrom -170 ;
+	dprr:hasDprrID "ACCI5178" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5178> .

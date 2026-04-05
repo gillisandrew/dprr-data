@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/351> rdfs:label "Primary Source Reference: #351" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Brut. 90" ;
+	dprr:hasID 351 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/346> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/273> rdfs:label "Post Assertion Note: #273" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prosecuted Sp. Oppius (Liv. 3.58.7-9; Dion. Hal. 11.46.4)." ;
+	dprr:hasID 273 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/270> rdfs:label "Post Assertion Note: #270" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Liv. 3.54.11-13." ;
+	dprr:hasID 270 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/346> rdfs:label "Post Assertion: #346" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/183> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/273> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/270> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Numitorius (4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 346 ;
+	dprr:hasDateStart -449 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -449 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/183> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "NUMI0183 P. Numitorius (4)" ;
+	dprr:hasNomen "Numitorius" ;
+	dprr:hasID 183 ;
+	dprr:hasHighestOffice "tr. pl. 449" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "NUMI0183" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/183> .

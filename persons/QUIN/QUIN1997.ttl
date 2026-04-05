@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4180> rdfs:label "Post Assertion Note: #4180" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably a Legate under Papirius Carbo. Defeated by M. Lucullus at Fidentia (Oros. 5.20.8; see Promagistrates, on M. Lucullus)." ;
+	dprr:hasID 4180 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4778> rdfs:label "Post Assertion: #4778" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1997> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4180> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "? Quinctius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4778 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1997> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "QUIN1997 -. Quinctius (not in RE)" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1997 ;
+	dprr:hasHighestOffice "leg. lieut. 82" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "QUIN1997" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1997> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1870> rdfs:label "Date Information: #1870" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1997> ;
+	dprr:hasValue -82 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard 82 no. 61" ;
+	dprr:hasID 1870 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

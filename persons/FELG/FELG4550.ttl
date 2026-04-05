@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/209> rdfs:label "Tribe Assertion: #209" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4550> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/42> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 209 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/42> rdfs:label "Tribe: Voturia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Voturia" ;
+	dprr:hasID 42 ;
+	dprr:hasAbbreviation "Vot." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/183> rdfs:label "Status Assertion Note: #183" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 142. Caes. B Civ. 3.71.1. notus" ;
+	dprr:hasID 183 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/183> rdfs:label "Status Assertion: #183" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4550> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/183> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "C. FELGINAS (s. n.)" ;
+	dprr:hasID 183 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSourceText "48" ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10343> rdfs:label "Post Assertion Note: #10343" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A.241" ;
+	dprr:hasID 10343 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10738> rdfs:label "Post Assertion: #10738" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4550> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10343> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 10738 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSourceText "48" ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4550> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Felginas" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FELG4550 C. Felginas (Felginas) Vot." ;
+	dprr:hasOrigin "Placentia" ;
+	dprr:hasNomen "Felginas" ;
+	dprr:hasID 4550 ;
+	dprr:hasHighestOffice "tr. mil. 48" ;
+	dprr:hasEraTo -48 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FELG4550" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4550> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/907> rdfs:label "Date Information: #907" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4550> ;
+	dprr:hasValue -48 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "KIA. Caes. BC 3.71." ;
+	dprr:hasID 907 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

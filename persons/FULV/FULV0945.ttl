@@ -1,0 +1,183 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2097> rdfs:label "Relationship Assertion Reference: #2097" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2097 ;
+	dprr:hasExtraInfo "Liv. 26.33.5, Liv. 27.8.12" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1177> rdfs:label "Relationship Assertion Reference: #1177" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1177 ;
+	dprr:hasExtraInfo "Liv. XXVII 8.12" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1168> rdfs:label "Relationship Assertion Reference: #1168" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1168 ;
+	dprr:hasExtraInfo "Liv. XXVI 33.5" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/973> rdfs:label "Relationship Assertion: #973" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/945> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1177> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1168> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/781> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5855> rdfs:label "Relationship Assertion: #5855" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/945> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/924> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2191> rdfs:label "Relationship Assertion: #2191" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/945> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2097> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/699> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2097> rdfs:label "Primary Source Reference: #2097" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dig. 1.2.2.38" ;
+	dprr:hasID 2097 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2023> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2096> rdfs:label "Primary Source Reference: #2096" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. 32.2.7" ;
+	dprr:hasID 2096 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2023> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1986> rdfs:label "Primary Source Reference: #1986" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. VIII 8.1" ;
+	dprr:hasID 1986 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1914> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1668> rdfs:label "Post Assertion Note: #1668" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by his brother the Consul to bring the urban legions to Etruria and bring back the legions there (Liv. 27.8.12)." ;
+	dprr:hasID 1668 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1578> rdfs:label "Post Assertion Note: #1578" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under his brother Fulvius Flaccus at Capua as commander of allied cavalry (Liv. 26.5.8, cf. 33.5-7)." ;
+	dprr:hasID 1578 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2023> rdfs:label "Post Assertion: #2023" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/945> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1668> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Fulvius Flaccus (52)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 2023 ;
+	dprr:hasDateStart -209 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1914> rdfs:label "Post Assertion: #1914" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/945> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1578> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Fulvius Flaccus (52)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1914 ;
+	dprr:hasDateStart -211 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -211 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/945> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "52" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FULV0945 C. Fulvius (52) Flaccus" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 945 ;
+	dprr:hasHighestOffice "leg. lieut. 209" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "FULV0945" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/945> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/924> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "54" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "FULV0924 Cn. Fulvius (54) Flaccus" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 924 ;
+	dprr:hasHighestOffice "pr. 212" ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -242 ;
+	dprr:hasDprrID "FULV0924" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/924> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/781> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "59" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/999> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1005> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1004> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1003> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1002> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1001> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1000> ;
+	dprr:hasPersonName "FULV0781 Q. Fulvius (59) M. f. Q. n. Flaccus" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasNobilisNotes "Sil. Ital. 17.303-304" ;
+	dprr:hasID 781 ;
+	dprr:hasHighestOffice "cos. 237" ;
+	dprr:hasFiliation "M. f. Q. n." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -270 ;
+	dprr:hasDprrID "FULV0781" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/781> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/699> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "55" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FULV0699 M. Fulvius (55) Q. f. M. n. Flaccus" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 699 ;
+	dprr:hasHighestOffice "cos. 264" ;
+	dprr:hasFiliation "Q. f. M. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -295 ;
+	dprr:hasDprrID "FULV0699" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/699> .

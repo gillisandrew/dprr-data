@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/370> rdfs:label "Primary Source Reference: #370" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Catil. IV 13" ;
+	dprr:hasID 370 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/365> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/285> rdfs:label "Post Assertion Note: #285" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried the Lex Trebonia which provided that election of Tribunes should continue until the full number were elected (Liv. 3.65.3-4; 5.10.11-12; cf. Diod. 12.25.3)." ;
+	dprr:hasID 285 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/365> rdfs:label "Post Assertion: #365" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/198> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/285> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Trebonius Asper (9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 365 ;
+	dprr:hasDateStart -448 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -448 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/198> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "TREB0198 L. Trebonius (9) Asper" ;
+	dprr:hasNomen "Trebonius" ;
+	dprr:hasID 198 ;
+	dprr:hasHighestOffice "tr. pl. 448" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "TREB0198" ;
+	dprr:hasCognomen "Asper" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/198> .

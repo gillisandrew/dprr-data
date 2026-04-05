@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/670> rdfs:label "Primary Source Reference: #670" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. XII 18" ;
+	dprr:hasID 670 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/661> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/639> rdfs:label "Primary Source Reference: #639" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. IV 4" ;
+	dprr:hasID 639 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/630> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/485> rdfs:label "Post Assertion Note: #485" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.18.2; Diod. 14.90.1; Fast. Cap. (see note 1); Chr. 354 (Pansa II et Volso); Degrassi 30f., 99, 384f. Titinius and Genucius were in command at Falerii and Capena, where Genucius was killed (Liv. 5.18.7-12)." ;
+	dprr:hasID 485 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/484> rdfs:label "Post Assertion Note: #484" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: [- - -S]accus II; [- - - -E]squilinus II; [- - - -]Capitolinus II; Q. Manlius A. f. [- - - -]; Cn. Genuciu[s - - - -]; L. Atilius L. [f.- - - -]. Fast. Cap. and Diod. agree regarding these names, though Maelius appears in Diod. as {Gr}, and it is not clear whether Diod. had the elder Licinius (Mil. Tr. in 400) like Fast. Cap., or his son, like Livy. In Livy the name is P. Maenius, but at 5.12.10 on the college of 400 he has Maelius, and should agree here. He omits the name of Manlius, perhaps after or before the similar beginning of that of Maelius. He states that the college of 400 was reelected, but only three of them were, while Manlius seems new, and Atilius and Genucius held office in 399. See Conway and Walters ad loc." ;
+	dprr:hasID 484 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/475> rdfs:label "Post Assertion Note: #475" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.12.9-10; Diod. 14.47.1; Fast. Cap. (see note 1); Chr. 354 (Volso et Capitolino); Degrassi 28f., 98, 382f." ;
+	dprr:hasID 475 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/474> rdfs:label "Post Assertion Note: #474" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "All three main sources indicate six Military Tribunes, but Diod. names only three. According to Livy (5.12.11-12; 6.37.8), Licinius was the first plebeian to hold the office, but Münzer (RE no. 43) and Mommsen (RF 1.95) point out that Atilius in 444 and Antonius in 422 were probably plebeians, and{85} so are four members of this college. The names are preserved in Fast. Cap. as follows: [P. Man]lius, etc., [P. Licin]ius, etc., [L. Titini]us, etc., the rest entire as above except Fu[r]ius. For Manlius, Livy has Manilius and Mamilius, Diod. {Gr}. Livy has P. Titinius, but in 396, where Fast. Cap. has the numeral II, Livy has the praenomen L. For Maelius Diod. has {Gr}. Furius in Livy has the praenomen L. but without a mark of iteration, but Diod. and Fast. Cap. indicate Sp. For Publilius Diod. (P) has {Gr}, but Livy L. Popilius Volscus." ;
+	dprr:hasID 474 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/661> rdfs:label "Post Assertion: #661" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/357> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/485> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/484> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Maelius Sp. f. C. n. Capitolinus (4)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 400" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 661 ;
+	dprr:hasDateStart -396 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -396 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/630> rdfs:label "Post Assertion: #630" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/357> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/475> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/474> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Maelius Sp. f. C. n. Capitolinus (4)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 396" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 630 ;
+	dprr:hasDateStart -400 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -400 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/357> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "MAEL0357 P. Maelius (4) Sp. f. C. n. Capitolinus" ;
+	dprr:hasNomen "Maelius" ;
+	dprr:hasID 357 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 396" ;
+	dprr:hasFiliation "Sp. f. C. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "MAEL0357" ;
+	dprr:hasCognomen "Capitolinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/357> .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/18> rdfs:label "Secondary Source: Evans & Kleijwegt 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Evans & Kleijwegt" ;
+	dprr:hasID 18 ;
+	dprr:hasBiblio "Evans, R. & Kleijwegt, M., ‘Did the Romans like young men? A study of the Lex Villia Annalis: causes and effects’, ZPE 92 (1992) : 181-95." ;
+	dprr:hasAbbreviation "Evans & Kleijwegt 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9346> rdfs:label "Post Assertion Note: #9346" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 232" ;
+	dprr:hasID 9346 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8607> rdfs:label "Post Assertion: #8607" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3533> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9346> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Gellius, Cn." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8607 ;
+	dprr:hasDateStart -138 ;
+	dprr:hasDateSourceText "138" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -138 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3533> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "GELL3533 Cn. Gellius (4)" ;
+	dprr:hasNomen "Gellius" ;
+	dprr:hasID 3533 ;
+	dprr:hasHighestOffice "monetal. 138" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "GELL3533" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3533> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/845> rdfs:label "Date Information: #845" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3533> ;
+	dprr:hasValue -175 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/18> ;
+	dprr:hasNotes "Evans & Kleijwegt p. 194." ;
+	dprr:hasID 845 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

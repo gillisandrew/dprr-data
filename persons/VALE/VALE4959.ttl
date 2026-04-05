@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3674> rdfs:label "Relationship Assertion: #3674" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4959> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/366> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3673> rdfs:label "Relationship Assertion: #3673" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4959> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/522> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/522> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "137" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0522 M. Valerius (137) M. f. M. n. Maximus Corvus" ;
+	dprr:hasOtherNames "Corvus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasNobilisNotes "Liv. 7.32.14, 7.40.7, Juv. Sat. 8.1-32" ;
+	dprr:hasID 522 ;
+	dprr:hasHighestOffice "cos. 348" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -371 ;
+	dprr:hasDprrID "VALE0522" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/522> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4959> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "71" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE4959 M. Valerius (71)" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 4959 ;
+	dprr:hasHighestOffice "son of M. Valerius (207) M. f. M. n. Lactucinus Maximus (tr. mil. c. p. 398)" ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "VALE4959" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4959> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/366> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "207" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0366 M. Valerius (207) M. f. M. n. Lactucinus Maximus" ;
+	dprr:hasOtherNames "Maximus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 366 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 398" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "VALE0366" ;
+	dprr:hasCognomen "Lactucinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/366> .

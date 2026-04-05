@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/506> rdfs:label "Tribe Assertion: #506" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4677> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/26> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 506 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/26> rdfs:label "Tribe: Pomptina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Pomptina" ;
+	dprr:hasID 26 ;
+	dprr:hasAbbreviation "Pom." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10193> rdfs:label "Post Assertion: #10193" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4677> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/252> ;
+	dprr:hasID 10193 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2382> rdfs:label "Person Note: #2382" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "CIL 6,32439 = ILS 4952 (Grabinschrift)." ;
+	dprr:hasID 2382 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2381> rdfs:label "Person Note: #2381" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "1. Jh. v. Chr." ;
+	dprr:hasID 2381 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2380> rdfs:label "Person Note: #2380" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Tribus Pomptina (aus Volsinii?)." ;
+	dprr:hasID 2380 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2379> rdfs:label "Person Note: #2379" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Scheid/Granino Har LX 1." ;
+	dprr:hasID 2379 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2378> rdfs:label "Person Note: #2378" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Vinulleius 1." ;
+	dprr:hasID 2378 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2377> rdfs:label "Person Note: #2377" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3534" ;
+	dprr:hasID 2377 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4677> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2382> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2381> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2380> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2379> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2378> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2377> ;
+	dprr:hasPersonName "VINU4677 L. Vinulleius (1) L. f. Pom. Lucullus" ;
+	dprr:hasOrigin "Volsinii? (Ruepke)" ;
+	dprr:hasNomen "Vinulleius" ;
+	dprr:hasID 4677 ;
+	dprr:hasHighestOffice "haruspex ex L late Republic" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "VINU4677" ;
+	dprr:hasCognomen "Lucullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4677> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1687> rdfs:label "Date Information: #1687" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4677> ;
+	dprr:hasValue -50 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1687 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7516> rdfs:label "Post Assertion Note: #7516" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Officer under Licinius Nerva in Sicily, 104. A. Roes and W. Vollgraf identify the cantharos of Stevensweert as booty from this Sicilian war, and refer the inscription on it (M. Titini) to this officer (Mon. et Mem. Fondation Piot 46, 1952,61-67-AEpig. 1953, no. 156\n" ;
+	dprr:hasID 7516 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3574> rdfs:label "Post Assertion Note: #3574" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer, either Legate or Prefect, under Licinius Nerva in Sicily (Diod. 36.4.3)." ;
+	dprr:hasID 3574 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4251> rdfs:label "Post Assertion: #4251" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1770> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7516> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3574> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? M. Titinius (14)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 4251 ;
+	dprr:hasDateStart -104 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1770> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "TITI1770 M. Titinius (14)" ;
+	dprr:hasNomen "Titinius" ;
+	dprr:hasID 1770 ;
+	dprr:hasHighestOffice "officer (title not preserved) 104" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TITI1770" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1770> .

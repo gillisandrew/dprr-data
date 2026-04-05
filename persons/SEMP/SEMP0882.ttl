@@ -1,0 +1,378 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3489> rdfs:label "Relationship Assertion: #3489" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/13> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/777> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/13> rdfs:label "Relationship: nephew of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 27 ;
+	dprr:hasName "nephew of" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2448> rdfs:label "Primary Source Reference: #2448" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Clu. 31" ;
+	dprr:hasID 2448 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2227> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2347> rdfs:label "Primary Source Reference: #2347" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Fam. 8.7.2" ;
+	dprr:hasID 2347 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2164> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2301> rdfs:label "Primary Source Reference: #2301" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Iustin. 42.4.6" ;
+	dprr:hasID 2301 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2144> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2069> rdfs:label "Primary Source Reference: #2069" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 88.3" ;
+	dprr:hasID 2069 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1997> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1981> rdfs:label "Primary Source Reference: #1981" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. VIII 2.3" ;
+	dprr:hasID 1981 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1909> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1948> rdfs:label "Primary Source Reference: #1948" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. V 8.4" ;
+	dprr:hasID 1948 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1876> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1900> rdfs:label "Primary Source Reference: #1900" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. III 5.4" ;
+	dprr:hasID 1900 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1828> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1876> rdfs:label "Primary Source Reference: #1876" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. I 1.9" ;
+	dprr:hasID 1876 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1804> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1820> rdfs:label "Primary Source Reference: #1820" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Suet. Caes. 50.1f." ;
+	dprr:hasID 1820 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1748> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8872> rdfs:label "Post Assertion Note: #8872" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 727" ;
+	dprr:hasID 8872 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8329> rdfs:label "Post Assertion Note: #8329" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 201 and 200. They probably went on to Syria and Egypt to complete their mission by late 200 or early 199 (Iustin. 30.3.3-4; cf. Polyb. 16.27.5, and 34.2; Liv. 31.18.1, cf. 2..3-4; 33.19.8; cf. Holleaux, REA 15 [1913] 4, notes 1 and 2)." ;
+	dprr:hasID 8329 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1943> rdfs:label "Post Assertion Note: #1943" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "This embassy went to various points in Greece, including Athens, then to Rhodes, and finally to Egypt (Polyb. 16.25-27; Liv. 31.18.1; App. Mac. 4). Aemilius bore Rome's ultimatum to Philip at Abydos (Polyb. 16.34.1-7; Liv. 31.18.1-7; Diod. 28.6; Iustin. 31.3.3-4)." ;
+	dprr:hasID 1943 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1919> rdfs:label "Post Assertion Note: #1919" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "This embassy, sent ostensibly to Egypt, was appointed after Attalus of Pergamum and Rhodes had appealed to Rome regarding Philip's aggressions, and before the Consuls of 201 had returned from their provinces (Liv. 31.2.1-4, and 18.1; Polyb. 16.27, and 34.1-7; cf. Val. Max. 6.6.1; Tac. Ann. 2.67; App. Mac. 4; Iustin. 30.3-4; 31.1-2; and on the coins referring to Lepidus as tutor regis, Grueber, CRRBM 1.449; Cesano, Stud. Num. 1.173f.). See 200, Legates." ;
+	dprr:hasID 1919 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1918> rdfs:label "Post Assertion Note: #1918" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "This embassy was appointed late in the consular year 201, as the annalistic source in Livy states, and is found active in Greece by the spring of the Julian year 200 (Holleaux, CAH 8.161; REA 25 [1923] 355f.; on the state of the Roman calendar, see De Sanctis 4.1.368ff.). They appeared in Athens in the spring of 200. Whatever may have been said about Egypt, their chief{323} mission lay in Greece, Rhodes, and Pergamum (see Walbank and McDonald, J RS 27 [1937] 189ff., and the studies discussed there; Walbank, Philip V of Macedon 313ff.). The connections between Aemilius Lepidus and the Ptolemies may have developed later (see Otto, Zur Gesch. d. Zeit d. 6. Ptolemäers, 27ff.; cf. Cichorius, RS 22f.)." ;
+	dprr:hasID 1918 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1858> rdfs:label "Post Assertion Note: #1858" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued as Proconsul in Bruttium (Liv. 30.1.3, and 27.7)." ;
+	dprr:hasID 1858 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1796> rdfs:label "Post Assertion Note: #1796" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Enn. Ann. 303-308 V; Cic. Brut. 60; Sen. 10; Liv. 29.11.10; Fast. Cap., Degrassi 46f., 120, 450f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Cethegus, cf. Grueber, CRRBM 2.271; Cesano, Stud. Num. 1.171. The Consuls heard complaints of the Locrians against Pleminius and Scipio, and appointed a senatorial commission to investigate them (Liv. 29.16.4-20.11; Diod. 27.4; App. Hann. 55; Dio fr. 57.62; see 205, Legates, and below, Promagistrates, Legates, and Special Commissions). Cethegus' province was Etruria, where he punished traitors who had negotiated with Mago (Liv. 29.13.1, and 36.10-12; Zon. 9.11). Sempronius in Bruttium suffered a reverse, then joined forces with Licinius Crassus (see Promagistrates), and after vowing a temple to Fortuna Primigeneia, gained a victory (Liv. 29.13.1, and 36.4-9; Dio fr. 57.70; Oros. 4.18.18; Zon. 9.11; cf. Fest. 272 L; see Otto, RE s. v. \"Fortuna,\" cols. 27-28). He won Clampetia and several{306} other towns (Liv. 29.38.1). Cethegus held the elections (29.38.2-5). On his relation to the cult of the Magna Mater, see Grueber, CRRBM 2.271; Cesano, Stud. Num. 1.171." ;
+	dprr:hasID 1796 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1780> rdfs:label "Post Assertion Note: #1780" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Macedonia and Greece as Sulpicius' successor, he began military operations, but held a conference with Philip and concluded the peace of Phoenice (Liv. 29.12; Zon. 9.11; cf. App. Mac. 3). Elected Consul while still in his province (Liv. 29.11.10, and 12.16)." ;
+	dprr:hasID 1780 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1641> rdfs:label "Post Assertion Note: #1641" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 46f., 120, 448f. They leased the Campanian land, revised the Senate list with severity for the Metellus who urged desertion of Italy after Cannae, and for those knights who avoided military service (Liv. 27.11.8 and 12-16). Broke precedent to choose Fabius Princeps Senatus (27.11.7-11; Elogium Fabii). Completed the lustrum the following year (27.36.6-7)." ;
+	dprr:hasID 1641 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1570> rdfs:label "Post Assertion Note: #1570" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued in Gaul (Liv. 26.15)." ;
+	dprr:hasID 1570 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1532> rdfs:label "Post Assertion Note: #1532" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued in Gaul (Liv. 25.3.5; cf. 26.1.5)." ;
+	dprr:hasID 1532 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1481> rdfs:label "Post Assertion Note: #1481" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Captured the town of Atrinium (Liv. 24.47.14)." ;
+	dprr:hasID 1481 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1476> rdfs:label "Post Assertion Note: #1476" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 24.43.6 Provinces and armies 24.44.2-3, cf. 25.3.4 and 6" ;
+	dprr:hasID 1476 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1449> rdfs:label "Post Assertion Note: #1449" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 24.43.6-8. Celebrated ludi scaenici per quadriduum." ;
+	dprr:hasID 1449 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1391> rdfs:label "Post Assertion Note: #1391" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "With Octavius (see above), he led some soldiers in a break through Hannibal's lines at Cannae (Liv. 22.50.6-12, and 60.8-18; 24.43.8; cf. Coelius fr. 22 Peter; Frontin. Str. 4.5.7; App. Hann. 26)." ;
+	dprr:hasID 1391 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7801> rdfs:label "Post Assertion: #7801" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8329> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 7801 ;
+	dprr:hasDateStart -199 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7798> rdfs:label "Post Assertion: #7798" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1943> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 7798 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -200 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2331> rdfs:label "Post Assertion: #2331" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1943> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2331 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -200 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2296> rdfs:label "Post Assertion: #2296" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1919> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1918> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2296 ;
+	dprr:hasDateStart -201 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2227> rdfs:label "Post Assertion: #2227" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1858> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "P. Sempronius (Tuditanus) (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2227 ;
+	dprr:hasDateStart -203 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -203 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2164> rdfs:label "Post Assertion: #2164" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1796> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Sempronius C. f. C. n. Tuditanus (96)" ;
+	dprr:hasOfficeXref "Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2164 ;
+	dprr:hasDateStart -204 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -204 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2144> rdfs:label "Post Assertion: #2144" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1780> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "P. Sempronius (Tuditanus) (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2144 ;
+	dprr:hasDateStart -205 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -205 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1997> rdfs:label "Post Assertion: #1997" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1641> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Sempronius C. f. C. n. Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1997 ;
+	dprr:hasDateStart -209 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1909> rdfs:label "Post Assertion: #1909" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1570> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "P. Sempronius (Tuditanus) (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 1909 ;
+	dprr:hasDateStart -211 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -211 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1876> rdfs:label "Post Assertion: #1876" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1532> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 1876 ;
+	dprr:hasDateStart -212 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -212 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1828> rdfs:label "Post Assertion: #1828" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8872> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1481> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1476> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204 Gaul" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1828 ;
+	dprr:hasDateStart -213 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -213 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1804> rdfs:label "Post Assertion: #1804" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1449> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204, Pr. 213" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 1804 ;
+	dprr:hasDateStart -214 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -214 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1748> rdfs:label "Post Assertion: #1748" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1391> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "P. Sempronius Tuditanus (96)" ;
+	dprr:hasOfficeXref "Cos. 204" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 1748 ;
+	dprr:hasDateStart -216 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -216 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/882> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "96" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SEMP0882 P. Sempronius (96) C. f. C. n. Tuditanus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 882 ;
+	dprr:hasHighestOffice "cos. 204" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -243 ;
+	dprr:hasDprrID "SEMP0882" ;
+	dprr:hasCognomen "Tuditanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/882> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/777> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "93" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "SEMP0777 M. Sempronius (93) C. f. M. n. Tuditanus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 777 ;
+	dprr:hasHighestOffice "cos. 240" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "SEMP0777" ;
+	dprr:hasCognomen "Tuditanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/777> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1081> rdfs:label "Date Information: #1081" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/882> ;
+	dprr:hasValue -243 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 82." ;
+	dprr:hasID 1081 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

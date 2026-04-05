@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2254> rdfs:label "Status Assertion: #2254" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1385> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2254 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8942> rdfs:label "Post Assertion Note: #8942" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 735, footnote 95" ;
+	dprr:hasID 8942 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2676> rdfs:label "Post Assertion Note: #2676" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Recruited soldiers along the Adriatic coast (Liv. 43.9.6), and recalled all senators to Rome by edict before the elections (43.11.4)." ;
+	dprr:hasID 2676 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2675> rdfs:label "Post Assertion Note: #2675" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See note 3 above." ;
+	dprr:hasID 2675 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7943> rdfs:label "Post Assertion: #7943" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1385> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "inter peregrinos" ;
+	dprr:hasProvinceOriginal "ip" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8942> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2676> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2675> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Raecius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7943 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSourceText "170" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1385> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "RAEC1385 M. Raecius (3)" ;
+	dprr:hasNomen "Raecius" ;
+	dprr:hasID 1385 ;
+	dprr:hasHighestOffice "pr. 170" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "RAEC1385" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1385> .

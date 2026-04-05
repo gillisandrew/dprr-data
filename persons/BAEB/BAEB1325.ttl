@@ -1,0 +1,146 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2221> rdfs:label "Status Assertion: #2221" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1325> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2221 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2051> rdfs:label "Relationship Assertion Reference: #2051" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2051 ;
+	dprr:hasExtraInfo "IG V.2.146,147" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1660> rdfs:label "Relationship Assertion: #1660" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1325> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2051> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4085> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8933> rdfs:label "Post Assertion Note: #8933" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 734, footnote 90" ;
+	dprr:hasID 8933 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7370> rdfs:label "Post Assertion Note: #7370" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., amb. 173, no. c (MRR 1.409). Valerius and the other members of this embassy were sent to other cities and states as well, Pergamum, Syria, cities in Asia and perhaps in Cappadocia and Bithynia too: cf. in 172, Liv. 42.17.1 and 26.7-9 (MRR 1.414; see Meloni, Perseo 149, 163, 165, notes 2 and 3, and 166; Walbank, Comm. Polyb. 3.289).\n" ;
+	dprr:hasID 7370 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2600> rdfs:label "Post Assertion Note: #2600" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to King Perseus to observe conditions in Macedonia, and to Alexandria to renew Roman friendship with King Ptolemy (Liv. 42.6.4-5). On Valerius, see Münzer, Gent. Val. 47, no. 36." ;
+	dprr:hasID 2600 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2545> rdfs:label "Post Assertion Note: #2545" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named third in a group of five legates headed by a consular who were sent to Alexandria in 173. He was probably an ex-Praetor, and if so, held the office in 175." ;
+	dprr:hasID 2545 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2544> rdfs:label "Post Assertion Note: #2544" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Conceivably there were in 175, as in 179 and 177, only four Praetors, the number prescribed by the Baebian law. This law however did not prevent the election of six Praetors in 173 and thereafter, and may have been repealed or superseded by 175. Moreover, in 173 Baebius Sulca and Lutatius Cerco are found listed in an embassy in an order suitable for ex-Praetors (Liv. 42.6.5), but appear in no previous list of Praetors. In all probability there were six Praetors including these two in 175. Cf. Willems, Sénat 1.347f., note 6; 2.504. On these Praetors, see Münzer, APF 218f.; and for the possibility that one of the missing Praetors in 175 or 174 was P. Cornelius Blasio, see Holleaux, BCH 48 (1924) 381ff. See also 165, Praetors." ;
+	dprr:hasID 2544 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> rdfs:label "Post Assertion Note: #2542" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the Praetors of 175, see especially Münzer, APF 218f." ;
+	dprr:hasID 2542 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3151> rdfs:label "Post Assertion: #3151" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1325> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7370> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2600> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Baebius Sulca (40)" ;
+	dprr:hasOfficeXref "Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3151 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3091> rdfs:label "Post Assertion: #3091" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1325> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8933> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2545> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2544> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? Q. Baebius Sulca (40)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3091 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4085> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "47b" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "BAEB4085  Baebia (47b)" ;
+	dprr:hasNomen "Baebia" ;
+	dprr:hasID 4085 ;
+	dprr:hasHighestOffice "daughter of Q. Baebius (40) Sulca (pr.? 175)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "BAEB4085" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4085> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1325> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "40" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "BAEB1325 Q. Baebius (40) Sulca" ;
+	dprr:hasNomen "Baebius" ;
+	dprr:hasID 1325 ;
+	dprr:hasHighestOffice "pr.? 175" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "BAEB1325" ;
+	dprr:hasCognomen "Sulca" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1325> .

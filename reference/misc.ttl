@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/Sex/Male> rdfs:label "Sex: Male" ;
+	a dprr:Sex ;
+	dprr:hasName "Male" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/Sex/Female> rdfs:label "Sex: Female" ;
+	a dprr:Sex ;
+	dprr:hasName "Female" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/9> rdfs:label "Note Type: ruepke_LD" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_LD" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/8> rdfs:label "Note Type: ruepke_ST" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_ST" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/7> rdfs:label "Note Type: ruepke_P" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_P" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/6> rdfs:label "Note Type: ruepke_Ref" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_Ref" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/5> rdfs:label "Note Type: ruepke_number" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_number" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/4> rdfs:label "Note Type: Footnote (Office)" ;
+	a dprr:NoteType ;
+	dprr:hasName "Footnote (Office)" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/3> rdfs:label "Note Type: Reference Note (Office)" ;
+	a dprr:NoteType ;
+	dprr:hasName "Reference Note (Office)" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/2> rdfs:label "Note Type: Footnote" ;
+	a dprr:NoteType ;
+	dprr:hasName "Footnote" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/1> rdfs:label "Note Type: Reference Note" ;
+	a dprr:NoteType ;
+	dprr:hasName "Reference Note" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/15> rdfs:label "Note Type: ruepke_other" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_other" ;
+	dprr:hasID 15 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/14> rdfs:label "Note Type: ruepke_N" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_N" ;
+	dprr:hasID 14 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/13> rdfs:label "Note Type: ruepke_LA" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_LA" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/12> rdfs:label "Note Type: ruepke_L" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_L" ;
+	dprr:hasID 12 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/11> rdfs:label "Note Type: ruepke_RA" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_RA" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/NoteType/10> rdfs:label "Note Type: ruepke_B" ;
+	a dprr:NoteType ;
+	dprr:hasName "ruepke_B" ;
+	dprr:hasID 10 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/9> rdfs:label "Date Type: restored" ;
+	a dprr:DateType ;
+	dprr:hasName "restored" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/8> rdfs:label "Date Type: extradited" ;
+	a dprr:DateType ;
+	dprr:hasName "extradited" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/7> rdfs:label "Date Type: expelled from Senate" ;
+	a dprr:DateType ;
+	dprr:hasName "expelled from Senate" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/6> rdfs:label "Date Type: exiled" ;
+	a dprr:DateType ;
+	dprr:hasName "exiled" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/5> rdfs:label "Date Type: death - natural" ;
+	a dprr:DateType ;
+	dprr:hasName "death - natural" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/10> rdfs:label "Date Type: recalled" ;
+	a dprr:DateType ;
+	dprr:hasName "recalled" ;
+	dprr:hasID 10 .

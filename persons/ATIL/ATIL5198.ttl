@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> rdfs:label "Secondary Source: Shackleton Bailey 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Speeches" ;
+	dprr:hasID 33 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's speeches. Stuttgart : Teubner, 1992." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2226> rdfs:label "Relationship Assertion Reference: #2226" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2226 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3966> rdfs:label "Relationship Assertion: #3966" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5198> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2226> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5197> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2456> rdfs:label "Person Note: #2456" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p20. Caecin. 27. son of A. Atilius (10)" ;
+	dprr:hasID 2456 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5198> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "cf. 10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2456> ;
+	dprr:hasPersonName "ATIL5198 L. Atilius (cf. 10) A. f." ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 5198 ;
+	dprr:hasHighestOffice "son of A. Atilius (10)" ;
+	dprr:hasFiliation "A. f." ;
+	dprr:hasEraTo -1 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ATIL5198" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5198> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5197> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2455> ;
+	dprr:hasPersonName "ATIL5197 A. Atilius (10)" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 5197 ;
+	dprr:hasHighestOffice "father of L. Atilius (cf. 10) A. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ATIL5197" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5197> .

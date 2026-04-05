@@ -1,0 +1,254 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2394> rdfs:label "Status Assertion: #2394" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2394 ;
+	dprr:hasDateStart -130 ;
+	dprr:hasDateEnd -128 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/902> rdfs:label "Relationship Assertion Reference: #902" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicht dessen Sohn, wie bei Ps. Asc. div. in Caec. 203 St." ;
+	dprr:hasID 902 ;
+	dprr:hasExtraInfo "Dio XLVI 20.5" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7578> rdfs:label "Relationship Assertion: #7578" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1883> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7285> rdfs:label "Relationship Assertion: #7285" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/24> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1798> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6152> rdfs:label "Relationship Assertion: #6152" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4210> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4020> rdfs:label "Relationship Assertion: #4020" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/902> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2012> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1703> rdfs:label "Relationship Assertion: #1703" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1362> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1702> rdfs:label "Relationship Assertion: #1702" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1883> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1701> rdfs:label "Relationship Assertion: #1701" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4210> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/24> rdfs:label "Relationship: stepbrother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 35 ;
+	dprr:hasName "stepbrother of" ;
+	dprr:hasID 24 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9208> rdfs:label "Post Assertion Note: #9208" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 741, footnote 155" ;
+	dprr:hasID 9208 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3218> rdfs:label "Post Assertion Note: #3218" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "SIG\n     704, nos. B and C; 705, lines 22, and 28." ;
+	dprr:hasID 3218 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3217> rdfs:label "Post Assertion Note: #3217" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Pomtow (SIG(3) 704-705, note 3; cf. Klio 14 [1914] 302) identified the P. Cornelius of these inscriptions with the P. Cornelius P. f. Lentulus who was honored by the Isthmic guild of Dionysiac artists as a benefactor, presumably in 128-127 B.C. (SIG(3) 704 B and C; cf. 697). He believed that Cornelius, like Sisenna in 118, intervened as Praetor or Propraetor of Macedonia in the quarrels of the Dionysiac artists, and not, as Münzer suggests (RE Supb. 3.259f.) as Praetor Urbanus in Rome in the absence of the Consuls. The identification of the benefactor (SIG(3) 704 B) with the person honored in 704 C in 128 B.C. rests on uncertain restorations of the latter inscription, since only the ending of the name is preserved and no title is given. In 705, line 22 the phrase {Gr}, parallels closely the phrases (lines 32 and 60) referring to Sisenna as governor of Macedonia. Accordingly the date and identification remain quite uncertain, but the office was more probably the governorship of Macedonia than a magistracy in Rome. Daux (Delphes 361f.) holds that Pomtow's identification has no foundation. Riccobono in Font. Iur. Rom. Anteiustin. (1.248ff.) keeps the text of Bruns\n   \n    7\n   \n   and Dessau's conjecture that P. Cornelius was either Scipio Nasica, Cos. 138, or Scipio Aemilianus, Cos. 134." ;
+	dprr:hasID 3217 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3899> rdfs:label "Post Assertion: #3899" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9208> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3218> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3217> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? P. Cornelius P. f. Lentulus Pat. (202a, Supb. 3.359f.)" ;
+	dprr:hasOfficeXref "Macedonia ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3899 ;
+	dprr:hasDateStart -128 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -128 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4210> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "408" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CORN4210  Cornelia (408)" ;
+	dprr:hasNomen "Cornelia" ;
+	dprr:hasID 4210 ;
+	dprr:hasHighestOffice "daughter of? P. Cornelius (202a, Supb. 3.359f.) P. f. Lentulus (pr.? 128)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CORN4210" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4210> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2012> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "240" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN2012 P. Cornelius (240) P. f. P. n. Lentulus Sura" ;
+	dprr:hasOtherNames "Sura" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2012 ;
+	dprr:hasHighestOffice "cos. 71" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -63 ;
+	dprr:hasEraFrom -114 ;
+	dprr:hasDprrID "CORN2012" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2012> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1883> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "203" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN1883 P. Cornelius (203) Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1883 ;
+	dprr:hasHighestOffice "pr. before 90" ;
+	dprr:hasEraTo -87 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN1883" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1883> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1798> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "135" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1144> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1143> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1142> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1141> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1140> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1139> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1138> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1137> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1136> ;
+	dprr:hasPersonName "IULI1798 C. Iulius (135) L. f. Caesar Strabo Vopiscus" ;
+	dprr:hasOtherNames "Strabo Vopiscus" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasNobilisNotes "Liv. Per. 80" ;
+	dprr:hasID 1798 ;
+	dprr:hasHighestOffice "aed. cur. 90" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -87 ;
+	dprr:hasEraFrom -130 ;
+	dprr:hasDprrID "IULI1798" ;
+	dprr:hasCognomen "Caesar" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1798> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1631> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "202a, Supb. 3.359f." ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN1631 P. Cornelius (202a, Supb. 3.359f.) P. f. Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1631 ;
+	dprr:hasHighestOffice "pr.? 128" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CORN1631" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1631> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1362> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "202" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN1362 P. Cornelius (202) L. f. L. n. Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1362 ;
+	dprr:hasHighestOffice "cos. suff. 162" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -121 ;
+	dprr:hasEraFrom -205 ;
+	dprr:hasDprrID "CORN1362" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1362> .

@@ -1,0 +1,142 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3392> rdfs:label "Relationship Assertion: #3392" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/610> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/681> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1403> rdfs:label "Primary Source Reference: #1403" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. II 98" ;
+	dprr:hasID 1403 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1347> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1243> rdfs:label "Primary Source Reference: #1243" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXXVII 57.10" ;
+	dprr:hasID 1243 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1222> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/916> rdfs:label "Post Assertion Note: #916" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 9.42.10; Diod. 20.73.1; Fast. Cap. ([- -] Tr[e]mulus; P. Corn[elius- -]); Chr. 354 (Tremulo et Arvina); Fast. Hyd. (Remulo et Albino), so also Chr. Pasc.; Cassiod.; Degrassi 38f., 111, 422f. Cornelius fought Samnites who had taken Calatia and Sora, Marcius the Hernici and Anagnini, over whom he celebrated a triumph, and the{166} Samnites (Liv. 9.43; Cic. Phil. 6.13; Act. Tr., Degrassi 70f., 542; Plin. NH 34.23; cf. Diod. 20.80.1-4; Grueber, CRRBM 2.277; Cesano, Stud. Num. 1.153f.). These Consuls too (see 307) were omitted by Piso (Liv. 9.44.3-4)." ;
+	dprr:hasID 916 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/915> rdfs:label "Post Assertion Note: #915" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The name of Marcius is preserved entire in Act. Tr. On the filiation of Cornelius Arvina, see Act. Tr. on Cornelius Cossus Arvina, Cos. 343. The name is preserved almost entire in Fast. Cap. for 294, Censors." ;
+	dprr:hasID 915 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1026> rdfs:label "Post Assertion Note: #1026" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Chr. 354 (Tremulo II et Arvina); Fast. Hyd. (Cremulo et Albino), so also Chr. Pasc.; Cassiod. (Q. Marcius et P. Cornelius); Degrassi 112, 428f." ;
+	dprr:hasID 1026 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1025> rdfs:label "Post Assertion Note: #1025" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the name of Marcius, see Act. Tr. on 306; on that of Cornelius, Fast. Cap. on 294." ;
+	dprr:hasID 1025 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10156> rdfs:label "Post Assertion Note: #10156" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Anagnineis, Herniceisque. MRR I.165-6, Itgenshorst no. 84, Rich no. 84." ;
+	dprr:hasID 10156 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1347> rdfs:label "Post Assertion: #1347" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/610> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1026> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1025> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Marcius Q. f. Q. n. Tremulus (106)" ;
+	dprr:hasOfficeXref "Cos. 306" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1347 ;
+	dprr:hasDateStart -288 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -288 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1222> rdfs:label "Post Assertion: #1222" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/610> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/916> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/915> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Marcius Q. f. Q. n. Tremulus (106)" ;
+	dprr:hasOfficeXref "Cos. 288" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1222 ;
+	dprr:hasDateStart -306 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -306 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10551> rdfs:label "Post Assertion: #10551" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/610> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10156> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10551 ;
+	dprr:hasDateStart -306 ;
+	dprr:hasDateSourceText "306" ;
+	dprr:hasDateEnd -306 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/681> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "78" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC0681 Q. Marcius (78) Q. f. Q. n. Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 681 ;
+	dprr:hasHighestOffice "cos. 281" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "MARC0681" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/681> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/610> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "106" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC0610 Q. Marcius (106) Q. f. Q. n. Tremulus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 610 ;
+	dprr:hasHighestOffice "cos. 306" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "MARC0610" ;
+	dprr:hasCognomen "Tremulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/610> .

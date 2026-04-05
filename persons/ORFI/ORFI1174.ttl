@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2197> rdfs:label "Post Assertion Note: #2197" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Baebius in Thessaly and was placed in charge of Chyretiae ({Gr} 1917, 2; cf. Liv. 36.13.4)." ;
+	dprr:hasID 2197 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2654> rdfs:label "Post Assertion: #2654" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1174> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2197> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Sex. Orfidienus (col. 1019)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 2654 ;
+	dprr:hasDateStart -191 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -191 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1174> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "col. 1019" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "ORFI1174 Sex. Orfidienus (col. 1019)" ;
+	dprr:hasNomen "Orfidienus" ;
+	dprr:hasID 1174 ;
+	dprr:hasHighestOffice "praef.? 191" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "ORFI1174" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1174> .

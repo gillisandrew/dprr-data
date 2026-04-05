@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1803> rdfs:label "Primary Source Reference: #1803" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Suet. Aug. 69.1" ;
+	dprr:hasID 1803 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1733> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1374> rdfs:label "Post Assertion Note: #1374" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestors of the Consuls; perished at Cannae (Liv. 22.49.16)." ;
+	dprr:hasID 1374 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1733> rdfs:label "Post Assertion: #1733" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/876> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1374> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Furius Bibaculus Pat. (35)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 1733 ;
+	dprr:hasDateStart -216 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -216 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/876> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "35" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "FURI0876 L. Furius (35) Bibaculus" ;
+	dprr:hasNomen "Furius" ;
+	dprr:hasID 876 ;
+	dprr:hasHighestOffice "q. 216" ;
+	dprr:hasEraTo -216 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "FURI0876" ;
+	dprr:hasCognomen "Bibaculus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/876> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1074> rdfs:label "Date Information: #1074" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/876> ;
+	dprr:hasValue -216 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, B. of Cannae." ;
+	dprr:hasID 1074 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

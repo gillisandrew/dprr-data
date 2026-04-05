@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2022> rdfs:label "Primary Source Reference: #2022" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 38.5" ;
+	dprr:hasID 2022 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1950> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1612> rdfs:label "Post Assertion Note: #1612" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In the dispute regarding the appointment of a Dictator, he proposed that the Plebs be asked to name their choice (Liv. 27.5.14-19)." ;
+	dprr:hasID 1612 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1611> rdfs:label "Post Assertion Note: #1611" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The election took place at a time when it was feared a Carthaginian armada might still sail. These Tribunes therefore are probably the Tribunes of 210, not those of 209 who would enter office in December, and the Consuls in March." ;
+	dprr:hasID 1611 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1950> rdfs:label "Post Assertion: #1950" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/965> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1612> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1611> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "M. Lucretius (6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1950 ;
+	dprr:hasDateStart -210 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -210 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/965> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LUCR0965 M. Lucretius (6)" ;
+	dprr:hasNomen "Lucretius" ;
+	dprr:hasID 965 ;
+	dprr:hasHighestOffice "tr. pl. 210" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "LUCR0965" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/965> .

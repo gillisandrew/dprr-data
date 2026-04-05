@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/10> rdfs:label "Tribe Assertion: #10" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1904> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/20> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 10 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/20> rdfs:label "Tribe: Oufentina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Oufentina" ;
+	dprr:hasID 20 ;
+	dprr:hasAbbreviation "Ouf." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/247> rdfs:label "Status Assertion Note: #247" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 40. ILS 8888. tr. mil. ?" ;
+	dprr:hasID 247 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/247> rdfs:label "Status Assertion: #247" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1904> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/247> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "P. ATTIUS (absent)" ;
+	dprr:hasID 247 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7426> rdfs:label "Post Assertion Note: #7426" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Delete the cognomen, for which there is no evidence since the gentilicium of the family of the mother of Augustus was Atius and the tribe of Aricia was Hor. not Ouf. (RS, CP). See MRR 2.35, 38, note 8; see also Criniti, L'Epigrafe di Asculum 18, 103-104, and H. B. Mattingly, Athenaeum 53, 1975, 262.\n" ;
+	dprr:hasID 7426 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3920> rdfs:label "Post Assertion Note: #3920" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "8 Cichorius suggests that he was the father of Caesar's brother-in-law, and excludes the Atti Vari by reason of the tribe (RS 145)." ;
+	dprr:hasID 3920 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4546> rdfs:label "Post Assertion: #4546" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1904> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7426> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3920> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Attius P. f. Ouf. (Balbus) (not in RE; cf. Attius 11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 4546 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1904> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "ATTI1904 P. Attius (not in RE) P. f. Ouf." ;
+	dprr:hasOrigin "Latium or Campania or Umbria?" ;
+	dprr:hasNomen "Attius" ;
+	dprr:hasID 1904 ;
+	dprr:hasHighestOffice "tr. mil.? 89" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ATTI1904" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1904> .

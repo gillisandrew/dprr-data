@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4482> rdfs:label "Post Assertion Note: #4482" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legatus pro praetore in Asia under Lucullus (CIL 12.2.743-ILS 37). See 74, Legates." ;
+	dprr:hasID 4482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4443> rdfs:label "Post Assertion Note: #4443" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legatus pro praetore in Asia under Lucullus, who protected Mysia Abbaeitis and Phrygia Epiktetos during the war with Mithridates (CIL 12.2.743-ILS 37; see Magic, Roman Rule in Asia Minor 2.1208, note 15; and below, additional note, on the date)." ;
+	dprr:hasID 4443 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5060> rdfs:label "Post Assertion: #5060" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2097> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4482> ;
+	dprr:hasPosition 11 ;
+	dprr:hasOriginalText "C. Salluvius C. f. Naso (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5060 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5023> rdfs:label "Post Assertion: #5023" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2097> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4443> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "C. Salluvius C. f. Naso (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5023 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2097> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SALL2097 C. Salluvius (1) C. f. Naso" ;
+	dprr:hasNomen "Salluvius" ;
+	dprr:hasID 2097 ;
+	dprr:hasHighestOffice "leg. lieut. 73" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SALL2097" ;
+	dprr:hasCognomen "Naso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2097> .

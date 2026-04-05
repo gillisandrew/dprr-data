@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/735> rdfs:label "Primary Source Reference: #735" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Rab. Post. 2" ;
+	dprr:hasID 735 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/726> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/524> rdfs:label "Post Assertion Note: #524" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Went safely among the Gauls to perform, according to Livy (5.46.1-3, and 52.3, with praenomen C.; Val. Max. 1.1.11), private family rites, but according to other sources, public rites as Pontifex (Cass. Hem. fr. 19 Peter, in App. Celt. 6; cf. Flor. 1.7.16; Dio fr. 25, with praenomen Caeso; Ampel. 20)." ;
+	dprr:hasID 524 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/726> rdfs:label "Post Assertion: #726" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/403> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/524> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. or K. Fabius Dorsuo Pat. (68)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 726 ;
+	dprr:hasDateStart -390 ;
+	dprr:hasDateSourceText "?- 390" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -390 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/403> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "68" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FABI0403 C. (or K.) Fabius (68) Dorsuo" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 403 ;
+	dprr:hasHighestOffice "pont. before 389" ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "FABI0403" ;
+	dprr:hasCognomen "Dorsuo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/403> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Caeso> .

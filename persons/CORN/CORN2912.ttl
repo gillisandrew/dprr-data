@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2902> rdfs:label "Status Assertion: #2902" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2912> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2902 ;
+	dprr:hasDateStart -37 ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6474> rdfs:label "Post Assertion Note: #6474" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cupr., Degrassi 244f.; Fast. Ven., ibid. 251, 254f.; Fast. Mag. Vic., ibid. 283, 288; Fast. Amit., ibid. 170f.; cf. ibid. 136, 5101.; on Cornelius, see PIR² 2.308, no. 1313, and 314, no. 1338; De Laet no. 126; on Valerius, see PIR 3.370, no. 94; De Laet no. 399." ;
+	dprr:hasID 6474 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7228> rdfs:label "Post Assertion: #7228" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2912> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6474> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius - f. - n. (Cinna) Pat. (32, cf. 104)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 7228 ;
+	dprr:hasDateStart -32 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2912> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "32, cf. 104" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN2912 L. Cornelius (32, cf. 104) (Cinna)" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2912 ;
+	dprr:hasHighestOffice "cos. suff. 32" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CORN2912" ;
+	dprr:hasCognomen "(Cinna)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2912> .

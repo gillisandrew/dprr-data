@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2367> rdfs:label "Status Assertion: #2367" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1585> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2367 ;
+	dprr:hasDateStart -136 ;
+	dprr:hasDateEnd -136 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3116> rdfs:label "Post Assertion Note: #3116" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Willems (Sénat 1.113) holds that Scipio Nasica Serapio, Cos. 138, was chosen Princeps Senatus in 136, but the passage of Diodorus (34.33) on which he bases his argument has confused three generations of Nasicae. The evidence of Plutarch strongly indicates that Claudius was Princeps Senatus in 133." ;
+	dprr:hasID 3116 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3115> rdfs:label "Post Assertion Note: #3115" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "When Mancinus returned to Rome, Rutilius prevented him from entering the Senate on the ground that he had lost his citizenship beyond recovery (Cic. De Or. 1.181; cf. 238; 2.137; see Praetors, on Scaevola). On his name, see CIL 1\n     .2.360." ;
+	dprr:hasID 3115 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3777> rdfs:label "Post Assertion: #3777" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1585> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3116> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3115> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Rutilius M. f. (9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3777 ;
+	dprr:hasDateStart -136 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -136 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1585> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "RUTI1585 P. Rutilius (9) M. f." ;
+	dprr:hasNomen "Rutilius" ;
+	dprr:hasID 1585 ;
+	dprr:hasHighestOffice "tr. pl. 136" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "RUTI1585" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1585> .

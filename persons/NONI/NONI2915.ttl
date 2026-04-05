@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1450> rdfs:label "Status Assertion: #1450" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2915> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1450 ;
+	dprr:hasDateStart -32 ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7975> rdfs:label "Post Assertion Note: #7975" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Pl. 32. In MRR 2.418, refer also to Syme, Historia 13, 1964, 120; Wiseman, NM 245, no. 275.[147x]\n" ;
+	dprr:hasID 7975 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6477> rdfs:label "Post Assertion Note: #6477" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Consul Sosius was ready to propose immediate action against Octavian in the Senate on the first of February, but the Tribune interposed his veto (Dio 50.2.3, when Sosius had the fasces; see above, Consuls, on Sosius; and for the date ' T. Rice Holmes, Architect of the Roman Empire 234f.). See PIR 2.411, no. 101; De Laet no. 260." ;
+	dprr:hasID 6477 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7233> rdfs:label "Post Assertion: #7233" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2915> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7975> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6477> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M.? Nonius Balbus (25-26, cf. 27)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 7233 ;
+	dprr:hasDateStart -32 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2915> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "25-26, cf. 27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "NONI2915 M.? Nonius (25-26, cf. 27) Balbus" ;
+	dprr:hasNomen "Nonius" ;
+	dprr:hasID 2915 ;
+	dprr:hasHighestOffice "tr. pl. 32" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "NONI2915" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2915> .

@@ -1,0 +1,259 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/334> rdfs:label "Tribe Assertion: #334" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/24> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p191. From Regium Lepidum" ;
+	dprr:hasID 334 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/24> rdfs:label "Tribe: Pollia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Pollia" ;
+	dprr:hasID 24 ;
+	dprr:hasAbbreviation "Pol." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1257> rdfs:label "Status Assertion: #1257" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1257 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9731> rdfs:label "Post Assertion Note: #9731" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He held a command in Syria before 43, when he was proscribed (App. B.C. 4.40). He may be identified with Caesar's legatein Gaul, C. AIntistius Reginus 939)." ;
+	dprr:hasID 9731 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7681> rdfs:label "Post Assertion Note: #7681" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Reginus to whom Cicero refers in May 49 (Att. 10.21.1), perhaps as a naval commander, may be identified with Caesar's legatus in Gaul, 53-50 (TJC; RS, CP; Shackleton Bailey, CLA 4.203).\n" ;
+	dprr:hasID 7681 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5471> rdfs:label "Post Assertion Note: #5471" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul (see 52, Legates)." ;
+	dprr:hasID 5471 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5407> rdfs:label "Post Assertion Note: #5407" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul (see 52, Legates)." ;
+	dprr:hasID 5407 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5355> rdfs:label "Post Assertion Note: #5355" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul (Caes. BG 7.83.3, and 90.6)." ;
+	dprr:hasID 5355 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5292> rdfs:label "Post Assertion Note: #5292" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate of Caesar in Gaul (Caes. BG 6.1.1)." ;
+	dprr:hasID 5292 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10455> rdfs:label "Post Assertion Note: #10455" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Hinard suggests a possible praetorship before his proscription" ;
+	dprr:hasID 10455 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10454> rdfs:label "Post Assertion Note: #10454" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Attested with Sextus Pompey in 35 and reported to have been with him for a long time. Presumably with Sextus since 42, when many proscripti fled to him." ;
+	dprr:hasID 10454 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10453> rdfs:label "Post Assertion Note: #10453" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "App. BC 5.139. Hinard, following Gabba and Willems, identifies the proscriptus with the Antistius (3) named alongside C. Fannius, Libo, Cassius Parmensis, Q. Nasidius, Saturninus, and Thermus as a senior and longstanding associate of Sextus Pompey, all in the East in 35. Following Sextus' downfall, all surrender to Antony." ;
+	dprr:hasID 10453 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9270> rdfs:label "Post Assertion: #9270" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9731> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 9270 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSourceText "before 43" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7864> rdfs:label "Post Assertion: #7864" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7681> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "(C. Antistius) Regulus (39)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 7864 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6147> rdfs:label "Post Assertion: #6147" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gaul" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5471> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? C. Antistius Reginus (39)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6147 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6073> rdfs:label "Post Assertion: #6073" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gaul" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5407> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? C. Antistius Reginus (39)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6073 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6020> rdfs:label "Post Assertion: #6020" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gaul" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5355> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Antistius Reginus (39)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6020 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5956> rdfs:label "Post Assertion: #5956" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gaul" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5292> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Antistius Reginus (39)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5956 ;
+	dprr:hasDateStart -53 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -53 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10892> rdfs:label "Post Assertion: #10892" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10455> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 10892 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10891> rdfs:label "Post Assertion: #10891" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10454> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10891 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSourceText "42-36" ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10890> rdfs:label "Post Assertion: #10890" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10453> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10890 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSourceText "35" ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2461> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "39" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ANTI2461 C. Antistius (39) C. f. Pol. Reginus" ;
+	dprr:hasOrigin "Regium Lepidum" ;
+	dprr:hasNomen "Antistius" ;
+	dprr:hasID 2461 ;
+	dprr:hasHighestOffice "pr.? before 42" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ANTI2461" ;
+	dprr:hasCognomen "Reginus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2461> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1923> rdfs:label "Date Information: #1923" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2461> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 7" ;
+	dprr:hasID 1923 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

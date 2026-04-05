@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/166> rdfs:label "Tribe Assertion: #166" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4380> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/4> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 166 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/4> rdfs:label "Tribe: Camilia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Camilia" ;
+	dprr:hasID 4 ;
+	dprr:hasAbbreviation "Cam." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/13> rdfs:label "Status Assertion Note: #13" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 42. Cic. Brut. 271. eques Romanus" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/13> rdfs:label "Status Assertion: #13" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4380> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/13> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "T. ATTIUS ((Supp. 1) 1a ) PISAURENSIS" ;
+	dprr:hasID 13 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSourceText "c. 66" ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4380> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Suppl. 1 1a " ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "ATTI4380 T. Attius (Suppl. 1 1a ) Cam. Pisaurensis" ;
+	dprr:hasOrigin "Pisaurum" ;
+	dprr:hasNomen "Attius" ;
+	dprr:hasID 4380 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ATTI4380" ;
+	dprr:hasCognomen "Pisaurensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4380> .

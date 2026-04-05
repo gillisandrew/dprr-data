@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2674> rdfs:label "Status Assertion: #2674" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2224> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2674 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9106> rdfs:label "Post Assertion Note: #9106" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 752, footnote 402" ;
+	dprr:hasID 9106 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4680> rdfs:label "Post Assertion Note: #4680" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Cluent. 126; cf. Plin. NH 35.100." ;
+	dprr:hasID 4680 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4679> rdfs:label "Post Assertion Note: #4679" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "3 The date of the praetorships of Iunius and Publicius, and the curule aedileships of Flaminius and Plaetorius must be later than the term of the Censors elected about July 70 (Cic. Cluent. 126) and precede Cicero's praetorship in 66 (147). As Flaminius and Plaetorius were then in charge of the Quaestio de sicariis it is probable that, like Caesar in 64, they held the office of Iudex Quaestionis in the year following their aedileship. Accordingly, I place their aedileship and the praetorship of lunius and Publicius in 67 (see Wehrmann, FP 48, note; and Münzer, RE, Flaminius no. 4). Sydenham (lxiv) dates Plaetorius in 68." ;
+	dprr:hasID 4679 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8107> rdfs:label "Post Assertion: #8107" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2224> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "urbanus" ;
+	dprr:hasProvinceOriginal "U" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9106> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4680> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4679> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Iunius (25, cf. 23)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8107 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSourceText "67" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2224> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "25, cf. 23" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "IUNI2224 M. Iunius (25, cf. 23)" ;
+	dprr:hasNomen "Iunius" ;
+	dprr:hasID 2224 ;
+	dprr:hasHighestOffice "pr. 67" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "IUNI2224" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2224> .

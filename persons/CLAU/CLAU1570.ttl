@@ -1,0 +1,126 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/237> rdfs:label "Status Assertion Note: #237" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 93. Gell. 3.4.1. demoted to aerarius by Scipio" ;
+	dprr:hasID 237 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/237> rdfs:label "Status Assertion: #237" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1570> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/237> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Ti. CLAUDIUS (63) ASELLUS" ;
+	dprr:hasID 237 ;
+	dprr:hasDateStart -140 ;
+	dprr:hasDateSourceText "142-140" ;
+	dprr:hasDateEnd -140 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2355> rdfs:label "Status Assertion: #2355" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1570> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2355 ;
+	dprr:hasDateStart -140 ;
+	dprr:hasDateEnd -140 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1692> rdfs:label "Relationship Assertion: #1692" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1570> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4213> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 81 ;
+	dprr:hasName "related to" ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3073> rdfs:label "Post Assertion Note: #3073" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Attempted to hinder Caepio's departure for Spain (Liv. Oxy. Per. 54). In revenge for Scipio's attempt while Censor to demote him to the aerarii, he prosecuted him and taunted him with his infelix lustrum (Cic. De Or. 2.258, 268; Gell. 2.20.6; 3.4.1; 4.17.1; 6.11.9; Fest. 362 L; cf. FOR 1.114-116, 237f.)." ;
+	dprr:hasID 3073 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3731> rdfs:label "Post Assertion: #3731" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1570> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3073> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Ti. Claudius Asellus (63)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3731 ;
+	dprr:hasDateStart -140 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -140 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4213> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "60" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CLAU4213 -. Claudius (60) Asellus" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 4213 ;
+	dprr:hasHighestOffice "married to Licinia (178)" ;
+	dprr:hasEraTo -154 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CLAU4213" ;
+	dprr:hasCognomen "Asellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4213> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1570> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "63" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Tiberius> ;
+	dprr:hasPersonName "CLAU1570 Ti. Claudius (63) Asellus" ;
+	dprr:hasOrigin "Campania?" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 1570 ;
+	dprr:hasHighestOffice "tr. pl. 140" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CLAU1570" ;
+	dprr:hasCognomen "Asellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1570> .

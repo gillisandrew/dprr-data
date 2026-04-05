@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/168> rdfs:label "Tribe Assertion: #168" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4386> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/35> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 168 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/35> rdfs:label "Tribe: Stellatina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Stellatina" ;
+	dprr:hasID 35 ;
+	dprr:hasAbbreviation "Ste." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/19> rdfs:label "Status Assertion Note: #19" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 55. ILS 8888. consilium of 89. in 31st rank of simple equites" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/19> rdfs:label "Status Assertion: #19" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4386> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/19> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Cn. BUSSENI(US) (s. n.)" ;
+	dprr:hasID 19 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSourceText "89" ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10386> rdfs:label "Post Assertion Note: #10386" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "D.53. On consilium of Cn. Pompeius Strabo in 89 (CIL 1(2).709=ILS 8888)." ;
+	dprr:hasID 10386 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10781> rdfs:label "Post Assertion: #10781" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4386> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10386> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10781 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSourceText "89" ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4386> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Bussenius" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "BUSS4386 Cn. Bussenius (Bussenius) Cn. f. Ste." ;
+	dprr:hasOrigin "Urvinum Mataurensis?" ;
+	dprr:hasNomen "Bussenius" ;
+	dprr:hasID 4386 ;
+	dprr:hasHighestOffice "officer (title not preserved) 89" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "BUSS4386" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4386> .

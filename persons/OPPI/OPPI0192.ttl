@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/363> rdfs:label "Primary Source Reference: #363" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Cael. 3" ;
+	dprr:hasID 363 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/358> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/280> rdfs:label "Post Assertion Note: #280" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Chosen leaders of the group of 20 (ten from each army) elected by the soldiers after the death of Verginia (Liv. 3.51.2-10; Dion. Hal. 11.43.5, and 44.2-3)." ;
+	dprr:hasID 280 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/358> rdfs:label "Post Assertion: #358" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/192> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/280> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Oppius (13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 358 ;
+	dprr:hasDateStart -449 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -449 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/192> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "OPPI0192 M. Oppius (13)" ;
+	dprr:hasNomen "Oppius" ;
+	dprr:hasID 192 ;
+	dprr:hasHighestOffice "tr. mil. 449" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "OPPI0192" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/192> .

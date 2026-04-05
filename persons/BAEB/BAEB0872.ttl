@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1148> rdfs:label "Relationship Assertion Reference: #1148" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1148 ;
+	dprr:hasExtraInfo "Liv. XXII 34.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/960> rdfs:label "Relationship Assertion: #960" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/872> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1148> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/818> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 81 ;
+	dprr:hasName "related to" ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1799> rdfs:label "Primary Source Reference: #1799" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Suet. Aug. 61.2" ;
+	dprr:hasID 1799 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1729> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1371> rdfs:label "Post Assertion Note: #1371" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A relative of Varro who campaigned vigorously for his election to the consulship (Liv. 22.34.3-11)." ;
+	dprr:hasID 1371 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1370> rdfs:label "Post Assertion Note: #1370" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Baebius had entered office in December 217 (Niccolini FTP 91f.)." ;
+	dprr:hasID 1370 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1729> rdfs:label "Post Assertion: #1729" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/872> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1371> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1370> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Baebius Herennius (26)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1729 ;
+	dprr:hasDateStart -216 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -216 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/872> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "BAEB0872 Q. Baebius (26) Herennius" ;
+	dprr:hasNomen "Baebius" ;
+	dprr:hasID 872 ;
+	dprr:hasHighestOffice "tr. pl. 216" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "BAEB0872" ;
+	dprr:hasCognomen "Herennius" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/872> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/818> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "83" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TERE0818 C. Terentius (83) C. f. M. n. Varro" ;
+	dprr:hasNovusNotes "Liv. 22.34" ;
+	dprr:hasNomen "Terentius" ;
+	dprr:hasNobilisNotes "[Acro.] Hor. Carm. 1.12" ;
+	dprr:hasID 818 ;
+	dprr:hasHighestOffice "cos. 216" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -251 ;
+	dprr:hasDprrID "TERE0818" ;
+	dprr:hasCognomen "Varro" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/818> .

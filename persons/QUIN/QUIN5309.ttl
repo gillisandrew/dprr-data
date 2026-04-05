@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2567> rdfs:label "Person Note: #2567" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p82. Leg. Agr. (2, 69),3.3,(3.8, 3.13f. ). father-in-law of Rullus" ;
+	dprr:hasID 2567 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5309> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "56" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2567> ;
+	dprr:hasPersonName "QUIN5309 C. Quinctius (56) Valgus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 5309 ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "QUIN5309" ;
+	dprr:hasCognomen "Valgus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5309> .

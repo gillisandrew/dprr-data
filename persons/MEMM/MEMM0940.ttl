@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1969> rdfs:label "Primary Source Reference: #1969" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. VII 5.1" ;
+	dprr:hasID 1969 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1897> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1557> rdfs:label "Post Assertion Note: #1557" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The first to celebrate the Cerealia (Grueber, CRRBM 1.496; Cesano, Stud. Num. 1.169f.)." ;
+	dprr:hasID 1557 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1556> rdfs:label "Post Assertion Note: #1556" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Memmius' aedileship must precede 202, when the festival is noted (Liv. 30.39.8), and also 210, since the series of Aediles of the Plebs is known from 210 to 198 and does not include his name. See Seidel 24f." ;
+	dprr:hasID 1556 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1897> rdfs:label "Post Assertion: #1897" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/940> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1557> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1556> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Memmius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 1897 ;
+	dprr:hasDateStart -211 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -211 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/940> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MEMM0940 -. Memmius (1)" ;
+	dprr:hasNomen "Memmius" ;
+	dprr:hasID 940 ;
+	dprr:hasHighestOffice "aed. pl. before 210" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MEMM0940" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/940> .

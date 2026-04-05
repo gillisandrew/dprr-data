@@ -1,0 +1,174 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1646> rdfs:label "Status Assertion: #1646" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1646 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> rdfs:label "Secondary Source: Broughton MRR II Appendix 3" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 3" ;
+	dprr:hasID 4 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 3. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 3" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2177> rdfs:label "Relationship Assertion Reference: #2177" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2177 ;
+	dprr:hasExtraInfo "VM 9.2.1, Flor. 2.9.26, Oros. 5.21.8" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3044> rdfs:label "Relationship Assertion: #3044" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2169> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3043> rdfs:label "Relationship Assertion: #3043" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2177> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2087> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9721> rdfs:label "Post Assertion Note: #9721" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Put to death at Sulla’s command along with Venuleius (Oros. 5.21.8, P. Laetorius; Flor. 2.9.26, without the praenomen; Val. Max. 9.2.1, M. Plaetorius). Münzer distinguishes him from the M. Laetorius who fled into exile with Marius in 88 (App. BC 1.60). See MRR 2.494." ;
+	dprr:hasID 9721 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6929> rdfs:label "Post Assertion Note: #6929" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A senator who was slain by Sulla in 82 (Val. Max. 9.2.1; cf. Flor. 2.9.26; Oros. 5.21.8, P. Laetorius)." ;
+	dprr:hasID 6929 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7685> rdfs:label "Post Assertion: #7685" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9721> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6929> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Plaetorius (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7685 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateSourceText "killed, 82" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3234> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PLAE3234 M. Plaetorius (11)" ;
+	dprr:hasNomen "Plaetorius" ;
+	dprr:hasID 3234 ;
+	dprr:hasHighestOffice "sen. 82" ;
+	dprr:hasEraTo -82 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAE3234" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3234> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2169> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PLAE2169 M. Plaetorius (16) M. f. Cestianus" ;
+	dprr:hasOrigin "Praeneste (Farney E23)" ;
+	dprr:hasNomen "Plaetorius" ;
+	dprr:hasID 2169 ;
+	dprr:hasHighestOffice "pr.? 64" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAE2169" ;
+	dprr:hasCognomen "Cestianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2169> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2087> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PLAE2087 L. Plaetorius (14) L. f. Cestianus" ;
+	dprr:hasNomen "Plaetorius" ;
+	dprr:hasID 2087 ;
+	dprr:hasHighestOffice "q. before 66" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAE2087" ;
+	dprr:hasCognomen "Cestianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2087> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/812> rdfs:label "Date Information: #812" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasValue -82 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "executed by Sulla." ;
+	dprr:hasID 812 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2052> rdfs:label "Date Information: #2052" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3234> ;
+	dprr:hasValue -82 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 82 no. 58" ;
+	dprr:hasID 2052 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

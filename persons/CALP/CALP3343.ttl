@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7272> rdfs:label "Post Assertion Note: #7272" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer, probably a legatus, under C. Annius in Spain in 81, who defeated and killed L. Livius Salinator (MRR 2.78) at the Pyrenees and opened the way for Annius to attack Sertorius (Sall. Hist. 1.96M, cf. 97; Plut. Sert. 7). Cicero mentions him (Off.' 3.66) as of a date before 91 when the father of Cato Uticensis was still alive. Perhaps a son of the monetalis P. Calpurnius (17). (RS, MS-RP 1.278). On the provinces, see Badian, M21. Piganiol 901ff.\n" ;
+	dprr:hasID 7272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7910> rdfs:label "Post Assertion: #7910" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3343> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Spain" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7272> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Calpurnius Lanarius (49)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 7910 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3343> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "49" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CALP3343 P. Calpurnius (49) Lanarius" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 3343 ;
+	dprr:hasHighestOffice "officer (title not preserved) 81" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CALP3343" ;
+	dprr:hasCognomen "Lanarius" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3343> .

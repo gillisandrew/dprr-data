@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/261> rdfs:label "Primary Source Reference: #261" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. VI 8.5" ;
+	dprr:hasID 261 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/257> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/184> rdfs:label "Primary Source Reference: #184" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Caes. b.Afr. 28.4" ;
+	dprr:hasID 184 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/180> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/210> rdfs:label "Post Assertion Note: #210" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.25.1; Diod. 11.88.1; Fast. Cap. (name entire); Dion. Hal. 10.22.1; 11.20.1; Val. Max. 5.2.2; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; Degrassi 24f., 92, 362f. Held command against the Sabines and named Cincinnatus Dictator (Liv. 3.26.2 and 6; 3.29.7; Dion. Hal. 10.22.2; 10.23.4-5, and 25.3; 11.20.1; Val. Max. 5.2.2)." ;
+	dprr:hasID 210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/142> rdfs:label "Post Assertion Note: #142" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.52.6; Diod. 1.60.1; Fast. Cap. ([- - - -R]utilus); Dion. Hal. 9.28.1; Chr. 354 (Publicola et Rutillo); Fast. Hyd. (Nautio et Publicola), so also Chr. Pasc.; Cassiod.; Degrassi 24f., 90, 356f. Nautius carried on the war with the Volscians, while Valerius defeated the Veientanes and the Sabines and celebrated a triumph (Liv. 2.53.1-6; Dion. Hal. 9.34.1-35.6; Act. Tr., Degrassi 66f., 537). On Valerius, see Münzer, Gent. Val. 34, no. 2." ;
+	dprr:hasID 142 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/141> rdfs:label "Post Assertion Note: #141" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The full name of Valerius is preserved in Fast. Cap. on 460, that of Nautius ib. on 458, Degrassi 24f. I follow here the order of Diod., Dion. Hal., and Fast. Cap. Livy and Cassiod. put Nautius first." ;
+	dprr:hasID 141 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/257> rdfs:label "Post Assertion: #257" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/101> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/210> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Nautius Sp. f. Sp. n. Rutilus Pat. (5)" ;
+	dprr:hasOfficeXref "Cos. 475" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 257 ;
+	dprr:hasDateStart -458 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -458 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/180> rdfs:label "Post Assertion: #180" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/101> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/142> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/141> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Nautius Sp. f. Sp. n. Rutilus Pat. (5)" ;
+	dprr:hasOfficeXref "Cos. 458{28}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 180 ;
+	dprr:hasDateStart -475 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -475 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/101> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "NAUT0101 C. Nautius (5) Sp. f. Sp. n. Rutilus" ;
+	dprr:hasNomen "Nautius" ;
+	dprr:hasID 101 ;
+	dprr:hasHighestOffice "cos. 475" ;
+	dprr:hasFiliation "Sp. f. Sp. n." ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "NAUT0101" ;
+	dprr:hasCognomen "Rutilus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/101> .

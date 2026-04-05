@@ -1,0 +1,135 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2768> rdfs:label "Relationship Assertion: #2768" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1885> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2767> rdfs:label "Relationship Assertion: #2767" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1885> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1900> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7796> rdfs:label "Post Assertion Note: #7796" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., lieut. 90. Identified with Plautius in 87 (MRR 2.51) by Schleussner, Legaten 231, no. 127. See MRR 2.29 and 51, 53, note 10; and Wiseman, NM 252, no. 324.\n" ;
+	dprr:hasID 7796 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7559> rdfs:label "Post Assertion Note: #7559" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., lieut. 87. See MRR 2.51. Badian suggests that he was more probably A. Plotius (7). Leg., lieut. 90 (2.29) than M. Plautius Silvanus (29). Tr. Pl. 89 or 88. According to Livy (Per. 80), he was defeated by Samnite forces (misreported in MRR 2.51).\n" ;
+	dprr:hasID 7559 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4045> rdfs:label "Post Assertion Note: #4045" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate, presumably serving under Metellus Pius. He defeated Samnite forces which had joined Marius and Cinna (Liv. Per. 80)." ;
+	dprr:hasID 4045 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4044> rdfs:label "Post Assertion Note: #4044" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "10 He may be identified with the author of the Lex Plautia Papiria of 89, M. Plautius Silvanus." ;
+	dprr:hasID 4044 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3884> rdfs:label "Post Assertion Note: #3884" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate (Liv. Per. 74; Oros. 5.18.17), perhaps under L. Porcius in Etruria. He suppressed revolts in Umbria (Liv.; Oros.)." ;
+	dprr:hasID 3884 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4653> rdfs:label "Post Assertion: #4653" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1885> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7796> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7559> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4045> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4044> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "Plautius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4653 ;
+	dprr:hasDateStart -87 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -87 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4515> rdfs:label "Post Assertion: #4515" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1885> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7796> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7559> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3884> ;
+	dprr:hasPosition 15 ;
+	dprr:hasOriginalText "A. Plotius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4515 ;
+	dprr:hasDateStart -90 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -90 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2276> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "PLAU2276 A. Plautius (Plotius) (8) Ani." ;
+	dprr:hasNomen "Plautius (Plotius)" ;
+	dprr:hasID 2276 ;
+	dprr:hasHighestOffice "pr. 51" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU2276" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2276> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1900> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PLAU1900 M. Plautius (29) Silvanus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 1900 ;
+	dprr:hasHighestOffice "tr. pl. 89" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU1900" ;
+	dprr:hasCognomen "Silvanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1900> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1885> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "PLAU1885 A. Plautius (Plotius) (7)" ;
+	dprr:hasNomen "Plautius (Plotius)" ;
+	dprr:hasID 1885 ;
+	dprr:hasHighestOffice "brother of? M. Plautius (29) Silvanus (tr. pl. 89)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU1885" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1885> .

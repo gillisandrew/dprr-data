@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2527> rdfs:label "Status Assertion: #2527" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1887> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2527 ;
+	dprr:hasDateStart -93 ;
+	dprr:hasDateEnd -90 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9230> rdfs:label "Post Assertion Note: #9230" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 744, footnote 198" ;
+	dprr:hasID 9230 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7003> rdfs:label "Post Assertion Note: #7003" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Münzer (no. 248) points out that traces of two Valerii Messallae appear in office in the generations between the consul of 161 (no. 253) and the consul of 61 (no. 266). A Valerius Messalla was prosecuted by Metellus Numidicus, probably early in the latter's career (so Syme, see below), for offenses against socii (Gell. 15.14.1). Syme (JRS 45, 1955, 158?RP 1.265) suggests that Potitus Valerius Messalla, cos. suff. in 29 and procos. in Asia, was honored at Magnesia as a patron and benefactor # (OGIS 460; cf. A. E. Gordon, Potitus Valerius Messalla 43f.), and was probably a son of the consul of 53 (no. 268); the defendant mentioned above was probably an ancestor of these and of the consul of 61. On the basis of the filiation of the consul of 61 (M. f. M'. n.), Syme suggests that his name was M'. Valerius Messalla and that he was a grandfather of the consul of 61. He might have been governor of Asia ca. 120, but Münzer inclined toward a more recent date. Münzer remains uncertain whether he should be distinguished from the legate of 90 (no. 249), who might be his son. The latter, who is listed in Appian as one of the most distinguished men (BC 1.40), probably attained the praetorship. The entries in the Index (2.630) should read as follows: M'.? Valerius Messalla (248), Pr. and promag? ca. 120. M.? Valerius Messalla (249), Pr. uncertain date, Leg., lieut. 90. (RS, MS-RP 1.290-291)" ;
+	dprr:hasID 7003 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3891> rdfs:label "Post Assertion Note: #3891" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under the Consul Rutilius (App. BC 1.40; cf. Gell. 15.14.1)." ;
+	dprr:hasID 3891 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3890> rdfs:label "Post Assertion Note: #3890" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "19 On his identity, see Münzer, Gent. Val. 52, nos. 55-b. and note 3." ;
+	dprr:hasID 3890 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9402> rdfs:label "Post Assertion: #9402" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1887> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9230> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7003> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M'. or M. Valerius Messalla Pat. (248 or 249)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 9402 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSourceText "uncertain date (before 90)" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4520> rdfs:label "Post Assertion: #4520" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1887> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7003> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3891> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3890> ;
+	dprr:hasPosition 20 ;
+	dprr:hasOriginalText "M. Valerius Messalla Pat. (*56)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4520 ;
+	dprr:hasDateStart -90 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -90 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1887> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*56" ;
+	dprr:hasReNumber "249" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE1887 M.? Valerius (249) Messalla" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1887 ;
+	dprr:hasHighestOffice "pr. before 90" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VALE1887" ;
+	dprr:hasCognomen "Messalla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1887> .

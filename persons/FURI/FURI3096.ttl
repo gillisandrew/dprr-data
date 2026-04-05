@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6748> rdfs:label "Post Assertion Note: #6748" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Considered to have been Quaestor in Sicily, listed by Grant (From Imperium to Auctoritas 26-29 and 31f.) as officer of Sextus Pompey during his possession of the island from the end of 43 to the autumn of 36. CIL 1(2).2, p. 764, no. 382f." ;
+	dprr:hasID 6748 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7503> rdfs:label "Post Assertion: #7503" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3096> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6748> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "- (Furius) Crassipes" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7503 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "between 43 and 36" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3096> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "53" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "FURI3096 -. (Furius) (53) Crassipes" ;
+	dprr:hasNomen "(Furius)" ;
+	dprr:hasID 3096 ;
+	dprr:hasHighestOffice "q. between 43 and 36" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "FURI3096" ;
+	dprr:hasCognomen "Crassipes" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3096> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2045> rdfs:label "Date Information: #2045" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3096> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard p. 273" ;
+	dprr:hasID 2045 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

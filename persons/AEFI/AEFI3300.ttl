@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7371> rdfs:label "Post Assertion Note: #7371" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prefect in Samos, of uncertain date. He was honored with his wife Magilia in a Samian inscription with lettering of the first century B.C. (SEG 1.388). His daughter Aeficia Calvina was honored in Athens (IG 2(2) 4243; cf. Suet. Gramm. 3). (RS, CP) See now E. Rawson, LCM 4, 1979, 53-58; T. E. Kinsey, ibid. 79; E. Badian, ibid. 139-143; W. S. Watt, ibid. 167.\n" ;
+	dprr:hasID 7371 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7805> rdfs:label "Post Assertion: #7805" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3300> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7371> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Aeficius Calvinus (1.475)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 7805 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "1C" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -1 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3300> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1.475" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "AEFI3300 M. Aeficius (1.475) Calvinus" ;
+	dprr:hasNomen "Aeficius" ;
+	dprr:hasID 3300 ;
+	dprr:hasHighestOffice "praef. C1" ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "AEFI3300" ;
+	dprr:hasCognomen "Calvinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3300> .

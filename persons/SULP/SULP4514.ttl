@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/193> rdfs:label "Tribe Assertion: #193" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4514> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/16> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 193 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/16> rdfs:label "Tribe: Lemonia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Lemonia" ;
+	dprr:hasID 16 ;
+	dprr:hasAbbreviation "Lem." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/147> rdfs:label "Status Assertion Note: #147" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 331. Cic. Mur. 16. eques Romanus" ;
+	dprr:hasID 147 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/147> rdfs:label "Status Assertion: #147" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4514> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/147> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Q. SULPICIUS (absent) " ;
+	dprr:hasID 147 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateSourceText "End of C2" ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6674> rdfs:label "Relationship Assertion: #6674" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4514> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2182> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3348> rdfs:label "Relationship Assertion: #3348" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4514> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2088> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4514> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "SULP4514 Q. Sulpicius (not in RE) Lem." ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 4514 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "SULP4514" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4514> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2182> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatricianUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SULP2182 P. Sulpicius (15) Q. f. Rufus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 2182 ;
+	dprr:hasHighestOffice "q. 69" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "SULP2182" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2182> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2088> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "95" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/30> ;
+	dprr:hasPersonName "SULP2088 Ser. Sulpicius (95) Q. f. Lem. Rufus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasNobilisNotes "Cic. Mur. 16, Quint. Inst. Or. 11.1.69" ;
+	dprr:hasID 2088 ;
+	dprr:hasHighestOffice "cos. 51" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -106 ;
+	dprr:hasDprrID "SULP2088" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2088> .

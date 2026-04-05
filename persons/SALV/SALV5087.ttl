@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/318> rdfs:label "Tribe Assertion: #318" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5087> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/17> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 318 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/17> rdfs:label "Tribe: Maecia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Maecia" ;
+	dprr:hasID 17 ;
+	dprr:hasAbbreviation "Mae." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10389> rdfs:label "Post Assertion Note: #10389" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "D.58. On consilium of Cn. Pompeius Strabo in 89 (CIL 1(2).709=ILS 8888)." ;
+	dprr:hasID 10389 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10784> rdfs:label "Post Assertion: #10784" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5087> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10389> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/179> ;
+	dprr:hasID 10784 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSourceText "89" ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5087> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SALV5087 P. Salvienus (not in RE) L. f. Mae." ;
+	dprr:hasNomen "Salvienus" ;
+	dprr:hasID 5087 ;
+	dprr:hasHighestOffice "prim. pil. 89" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SALV5087" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5087> .

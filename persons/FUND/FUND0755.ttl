@@ -1,0 +1,124 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1604> rdfs:label "Primary Source Reference: #1604" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. C. Gracch. 17.5" ;
+	dprr:hasID 1604 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1537> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1597> rdfs:label "Primary Source Reference: #1597" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Crass. 1.1-2(3)" ;
+	dprr:hasID 1597 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1531> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1587> rdfs:label "Primary Source Reference: #1587" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cic. 44.5" ;
+	dprr:hasID 1587 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1521> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1192> rdfs:label "Post Assertion Note: #1192" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; see Degrassi 42f., 117, 436f. Fundanius, and probably his colleague, served in Sicily (Diod. 24.9.2-3)." ;
+	dprr:hasID 1192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1188> rdfs:label "Post Assertion Note: #1188" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They fined Claudia, the sister of the Consul of 249, 25,000 asses for arrogant speech, and built from various fines an aedes of Libertas on the Aventine (Liv. Per. 19; Liv. 24.16.19; Val. Max. 8.1, damn. 4; Ateius Capito in Gell. 10.6; Suet. Tib. 2.3)." ;
+	dprr:hasID 1188 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1182> rdfs:label "Post Assertion Note: #1182" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They prosecuted Claudius Pulcher for perduellio, and when that action was stopped by a storm, they succeeded in having him condemned to a fine of 120,000 asses (Schol. Bob., p. 90 Stangl; cf. Polyb. 1.52.3; Cic. ND 2.7; Div. 1.29; Liv. Per. 19; Val. Max. 8.1, abs. 4; Suet. Tib. 2; Gell. 10.6)." ;
+	dprr:hasID 1182 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1180> rdfs:label "Post Assertion Note: #1180" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Fundanius' name is supplemented on the almost certain assumption that he is to be identified with the Consul of 243." ;
+	dprr:hasID 1180 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1537> rdfs:label "Post Assertion: #1537" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/755> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1192> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Fundanius C. f. Q. n. Fundulus (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1537 ;
+	dprr:hasDateStart -243 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -243 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1531> rdfs:label "Post Assertion: #1531" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/755> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1188> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Fundanius (Fundulus) (5)" ;
+	dprr:hasOfficeXref "Cos. 243" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 1531 ;
+	dprr:hasDateStart -246 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -246 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1521> rdfs:label "Post Assertion: #1521" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/755> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1182> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1180> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. ? Fundanius Fundulus ? (5)" ;
+	dprr:hasOfficeXref "Cos. 243 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1521 ;
+	dprr:hasDateStart -248 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -248 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/755> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FUND0755 C. Fundanius (5) C. f. Q. n. Fundulus" ;
+	dprr:hasNomen "Fundanius" ;
+	dprr:hasID 755 ;
+	dprr:hasHighestOffice "cos. 243" ;
+	dprr:hasFiliation "C. f. Q. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -273 ;
+	dprr:hasDprrID "FUND0755" ;
+	dprr:hasCognomen "Fundulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/755> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/994> rdfs:label "Date Information: #994" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/755> ;
+	dprr:hasValue -273 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 41." ;
+	dprr:hasID 994 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

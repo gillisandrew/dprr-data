@@ -1,0 +1,122 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/551> rdfs:label "Relationship Assertion Reference: #551" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 551 ;
+	dprr:hasExtraInfo "Cic. Manil. 33" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1570> rdfs:label "Relationship Assertion Reference: #1570" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1570 ;
+	dprr:hasExtraInfo "Plut. Pomp. 24.6" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6403> rdfs:label "Relationship Assertion: #6403" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4095> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1969> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6401> rdfs:label "Relationship Assertion: #6401" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4095> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2077> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/606> rdfs:label "Relationship Assertion: #606" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4095> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/551> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1570> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1705> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4095> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "109" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ANTO4095  Antonia (109)" ;
+	dprr:hasNomen "Antonia" ;
+	dprr:hasID 4095 ;
+	dprr:hasHighestOffice "daughter of M. Antonius (28) M. f. M. n. (cos. 99)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ANTO4095" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4095> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2077> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "ANTO2077 M. Antonius (29) M. f. Creticus" ;
+	dprr:hasNomen "Antonius" ;
+	dprr:hasID 2077 ;
+	dprr:hasHighestOffice "pr. 74" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -71 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ANTO2077" ;
+	dprr:hasCognomen "Creticus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2077> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1969> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ANTO1969 C. Antonius (19) M. f. M. n. Hybrida" ;
+	dprr:hasNomen "Antonius" ;
+	dprr:hasNobilisNotes "Cic. Leg. Agr. 2.3.6-7, Cic. Phil. 6.6.17, Q. Cic. Comm. Pet. 7-8, 9, 12, Ascon. Tog. Cand. 82C, 93C" ;
+	dprr:hasID 1969 ;
+	dprr:hasHighestOffice "cos. 63" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ANTO1969" ;
+	dprr:hasCognomen "Hybrida" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1969> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1705> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/234> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/233> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/232> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/231> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/230> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/229> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/228> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/227> ;
+	dprr:hasPersonName "ANTO1705 M. Antonius (28) M. f. M. n." ;
+	dprr:hasNomen "Antonius" ;
+	dprr:hasNobilisNotes "Cic. Planc. 13.33-14.33, Liv. Per. 80" ;
+	dprr:hasID 1705 ;
+	dprr:hasHighestOffice "cos. 99" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -87 ;
+	dprr:hasEraFrom -143 ;
+	dprr:hasDprrID "ANTO1705" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1705> .

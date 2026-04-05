@@ -1,0 +1,166 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5794> rdfs:label "Relationship Assertion: #5794" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/503> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/556> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3366> rdfs:label "Relationship Assertion: #3366" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/503> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/381> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/985> rdfs:label "Primary Source Reference: #985" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Diod. XXXI 27.3" ;
+	dprr:hasID 985 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/966> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/974> rdfs:label "Primary Source Reference: #974" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XXXVIII 12.2" ;
+	dprr:hasID 974 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/955> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/962> rdfs:label "Primary Source Reference: #962" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XXXIX 6.2" ;
+	dprr:hasID 962 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/943> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/667> rdfs:label "Post Assertion Note: #667" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.19.6, both patricians; Diod. 16.46.1; Chr. 354 (Petico IIII et Publicula II); Cassiod.; Degrassi 105, 404f. Sulpicius commanded against Tarquinii and Valerius against the Volscians (Liv. 7.19.8-9). On Valerius, see Münzer, Gent. Val. 37, no. 8." ;
+	dprr:hasID 667 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/662> rdfs:label "Post Assertion Note: #662" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.17.13 (two patrician Consuls), and 18.1; Diod. 16.37.1; Chr. 354 (Petico III et Publicola); Fast. Hyd. (Potito [sic] et Publicola), so also Chr. Pasc.; Cassiod. Sulpicius held command against Tarquinii, and Valerius against Tibur (Liv. 7.18.2). On Valerius, see Münzer, Gent. Val. 37, no. 8. See Degrassi 105, 404f." ;
+	dprr:hasID 662 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/650> rdfs:label "Post Assertion Note: #650" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.12.9, and 15.6. See Degrassi 34f., 105, 402f.; Münzer, Gent. Val. 37, no. 8." ;
+	dprr:hasID 650 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/966> rdfs:label "Post Assertion: #966" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/503> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/667> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius L. f. L. n. Poplicola Pat. (299)" ;
+	dprr:hasOfficeXref "Cos. 355" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 966 ;
+	dprr:hasDateStart -353 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -353 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/955> rdfs:label "Post Assertion: #955" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/503> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/662> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius L. f. - n. Poplicola Pat. (299)" ;
+	dprr:hasOfficeXref "Cos. 353" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 955 ;
+	dprr:hasDateStart -355 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -355 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/943> rdfs:label "Post Assertion: #943" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/503> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/650> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Valerius L. f. L. n. Poplicola Pat. (299)" ;
+	dprr:hasOfficeXref "Cos. 355, 353" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 943 ;
+	dprr:hasDateStart -358 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -358 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/556> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "306" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "VALE0556 C. Valerius (306) L. f. L. n. Potitus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 556 ;
+	dprr:hasHighestOffice "cos. 331" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "VALE0556" ;
+	dprr:hasCognomen "Potitus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/556> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/503> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "299" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0503 M. Valerius (299) L. f. L. n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 503 ;
+	dprr:hasHighestOffice "cos. 355" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "VALE0503" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/503> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/381> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "298" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0381 L. Valerius (298) L. f. L. n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 381 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 394" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "VALE0381" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/381> .

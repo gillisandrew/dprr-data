@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1416> rdfs:label "Relationship Assertion: #1416" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4696> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4695> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4696> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ANON4696 -. - (not in RE) Arrianus" ;
+	dprr:hasNomen "-" ;
+	dprr:hasID 4696 ;
+	dprr:hasHighestOffice "son of? -. - (1) Arrianus (sen. 43)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ANON4696" ;
+	dprr:hasCognomen "Arrianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4696> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4695> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2420> ;
+	dprr:hasPersonName "ANON4695 -. - (1) Arrianus" ;
+	dprr:hasNomen "-" ;
+	dprr:hasID 4695 ;
+	dprr:hasHighestOffice "sen. 43" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "ANON4695" ;
+	dprr:hasCognomen "Arrianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4695> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2138> rdfs:label "Date Information: #2138" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4696> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard 43 no. 17" ;
+	dprr:hasID 2138 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

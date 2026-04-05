@@ -1,0 +1,146 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1398> rdfs:label "Status Assertion: #1398" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1398 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6506> rdfs:label "Post Assertion Note: #6506" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer (#) under Octavian who recognized and saved his former benefactor and later colleague Aemilius Barbula (App. BC 4.49). On the anecdote, which merits doubt, see 42, Legates; and RE, above. See also PIR 2.295, no. 226; De Laet no. 225." ;
+	dprr:hasID 6506 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6192> rdfs:label "Post Assertion Note: #6192" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A follower of Brutus who was proscribed, and was an officer under him (#), was captured at Philippi and sold as a slave, but was finally recognized by his master Aemilius Barbula, with whom he later became Consul (App. BC 4.49). See PIR 2.295, no. 226; De Laet no. 225." ;
+	dprr:hasID 6192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6114> rdfs:label "Post Assertion Note: #6114" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer (#) under Brutus when proscribed (App. BC 4.49; see 42, Legates)." ;
+	dprr:hasID 6114 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7263> rdfs:label "Post Assertion: #7263" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6506> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. (Lollius?) (11?)" ;
+	dprr:hasOfficeXref "Cos. 21?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7263 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6911> rdfs:label "Post Assertion: #6911" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6192> ;
+	dprr:hasPosition 14 ;
+	dprr:hasOriginalText "Marcus (Lollius?) (11?) Cos. 21?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6911 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6828> rdfs:label "Post Assertion: #6828" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6114> ;
+	dprr:hasPosition 17 ;
+	dprr:hasOriginalText "Marcus (Lollius?) (11)" ;
+	dprr:hasOfficeXref "Cos. 21?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6828 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10927> rdfs:label "Post Assertion: #10927" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 10927 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2749> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LOLL2749 M. Lollius (11) Paullinus" ;
+	dprr:hasNomen "Lollius" ;
+	dprr:hasID 2749 ;
+	dprr:hasHighestOffice "sen. 43" ;
+	dprr:hasEraTo -2 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "LOLL2749" ;
+	dprr:hasCognomen "Paullinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2749> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2000> rdfs:label "Date Information: #2000" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasValue -2 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasID 2000 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1999> rdfs:label "Date Information: #1999" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2749> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 81" ;
+	dprr:hasID 1999 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

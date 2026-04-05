@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2929> rdfs:label "Person Note: #2929" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/35> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p57. Fin. 2.55. in Fadius Gallus' will.c. 90" ;
+	dprr:hasID 2929 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5669> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2929> ;
+	dprr:hasPersonName "SEXT5669 P. Sextilius (25) Rufus" ;
+	dprr:hasNomen "Sextilius" ;
+	dprr:hasID 5669 ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "SEXT5669" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5669> .

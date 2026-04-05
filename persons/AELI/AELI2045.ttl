@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2596> rdfs:label "Status Assertion: #2596" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2045> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2596 ;
+	dprr:hasDateStart -76 ;
+	dprr:hasDateEnd -77 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/382> rdfs:label "Relationship Assertion Reference: #382" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 382 ;
+	dprr:hasExtraInfo "Cic. Cluent. 72" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/333> rdfs:label "Relationship Assertion Reference: #333" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 333 ;
+	dprr:hasExtraInfo "Cic. Brut. 241" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/422> rdfs:label "Relationship Assertion: #422" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2045> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/382> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/333> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/7> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4034> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/7> rdfs:label "Relationship: adopted son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 23 ;
+	dprr:hasName "adopted son of" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4312> rdfs:label "Post Assertion Note: #4312" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under the Consul Lepidus, and was charged with treason for exciting his army to mutiny (Cic. Cluent. 99)." ;
+	dprr:hasID 4312 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4311> rdfs:label "Post Assertion Note: #4311" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "3 On Staienus' assumption of the name Aelius Paetus, see Cic. Brut. 24 1, and Cluent. 72." ;
+	dprr:hasID 4311 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4901> rdfs:label "Post Assertion: #4901" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2045> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4312> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4311> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Staienus (3A.2133)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4901 ;
+	dprr:hasDateStart -77 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -77 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4034> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "C" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "AELI4034 -. Aelius (C)" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 4034 ;
+	dprr:hasHighestOffice "adoptive father of C. Aelius (98) Paetus = C. Staienus (3A.2133) (q. 77)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "AELI4034" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4034> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2045> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "98" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "AELI2045 C. Aelius (98) Paetus = C. Staienus (3A.2133)" ;
+	dprr:hasOtherNames "= C. Staienus (3A.2133)" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 2045 ;
+	dprr:hasHighestOffice "q. 77" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -108 ;
+	dprr:hasDprrID "AELI2045" ;
+	dprr:hasCognomen "Paetus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2045> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/511> rdfs:label "Date Information: #511" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2045> ;
+	dprr:hasValue -108 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R189." ;
+	dprr:hasID 511 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

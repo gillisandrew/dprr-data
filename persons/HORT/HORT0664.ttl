@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1407> rdfs:label "Primary Source Reference: #1407" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. VII 104" ;
+	dprr:hasID 1407 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1351> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1031> rdfs:label "Post Assertion Note: #1031" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On the three dictators who are to be dated between 292 and 285, one of whom was probably a Dictator Suffectus after Hortensius, see 285, Dictators." ;
+	dprr:hasID 1031 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1030> rdfs:label "Post Assertion Note: #1030" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named because of a secession of the Plebs to the Janiculum, he induced them to return and carried a law placing all citizens under the authority of plebiscites (Liv. Per. 11; Plin. NH 16.37; Lael. Felix in Gell. 15.27.4; Gaius 1.3; Pomp. Dig. 1.2.2.8; Augustin. CD 3.17; Iustin. Inst. 1.2.4; cf. Cic. Leg. 3.9; Sall. Hist. 3.48.15 M; Diod. 21.18.2; Tac. Ann. 2.37; Dio fr. 37, and Zon. 8.2). He is credited also with a law opening market days for legal business (Gran. Lic. in Macrob. Sat. 1.16.30). Died in office (Liv. Per. 11)." ;
+	dprr:hasID 1030 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1029> rdfs:label "Post Assertion Note: #1029" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The date of Hortensius' dictatorship is inferred from its position in Liv. Per. 11 between the account of the lustrum and that of action against Volsinii and Lucania, in 285." ;
+	dprr:hasID 1029 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1351> rdfs:label "Post Assertion: #1351" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/664> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1031> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1030> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1029> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Hortensius - f. - n. (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 1351 ;
+	dprr:hasDateStart -287 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -287 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/664> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "HORT0664 Q. Hortensius (7)" ;
+	dprr:hasNomen "Hortensius" ;
+	dprr:hasID 664 ;
+	dprr:hasHighestOffice "dict. 287" ;
+	dprr:hasEraTo -287 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "HORT0664" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/664> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/960> rdfs:label "Date Information: #960" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/664> ;
+	dprr:hasValue -287 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 960 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

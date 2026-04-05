@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/403> rdfs:label "Primary Source Reference: #403" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. de orat. II 14" ;
+	dprr:hasID 403 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/398> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/307> rdfs:label "Primary Source Reference: #307" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XV 12.2" ;
+	dprr:hasID 307 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/302> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/315> rdfs:label "Post Assertion Note: #315" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.12.6; Diod. 12.36.1; Chr. 354 (Macerino et Lanato II); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 95, 370f." ;
+	dprr:hasID 315 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/313> rdfs:label "Post Assertion Note: #313" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The praenomen Titus in Diod. and the numeral II after Lanatusin Chr. 354 point to the Consul of 452, but L. is clear in the text tradition of Livy and Cassiod., and is accepted by Münzer (RE). Degrassi (95) identifies this Consul with that of 452, but if L. in Livy is correct he was a son of the Consul of 452 and a brother of that of 439." ;
+	dprr:hasID 313 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/248> rdfs:label "Post Assertion Note: #248" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.32.5; Diod. 12.22.1; Fast. Cap. (see note 1); Dion. Hal. 10.54.1; Chr. 354 (Vaticano et Lanato); Fast. Hyd. (Lenatae et Capitolino), so also Chr. Pasc.; Cassiod.; Degrassi 24f., 93, 364f. Livy represents Menenius as opposed to the creation of the Decemvirate (3.33.4), Dion. Hal. as ill (10.54-55), thus affording his colleague an excuse for delay. Festus records a law regarding fines in this consulship (270 L)." ;
+	dprr:hasID 248 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/247> rdfs:label "Post Assertion Note: #247" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Menenius' praenomen in Livy is C., but in Diod., Cassiod., and Fest., it is T., while Dion. Hal. has Lucius. The form Sextius appears in Livy 3.32.5, but Sestius in 3.33.3 and 10, in Diod., Fast. Cap., and Festus. It is Siccius in Dion. Hal. In Fast. Cap. Sestius' cognomina appear as Capito V[aticanus], the latter word carefully erased, but the rest entire. Vaticanus appears in Chr. 354, but Capitolinus in Liv., Diod., Fast. Hyd., Chr. Pasc. and Fest. See Degrassi 93, who is inclined to accept Capito. Menenius' filiation (T. Menen[ius Agripp.] f., etc., Fast. Cap.), is indicated by the space on the stone." ;
+	dprr:hasID 247 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/398> rdfs:label "Post Assertion: #398" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/315> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/313> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Menenius Agripp. f. Agripp. n. Lanatus Pat. (18)" ;
+	dprr:hasOfficeXref "Cos. 452" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 398 ;
+	dprr:hasDateStart -440 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -440 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/302> rdfs:label "Post Assertion: #302" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/248> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/247> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Menenius Agripp. f. Agripp. n. Lanatus Pat. (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 302 ;
+	dprr:hasDateStart -452 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -452 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/166> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MENE0166 T. Menenius (18) Agripp. f. Agripp. n. Lanatus" ;
+	dprr:hasNomen "Menenius" ;
+	dprr:hasID 166 ;
+	dprr:hasHighestOffice "cos. 452" ;
+	dprr:hasFiliation "Agripp. f. Agripp. n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "MENE0166" ;
+	dprr:hasCognomen "Lanatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/166> .

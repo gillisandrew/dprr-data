@@ -1,0 +1,134 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1614> rdfs:label "Relationship Assertion: #1614" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/739> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/826> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1545> rdfs:label "Primary Source Reference: #1545" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 33.4(3)" ;
+	dprr:hasID 1545 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1487> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1540> rdfs:label "Primary Source Reference: #1540" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 25.4" ;
+	dprr:hasID 1540 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1482> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9975> rdfs:label "Post Assertion Note: #9975" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Naval Triumph de Cossurensibus et Poeneis. MRR I.210, Itgenshorst no. 136, Rich no. 135." ;
+	dprr:hasID 9975 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1151> rdfs:label "Post Assertion Note: #1151" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They celebrated as Proconsuls naval triumphs over Cossyra and the Carthaginians (Act. Tr., Degrassi, 76f., 548)." ;
+	dprr:hasID 1151 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1147> rdfs:label "Post Assertion Note: #1147" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Polyb. 1.36.10; Liv. 42.20.1; Eutrop. 2.22; Chr. 354; Fast. Hyd.; Chr. Pasc.; Oros. 4.9.5; Cassiod.; Zon. 8.14; see Degrassi, 42f., 116, 434f. The Consuls brought a fleet to evacuate the survivors of Regulus' army, routed a Punic fleet off Cape Bon, and captured Cossyra, but suffered a disastrous shipwreck off Camarina (Polyb. 1.36.10-37; Eutrop. 2.22; Oros. 4.9.5-8; Zon. 8.14; cf. Diod. 23.18; Liv. Per. 18)." ;
+	dprr:hasID 1147 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1487> rdfs:label "Post Assertion: #1487" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/739> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1151> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Aemilius Paullus Pat. (117)" ;
+	dprr:hasOfficeXref "Cos. 255" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 1487 ;
+	dprr:hasDateStart -254 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -254 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1482> rdfs:label "Post Assertion: #1482" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/739> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1147> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Aemilius M. f. L. n. Paullus Pat. (117)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1482 ;
+	dprr:hasDateStart -255 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -255 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10370> rdfs:label "Post Assertion: #10370" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/739> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9975> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10370 ;
+	dprr:hasDateStart -254 ;
+	dprr:hasDateSourceText "254" ;
+	dprr:hasDateEnd -254 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/826> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "118" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/123> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/122> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/121> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/120> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/119> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/118> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/117> ;
+	dprr:hasPersonName "AEMI0826 L. Aemilius (118) M. f. M. n. Paullus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasNobilisNotes "Liv. 22.35.1-3, Sil. Ital. 3.584-587, [Acro.] Hor. Carm. 1.12" ;
+	dprr:hasID 826 ;
+	dprr:hasHighestOffice "cos. 219" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -216 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "AEMI0826" ;
+	dprr:hasCognomen "Paullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/826> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/739> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "117" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "AEMI0739 M. Aemilius (117) M. f. L. n. Paullus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 739 ;
+	dprr:hasHighestOffice "cos. 255" ;
+	dprr:hasFiliation "M. f. L. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "AEMI0739" ;
+	dprr:hasCognomen "Paullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/739> .

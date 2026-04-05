@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1408> rdfs:label "Primary Source Reference: #1408" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. VII 112f." ;
+	dprr:hasID 1408 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1352> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1033> rdfs:label "Post Assertion Note: #1033" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Chr. 354 (Maximo et Peto); Fast. Hyd. (Potito et Petito), so too Chr. Pasc.; Cassiod. (M. Valerius et C. Aelius); Degrassi 112, 428f." ;
+	dprr:hasID 1033 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1032> rdfs:label "Post Assertion Note: #1032" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Münzer, De Gente Valeria 50, no. 50, and 38, note 8, identifies this Consul with the Consul of 312 and 289, and explains that the cognomen Potitus is simply a mistake on the part of Fast. Hyd. and Chr. Pasc. However, the Chronographer of 354 does not include the usual mark of iteration. The evidence therefore favors the separate listing found in the Index of CIL 1(2), p. 354, and Degrassi 112. He is not listed in RE in the table found on cols. 2315-2318." ;
+	dprr:hasID 1032 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1352> rdfs:label "Post Assertion: #1352" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/665> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1033> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1032> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Valerius - f. - n. Maximus (Potitus ?) Pat. (*22)" ;
+	dprr:hasOfficeXref "Cos. 312 ?, 289 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1352 ;
+	dprr:hasDateStart -286 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -286 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/665> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isOtherNamesUncertain true ;
+	dprr:hasReNumberOld "*22" ;
+	dprr:hasReNumber "cf. 244" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0665 M. Valerius (cf. 244) Maximus (Potitus)" ;
+	dprr:hasOtherNames "(Potitus)" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 665 ;
+	dprr:hasHighestOffice "cos. 286" ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "VALE0665" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/665> .

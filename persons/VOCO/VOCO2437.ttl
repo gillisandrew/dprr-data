@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2780> rdfs:label "Status Assertion: #2780" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2437> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2780 ;
+	dprr:hasDateStart -56 ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5561> rdfs:label "Post Assertion Note: #5561" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "One of Cicero's list of holders of imperium in 49 (Cic. Att. 8.15.3, dated March 3)." ;
+	dprr:hasID 5561 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5226> rdfs:label "Post Assertion Note: #5226" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The appearance of the members of this group as Promagistrates in various provinces and commands in 49 after the passage of Pompey's law making mandatory an interval of five years between the city magistracy and the provincial command, suggests that they had held the praetorship by or before 54 B. C. Fannius at least had good prospects of attaining the praetorship when he was referred to in 56 (see above). It is not clear how far the emergency caused exemptions from the law in 49, nor does it appear to have applied to the magistrates in office in 52." ;
+	dprr:hasID 5226 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5224> rdfs:label "Post Assertion Note: #5224" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "2 On Aelius Tubero, Cotta (perhaps but not certainly referred to in QF 3.8.6, where Ms reading Gutta is emended to Cotta, as a possible candidate for the consulship of 52), and Postumius, see Hölzl 66f., Stella Maranca 332; and Wehrmarm 68, on Domitius, 71, on Cotta and Tubero, and 72, on Fannius. Nonius Sufenas, Fannius, Voconius, and Sestius are named in Cic. Att. 8.15.3, all with imperium in March of 49, and Postumius was in February directed to succeed Furfanius in Sicily (Att. 7.15.2). On Postumius, who was temporarily prominent between 51 and 49, see Sall. Ad Caes. 2.9.4, now dated with probability by Carlson to 51 B. C. (Eine Denkschrift an Caesar 4ber den Staat [Lund, 1936] 12-26)." ;
+	dprr:hasID 5224 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6237> rdfs:label "Post Assertion: #6237" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2437> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5561> ;
+	dprr:hasPosition 28 ;
+	dprr:hasOriginalText "Voconius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6237 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5890> rdfs:label "Post Assertion: #5890" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2437> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5226> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5224> ;
+	dprr:hasPosition 13 ;
+	dprr:hasOriginalText "Voconius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5890 ;
+	dprr:hasDateStart -54 ;
+	dprr:hasDateSourceText "by or before 54" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -54 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2437> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VOCO2437 -. Voconius (2)" ;
+	dprr:hasNomen "Voconius" ;
+	dprr:hasID 2437 ;
+	dprr:hasHighestOffice "pr. before 53" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "VOCO2437" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2437> .

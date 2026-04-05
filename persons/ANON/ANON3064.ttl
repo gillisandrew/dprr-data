@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6712> rdfs:label "Post Assertion Note: #6712" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "I. de Delos 4.1.1844, date uncertain." ;
+	dprr:hasID 6712 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7467> rdfs:label "Post Assertion: #7467" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3064> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6712> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Se----- (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7467 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSourceText "date uncertain - C2?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3064> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "ANON3064 M. Se- (not in RE)" ;
+	dprr:hasNomen "Se-" ;
+	dprr:hasID 3064 ;
+	dprr:hasHighestOffice "q. C2?" ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "ANON3064" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3064> .

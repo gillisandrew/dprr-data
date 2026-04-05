@@ -1,0 +1,143 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1051> rdfs:label "Status Assertion: #1051" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1051 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4529> rdfs:label "Post Assertion Note: #4529" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Plut. Sert. 26-27." ;
+	dprr:hasID 4529 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10445> rdfs:label "Post Assertion Note: #10445" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "At Sertorius' assassination, which happened either in 73 or 72" ;
+	dprr:hasID 10445 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10444> rdfs:label "Post Assertion Note: #10444" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "At Sertorius' assassination, which happened either in 73 or 72" ;
+	dprr:hasID 10444 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5132> rdfs:label "Post Assertion: #5132" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4529> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "M. Manlius (or Mallius) (Manlius 5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 5132 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10879> rdfs:label "Post Assertion: #10879" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10445> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10879 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSourceText "73/72" ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10878> rdfs:label "Post Assertion: #10878" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10444> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10878 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateSourceText "73/72" ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10877> rdfs:label "Post Assertion: #10877" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 10877 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateSourceText "82" ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2149> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Manlius 5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "MANL2149 M. Manlius or Mallius (Manlius 5)" ;
+	dprr:hasNomen "Manlius or Mallius" ;
+	dprr:hasID 2149 ;
+	dprr:hasHighestOffice "sen. 82" ;
+	dprr:hasEraTo -71 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MANL2149" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2149> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1896> rdfs:label "Date Information: #1896" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasValue -71 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "executed by Pompey or murdered in Africa. Soon after Sertorius' assassination" ;
+	dprr:hasID 1896 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1895> rdfs:label "Date Information: #1895" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2149> ;
+	dprr:hasValue -82 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard 82 no. 43 (as 'Mallius')" ;
+	dprr:hasID 1895 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5930> rdfs:label "Post Assertion Note: #5930" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Pompeian commander in Ategua in Spain (Bell. Hisp. 19.4; Val. Max. 9.2.4; Dio 43.33.4-34.5; Frontin. Sir. 3.14.1)." ;
+	dprr:hasID 5930 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6615> rdfs:label "Post Assertion: #6615" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2653> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5930> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Munatius Flaccus (19)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 6615 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2653> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MUNA2653 L. Munatius (19) Flaccus" ;
+	dprr:hasNomen "Munatius" ;
+	dprr:hasID 2653 ;
+	dprr:hasHighestOffice "praef. 45" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MUNA2653" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2653> .

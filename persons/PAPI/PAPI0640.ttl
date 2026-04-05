@@ -1,0 +1,234 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3400> rdfs:label "Relationship Assertion: #3400" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/534> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1471> rdfs:label "Primary Source Reference: #1471" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Aem. 5.4" ;
+	dprr:hasID 1471 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1415> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1387> rdfs:label "Primary Source Reference: #1387" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. VI 13.3" ;
+	dprr:hasID 1387 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1331> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1371> rdfs:label "Primary Source Reference: #1371" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. IV 14.6" ;
+	dprr:hasID 1371 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1316> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1324> rdfs:label "Primary Source Reference: #1324" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VII 806ff." ;
+	dprr:hasID 1324 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1277> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/994> rdfs:label "Post Assertion Note: #994" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.39.1; Fast. Cap. ([L.] Papirius L. f. Sp. n. Cursor; Sp. [Carvilius C. f. C. n. Maxi]mus); Act. Tr.; Fast. Hyd.; Chr. Pasc.; Cassiod.; Degrassi 38f., 112, 426f. Papirius captured Duronia, won a victory at Aquilonia, captured Saepinum, celebrated a triumph over the Samnites, dedicated the temple of Quirinus vowed by his father, and led his army to winter quarters in the Ager Vestinus, while his colleague captured Amiternum, Cominium, Velia, Palumbinum, and Herculaneum from the Samnites, and in Etruria captured Troilus and compelled Falerii to sue for peace, then celebrated a triumph, also over Samnites, used part of the booty for a temple of Fors Fortuna, and set up a statue of Jove on the Capitol from the captured armor (Liv. 10.39-46; Act. Tr., Degrassi 72f., 544; Val. Max. 7.5.5; Plin. NH 7.213, on P.; 34.43, on C.; Frontin. Str. 2.4.1; Dio fr. 36.29, and Zon. 8.1; Oros. 3.22.3). On Papirius, see Lübker no. 10." ;
+	dprr:hasID 994 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/993> rdfs:label "Post Assertion Note: #993" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Carvilius' name is preserved entire in Act. Tr., while in the case of Papirius Fast. Cap. and Act. Tr. supplement each other. As Amiternum was a Sabine town, Beloch (RG 430) claims that Carvilius' triumph over the Samnites was really over the Sabines." ;
+	dprr:hasID 993 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/958> rdfs:label "Post Assertion Note: #958" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.9.10-12, from Licinius Macer, fr. 19 Peter, and Aelius Tubero, fr. 7 Peter. On Papirius, see Lübker, no. 10." ;
+	dprr:hasID 958 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/956> rdfs:label "Post Assertion Note: #956" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Münzer doubts the two plebeians despite Livy's preference and the authority of Piso, since patricians should hold the office in regular course in an odd year; and Domitius was defeated in 305 (Plin. NH 33.17, probably also from Piso). See Seidel, 14f. Could magistrates of successive years have been telescoped?" ;
+	dprr:hasID 956 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8843> rdfs:label "Post Assertion Note: #8843" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 725" ;
+	dprr:hasID 8843 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1091> rdfs:label "Post Assertion Note: #1091" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire except [L.] Papirius); Act. Tr.; Frontin. Aq. 1.6; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; see Degrassi, 40f., 114, 430f. Both Consuls campaigned against Samnites, Lucanians and Bruttians, but, though Pyrrhus' general Milo yielded the citadel of Tarentum to Papirius, both celebrated their triumphs over Tarentines as well as the other foes (Act. Tr., Degrassi, 74f., 546; Liv. Per. 14 and 15; Frontin. Str. 3.3.1; Oros. 4.3.1-2; Fest. 228 L, with praenomen T. for L.; Zon. 8.6; cf. Jerome Chr. ad ann. 275, p. 130 Helm; cf. also on the Carthaginian fleet at Tarentum, Liv. Per. 14; Liv. 21.10.8, 24.9.8; Dio fr. 43.1; Ampel. 46.2; Oros. 4.3.1-2; Zon. 8.6). On Papirius, see Lübker no. 10." ;
+	dprr:hasID 1091 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10175> rdfs:label "Post Assertion Note: #10175" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Tarentineis, Lucaneis, Samnitibus, Bruttieisque. MRR I.197, Itgenshorst no. 116, Rich no. 115." ;
+	dprr:hasID 10175 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10174> rdfs:label "Post Assertion Note: #10174" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Samnitibus. MRR I.180, Itgenshorst no. 96, Rich no. 96." ;
+	dprr:hasID 10174 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1008> rdfs:label "Post Assertion Note: #1008" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.47.5. See Lübker no. 10." ;
+	dprr:hasID 1008 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1415> rdfs:label "Post Assertion: #1415" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1091> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Papirus L. f. Sp. n. Cursor Pat. (53)" ;
+	dprr:hasOfficeXref "Cos. 293, Pr. 292" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1415 ;
+	dprr:hasDateStart -272 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1331> rdfs:label "Post Assertion: #1331" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8843> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1008> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Papirius L. f. Sp. n. Cursor Pat. (53)" ;
+	dprr:hasOfficeXref "Cos. 293, 272" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1331 ;
+	dprr:hasDateStart -292 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -292 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1316> rdfs:label "Post Assertion: #1316" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/994> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/993> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Papirius L. f. Sp. n. Cursor Pat. (53)" ;
+	dprr:hasOfficeXref "Cos. 272, Pr. 292" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1316 ;
+	dprr:hasDateStart -293 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -293 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1277> rdfs:label "Post Assertion: #1277" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/958> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/956> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Papirius L. f. Sp. n. Cursor Pat. (53)" ;
+	dprr:hasOfficeXref "Cos. 293, 272" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 1277 ;
+	dprr:hasDateStart -299 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -299 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10570> rdfs:label "Post Assertion: #10570" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10175> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10570 ;
+	dprr:hasDateStart -272 ;
+	dprr:hasDateSourceText "272" ;
+	dprr:hasDateEnd -272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10569> rdfs:label "Post Assertion: #10569" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10174> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10569 ;
+	dprr:hasDateStart -293 ;
+	dprr:hasDateSourceText "293" ;
+	dprr:hasDateEnd -293 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/640> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "53" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PAPI0640 L. Papirius (53) L. f. Sp. n. Cursor" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 640 ;
+	dprr:hasHighestOffice "cos. 293" ;
+	dprr:hasFiliation "L. f. Sp. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -324 ;
+	dprr:hasDprrID "PAPI0640" ;
+	dprr:hasCognomen "Cursor" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/640> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/534> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "52" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PAPI0534 L. Papirius (52) Sp. f. L. n. Cursor" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 534 ;
+	dprr:hasHighestOffice "cos. 320" ;
+	dprr:hasFiliation "Sp. f. L. n." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -364 ;
+	dprr:hasDprrID "PAPI0534" ;
+	dprr:hasCognomen "Cursor" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/534> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/953> rdfs:label "Date Information: #953" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/640> ;
+	dprr:hasValue -324 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 23." ;
+	dprr:hasID 953 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

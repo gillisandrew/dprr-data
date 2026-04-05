@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/426> rdfs:label "Tribe Assertion: #426" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4624> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/39> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p237. Consilium of 89. CIL 6.37045" ;
+	dprr:hasID 426 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/39> rdfs:label "Tribe: Velina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Velina" ;
+	dprr:hasID 39 ;
+	dprr:hasAbbreviation "Vel." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9807> rdfs:label "Post Assertion Note: #9807" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Consilium of 89. CIL 6.37045. ILS 8888." ;
+	dprr:hasID 9807 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9625> rdfs:label "Post Assertion: #9625" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4624> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9807> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 9625 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4624> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "NONI4624 T. Nonius (10) T. f. Vel." ;
+	dprr:hasOrigin "Picenum?" ;
+	dprr:hasNomen "Nonius" ;
+	dprr:hasID 4624 ;
+	dprr:hasHighestOffice "officer (title not preserved) 89" ;
+	dprr:hasFiliation "T. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "NONI4624" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4624> .

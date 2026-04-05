@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/831> rdfs:label "Status Assertion: #831" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1813> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 831 ;
+	dprr:hasDateStart -98 ;
+	dprr:hasDateEnd -98 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2004> rdfs:label "Status Assertion: #2004" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1813> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2004 ;
+	dprr:hasDateStart -99 ;
+	dprr:hasDateEnd -99 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> rdfs:label "Secondary Source: Thommen 1989" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Thommen" ;
+	dprr:hasID 25 ;
+	dprr:hasBiblio "Thommen, L., Das Volkstribunat der späten römischen Republik. Stuttgart : F. Steiner Verlag Wiesbaden GmbH, 1989." ;
+	dprr:hasAbbreviation "Thommen 1989" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3700> rdfs:label "Post Assertion Note: #3700" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Brought P. Furius (Tr. Pl. 99) to trial before the assembly for opposing the recall of Metellus Numidicus, but the assembly is reported to have lynched Furius at once (App. BC 1.33; cf. Dio 28, fr. 95.2-3)." ;
+	dprr:hasID 3700 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3699> rdfs:label "Post Assertion Note: #3699" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "5 Niccolini (FTP 205-210) holds that our sources are confused, so that there was only one prosecution of Furius, and the word Canuleius is simply a mistake on Appian's part for Appuleius. Wehrmann (Volkstrib. 4) and Klebs (RE S. v. \"Appuleius\" 21) maintain that there was only one action brought by Appuleius and Canuleius together, while Ziegler (Trib. 18) and Von der Mühll (Saturninus 97 ff.) favor two actions of differing issue. This view agrees best with the evidence we have. Furius, who had joined the conservative side and was a personal enemy of Metellus Numidicus, was acquitted when prosecuted by a partisan of Saturninus but did not survive an action based on his enmity for Numidicus." ;
+	dprr:hasID 3699 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9595> rdfs:label "Post Assertion: #9595" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1813> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 9595 ;
+	dprr:hasDateStart -98 ;
+	dprr:hasDateSourceText "99 or 98" ;
+	dprr:hasDateEnd -98 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4353> rdfs:label "Post Assertion: #4353" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1813> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3700> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3699> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Canuleius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4353 ;
+	dprr:hasDateStart -99 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -99 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1813> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CANU1813 C. Canuleius (3)" ;
+	dprr:hasNomen "Canuleius" ;
+	dprr:hasID 1813 ;
+	dprr:hasHighestOffice "tr. pl. 99 or 98" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CANU1813" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1813> .

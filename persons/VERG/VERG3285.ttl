@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/356> rdfs:label "Post Assertion Note: #356" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Livy (4.23.1-3) based on Licinius Macer (fr. 14 Peter), who cited the libri lintei; Cassiod.; Degrassi 95, 372f. See below, Mil. Tr. c. p." ;
+	dprr:hasID 356 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/355> rdfs:label "Post Assertion Note: #355" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Of the three possibilities listed above it seems least likely that the Consuls of 435 continued in office this year. The second pair of Consuls are repeated in the other tradition which reported Military Tribunes with consular power." ;
+	dprr:hasID 355 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/349> rdfs:label "Post Assertion Note: #349" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.21.6 and 10; Diod. 12.49.1; Chr. 354 (Iulio II et Tricoisto); Fast. Hyd. (Iulio et Verginio), so also Chr. Pasc.; Cassiod.; Degrassi 95, 370f." ;
+	dprr:hasID 349 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/348> rdfs:label "Post Assertion Note: #348" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Iulius' filiation (C. f. C. n.) depends only on Münzer's suggestion that he was possibly a son of the Decemvir of 451. Diod. gives Verginius the praenomen {Gr} and the cognomen {Gr}. See 434, Consuls." ;
+	dprr:hasID 348 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7764> rdfs:label "Post Assertion: #7764" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3285> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/349> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/348> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. (or Proc.) Verginius - f. - n. Tricostus Pat. (14 or 18a)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 7764 ;
+	dprr:hasDateStart -435 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -435 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7763> rdfs:label "Post Assertion: #7763" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3285> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/356> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/355> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. (or Proc.) Verginius - f. - n. Tricostus Pat. (14 or 18a)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 7763 ;
+	dprr:hasDateStart -434 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -434 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3285> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "18a" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Proculus> ;
+	dprr:hasPersonName "VERG3285 Proc. Verginius (18a) Tricostus" ;
+	dprr:hasNomen "Verginius" ;
+	dprr:hasID 3285 ;
+	dprr:hasHighestOffice "cos.? 435" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "VERG3285" ;
+	dprr:hasCognomen "Tricostus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3285> .

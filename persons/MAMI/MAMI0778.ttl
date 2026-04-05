@@ -1,0 +1,183 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3609> rdfs:label "Relationship Assertion: #3609" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1011> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3442> rdfs:label "Relationship Assertion: #3442" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/982> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1628> rdfs:label "Primary Source Reference: #1628" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Mar. 6.2(3)" ;
+	dprr:hasID 1628 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1560> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1549> rdfs:label "Primary Source Reference: #1549" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 3.2" ;
+	dprr:hasID 1549 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1491> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1548> rdfs:label "Primary Source Reference: #1548" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 3.1" ;
+	dprr:hasID 1548 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1490> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1210> rdfs:label "Post Assertion Note: #1210" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Varro in Gell. 17.21.43; Fast. Cap. (names entire); Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod., with Manlius for Mamilius; see Degrassi 42f., 117, 438f. On Valerius, see Münzer, Gent. Val. 48, no. 40." ;
+	dprr:hasID 1210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1158> rdfs:label "Post Assertion Note: #1158" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 6.37160- ILS 9338 ([Q. ? Mam]ilius Q. f. Turrinu[s]), coopted in the consulship of a Cornelius Scipio ([- - - -Corn]elio P. f. Sci[pione- - - -]), as successor to C. Marcius Rutilus Censorinus (see 300).{211}" ;
+	dprr:hasID 1158 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1156> rdfs:label "Post Assertion Note: #1156" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "This is the latest date possible for the cooptation of the successor in the priesthood of Marcius Rutilus Censorinus (see 300 and 265). The earliest is the consulship of a Scipio in 260, but 259 is also possible. In any case the filiation of Scipio was L. f. Dessau prefers the father Q. Mamilius, but the son C. Mamilius, Cos. 239, is also possible." ;
+	dprr:hasID 1156 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1155> rdfs:label "Post Assertion Note: #1155" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 6.37160- ILS 9338 ([Q. ? Mam]ilius Q. f. Turrinu[s]), coopted in the consulship of a Cornelius Scipio ([- - - -Corn]elio P. f. Sci[pione- - - -]), as successor to C. Marcius Rutilus Censorinus (see 300).{211}" ;
+	dprr:hasID 1155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1154> rdfs:label "Post Assertion Note: #1154" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "This is the latest date possible for the cooptation of the successor in the priesthood of Marcius Rutilus Censorinus (see 300 and 265). The earliest is the consulship of a Scipio in 260, but 259 is also possible. In any case the filiation of Scipio was L. f. Dessau prefers the father Q. Mamilius, but the son C. Mamilius, Cos. 239, is also possible." ;
+	dprr:hasID 1154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1560> rdfs:label "Post Assertion: #1560" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1210> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Mamilius Q. f. Q. n. Turrinus (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1560 ;
+	dprr:hasDateStart -239 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -239 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1491> rdfs:label "Post Assertion: #1491" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1158> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1156> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Mamilius Q. f. Turrinus (12)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 1491 ;
+	dprr:hasDateStart -254 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -254 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1490> rdfs:label "Post Assertion: #1490" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1155> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1154> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Mamilius Q. f. Turrinus (11 or 12)" ;
+	dprr:hasOfficeXref "Cos. 239 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 1490 ;
+	dprr:hasDateStart -254 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -254 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/982> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1351> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1350> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1349> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1348> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1347> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1346> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1345> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1344> ;
+	dprr:hasPersonName "MAMI0982 C. Mamilius (5) Atellus" ;
+	dprr:hasNomen "Mamilius" ;
+	dprr:hasID 982 ;
+	dprr:hasHighestOffice "pr. 207" ;
+	dprr:hasEraTo -174 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MAMI0982" ;
+	dprr:hasCognomen "Atellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/982> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/778> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MAMI0778 C. Mamilius (11) Q. f. Q. n. Turrinus" ;
+	dprr:hasNomen "Mamilius" ;
+	dprr:hasID 778 ;
+	dprr:hasHighestOffice "cos. 239" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -273 ;
+	dprr:hasDprrID "MAMI0778" ;
+	dprr:hasCognomen "Turrinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/778> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1011> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MAMI1011 Q. Mamilius (13) Turrinus" ;
+	dprr:hasNomen "Mamilius" ;
+	dprr:hasID 1011 ;
+	dprr:hasHighestOffice "pr. 206" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MAMI1011" ;
+	dprr:hasCognomen "Turrinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1011> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1006> rdfs:label "Date Information: #1006" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/778> ;
+	dprr:hasValue -273 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 45." ;
+	dprr:hasID 1006 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

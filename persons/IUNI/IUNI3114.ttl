@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7961> rdfs:label "Post Assertion Note: #7961" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 2.483. For the various dates suggested, ca. 100, ca. 43-42, ca. 38-36, see Schleussner, Legaten 231; RE 10.1280.\n" ;
+	dprr:hasID 7961 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6782> rdfs:label "Post Assertion Note: #6782" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Termed Leg(atus) Sic(iliae) on coins, perhaps issued at Panormus under Sextus Pompey (see Grant, From Imperium to Auctoritas 29-31; Grueber, CRRBM 2.562 note; Minzer, RE). Perhaps to be identified with L. Iunius Silanus (165)." ;
+	dprr:hasID 6782 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10509> rdfs:label "Post Assertion Note: #10509" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Perhaps L. Iunius (21a), under Sex. Pompey in Sicily" ;
+	dprr:hasID 10509 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7537> rdfs:label "Post Assertion: #7537" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7961> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6782> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Iuni(us) (21a)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7537 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "ca. 100?, ca. 43-42?, ca. 38-36?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -100 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11063> rdfs:label "Post Assertion: #11063" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7961> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6782> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 11063 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11062> rdfs:label "Post Assertion: #11062" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7961> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6782> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 11062 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10973> rdfs:label "Post Assertion: #10973" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10509> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 10973 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43/42" ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3114> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "21a" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "IUNI3114 L. Iunius (21a)" ;
+	dprr:hasNomen "Iunius" ;
+	dprr:hasID 3114 ;
+	dprr:hasHighestOffice "leg. lieut.  ca. 100 or ca. 43-42 or ca. 38-36" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "IUNI3114" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3114> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2047> rdfs:label "Date Information: #2047" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasValue -21 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Consular candidate" ;
+	dprr:hasID 2047 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2046> rdfs:label "Date Information: #2046" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3114> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard p. 273" ;
+	dprr:hasID 2046 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

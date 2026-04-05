@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2073> rdfs:label "Status Assertion: #2073" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1235> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2073 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateEnd -181 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8512> rdfs:label "Post Assertion Note: #8512" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 733, footnote 76" ;
+	dprr:hasID 8512 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2409> rdfs:label "Post Assertion Note: #2409" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 40.18.2 Provinces and armies 40.18.3 and 5." ;
+	dprr:hasID 2409 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2359> rdfs:label "Post Assertion Note: #2359" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They reported to the Senate at the beginning of 184 (Polyb. 22.11.1, and 12.5-10; Liv. 39.33.1)." ;
+	dprr:hasID 2359 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2333> rdfs:label "Post Assertion Note: #2333" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to deal with disputes between Philip of Macedon and his neighbors in Greece and with complaints arising from his occupation of Aenus and Maronea (Polyb. 22.6; 23.2.7; Liv. 39.23.5-29.3, cf. 33.1; Pausan. 7.8.6). They also discussed the Achaean treatment of Sparta with the Achaean magistrates, who refused Metellus' request that they call an assembly (Polyb. 22.10; 23.4.7; Diod. 29.17; Pausan. 7.8.6, and 9.1)." ;
+	dprr:hasID 2333 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2332> rdfs:label "Post Assertion Note: #2332" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Polybius (22.6.6) gives Ti. Claudius as the third name, but Livy twice mentions Ti. Sempronius (39.24.13, and 33.1). The epitomator of Polybius may be at fault, but if Ti. Claudius is correct, Nero is a probable candidate. Geer (TAPhA 69 [1938] 385, note 10) is inclined to accept Claudius, but points out that Sempronius need not be the father of the Gracchi. Longus (Cos. 194) and the Gracchus who was Augur from 204 to 174 (but see 174, note 5) may also be considered. He seens however that the third member of the embassy should most suitably be a junior senator. If Gracchus was sent on this embassy we may suppose that he returned early to become a candidate for the Tribunate of 184 (Münzer). Krug (38) accepts Claudius." ;
+	dprr:hasID 2332 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2330> rdfs:label "Post Assertion Note: #2330" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Livy reports this embassy under the year 185, but the appointment could have been made late in the consular year 186. I accept Niese's dating (3.22, note 1). They could leave Rome in the spring, visit Tempe and Thessalonica, and be at Argos for the Nemean games in August (Polyb. 22.10.1)." ;
+	dprr:hasID 2330 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2915> rdfs:label "Post Assertion: #2915" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1235> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8512> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2409> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Ti. Claudius Nero Pat. (250)" ;
+	dprr:hasOfficeXref "Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2915 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -181 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2850> rdfs:label "Post Assertion: #2850" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1235> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2359> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Ti. Claudius (Nero) Pat. (250)" ;
+	dprr:hasOfficeXref "Pr. 181" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2850 ;
+	dprr:hasDateStart -184 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -184 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2823> rdfs:label "Post Assertion: #2823" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1235> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2333> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2332> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2330> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Ti. Claudius (Nero) Pat. (250)" ;
+	dprr:hasOfficeXref "Pr. 181" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2823 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -185 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1235> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "250" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Tiberius> ;
+	dprr:hasPersonName "CLAU1235 Ti. Claudius (250) Nero" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 1235 ;
+	dprr:hasHighestOffice "pr. 181" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "CLAU1235" ;
+	dprr:hasCognomen "Nero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1235> .

@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6555> rdfs:label "Post Assertion Note: #6555" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1(2).2.803-ILS 3141. Possibly Aemilius Papus, Pr. 205, or Paullus, Pr. 191, less probably Regillus, who was M. f., Pr. 190." ;
+	dprr:hasID 6555 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7310> rdfs:label "Post Assertion: #7310" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2939> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6555> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L Aemilius L. f. (14)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7310 ;
+	dprr:hasDateStart -205 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -190 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2939> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AEMI2939 L. Aemilius (14) L. f." ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 2939 ;
+	dprr:hasHighestOffice "pr. late C3/early C2" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "AEMI2939" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2939> .

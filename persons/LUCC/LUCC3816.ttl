@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2981> rdfs:label "Status Assertion: #2981" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3816> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2981 ;
+	dprr:hasDateStart -64 ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8297> rdfs:label "Post Assertion Note: #8297" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "There were two Lucceii who were contemporaries in this period. Both appear in Cicero's letters, one with the filiation Q. f. (6) and the other with the filiation M. f. (5). The latter was an active business man, interested in provincial affairs, and the former was the historian (see Cic. Fam. 5.12). W. C. McDermott (Hermes 97, 196, 233-246) has assigned the various references to each and concludes that M. f. was the candidate for the consulship of 59 (Cic. Att. 1.17.11; 2.19), while Q. f., after his praetorship in 67, refused appointment to be governor of Sardinia (MRR 2.143) and made no attempt at the consulship. In this scheme there is, as McDermott himself recognized, a clear contradiction between his view and the statement of Asconius (910 that L. Lucceius paratus eruditusque, who must be the historian, was the one qui consulatum postea quoque petivit, an important point, in spite of the list of known errors in Asconius collected by McDermott (op. cit. 242). See Shackleton Bailey, CLF 2.318-319; on Fam. 5.12. Praetor, uncertain date. On the basis of Hölzl's emendation of # to #, this praetorship of uncertain date is generally attributed to Lucceius, the consular candidate. If J. M. David and M. Dondin are right in returning to the name of Lucullus, the evidence for Lucceius' praetorship disappears, whether he was M. f. or Q. f. See above on L. Licinius Lucullus (104). The latest date possible under the Leges Annales for the praetorship of the consular candidate of 60 is 62 (Cic. Att. 1.17.11), a year in which the name of the occupant of one of the eight places remains unknown (MRR 2.173). See J. M. David and M. Dondin, MEFR 92, 1980, 199-213; and also above, on M'. Acilius Glabrio (38)." ;
+	dprr:hasID 8297 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11129> rdfs:label "Post Assertion: #11129" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3816> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8297> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/254> ;
+	dprr:hasID 11129 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11128> rdfs:label "Post Assertion: #11128" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3816> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8297> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 11128 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3816> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "LUCC3816 -. Lucceius (5) M. f." ;
+	dprr:hasNomen "Lucceius" ;
+	dprr:hasID 3816 ;
+	dprr:hasHighestOffice "pr.? 62" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "LUCC3816" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3816> .

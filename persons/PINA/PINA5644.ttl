@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2904> rdfs:label "Person Note: #2904" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/35> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p48. De or. 2.266. II-I cent." ;
+	dprr:hasID 2904 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5644> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2904> ;
+	dprr:hasPersonName "PINA5644 T. Pinarius (7)" ;
+	dprr:hasNomen "Pinarius" ;
+	dprr:hasID 5644 ;
+	dprr:hasEraTo -1 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "PINA5644" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5644> .

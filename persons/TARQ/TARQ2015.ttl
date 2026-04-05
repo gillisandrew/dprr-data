@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2581> rdfs:label "Status Assertion: #2581" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2015> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2581 ;
+	dprr:hasDateStart -80 ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9580> rdfs:label "Post Assertion Note: #9580" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 366" ;
+	dprr:hasID 9580 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7767> rdfs:label "Post Assertion Note: #7767" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor. In MRR 2.77, refer also to Crawford, RRC 1.385 (cf 381-386), no. 366, 4, probably a quaestorian coinage with L. Fabius Hispaniensis under C. Annius in Spain.\n" ;
+	dprr:hasID 7767 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4209> rdfs:label "Post Assertion Note: #4209" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under C. Annius in Spain (Grueber, CRRBM 2.356)." ;
+	dprr:hasID 4209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4208> rdfs:label "Post Assertion Note: #4208" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "4 Cichorius (RS 167f.) distinguishes him from C. Tarquitius Priscus, who was L. f., and a Legate of Sertorius." ;
+	dprr:hasID 4208 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8823> rdfs:label "Post Assertion: #8823" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2015> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Spain" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9580> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7767> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Tarquitius, C." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8823 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSourceText "82 - 81" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4805> rdfs:label "Post Assertion: #4805" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2015> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Spain" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7767> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4209> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4208> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Tarquitius P. f. (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4805 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11164> rdfs:label "Post Assertion: #11164" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2015> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9580> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7767> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 11164 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2015> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TARQ2015 C. Tarquitius (1) P. f." ;
+	dprr:hasNomen "Tarquitius" ;
+	dprr:hasID 2015 ;
+	dprr:hasHighestOffice "q. 81" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TARQ2015" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2015> .

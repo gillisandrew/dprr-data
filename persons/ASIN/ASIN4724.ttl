@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3713> rdfs:label "Relationship Assertion: #3713" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2898> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3712> rdfs:label "Relationship Assertion: #3712" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2553> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4724> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ASIN4724 -. Asinius (5)" ;
+	dprr:hasNomen "Asinius" ;
+	dprr:hasID 4724 ;
+	dprr:hasHighestOffice "grandfather of C. Asinius (25) Cn. f. Arn. Pollio (cos. 40)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "ASIN4724" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4724> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2898> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isFiliationUncertain true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "ASIN2898 Cn.? Asinius (2) Cn. f. Arn. Marrucinus" ;
+	dprr:hasNomen "Asinius" ;
+	dprr:hasID 2898 ;
+	dprr:hasHighestOffice "pr.? before 34" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "ASIN2898" ;
+	dprr:hasCognomen "Marrucinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2898> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2553> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ASIN2553 C. Asinius (25) Cn. f. Arn. Pollio" ;
+	dprr:hasOrigin "Teate Marrucinorum?" ;
+	dprr:hasNovusNotes "Vell. 2.128" ;
+	dprr:hasNomen "Asinius" ;
+	dprr:hasID 2553 ;
+	dprr:hasHighestOffice "cos. 40" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo 4 ;
+	dprr:hasEraFrom -76 ;
+	dprr:hasDprrID "ASIN2553" ;
+	dprr:hasCognomen "Pollio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2553> .

@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/662> rdfs:label "Primary Source Reference: #662" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. X 4" ;
+	dprr:hasID 662 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/653> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/629> rdfs:label "Primary Source Reference: #629" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. II 77" ;
+	dprr:hasID 629 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/620> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> rdfs:label "Post Assertion Note: #483" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.16.1 and 5, and 17.1; Diod. 14.85.1; Fast. Cap. (see note 1); Chr. 354 (Iulo II et Fidenas); Degrassi 28f., 99, 384f. There was war this year with Volscians, Aequi, Veientanes, Faliscans, Capenates, and raiders from Tarquinii (Liv. 5.16.2-8). The whole college was compelled to abdicate before the end of the year because of a faulty election (Liv. 5.17.2-3; not noted in Fast. Cap.)." ;
+	dprr:hasID 483 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> rdfs:label "Post Assertion Note: #482" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: [- - - - -Iulu]s II; [- - - -Medulli]nus IV; [- - - -Regille]nsis; L. Sergius M'. f. n. [- - - -]; P. Cornelius P. f. [- - - -]; A. Manlius A. f. C [n. n.- - - -]. Diod. indicates a total of six names but omits Furius and Iulius, while in F are added the unidentifiable names {Gr} and '{Gr}. On the name of Iulius see Fast. Cap. 401, and 489, note 1, and note the readings Tullus and Silius Tullus in Mss of Livy 5.16.1 (ed. Conway and Walters). On the filiation of Cornelius, see Fast. Cap. on 396, Master of Horse." ;
+	dprr:hasID 482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/472> rdfs:label "Post Assertion Note: #472" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.10.1; Diod. 14.44.1; Fast. Cap. (see note 1); Chr. 354 (Camello et Iulo); Degrassi 28f., 98, 382f. Valerius held command against the{84} Volscians at Anxur (Liv. 5.10.2, and 12.6), Furius against Falerii (5.12.5), Aemilius at Veii (5.12.4), and Cornelius against Capena (5.12.5). On Valerius, see Münzer, Gent. Val. 35, no. 4." ;
+	dprr:hasID 472 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/471> rdfs:label "Post Assertion Note: #471" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved entire as above in Fast. Cap. except [M.F]urius etc., [Cn. C]ornelius, etc., [L. Vale]rius, etc. On the mark of iteration after Camillus' name in Livy, see 403, note 1. M'. Aemilius, as usual, appears in Livy as M., and his cognomen as Mamercus (see 410). Iterum in Livy after Cossus' name is an error (see 406 and 404). As in 404, Livy has the praenomen C. for Fabius (see Conway and Walters ad loc.). In the name of Iulius the Iulus of Fast. Cap. and Livy's Tullus probably stand for an earlier Iullus (see 489, note 1). Diod. omits Valerius, but the following apocryphal name is found in F: {Gr}." ;
+	dprr:hasID 471 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/653> rdfs:label "Post Assertion: #653" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/347> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Iulius L. f. Vopisci n. Iullus Pat. (298)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 401" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 653 ;
+	dprr:hasDateStart -397 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -397 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/620> rdfs:label "Post Assertion: #620" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/347> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/472> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/471> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "L. Iulius L. f. Vopisci n. Iullus Pat. (298)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 397 [Paulus Sextus]" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 620 ;
+	dprr:hasDateStart -401 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -401 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/347> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "298" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "IULI0347 L. Iulius (298) L. f. Vopisci n. Iullus" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 347 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 397" ;
+	dprr:hasFiliation "L. f. Vopisci n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "IULI0347" ;
+	dprr:hasCognomen "Iullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/347> .

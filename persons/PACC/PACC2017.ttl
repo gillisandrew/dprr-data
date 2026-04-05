@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7193> rdfs:label "Post Assertion Note: #7193" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by Sulla with forces to aid Ascalis of Tingi in 81-80 and met his death (Plut. Sert 9.4-5). See Plut. Crass. 4.3, on Crassus' protector in southern Spain in 85, Vibius Paciacus or Pacciaecus: Munzer, noting the uncertainty in the tradition of the name, suggests that they may be the same. See RE, s. v. Paciaecus; MRR 2.313, on L. Vibius Paciaecus; Wiseman, NM 248, no. 300. See also A. J. N. Wilson, Emigration from Italy 30f.; B. Scardigli, Athenaeum 49, 1971, 244-250; P. 0. Spann, Sertorius 66-69, who thinks P. was sent by the governor of Hisp. Ult.; C. F. Konrad, Sertorius 37-38.\n" ;
+	dprr:hasID 7193 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4219> rdfs:label "Post Assertion Note: #4219" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by Sulla to aid King Ascalis of Mauretania against Sertorius, and died in battle against him (Plut. Sert. 9.2- 3; cf. Crass. 4.2)." ;
+	dprr:hasID 4219 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9391> rdfs:label "Post Assertion: #9391" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2017> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Mauretania" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7193> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Paccianus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 9391 ;
+	dprr:hasDateStart -80 ;
+	dprr:hasDateSourceText "81-80" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -80 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4815> rdfs:label "Post Assertion: #4815" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2017> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Mauretania" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7193> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4219> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Paccianus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 4815 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSourceText "81-80" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2017> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1, cf Vibius Paciacus/Pacciaecus" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PACC2017 -. Paccianus (1, cf Vibius Paciacus/Pacciaecus)" ;
+	dprr:hasNomen "Paccianus" ;
+	dprr:hasID 2017 ;
+	dprr:hasHighestOffice "leg. env. 80" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PACC2017" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2017> .

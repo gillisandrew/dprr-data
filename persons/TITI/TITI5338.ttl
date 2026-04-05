@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/536> rdfs:label "Tribe Assertion: #536" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5338> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/30> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasID 536 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/30> rdfs:label "Tribe: Quirina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Quirina" ;
+	dprr:hasID 30 ;
+	dprr:hasAbbreviation "Qui." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> rdfs:label "Secondary Source: Shackleton Bailey 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Speeches" ;
+	dprr:hasID 33 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's speeches. Stuttgart : Teubner, 1992." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2596> rdfs:label "Person Note: #2596" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p94. Dom. 21,Har. resp. 59,Sest. 80,112. of Reate, henchman of Clodius" ;
+	dprr:hasID 2596 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5338> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2596> ;
+	dprr:hasPersonName "TITI5338 -. Titius (2) Qui." ;
+	dprr:hasOrigin "Reate" ;
+	dprr:hasNomen "Titius" ;
+	dprr:hasID 5338 ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TITI5338" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5338> .

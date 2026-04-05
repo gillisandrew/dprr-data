@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3924> rdfs:label "Relationship Assertion: #3924" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5162> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3469> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1> rdfs:label "Person Note: #1" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cicero's mention of the son of Acidinus in connection with the style of living that the younger Calpurnius Bibulus, Valerius Messalla Corvinus, and the son of Cicero himself could keep up in Athens in 45 (Cic. Att. 12.32.2; cf. Fam. 4.12.2) suggests that his rank was comparable to that of their fathers. (TJC)" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5162> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "44" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1> ;
+	dprr:hasPersonName "MANL5162 -. (Manlius) (44) Acidinus" ;
+	dprr:hasNomen "(Manlius)" ;
+	dprr:hasID 5162 ;
+	dprr:hasHighestOffice "father of -. (Manlius)? (cf. 44) Acidinus" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MANL5162" ;
+	dprr:hasCognomen "Acidinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5162> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3469> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "cf. 44" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1> ;
+	dprr:hasPersonName "MANL3469 -. (Manlius) (cf. 44) Acidinus" ;
+	dprr:hasNomen "(Manlius)" ;
+	dprr:hasID 3469 ;
+	dprr:hasHighestOffice "son of -. (Manlius)? (44) Acidinus" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MANL3469" ;
+	dprr:hasCognomen "Acidinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3469> .

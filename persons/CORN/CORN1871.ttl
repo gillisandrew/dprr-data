@@ -1,0 +1,408 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2518> rdfs:label "Status Assertion: #2518" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2518 ;
+	dprr:hasDateStart -93 ;
+	dprr:hasDateEnd -84 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1954> rdfs:label "Relationship Assertion Reference: #1954" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1954 ;
+	dprr:hasExtraInfo "Vell. II 41.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1751> rdfs:label "Relationship Assertion Reference: #1751" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1751 ;
+	dprr:hasExtraInfo "Suet. Caes. 6.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1750> rdfs:label "Relationship Assertion Reference: #1750" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1750 ;
+	dprr:hasExtraInfo "Suet. Caes. 5.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1459> rdfs:label "Relationship Assertion Reference: #1459" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1459 ;
+	dprr:hasExtraInfo "Plut. Caes. 1.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1329> rdfs:label "Relationship Assertion Reference: #1329" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1329 ;
+	dprr:hasExtraInfo "Oros. V 24.16" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5063> rdfs:label "Relationship Assertion: #5063" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1954> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4359> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4733> rdfs:label "Relationship Assertion: #4733" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1329> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4236> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1744> rdfs:label "Relationship Assertion: #1744" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1620> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1743> rdfs:label "Relationship Assertion: #1743" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1750> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2663> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1088> rdfs:label "Relationship Assertion: #1088" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1751> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1459> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3873> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9038> rdfs:label "Post Assertion Note: #9038" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 747, footnote 266" ;
+	dprr:hasID 9038 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8339> rdfs:label "Post Assertion Note: #8339" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Font. 43; Liv. Per. 76." ;
+	dprr:hasID 8339 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7164> rdfs:label "Post Assertion Note: #7164" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 87-84. According to our sources, Cinna was planning to transport his army from Ancona to Liburnia (not Epirus, as in MRR 2.60) when he was killed early in 84 by his mutinous troops (see Badian, Studies 226-228). In the entries in MRR 2.55, 57, and 60, add the phrase Pr. by 90. On the college of two patrician consuls in 86, see MRR 2.30, note 3. T. J. Cadoux suggests that this case, in view of the absence of record of protest at Caesar and Lepidus in 46 (2.293) and at later examples such as Octavian and Messalla in 31 (2.420), indicates, not disregard of mos and ius, but repeal or obsolescence of the old law.\n" ;
+	dprr:hasID 7164 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4096> rdfs:label "Post Assertion Note: #4096" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 54f., 130, 482f.; Chr. 354; Fast. Hyd. (Carbone II et Scribonio), so also Chr. Pasc.; Cassiod.; on Carbo, CIL 12.2.683; Cic. Verr. 2.1.11 and 34; and on Cinna, Fast. Ant., Degrassi 164f. Cinna was killed early in the year by mutinous troops at Ancona while arranging passage for his army to Epirus (Liv. Per. 83; Vell. 2.24.5; Plut. Sert. 6.1; Pomp. 5.1-2; App. BC 1.77-78; Iul. Exup. 4; Auct. Vir. Ill. 69.4; Oros. 5.19.24; Zonar. 10.1). Carbo continued Cinna's preparations against Sulla's return from the East (Liv. Per. 84; App. BC 1.78), and continued in Picenum and Cisalpine Gaul until checked by Pompey (Plut. Pomp. 5-6). As unfavorable auspices prevented the holding of elections he remained sole Consul throughout the rest of the year (Fast. Cap.; Vell. 2.24.5; Plut. Pomp. 5.2)." ;
+	dprr:hasID 4096 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4083> rdfs:label "Post Assertion Note: #4083" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 12 .2.892; Fast. Cap., Degrassi 54f., 130, 482f.; App. BC 1.75; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; on Carbo, Fast. Ant., Degrassi 164f. In this year the Consuls began some preparations against Sulla's prospective retuin from the East (Liv. Per. 83; App. BC 1.76-77; cf. Auct. Vir. Ill. 69.4)." ;
+	dprr:hasID 4083 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4056> rdfs:label "Post Assertion Note: #4056" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 54f., 130, 482f.; Liv. Per. 80, without a comitia; Vell. 2.23.1; App. BC 1.75; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; on Cinna, CIL 12.2.713, 891; Auct. Vir. Ill. 69.3; Oros. 5.19.23; Schol. Bob. 109 Stangl; and on Marius, Fast. Ant., Degrassi 164f.; Elogium, Inscr. Ital. 13.3.83-CIL 12.1, p. 195; Val. Max. 8.15.7; 9.15.1; Plin. NH 11.252; Plut. Mar. 45.1; Flor. 2.9.17; Auct. Vir. Ill. 67.6. Cinna's rule was termed a tyranny (Cic. Phil. 1.34; 2.108; Brut. 227; ND 3.81; Sall. Hist. 1.64M; Val. Max. 6.9.6; Vell. 2.23.3; Plut. Caes. 1.1; Sull. 22.1; Tac. Ann. 1.1; Auct. Vir. Ill. 67.6). Marius died on January 13 (Cic. ND 3.81; Rosc. Amer. 33; Liv. Per. 80, with the date; Vell. 2.23.1; Plut. Mar. 45.2-46.5; App. BC 1.75; Flor. 2.9.17; Oros. 5.19.93). See 88, Promagistrates." ;
+	dprr:hasID 4056 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4002> rdfs:label "Post Assertion Note: #4002" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Har. Resp. 54; Tusc. 5.55; Phil. 13.2; 14.23; Fast. Ant., Degrassi 164f., and Fast. Cap., ibid. 54f., 129f., 482f.; Ascon. 23C; App. BC 1.65-66; Dio 30-35, fr. 102.3; Eutrop. 5.4; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; on Cinna, Cic. Phil. 11.1; Vell. 2.20.3; and on Octavius, Cic. Planc. 51. Cinna was elected in Sulla's presence and swore to maintain his measures (Plut. Sull. 10.3-4; Dio 30-35, fr." ;
+	dprr:hasID 4002 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3993> rdfs:label "Post Assertion Note: #3993" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Font. 43; Liv. Per. 76. Presumably served under Pompeius Strabo." ;
+	dprr:hasID 3993 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3936> rdfs:label "Post Assertion Note: #3936" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Font. 43; cf. Liv. Per. 76, probably a Legatus under Pompeius Strabo." ;
+	dprr:hasID 3936 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3935> rdfs:label "Post Assertion Note: #3935" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "20 In Liv. Per. 76 (ed. Rossbach, p. 84, line 19) Pinna, the reading of the manuscripts, is emended to Cinna by Jahn. See 90, note 13." ;
+	dprr:hasID 3935 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3873> rdfs:label "Post Assertion Note: #3873" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Font. 43; see above, Praetors." ;
+	dprr:hasID 3873 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3872> rdfs:label "Post Assertion Note: #3872" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "15 See also Liv. Per. 76, and above, note 13." ;
+	dprr:hasID 3872 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3839> rdfs:label "Post Assertion Note: #3839" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "3 The latest date possible under the Leges Annales. He was already an ex-Praetor when he served as a Legate in the Social War (Cic; Liv.; see 88, Legates). De Sanotis has shown (RFil 62 [1934] 550f.) that Cinna was a patrician, since Caesar when named Flamen Dialis divorced his plebeian wife Cossutia and married Cinna's daughter because the Flaminica had to be a patrician. That Cinna's colleague in the consulship of 86, L. Valerius Flaccus, was also a patrician exemplifies the illegalities of a period when there was neither mos nor ius (of. Mommsen, RF 1. 114, for the opposing view)." ;
+	dprr:hasID 3839 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8039> rdfs:label "Post Assertion: #8039" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9038> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8339> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7164> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3839> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius (106) L.f. L.n. Cinna" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8039 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSourceText "by 91" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4701> rdfs:label "Post Assertion: #4701" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7164> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4096> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Cornelius L. f. L. n. Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 87, 86, 85" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4701 ;
+	dprr:hasDateStart -84 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -84 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4687> rdfs:label "Post Assertion: #4687" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4083> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius L. f. L. n. Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 87, 86, 84, Pr. ca. 89" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4687 ;
+	dprr:hasDateStart -85 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -85 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4662> rdfs:label "Post Assertion: #4662" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7164> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4056> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius L. f. L. n. Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 87, 85, 84" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4662 ;
+	dprr:hasDateStart -86 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -86 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4617> rdfs:label "Post Assertion: #4617" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4002> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Cornelius L. f. L. n. Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 86-84, Pr. by 90" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4617 ;
+	dprr:hasDateStart -87 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -87 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4605> rdfs:label "Post Assertion: #4605" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3993> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Cornelius Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 87-84" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4605 ;
+	dprr:hasDateStart -88 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -88 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4564> rdfs:label "Post Assertion: #4564" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3936> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3935> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Cornelius Cinna Pat. (106)" ;
+	dprr:hasOfficeXref "Cos. 87-84" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4564 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4505> rdfs:label "Post Assertion: #4505" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3873> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3872> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "? L. Cornelius Cinna Pat. (106)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4505 ;
+	dprr:hasDateStart -90 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -90 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4359> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "101" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ANNI4359  Annia (101)" ;
+	dprr:hasNomen "Annia" ;
+	dprr:hasID 4359 ;
+	dprr:hasHighestOffice "daughter of? T. Annius (78) T. f. T. n. Rufus (cos. 128)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "ANNI4359" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4359> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4236> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "414" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CORN4236  Cornelia (414)" ;
+	dprr:hasNomen "Cornelia" ;
+	dprr:hasID 4236 ;
+	dprr:hasHighestOffice "daughter of L. Cornelius (106) L. f. L. n. Cinna (cos. 87)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CORN4236" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4236> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3873> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "413" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CORN3873  Cornelia (413)" ;
+	dprr:hasNomen "Cornelia" ;
+	dprr:hasID 3873 ;
+	dprr:hasHighestOffice "daughter of L. Cornelius (106) L. f. L. n. Cinna (cos. 87)" ;
+	dprr:hasEraTo -68 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CORN3873" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3873> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2663> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "107" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN2663 L. Cornelius (107) Cinna" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2663 ;
+	dprr:hasHighestOffice "pr. 44" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN2663" ;
+	dprr:hasCognomen "Cinna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2663> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1871> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "106" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN1871 L. Cornelius (106) L. f. L. n. Cinna" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1871 ;
+	dprr:hasHighestOffice "cos. 87" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -84 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN1871" ;
+	dprr:hasCognomen "Cinna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1871> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1620> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "105" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN1620 L. Cornelius (105) L. f. Cinna" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1620 ;
+	dprr:hasHighestOffice "cos. 127" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CORN1620" ;
+	dprr:hasCognomen "Cinna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1620> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/405> rdfs:label "Date Information: #405" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1871> ;
+	dprr:hasValue -84 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "murdered in mutiny." ;
+	dprr:hasID 405 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

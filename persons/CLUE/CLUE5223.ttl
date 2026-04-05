@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> rdfs:label "Secondary Source: Shackleton Bailey 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Speeches" ;
+	dprr:hasID 33 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's speeches. Stuttgart : Teubner, 1992." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2230> rdfs:label "Relationship Assertion Reference: #2230" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2230 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7551> rdfs:label "Relationship Assertion: #7551" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5223> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4400> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7534> rdfs:label "Relationship Assertion: #7534" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5223> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4752> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3971> rdfs:label "Relationship Assertion: #3971" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5223> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2230> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4548> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2481> rdfs:label "Person Note: #2481" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p36. Clu. (11-13), 14, (160). daughter of A. Cluentius senior" ;
+	dprr:hasID 2481 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5223> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2481> ;
+	dprr:hasPersonName "CLUE5223  Cluentia (6)" ;
+	dprr:hasNomen "Cluentia" ;
+	dprr:hasID 5223 ;
+	dprr:hasHighestOffice "daughter of A. Cluentius (3) Clu. Habitus (eq. R. ?)" ;
+	dprr:hasEraTo -1 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CLUE5223" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5223> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4752> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "SASS4752  Sassia (1)" ;
+	dprr:hasNomen "Sassia" ;
+	dprr:hasID 4752 ;
+	dprr:hasHighestOffice "married to? -. Albius (10) Clu. Oppianicus (eq. R. ?)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "SASS4752" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4752> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4548> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "CLUE4548 A. Cluentius (3) Clu. Habitus" ;
+	dprr:hasOrigin "Larinum" ;
+	dprr:hasNomen "Cluentius" ;
+	dprr:hasNobilisNotes "Cic. Cluent. 5.11, Quint. Inst. Or. 4.2.130" ;
+	dprr:hasID 4548 ;
+	dprr:hasHighestOffice "eq. R.? late C2-C1" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CLUE4548" ;
+	dprr:hasCognomen "Habitus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4548> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4400> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "CLUE4400 A. Cluentius (4) Clu. Habitus" ;
+	dprr:hasOrigin "Larinum" ;
+	dprr:hasNomen "Cluentius" ;
+	dprr:hasNobilisNotes "Cic. Cluent. 69.196" ;
+	dprr:hasID 4400 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CLUE4400" ;
+	dprr:hasCognomen "Habitus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4400> .

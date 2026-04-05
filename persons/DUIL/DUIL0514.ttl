@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2072> rdfs:label "Relationship Assertion: #2072" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/514> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4807> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/993> rdfs:label "Primary Source Reference: #993" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Diod. XXXIV/XXXV 33.1" ;
+	dprr:hasID 993 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/974> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/679> rdfs:label "Post Assertion Note: #679" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to deal with a serious debt situation. This they did by payments from public funds, or by authorizing bankruptcy proceedings or surrender of property (Liv. 7.21.5-8; Gaius Inst. 4.23; cf. Rotondi 224; Frank, ESAR 1.29f.). On Publilius, see Lübker no. 2." ;
+	dprr:hasID 679 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/974> rdfs:label "Post Assertion: #974" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/514> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/679> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Duillius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/46> ;
+	dprr:hasID 974 ;
+	dprr:hasDateStart -352 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -352 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/514> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "DUIL0514 C. Duillius (2)" ;
+	dprr:hasNomen "Duillius" ;
+	dprr:hasID 514 ;
+	dprr:hasHighestOffice "brother of? M. Duilius (7)" ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "DUIL0514" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/514> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4807> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "DUIL4807 M. Duilius (7)" ;
+	dprr:hasNomen "Duilius" ;
+	dprr:hasID 4807 ;
+	dprr:hasHighestOffice "brother of? C. Duillius (2)" ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "DUIL4807" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4807> .

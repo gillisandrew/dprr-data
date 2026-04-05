@@ -1,0 +1,263 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3630> rdfs:label "Relationship Assertion: #3630" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/930> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3613> rdfs:label "Relationship Assertion: #3613" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/902> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3467> rdfs:label "Relationship Assertion: #3467" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/720> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3466> rdfs:label "Relationship Assertion: #3466" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/993> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1890> rdfs:label "Primary Source Reference: #1890" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. II 7.5" ;
+	dprr:hasID 1890 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1818> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1823> rdfs:label "Primary Source Reference: #1823" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Suet. Caes. 6.1" ;
+	dprr:hasID 1823 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1751> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1730> rdfs:label "Primary Source Reference: #1730" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Sall. Cat. 40.4ff." ;
+	dprr:hasID 1730 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1660> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1680> rdfs:label "Primary Source Reference: #1680" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Pol. III 56.5" ;
+	dprr:hasID 1680 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1612> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1468> rdfs:label "Post Assertion Note: #1468" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Placed in charge of the garrison at Brundisium by Laevinus (Liv. 24.40.5; see 215, Prefects; and Münzer, Gent. Val. 38, no. 16)." ;
+	dprr:hasID 1468 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1394> rdfs:label "Post Assertion Note: #1394" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Marcellus at Nola (Liv. 23.16.13)." ;
+	dprr:hasID 1394 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1393> rdfs:label "Post Assertion Note: #1393" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The battle described in Livy was probably unimportant and the details, such as the number of the men lost, quite unreliable. Münzer (Gent. Val. 59, note 9) considers this Valerius a fictitious character taken from Valerius Antias. Lübker, no. 24, keeps the identification given above." ;
+	dprr:hasID 1393 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1292> rdfs:label "Post Assertion Note: #1292" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "According to Cicero (Phil. 5.27) and Livy (21.6.8), these were sent to Saguntum to order Hannibal to desist from the siege. On Valerius, see Münzer, Gent. Val. 38, no. 16." ;
+	dprr:hasID 1292 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1291> rdfs:label "Post Assertion Note: #1291" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "From Livy it would appear that these Envoys were dispatched under the Consuls of 218 (Liv. 21.6.3), but as Saguntum fell before the winter of 219-218, and the arrival of the Envoys may well have preceded Hannibal's attack (Polyb. 3.15.4), the date is at the latest early in 219." ;
+	dprr:hasID 1291 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1245> rdfs:label "Post Assertion Note: #1245" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Ser. Sulpicius, in Gell. 4.3.2, cf. 17.21.44; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; Degrassi 44f., 118, 440f. On Valerius, see Münzer, Gent. Val. 38, no. 16." ;
+	dprr:hasID 1245 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1818> rdfs:label "Post Assertion: #1818" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1468> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Valerius Flaccus Pat. (181)" ;
+	dprr:hasOfficeXref "Cos. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1818 ;
+	dprr:hasDateStart -214 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -214 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1751> rdfs:label "Post Assertion: #1751" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1394> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1393> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Valerius Flaccus Pat. (181)" ;
+	dprr:hasOfficeXref "Cos. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1751 ;
+	dprr:hasDateStart -216 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -216 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1660> rdfs:label "Post Assertion: #1660" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1292> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1291> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Valerius Flaccus Pat. (181)" ;
+	dprr:hasOfficeXref "Cos. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 1660 ;
+	dprr:hasDateStart -219 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -219 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1612> rdfs:label "Post Assertion: #1612" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1245> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Valerius L. f. M. n. Flaccus Pat. (181)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1612 ;
+	dprr:hasDateStart -227 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -227 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/993> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "166" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2241> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2240> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2239> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2238> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2237> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2236> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2235> ;
+	dprr:hasPersonName "VALE0993 C. Valerius (166) P. f. L. n. Flaccus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 993 ;
+	dprr:hasHighestOffice "pr. 183" ;
+	dprr:hasFiliation "P. f. L. n." ;
+	dprr:hasEraTo -174 ;
+	dprr:hasEraFrom -229 ;
+	dprr:hasDprrID "VALE0993" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/993> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/930> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*35" ;
+	dprr:hasReNumber "173" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2247> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2246> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2245> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2244> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2243> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2242> ;
+	dprr:hasPersonName "VALE0930 L. Valerius (173) P. f. L. n. Flaccus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasNobilisNotes "Liv. 37.57.10-15, 39.40.2-3" ;
+	dprr:hasID 930 ;
+	dprr:hasHighestOffice "cos. 195" ;
+	dprr:hasFiliation "P. f. L. n." ;
+	dprr:hasEraTo -180 ;
+	dprr:hasEraFrom -229 ;
+	dprr:hasDprrID "VALE0930" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/930> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/902> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "182" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0902 P. Valerius (182) Flaccus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 902 ;
+	dprr:hasHighestOffice "son of? P. Valerius (181) L. f. M. n. Flaccus (cos. 227)" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "VALE0902" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/902> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/805> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "181" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0805 P. Valerius (181) L. f. M. n. Flaccus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 805 ;
+	dprr:hasHighestOffice "cos. 227" ;
+	dprr:hasFiliation "L. f. M. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "VALE0805" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/805> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/720> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*26" ;
+	dprr:hasReNumber "172" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0720 L. Valerius (172) M. f. L. n. Flaccus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 720 ;
+	dprr:hasHighestOffice "cos. 261" ;
+	dprr:hasFiliation "M. f. L. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "VALE0720" ;
+	dprr:hasCognomen "Flaccus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/720> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1029> rdfs:label "Date Information: #1029" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/805> ;
+	dprr:hasValue -211 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasNotes "Liv. 26.8.1-9." ;
+	dprr:hasID 1029 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

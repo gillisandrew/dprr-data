@@ -1,0 +1,189 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/28> rdfs:label "Tribe Assertion: #28" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/35> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "S.C. de Oropiis. Sherk 1969, 133-38, no. 23: 1984, 85-7" ;
+	dprr:hasID 28 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/35> rdfs:label "Tribe: Stellatina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Stellatina" ;
+	dprr:hasID 35 ;
+	dprr:hasAbbreviation "Ste." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2605> rdfs:label "Status Assertion: #2605" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2605 ;
+	dprr:hasDateStart -77 ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9907> rdfs:label "Post Assertion Note: #9907" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9907 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> rdfs:label "Post Assertion Note: #9267" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The list of senators in a dated inscription of this year (SIG(3) 747) provides good evidence for the names of a group of ex-magistrates, although it is not wholly conclusive because of the additions to the Senate by the reforms of Sulla." ;
+	dprr:hasID 9267 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8750> rdfs:label "Post Assertion Note: #8750" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 751, footnote 368" ;
+	dprr:hasID 8750 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4717> rdfs:label "Post Assertion Note: #4717" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Planc. 27, legatus; Flacc. 6 and 30 and 63 and 100; Solin. 1.91, p. 23 M." ;
+	dprr:hasID 4717 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4715> rdfs:label "Post Assertion Note: #4715" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "14 In D-G. 2.42, Cn. Plancius is also listed, but he was only a miles under Metellus (Cic. Planc. 27)." ;
+	dprr:hasID 4715 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4714> rdfs:label "Post Assertion Note: #4714" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Under Q. Caecilius Metellus Creticus in Crete and Achaea:" ;
+	dprr:hasID 4714 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4670> rdfs:label "Post Assertion Note: #4670" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Metellus Creticus (Cic. Planc. 27)." ;
+	dprr:hasID 4670 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4427> rdfs:label "Post Assertion Note: #4427" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Sicily (Cic. Verr. 2.1.27, and 2.21-22 and 68-75 and 81, and 3.90, and 5.108; Ps.-Ascon. 185, and 261 Stangl), the immediate predecessor of Verres (see above; and Verr. 2.2.81 and 119, and 3.119 and 214-216, and 5.55)." ;
+	dprr:hasID 4427 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4372> rdfs:label "Post Assertion Note: #4372" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Verr. 2.1.130, cf. 104, 121, 125; 2.2.22 and 68; Ascon. 82C; Ps.-Ascon. 251 Stangl." ;
+	dprr:hasID 4372 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5314> rdfs:label "Post Assertion: #5314" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4717> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4715> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4714> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Licinius Sacerdos (154)" ;
+	dprr:hasOfficeXref "Pr. 75 Cic. Planc. 27, legatus." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5314 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5276> rdfs:label "Post Assertion: #5276" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4670> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Licinius Sacerdos (154)" ;
+	dprr:hasOfficeXref "Pr. 75" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5276 ;
+	dprr:hasDateStart -68 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5009> rdfs:label "Post Assertion: #5009" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4427> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Licinius Sacerdos (154)" ;
+	dprr:hasOfficeXref "Pr. 75" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 5009 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4964> rdfs:label "Post Assertion: #4964" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8750> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4372> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "C. Licinius C. f. Sacerdos (154)" ;
+	dprr:hasOfficeXref "Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4964 ;
+	dprr:hasDateStart -75 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -75 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10302> rdfs:label "Post Assertion: #10302" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2067> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9907> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/254> ;
+	dprr:hasID 10302 ;
+	dprr:hasDateStart -63 ;
+	dprr:hasDateSourceText "63" ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2067> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "154" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "LICI2067 C. Licinius (154) C. f. Ste. Sacerdos" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 2067 ;
+	dprr:hasHighestOffice "pr. 75" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "LICI2067" ;
+	dprr:hasCognomen "Sacerdos" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2067> .

@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/140> rdfs:label "Tribe Assertion: #140" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3431> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/42> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "Joseph. Ant. 14.229, 238" ;
+	dprr:hasID 140 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/42> rdfs:label "Tribe: Voturia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Voturia" ;
+	dprr:hasID 42 ;
+	dprr:hasAbbreviation "Vot." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7481> rdfs:label "Post Assertion Note: #7481" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Almost certainly a military tribune in the consilium of L. Cornelius Lentulus Crus (217). Cos. 49, in Asia in 49, since he is named in Josephus' list (AJ 14.229, 238) between two military tribunes so specifically termed (J. Suolahti, Arctos 2, 1958, 152-166).[58x]\n" ;
+	dprr:hasID 7481 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8341> rdfs:label "Post Assertion: #8341" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3431> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7481> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Clusius P. f. Vet(uria) Gallus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 8341 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSourceText "49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3431> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CLUS3431 P. Clusius (not in RE) P. f.  Vot. Gallus" ;
+	dprr:hasNomen "Clusius" ;
+	dprr:hasID 3431 ;
+	dprr:hasHighestOffice "tr. mil. 49" ;
+	dprr:hasFiliation "P. f. " ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CLUS3431" ;
+	dprr:hasCognomen "Gallus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3431> .

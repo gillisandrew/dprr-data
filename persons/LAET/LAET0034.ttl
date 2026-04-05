@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/70> rdfs:label "Primary Source Reference: #70" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. b.c. V 69 (291)" ;
+	dprr:hasID 70 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/69> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/65> rdfs:label "Post Assertion Note: #65" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Dedicated the first temple of Mercury, being elected by the people for this purpose while primipilus to express their dislike of the Consuls (Liv. 2.27.6; Val. Max. 9.3.6). Münzer suggests that he may have been a Decemvir sacris faciundis (APF 89f.; cf. Wissowa 304)." ;
+	dprr:hasID 65 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/69> rdfs:label "Post Assertion: #69" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/34> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/65> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M. Laetorius (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/15> ;
+	dprr:hasID 69 ;
+	dprr:hasDateStart -495 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -495 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/34> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LAET0034 M. Laetorius (8)" ;
+	dprr:hasNomen "Laetorius" ;
+	dprr:hasID 34 ;
+	dprr:hasHighestOffice "X vir s. f.? 495" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "LAET0034" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/34> .

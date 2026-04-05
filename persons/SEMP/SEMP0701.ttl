@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1567> rdfs:label "Primary Source Reference: #1567" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 9.1" ;
+	dprr:hasID 1567 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1504> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1486> rdfs:label "Primary Source Reference: #1486" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 31.2" ;
+	dprr:hasID 1486 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1430> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1166> rdfs:label "Post Assertion Note: #1166" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 42f., 116, 434f. They expelled 16 from the Senate (Liv. Per. 18), and reduced 400 knights to aerarii for disobedience in Sicily (Val. Max. 2.9.7; Frontin. Str. 4.1.22; cf. Val. Max. 6.3.12; Plut. RQ 14, on Sempronius). On Valerius, see Münzer, Gent. Val. 50, no. 51." ;
+	dprr:hasID 1166 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1102> rdfs:label "Post Assertion Note: #1102" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (C.'s name entire); Act. Tr. ([P. Sem]pronius P. f. P. [n.- - - -]; Ap. Claudius Ap. f. C. [n.- - - -]); Vell. 1.14.7; Eutrop. 2.16; Chr. 354 (Sofo et Russo); Fast. Hyd. (Simfronio Sapiente et Rufo); Chr. Pasc. ({Gr}); Cassiod.; Degrassi, 40f., 115, 432f. The Consuls suppressed the rising of the Picentes and celebrated triumphs (Act. Tr., Degrassi, 74f., 547; Eutrop. 2.16; cf. Liv. Per. 15), and at Asculum Sempronius vowed a temple to Tellus (Flor. 1.14.1-2; Oros. 4.4.5-7; cf. Frontin. Str. 1.12.3, with the cognomen Gracchus). Beneventum and Ariminum were colonized this year (Vell. 1.14.7). Claudius died in office (Fast. Cap.)." ;
+	dprr:hasID 1102 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10213> rdfs:label "Post Assertion Note: #10213" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Peicentibus. MRR I.199-200, Itgenshorst no. 118, Rich no. 117." ;
+	dprr:hasID 10213 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1504> rdfs:label "Post Assertion: #1504" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/701> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1166> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Sempronius P. f. P. n. Sophus (86)" ;
+	dprr:hasOfficeXref "Cos. 268" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1504 ;
+	dprr:hasDateStart -252 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -252 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1430> rdfs:label "Post Assertion: #1430" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/701> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1102> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Sempronius P. f. P. n. Sophus (86)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1430 ;
+	dprr:hasDateStart -268 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -268 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10608> rdfs:label "Post Assertion: #10608" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/701> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10213> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10608 ;
+	dprr:hasDateStart -268 ;
+	dprr:hasDateSourceText "268" ;
+	dprr:hasDateEnd -268 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/701> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "86" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SEMP0701 P. Sempronius (86) P. f. P. n. Sophus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 701 ;
+	dprr:hasHighestOffice "cos. 268" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "SEMP0701" ;
+	dprr:hasCognomen "Sophus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/701> .

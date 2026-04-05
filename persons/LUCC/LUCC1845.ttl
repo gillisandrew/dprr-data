@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8374> rdfs:label "Post Assertion Note: #8374" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 12.2.663, cf. 664." ;
+	dprr:hasID 8374 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8173> rdfs:label "Post Assertion Note: #8173" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., lieut. in Macedonia ca. 92. See MRR 2.19; CIL 1(2).2.663-ILS 4053-ILLRP 210.\n" ;
+	dprr:hasID 8173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3798> rdfs:label "Post Assertion Note: #3798" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "8 An inscription found in Samothrace, dated to July, 92, names L. Lucceius M. f. Leg. Lommatzsch, in CIL 11.2, p. 517, holds that Leg. is either a misreading of the name of a Roman tribe or that it is the title of a Legate, presumably a Legate of either Sentius in Macedonia or the current governor of Asia. Münzer (RE) believes that it is a title." ;
+	dprr:hasID 3798 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4439> rdfs:label "Post Assertion: #4439" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1845> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8374> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8173> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3798> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Lucceius M. f. (4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4439 ;
+	dprr:hasDateStart -92 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -92 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1845> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "LUCC1845 L. Lucceius (4) M. f." ;
+	dprr:hasNomen "Lucceius" ;
+	dprr:hasID 1845 ;
+	dprr:hasHighestOffice "leg. lieut. 92" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "LUCC1845" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1845> .

@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2307> rdfs:label "Status Assertion: #2307" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1494> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2307 ;
+	dprr:hasDateStart -155 ;
+	dprr:hasDateEnd -150 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1448> rdfs:label "Relationship Assertion: #1448" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1494> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3356> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1447> rdfs:label "Relationship Assertion: #1447" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1494> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1680> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8604> rdfs:label "Post Assertion Note: #8604" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 737" ;
+	dprr:hasID 8604 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2923> rdfs:label "Post Assertion Note: #2923" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Sen. 14; Att. 12.5b; Fast. Cap., Degrassi 52f., 124, 464f. ([- - - -]n. Flaminin., M'. Acilius L. [f.] L. n. [B]albus); Fast. Ant., Degrassi 160f. ([T. Q]uincti. Fl[ami]n., M'. Aci[- - - -]); Plin. NH 7.121, with C. for T.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod." ;
+	dprr:hasID 2923 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2902> rdfs:label "Post Assertion Note: #2902" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest date possible under the Lex Villia for their praetorships." ;
+	dprr:hasID 2902 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3579> rdfs:label "Post Assertion: #3579" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1494> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2923> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M'. Acilius L. f. K. n. Balbus (25)" ;
+	dprr:hasOfficeXref "Pr. by 153" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3579 ;
+	dprr:hasDateStart -150 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -150 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3555> rdfs:label "Post Assertion: #3555" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1494> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8604> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2902> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M'. Acilius Balbus (25)" ;
+	dprr:hasOfficeXref "Cos. 150" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3555 ;
+	dprr:hasDateStart -153 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -153 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3356> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "Atilius 16 = Acilius 7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ACIL3356 L. Acilius (Atilius 16 = Acilius 7) K. f. (Sapiens)" ;
+	dprr:hasNomen "Acilius" ;
+	dprr:hasID 3356 ;
+	dprr:hasHighestOffice "pr. 197" ;
+	dprr:hasFiliation "K. f." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "ACIL3356" ;
+	dprr:hasCognomen "(Sapiens)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3356> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1680> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "ACIL1680 M'. Acilius (26) M'.? f. L. n. Balbus" ;
+	dprr:hasNomen "Acilius" ;
+	dprr:hasID 1680 ;
+	dprr:hasHighestOffice "cos. before 113" ;
+	dprr:hasFiliation "M'.? f. L. n." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "ACIL1680" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1680> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1494> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "ACIL1494 M'. Acilius (25) L. f. K. n. Balbus" ;
+	dprr:hasNomen "Acilius" ;
+	dprr:hasID 1494 ;
+	dprr:hasHighestOffice "cos. 150" ;
+	dprr:hasFiliation "L. f. K. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "ACIL1494" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1494> .

@@ -1,0 +1,214 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1763> rdfs:label "Status Assertion: #1763" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1763 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6659> rdfs:label "Relationship Assertion: #6659" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2867> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6657> rdfs:label "Relationship Assertion: #6657" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3921> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1891> rdfs:label "Relationship Assertion: #1891" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2062> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1890> rdfs:label "Relationship Assertion: #1890" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/7> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2140> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/7> rdfs:label "Relationship: adopted son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 23 ;
+	dprr:hasName "adopted son of" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7278> rdfs:label "Post Assertion Note: #7278" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Since he assisted in the prosecution of Milo in 52 (Ascon. 34C), he very probably gained entrance to the Senate before 31, and, if he is the ..]# named in the SC de Mitylenaeis (IGRP 4.33; but Sherk, RDGE no. 26, col. c, 14, p. 150, reads ..]#), he was certainly there in 25. Mommsen and Münzer (RE no. 15) suggest that the senator of 25 was son of no. 299, but the order of names, though fragmentary, is in favor of an older man. (TJC)" ;
+	dprr:hasID 7278 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8339> rdfs:label "Post Assertion: #8339" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7278> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Ap. Claudius Pulcher Pat. (299; cf. 15)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 8339 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSourceText "Before 31" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3921> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "C" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CLAU3921 C. Claudius (C) Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 3921 ;
+	dprr:hasHighestOffice "son of C. Claudius (303) Ap. f. Ap. n. Pulcher (pr. 56)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CLAU3921" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3921> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3430> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "299, cf. 15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonName "CLAU3430 Ap. Claudius (299, cf. 15) Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 3430 ;
+	dprr:hasHighestOffice "sen. 43" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CLAU3430" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3430> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2867> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "298" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/526> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/525> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/524> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/523> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/522> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/521> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/520> ;
+	dprr:hasPersonName "CLAU2867 Ap. Claudius (298) C. f. Ap. n. Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasNobilisNotes "Cic. Fam. 11.22.1" ;
+	dprr:hasID 2867 ;
+	dprr:hasHighestOffice "cos. 38" ;
+	dprr:hasFiliation "C. f. Ap. n." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CLAU2867" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2867> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2140> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "297" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/519> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/518> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/517> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/516> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/515> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/514> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/513> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/512> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/511> ;
+	dprr:hasPersonName "CLAU2140 Ap. Claudius (297) Ap. f. Ap. n. Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasNobilisNotes "Cic. Domo Sua 43.111, Cic. Fam. 3.7.5, 3.8.8, 3.10.9, Cic. Phil. 13.14.29" ;
+	dprr:hasID 2140 ;
+	dprr:hasHighestOffice "cos. 54" ;
+	dprr:hasFiliation "Ap. f. Ap. n." ;
+	dprr:hasEraTo -48 ;
+	dprr:hasEraFrom -97 ;
+	dprr:hasDprrID "CLAU2140" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2140> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2062> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "303" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/539> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/538> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/537> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/536> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/535> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/534> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/533> ;
+	dprr:hasPersonName "CLAU2062 C. Claudius (303) Ap. f. Ap. n. Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 2062 ;
+	dprr:hasHighestOffice "pr. 56" ;
+	dprr:hasFiliation "Ap. f. Ap. n." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CLAU2062" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2062> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2066> rdfs:label "Date Information: #2066" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasValue -25 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Identified by Hinard (see also MRR) with the senator named in the SC de Mitylenaeis of 25" ;
+	dprr:hasID 2066 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2065> rdfs:label "Date Information: #2065" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3430> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 43 (A senator)" ;
+	dprr:hasID 2065 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

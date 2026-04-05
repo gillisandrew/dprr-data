@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2633> rdfs:label "Post Assertion Note: #2633" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to the various Greek communities to keep them in alliance with Rome against Macedon, they sailed with a guard to Corcyra and there apportioned regions to each member of the embassy: to Marcius and Atilius, northern and central Greece and the Peloponnese; to the Lentuli, Cephallenia and the western Peloponnese; and to Decimius, King Gentius of Illyria (Liv. 42.37.1-9). Marcius and Atilius proceeded through Epirus and Acarnania to the Thessalian council at Larisa, and then in a conference with Perseus encouraged him to send envoys to Rome under agreement for a truce (Liv. 42.38.1-47.3, cf. 47.1-9; T. Frank, CPh 5 [1910] 358-361). They went on to break up the Boeotian League, placing pro-Roman parties in control and attaching the communities individually to Rome (Polyb. 27.1.1-2.10; Liv. 42.43.4-44.6), and summoned Ser. Cornelius to stay at Chalcis. At Argos they induced the council of the Achaeans to send a guard to Chalcis (Polyb. 27.2.11; Liv. 42.44.7-8), then making an end of these winter activities they rejoined P. Cornelius and returned to Rome (Polyb. 27.2.12; Liv. 42.44.8, principio hiemis !). Decimius in Illyria fell under suspicion of accepting bribes (Liv. 42.45.8). Cf. App. Mac. 11.4." ;
+	dprr:hasID 2633 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3201> rdfs:label "Post Assertion: #3201" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1364> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2633> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Decimius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3201 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1364> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "DECI1364 L. Decimius (3)" ;
+	dprr:hasNomen "Decimius" ;
+	dprr:hasID 1364 ;
+	dprr:hasHighestOffice "leg. amb. 172" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "DECI1364" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1364> .

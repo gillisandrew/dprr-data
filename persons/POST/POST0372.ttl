@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/813> rdfs:label "Primary Source Reference: #813" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio frg. 102.12 (XXX-XXXV)" ;
+	dprr:hasID 813 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/804> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/665> rdfs:label "Primary Source Reference: #665" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. XI 10" ;
+	dprr:hasID 665 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/656> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/563> rdfs:label "Post Assertion Note: #563" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.22.5; Diod. 15.48.1; Plut. Cam. 37.1, on Camillus and Medullinus; Chr. 354 (Publicola IIII et Tricipitino); Degrassi 101, 392f. Camillus retrieved his colleague's (Furius) defeat, routed the Volscians, and led his forces to a determinedly peaceful Tusculum (Liv. 6.22-27; Val. Max. 7.3, ext. 9; Plut. Cam. 37-38; Frontin. Str. 2.8.6; cf. Dion. Hal. 14.6; Dio, fr. 28; Zon. 7.24)." ;
+	dprr:hasID 563 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/562> rdfs:label "Post Assertion Note: #562" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The name and filiation of Medullinus appear from Fast. Cap. on 363, Censors. On Lucretius, see 392; and on Fabius, see Fast. Cap. for 369. The Chronographer of 354 names Publicola IIII, but no other source places him in this year; on the number, see 380, and see 389, note 1." ;
+	dprr:hasID 562 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> rdfs:label "Post Assertion Note: #483" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.16.1 and 5, and 17.1; Diod. 14.85.1; Fast. Cap. (see note 1); Chr. 354 (Iulo II et Fidenas); Degrassi 28f., 99, 384f. There was war this year with Volscians, Aequi, Veientanes, Faliscans, Capenates, and raiders from Tarquinii (Liv. 5.16.2-8). The whole college was compelled to abdicate before the end of the year because of a faulty election (Liv. 5.17.2-3; not noted in Fast. Cap.)." ;
+	dprr:hasID 483 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> rdfs:label "Post Assertion Note: #482" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: [- - - - -Iulu]s II; [- - - -Medulli]nus IV; [- - - -Regille]nsis; L. Sergius M'. f. n. [- - - -]; P. Cornelius P. f. [- - - -]; A. Manlius A. f. C [n. n.- - - -]. Diod. indicates a total of six names but omits Furius and Iulius, while in F are added the unidentifiable names {Gr} and '{Gr}. On the name of Iulius see Fast. Cap. 401, and 489, note 1, and note the readings Tullus and Silius Tullus in Mss of Livy 5.16.1 (ed. Conway and Walters). On the filiation of Cornelius, see Fast. Cap. on 396, Master of Horse." ;
+	dprr:hasID 482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/804> rdfs:label "Post Assertion: #804" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/372> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/563> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/562> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Postumius - f. - n. (Albinus) Regillensis Pat. (*13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 804 ;
+	dprr:hasDateStart -381 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -381 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/656> rdfs:label "Post Assertion: #656" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/372> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "A. Postumius - f. - n. Albinus Regillensis Pat. (*13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 656 ;
+	dprr:hasDateStart -397 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -397 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/372> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*13" ;
+	dprr:hasReNumber "57" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "POST0372 A. Postumius (57) Albinus Regillensis" ;
+	dprr:hasOtherNames "Regillensis" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 372 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 381" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "POST0372" ;
+	dprr:hasCognomen "Albinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/372> .

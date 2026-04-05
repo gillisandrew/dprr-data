@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/173> rdfs:label "Primary Source Reference: #173" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 79.2" ;
+	dprr:hasID 173 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/169> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/130> rdfs:label "Post Assertion Note: #130" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.49.9; Diod. 11.52.1 (see note 1); Fast. Cap. ([- - - Stru]ctus Ahala); Dion. Hal. 9.16.1 (see notes 1 and 2); Chr. 354 (Mamerco II et Strueto); Fast. Hyd. (Aemilio II et Aesculino); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 24f., 89f., 356f. Aemilius defeated the Veientanes and made them sue for peace, while Servilius faced the Volscians (Liv. 2.49.9-12; Dion. Hal. 9.16.1-17.4). According to Fast. Cap., Servilius died in office (Degrassi 24f., 89)." ;
+	dprr:hasID 130 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/129> rdfs:label "Post Assertion Note: #129" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On the name Ahala, see Degrassi 90; CIL 1(2). 1, pp. 30 and 100, note 2. Münzer (RE nos. 85 and 87) has apparently interchanged the praenomina C. and Sp. Sergius, named in Dion. Hal. as the ordinary Consul with Aemilius, is probably a corruption of Servilius. Diodorus is in error in naming C. Cornelius Lentulus since the praenomen is foreign to the patrician Lentuli and the cognomen does not appear until much later." ;
+	dprr:hasID 129 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/169> rdfs:label "Post Assertion: #169" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/92> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/130> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/129> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Servilius - f. - n. Structus Ahala Pat. (87)" ;
+	dprr:hasOfficeXref "{26}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 169 ;
+	dprr:hasDateStart -478 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -478 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/92> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "87" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SERV0092 C. Servilius (87) Structus Ahala" ;
+	dprr:hasOtherNames "Ahala" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 92 ;
+	dprr:hasHighestOffice "cos. 478" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -478 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "SERV0092" ;
+	dprr:hasCognomen "Structus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/92> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1108> rdfs:label "Date Information: #1108" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/92> ;
+	dprr:hasValue -478 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 1108 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

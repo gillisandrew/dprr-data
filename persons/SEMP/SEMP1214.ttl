@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/446> rdfs:label "Status Assertion: #446" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 446 ;
+	dprr:hasDateStart -187 ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2479> rdfs:label "Relationship Assertion: #2479" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/942> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2478> rdfs:label "Relationship Assertion: #2478" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/743> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8496> rdfs:label "Post Assertion Note: #8496" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 732" ;
+	dprr:hasID 8496 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2684> rdfs:label "Post Assertion Note: #2684" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to restore the people of Abdera their freedom, and search out and return those who had been sold (Liv. 43.4.12-13)." ;
+	dprr:hasID 2684 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2338> rdfs:label "Post Assertion Note: #2338" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 39.32.14 Provinces Liv. 39.38.2-3." ;
+	dprr:hasID 2338 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2297> rdfs:label "Post Assertion Note: #2297" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 39.7.10." ;
+	dprr:hasID 2297 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3270> rdfs:label "Post Assertion: #3270" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2684> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Sempronius Blaesus (30)" ;
+	dprr:hasOfficeXref "Pr. 184" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3270 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2834> rdfs:label "Post Assertion: #2834" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8496> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2338> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Sempronius Blaesus (30)" ;
+	dprr:hasOfficeXref "Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2834 ;
+	dprr:hasDateStart -184 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -184 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2782> rdfs:label "Post Assertion: #2782" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2297> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Sempronius Blaesus (30)" ;
+	dprr:hasOfficeXref "Pr. 184" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 2782 ;
+	dprr:hasDateStart -187 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -187 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/942> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SEMP0942 C. Sempronius (29) Blaesus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 942 ;
+	dprr:hasHighestOffice "tr. pl. 211" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SEMP0942" ;
+	dprr:hasCognomen "Blaesus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/942> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/743> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SEMP0743 C. Sempronius (28) Ti. f. Ti. n. Blaesus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 743 ;
+	dprr:hasHighestOffice "cos. 253" ;
+	dprr:hasFiliation "Ti. f. Ti. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "SEMP0743" ;
+	dprr:hasCognomen "Blaesus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/743> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1214> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SEMP1214 C. Sempronius (30) Blaesus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 1214 ;
+	dprr:hasHighestOffice "pr. 184" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -217 ;
+	dprr:hasDprrID "SEMP1214" ;
+	dprr:hasCognomen "Blaesus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1214> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/105> rdfs:label "Date Information: #105" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1214> ;
+	dprr:hasValue -217 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 147." ;
+	dprr:hasID 105 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

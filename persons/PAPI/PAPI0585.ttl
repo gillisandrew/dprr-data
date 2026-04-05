@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1171> rdfs:label "Primary Source Reference: #1171" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXIII 2.6" ;
+	dprr:hasID 1171 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1151> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9189> rdfs:label "Post Assertion Note: #9189" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 725, footnote 3" ;
+	dprr:hasID 9189 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/857> rdfs:label "Post Assertion Note: #857" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap.; Fest. 120 L; Isid. Etym. 15.3.11; cf. Liv. 9.19.1-3, and 20.6. Maenius built the overhanging galleries known by his name (Fest.). See Degrassi 36f., 109, 416f.; on Papirius, Degrassi 108, on 330; and on the Maeniana, Boethius, Eranos 43 (1945) 89ff.; Lehman, AJPh 59 (1938) 280ff." ;
+	dprr:hasID 857 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/856> rdfs:label "Post Assertion Note: #856" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The relation of these Censors, who are not named in Livy, to those of the previous year (also not named in Livy) is not stated. Livy however mentions the population registered by the Censors of this time, and the two new tribes." ;
+	dprr:hasID 856 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/780> rdfs:label "Post Assertion Note: #780" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried a bill to grant civitas sine suffragio to Acerrae (Liv. 8.17.12; cf. Vell. 1.14.4). See Lübker no. 6." ;
+	dprr:hasID 780 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/779> rdfs:label "Post Assertion Note: #779" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "L. Papirius Crassus, Cos. 336 and 330, who would normally be identified with this Praetor in a period when the praetorship frequently followed the consulship, was himself Praetor in 340. The other possibilities are L. Papirius Cursor, Cos. 326, 320, 319, 315, 313, and L. Papirius Crassus, Censor in 318. Cursor's praetorship is not otherwise attested, but if he held this praetorship we should have no evidence that the Censor of 318 ever held any curule office. Münzer (RE nos. 46 and 52) admits both possibilities." ;
+	dprr:hasID 779 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1151> rdfs:label "Post Assertion: #1151" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/585> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/857> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/856> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Papirius L. f. M. n. Crassus Pat. (46)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1151 ;
+	dprr:hasDateStart -318 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -318 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11092> rdfs:label "Post Assertion: #11092" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/585> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9189> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/780> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/779> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 11092 ;
+	dprr:hasDateStart -332 ;
+	dprr:hasDateEnd -332 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/585> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "46" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PAPI0585 L. Papirius (46) L. f. M. n. Crassus" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasNobilisNotes "Liv. 9.34.6 (all censors between lex Aemilia and 310 \"nobilissimi... viri\")" ;
+	dprr:hasID 585 ;
+	dprr:hasHighestOffice "pr.? 332" ;
+	dprr:hasFiliation "L. f. M. n." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "PAPI0585" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/585> .

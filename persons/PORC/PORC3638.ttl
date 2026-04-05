@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2030> rdfs:label "Status Assertion: #2030" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2030 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1793> rdfs:label "Status Assertion: #1793" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1793 ;
+	dprr:hasDateStart -95 ;
+	dprr:hasDateEnd -92 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6046> rdfs:label "Relationship Assertion: #6046" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3239> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3095> rdfs:label "Relationship Assertion: #3095" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1084> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9454> rdfs:label "Post Assertion Note: #9454" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 301" ;
+	dprr:hasID 9454 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7967> rdfs:label "Post Assertion Note: #7967" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. pl. before 90. In MRR 2.449, and Index, 606, refer also to Crawford, RRC 1.313- 314, no. 301, 110 or 109 B.C.\n" ;
+	dprr:hasID 7967 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6663> rdfs:label "Post Assertion Note: #6663" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Tribune whose summons Varro, when III vir Capitalis, refused to obey (Gell. 13.12.6). Probably not a Cato but a Laeca or a Licinus (Cichorius, RS 201). A Porcius Laeca, Monetalis before 103, might have held the tribunate between 95 and 90 when Varro was from 21 to 26 years of age (Cichorius, above; Niccolini, FTP 428)." ;
+	dprr:hasID 6663 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8712> rdfs:label "Post Assertion: #8712" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9454> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7967> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Porcius Laeca, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8712 ;
+	dprr:hasDateStart -109 ;
+	dprr:hasDateSourceText "110 - 109" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -109 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8434> rdfs:label "Post Assertion: #8434" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7967> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6663> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Porcius (not in *RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 8434 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSourceText "before 90" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11209> rdfs:label "Post Assertion: #11209" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9454> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7967> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 11209 ;
+	dprr:hasDateStart -110 ;
+	dprr:hasDateEnd -110 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3638> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "21" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "PORC3638 P. Porcius (21) Laeca" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 3638 ;
+	dprr:hasHighestOffice "tr. pl. before 90" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PORC3638" ;
+	dprr:hasCognomen "Laeca" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3638> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3239> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "cf. 4 and 19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "PORC3239 P. Porcius (cf. 4 and 19) P. f. (Laeca)" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 3239 ;
+	dprr:hasHighestOffice "sen. 165" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "PORC3239" ;
+	dprr:hasCognomen "(Laeca)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3239> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1084> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*6" ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1725> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1724> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1723> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1722> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1721> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1720> ;
+	dprr:hasPersonName "PORC1084 P. Porcius (19) Pap. Laeca" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1084 ;
+	dprr:hasHighestOffice "pr. 195" ;
+	dprr:hasEraTo -164 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "PORC1084" ;
+	dprr:hasCognomen "Laeca" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1084> .

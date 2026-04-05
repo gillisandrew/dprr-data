@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/808> rdfs:label "Status Assertion: #808" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1782> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 808 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3617> rdfs:label "Post Assertion Note: #3617" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under C. Servilius in Sicily (Cic. Div. in Caec. 63; cf. Ps.-Ascon. 203 Stangl)." ;
+	dprr:hasID 3617 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3616> rdfs:label "Post Assertion Note: #3616" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "If Ps.-Asconius is correct in his belief that Cicero in this passage gave his examples in the order of time, Philo's quaestorship should precede that of Scaurus, who was Consul in 108 (see 117, Quaestors), and the C. Servilius whom he wished to prosecute should be distinguished from the Praetor listed above. The cognomen Philo suggests that his nomen was either Veturius or Publilius." ;
+	dprr:hasID 3616 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4284> rdfs:label "Post Assertion: #4284" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1782> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3617> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3616> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? L. Philo (Veturius *18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4284 ;
+	dprr:hasDateStart -102 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -102 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1782> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumberOld "*18" ;
+	dprr:hasReNumber "Veturius 21" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VETU1782 L. (Veturius) or (Publilius) (Veturius 21) Philo" ;
+	dprr:hasNomen "(Veturius) or (Publilius)" ;
+	dprr:hasID 1782 ;
+	dprr:hasHighestOffice "q.? 102" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "VETU1782" ;
+	dprr:hasCognomen "Philo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1782> .

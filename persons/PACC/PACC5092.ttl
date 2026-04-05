@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/321> rdfs:label "Tribe Assertion: #321" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5092> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/7> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 321 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/7> rdfs:label "Tribe: Collina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Collina" ;
+	dprr:hasID 7 ;
+	dprr:hasAbbreviation "Col." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10398> rdfs:label "Post Assertion Note: #10398" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "E.12. On consilium of L. Cornelius Lentulus Crus in 49 (Ios. AJ 14.229, 238)" ;
+	dprr:hasID 10398 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10793> rdfs:label "Post Assertion: #10793" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5092> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10398> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/179> ;
+	dprr:hasID 10793 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSourceText "49" ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5092> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PACC5092 L. Paccius (not in RE) L. f. Col. Capito" ;
+	dprr:hasNomen "Paccius" ;
+	dprr:hasID 5092 ;
+	dprr:hasHighestOffice "prim. pil. 49" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "PACC5092" ;
+	dprr:hasCognomen "Capito" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5092> .

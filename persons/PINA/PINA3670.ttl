@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9487> rdfs:label "Post Assertion Note: #9487" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 546" ;
+	dprr:hasID 9487 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7490> rdfs:label "Post Assertion Note: #7490" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In MRR 2.442, 31 B.C., refer, on his coins, also to Crawford, RRC 1.542-543, no. 546, 31 B.C. Acclaimed imperator when serving first under Antony and then under Octavian, in the Cyrenaica. See G. Perl, Klio 52, 1970, 319-354, esp. 352-353; 53, 1971, 369-379, esp. 378.\n" ;
+	dprr:hasID 7490 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8744> rdfs:label "Post Assertion: #8744" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3670> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Cyrenaica" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9487> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7490> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Pinarius Scarpus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8744 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSourceText "31" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3670> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PINA3670 L. Pinarius (27) Scarpus" ;
+	dprr:hasNomen "Pinarius" ;
+	dprr:hasID 3670 ;
+	dprr:hasHighestOffice "monetal. 31" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PINA3670" ;
+	dprr:hasCognomen "Scarpus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3670> .

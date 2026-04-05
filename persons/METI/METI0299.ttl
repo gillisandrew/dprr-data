@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/547> rdfs:label "Primary Source Reference: #547" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Lael. 96" ;
+	dprr:hasID 547 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/538> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/428> rdfs:label "Post Assertion Note: #428" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proposed an agrarian law which was vetoed by their colleagues (Liv. 4.48.1-16)." ;
+	dprr:hasID 428 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/427> rdfs:label "Post Assertion Note: #427" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The fourth term for Maecilius and the third for Metilius (Liv. 4.48.1). The dates of the other years of office remain unknown." ;
+	dprr:hasID 427 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/538> rdfs:label "Post Assertion: #538" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/299> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/428> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/427> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "(M.) Metilius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 538 ;
+	dprr:hasDateStart -416 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -416 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/299> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "METI0299 M. Metilius (7)" ;
+	dprr:hasNomen "Metilius" ;
+	dprr:hasID 299 ;
+	dprr:hasHighestOffice "tr. pl. 416" ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "METI0299" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/299> .

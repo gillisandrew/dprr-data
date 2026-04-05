@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/214> rdfs:label "Tribe Assertion: #214" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4567> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/38> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 214 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/38> rdfs:label "Tribe: Tromentina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Tromentina" ;
+	dprr:hasID 38 ;
+	dprr:hasAbbreviation "Tro." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/200> rdfs:label "Status Assertion Note: #200" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 12. App. BC. 5.48. iudex" ;
+	dprr:hasID 200 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/200> rdfs:label "Status Assertion: #200" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4567> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/200> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. AEMILIUS (absent)" ;
+	dprr:hasID 200 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9741> rdfs:label "Post Assertion Note: #9741" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 12." ;
+	dprr:hasID 9741 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9476> rdfs:label "Post Assertion: #9476" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4567> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9741> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. AEMILIUS (absent)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/130> ;
+	dprr:hasID 9476 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4567> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AEMI4567 L. Aemilius (not in RE) Tro." ;
+	dprr:hasOrigin "Perugia" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 4567 ;
+	dprr:hasHighestOffice "eq. R.? C1" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "AEMI4567" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4567> .

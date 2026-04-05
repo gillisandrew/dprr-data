@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/190> rdfs:label "Tribe Assertion: #190" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4499> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/34> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 190 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/34> rdfs:label "Tribe: Sergia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Sergia" ;
+	dprr:hasID 34 ;
+	dprr:hasAbbreviation "Ser." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/132> rdfs:label "Status Assertion Note: #132" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 220. Cic. Lig. 33. spendor?" ;
+	dprr:hasID 132 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/132> rdfs:label "Status Assertion: #132" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4499> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/132> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. MARCIUS (15)" ;
+	dprr:hasID 132 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSourceText "44" ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4499> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MARC4499 L. Marcius (15) Ser." ;
+	dprr:hasOrigin "Sabine?" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4499 ;
+	dprr:hasHighestOffice "eq. R.? C1" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "MARC4499" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4499> .

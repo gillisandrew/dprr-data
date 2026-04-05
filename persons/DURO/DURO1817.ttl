@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2491> rdfs:label "Status Assertion: #2491" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1817> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2491 ;
+	dprr:hasDateStart -97 ;
+	dprr:hasDateEnd -97 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> rdfs:label "Secondary Source: Thommen 1989" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Thommen" ;
+	dprr:hasID 25 ;
+	dprr:hasBiblio "Thommen, L., Das Volkstribunat der späten römischen Republik. Stuttgart : F. Steiner Verlag Wiesbaden GmbH, 1989." ;
+	dprr:hasAbbreviation "Thommen 1989" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3710> rdfs:label "Post Assertion Note: #3710" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Abrogated a sumptuary law, the Lex Licinia (Gell. 2.24. 10; Macrob. 3.17.7), and was expelled from the Senate by the Censors (Val. Max. 2.9.5; cf. Cic. De Or. 2.274). See above, Censors." ;
+	dprr:hasID 3710 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3709> rdfs:label "Post Assertion Note: #3709" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "3 Niccolini (FTP 210) lists Duronius under 97, the latest possible date. He could have entered office on December 10, 98, and carried his bill before the elections and entrance upon office of the Censors, probably about April (Mommsen, Str. 2.352). He may however have held the tribunate in any year after the previous censorship." ;
+	dprr:hasID 3709 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4362> rdfs:label "Post Assertion: #4362" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1817> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3710> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3709> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M. Duronius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4362 ;
+	dprr:hasDateStart -97 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasDateEnd -97 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1817> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "DURO1817 M. Duronius (3)" ;
+	dprr:hasNomen "Duronius" ;
+	dprr:hasID 1817 ;
+	dprr:hasHighestOffice "tr. pl. 97" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "DURO1817" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1817> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/7> rdfs:label "Date Type: expelled from Senate" ;
+	a dprr:DateType ;
+	dprr:hasName "expelled from Senate" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/382> rdfs:label "Date Information: #382" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1817> ;
+	dprr:hasValue -97 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "Val. Max. 2.9.5; cf. Cic. De Or. 2.274" ;
+	dprr:hasID 382 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/7> ;
+	dprr:hasDateInterval "S" .

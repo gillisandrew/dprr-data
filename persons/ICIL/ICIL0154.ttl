@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/350> rdfs:label "Primary Source Reference: #350" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Brut. 81" ;
+	dprr:hasID 350 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/345> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/287> rdfs:label "Primary Source Reference: #287" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XIII 19.4" ;
+	dprr:hasID 287 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/282> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/283> rdfs:label "Primary Source Reference: #283" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XII 52.1" ;
+	dprr:hasID 283 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/278> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/272> rdfs:label "Post Assertion Note: #272" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 456, 455, Tribunes; Liv. 3.63.8-11; Dion. Hal. 11.50.1; Zon. 7.19." ;
+	dprr:hasID 272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/270> rdfs:label "Post Assertion Note: #270" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Liv. 3.54.11-13." ;
+	dprr:hasID 270 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/233> rdfs:label "Post Assertion Note: #233" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Tribunes of 456 were reelected (Liv. 3.31.1; Dion. Hal. 10.33.1). Dion. Hal. names Icilius (10.33.1, and 40.1); and Livy, Alienus (3.31.5; cf. Dion. Hal. 10.48.3; see 454, Aediles)." ;
+	dprr:hasID 233 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/230> rdfs:label "Post Assertion Note: #230" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Secured passage of the Lex Icilia de Aventino publicando (Liv. 3.31.1, and 32.7; cf. 3.44.3, and 46.2; Dion. Hal. 10.31.1-32.5; on the name, cf. 10.33.1). See Rotondi 199." ;
+	dprr:hasID 230 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/345> rdfs:label "Post Assertion: #345" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/154> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/272> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/270> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Icilius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 345 ;
+	dprr:hasDateStart -449 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -449 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/282> rdfs:label "Post Assertion: #282" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/154> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/233> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Icilius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 282 ;
+	dprr:hasDateStart -455 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -455 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/278> rdfs:label "Post Assertion: #278" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/154> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/230> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Icilius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 278 ;
+	dprr:hasDateStart -456 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -456 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/154> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ICIL0154 L. Icilius (2)" ;
+	dprr:hasNomen "Icilius" ;
+	dprr:hasID 154 ;
+	dprr:hasHighestOffice "tr. pl. 456" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "ICIL0154" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/154> .

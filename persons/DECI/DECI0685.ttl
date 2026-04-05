@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2076> rdfs:label "Relationship Assertion: #2076" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/685> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/596> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1498> rdfs:label "Primary Source Reference: #1498" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Brut. 13.2" ;
+	dprr:hasID 1498 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1441> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1444> rdfs:label "Primary Source Reference: #1444" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. XXIX 13f." ;
+	dprr:hasID 1444 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1388> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1112> rdfs:label "Post Assertion Note: #1112" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "According to Auct. Vir. Ill. 36.2, a Decius Mus was sent to Volsinii to crush the revolt of the serfs." ;
+	dprr:hasID 1112 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1111> rdfs:label "Post Assertion Note: #1111" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "In view of a tradition that P. Decius Mus did not die at Asculum (see 279 Consuls), Beloch (RG 440f., 459) and Münzer (RE) admit the possibility that this man may be he, though there may well have been other members of the family. Degrassi (115) however reports that there is no space in Fast. Cap. for mention of a Consul Suffectus." ;
+	dprr:hasID 1111 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1070> rdfs:label "Post Assertion Note: #1070" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. ([- - -] f. [Ser. n. S]averrio; P. Deciu[s] P. f. P. n. [- -]); Dion. Hal. 20.1; Eutrop. 2.13; Chr. 354 (Saberno et Pirrico); Fast. Hyd. (Caverione et Murone), so also Chr. Pasc.; Cassiod. (P. Ulpicius et P. Decius); Degrassi 40f., 113, 430f. Pyrrhus won a costly and indecisive victory over the combined consular armies (Dion. Hal. 20.1-3; Eutrop. 2.13; cf. Liv. Per. 13; Frontin. Str. 2.3.31; Plut. Pyrr. 21.5-10, misdated; Flor. 1.13.9-11; Iustin. 18.1.11; Oros. 4.1.19-22). According to Cicero (Fin. 2.61; Tusc. 1.89), Decius died on the field, while according to Dio (fr. 40.43) and Zonaras (8.5), his intention to devote himself was frustrated by Pyrrhus. See 265, Consul Suffectus." ;
+	dprr:hasID 1070 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1069> rdfs:label "Post Assertion Note: #1069" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Degrassi's recent restudy of fragment XIX of Fast. Cap. has revealed that the document contained no notice of Decius' death or devotion (40f., 113f.; and Epigraphica 1 [1939] 21-25). He also points out that the devotion of a third Decius remains unmentioned in Cic. Sest. 48 and Plin. NH 28.12. For his refutation of the views of Beloch and others, who derive the tale of the devotion of the father and the grandfather from this incident, see the references cited above." ;
+	dprr:hasID 1069 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1441> rdfs:label "Post Assertion: #1441" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/685> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1112> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1111> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? Decius Mus (17)" ;
+	dprr:hasOfficeXref "Cos. 279" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 1441 ;
+	dprr:hasDateStart -265 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -265 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1388> rdfs:label "Post Assertion: #1388" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/685> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1070> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1069> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Decius P. f. P. n. Mus (17)" ;
+	dprr:hasOfficeXref "Cos. 265 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1388 ;
+	dprr:hasDateStart -279 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -279 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/685> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "DECI0685 P. Decius (17) P. f. P. n. Mus" ;
+	dprr:hasNomen "Decius" ;
+	dprr:hasID 685 ;
+	dprr:hasHighestOffice "cos. 279" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -279 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "DECI0685" ;
+	dprr:hasCognomen "Mus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/685> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/596> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/847> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/846> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/845> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/844> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/843> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/842> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/841> ;
+	dprr:hasPersonName "DECI0596 P. Decius (16) P. f. Q. n. Mus" ;
+	dprr:hasNomen "Decius" ;
+	dprr:hasID 596 ;
+	dprr:hasHighestOffice "cos. 312" ;
+	dprr:hasFiliation "P. f. Q. n." ;
+	dprr:hasEraTo -295 ;
+	dprr:hasEraFrom -340 ;
+	dprr:hasDprrID "DECI0596" ;
+	dprr:hasCognomen "Mus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/596> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/969> rdfs:label "Date Information: #969" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/685> ;
+	dprr:hasValue -279 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "devotio, suicide? likely not performed." ;
+	dprr:hasID 969 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

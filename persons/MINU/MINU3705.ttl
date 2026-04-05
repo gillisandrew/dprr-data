@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7525> rdfs:label "Post Assertion Note: #7525" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Aed. cur., uncertain date. He put on a revival performance of the Andria of Terence (J. Heurgon, REL 27, 1949, 106-108). See the text and apparatus of Donatus, Commentum Terenti (ed. Wessner) 1, p. 36, on the Didascalia to the Andria, Praefatio 6.\n" ;
+	dprr:hasID 7525 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8978> rdfs:label "Post Assertion: #8978" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3705> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7525> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 8978 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSourceText "after Terence wrote the Andria - first performed in 160s" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3705> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MINU3705 L. Minucius (not in RE) Thermus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 3705 ;
+	dprr:hasHighestOffice "aed. cur. C2/C1?" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MINU3705" ;
+	dprr:hasCognomen "Thermus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3705> .

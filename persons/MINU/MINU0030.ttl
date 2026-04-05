@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/60> rdfs:label "Primary Source Reference: #60" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. b.c. V 139 (579)" ;
+	dprr:hasID 60 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/59> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/119> rdfs:label "Primary Source Reference: #119" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Asc. Pison. 10C" ;
+	dprr:hasID 119 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/118> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/105> rdfs:label "Primary Source Reference: #105" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Asc. Cornel. 59C" ;
+	dprr:hasID 105 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/104> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/93> rdfs:label "Post Assertion Note: #93" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Listed by Dion. Hal. (8.22.4-5) in the first embassy, composed entirely of consulars, to Coriolanus." ;
+	dprr:hasID 93 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/82> rdfs:label "Post Assertion Note: #82" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.34.7; Dion. Hal. 7.20.1; Chr. 354 (Augurino II et Atratino II); Fast. Hyd. (Augurino II et Atratio); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 88, 352f. See Tribunes of the Plebs, on Coriolanus." ;
+	dprr:hasID 82 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/56> rdfs:label "Post Assertion Note: #56" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.21.1; Dion. Hal. 6.1.1-4; cf. 7.20.1; Chr. 354 (Atratino et Augurino), so also Fast. Hyd., and Chr. Pasc.; Cassiod. See Degrassi 88, 352f." ;
+	dprr:hasID 56 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/59> rdfs:label "Post Assertion: #59" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/30> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/56> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Minucius - f. - n. Augurinus Pat. (32)" ;
+	dprr:hasOfficeXref "Cos. 491" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 59 ;
+	dprr:hasDateStart -497 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -497 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/118> rdfs:label "Post Assertion: #118" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/30> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/93> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Minucius (Augurinus) Pat. (32)" ;
+	dprr:hasOfficeXref "Cos. 497, 491" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 118 ;
+	dprr:hasDateStart -488 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -488 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/104> rdfs:label "Post Assertion: #104" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/30> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/82> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Minucius - f. - n. Augurinus Pat. (32)" ;
+	dprr:hasOfficeXref "Cos. 497" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 104 ;
+	dprr:hasDateStart -491 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -491 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/30> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "32" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "MINU0030 M. Minucius (32) Augurinus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 30 ;
+	dprr:hasHighestOffice "cos. 497" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "MINU0030" ;
+	dprr:hasCognomen "Augurinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/30> .

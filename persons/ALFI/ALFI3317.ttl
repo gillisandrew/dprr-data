@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7680> rdfs:label "Post Assertion Note: #7680" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Primus. Legatus pro praetore of the proconsul of Achaea, named in an inscription of Olympia (L Olymp. 235), late republican or early Augustan in date (De Laet, no. 439 bis; PIR(2) A 515). (TJC)\n" ;
+	dprr:hasID 7680 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7839> rdfs:label "Post Assertion: #7839" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3317> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Achaea" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7680> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Alf(ius?) or Alf(enus) Primus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/178> ;
+	dprr:hasID 7839 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "late Republic or early Augustan" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -10 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3317> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "?" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "ALFI3317 P. Alf(ius) or Alf(enus) (?) Primus" ;
+	dprr:hasNomen "Alf(ius) or Alf(enus)" ;
+	dprr:hasID 3317 ;
+	dprr:hasHighestOffice "leg. pro. pr. late Republic/early Augustan" ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ALFI3317" ;
+	dprr:hasCognomen "Primus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3317> .

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1430> rdfs:label "Primary Source Reference: #1430" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. X 154" ;
+	dprr:hasID 1430 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1374> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1055> rdfs:label "Post Assertion Note: #1055" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The commander of the fleet attacked by the Tarentines (App. Samn. 7, 1, on Cornelius; Dio fr. 39.4, and Zon. 8.2, on L. Valerius; cf. Liv. Per. 12; Oros. 4.1.1)." ;
+	dprr:hasID 1055 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1054> rdfs:label "Post Assertion Note: #1054" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "IIvir is the title in Livy, praefecti in Orosius; Appian omits it and Dio uses the word {Gr}. Weuilleumier (Tarente, 102) favors Cornelius, and believes that Valerius has been confused with P. Valerius Laevinus the conqueror of Heracleia in 280. Cf. Münzer, Gent. Val. 38, no. 13." ;
+	dprr:hasID 1054 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1374> rdfs:label "Post Assertion: #1374" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/679> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1055> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1054> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Valerius (Flaccus) Pat. (*23)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/49> ;
+	dprr:hasID 1374 ;
+	dprr:hasDateStart -282 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -282 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/679> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*23" ;
+	dprr:hasReNumber "59" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0679 L. Valerius (59) (Flaccus)" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 679 ;
+	dprr:hasHighestOffice "II vir naval.? 282" ;
+	dprr:hasEraTo -282 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "VALE0679" ;
+	dprr:hasCognomen "(Flaccus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/679> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/965> rdfs:label "Date Information: #965" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/679> ;
+	dprr:hasValue -282 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "KIA, against Tarentum. Dio 9.35.5, Zon. 8.2." ;
+	dprr:hasID 965 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

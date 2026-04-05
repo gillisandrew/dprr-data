@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9338> rdfs:label "Post Assertion Note: #9338" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 494" ;
+	dprr:hasID 9338 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7728> rdfs:label "Post Assertion Note: #7728" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.455, and Index, 634, refer also to Crawford, RRC 1.502-511, no. 494, 42 B.C. With L. Livineius Regulus, P. Clodius M. f., and L. Mussidius T. f. Longus as IIIIviri.\n" ;
+	dprr:hasID 7728 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7707> rdfs:label "Post Assertion Note: #7707" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "IIIIvir A. P. F. In MRR 2.447, Index, 594, refer also to Crawford, RRC 1.502- 511, no. 494, 42 B.C. With L. Livineius, P. Clodius, and C. Vibius Varus. See Wiseman, NM 243, no. 268.\n" ;
+	dprr:hasID 7707 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8599> rdfs:label "Post Assertion: #8599" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3525> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9338> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7728> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7707> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Vibius Varus, C." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/198> ;
+	dprr:hasID 8599 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSourceText "42" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3525> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "VIBI3525 C. Vibius (20) Varus" ;
+	dprr:hasNomen "Vibius" ;
+	dprr:hasID 3525 ;
+	dprr:hasHighestOffice "IIIIvir a. p. f. 42" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "VIBI3525" ;
+	dprr:hasCognomen "Varus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3525> .

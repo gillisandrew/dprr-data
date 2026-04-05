@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3833> rdfs:label "Post Assertion Note: #3833" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Font. 46-49; cf. Gell. 1.12.2; see above, Legates, Fonteius." ;
+	dprr:hasID 3833 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3832> rdfs:label "Post Assertion Note: #3832" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "13 Fonteia, a sister of M. Fonteius, was a Vestal Virgin at the time of his trial about 69 B. C. (Cic. Font. 46-49), but a daughter of the Legate Fonteius, who was killed this year at Asculum (see above, Legates), must have begun her service while her father still lived (cf. Gell. 1. 12.2)." ;
+	dprr:hasID 3832 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4474> rdfs:label "Post Assertion: #4474" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1867> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3833> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3832> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Fonteius (31)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 4474 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1867> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "31" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "FONT1867 -. Fonteius (31)" ;
+	dprr:hasNomen "Fonteius" ;
+	dprr:hasID 1867 ;
+	dprr:hasHighestOffice "aug. 91" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "FONT1867" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1867> .

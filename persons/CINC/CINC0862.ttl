@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1780> rdfs:label "Primary Source Reference: #1780" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Strab. XIV 5.14 (675 C)" ;
+	dprr:hasID 1780 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1710> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1350> rdfs:label "Post Assertion Note: #1350" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commissioned by Otacilius to conduct the fleet back to Rome (Liv. 22.31.6)." ;
+	dprr:hasID 1350 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1349> rdfs:label "Post Assertion Note: #1349" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Cincius is Hertz' emendation for the Mss readings circi and circa and Sura of the Editio Romana. Accepted by Conway and Walters, the name is not yet found in RE." ;
+	dprr:hasID 1349 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1710> rdfs:label "Post Assertion: #1710" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/862> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1350> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1349> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Cincius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1710 ;
+	dprr:hasDateStart -217 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -217 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/862> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CINC0862 P. Cincius (not in RE)" ;
+	dprr:hasNomen "Cincius" ;
+	dprr:hasID 862 ;
+	dprr:hasHighestOffice "leg. lieut. 217" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CINC0862" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/862> .

@@ -1,0 +1,182 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5740> rdfs:label "Relationship Assertion: #5740" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/122> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/153> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2483> rdfs:label "Relationship Assertion: #2483" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/122> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/35> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/289> rdfs:label "Primary Source Reference: #289" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XIII 22.4" ;
+	dprr:hasID 289 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/284> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/216> rdfs:label "Primary Source Reference: #216" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. ad Q. fr. III 1.20" ;
+	dprr:hasID 216 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/212> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/210> rdfs:label "Primary Source Reference: #210" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. ad Q. fr. II 3.2" ;
+	dprr:hasID 210 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/206> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7533> rdfs:label "Post Assertion Note: #7533" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 469. Münzer and Gundel both hold that the cognomen Tricostus was probably included in the Capitoline Fasti. There is no trace of it, although the nomenclature of the gens is much in favor of it. See Degrassi, Inscr. It. 13.1.91, 3581" ;
+	dprr:hasID 7533 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/234> rdfs:label "Post Assertion Note: #234" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served, presumably under Romilius, against the Aequi (Dion. Hal. 10.49.2)." ;
+	dprr:hasID 234 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/172> rdfs:label "Post Assertion Note: #172" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Assigned the land to the colonists at Antium (Liv. 3.1.6; Dion. Hal. 9.59.2)." ;
+	dprr:hasID 172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/166> rdfs:label "Post Assertion Note: #166" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.63.1; Diod. 11.70.1; Dion. Hal. 9.56.1; Chr. 354 (Caelimontiano et Prisco); Fast. Hyd. (Caelimontano et Prisco II); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 91, 358f. Numicius campaigned against the Volscians, and Verginius against the Aequi (Liv. 2.63.5-7; Dion. Hal. 9.56.1-6)." ;
+	dprr:hasID 166 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/165> rdfs:label "Post Assertion Note: #165" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Caeliomontanus was more probably the cognomen in Fast. Cap. than Nomentanus as reported by Dion. Hal. (CIL 1(2), pp. 102-103; Degrassi 91). Diodorus has {Gr} for {Gr}; see RE s. v. \"Minucius\" no. 29." ;
+	dprr:hasID 165 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/284> rdfs:label "Post Assertion: #284" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/122> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/234> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "A. Verginius (Tricostus Caeliomontanus) Pat. (*9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 284 ;
+	dprr:hasDateStart -455 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -455 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/212> rdfs:label "Post Assertion: #212" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/122> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/172> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Verginius (Tricostus ? Caeliomontanus) Pat. (*9)" ;
+	dprr:hasOfficeXref "Cos. 469" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/27> ;
+	dprr:hasID 212 ;
+	dprr:hasDateStart -467 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -467 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/206> rdfs:label "Post Assertion: #206" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/122> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7533> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/166> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/165> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Verginius - f. - n. Caeliomontanus Pat. (*9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 206 ;
+	dprr:hasDateStart -469 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -469 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/35> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*4" ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "VERG0035 A. Verginius (11) A. f.  Tricostus Caeliomontanus" ;
+	dprr:hasOtherNames "Caeliomontanus" ;
+	dprr:hasNomen "Verginius" ;
+	dprr:hasID 35 ;
+	dprr:hasHighestOffice "cos. 494" ;
+	dprr:hasFiliation "A. f. " ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "VERG0035" ;
+	dprr:hasCognomen "Tricostus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/35> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/153> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*10" ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "VERG0153 Sp. Verginius (20) A. f. A. n. Tricostus Caeliomontanus" ;
+	dprr:hasOtherNames "Caeliomontanus" ;
+	dprr:hasNomen "Verginius" ;
+	dprr:hasID 153 ;
+	dprr:hasHighestOffice "cos. 456" ;
+	dprr:hasFiliation "A. f. A. n." ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "VERG0153" ;
+	dprr:hasCognomen "Tricostus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/153> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/122> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumberOld "*9" ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "VERG0122 A. Verginius (13) (Tricostus) Caeliomontanus" ;
+	dprr:hasOtherNames "Caeliomontanus" ;
+	dprr:hasNomen "Verginius" ;
+	dprr:hasID 122 ;
+	dprr:hasHighestOffice "cos. 469" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "VERG0122" ;
+	dprr:hasCognomen "(Tricostus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/122> .

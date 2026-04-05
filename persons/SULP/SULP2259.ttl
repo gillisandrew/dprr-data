@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1120> rdfs:label "Status Assertion: #1120" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2259> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1120 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7141> rdfs:label "Post Assertion Note: #7141" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. by 48. He was one of two ex-praetors, Galba and Cosconius (see above on no. 55), who were murdered by Caesar's mutinous legionaries in 47 (Plus. Caes. 51.5; cf. Dio 42.52.2). He cannot be identified with no. 52, the historian and grandfather of the future emperor, who attained the praetorship in the late Republic (see MRR 2.465), since the latter was a son of Caesar's legate and murderer (no. 61), who had held the praetorship as late as 54 and survived until 43. Galba might possibly be the monetalis (no. 20, see 2.453), or the senator (no. 21) who was with Juba in 49 (2.497; Caes. BC 2.44.3), but neither of these was demonstrably a Galba. (RS, CP; TJC; and see above on no. 55)\n" ;
+	dprr:hasID 7141 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9542> rdfs:label "Post Assertion: #9542" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2259> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7141> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 9542 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSourceText "by 48" ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2259> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "48" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "SULP2259 -. (Sulpicius) (48) Galba" ;
+	dprr:hasNomen "(Sulpicius)" ;
+	dprr:hasID 2259 ;
+	dprr:hasHighestOffice "pr. before 47" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "SULP2259" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2259> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2176> rdfs:label "Date Information: #2176" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2259> ;
+	dprr:hasValue -57 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasNotes "Cic. Att. 4.2.4, Har. 12-14." ;
+	dprr:hasID 2176 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

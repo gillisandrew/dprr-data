@@ -1,0 +1,287 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/497> rdfs:label "Tribe Assertion: #497" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/34> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p265. From ager Sabinus?" ;
+	dprr:hasID 497 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/34> rdfs:label "Tribe: Sergia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Sergia" ;
+	dprr:hasID 34 ;
+	dprr:hasAbbreviation "Ser." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/284> rdfs:label "Status Assertion Note: #284" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 387. Cic. 2 Verr. 3.166. brother of an eques Romanus, quaestor?" ;
+	dprr:hasID 284 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/284> rdfs:label "Status Assertion: #284" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/284> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "T. VETTIUS (11) CHILO" ;
+	dprr:hasID 284 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2732> rdfs:label "Status Assertion: #2732" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2732 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateEnd -57 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/787> rdfs:label "Relationship Assertion Reference: #787" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 787 ;
+	dprr:hasExtraInfo "Cic. Verr. II iii 168" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/753> rdfs:label "Relationship Assertion: #753" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/787> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4147> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2902> rdfs:label "Relationship Assertion: #2902" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4157> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9494> rdfs:label "Post Assertion Note: #9494" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 404" ;
+	dprr:hasID 9494 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9125> rdfs:label "Post Assertion Note: #9125" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 754, footnote 446" ;
+	dprr:hasID 9125 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> rdfs:label "Post Assertion Note: #7019" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The monetalis (14) is dated by Crawford, RRC 1.414, no. 404, to 70 B.C.; see MRR 2.455 for earlier datings. He may be identified with T. Vettius (11), quaestor under Verres in Sicily in 72 and probably 71, based on Syracuse (Cic. Verr. 2.3.168; 2.5.135, esp. 114; see N. Marinone, AAT 100, 1965- 1966, 219-252, esp. 230-231). He is taken to be the praetor in 59 (14) who presided over the trial of C. Valerius Flaccus in the quaestio de repetundis (Cic. Flacc. 85), and was proconsul in Africa the next year (MRR 2.189, but with a query added, and 198). Gruen doubts this since L. Lucullus, addressed in the same passage, was there only as a juror. Vettius too may be no more than a juror and his legacy in Africa no more than an inheritance from a previous governorship (Latomus 32, 1973, 308, note 10). The point at issue is the propriety of getting profits while governor, and the tenses of venerit, amittes, and retinebis imply a future event in Africa, so it seems preferable to consider Vettius the coming governor of Africa, and his present position a praetorship. See Shackleton Bailey, HSPh 83, 1979, 261, on Cic. Flacc. 85.\n" ;
+	dprr:hasID 7019 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5099> rdfs:label "Post Assertion Note: #5099" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 58, Promagistrates. He may have remained as governor of Africa." ;
+	dprr:hasID 5099 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5061> rdfs:label "Post Assertion Note: #5061" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No title preserved. Governor of Africa (Cic. Flacc. 85, where it is implied that he will go to Africa the following year)." ;
+	dprr:hasID 5061 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4999> rdfs:label "Post Assertion Note: #4999" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Presided at the trial of L. Valerius Flaccus for extortion (Cic. Flacc. s5; see 58, Promagistrates). On the name, see Grueber, CRRBM 1.417." ;
+	dprr:hasID 4999 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4460> rdfs:label "Post Assertion Note: #4460" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor under Verres in Sicily (Cic. Verr. 2.3.168, and 5.114)." ;
+	dprr:hasID 4460 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9306> rdfs:label "Post Assertion: #9306" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4460> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Vettius Sabinus (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9306 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateSourceText "72-71" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -71 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9305> rdfs:label "Post Assertion: #9305" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4460> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Vettius Sabinus (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9305 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSourceText "72-71" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9304> rdfs:label "Post Assertion: #9304" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9494> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Vettius Sabinus, T." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 9304 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5727> rdfs:label "Post Assertion: #5727" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Africa" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5099> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "? T. Vettius (Sabinus) (*12)" ;
+	dprr:hasOfficeXref "Pr. 59" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5727 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -57 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5683> rdfs:label "Post Assertion: #5683" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Africa" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5061> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "T. Vettius (Sabinus) (*12)" ;
+	dprr:hasOfficeXref "Pr. 59?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5683 ;
+	dprr:hasDateStart -58 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5613> rdfs:label "Post Assertion: #5613" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9125> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7019> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4999> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "T. Vettius (Sabinus) (*12)" ;
+	dprr:hasOfficeXref "Quaestio de repetundis" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5613 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4157> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VETT4157 -. Vettius (10) Chilo" ;
+	dprr:hasNomen "Vettius" ;
+	dprr:hasID 4157 ;
+	dprr:hasHighestOffice "eq. R. late C2/C1" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT4157" ;
+	dprr:hasCognomen "Chilo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4157> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4147> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VETT4147  Vettia (19)" ;
+	dprr:hasNomen "Vettia" ;
+	dprr:hasID 4147 ;
+	dprr:hasHighestOffice "sister of -. Vettius (10) Chilo (eq. R. late C2/C1)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT4147" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4147> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2344> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*12" ;
+	dprr:hasReNumber "9a, 11, 14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "VETT2344 T. Vettius (9a, 11, 14) Ser. Sabinus" ;
+	dprr:hasOrigin "Sabinum (Farney E21)" ;
+	dprr:hasNomen "Vettius" ;
+	dprr:hasID 2344 ;
+	dprr:hasHighestOffice "pr. 59" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT2344" ;
+	dprr:hasCognomen "Sabinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2344> .

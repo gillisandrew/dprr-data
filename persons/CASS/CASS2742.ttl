@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1396> rdfs:label "Status Assertion: #1396" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1396 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/57> rdfs:label "Relationship Assertion Reference: #57" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 57 ;
+	dprr:hasExtraInfo "App. b.c. IV 63 (272)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/75> rdfs:label "Relationship Assertion: #75" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/57> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/13> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2458> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/74> rdfs:label "Relationship Assertion: #74" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/57> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2575> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/13> rdfs:label "Relationship: nephew of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 27 ;
+	dprr:hasName "nephew of" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7542> rdfs:label "Post Assertion Note: #7542" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., lieut.? No title preserved. See MRR 2.352. Nephew of C. Cassius Longinus (59). Complete the name in MRR 2.352 in 43 and add it in 2.364, in 42 B.C., and the Index, 543. Refer also to App. BC 4.135, on his suicide after Philippi.[50]\n" ;
+	dprr:hasID 7542 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6104> rdfs:label "Post Assertion Note: #6104" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No title preserved. His uncle, C. Cassius, left him in Syria in command of one legion when he went to Asia to meet Brutus (App. BC 4.63, and cf. in 42, 4.135)." ;
+	dprr:hasID 6104 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8321> rdfs:label "Post Assertion: #8321" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Syria" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7542> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cassius (L. f. Longinus) (15)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 8321 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6818> rdfs:label "Post Assertion: #6818" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Syria" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7542> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6104> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "L. Cassius (15)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 6818 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10926> rdfs:label "Post Assertion: #10926" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 10926 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2742> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CASS2742 L. Cassius (15) L. f. Longinus" ;
+	dprr:hasNomen "Cassius" ;
+	dprr:hasID 2742 ;
+	dprr:hasHighestOffice "sen. 43" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CASS2742" ;
+	dprr:hasCognomen "Longinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2742> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2575> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "65" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CASS2575 L. Cassius (65) Longinus" ;
+	dprr:hasNomen "Cassius" ;
+	dprr:hasID 2575 ;
+	dprr:hasHighestOffice "tr. pl. 44" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CASS2575" ;
+	dprr:hasCognomen "Longinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2575> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2458> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "59" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/426> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/425> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/424> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/423> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/422> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/421> ;
+	dprr:hasPersonName "CASS2458 C. Cassius (59) Longinus" ;
+	dprr:hasNomen "Cassius" ;
+	dprr:hasNobilisNotes "Cic. Phil. 2.44.113, 11.11.27, 13.11.26, Cic, Fam. 12.10.3, VM. 6.8.4, [Acro.] Hor. Carm. 1.14, Eutrop. 7.3" ;
+	dprr:hasID 2458 ;
+	dprr:hasHighestOffice "pr. 44" ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -82 ;
+	dprr:hasDprrID "CASS2458" ;
+	dprr:hasCognomen "Longinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2458> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/762> rdfs:label "Date Information: #762" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasValue -42 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "suicide, after B. of Philippi." ;
+	dprr:hasID 762 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1995> rdfs:label "Date Information: #1995" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2742> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 35" ;
+	dprr:hasID 1995 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

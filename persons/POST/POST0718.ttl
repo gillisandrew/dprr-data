@@ -1,0 +1,183 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3417> rdfs:label "Relationship Assertion: #3417" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/609> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3416> rdfs:label "Relationship Assertion: #3416" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/609> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1555> rdfs:label "Primary Source Reference: #1555" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 56.1" ;
+	dprr:hasID 1555 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1497> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1554> rdfs:label "Primary Source Reference: #1554" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 54.1" ;
+	dprr:hasID 1554 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1496> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1511> rdfs:label "Primary Source Reference: #1511" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Brut. 53.4" ;
+	dprr:hasID 1511 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1453> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8846> rdfs:label "Post Assertion Note: #8846" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726, footnote 11" ;
+	dprr:hasID 8846 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1162> rdfs:label "Post Assertion Note: #1162" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap.: idem qui pr. erat; see Degrassi 42f., 434f., and especially 116." ;
+	dprr:hasID 1162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1161> rdfs:label "Post Assertion Note: #1161" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On the accumulation of offices involved, see Mommsen, Str. 1.514, note 1, and Degrassi 116. This Praetor is omitted by Stella Maranca, 294f." ;
+	dprr:hasID 1161 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1160> rdfs:label "Post Assertion Note: #1160" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Postumius died in office, and Iunius abdicated (Fast. Cap., Degrassi, 42f., 116, 434f.). See Lübker no. 22 on Postumius." ;
+	dprr:hasID 1160 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1125> rdfs:label "Post Assertion Note: #1125" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On Naevius fr. 19, see Fränkel, Hermes 70 (1935) 59ff.; and the articles cited in 263, note 1." ;
+	dprr:hasID 1125 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1124> rdfs:label "Post Assertion Note: #1124" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Polyb. 1.17.6; Chr. 354; Fast. Hyd. (Albino et Vituitulo); Chr. Pasc. ({Gr}); Cassiod.; Zon. 8.10; Degrassi, 40f., 115, 432f. Both Consuls besieged and finally captured the town of Agrigentum (Polyb. 1.17.6-20.2; Diod. 23.7-9; Zon. 8.10; cf. Naev. fr. 19;\n     Frontin. Str. 2.1.4)." ;
+	dprr:hasID 1124 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1497> rdfs:label "Post Assertion: #1497" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8846> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1162> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1161> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Postumius Megellus Pat. (56)" ;
+	dprr:hasOfficeXref "Cos. 262" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1497 ;
+	dprr:hasDateStart -253 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -253 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1496> rdfs:label "Post Assertion: #1496" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1160> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Postumius L. f. L. n. Megellus Pat. (56)" ;
+	dprr:hasOfficeXref "Cos. 262" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1496 ;
+	dprr:hasDateStart -253 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -253 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1453> rdfs:label "Post Assertion: #1453" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1125> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1124> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Postumius L. f. L. n. Megellus Pat. (56)" ;
+	dprr:hasOfficeXref "Pr. 253" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1453 ;
+	dprr:hasDateStart -262 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -262 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/10> rdfs:label "Person Note: #10" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Under RE no. 56 (cf. 48) Münzer holds, on the strength of Fast. Hyd. and Chr. Pasc., that the cognomen Albinus was in the name and preceded Megellus. It does not appear in Fast. Cap., which are preserved entire for the years 262 and 253." ;
+	dprr:hasID 10 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/718> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "56" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/10> ;
+	dprr:hasPersonName "POST0718 L. Postumius (56) L. f. L. n. Megellus" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 718 ;
+	dprr:hasHighestOffice "cos. 262" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -253 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "POST0718" ;
+	dprr:hasCognomen "Megellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/718> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/609> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*19" ;
+	dprr:hasReNumber "55" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "POST0609 L. Postumius (55) L. f. Sp. n. Megellus" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 609 ;
+	dprr:hasHighestOffice "cos. 305" ;
+	dprr:hasFiliation "L. f. Sp. n." ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "POST0609" ;
+	dprr:hasCognomen "Megellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/609> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/984> rdfs:label "Date Information: #984" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/718> ;
+	dprr:hasValue -253 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 984 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

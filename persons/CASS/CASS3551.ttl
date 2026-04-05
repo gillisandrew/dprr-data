@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9364> rdfs:label "Post Assertion Note: #9364" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 386" ;
+	dprr:hasID 9364 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7570> rdfs:label "Post Assertion Note: #7570" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. 66. See above, on Cassius (13). It remains uncertain whether the monetalis of 78 (Crawford, RRC 1.403, no. 386) may be identified with the praetor of 66 (MRR 2.152) and candidate for the consulship of 63 (Ascon. 92C; Comm. Pet. 7).\n" ;
+	dprr:hasID 7570 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8625> rdfs:label "Post Assertion: #8625" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3551> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9364> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7570> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Cassius Longinus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8625 ;
+	dprr:hasDateStart -78 ;
+	dprr:hasDateSourceText "78" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -78 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3551> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "64" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CASS3551 L. Cassius (64) Q. f. Longinus" ;
+	dprr:hasNomen "Cassius" ;
+	dprr:hasID 3551 ;
+	dprr:hasHighestOffice "monetal. 78" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CASS3551" ;
+	dprr:hasCognomen "Longinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3551> .

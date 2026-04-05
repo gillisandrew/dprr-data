@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2680> rdfs:label "Status Assertion: #2680" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2230> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2680 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -64 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/22> rdfs:label "Secondary Source: Alexander 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Alexander TLRR" ;
+	dprr:hasID 22 ;
+	dprr:hasBiblio "Alexander, M. C., Trials in the late Roman Republic, 149 BC to 50 BC. Toronto : University of Toronto Press, 1990." ;
+	dprr:hasAbbreviation "Alexander 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8778> rdfs:label "Post Assertion Note: #8778" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 753, footnote 416" ;
+	dprr:hasID 8778 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4783> rdfs:label "Post Assertion Note: #4783" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Presided at the trial of Cornelius (Ascon. 62, and 88 C; and for the date, 60 C)." ;
+	dprr:hasID 4783 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4687> rdfs:label "Post Assertion Note: #4687" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ascon. 88 C; cf. Cic. Pro Gall. fr. 1.3, and 5; Brut. 277; Q. Cic. Comm. Pet. 19; Val. Max. 8.10.3; Quintil. Inst. Or. 11.3.155 and 165." ;
+	dprr:hasID 4687 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5379> rdfs:label "Post Assertion: #5379" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2230> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8778> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4783> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Gallius (6)" ;
+	dprr:hasOfficeXref "Quaestio de maiestate" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5379 ;
+	dprr:hasDateStart -65 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -65 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5293> rdfs:label "Post Assertion: #5293" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2230> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4687> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Gallius (6)" ;
+	dprr:hasOfficeXref "Pr. 65" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 5293 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2230> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "GALL2230 Q. Gallius (6)" ;
+	dprr:hasNomen "Gallius" ;
+	dprr:hasID 2230 ;
+	dprr:hasHighestOffice "pr. 65" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "GALL2230" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2230> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/7> rdfs:label "Date Type: expelled from Senate" ;
+	a dprr:DateType ;
+	dprr:hasName "expelled from Senate" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/574> rdfs:label "Date Information: #574" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2230> ;
+	dprr:hasValue -64 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/22> ;
+	dprr:hasNotes "expelled from Senate? Alexander no. 214 (possibly condemned, hence expelled, under lex Calpurnia de ambitu in relation to praetorian campaign of 66 for 65)." ;
+	dprr:hasID 574 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/7> ;
+	dprr:hasDateInterval "S" .

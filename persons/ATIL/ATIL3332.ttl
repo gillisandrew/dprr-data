@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/138> rdfs:label "Tribe Assertion: #138" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3332> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/4> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "S.C. de agro Pergameno. Sherk 1969, 63-73, no. 12: 1984, 47-48, no. 45" ;
+	dprr:hasID 138 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/4> rdfs:label "Tribe: Camilia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Camilia" ;
+	dprr:hasID 4 ;
+	dprr:hasAbbreviation "Cam." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1715> rdfs:label "Status Assertion: #1715" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3332> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1715 ;
+	dprr:hasDateStart -129 ;
+	dprr:hasDateEnd -129 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7335> rdfs:label "Post Assertion Note: #7335" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably a senator in 129, named in the SC de agro Pergameno (Badian, Historia 12, 1963, 132; Sherk, RDGE 66, 70). If Cam. is the correct tribe for the Atilii Serrani (it seems to be Aem. in Joseph. AJ 14.239) this fragmentary name might be taken to be that of the consul of 106, C. Atilius Sex. f. Serranus (64) (Badian, loc. cit.). On the date, see M'. Aquillius (10), above.\n" ;
+	dprr:hasID 7335 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7889> rdfs:label "Post Assertion: #7889" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3332> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7335> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Sex. At]ilius Sex. f. Cam. (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7889 ;
+	dprr:hasDateStart -129 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -129 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3332> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "ATIL3332 Sex.? (At)ilius (not in RE) Sex. f. Cam." ;
+	dprr:hasNomen "(At)ilius" ;
+	dprr:hasID 3332 ;
+	dprr:hasHighestOffice "sen. 129" ;
+	dprr:hasFiliation "Sex. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "ATIL3332" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3332> .

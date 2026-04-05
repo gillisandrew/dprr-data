@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/126> rdfs:label "Primary Source Reference: #126" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Asc. Scaur. 18f.C" ;
+	dprr:hasID 126 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/125> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9986> rdfs:label "Post Assertion Note: #9986" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ovation de Herniceis. MRR I.19-20, Itgenshorst p. 262, Rich no. 26." ;
+	dprr:hasID 9986 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/96> rdfs:label "Post Assertion Note: #96" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.40.14; Dion. Hal. 8.64.1. and 67.9; 10.36.4 and 9; Fest. 180 L (reading T. Sicinius); Chr. 354 (Tusco et Sabino), so also Fast. Hyd.; Chr. Pasc. ({Gr}); Cassiod.; Degrassi 89, 354f. Sicinius fought the Volsci and Aquillius the Hernici (Liv. 2.40.14; Dion. Hal. 8.65.1-67.9). Sicinius celebrated a triumph and Aquillius an ovatio (Dion. Hal. 6.67.9; Degrassi 536f.)." ;
+	dprr:hasID 96 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/95> rdfs:label "Post Assertion Note: #95" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The cognomina of these Consuls are known only from the late chronographers who nearly always follow the tradition of the Fast. Cap. I have tentatively assigned Sabinus to Sicinius and Tuscus to Aquillius as above because the order of the Consuls in other passages of Dion. Hal. agrees more frequently with that in Fast. Cap. Livy places Sicinius first. Dion. Hal. and Cassiod. give the name as Siccius, but Sicinius is clear in Livy and Festus. It is probable however that Siccius stood in Fast. Cap. (Degrassi 89, 537; Klotz, Klio 33 [1940] 176)" ;
+	dprr:hasID 95 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/125> rdfs:label "Post Assertion: #125" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/62> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/96> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/95> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Aquillius - f. - n. Tuscus ? Pat. (8)" ;
+	dprr:hasOfficeXref "{20}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 125 ;
+	dprr:hasDateStart -487 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -487 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10381> rdfs:label "Post Assertion: #10381" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/62> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9986> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10381 ;
+	dprr:hasDateStart -487 ;
+	dprr:hasDateSourceText "487" ;
+	dprr:hasDateEnd -487 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/62> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "AQUI0062 C. Aquillius (8) (Tuscus)" ;
+	dprr:hasNomen "Aquillius" ;
+	dprr:hasID 62 ;
+	dprr:hasHighestOffice "cos. 487" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "AQUI0062" ;
+	dprr:hasCognomen "(Tuscus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/62> .

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2364> rdfs:label "Relationship Assertion: #2364" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4817> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1508> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2363> rdfs:label "Relationship Assertion: #2363" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4817> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1275> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4817> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "HOST4817 L. Hostilius (19) Mancinus" ;
+	dprr:hasNomen "Hostilius" ;
+	dprr:hasID 4817 ;
+	dprr:hasHighestOffice "father of? A. Hostilius (16) L. f. A. n. Mancinus (cos. 170)" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "HOST4817" ;
+	dprr:hasCognomen "Mancinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4817> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1508> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "HOST1508 L. Hostilius (20) L. f. L. n. Mancinus" ;
+	dprr:hasNomen "Hostilius" ;
+	dprr:hasID 1508 ;
+	dprr:hasHighestOffice "cos. 145" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "HOST1508" ;
+	dprr:hasCognomen "Mancinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1508> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1275> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "HOST1275 A. Hostilius (16) L. f. A. n. Mancinus" ;
+	dprr:hasNomen "Hostilius" ;
+	dprr:hasID 1275 ;
+	dprr:hasHighestOffice "cos. 170" ;
+	dprr:hasFiliation "L. f. A. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -213 ;
+	dprr:hasDprrID "HOST1275" ;
+	dprr:hasCognomen "Mancinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1275> .

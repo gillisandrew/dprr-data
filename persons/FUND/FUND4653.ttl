@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9881> rdfs:label "Post Assertion: #9881" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4653> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/236> ;
+	dprr:hasID 9881 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateEnd -56 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1020> rdfs:label "Person Note: #1020" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/12> ;
+	dprr:hasNoteText "Sabbatucci 1954:306-8." ;
+	dprr:hasID 1020 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1019> rdfs:label "Person Note: #1019" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/11> ;
+	dprr:hasNoteText "Tempelführung." ;
+	dprr:hasID 1019 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1018> rdfs:label "Person Note: #1018" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Varro, rust. 1,2,1 f. 11; 1,69,2 f." ;
+	dprr:hasID 1018 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1017> rdfs:label "Person Note: #1017" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "1. H. 1. Jh.-etwa Januar 57 oder 56 v. Chr." ;
+	dprr:hasID 1017 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1016> rdfs:label "Person Note: #1016" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1016 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1015> rdfs:label "Person Note: #1015" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Fundilius 2." ;
+	dprr:hasID 1015 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1014> rdfs:label "Person Note: #1014" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "1776" ;
+	dprr:hasID 1014 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4653> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1020> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1019> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1018> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1017> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1016> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1015> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1014> ;
+	dprr:hasPersonName "FUND4653 L. Fundilius (2)" ;
+	dprr:hasNomen "Fundilius" ;
+	dprr:hasID 4653 ;
+	dprr:hasHighestOffice "aedituus Tellus-Tempel? 59 to 56" ;
+	dprr:hasEraTo -56 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FUND4653" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4653> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1376> rdfs:label "Date Information: #1376" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4653> ;
+	dprr:hasValue -56 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1376 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1375> rdfs:label "Date Information: #1375" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4653> ;
+	dprr:hasValue -100 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1375 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

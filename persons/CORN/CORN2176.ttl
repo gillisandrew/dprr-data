@@ -1,0 +1,204 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2651> rdfs:label "Status Assertion: #2651" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2651 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6467> rdfs:label "Relationship Assertion: #6467" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2064> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1793> rdfs:label "Relationship Assertion: #1793" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1792> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1792> rdfs:label "Relationship Assertion: #1792" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2515> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9098> rdfs:label "Post Assertion Note: #9098" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 752, footnote 396" ;
+	dprr:hasID 9098 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8349> rdfs:label "Post Assertion Note: #8349" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Caec. 23; see 68, Promagistrates." ;
+	dprr:hasID 8349 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7557> rdfs:label "Post Assertion Note: #7557" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praetor 69. See MRR 2.132. He was praetor urbanus, since he granted the interdict de vi hominibus armatis to Caecina (Cic. Caec. 23; and for evidence also favoring 69 over 68 as the date, see B. W. Frier, TAPhA 113, 1983, 225-227).\n" ;
+	dprr:hasID 7557 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4663> rdfs:label "Post Assertion Note: #4663" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Asia (IGRP 4.422; Val. Max. 8.1, amb. 2; Gell. 12.7, with praenomen Cn.; Ammian. Marc. 29.2.19)." ;
+	dprr:hasID 4663 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4662> rdfs:label "Post Assertion Note: #4662" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "9 The precise order of the governors of Asia between the decision to end the command of Lucullus in 69 and the arrival of P. Orbius in 64 remains uncertain. Dolabella was the Praetor in charge of the trial of Caecina in 69 or 68 (see 69, Praetors), and was therefore Proconsul of Asia in 68 or 67. L. Manlius Torquatus, whose title, though not his province, is attested by an inscription of Miletus (Wiegand, 6 vorläufiger Bericht, APAW 1908, Anhang 20), held the consulship in 65, and his praetorship may tentatively be dated in 68, and his proconsulship (almost certainly in Asia) in 67, since he was not likely to be delayed in his career. Dolabella may then be placed in Asia in 68. For the remaining two years we have T. Aufidius and P. Varinius. Their dates are not independently attested but they did follow immediately in this order (Cic. Flacc. 45). If Aufidius is the possible candidate named by Cicero (Att. 1.1.1) for the consulship of 63, his praetorship should be dated in 66 and his command in Asia in 65. Lange (3.185, and 206) held that Varinius proceeded to Asia in 72 after his praetorship and defeat at the hands of Spartacus and that Lucullus became governor of Asia only in 71. It seems more probable that Lucullus held Asia from the beginning of 73 at the latest (see 74, Promagistrates, on Lucullus; and Addendum). Reasons for the interval in the case of Varinius are not given, but the career of C. Antonius after his expulsion from the Senate in 70 affords a possible parallel, and suggests that Varinius repeated his career to the praetorship in 66 . There is no evidence that Q. Voconius Naso (Iudex Quaestionis in 66, and Praetor sometime before 60) was ever a governor of Asia at all. See Broughton, TAPhA 79 (1948) 67-72, with criticism of the lists of Chapot and Waddington; Magie, Roman Rule in Asia Minor 2.1127f., note 47." ;
+	dprr:hasID 4662 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5267> rdfs:label "Post Assertion: #5267" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4663> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4662> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? P. Cornelius Dolabella Pat. (140)" ;
+	dprr:hasOfficeXref "Pr. 69?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5267 ;
+	dprr:hasDateStart -68 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5197> rdfs:label "Post Assertion: #5197" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2176> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Urbanus" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9098> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8349> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7557> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? P. Cornelius Dolabella Pat. (140)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5197 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2515> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "141" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/614> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/613> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/612> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/611> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/610> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/609> ;
+	dprr:hasPersonName "CORN2515 P. Cornelius (141) P. f. Dolabella = P. Cornelius Lentulus" ;
+	dprr:hasOtherNames "= P. Cornelius Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasNobilisNotes "Cic. Att. 7.8.3, Cic. Phil. 1.12.29" ;
+	dprr:hasID 2515 ;
+	dprr:hasHighestOffice "cos. suff. 44" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -69 ;
+	dprr:hasDprrID "CORN2515" ;
+	dprr:hasCognomen "Dolabella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2515> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2176> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "140" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN2176 P. Cornelius (140) Dolabella" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2176 ;
+	dprr:hasHighestOffice "pr. 69" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CORN2176" ;
+	dprr:hasCognomen "Dolabella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2176> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2064> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "216" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN2064 Cn. Cornelius (216) Cn. f. Cn. n. Lentulus Clodianus" ;
+	dprr:hasOtherNames "Clodianus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2064 ;
+	dprr:hasHighestOffice "cos. 72" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -115 ;
+	dprr:hasDprrID "CORN2064" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2064> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1792> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "178" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN1792 Cn. Cornelius (178) Cn. f. Cn. n. Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1792 ;
+	dprr:hasHighestOffice "cos. 97" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CORN1792" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1792> .

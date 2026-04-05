@@ -1,0 +1,123 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2669> rdfs:label "Relationship Assertion: #2669" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/163> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4898> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2668> rdfs:label "Relationship Assertion: #2668" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/163> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4897> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/298> rdfs:label "Primary Source Reference: #298" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XIII 5.1" ;
+	dprr:hasID 298 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/293> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/243> rdfs:label "Post Assertion Note: #243" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.32.1; Diod. 12.7.1; Fast. Cap. (see note 1); Dion. Hal. 10.53.1; Chr. 354 (Varo et Trigemino); Fast. Hyd. (Festo et Quintillo), so also Chr. Pasc.; Cassiod.; Degrassi 24f., 93, 364f. Quinctilius died in the pestilence of this year (Liv. 3.32.4; Dion. Hal. 10.53.3)." ;
+	dprr:hasID 243 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/242> rdfs:label "Post Assertion Note: #242" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved entire in Fast. Cap. except the filiation of Curiatius. His name appears as Horatius in Dion. Hal., while Diod. has only the cognomen Trigeminus. The cognomen Varus in Chr. 354 arises because it was frequent among the patrician Quinctilii." ;
+	dprr:hasID 242 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/293> rdfs:label "Post Assertion: #293" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/163> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/243> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/242> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sex. Quinctilius Sex. f. P. n. Pat. (*1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 293 ;
+	dprr:hasDateStart -453 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -453 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4898> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "QUIN4898 Sex. Quinctilius (14)" ;
+	dprr:hasNomen "Quinctilius" ;
+	dprr:hasID 4898 ;
+	dprr:hasHighestOffice "father of Sex. Quinctilius (15) Sex. f. P. n. (cos. 453)" ;
+	dprr:hasEraTo -450 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "QUIN4898" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4898> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4897> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN4897 L. Quinctilius (6)" ;
+	dprr:hasNomen "Quinctilius" ;
+	dprr:hasID 4897 ;
+	dprr:hasHighestOffice "son of? Sex. Quinctilius (14)" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "QUIN4897" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4897> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/163> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*1" ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "QUIN0163 Sex. Quinctilius (15) Sex. f. P. n." ;
+	dprr:hasNomen "Quinctilius" ;
+	dprr:hasID 163 ;
+	dprr:hasHighestOffice "cos. 453" ;
+	dprr:hasFiliation "Sex. f. P. n." ;
+	dprr:hasEraTo -453 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "QUIN0163" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/163> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/265> rdfs:label "Date Information: #265" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/163> ;
+	dprr:hasValue -453 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "pestilence." ;
+	dprr:hasID 265 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

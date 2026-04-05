@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/941> rdfs:label "Primary Source Reference: #941" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLVIII 24.4" ;
+	dprr:hasID 941 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/922> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/926> rdfs:label "Primary Source Reference: #926" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLVII 10.6" ;
+	dprr:hasID 926 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/907> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/623> rdfs:label "Post Assertion Note: #623" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.4.1, and 6.12; Diod. 16.4.1; Fast. Cap. ([- - - -] Ahala II; G.'s name entire); Chr. 354 (Haala II et Abentinense); Fast. Hyd. (Achala et Genucio); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 34f., 104, 400f. Genucius was killed in battle with the Hernici (Liv. 7.6.7-9)." ;
+	dprr:hasID 623 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/622> rdfs:label "Post Assertion Note: #622" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "In Diod. Genucius also has the praenomen Quintus. In Fast. Cap. no note was added regarding the death of Genucius. See Fast. Cap. for 365, which supplements the names as given here." ;
+	dprr:hasID 622 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/612> rdfs:label "Post Assertion Note: #612" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.1.7; Diod. 15.90.1; Fast. Cap. ([- -Ave]ntinensis; S.'s name entire); Eutrop. 2.4; Chr. 354 (Abentinensis et Haala); Oros. 3.4.1; Cassiod.; Lyd. Magg. 1.46. See Degrassi 32f., 104, 400f." ;
+	dprr:hasID 612 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/611> rdfs:label "Post Assertion Note: #611" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the name of Genucius, see Fast. Cap. for 362. On Fast. Hyd. and Chr. Pasc., see 366, note 1." ;
+	dprr:hasID 611 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/922> rdfs:label "Post Assertion: #922" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/489> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/623> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/622> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Genucius M. f. Cn. n. Aventinensis (14)" ;
+	dprr:hasOfficeXref "Cos. 365" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 922 ;
+	dprr:hasDateStart -362 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -362 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/907> rdfs:label "Post Assertion: #907" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/489> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/612> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/611> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Genucius M. f. Cn. n. Aventinensis (14)" ;
+	dprr:hasOfficeXref "Cos. 362" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 907 ;
+	dprr:hasDateStart -365 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -365 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/489> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "GENU0489 L. Genucius (14) M. f. Cn. n. Aventinensis" ;
+	dprr:hasNomen "Genucius" ;
+	dprr:hasID 489 ;
+	dprr:hasHighestOffice "cos. 365" ;
+	dprr:hasFiliation "M. f. Cn. n." ;
+	dprr:hasEraTo -362 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "GENU0489" ;
+	dprr:hasCognomen "Aventinensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/489> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/914> rdfs:label "Date Information: #914" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/489> ;
+	dprr:hasValue -362 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, against Hernici." ;
+	dprr:hasID 914 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/237> rdfs:label "Primary Source Reference: #237" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. III 20" ;
+	dprr:hasID 237 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/233> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/192> rdfs:label "Post Assertion Note: #192" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Agitated for a commission of five to draft laws regulating the consular imperium (Liv. 3.9.1-13; cf. Dion. Hal. 10.1, Terentius)." ;
+	dprr:hasID 192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/233> rdfs:label "Post Assertion: #233" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/135> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/192> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Terentilius Harsa (RE 5A. 591f.)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 233 ;
+	dprr:hasDateStart -462 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -462 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/135> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "RE 5A. 591f." ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TERE0135 C. Terentilius (RE 5A. 591f.) Harsa" ;
+	dprr:hasNomen "Terentilius" ;
+	dprr:hasID 135 ;
+	dprr:hasHighestOffice "tr. pl. 462" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "TERE0135" ;
+	dprr:hasCognomen "Harsa" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/135> .

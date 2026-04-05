@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1721> rdfs:label "Status Assertion: #1721" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3359> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1721 ;
+	dprr:hasDateStart -166 ;
+	dprr:hasDateEnd -164 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6041> rdfs:label "Relationship Assertion: #6041" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3359> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1259> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3583> rdfs:label "Relationship Assertion: #3583" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3359> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1064> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3055> rdfs:label "Relationship Assertion: #3055" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3359> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1062> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9202> rdfs:label "Post Assertion Note: #9202" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 739" ;
+	dprr:hasID 9202 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2822> rdfs:label "Post Assertion Note: #2822" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Presided at the Senate meeting when permission was granted for free exercise of the cult of Isis at Delos (SIG\n     664)." ;
+	dprr:hasID 2822 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2821> rdfs:label "Post Assertion Note: #2821" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The commentators in SIG(3) 664 believe that this inscription belongs to the earliest period of Athenian control in Delos. It must be dated after 166 since previous Praetors are known, and, if Minucius was Pr. Urbanus, after 165. Roussel and Launay on I. de Délos 4.1.1570 are less certain of the date:" ;
+	dprr:hasID 2821 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3448> rdfs:label "Post Assertion: #3448" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3359> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9202> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2822> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2821> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Q. Minucius (24, cf. 23)" ;
+	dprr:hasOfficeXref "Pr. Urbanus or Peregrinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3448 ;
+	dprr:hasDateStart -164 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -164 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3359> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "24, cf. 23" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU3359 Q. Minucius (24, cf. 23) Q. f." ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 3359 ;
+	dprr:hasHighestOffice "pr. c. 164" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MINU3359" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3359> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1259> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "15, 63" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MINU1259 L. Minucius (15, 63) Thermus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 1259 ;
+	dprr:hasHighestOffice "son of? Q. Minucius (65) Q. f. L. n. Thermus (cos. 193)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MINU1259" ;
+	dprr:hasCognomen "Thermus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1259> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1064> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "65" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU1064 Q. Minucius (65) Q. f. L. n. Thermus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 1064 ;
+	dprr:hasHighestOffice "cos. 193" ;
+	dprr:hasFiliation "Q. f. L. n." ;
+	dprr:hasEraTo -187 ;
+	dprr:hasEraFrom -228 ;
+	dprr:hasDprrID "MINU1064" ;
+	dprr:hasCognomen "Thermus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1064> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1062> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "22, 55" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU1062 Q. Minucius (22, 55) C. f. C. n. Rufus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 1062 ;
+	dprr:hasHighestOffice "cos. 197" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -231 ;
+	dprr:hasDprrID "MINU1062" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1062> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4434> rdfs:label "Post Assertion Note: #4434" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under M. Antonius against the Ligurian pirates (Sall. Hist. 3.5M; see Promagistrates, on M. Antonius)." ;
+	dprr:hasID 4434 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4433> rdfs:label "Post Assertion Note: #4433" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "7 One of these men referred to as Mamercus may possibly be identified with Mam. Aemilius Lepidus Livianus, Cos. 77. The most important evidence against a date in the spring of 74 is found in Velleius (2.33. l): cum esset in fine bellum piraticum et L. Lucullus, qui ante septem annos ex consulatu sortitus Asiam Mithridati oppositus erat ..., who goes on to mention the introduction of the Manilian law. The collocation of the phrase ex consulatu with a date seven years before the passage of the Manilian law in early 66 points to 73. Yet it is not irrelevant to point out that the war with the pirates was actually in fine if not confeclum by midsummer of 67 (Cic. Leg. Man. 35, media aestate confecit), and the phrase sortitus Asiam appears to be inaccurate since his province by sortition had been Cisalpine Gaul. And he was appointed to Cilicia before he received the governorship of Asia." ;
+	dprr:hasID 4433 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5015> rdfs:label "Post Assertion: #5015" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2090> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4434> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4433> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? Mamercus (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5015 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2090> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Mamercus> ;
+	dprr:hasPersonName "ANON2090 Mam. - (not in RE)" ;
+	dprr:hasNomen "-" ;
+	dprr:hasID 2090 ;
+	dprr:hasHighestOffice "leg. lieut.? after 75" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ANON2090" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2090> .

@@ -1,0 +1,349 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/397> rdfs:label "Tribe Assertion: #397" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/22> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p222. Cic. Planc. 19" ;
+	dprr:hasID 397 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/22> rdfs:label "Tribe: Papiria" ;
+	a dprr:Tribe ;
+	dprr:hasName "Papiria" ;
+	dprr:hasID 22 ;
+	dprr:hasAbbreviation "Pap." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1156> rdfs:label "Status Assertion: #1156" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1156 ;
+	dprr:hasDateStart -61 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/695> rdfs:label "Relationship Assertion Reference: #695" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Erwähnung des Vaters von Laterensis ohne Namen und Identifzierung." ;
+	dprr:hasID 695 ;
+	dprr:hasExtraInfo "Cic. Planc. 52" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/694> rdfs:label "Relationship Assertion Reference: #694" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Der Vater von Laterensis stirbt vor 54." ;
+	dprr:hasID 694 ;
+	dprr:hasExtraInfo "Cic. Planc. 51" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/673> rdfs:label "Relationship Assertion: #673" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/695> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/694> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4119> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5561> rdfs:label "Relationship Assertion: #5561" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3744> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5560> rdfs:label "Relationship Assertion: #5560" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3587> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2265> rdfs:label "Relationship Assertion: #2265" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4351> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9924> rdfs:label "Post Assertion Note: #9924" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9924 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9923> rdfs:label "Post Assertion Note: #9923" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9923 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8799> rdfs:label "Post Assertion Note: #8799" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 755, footnote 486" ;
+	dprr:hasID 8799 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7283> rdfs:label "Post Assertion Note: #7283" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor. H. B. Mattingly attributes an SC denarius to his quaestorship in 64 or 63, has him give games at Praeneste, probably the Ludi Victoriae Sullanae, and would date his term in Cyrene (Cic. Planc. 13 and 63; NC 16, 1956, 198f.; cf. MRR 2.175) to a proquaestorship in the following year. G. Perl holds to a date ca. 63, and rejects any association with Praeneste or the games of Sulla (Klio 52, 1970, 330-331; 53, 1971, 370-373).\n" ;
+	dprr:hasID 7283 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6112> rdfs:label "Post Assertion Note: #6112" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Legate under Lepidus (Dio 46.51.3, #), whom he attempted to keep loyal to the Republic, but when his efforts failed he committed suicide (Cic. Fam. 10. 11.3, and 15.2, and 21.1 and 3, and 23.4; Vell. 2.63.2; App. BC 3.84; Dio 46.51.3-4). The Senate decreed him a public burial and a statue (Dio 46.51.4; cf. Cic. Orat. fr. 14, ed. Müller, 4.3, p. 287)." ;
+	dprr:hasID 6112 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5378> rdfs:label "Post Assertion Note: #5378" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Att. 5.15.1; cf. Fam. 13.29.4. See Lübker no. 3." ;
+	dprr:hasID 5378 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4904> rdfs:label "Post Assertion Note: #4904" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Planc. 63. Served in Cyrene (Cic. Planc. 13 and 63). The date remains uncertain." ;
+	dprr:hasID 4904 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10337> rdfs:label "Post Assertion Note: #10337" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A.211" ;
+	dprr:hasID 10337 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9002> rdfs:label "Post Assertion: #9002" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7283> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4904> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Iuventius Laterensis (16)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9002 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSourceText "62" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6826> rdfs:label "Post Assertion: #6826" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6112> ;
+	dprr:hasPosition 15 ;
+	dprr:hasOriginalText "M. Iuventius Laterensis (16)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6826 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6045> rdfs:label "Post Assertion: #6045" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8799> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5378> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Iuventius Laterensis (16)" ;
+	dprr:hasOfficeXref "Quaestio de repetundis Cael. in Cic. Fam. 8.8.2." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6045 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5500> rdfs:label "Post Assertion: #5500" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7283> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4904> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Iuventius Laterensis (16)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 5500 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10732> rdfs:label "Post Assertion: #10732" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10337> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 10732 ;
+	dprr:hasDateStart -64 ;
+	dprr:hasDateSourceText "ca. 64" ;
+	dprr:hasDateEnd -64 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10319> rdfs:label "Post Assertion: #10319" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9924> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/256> ;
+	dprr:hasID 10319 ;
+	dprr:hasDateStart -55 ;
+	dprr:hasDateSourceText "55" ;
+	dprr:hasDateEnd -55 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10318> rdfs:label "Post Assertion: #10318" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9923> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/256> ;
+	dprr:hasID 10318 ;
+	dprr:hasDateStart -54 ;
+	dprr:hasDateSourceText "54" ;
+	dprr:hasDateEnd -54 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4351> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "OTAC4351  Otacilia (19)" ;
+	dprr:hasNomen "Otacilia" ;
+	dprr:hasID 4351 ;
+	dprr:hasHighestOffice "married to -. Iuventius? (A) Laterensis" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "OTAC4351" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4351> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4119> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "IUVE4119 -. Iuventius (A) Laterensis" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 4119 ;
+	dprr:hasHighestOffice "married to Otacilia (19)" ;
+	dprr:hasEraTo -54 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "IUVE4119" ;
+	dprr:hasCognomen "Laterensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4119> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3744> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "IUVE3744 M'. Iuventius (not in RE) L. f. Laterensis" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 3744 ;
+	dprr:hasHighestOffice "pr. C1?" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "IUVE3744" ;
+	dprr:hasCognomen "Laterensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3744> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3587> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "IUVE3587 M.? Iuventius (not in RE) Laterensis" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 3587 ;
+	dprr:hasHighestOffice "sen. 54" ;
+	dprr:hasEraTo -54 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "IUVE3587" ;
+	dprr:hasCognomen "Laterensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3587> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2308> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "IUVE2308 M. Iuventius (16) (M. f.) Pap. Laterensis" ;
+	dprr:hasOrigin "Tusculum" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasNobilisNotes "Cic. Planc. 7.18, 20.50, Schol. Bob. Planc. 153, 161-162, 164 Stangl" ;
+	dprr:hasID 2308 ;
+	dprr:hasHighestOffice "pr. 51" ;
+	dprr:hasFiliation "(M. f.)" ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "IUVE2308" ;
+	dprr:hasCognomen "Laterensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2308> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/622> rdfs:label "Date Information: #622" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2308> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "suicide. Vell. 2.63.2, App. BC 3.12.84, Dio 46.51.3-4,." ;
+	dprr:hasID 622 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

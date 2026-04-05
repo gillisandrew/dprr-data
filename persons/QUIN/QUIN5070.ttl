@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/302> rdfs:label "Tribe Assertion: #302" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5070> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/31> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 302 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/31> rdfs:label "Tribe: Romilia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Romilia" ;
+	dprr:hasID 31 ;
+	dprr:hasAbbreviation "Rom." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10356> rdfs:label "Post Assertion Note: #10356" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A.273" ;
+	dprr:hasID 10356 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10751> rdfs:label "Post Assertion: #10751" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5070> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10356> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 10751 ;
+	dprr:hasDateStart -30 ;
+	dprr:hasDateSourceText "Before 29" ;
+	dprr:hasDateEnd -30 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5070> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "12.1764" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "QUIN5070 P. Quinctius (12.1764) P. f. Rom." ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 5070 ;
+	dprr:hasHighestOffice "tr. mil. before 29" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "QUIN5070" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5070> .

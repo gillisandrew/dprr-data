@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2737> rdfs:label "Status Assertion: #2737" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2357> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2737 ;
+	dprr:hasDateStart -60 ;
+	dprr:hasDateEnd -57 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8815> rdfs:label "Post Assertion Note: #8815" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 754, footnote 455" ;
+	dprr:hasID 8815 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8355> rdfs:label "Post Assertion Note: #8355" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 57, Promagistrates." ;
+	dprr:hasID 8355 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7648> rdfs:label "Post Assertion Note: #7648" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In RE s.v. Fabius, no. 17, the praetor of 58 and proconsul in Asia in 57 is identified with Caesar's leg., lieut. of 54-49. Caesar's legate was more probably the tribune of the plebs of 55 (MRR 2.217).\n" ;
+	dprr:hasID 7648 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5092> rdfs:label "Post Assertion Note: #5092" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Asia (cistophori of Ephesus, Tralles, Apameia, and Laodiceia, Head, HN² 535, 576, 660, 666, 678; B.M. Catalogues, Mysia xxx f., Ionia 67f., Lydia cxl f. and 333f., Phrygia xxxiii, lxxiv)." ;
+	dprr:hasID 5092 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5720> rdfs:label "Post Assertion: #5720" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2357> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7648> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5092> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Fabius Hadrianus (17)" ;
+	dprr:hasOfficeXref "Pr. 58" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5720 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -57 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5655> rdfs:label "Post Assertion: #5655" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2357> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8815> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8355> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7648> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Fabius (Hadrianus) (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5655 ;
+	dprr:hasDateStart -58 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2357> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FABI2357 C. Fabius (17) Hadrianus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 2357 ;
+	dprr:hasHighestOffice "pr. 58" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FABI2357" ;
+	dprr:hasCognomen "Hadrianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2357> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1714> rdfs:label "Date Information: #1714" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2357> ;
+	dprr:hasValue -49 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasNotes "last attestation, likely death" ;
+	dprr:hasID 1714 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

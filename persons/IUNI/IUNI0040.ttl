@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/96> rdfs:label "Primary Source Reference: #96" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. Pun. 6 (24f.)" ;
+	dprr:hasID 96 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/95> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/80> rdfs:label "Primary Source Reference: #80" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. Ib. 16 (63)" ;
+	dprr:hasID 80 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/79> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/100> rdfs:label "Primary Source Reference: #100" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. Sik. 6.2" ;
+	dprr:hasID 100 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/99> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/79> rdfs:label "Post Assertion Note: #79" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Dion. Hal. 7.14.2-17.6." ;
+	dprr:hasID 79 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/76> rdfs:label "Post Assertion Note: #76" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent at Menenius' request by the Plebs to the Senate to conclude the agreement (Dion. Hal. 6.88.4)." ;
+	dprr:hasID 76 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/73> rdfs:label "Post Assertion Note: #73" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "One tradition, followed by Piso (fr. 23, Peter), Sempronius Tuditanus, Atticus, and Cicero (Ascon. 77 C), and quoted by Livy (2.33.3, and 58.1) claimed that only two Tribunes were elected at first. Tuditanus, Atticus, and Cicero name Albinius and Sicinius, while Livy names Albinus (probably the same as Albinius) and C. Licinius as the first but has three more appointed immediately after them, of whom one was Sicinius. Dion. Hal. (6.89) names the five given above after Albinius, whom he omits, and agrees with Plutarch (Cor. 7.1) and Suidas (s. v. {Gr}), who give the leadership in the secession and the first election to Brutus and Sicinius. Sicinius is connected with all branches of the tradition (Liv. 2.32.2 and 33.2; 3.54.12; Dion. Hal. 6.45.3-89.1 passim; Plut. Cor. 7.1; Ascon. 77 C; Dio fr. 17.9; and on his identification with Siccius in 471 B.C., see 471), Albinius with that which reached through Tuditanus to Atticus, Cicero and probably Livy. The rest are less well attested names, and bear the additional burden of the doubt that there were more than two Tribunes elected annually before 471 (see CAH 7.453ff.). Brutus appears only in the tradition of Dion. Hal. (6.70.1-89.1; Plut. Cor. 7.1; Suidas), though as prominent as Siçinius there. C. Licinius is named only in Livy and Dion. Hal., P. Licinius only in the latter (Liv. 2.33.2; Dion. Hal. 6.89.1). The MS tradition of the remaining name in Dion. Hal. is uncertain: {Gr} A and {Gr} B. Jacoby accepts the emendation {Gr} which is supported also by Münzer (RE). Niccolini (FTP 2) follows Pais in accepting the emendation {Gr}, both here and at 7.26.3, on the strength of a passage (11.28.2) which refers to the Tribune of 456 as \"the son of Icilius who first established and possessed the tribunician power\" (cf. Dion. Hal. 8.31.4)." ;
+	dprr:hasID 73 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/99> rdfs:label "Post Assertion: #99" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/40> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/79> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Iunius Brutus (47)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 99 ;
+	dprr:hasDateStart -492 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -492 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/95> rdfs:label "Post Assertion: #95" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/40> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/76> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Iunius Brutus (47)" ;
+	dprr:hasOfficeXref "{16}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 95 ;
+	dprr:hasDateStart -493 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -493 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/79> rdfs:label "Post Assertion: #79" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/40> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/73> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Iunius Brutus (47)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 79 ;
+	dprr:hasDateStart -493 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -493 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/40> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "47" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "IUNI0040 L. Iunius (47) Brutus" ;
+	dprr:hasNomen "Iunius" ;
+	dprr:hasID 40 ;
+	dprr:hasHighestOffice "aed. pl. 492" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "IUNI0040" ;
+	dprr:hasCognomen "Brutus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/40> .

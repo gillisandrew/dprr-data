@@ -1,0 +1,376 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2115> rdfs:label "Status Assertion: #2115" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2115 ;
+	dprr:hasDateStart -204 ;
+	dprr:hasDateEnd -192 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2429> rdfs:label "Relationship Assertion: #2429" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/914> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2361> rdfs:label "Primary Source Reference: #2361" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "CIL 6.31276=ILS 8892" ;
+	dprr:hasID 2361 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2174> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8423> rdfs:label "Post Assertion Note: #8423" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 729" ;
+	dprr:hasID 8423 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2163> rdfs:label "Post Assertion Note: #2163" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to oppose Aetolian influence and rally the Greek communities against Antiochus (Liv. 35.23.5-8; note esp. Flamininus at Demetrias, 35.31, in Aetolia, 35.32-33, in Corinth, 35.34.1, and 39.1, and at the Achaean assembly, 35.48-50; and Villius' trip to Demetrias, 35.39; cf. Diod. 29.1; Plut. Flam. 15-17; Zon. 9.19). See also 191, Legates; and on Villius, Lübker, no. 1." ;
+	dprr:hasID 2163 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2162> rdfs:label "Post Assertion Note: #2162" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "These returned and made their report early in this year (Liv. 35.20.14, and 22.1-2)." ;
+	dprr:hasID 2162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2141> rdfs:label "Post Assertion Note: #2141" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Antiochus the Great in Asia when his embassy to Rome failed to secure an agreement (Liv. 34.59.8; 35.13-17)." ;
+	dprr:hasID 2141 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2086> rdfs:label "Post Assertion Note: #2086" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Only Villius is known to have gone to Antiochus in Lysimacheia in 196 (see 196) yet in 193 (Liv. 34.59.8) we find that Sulpicius and Aelius had been there before with him. Holleaux is inclined to reject the explanation that there was a special embassy in 195, when Antiochus did return to Europe (Liv. 34.33.12; see note 3), and to add Sulpicius and Aelius to that of 196; but it is at least possible that they went in 195." ;
+	dprr:hasID 2086 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2085> rdfs:label "Post Assertion Note: #2085" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Villius reported to Flaminius the return of Antiochus to Europe with larger forces than before (Liv. 34.33.12). Aelius and Sulpicius, also members of the commission of ten legates (see 196) may have been with him (cf. Liv. 34.59.8),\n     and the others occupied elsewhere." ;
+	dprr:hasID 2085 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2059> rdfs:label "Post Assertion Note: #2059" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 33.24.7. Sent to treat with Antiochus at Lysimacheia (Polyb. 18.48.3, and 50.3; Liv. 33.35.2, and 39.2; Plut. Flam. 12.1). See Lübker, no. 1." ;
+	dprr:hasID 2059 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2050> rdfs:label "Post Assertion Note: #2050" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Ten Legati were appointed to assist Flamininus in arranging the peace with Philip and the settlement in Greece (Polyb. 18.42.5; Liv. 33.24.7, cf. 30.1, and 35.1-2). The following are known, and since Livy nowhere lists them in an official order, they are given in alphabetical order." ;
+	dprr:hasID 2050 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2024> rdfs:label "Post Assertion Note: #2024" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Both assigned by the Senate to assist Flamininus as Legates (Liv. 32.28.12). On Villius, see Lübker, no. 1." ;
+	dprr:hasID 2024 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1999> rdfs:label "Post Assertion Note: #1999" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His successor, the Consul Flamininus, arrived early in the year (Liv. 32.6.4, and 9.6-8; Plut. Flam. 3.1-4)." ;
+	dprr:hasID 1999 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1957> rdfs:label "Post Assertion Note: #1957" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 31.49.12; 32.2.6, 7.1 and 8, and 8.3; Fast. Cap., Degrassi 48f., 121, 452f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. Cornelius' province was Italy, but he went to Gaul after Baebius' defeat (Liv. 32.1.2-3 and 7.6-8). Villius was assigned Macedonia (Liv. 32.1.2-3), where he checked a mutiny, and after wintering in Corcyra, was succeeded early in 198 by Flamininus (Liv. 32.6.1-8; cf. Plut. Flam. 3.1-2; Zon. 9.16). On Villius, see Lübker, no. 1." ;
+	dprr:hasID 1957 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1953> rdfs:label "Post Assertion Note: #1953" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 31.49.5." ;
+	dprr:hasID 1953 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1923> rdfs:label "Post Assertion Note: #1923" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected through the Pr. Urbanus to assign land in Samnium and Apulia to veterans who had served under Scipio in Africa (Liv. 31.4.1-3, and 49.5). On Villius, see Lübker, no. 1, on Quinctius, no. 4." ;
+	dprr:hasID 1923 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1894> rdfs:label "Post Assertion Note: #1894" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued as Propraetor to protect the coast of Sicily (Liv. 30.27.8, and 41.6). See Lübker, no. 1." ;
+	dprr:hasID 1894 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1843> rdfs:label "Post Assertion Note: #1843" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Brought additional ships to Sicily (Liv. 30.2.2). See Lübker, no. 1." ;
+	dprr:hasID 1843 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1838> rdfs:label "Post Assertion Note: #1838" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 29.38.4-5 Provinces 30.1.9, cf. 3.1." ;
+	dprr:hasID 1838 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1805> rdfs:label "Post Assertion Note: #1805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 29.38.5 and 8. One of these went with the Legates who investigated charges against Scipio and Pleminius (Liv. 29.20.4 and 11; Diod. 27.4.6; see 205, Legates, on Pleminius; below, Legates, on Caecilius). On Villius, see Lübker no. 1." ;
+	dprr:hasID 1805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2615> rdfs:label "Post Assertion: #2615" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2163> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2615 ;
+	dprr:hasDateStart -192 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2610> rdfs:label "Post Assertion: #2610" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2162> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2610 ;
+	dprr:hasDateStart -192 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2577> rdfs:label "Post Assertion: #2577" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2141> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2577 ;
+	dprr:hasDateStart -193 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -193 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2505> rdfs:label "Post Assertion: #2505" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2086> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2085> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2505 ;
+	dprr:hasDateStart -195 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -195 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2471> rdfs:label "Post Assertion: #2471" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2059> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2050> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2471 ;
+	dprr:hasDateStart -196 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2432> rdfs:label "Post Assertion: #2432" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2024> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 2432 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -197 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2403> rdfs:label "Post Assertion: #2403" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1999> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2403 ;
+	dprr:hasDateStart -198 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -198 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2359> rdfs:label "Post Assertion: #2359" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1957> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Villius Ti. f. Ti. n. Tappulus (*3)" ;
+	dprr:hasOfficeXref "Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2359 ;
+	dprr:hasDateStart -199 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2349> rdfs:label "Post Assertion: #2349" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1953> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/68> ;
+	dprr:hasID 2349 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -200 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2306> rdfs:label "Post Assertion: #2306" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1923> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/68> ;
+	dprr:hasID 2306 ;
+	dprr:hasDateStart -201 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2267> rdfs:label "Post Assertion: #2267" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1894> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 2267 ;
+	dprr:hasDateStart -202 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -202 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2212> rdfs:label "Post Assertion: #2212" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8423> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1843> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1838> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199 Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2212 ;
+	dprr:hasDateStart -203 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -203 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2174> rdfs:label "Post Assertion: #2174" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1805> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Villius Tappulus (*3)" ;
+	dprr:hasOfficeXref "Cos. 199, Pr. 203" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 2174 ;
+	dprr:hasDateStart -204 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -204 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/914> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VILL0914 L. Villius (9) Tappulus" ;
+	dprr:hasNomen "Villius" ;
+	dprr:hasID 914 ;
+	dprr:hasHighestOffice "pr. 199" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -243 ;
+	dprr:hasDprrID "VILL0914" ;
+	dprr:hasCognomen "Tappulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/914> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1034> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*3" ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VILL1034 P. Villius (10) Ti. f. Ti. n. Tappulus" ;
+	dprr:hasNomen "Villius" ;
+	dprr:hasID 1034 ;
+	dprr:hasHighestOffice "cos. 199" ;
+	dprr:hasFiliation "Ti. f. Ti. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -239 ;
+	dprr:hasDprrID "VILL1034" ;
+	dprr:hasCognomen "Tappulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1034> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/15> rdfs:label "Date Information: #15" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1034> ;
+	dprr:hasValue -239 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 152." ;
+	dprr:hasID 15 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

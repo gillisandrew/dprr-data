@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2531> rdfs:label "Relationship Assertion: #2531" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1379> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/975> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2658> rdfs:label "Post Assertion Note: #2658" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to restrain the Consul Cassius from attempting to march through Illyria to Macedonia (Liv. 43.1.12)." ;
+	dprr:hasID 2658 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3241> rdfs:label "Post Assertion: #3241" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1379> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2658> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "P. Marcius Rex (89)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 3241 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/975> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1406> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1405> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1404> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1403> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1402> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1401> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1400> ;
+	dprr:hasPersonName "MARC0975 M. Marcius (20)" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 975 ;
+	dprr:hasHighestOffice "rex sacr. 210" ;
+	dprr:hasEraTo -210 ;
+	dprr:hasEraFrom -269 ;
+	dprr:hasDprrID "MARC0975" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/975> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1379> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "89" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "MARC1379 P. Marcius (89) Rex" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1379 ;
+	dprr:hasHighestOffice "leg. env. 171" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MARC1379" ;
+	dprr:hasCognomen "Rex" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1379> .

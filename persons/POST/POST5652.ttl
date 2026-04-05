@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2912> rdfs:label "Person Note: #2912" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/35> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p52. Fin. 2.70. bon vivant.II cent." ;
+	dprr:hasID 2912 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5652> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "53" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2912> ;
+	dprr:hasPersonName "POST5652 -. Postumius (53) Chius" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 5652 ;
+	dprr:hasEraTo -101 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "POST5652" ;
+	dprr:hasCognomen "Chius" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5652> .

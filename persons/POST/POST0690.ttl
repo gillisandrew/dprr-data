@@ -1,0 +1,144 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3872> rdfs:label "Relationship Assertion: #3872" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/690> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/766> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1085> rdfs:label "Post Assertion Note: #1085" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pliny (NH 11.186) dates him after the 126th Olympiad and when Pyrrhus left Italy. Klose prefers 275 (10, no. 3)." ;
+	dprr:hasID 1085 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10066> rdfs:label "Post Assertion: #10066" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/690> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1085> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/9> ;
+	dprr:hasID 10066 ;
+	dprr:hasDateStart -280 ;
+	dprr:hasDateEnd -274 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1760> rdfs:label "Person Note: #1760" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Plin. nat. 11,186." ;
+	dprr:hasID 1760 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1759> rdfs:label "Person Note: #1759" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "4. V. 4. Jh.-2. V. 3. Jh. v. Chr." ;
+	dprr:hasID 1759 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1758> rdfs:label "Person Note: #1758" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 1758 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1757> rdfs:label "Person Note: #1757" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Klose R 3; MRR 1,196; Szemler Pri 9." ;
+	dprr:hasID 1757 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1756> rdfs:label "Person Note: #1756" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Postumius 39." ;
+	dprr:hasID 1756 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1755> rdfs:label "Person Note: #1755" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2818" ;
+	dprr:hasID 1755 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/766> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*21" ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1754> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1753> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1752> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1751> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1750> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1749> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1748> ;
+	dprr:hasPersonName "POST0766 A. Postumius (30) A. f. L. n. Albinus" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 766 ;
+	dprr:hasHighestOffice "cos. 242" ;
+	dprr:hasFiliation "A. f. L. n." ;
+	dprr:hasEraTo -215 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "POST0766" ;
+	dprr:hasCognomen "Albinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/766> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/690> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "39" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1760> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1759> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1758> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1757> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1756> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1755> ;
+	dprr:hasPersonName "POST0690 L. Postumius (39) L. f. Albinus" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 690 ;
+	dprr:hasHighestOffice "rex sacr.? after 280" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "POST0690" ;
+	dprr:hasCognomen "Albinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/690> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1542> rdfs:label "Date Information: #1542" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/690> ;
+	dprr:hasValue -250 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1542 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1541> rdfs:label "Date Information: #1541" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/690> ;
+	dprr:hasValue -325 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1541 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "A" .

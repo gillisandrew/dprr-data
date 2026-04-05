@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2051> rdfs:label "Relationship Assertion Reference: #2051" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2051 ;
+	dprr:hasExtraInfo "IG V.2.146,147" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1865> rdfs:label "Relationship Assertion: #1865" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3099> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2051> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4085> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6751> rdfs:label "Post Assertion Note: #6751" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Proquaestor? in Greece, perhaps in the second century B. C. (IG 5.2.146, a patron of Tegea; and 147, [GREEK])." ;
+	dprr:hasID 6751 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7506> rdfs:label "Post Assertion: #7506" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3099> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6751> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Baebius Q. f. (20a, Supb. 1.235, or 53, Supb. 3.192)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 7506 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSourceText "C2?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4085> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "47b" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "BAEB4085  Baebia (47b)" ;
+	dprr:hasNomen "Baebia" ;
+	dprr:hasID 4085 ;
+	dprr:hasHighestOffice "daughter of Q. Baebius (40) Sulca (pr.? 175)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "BAEB4085" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4085> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3099> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20a, Sup. 1.235 / 53, Sup. 3.192" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "BAEB3099 Q. Baebius (20a, Sup. 1.235 / 53, Sup. 3.192) Q. f." ;
+	dprr:hasNomen "Baebius" ;
+	dprr:hasID 3099 ;
+	dprr:hasHighestOffice "proq.? C2?" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "BAEB3099" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3099> .

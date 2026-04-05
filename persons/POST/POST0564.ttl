@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1113> rdfs:label "Primary Source Reference: #1113" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. per. 131" ;
+	dprr:hasID 1113 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1093> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/796> rdfs:label "Post Assertion Note: #796" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Diod. 17.87.1." ;
+	dprr:hasID 796 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/794> rdfs:label "Post Assertion Note: #794" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The evidence quoted above shows that the ancient sources admit of four different identifications for Plautius and two for Cornelius. Plautius may be C. Plautius P. f. P. n. Proculus, Cos. 358, or perhaps a son, P. (or C.) Plautius C. f. P. n. Proculus, not otherwise known. But the authorities based on Fast. Cap. point either to Decianus, Cos. 329 (Chr. 354) or to C. P. Venno or Venox, possibly a brother of the Consul of 330. No choice is certain; but in view of the general priority to be given to Livy's lists I have listed Proculus above. Likewise, no clear choice is possible between Cornelius Scapula and Cornelius Scipio Barbatus, who would then be an uncle of the Consul of 298 and uncle or father of the Pontifex mentioned in 304, -if he was not in fact the Pontifex himself. See Münzer, RE nos. 315 and 316; and on the Plautii, Lübker, nos. 5, 11, and 18." ;
+	dprr:hasID 794 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1093> rdfs:label "Post Assertion: #1093" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/564> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/796> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/794> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "[? A. Postumius Pat. (not in *RE)]" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1093 ;
+	dprr:hasDateStart -328 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -328 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/564> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "POST0564 A. Postumius (9)" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 564 ;
+	dprr:hasHighestOffice "cos.? 328" ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "POST0564" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/564> .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/156> rdfs:label "Tribe Assertion: #156" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3809> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/8> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "E. L. Hicks, JHS 10, 1890, 245-AEpig. 1891, no. 27" ;
+	dprr:hasID 156 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/8> rdfs:label "Tribe: Cornelia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Cornelia" ;
+	dprr:hasID 8 ;
+	dprr:hasAbbreviation "Cor." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7761> rdfs:label "Post Assertion Note: #7761" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praefectus fabrum (#) honored by Hieropolis Castabala (E. L. Hicks, JHS 10, 1890, 245-AEpig. 1891, no. 27). Perhaps in the first century B.C.\n" ;
+	dprr:hasID 7761 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9239> rdfs:label "Post Assertion: #9239" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3809> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7761> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "N. Lusius N. f. Cor. Nomentanus (not in RE or PIR(2))" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/147> ;
+	dprr:hasID 9239 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "1C" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -1 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3809> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Numerius> ;
+	dprr:hasPersonName "LUSI3809 N. Lusius (not in RE) N. f. Cor. Nomentanus" ;
+	dprr:hasNomen "Lusius" ;
+	dprr:hasID 3809 ;
+	dprr:hasHighestOffice "praef. fabr. C1?" ;
+	dprr:hasFiliation "N. f." ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "LUSI3809" ;
+	dprr:hasCognomen "Nomentanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3809> .

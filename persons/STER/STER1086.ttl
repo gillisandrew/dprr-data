@@ -1,0 +1,140 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2056> rdfs:label "Post Assertion Note: #2056" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Hephaestia, Thasos, and Thrace (Polyb. 18.48.2; Liv. 33.35.2; Plut. Flam. 12.1)." ;
+	dprr:hasID 2056 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2050> rdfs:label "Post Assertion Note: #2050" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Ten Legati were appointed to assist Flamininus in arranging the peace with Philip and the settlement in Greece (Polyb. 18.42.5; Liv. 33.24.7, cf. 30.1, and 35.1-2). The following are known, and since Livy nowhere lists them in an official order, they are given in alphabetical order." ;
+	dprr:hasID 2050 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2044> rdfs:label "Post Assertion Note: #2044" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 197, Promagistrates." ;
+	dprr:hasID 2044 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2021> rdfs:label "Post Assertion Note: #2021" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Farther Spain; see 199. Returned late in 197 or early in 196, in time to become a Legate to Macedonia in 196 (Liv. 33.37.3-4; see 196)." ;
+	dprr:hasID 2021 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1998> rdfs:label "Post Assertion Note: #1998" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Continued as Proconsul in Farther Spain; see 197." ;
+	dprr:hasID 1998 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1974> rdfs:label "Post Assertion Note: #1974" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Given command by plebiscite as Proconsul in Farther Spain (Liv. 31.50.11; cf. 33.27.3-4)." ;
+	dprr:hasID 1974 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2468> rdfs:label "Post Assertion: #2468" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2056> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2050> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Stertinius (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2468 ;
+	dprr:hasDateStart -196 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2459> rdfs:label "Post Assertion: #2459" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2044> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Stertinius (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2459 ;
+	dprr:hasDateStart -196 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2427> rdfs:label "Post Assertion: #2427" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2021> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Stertinius (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2427 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -197 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2402> rdfs:label "Post Assertion: #2402" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1998> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Stertinius (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2402 ;
+	dprr:hasDateStart -198 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -198 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2376> rdfs:label "Post Assertion: #2376" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1974> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Stertinius (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2376 ;
+	dprr:hasDateStart -199 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -199 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1086> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "STER1086 L. Stertinius (5)" ;
+	dprr:hasNomen "Stertinius" ;
+	dprr:hasID 1086 ;
+	dprr:hasHighestOffice "procos. 196" ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "STER1086" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1086> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/38> rdfs:label "Date Information: #38" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1086> ;
+	dprr:hasValue -195 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasNotes "Liv. 33.44.5-45.1." ;
+	dprr:hasID 38 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

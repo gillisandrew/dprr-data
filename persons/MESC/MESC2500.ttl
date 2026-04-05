@@ -1,0 +1,140 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/298> rdfs:label "Status Assertion Note: #298" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 231. Cic. Att. 6.3.1. quaestor 51" ;
+	dprr:hasID 298 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/298> rdfs:label "Status Assertion: #298" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2500> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/298> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. MESCINIUS (2) RUFUS" ;
+	dprr:hasID 298 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2807> rdfs:label "Status Assertion: #2807" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2500> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2807 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2939> rdfs:label "Relationship Assertion: #2939" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2500> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4442> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5459> rdfs:label "Post Assertion Note: #5459" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Cicero in Cilicia and left the province with him (Cic. Fam. 5.19-21; Att. 6.3.1, and 4.1, and 5.3, and 7.2; Fam. 2.17.4; 13.26.1; 16.4.3). See 51, Quaestors." ;
+	dprr:hasID 5459 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5388> rdfs:label "Post Assertion Note: #5388" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "2 Orelli read the praenomen as Cn., Mommsen as C. (RF 2.434f.) and identified him with the historian. It is improbable that the historian, who was a strong supporter of Caesar, would have served under Bibulus, or that, being an ex-Tribune, he would have taken the title of Legatus pro qaestore." ;
+	dprr:hasID 5388 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5387> rdfs:label "Post Assertion Note: #5387" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Cicero in Cilicia, 51-50 B. C. (Cic. Att. 5.11.4; 6.3.1, and 4.1, and 7.2; Fam. 5.19-21; 2.17.4; 13.26.1; 16.4.3). # Canini Sallustius (2A.1913 and 1919) Served as a Proquaestor in 50 under Bibulus in Syria (Cic. Fam. 2.17). In RE he is identified, probably erroneously, with Sallust the historian." ;
+	dprr:hasID 5387 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6135> rdfs:label "Post Assertion: #6135" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2500> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5459> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Mescinius Rufus (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6135 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6054> rdfs:label "Post Assertion: #6054" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2500> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5388> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5387> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Mescinius Rufus (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 6054 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4442> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "MIND4442 M. Mindius (2)" ;
+	dprr:hasOrigin "Velletrae?" ;
+	dprr:hasNomen "Mindius" ;
+	dprr:hasID 4442 ;
+	dprr:hasHighestOffice "eq. R.? C1" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "MIND4442" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4442> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2500> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MESC2500 L. Mescinius (2) Rufus" ;
+	dprr:hasOrigin "Velletrae" ;
+	dprr:hasNomen "Mescinius" ;
+	dprr:hasID 2500 ;
+	dprr:hasHighestOffice "q. 51" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MESC2500" ;
+	dprr:hasCognomen "Rufus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2500> .

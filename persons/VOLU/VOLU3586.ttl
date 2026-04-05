@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9400> rdfs:label "Post Assertion Note: #9400" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 377" ;
+	dprr:hasID 9400 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7125> rdfs:label "Post Assertion Note: #7125" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. See MRR 2.456, and Index, 635, with the formerly accepted supplement Vol(teius), dated to 82-81. He is dated to 81 by Crawford, RRC 1.391, no. 377. He may be the L. Volumnius L. f. Ani., above. probably a tr. mil., named in the consilium of Pompeius Strabo at Asculum (Cichorius, RS 150, 152; Wiseman, NC 1964, 158; N. Criniti, L'Epigrafe di Asculum 113114). He may also be identified with the senator Volumnius (RE no. 4) in Varro, RR 2.4.11 (the dramatic date of the dialogue is 67 B.C.), and perhaps, too, with the senator Volumnius mentioned in Cicero's letter (Fam. 7.32.1) to Volumnius Eutrapelus, although its date is in 50. See Badian, Historia 12, 1963, 142; Shackleton Bailey, CLF 1.451-452.\n" ;
+	dprr:hasID 7125 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8660> rdfs:label "Post Assertion: #8660" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3586> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9400> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7125> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Volumnius Strabo, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8660 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSourceText "81" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3586> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3, 14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VOLU3586 L. Volumnius (3, 14) L. f. Strabo" ;
+	dprr:hasNomen "Volumnius" ;
+	dprr:hasID 3586 ;
+	dprr:hasHighestOffice "monetal. 81" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VOLU3586" ;
+	dprr:hasCognomen "Strabo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3586> .

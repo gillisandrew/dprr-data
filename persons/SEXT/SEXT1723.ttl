@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2441> rdfs:label "Status Assertion: #2441" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1723> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2441 ;
+	dprr:hasDateStart -110 ;
+	dprr:hasDateEnd -111 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7415> rdfs:label "Post Assertion Note: #7415" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor of the consul L. Calpurnius Bestia in 111 (Sall. lug. 29.4-6; MRR 1.541, 543, note 4). He should more probably be identified with C. Sextius C. f. Calvinus (21), Pr. ca. 92 (see ILLRP 291; MRR 2.18) than with P. Sextius (9), who was convicted toward 90 of ambitus while pr. desig. (Cic. Brut. 180). See Sumner, Orators 76-77.[198x]\n" ;
+	dprr:hasID 7415 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3442> rdfs:label "Post Assertion Note: #3442" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under the Consul Bestia in Numidia (Sall. Iug. 29.4; cf. Cic. Brut. 180)." ;
+	dprr:hasID 3442 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3441> rdfs:label "Post Assertion Note: #3441" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "He may possibly be identified with the P. Sextius (RE no. 9), Praetorelect who was convicted of bribery toward 90 B.C. (Cic. Brut. 180)." ;
+	dprr:hasID 3441 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4131> rdfs:label "Post Assertion: #4131" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1723> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7415> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3442> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3441> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. ? Sextius (1, cf. 9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4131 ;
+	dprr:hasDateStart -111 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -111 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1723> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SEXT1723 P. Sextius (1)" ;
+	dprr:hasNomen "Sextius" ;
+	dprr:hasID 1723 ;
+	dprr:hasHighestOffice "q. 111" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "SEXT1723" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1723> .

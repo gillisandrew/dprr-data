@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10277> rdfs:label "Post Assertion Note: #10277" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C.47 (praefectus oppidi or legatus)" ;
+	dprr:hasID 10277 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10276> rdfs:label "Post Assertion Note: #10276" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C.47 (praefectus oppidi or legatus)" ;
+	dprr:hasID 10276 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10672> rdfs:label "Post Assertion: #10672" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5044> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10277> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/138> ;
+	dprr:hasID 10672 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSourceText "169" ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10671> rdfs:label "Post Assertion: #10671" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5044> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10276> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/262> ;
+	dprr:hasID 10671 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSourceText "169" ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5044> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CARV5044 M. Carvilius (2) Spoletinus" ;
+	dprr:hasNomen "Carvilius" ;
+	dprr:hasID 5044 ;
+	dprr:hasHighestOffice "praef. opp.? 169" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CARV5044" ;
+	dprr:hasCognomen "Spoletinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5044> .

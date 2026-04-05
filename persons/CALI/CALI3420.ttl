@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7192> rdfs:label "Post Assertion Note: #7192" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., envoy 82. After Mithridates' complaints to Sulla and the Senate about Murena's incursions (App. Mith. 65) C. was sent to Murena with a public message not to molest the king. See D. G. Glew, Chiron  11, 1981, 115-117. Wiseman, CQ 14, 1964, 123, suggests that he was either M. Calidius (3). Monetalis,  formerly dated to 106, but now by Crawford to 117 or 116, or (more probably) Q. Calidius (5), praetor in 79. A. Keaveney suggests Q. Calidius (5). Pr. 79, as the most probable identification (Klio 65, 1983, 185-186; cf. MRR 2.83, 86), but considers M. Calidius (4). Pr. 57, as possible.\n" ;
+	dprr:hasID 7192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8270> rdfs:label "Post Assertion: #8270" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3420> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7192> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Calidius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 8270 ;
+	dprr:hasDateStart -82 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -82 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3420> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CALI3420 -. Calidius (1)" ;
+	dprr:hasNomen "Calidius" ;
+	dprr:hasID 3420 ;
+	dprr:hasHighestOffice "leg. env. 82" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CALI3420" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3420> .

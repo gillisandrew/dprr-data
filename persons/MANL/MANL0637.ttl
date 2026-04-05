@@ -1,0 +1,165 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3841> rdfs:label "Relationship Assertion: #3841" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/637> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/758> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3840> rdfs:label "Relationship Assertion: #3840" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/637> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/18> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/787> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3399> rdfs:label "Relationship Assertion: #3399" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/637> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/497> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/18> rdfs:label "Relationship: great grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 71 ;
+	dprr:hasName "great grandfather of" ;
+	dprr:hasID 18 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1316> rdfs:label "Primary Source Reference: #1316" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VI 826ff." ;
+	dprr:hasID 1316 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1272> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1315> rdfs:label "Primary Source Reference: #1315" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VI 802ff." ;
+	dprr:hasID 1315 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1272> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/954> rdfs:label "Post Assertion Note: #954" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.9.9 (Paetus); Fast. Cap. ([- -] f. Cn. [- -]); Act. Tr. (F.'s name entire); Chr. 354 (Petino et Torquato); Fast. Hyd. (Poetico et Torquato); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 38f., 111, 424f. Fulvius captured Nequinum of Umbria (Liv. 10.10.1-5), and celebrated a triumph over Samnites (Sabines ?) and Nequinates (Act. Tr., Degrassi 72f., 543). Torquatus died in Etruria (Liv. 10.11.1-3)." ;
+	dprr:hasID 954 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/953> rdfs:label "Post Assertion Note: #953" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Münzer suggests the filiation T. f. T. n., a grandson of the Consul of 340." ;
+	dprr:hasID 953 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1272> rdfs:label "Post Assertion: #1272" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/637> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/954> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/953> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Manlius (T. f. T. n.) Torquatus Pat. (81)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1272 ;
+	dprr:hasDateStart -299 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -299 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/787> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "82" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1379> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1378> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1377> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1376> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1375> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1374> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1373> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1372> ;
+	dprr:hasPersonName "MANL0787 T. Manlius (82) T. f. T. n. Torquatus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 787 ;
+	dprr:hasHighestOffice "cos. 235" ;
+	dprr:hasFiliation "T. f. T. n." ;
+	dprr:hasEraTo -202 ;
+	dprr:hasEraFrom -279 ;
+	dprr:hasDprrID "MANL0787" ;
+	dprr:hasCognomen "Torquatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/787> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/758> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "87" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "MANL0758 A. Manlius (87) T. f. T. n. Torquatus Atticus" ;
+	dprr:hasOtherNames "Atticus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 758 ;
+	dprr:hasHighestOffice "cos. 244" ;
+	dprr:hasFiliation "T. f. T. n." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -299 ;
+	dprr:hasDprrID "MANL0758" ;
+	dprr:hasCognomen "Torquatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/758> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/637> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "81" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MANL0637 T. Manlius (81) T. f. T. n. Torquatus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 637 ;
+	dprr:hasHighestOffice "cos. 299" ;
+	dprr:hasFiliation "T. f. T. n." ;
+	dprr:hasEraTo -299 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "MANL0637" ;
+	dprr:hasCognomen "Torquatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/637> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/497> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "57" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MANL0497 T. Manlius (57) L. f. A. n. Imperiosus Torquatus" ;
+	dprr:hasOtherNames "Torquatus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasNobilisNotes "Sil. Ital. 11.73-74, Gell. 9.13.cap-1, Eutrop. 2.5, Oros. Adv. Pag. 3.9.1-4" ;
+	dprr:hasID 497 ;
+	dprr:hasHighestOffice "cos. 347" ;
+	dprr:hasFiliation "L. f. A. n." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -380 ;
+	dprr:hasDprrID "MANL0497" ;
+	dprr:hasCognomen "Imperiosus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/497> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/951> rdfs:label "Date Information: #951" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/637> ;
+	dprr:hasValue -299 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "after a fall from a horse." ;
+	dprr:hasID 951 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

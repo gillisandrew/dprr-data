@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2344> rdfs:label "Status Assertion: #2344" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1555> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2344 ;
+	dprr:hasDateStart -145 ;
+	dprr:hasDateEnd -143 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8618> rdfs:label "Post Assertion Note: #8618" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 740, footnote 139" ;
+	dprr:hasID 8618 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7365> rdfs:label "Post Assertion Note: #7365" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praetor procos. in Hisp. Ult., 143. See MRR 1.472, 474, note 3. Appian's phrase (Ib. 66, #) strongly favors placing Quinctius (Crispinus?) in command of Hisp. Ult., instead of Hisp. Cit., as successor in 143 of Fabius Maximus Aemilianus and succeeded in 142 by Fabius Maximus Servilianus (MRR 1.477-478). See Astin, Historia 13, 1964, 251-254; R. C. Knapp, Aspects 196, 201-203.\n" ;
+	dprr:hasID 7365 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3025> rdfs:label "Post Assertion Note: #3025" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Warred with Viriathus (App. Ib. 66)." ;
+	dprr:hasID 3025 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3024> rdfs:label "Post Assertion Note: #3024" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See the Viereck-Roos text of Appian, Ib. 66-67, pp. 111, 113, and notes. Schulten (NJ 39 [1917] 222 and note) distinguishes between a Quinctius who held command in Hither Spain and was succeeded by Metellus (see above, Consuls) and Quintus, who is Q. Pompeius, succeeded Fabius Aemilianus, and was followed by Fabius Servilianus (Cos. 142). See however Wilsdorf, Leipzig. Stud. 1 (1878) 101f., accepted by D.- G. 4.313, no. 4; Wehrmann, FP 9." ;
+	dprr:hasID 3024 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3682> rdfs:label "Post Assertion: #3682" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1555> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8618> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7365> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3025> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3024> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Quinctius (2)" ;
+	dprr:hasOfficeXref "Hither Spain" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3682 ;
+	dprr:hasDateStart -143 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -143 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1555> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "QUIN1555 -. Quinctius (2)" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1555 ;
+	dprr:hasHighestOffice "pr. 143" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "QUIN1555" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1555> .

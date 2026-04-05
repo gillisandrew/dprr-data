@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7416> rdfs:label "Post Assertion Note: #7416" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legatus. With Verres in Sicily in 73 (Cic. Verr. 2.2.49), he remained with him, whether still a legate or not (see N. Marinone, AAT 100, 1965-1966, 219-252, esp. 241-246). He was a legatus in 71, and with Caesetius was in command of the fleet which captured (or found) the pirate ship (Cic. Verr. 2.5.63). See Wiseman, NM 263, no. 417.\n" ;
+	dprr:hasID 7416 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4560> rdfs:label "Post Assertion Note: #4560" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably continued under Verres in Sicily (see 73, Legates)." ;
+	dprr:hasID 4560 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4523> rdfs:label "Post Assertion Note: #4523" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Verres in Sicily (Cic. Verr. 2.2.49; see 73, Legates)." ;
+	dprr:hasID 4523 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4483> rdfs:label "Post Assertion Note: #4483" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Lucullus in the war with Mithridates (OGIS 447; Ascon. 19 C), and a successful naval commander of the fleet of Lucullus in the Aegean and the Black Seas (App. Mith. 77; Memnon 41-43, and 48, in FGrH 3B.357-59, and 361; see above, Promagistrates, on Lucullus)." ;
+	dprr:hasID 4483 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5162> rdfs:label "Post Assertion: #5162" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2116> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7416> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4560> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "P. Tadius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5162 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -71 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5125> rdfs:label "Post Assertion: #5125" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2116> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4523> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "P. Tadius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5125 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5061> rdfs:label "Post Assertion: #5061" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2116> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7416> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4483> ;
+	dprr:hasPosition 12 ;
+	dprr:hasOriginalText "P. Tadius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5061 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2116> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "TADI2116 P. Tadius (1)" ;
+	dprr:hasNomen "Tadius" ;
+	dprr:hasID 2116 ;
+	dprr:hasHighestOffice "leg. lieut. 71" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TADI2116" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2116> .

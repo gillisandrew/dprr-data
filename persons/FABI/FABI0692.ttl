@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7556> rdfs:label "Relationship Assertion: #7556" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/700> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2176> rdfs:label "Relationship Assertion: #2176" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4816> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1494> rdfs:label "Primary Source Reference: #1494" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 87.1" ;
+	dprr:hasID 1494 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1437> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1468> rdfs:label "Primary Source Reference: #1468" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Aem. 35.1" ;
+	dprr:hasID 1468 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1412> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1107> rdfs:label "Post Assertion Note: #1107" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Act. Tr. (names entire); Chr. 354 (Pera et Pistore); Fast. Hyd. (Fabio Pictore et Pecta); Chr. Pasc. ({Gr}); Cassiod.; see Degrassi, 74f., 115, 432f., 547. Both Consuls campaigned in Umbria and celebrated triumphs over Sassina, then in Calabria and celebrated second triumphs over the Sallentines and the Messapians (Act. Tr., Degrassi, 74f., 547; cf. Liv. Per. 15)." ;
+	dprr:hasID 1107 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1089> rdfs:label "Post Assertion Note: #1089" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent with Gurges as head to the court of Ptolemy Philadelphus (Dion. Hal. 20.14; Val. Max. 4.3.9; cf. Liv. Per. 14; Iustin. 18.2.9; Dio fr. 41; Zon. 8.6)." ;
+	dprr:hasID 1089 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10082> rdfs:label "Post Assertion Note: #10082" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Sallentineis, Messapieisque. MRR I.201, Itgenshorst no. 124, Rich no. 123." ;
+	dprr:hasID 10082 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10081> rdfs:label "Post Assertion Note: #10081" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Sassinatibus. MRR I.201, Itgenshorst no. 123, Rich no. 122." ;
+	dprr:hasID 10081 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1437> rdfs:label "Post Assertion: #1437" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1107> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "N. Fabius C. f. M. n. Pictor Pat. (124)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1437 ;
+	dprr:hasDateStart -266 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -266 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1412> rdfs:label "Post Assertion: #1412" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1089> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "N. Fabius Pictor Pat. (124)" ;
+	dprr:hasOfficeXref "Cos. 266" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 1412 ;
+	dprr:hasDateStart -273 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -273 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10477> rdfs:label "Post Assertion: #10477" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10082> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10477 ;
+	dprr:hasDateStart -266 ;
+	dprr:hasDateSourceText "266" ;
+	dprr:hasDateEnd -266 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10476> rdfs:label "Post Assertion: #10476" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10081> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10476 ;
+	dprr:hasDateStart -266 ;
+	dprr:hasDateSourceText "266" ;
+	dprr:hasDateEnd -266 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/700> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "123" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FABI0700 C. Fabius (123) C. f. M. n. Pictor" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 700 ;
+	dprr:hasHighestOffice "cos. 269" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -302 ;
+	dprr:hasDprrID "FABI0700" ;
+	dprr:hasCognomen "Pictor" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/700> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/692> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "124" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Numerius> ;
+	dprr:hasPersonName "FABI0692 N. Fabius (124) C. f. M. n. Pictor" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 692 ;
+	dprr:hasHighestOffice "cos. 266" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -299 ;
+	dprr:hasDprrID "FABI0692" ;
+	dprr:hasCognomen "Pictor" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/692> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4816> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "122" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FABI4816 C. Fabius (122) Pictor" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 4816 ;
+	dprr:hasHighestOffice "father of? N. Fabius (124) C. f. M. n. Pictor (cos. 266)" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "FABI4816" ;
+	dprr:hasCognomen "Pictor" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4816> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/970> rdfs:label "Date Information: #970" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/692> ;
+	dprr:hasValue -299 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 56." ;
+	dprr:hasID 970 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

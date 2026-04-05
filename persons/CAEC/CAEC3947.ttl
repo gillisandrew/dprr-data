@@ -1,0 +1,262 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/793> rdfs:label "Relationship Assertion Reference: #793" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 793 ;
+	dprr:hasExtraInfo "Cic. Verr. II iv 147" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/707> rdfs:label "Relationship Assertion Reference: #707" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 707 ;
+	dprr:hasExtraInfo "Cic. p. red. ad Quir. 6" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/158> rdfs:label "Relationship Assertion Reference: #158" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ohne den Ehemann beim Namen zu nennen." ;
+	dprr:hasID 158 ;
+	dprr:hasExtraInfo "Auct. vir. ill. 62.4" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1545> rdfs:label "Relationship Assertion Reference: #1545" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1545 ;
+	dprr:hasExtraInfo "Plut. Luc. 1.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/759> rdfs:label "Relationship Assertion: #759" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/793> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1693> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/679> rdfs:label "Relationship Assertion: #679" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/707> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3918> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6552> rdfs:label "Relationship Assertion: #6552" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1982> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6550> rdfs:label "Relationship Assertion: #6550" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4103> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6292> rdfs:label "Relationship Assertion: #6292" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1649> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5375> rdfs:label "Relationship Assertion: #5375" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1544> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/208> rdfs:label "Relationship Assertion: #208" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/158> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1545> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1759> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1135> rdfs:label "Relationship Assertion: #1135" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3947> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1545> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1903> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/12> rdfs:label "Relationship: mother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 52 ;
+	dprr:hasName "mother of" ;
+	dprr:hasID 12 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4103> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "90" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "TERE4103 M. Terentius (90) Varro Lucullus" ;
+	dprr:hasOtherNames "Lucullus" ;
+	dprr:hasNomen "Terentius" ;
+	dprr:hasID 4103 ;
+	dprr:hasHighestOffice "son of M. Terentius (A) Varro" ;
+	dprr:hasEraTo -56 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TERE4103" ;
+	dprr:hasCognomen "Varro" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4103> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3947> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "132" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CAEC3947  Caecilia (132) Metella" ;
+	dprr:hasNomen "Caecilia" ;
+	dprr:hasID 3947 ;
+	dprr:hasHighestOffice "daughter of? L. Caecilius (83) Q. f. L. n. Metellus Calvus (cos. 142)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CAEC3947" ;
+	dprr:hasCognomen "Metella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3947> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3918> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "109" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LICI3918 M. Licinius (109) Lucullus" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 3918 ;
+	dprr:hasHighestOffice "son of? L. Licinius (103) Lucullus (pr. 104)" ;
+	dprr:hasEraTo -56 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "LICI3918" ;
+	dprr:hasCognomen "Lucullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3918> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1982> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "Licinius 109" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2189> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2188> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2187> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2186> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2185> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2184> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2183> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2182> ;
+	dprr:hasPersonName "TERE1982 M. Terentius (Licinius 109) M. f. Varro Lucullus" ;
+	dprr:hasOtherNames "Lucullus" ;
+	dprr:hasNomen "Terentius" ;
+	dprr:hasNobilisNotes "Schol. Bob. Arch. 177 Stangl" ;
+	dprr:hasID 1982 ;
+	dprr:hasHighestOffice "cos. 73" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -116 ;
+	dprr:hasDprrID "TERE1982" ;
+	dprr:hasCognomen "Varro" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1982> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1903> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "104" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1240> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1239> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1238> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1237> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1236> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1235> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1234> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1233> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1232> ;
+	dprr:hasPersonName "LICI1903 L. Licinius (104) L. f. L. n. Lucullus Ponticus" ;
+	dprr:hasOtherNames "Ponticus" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasNobilisNotes "Cic. Acad. 2.1.1, Cic. Att. 13.12.3, Auct. Vir. Ill. 74.1, Macrob. 3.15.6, Epig. Bob. 22, Schol. Bob. Arch. 177 Stangl" ;
+	dprr:hasID 1903 ;
+	dprr:hasHighestOffice "cos. 74" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -56 ;
+	dprr:hasEraFrom -117 ;
+	dprr:hasDprrID "LICI1903" ;
+	dprr:hasCognomen "Lucullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1903> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1759> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "103" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "LICI1759 L. Licinius (103) Lucullus" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 1759 ;
+	dprr:hasHighestOffice "pr. 104" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "LICI1759" ;
+	dprr:hasCognomen "Lucullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1759> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1693> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "97" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/358> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/357> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/356> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/355> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/354> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/353> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/352> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/351> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/350> ;
+	dprr:hasPersonName "CAEC1693 Q. Caecilius (97) L. f. Q. n. Metellus Numidicus" ;
+	dprr:hasOtherNames "Numidicus" ;
+	dprr:hasNomen "Caecilius" ;
+	dprr:hasNobilisNotes "Cic. Post Red. Quir. 4.9, Sall. Jug. 64.1, 73.4, Vell. 2.11.2, Flor. Epit. 2.16.3 (& cf Suet. Gram. 3.2), [Quintil.]. Decl. Maiores 3.14, Auct. Vir. Ill. 73.7-8, Schol. Bob. Arch. 176 Stangl" ;
+	dprr:hasID 1693 ;
+	dprr:hasHighestOffice "cos. 109" ;
+	dprr:hasFiliation "L. f. Q. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -152 ;
+	dprr:hasDprrID "CAEC1693" ;
+	dprr:hasCognomen "Metellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1693> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1649> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "91" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/341> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/340> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/339> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/338> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/337> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/336> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/335> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/334> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/333> ;
+	dprr:hasPersonName "CAEC1649 L. Caecilius (91) L. f. Q. n. Metellus Delmaticus" ;
+	dprr:hasOtherNames "Delmaticus" ;
+	dprr:hasNomen "Caecilius" ;
+	dprr:hasID 1649 ;
+	dprr:hasHighestOffice "cos. 119" ;
+	dprr:hasFiliation "L. f. Q. n." ;
+	dprr:hasEraTo -103 ;
+	dprr:hasEraFrom -161 ;
+	dprr:hasDprrID "CAEC1649" ;
+	dprr:hasCognomen "Metellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1649> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1544> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "83" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CAEC1544 L. Caecilius (83) Q. f. L. n. Metellus Calvus" ;
+	dprr:hasOtherNames "Calvus" ;
+	dprr:hasNomen "Caecilius" ;
+	dprr:hasID 1544 ;
+	dprr:hasHighestOffice "cos. 142" ;
+	dprr:hasFiliation "Q. f. L. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CAEC1544" ;
+	dprr:hasCognomen "Metellus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1544> .

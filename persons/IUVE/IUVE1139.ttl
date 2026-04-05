@@ -1,0 +1,150 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/427> rdfs:label "Status Assertion: #427" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1139> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 427 ;
+	dprr:hasDateStart -194 ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2200> rdfs:label "Relationship Assertion: #2200" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1139> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1106> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2199> rdfs:label "Relationship Assertion: #2199" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1139> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1387> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8468> rdfs:label "Post Assertion Note: #8468" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 730, footnote 51" ;
+	dprr:hasID 8468 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2631> rdfs:label "Post Assertion Note: #2631" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Apulia and Calabria to purchase grain for the fleet and the army (Liv. 42.27.8)." ;
+	dprr:hasID 2631 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2092> rdfs:label "Post Assertion Note: #2092" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 34.42.4 Provinces and armies Liv. 34.43.6-7." ;
+	dprr:hasID 2092 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3195> rdfs:label "Post Assertion: #3195" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1139> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2631> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Iuventius (Thalna) (32)" ;
+	dprr:hasOfficeXref "Pr. 194" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3195 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2520> rdfs:label "Post Assertion: #2520" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1139> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8468> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2092> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "T. Iuventius Thalna (32)" ;
+	dprr:hasOfficeXref "Pr. Peregrinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2520 ;
+	dprr:hasDateStart -194 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -194 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1387> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "IUVE1387 M'. Iuventius (30) T. f. T. n. Pap. Thalna" ;
+	dprr:hasOrigin "Tusculum" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 1387 ;
+	dprr:hasHighestOffice "cos. 163" ;
+	dprr:hasFiliation "T. f. T. n." ;
+	dprr:hasEraTo -163 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "IUVE1387" ;
+	dprr:hasCognomen "Thalna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1387> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1139> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "32" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "IUVE1139 T. Iuventius (32) Thalna" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 1139 ;
+	dprr:hasHighestOffice "pr. 194" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "IUVE1139" ;
+	dprr:hasCognomen "Thalna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1139> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1106> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "IUVE1106 T. Iuventius (9) (Thalna)" ;
+	dprr:hasNomen "Iuventius" ;
+	dprr:hasID 1106 ;
+	dprr:hasHighestOffice "tr. mil. 197" ;
+	dprr:hasEraTo -197 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "IUVE1106" ;
+	dprr:hasCognomen "(Thalna)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1106> .

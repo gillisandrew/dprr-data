@@ -1,0 +1,414 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1302> rdfs:label "Status Assertion: #1302" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1302 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1879> rdfs:label "Relationship Assertion Reference: #1879" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1879 ;
+	dprr:hasExtraInfo "Val. Max. V 9.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7096> rdfs:label "Relationship Assertion: #7096" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3890> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7083> rdfs:label "Relationship Assertion: #7083" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4343> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7079> rdfs:label "Relationship Assertion: #7079" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4261> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7075> rdfs:label "Relationship Assertion: #7075" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4229> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6549> rdfs:label "Relationship Assertion: #6549" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4289> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2338> rdfs:label "Relationship Assertion: #2338" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4339> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2274> rdfs:label "Relationship Assertion: #2274" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4322> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1328> rdfs:label "Relationship Assertion: #1328" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1879> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1902> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7165> rdfs:label "Post Assertion Note: #7165" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praetor 45? A son of the famous orator. Catullus 65.2 provides evidence that his cognomen was also Hortalus (Syme, RR 63, note 1; Shackleton Bailey, CLA 1.264). Possibly quaestor in Asia in 51. If the verb decederet in Cic. Att. 6.3.9 (not 6.6.2, as in MRR 2.573) means leave his province (see Balsdon, CR 51, 1937, 6-10; cf. Badian, Athenaeum 34, 1956, 104ff.) he may have been quaestor in Asia in 51- 50, preceding L. Antonius (Cic. Fam. 2.18). (RS, CP) His praetorship, if he held one, may be a year or two earlier than 45 (Sumner, Phoenbc 25, 1971, 358). Add a query in MRR 2.306. On his cognomen see Shackleton Bailey, Onom.\n" ;
+	dprr:hasID 7165 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6163> rdfs:label "Post Assertion Note: #6163" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He continued under Brutus as Proconsul in Macedonia (see 44, and 43, Promagistrates). After his capture at Philippi he was put to death at the tomb of C. Antonius (Liv. Per. 124, cf. 121; Vell. 2.71.2; Plut. Brut. 28.1-2; Ant. 22.4; App. BC 3.79; Dio 47.24.2, and 25.1). On Antonius, see 43, Promagistrates." ;
+	dprr:hasID 6163 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> rdfs:label "Post Assertion Note: #6155" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "1 The use of the terms Legate and Proconsul under the Second Triumvirate is of necessity attended by uncertainty and confusion. Commanders, like Ventidius Bassus, who were for the most part ex-Consuls, held command over large and important areas and armies, and apparently acted with considerable initiative, are termed Legati in Latin sources such as the Periochae of Livy and Florus and # in Dio (Liv. Per. 127, 128; Flor. 2.19; Dio 48.41.5; cf. 49.21, and Act. Tr. for 38, on the title and triumph of Ventidius), and yet many of them appear in the lists of triumphs as Proconsuls. In mentioning the triumph of Domitius Calvinus, Dio (48.42.3-4) remarks that those in power granted honors at will # (see also 49.42.3; 54.12.1-2). Mommsen finds the beginning of this contradiction in Caesar's grant of triumphs at the end of 45 to his Legates Fabius Maximus and Q. Pedius (see 45, Promagistrates). Like these, the later commanders were Legates also under the superior imperium of the Triumviri, and their appearance as Proconsuls depended upon a fictive grant of imperium for the day of their triumph (Str. 1.125, 130f.; 2.245, note 1). The term Proconsul cannot refer to their status in command since a Legate never had more than an imperium pro praetore. The term Legatus pro consule does not occur, and indeed cannot occur because it is intrinsically self-contradictory (ibid. 1.130f.). Moreover it was simply this permission to triumph that made it logically possible for some of these Legates to accept acclamation as Imperator (see, on Sosius, Mommsen Str. 1.125). Mommsen's doctrine is difficult to test because in nearly all cases no official inscriptions remain from the period of command, and several of the commands are known only from the record of the triumph (see 34-32, Promagistrates, on Norbanus Flaccus, Statilius Taurus, Marcius Philippus, Olaudius Pulcher, and L. Cornificius). The term Legatus in Livy and Florus is strongly in his favor, since Die might have been affected by the regular system of Legati pro praetore in the Empire. However, as Canter saw (46-55), the situation was more complicated. The illogicality of a subordinate with an imperium pro consule occurs under Antony on the official coinage in Greece of M. lunius Silanus, who terms himself Quaestor pro consule (see 34, Promagistrates; note that in the Empire Pliny could be given the exceptional position of Legatus pro praetore consulari potestate), and raises the question how many commanders senior to Silanus may not also have held an imperium pro consule under the superior imperium of the Triumviri. Moreover, Sosius (Cos. 32) apparently termed himself Imperator on his coinage from 37 B. C. (see 37, Promagistrates), on a rather distant anticipation of the moment of a fictive grant of imperium pro consule for a day in 34; and there were others, like Laronius (see 33, Consules Suffecti), who took the title Imperator and did not triumph at all. The period of the Second Triumvirate was a period of transition in which irregularities and illogicalities could frequently occur in the government of the Roman Empire, before the Augustan regime rebuilt the pattern anew. I have therefore been inclined to keep the question open; and to list among the Promagistrates the holders of important commands under Octavian and Antony who received acclamation as Imperatores or celebrated triumphs. It must be granted that the superior position of the Triumvirs in this period made the difference between the functions of a Promagistrate and of a Legate much less than it had been before. See Ganter 46-55." ;
+	dprr:hasID 6155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6068> rdfs:label "Post Assertion Note: #6068" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Macedonia (Cic. Phil. 10.26; see 44, Promagistrates). When C. Antonius attempted to succeed him in Macedonia he rallied to Brutus, and the Senate prolonged his command under the general command of Brutus (Cic. Phil. 10. 11 and 13 and 24 and 26; Plut. Brut. 25.2; Dio 47.21.4; cf. I. de Delos 4.1622–ILS 9460). Late in 43 or early in 42 he executed C. Antonius at Brutus' command (see above, on C. Antonius). According to Grant (From Imperium to Auctoritas 33-35), he was the founder, under Brutus, of a colony at Thessalonica." ;
+	dprr:hasID 6068 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5997> rdfs:label "Post Assertion Note: #5997" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Macedonia (Cic. Phil. 10.26, delivered in 43). C. Antenius (see above) came to Macedonia to succeed him at the end of the year, or at the latest in January 43, whereupon he rallied to the support of Brutus (Cic. Phil. 10.11 and 13 and 24 and 26; Plut. Brut. 25.2; Dio 47.21.4-5)." ;
+	dprr:hasID 5997 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5875> rdfs:label "Post Assertion Note: #5875" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably Praetor in 45, since he became Proconsul in Macedonia in 44 and 43 (Cic. Phil. 10.26; Dio 47.21.4-6; see 44, Promagistrates)." ;
+	dprr:hasID 5875 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5584> rdfs:label "Post Assertion Note: #5584" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer in command of a detachment at the Rubicon (Suet. M. 31.1; Plut. Caes. 32.1; cf. Caes. BC 1.8.1; Suet. M. 31.1; App. BC 2.35), and later received naval command on the Tuscan sea (App. BC 2.47; Oros. 6.15.8; cf. Cic. Att. 10.12.1; and 16.5, and 17.1 and 3, and 18. 1), whence he attempted to come to the relief of C. Antonius in the Adriatic (Oros. 6.15.8; Schol. Bern. on Lucan 4.433, p. 135 Usener; see above, on C. Antonius)." ;
+	dprr:hasID 5584 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8989> rdfs:label "Post Assertion: #8989" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7165> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Hortensius (Hortalus) (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 8989 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8988> rdfs:label "Post Assertion: #8988" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7165> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Hortensius (Hortalus) (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 8988 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6882> rdfs:label "Post Assertion: #6882" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6163> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "Q. Hortensius (8)" ;
+	dprr:hasOfficeXref "Pr. 45?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6882 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6774> rdfs:label "Post Assertion: #6774" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6068> ;
+	dprr:hasPosition 11 ;
+	dprr:hasOriginalText "Q. Hortensius (8)" ;
+	dprr:hasOfficeXref "Pr. 45?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6774 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6688> rdfs:label "Post Assertion: #6688" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5997> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "Q. Hortensius (8)" ;
+	dprr:hasOfficeXref "Pr. 45?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6688 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6560> rdfs:label "Post Assertion: #6560" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7165> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5875> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Q. Hortensius (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6560 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSourceText "45, or a year or two before" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6260> rdfs:label "Post Assertion: #6260" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5584> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "? Q. Hortensius (8)" ;
+	dprr:hasOfficeXref "Pr. 45" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6260 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4343> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PORC4343  Porcia (30)" ;
+	dprr:hasNomen "Porcia" ;
+	dprr:hasID 4343 ;
+	dprr:hasHighestOffice "daughter of M. Porcius (16) M. f. M. n. Pap.? Cato (Uticensis) (pr. 54)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PORC4343" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4343> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4339> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "HORT4339 -. Hortensius (10) Corbio" ;
+	dprr:hasNomen "Hortensius" ;
+	dprr:hasID 4339 ;
+	dprr:hasHighestOffice "son of? Q. Hortensius (8) Q. f. L. n. Hortalus (pr. c. 45)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "HORT4339" ;
+	dprr:hasCognomen "Corbio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4339> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4322> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "12" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "HORT4322 M. Hortensius (12) Hortalus" ;
+	dprr:hasNomen "Hortensius" ;
+	dprr:hasID 4322 ;
+	dprr:hasHighestOffice "son of? Q. Hortensius (8) Q. f. L. n. Hortalus (pr. c. 45)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "HORT4322" ;
+	dprr:hasCognomen "Hortalus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4322> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4289> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "HORT4289  Hortensia (16)" ;
+	dprr:hasNomen "Hortensia" ;
+	dprr:hasID 4289 ;
+	dprr:hasHighestOffice "daughter of Q. Hortensius (13) L. f. Hortalus (cos. 69)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "HORT4289" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4289> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4261> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PORC4261 L.? Porcius (8) Cato" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 4261 ;
+	dprr:hasHighestOffice "son of M. Porcius (16) M. f. M. n. Pap.? Cato (Uticensis) (pr. 54)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PORC4261" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4261> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4229> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PORC4229  Porcia (29)" ;
+	dprr:hasNomen "Porcia" ;
+	dprr:hasID 4229 ;
+	dprr:hasHighestOffice "daughter of M. Porcius (16) M. f. M. n. Pap.? Cato (Uticensis) (pr. 54)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PORC4229" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4229> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3890> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PORC3890  Porcia (28)" ;
+	dprr:hasNomen "Porcia" ;
+	dprr:hasID 3890 ;
+	dprr:hasHighestOffice "daughter of M. Porcius (16) M. f. M. n. Pap.? Cato (Uticensis) (pr. 54)" ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PORC3890" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3890> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2554> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "HORT2554 Q. Hortensius (8) Q. f. L. n. Hortalus" ;
+	dprr:hasNomen "Hortensius" ;
+	dprr:hasID 2554 ;
+	dprr:hasHighestOffice "pr. c. 45" ;
+	dprr:hasFiliation "Q. f. L. n." ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "HORT2554" ;
+	dprr:hasCognomen "Hortalus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2554> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1902> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1116> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1115> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1114> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1113> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1112> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1111> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1110> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1109> ;
+	dprr:hasPersonName "HORT1902 Q. Hortensius (13) L. f. Hortalus" ;
+	dprr:hasNomen "Hortensius" ;
+	dprr:hasNobilisNotes "Cic. 2 Verr. 3.4.7, Cic. Quinct. 2.9, 22.72, Cic. Att. 13.12.3, Macrob. 3.15.6, Schol. Bob. Arch. 177 Stangl" ;
+	dprr:hasID 1902 ;
+	dprr:hasHighestOffice "cos. 69" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -114 ;
+	dprr:hasDprrID "HORT1902" ;
+	dprr:hasCognomen "Hortalus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1902> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1936> rdfs:label "Date Information: #1936" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasValue -42 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "executed after B. of Philippi." ;
+	dprr:hasID 1936 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1935> rdfs:label "Date Information: #1935" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2554> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 64" ;
+	dprr:hasID 1935 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

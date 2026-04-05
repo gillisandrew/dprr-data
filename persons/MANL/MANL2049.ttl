@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2597> rdfs:label "Status Assertion: #2597" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2049> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2597 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9278> rdfs:label "Post Assertion Note: #9278" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/8> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No. 10, pp. 212-3." ;
+	dprr:hasID 9278 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8345> rdfs:label "Post Assertion Note: #8345" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Cluent. 38-39." ;
+	dprr:hasID 8345 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7610> rdfs:label "Post Assertion Note: #7610" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 2.92, 132. Shackleton Bailey (Studies 5051) doubts if two such different personalities as those of the IIIvir Cap. Ca. 77(Cic. Cluent. 77), and of the Tr. Pl. desig. For 69 ( Verr. 1.30), could ;exist in the same person.\n" ;
+	dprr:hasID 7610 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4599> rdfs:label "Post Assertion Note: #4599" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Verr. 1.30; Schol. Gron. 351 Stangl. Died before 66 (Cic. Cluent. 39)." ;
+	dprr:hasID 4599 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4335> rdfs:label "Post Assertion Note: #4335" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "7 The date remains uncertain but must precede 74 B.C. by an interval." ;
+	dprr:hasID 4335 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5204> rdfs:label "Post Assertion: #5204" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2049> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7610> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4599> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Manlius (34)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5204 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4923> rdfs:label "Post Assertion: #4923" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2049> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9278> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8345> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7610> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4335> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Q. Manlius (34)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/99> ;
+	dprr:hasID 4923 ;
+	dprr:hasDateStart -77 ;
+	dprr:hasDateSourceText "ca. 77" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -77 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2049> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "34" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MANL2049 Q. Manlius (34)" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 2049 ;
+	dprr:hasHighestOffice "tr. pl. 69" ;
+	dprr:hasEraTo -69 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MANL2049" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2049> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/513> rdfs:label "Date Information: #513" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2049> ;
+	dprr:hasValue -69 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasID 513 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2983> rdfs:label "Status Assertion: #2983" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3846> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2983 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7057> rdfs:label "Post Assertion Note: #7057" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A certain P. Vatienus is named in a Roman sepulchral inscription (Bull. Com. 56, 1928, 293; cf. CIL 6.39023, a freedman). Both inscriptions are cited by Syme, Historia 5, 1956, 208RP 1.320. He may be a grandson of P. Vatienus of Reate to whom the Dioscuri revealed the victory at Pydna (Cic. ND 2.6; 3.11 and 13, with the reading Vatinius; cf. Val. Max. 1.8.4, where most manuscripts read Vatinius with the variant Vacienus; Lactant. 2.7.10, vatieno), but the possibility that he was a senator depends on CIL 1(2).821-ILLRP 384: [Corn]elia L. Scipion[is f.] Vatieni. As the youthful interlocutor in the De Natura Deorum (dramatic date 76) was also a son-in-law of the consul of 83, he had good prospects of a senatorial career. In any case, Vatinius seems excluded both as the inferior reading in the passages of Cicero and as a man whose grandfather was not a citizen (note Act. Tr. for 42, where the grandfather's praenomen is lacking). (LRT) See Wiseman, NM 270, no. 466.\n" ;
+	dprr:hasID 7057 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9324> rdfs:label "Post Assertion: #9324" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3846> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7057> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Vatienus (RE 8A.2394)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 9324 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "ca. 70?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3846> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "RE 8A.2394" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VATI3846 P. Vatienus (RE 8A.2394)" ;
+	dprr:hasNomen "Vatienus" ;
+	dprr:hasID 3846 ;
+	dprr:hasHighestOffice "sen. 70" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VATI3846" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3846> .

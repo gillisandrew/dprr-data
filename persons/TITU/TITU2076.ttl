@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/30> rdfs:label "Tribe Assertion: #30" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2076> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/34> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasID 30 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/34> rdfs:label "Tribe: Sergia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Sergia" ;
+	dprr:hasID 34 ;
+	dprr:hasAbbreviation "Ser." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9585> rdfs:label "Post Assertion Note: #9585" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 344" ;
+	dprr:hasID 9585 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7465> rdfs:label "Post Assertion Note: #7465" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "?L. Tur(ullius?) or Tur(illius?) or Tur(ius?) Sabinus (not in RE), Monetalis. In MRR 2.454, and Index, 626, delete this entry. Mommsen and Grueber had identified this moneyer with L. Titurius Sabinus (2) above, and Crawford, RRC 1.547, note 10, remarks that these forms arise from an erroneous reading of his coins.\n" ;
+	dprr:hasID 7465 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7358> rdfs:label "Post Assertion Note: #7358" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.454, and Index, 626, refer also to Crawford, RRC 1.352-356, no. 344, 89 B.C. Legatus of Pompey in Spain, in 75-74 (or 74-73) (see MRR 2.100; and on Cn. Pompeius Magnus [31], above). He brought 15 cohorts to winter in Celtiberia when Pompey retreated for the winter to Gaul (Sall. Hist. 2.94, 95M: Titurius). See Wiseman, NM 267, no. 438.[206]\n" ;
+	dprr:hasID 7358 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4400> rdfs:label "Post Assertion Note: #4400" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Legate of Pompey who brought 15 cohorts to winter-quarters in Celtiberia late in 75 (Sall. Hist. 2.94M; cf. Schulten, Sertorius 120f.)." ;
+	dprr:hasID 4400 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9418> rdfs:label "Post Assertion: #9418" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2076> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Hispania" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7358> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Titurius L. f. (Arn.) Sabinus (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 9418 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateSourceText "75-74 or 74-73" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9417> rdfs:label "Post Assertion: #9417" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2076> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Hispania" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7358> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Titurius L. f. (Arn.) Sabinus (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 9417 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSourceText "75-74 or 74-73" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8828> rdfs:label "Post Assertion: #8828" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2076> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9585> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7465> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Titurius Sabinus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8828 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSourceText "89" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4986> rdfs:label "Post Assertion: #4986" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2076> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7358> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4400> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "L.? Titurius Sabinus? (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4986 ;
+	dprr:hasDateStart -75 ;
+	dprr:hasDateSourceText "75-74 or 74-73" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -75 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2076> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "TITU2076 L. Titurius (2) L. f. Ser. Sabinus" ;
+	dprr:hasOrigin "Sabinum (Farney E13)" ;
+	dprr:hasNomen "Titurius" ;
+	dprr:hasID 2076 ;
+	dprr:hasHighestOffice "leg. lieut.? 73" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TITU2076" ;
+	dprr:hasCognomen "Sabinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2076> .

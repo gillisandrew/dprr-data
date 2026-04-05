@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7800> rdfs:label "Post Assertion Note: #7800" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He was removed from the Senate by the censors of 307 for divorcing his wife without having taken counsel with his friends (Val. Max. 2.9.2). (RS, MS-RP 1.274).\n" ;
+	dprr:hasID 7800 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7854> rdfs:label "Post Assertion: #7854" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3323> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7800> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Annius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7854 ;
+	dprr:hasDateStart -307 ;
+	dprr:hasDateSourceText "expelled, 307" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -307 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3323> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ANNI3323 L. Annius (not in RE)" ;
+	dprr:hasNomen "Annius" ;
+	dprr:hasID 3323 ;
+	dprr:hasHighestOffice "sen. before 306" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "ANNI3323" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3323> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/7> rdfs:label "Date Type: expelled from Senate" ;
+	a dprr:DateType ;
+	dprr:hasName "expelled from Senate" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/821> rdfs:label "Date Information: #821" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3323> ;
+	dprr:hasValue -307 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "Val. Max. 2.9.2" ;
+	dprr:hasID 821 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/7> ;
+	dprr:hasDateInterval "S" .

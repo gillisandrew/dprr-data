@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5850> rdfs:label "Relationship Assertion: #5850" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/799> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/800> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2016> rdfs:label "Relationship Assertion: #2016" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/799> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/683> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1670> rdfs:label "Primary Source Reference: #1670" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Sulla 8.3" ;
+	dprr:hasID 1670 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1602> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1238> rdfs:label "Post Assertion Note: #1238" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Murder of one of these, L. Coruncanius, by Queen Teuta of the Illyrians was the incident which provoked the Illyrian war (Polyb. 2.8.3, and 6-12: C. and L. Coruncanius; Plin. NH 34.24: P. Iunius and Ti. Coruncanius; cf. Liv. Per. 20; Flor. 1.21.3; App. Illyr. 7; Dio fr. 49.3; Oros. 4.13.2; Zon. 8.19)." ;
+	dprr:hasID 1238 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1602> rdfs:label "Post Assertion: #1602" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/799> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1238> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Coruncanius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 1602 ;
+	dprr:hasDateStart -230 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -230 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/800> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORU0800 L. Coruncanius (2)" ;
+	dprr:hasNomen "Coruncanius" ;
+	dprr:hasID 800 ;
+	dprr:hasHighestOffice "leg. amb. 230" ;
+	dprr:hasEraTo -230 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "CORU0800" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/800> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/799> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CORU0799 C. Coruncanius (1)" ;
+	dprr:hasNomen "Coruncanius" ;
+	dprr:hasID 799 ;
+	dprr:hasHighestOffice "leg. amb. 230" ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "CORU0799" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/799> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/683> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Tiberius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/840> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/839> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/838> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/837> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/836> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/835> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/834> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/833> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/832> ;
+	dprr:hasPersonName "CORU0683 Ti. Coruncanius (3) Ti. f. Ti. n. Pap." ;
+	dprr:hasOrigin "Tusculum" ;
+	dprr:hasNovusNotes "Vell. 2.128" ;
+	dprr:hasNomen "Coruncanius" ;
+	dprr:hasNobilisNotes "Cic. Senec. 9.27, Cic. Brut. 14.55-16.62 (founder of family's nobilitas)" ;
+	dprr:hasID 683 ;
+	dprr:hasHighestOffice "cos. 280" ;
+	dprr:hasFiliation "Ti. f. Ti. n." ;
+	dprr:hasEraTo -243 ;
+	dprr:hasEraFrom -311 ;
+	dprr:hasDprrID "CORU0683" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/683> .

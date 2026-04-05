@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2986> rdfs:label "Status Assertion: #2986" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4367> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2986 ;
+	dprr:hasDateStart -99 ;
+	dprr:hasDateEnd -99 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3679> rdfs:label "Post Assertion Note: #3679" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A sympathizer of Saturninus and author of an agrarian bill which was impeded by bad omens and vetoed by other Tribunes (Cic. Leg. 2.14 and 3 1; Rab. Perd. 24; Val. Max. 8.1, damn. 3; Obseq. 46, Sextius; cf. Cic. De Or. 2.48 and 265), and perhaps also author of a law regulating the assignment of quaestorian provinces (Cic. Mur. 18, referring to 74 B.C.; 'Vat. 12; Schol. Bob. 145 Stangl). Rotondi (333) mentions him also as a possible author of a Lex de Tutela (but see Niccolini, FTP 443f.)." ;
+	dprr:hasID 3679 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3678> rdfs:label "Post Assertion Note: #3678" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "7 When accused of maiestas, probably in 98, Titius was convicted, mainly because he kept an image of Saturninus in his house (Cic. De Or. 2.48 and 265; Rab. .Perd. 24; Val. Max. 8.1, damn. 3; cf. Cic. Brut. 225; De Or. 2.253)." ;
+	dprr:hasID 3678 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4338> rdfs:label "Post Assertion: #4338" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4367> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3679> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3678> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "Sex. Titius (23)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4338 ;
+	dprr:hasDateStart -99 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -99 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4367> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "23" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "TITI4367 Sex. Titius (23)" ;
+	dprr:hasNomen "Titius" ;
+	dprr:hasID 4367 ;
+	dprr:hasHighestOffice "tr. pl. 99" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TITI4367" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4367> .

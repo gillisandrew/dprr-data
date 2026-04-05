@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2040> rdfs:label "Primary Source Reference: #2040" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 59.5" ;
+	dprr:hasID 2040 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1968> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1628> rdfs:label "Post Assertion Note: #1628" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Killed in a skirmish while in charge of bringing grain by sea to the garrison at Tarentum (Liv. 26.39.2-19)." ;
+	dprr:hasID 1628 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1627> rdfs:label "Post Assertion Note: #1627" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Quinctius' title is not given. It was probably Praefectus (Liv. 26.39.3)." ;
+	dprr:hasID 1627 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1968> rdfs:label "Post Assertion: #1968" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/974> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1628> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1627> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? D. Quinctius (*4.1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 1968 ;
+	dprr:hasDateStart -210 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -210 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/974> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*4.1" ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Decimus> ;
+	dprr:hasPersonName "QUIN0974 D. Quinctius (7)" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 974 ;
+	dprr:hasHighestOffice "praef.? 210" ;
+	dprr:hasEraTo -210 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "QUIN0974" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/974> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1124> rdfs:label "Date Information: #1124" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/974> ;
+	dprr:hasValue -210 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA." ;
+	dprr:hasID 1124 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

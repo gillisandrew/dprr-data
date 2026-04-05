@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9432> rdfs:label "Post Assertion Note: #9432" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 291" ;
+	dprr:hasID 9432 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7495> rdfs:label "Post Assertion Note: #7495" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.431, and Index, 526, refer also to Crawford, RRC 1.305, no. 291, 114 or 113 B.C. Crawford suggests that he was father of no. 62, the consul of 66 B.C., and perhaps the son of the consul of 126. See also M. Stuart, AJA 49, 1945, 226-251.\n" ;
+	dprr:hasID 7495 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8691> rdfs:label "Post Assertion: #8691" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3617> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9432> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7495> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Aemilius Lepidus, Mn." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8691 ;
+	dprr:hasDateStart -113 ;
+	dprr:hasDateSourceText "114 or 113" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -113 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11207> rdfs:label "Post Assertion: #11207" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3617> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9432> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7495> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 11207 ;
+	dprr:hasDateStart -114 ;
+	dprr:hasDateEnd -114 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3617> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "cf. 62" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "AEMI3617 M'. Aemilius (cf. 62) (M.? f.) Lepidus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 3617 ;
+	dprr:hasHighestOffice "monetal. 114 or 113" ;
+	dprr:hasFiliation "(M.? f.)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "AEMI3617" ;
+	dprr:hasCognomen "Lepidus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3617> .

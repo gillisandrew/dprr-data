@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/699> rdfs:label "Primary Source Reference: #699" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Planc. 19" ;
+	dprr:hasID 699 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/690> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/664> rdfs:label "Primary Source Reference: #664" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. X 8" ;
+	dprr:hasID 664 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/655> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/498> rdfs:label "Post Assertion Note: #498" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "While conveying the offering to Apollo of Delphi for success at Veii, they were captured by the Liparean pirates, but sent on their way by the pirate commander Timasitheus (Liv. 5.28.1-5, who alone gives the names; cf. Diod. 14.93.2-5; Val. Max. 1.1., ext. 4; Plut. Cam. 7-8; App. Ital. 8; Zon. 7.21). On Valerius, see Münzer, Gent. Val. 35, no. 4." ;
+	dprr:hasID 498 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> rdfs:label "Post Assertion Note: #483" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.16.1 and 5, and 17.1; Diod. 14.85.1; Fast. Cap. (see note 1); Chr. 354 (Iulo II et Fidenas); Degrassi 28f., 99, 384f. There was war this year with Volscians, Aequi, Veientanes, Faliscans, Capenates, and raiders from Tarquinii (Liv. 5.16.2-8). The whole college was compelled to abdicate before the end of the year because of a faulty election (Liv. 5.17.2-3; not noted in Fast. Cap.)." ;
+	dprr:hasID 483 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> rdfs:label "Post Assertion Note: #482" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: [- - - - -Iulu]s II; [- - - -Medulli]nus IV; [- - - -Regille]nsis; L. Sergius M'. f. n. [- - - -]; P. Cornelius P. f. [- - - -]; A. Manlius A. f. C [n. n.- - - -]. Diod. indicates a total of six names but omits Furius and Iulius, while in F are added the unidentifiable names {Gr} and '{Gr}. On the name of Iulius see Fast. Cap. 401, and 489, note 1, and note the readings Tullus and Silius Tullus in Mss of Livy 5.16.1 (ed. Conway and Walters). On the filiation of Cornelius, see Fast. Cap. on 396, Master of Horse." ;
+	dprr:hasID 482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/690> rdfs:label "Post Assertion: #690" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/371> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/498> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Sergius (Fidenas) Pat. (26)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 397" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 690 ;
+	dprr:hasDateStart -394 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -394 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/655> rdfs:label "Post Assertion: #655" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/371> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/483> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/482> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Sergius M'. f. L. n. Fidenas Pat. (26)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 655 ;
+	dprr:hasDateStart -397 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -397 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/371> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "SERG0371 L. Sergius (26) M'. f. L. n. Fidenas" ;
+	dprr:hasNomen "Sergius" ;
+	dprr:hasID 371 ;
+	dprr:hasHighestOffice "leg. amb. 394" ;
+	dprr:hasFiliation "M'. f. L. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "SERG0371" ;
+	dprr:hasCognomen "Fidenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/371> .

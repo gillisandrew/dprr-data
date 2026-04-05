@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1193> rdfs:label "Relationship Assertion Reference: #1193" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1193 ;
+	dprr:hasExtraInfo "Liv. XXX 26.7-10" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/979> rdfs:label "Relationship Assertion: #979" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1053> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1193> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/879> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7027> rdfs:label "Post Assertion Note: #7027" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Augur 203. See MRR 1.314, 203 B.C., and 338, 196 B.C. Sumner, in Arethusa 3, 1970, 96-98, suggests that Livy's mistake in 30.26.10 arose not from accepting the new augur as a son of the Cunctator (he had died before his father) rather than a grandson, but in interpreting Q. Fabius M. f. in the records as Q. Fabius Maximus. Q. Fabius M. f. (57) was a Buteo, son of the consul of 245, M. Fabius Buteo. He was elected praetor for 196 (MRR 1.335), and assigned a command in Hisp. Ult. of which there is no further notice. 1n fact, M. Helvius was continued in Hisp. Ult. into 195, detained according to Livy by illness (MRR 1.336, cf. 343), while the augur, called Q. Fabius Maximus by Livy (33.42.6) but really Q. Fabius Buteo in Sumner's reconstruction, died while still young before he could attain a magistracy. Sumner sees in Helvius' prolonged command in Spain less the result of his illness (note his victories and his ovatio in 185) than of the death of his intended successor. He finds a grandson of the Cunctator in Q. Fabius Maximus (105), praetor in 181. See above on Q. Fabius Buteo (57)\n" ;
+	dprr:hasID 7027 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2064> rdfs:label "Post Assertion Note: #2064" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C. Claudius Pulcher succeeded Q. Fabius Maximus. Liv. 33.42.6." ;
+	dprr:hasID 2064 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1873> rdfs:label "Post Assertion Note: #1873" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Q. Fabius Maximus succeeded Q. Fabius Maximus Verrucosus. Liv. 30.26.7 and 10. On Fabius Maximus, see Elog., CIL 1\n     .1, p.193- Inscr. Ital. 13.3.80. His successor as Augur was probably his grandson (Münzer, RE)." ;
+	dprr:hasID 1873 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9855> rdfs:label "Post Assertion: #9855" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1053> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7027> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2064> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1873> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 9855 ;
+	dprr:hasDateStart -203 ;
+	dprr:hasDateEnd -196 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/896> rdfs:label "Person Note: #896" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/12> ;
+	dprr:hasNoteText "Sumner 1970:96-98." ;
+	dprr:hasID 896 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/895> rdfs:label "Person Note: #895" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 30,26,10 (Kooptation); 33,42,6 (Tod)." ;
+	dprr:hasID 895 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/894> rdfs:label "Person Note: #894" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "220er-196 v. Chr." ;
+	dprr:hasID 894 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/893> rdfs:label "Person Note: #893" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 893 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/892> rdfs:label "Person Note: #892" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt A 23; MRR 1,314. 338. 3,86 f.; Szemler A 8." ;
+	dprr:hasID 892 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/891> rdfs:label "Person Note: #891" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Fabius 104." ;
+	dprr:hasID 891 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/890> rdfs:label "Person Note: #890" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "1593" ;
+	dprr:hasID 890 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/879> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "103" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FABI0879 Q. Fabius (103) Q. f. Q. n. Maximus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 879 ;
+	dprr:hasHighestOffice "cos. 213" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -204 ;
+	dprr:hasEraFrom -249 ;
+	dprr:hasDprrID "FABI0879" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/879> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1053> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "104" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/896> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/895> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/894> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/893> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/892> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/891> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/890> ;
+	dprr:hasPersonName "FABI1053 Q. Fabius (104) Q. f. Q. n. Maximus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 1053 ;
+	dprr:hasHighestOffice "aug. 203" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -196 ;
+	dprr:hasEraFrom -219 ;
+	dprr:hasDprrID "FABI1053" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1053> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1345> rdfs:label "Date Information: #1345" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1053> ;
+	dprr:hasValue -196 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1345 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1344> rdfs:label "Date Information: #1344" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1053> ;
+	dprr:hasValue -219 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1344 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "B" .

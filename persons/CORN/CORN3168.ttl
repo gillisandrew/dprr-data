@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/85> rdfs:label "Tribe Assertion: #85" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3168> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/35> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "S.C. de agro Pergameno. Sherk 1969, 63-73, no. 12: 1984, 47-48, no. 45" ;
+	dprr:hasID 85 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/35> rdfs:label "Tribe: Stellatina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Stellatina" ;
+	dprr:hasID 35 ;
+	dprr:hasAbbreviation "Ste." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2938> rdfs:label "Status Assertion: #2938" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3168> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2938 ;
+	dprr:hasDateStart -132 ;
+	dprr:hasDateEnd -130 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1873> rdfs:label "Relationship Assertion: #1873" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3168> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1377> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9154> rdfs:label "Post Assertion Note: #9154" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Before 101 (alternative dating of the SC de Agro Pergameno). p. 743, footnote 182" ;
+	dprr:hasID 9154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7281> rdfs:label "Post Assertion Note: #7281" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C. Cornelius M. f. Ste. (17). L. Cornelius M. f. Rom. (30). A combination of praenomina favored by the Cornelii Cethegi. One of these senators of 129 (see Sherk, RDGE no. 12, pp. 63-73), more probably the former because of his apparently praetorian rank, was probably the son of Cn. Cornelius Cethegus (93). Cos. 160, but the difference of tribe excludes the other. An L. Cornelius might be a Sisenna, but the praenomen M. is not attested among them. (LRT) On the date, see above, on M'. Aquillius (10).\n" ;
+	dprr:hasID 7281 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9127> rdfs:label "Post Assertion: #9127" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3168> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9154> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7281> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Cornelius M. f. Ste. (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 9127 ;
+	dprr:hasDateStart -130 ;
+	dprr:hasDateSourceText "Before 129" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -130 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3168> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CORN3168 C. Cornelius (17) M. f. Ste. (Cethegus?)" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 3168 ;
+	dprr:hasHighestOffice "pr.? before 129" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CORN3168" ;
+	dprr:hasCognomen "(Cethegus?)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3168> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1377> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "93" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CORN1377 M. Cornelius (93) C. f. C. n. Cethegus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1377 ;
+	dprr:hasHighestOffice "cos. 160" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -203 ;
+	dprr:hasDprrID "CORN1377" ;
+	dprr:hasCognomen "Cethegus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1377> .

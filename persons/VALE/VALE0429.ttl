@@ -1,0 +1,311 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3288> rdfs:label "Relationship Assertion: #3288" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/306> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3287> rdfs:label "Relationship Assertion: #3287" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/511> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3286> rdfs:label "Relationship Assertion: #3286" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/381> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/907> rdfs:label "Primary Source Reference: #907" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLV 47.3" ;
+	dprr:hasID 907 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/894> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/878> rdfs:label "Primary Source Reference: #878" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLIII 44.3" ;
+	dprr:hasID 878 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/865> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/849> rdfs:label "Primary Source Reference: #849" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XL 45.2" ;
+	dprr:hasID 849 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/839> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/819> rdfs:label "Primary Source Reference: #819" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio frg. 63 (XIX)" ;
+	dprr:hasID 819 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/810> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/791> rdfs:label "Primary Source Reference: #791" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. II ii 21" ;
+	dprr:hasID 791 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/782> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/781> rdfs:label "Primary Source Reference: #781" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. I 135-139" ;
+	dprr:hasID 781 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/772> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1092> rdfs:label "Primary Source Reference: #1092" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Horat. sat. I 2.65ff." ;
+	dprr:hasID 1092 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1072> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/777> rdfs:label "Post Assertion Note: #777" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 8.17.6-7. See Degrassi 107, 412f.; Münzer, Gent. Val. 37, no. 9." ;
+	dprr:hasID 777 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/599> rdfs:label "Post Assertion Note: #599" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.42.3; Fast. Cap. ([- -C]ossus II; [- -M]aluginens. II; [- -M]acerinus; and the rest entire); Chr. 354 (Cosso II et Grasso); Degrassi 32f., 104, 398f. On Valerius, see Münzer, Gent. Val. 37, no. 7." ;
+	dprr:hasID 599 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/586> rdfs:label "Post Assertion Note: #586" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.36.3; Diod. 15.76.1; Fast. Cap. ([- - -P]oplicola V; [- - -Praet]ext. III; [- - -Ma]luginens. VI); Chr. 354 (Medullino et Potito); Degrassi 32f., 103, 396f. On P. Valerius, see Münzer, Gent. Val. 37, no. 7." ;
+	dprr:hasID 586 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/585> rdfs:label "Post Assertion Note: #585" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On Furius' name, see Fast. Cap. on the Censors of 363. Manlius is probably the same person as the Mil. Tr. of 389, 385, and 382, and a brother of M. Manlius Capitolinus (Liv. 6.20.2). On Sulpicius Praetextatus, see also Fast. Cap. 368; and above, on 377. The name of P. (A. in Liv.) Valerius is given in full by Fast. Cap. for 367 with the numeral VI. Diod. lists only four names, without the two Valerii, and gives Manlius the praenomen {Gr}. Münzer (Gent. Val. 69) follows Mommsen (RF 2.229) in rejecting the Valerii." ;
+	dprr:hasID 585 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/575> rdfs:label "Post Assertion Note: #575" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.32.3; Diod. 15.61.1; Dio fr. 29 and Zon. 7.24 (on Sulpicius Rufus); Chr. 354 (Mamertino et Cincinnato). Aemilius and Valerius held command against the Volscians at Satricum while Sulpicius and L. Quinctius recovered Tusculum from the Latins (Liv. 6.32-33). On Valerius, see Münzer, Gent. Val. 37 no. 7." ;
+	dprr:hasID 575 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/574> rdfs:label "Post Assertion Note: #574" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Aemilius' filiation is quite uncertain (see Fast. Cap.). On the name of Valerius, see Fast. Cap. on 367. The name of Veturius is tentatively supplemented on the analogy of that of L. Veturius, Mil. Tr. in 367 (see Fast. Cap.). On Sulpicius, see also Praetextatus, RE, no. 88, since the numbers III and IIII after his name in Fast. Cap. on 370 and 368 imply that these either listed him as Mil. Tr. in this year or differed from our other sources in their treatment of the years without magistrates. The name Rufus, preserved in Dio. and Zon. (above) favors the identification given first above. See Degrassi 102, 394f." ;
+	dprr:hasID 574 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/565> rdfs:label "Post Assertion Note: #565" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.27.2; Diod. 15.50.1; Fast. Cap. (note 1); Chr. 354 (Publicola V et Mamertino VI); Degrassi 32f., 102, 392f." ;
+	dprr:hasID 565 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/564> rdfs:label "Post Assertion Note: #564" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: L. Valerius L. f. [- - - -]; P. (Valerius) L. f. L. [n. Poti]tus Poplicol. III; Connelius, Menenius, and Sulpicius, entire as above; [- - - -]n. Mamercin. VI; Cn. [Sergius - f. - n.] Fiden. Coxo III; Ti. Papiri[us - f. - n.] Crassus; L. (Papirius) [- f. - n.] Mugillanus II. Livy lists six, L. and P. Valerius, C. (sic) Sergius, Licinius (sic) Menenius, P. (sic) Papirius, and Sergius (sic) Cornelius Maluginensis. Diod. indicates eight, and in his confused Mss tradition may be identified two Valerii (of P. the praenomen only), Menenius (with praenomen L.), Sulpicius, Aemilius, Papirius (only one, with praenomen T.), and the apocryphal names {Gr} (add. F), C. or Cn. Terentius, and {Gr} (add. F); Degrassi 393. The nine named in Fast. Cap. have no parallel, and it appears that no college of more than eight was known to Claudius (ILS 212; cf. Liv. 5.2.10; 6.37.6; Dion. Hal. 11.56.3). Clearly Fast. Cap. has the most seriously interpolated tradition." ;
+	dprr:hasID 564 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/555> rdfs:label "Post Assertion Note: #555" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.18.1; Diod. 15.36.1; Chr. 354 (Rufo et Camillo); Degrassi 101, 390f. According to Plutarch (Cam. 36.5-7) and Livy (6.20.11) Camillus transferred the trial of Manlius Capitolinus to the Petelian grove. Zonaras (7.24) calls him Dictator. On Valerius, see Münzer, Gent. Val. 37, no. 7; on Quinctius, Lübker no. 5." ;
+	dprr:hasID 555 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/554> rdfs:label "Post Assertion Note: #554" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "According to Diod. there were only four Military Tribunes, but Livy has six with the addition of Valerius and Camillus. On Sulpicius and Quinctius, see 388. Livy appears to distinguish between Cincinnati and Capitolini, and so lists this as Quinctius' second Military Tribunate, but T. Quinctius apparently had both cognomina in Fast. Cap. for 380 (Degrassi 32f., 392f.). The two cognomina were combined also in the case of the Mag. Eq. of 367." ;
+	dprr:hasID 554 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/549> rdfs:label "Post Assertion Note: #549" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.6.3 and 13-15; Diod. 15.25.1; Chr. 354 (Aluginense [sic] et Cincinnato); Degrassi 101, 390f. Camillus is credited with victories over Volscians, Latins and Hernici (Liv. 6.6-9; Frontin. Str. 2.8.4), then retook Sutrium and Nepete in Etruria (6.9-10), while the Elogium (CIL 1\n     , p. 191 and Inscr. Ital. 13.3.61) mentions action against Velitrae. Valerius accompanied him (Liv. 6.6-10), while Horatius and Quinctius succeeded to the Volscian command (Liv. 6.9.6). Servilius {101} held command near the city and Cornelius presided over civil affairs (Liv. 6.6.13 and 15). On Valerius, see Münzer, Gent. Val. 37, no. 7." ;
+	dprr:hasID 549 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/548> rdfs:label "Post Assertion Note: #548" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. has only four Military Tribunes this year, and makes no mention of Valerius and Horatius. In Diod. Cornelius' praenomen is M. The full name of Valerius appears in Fast. Cap. on 380 (Degrassi 32f.), where Degrassi's reading of the numeral III agrees with Livy's tertium, and ends the doubts raised by Hülsen (Klio 2 [1902] 248ff.) regarding his place in the regular lists for this year." ;
+	dprr:hasID 548 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/894> rdfs:label "Post Assertion: #894" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/599> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 386, 384, 380, 377, 370" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 894 ;
+	dprr:hasDateStart -367 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -367 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/865> rdfs:label "Post Assertion: #865" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/586> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/585> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 386, 384, 380, 377, 367" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 865 ;
+	dprr:hasDateStart -370 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -370 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/839> rdfs:label "Post Assertion: #839" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/575> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/574> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 386, 384, 380, 370, 367{108}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 839 ;
+	dprr:hasDateStart -377 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -377 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/810> rdfs:label "Post Assertion: #810" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/565> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/564> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 386, 384, 377, 370, 367" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 810 ;
+	dprr:hasDateStart -380 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -380 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/782> rdfs:label "Post Assertion: #782" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/555> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/554> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 386, 380, 377, 370, 367" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 782 ;
+	dprr:hasDateStart -384 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -384 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/772> rdfs:label "Post Assertion: #772" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/549> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/548> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "P. Valerius L. f. L. n. Potitus Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 384, 380, 377, 370, 367" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 772 ;
+	dprr:hasDateStart -386 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -386 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1072> rdfs:label "Post Assertion: #1072" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/777> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Valerius - f. - n. Poplicola Pat. (308)" ;
+	dprr:hasOfficeXref "Cos. 352, Pr. 350" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1072 ;
+	dprr:hasDateStart -332 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -332 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/511> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "300" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0511 P. Valerius (300) P. f. L. n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 511 ;
+	dprr:hasHighestOffice "cos. 352" ;
+	dprr:hasFiliation "P. f. L. n." ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "VALE0511" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/511> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/429> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "308" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0429 P. Valerius (308) L. f. L. n. Potitus Poplicola" ;
+	dprr:hasOtherNames "Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 429 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 386" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "VALE0429" ;
+	dprr:hasCognomen "Potitus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/429> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/381> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "298" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0381 L. Valerius (298) L. f. L. n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 381 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 394" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "VALE0381" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/381> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/306> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "307" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0306 L. Valerius (307) L. f. P. n. Potitus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 306 ;
+	dprr:hasHighestOffice "cos. 393" ;
+	dprr:hasFiliation "L. f. P. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "VALE0306" ;
+	dprr:hasCognomen "Potitus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/306> .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/276> rdfs:label "Primary Source Reference: #276" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XII 23.3" ;
+	dprr:hasID 276 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/271> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/224> rdfs:label "Post Assertion Note: #224" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.30.1; Diod. 11.91.1; Fast. Cap. (names entire); Dion. Hal. 10.26.1; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; Degrassi 24f., 92, 362f. Horatius held command against the Aequi and Minucius against the Sabines (Liv. 3.30.8; Dion. Hal. 10.30.7-8). One tradition gave Horatius a leading part in having the number of Tribunes raised to ten (see Tribunes of the Plebs)." ;
+	dprr:hasID 224 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/223> rdfs:label "Post Assertion Note: #223" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On Horatius' praenomen (M. in Liv., Diod., and Cassiod.), see 477, note 1. His cognomen has been corrupted to Publilius in Fast. Hyd. and Chr. Pasc. In the case of Minucius the cognomen Augurinus (Chr. 354) may have been carried over from the Cos. Suff. of 458, but Hilarius (Fast. Hyd.) and Hilarianus (Chr. Pasc.) remain unexplained. In Diod. Minucius is replaced by L. Postumius, a name not otherwise attested in this generation." ;
+	dprr:hasID 223 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/271> rdfs:label "Post Assertion: #271" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/151> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/224> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/223> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Minucius P. f. M. n. Esquilinus Pat. (41)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 271 ;
+	dprr:hasDateStart -457 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -457 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/151> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU0151 Q. Minucius (41) P. f. M. n. Esquilinus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasID 151 ;
+	dprr:hasHighestOffice "cos. 457" ;
+	dprr:hasFiliation "P. f. M. n." ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "MINU0151" ;
+	dprr:hasCognomen "Esquilinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/151> .

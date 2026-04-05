@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6020> rdfs:label "Post Assertion Note: #6020" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prefects (or perhaps Legates) whom Caesar appointed in 45 or 44 to assign land to veterans, Plancus at least in the territory of Buthrotum in Epirus. Cicero wrote urging them, and especially Plancus, to whom the other two may have been subordinate, to spare the lands of the Buthrotians in accordance with an edict of the Consuls based on Caesar's acta (Cic. Att. 16.16A, B, and E, to Plancus, C, and F, to Capito, and D, to Cupiennius; cf. Att. 14.12.1, and 17.2, and 20.3; 15.2.2, and 15.1, and 20.3, and 29.3; 16.2.1, and 4.3; see Grant, From Imperium to Auctoritas 9-11). Münzer (RE) considers them a Triumvirate." ;
+	dprr:hasID 6020 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6714> rdfs:label "Post Assertion: #6714" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2700> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6020> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Cupiennius (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/132> ;
+	dprr:hasID 6714 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2700> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CUPI2700 C. Cupiennius (2)" ;
+	dprr:hasNomen "Cupiennius" ;
+	dprr:hasID 2700 ;
+	dprr:hasHighestOffice "praef. agr. dand. assig. 44" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CUPI2700" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2700> .

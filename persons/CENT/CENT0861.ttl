@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1777> rdfs:label "Primary Source Reference: #1777" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Strab. XI 9.1 (515 C)" ;
+	dprr:hasID 1777 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1707> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1345> rdfs:label "Post Assertion Note: #1345" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent in advance by the Consul Servilius with cavalry to aid Flaminius, but was destroyed with his forces by Hannibal (Polyb. 3.86.3-5; Nep. Hann. 4.3; Liv. 22.8.1, pro praetore; App. Hann. 9.10-11, 17; Zon. 8.25; cf. Liv. 25.19.9-17)." ;
+	dprr:hasID 1345 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1344> rdfs:label "Post Assertion Note: #1344" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Livy designates Centenius pro praetore, Nepos, Praetor, Polybius gives no title, Zonaras, {Gr}, and Appian says {Gr}. Mommsen thinks that if the designation pro praetore is correct Centenius{247} received imperium on the motion of the Pr. Urbanus (Str. 1.681, notes 4 and 6). On the difficulties regarding this incident, see De Sanctis 3.2.122-124." ;
+	dprr:hasID 1344 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1707> rdfs:label "Post Assertion: #1707" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/861> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1345> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1344> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Centenius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 1707 ;
+	dprr:hasDateStart -217 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -217 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/861> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CENT0861 C. Centenius (1)" ;
+	dprr:hasNomen "Centenius" ;
+	dprr:hasID 861 ;
+	dprr:hasHighestOffice "propr. 217" ;
+	dprr:hasEraTo -217 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CENT0861" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/861> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1069> rdfs:label "Date Information: #1069" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/861> ;
+	dprr:hasValue -217 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, against Carthaginian forces." ;
+	dprr:hasID 1069 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1752> rdfs:label "Primary Source Reference: #1752" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Sen. dial. XII cons. ad Helv. 12.6" ;
+	dprr:hasID 1752 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1682> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1317> rdfs:label "Post Assertion Note: #1317" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prefect of the garrison of Clastidium who betrayed it to Hannibal (Polyb. 3.69.1; Liv. 21.48.9-10)." ;
+	dprr:hasID 1317 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1682> rdfs:label "Post Assertion: #1682" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/844> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1317> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Dasius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 1682 ;
+	dprr:hasDateStart -218 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -218 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/844> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "DASI0844 -. Dasius (1)" ;
+	dprr:hasNomen "Dasius" ;
+	dprr:hasID 844 ;
+	dprr:hasHighestOffice "praef. 218" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "DASI0844" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/844> .

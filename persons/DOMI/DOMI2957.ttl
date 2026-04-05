@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9142> rdfs:label "Post Assertion Note: #9142" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 756, footnote 500" ;
+	dprr:hasID 9142 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6574> rdfs:label "Post Assertion Note: #6574" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A commander in operations in Liguria, probably Pr. or Procos. (Frontin. Str. 3.2.1). Unidentifiable." ;
+	dprr:hasID 6574 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8422> rdfs:label "Post Assertion: #8422" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2957> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6574> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "- Domitius (40) Calvinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 8422 ;
+	dprr:hasDateStart -300 ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8143> rdfs:label "Post Assertion: #8143" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2957> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "??Gallia" ;
+	dprr:hasProvinceOriginal "??G" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9142> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6574> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "?Domitius (40) Calvinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8143 ;
+	dprr:hasDateStart -300 ;
+	dprr:hasDateSourceText "?C3-C2" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2957> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "40" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "DOMI2957 -. Domitius (40) Calvinus" ;
+	dprr:hasNomen "Domitius" ;
+	dprr:hasID 2957 ;
+	dprr:hasHighestOffice "pr.? C3-C2?" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "DOMI2957" ;
+	dprr:hasCognomen "Calvinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2957> .

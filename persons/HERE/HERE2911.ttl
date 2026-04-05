@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/390> rdfs:label "Tribe Assertion: #390" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2911> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/12> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p219. From Asculum?" ;
+	dprr:hasID 390 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/12> rdfs:label "Tribe: Fabia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Fabia" ;
+	dprr:hasID 12 ;
+	dprr:hasAbbreviation "Fab." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2901> rdfs:label "Status Assertion: #2901" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2911> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2901 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateEnd -33 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7259> rdfs:label "Post Assertion Note: #7259" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. Suff. 34. See MRR 2.411 and 416. Cadoux holds that the consul of 34 may well be a descendant of such known Herennii as the consul of 93. But if he was the father of the consul suffectus of A.D. 1 (M. Herennius M. f. M'. n. Picens) his filiation should be M'. f. See PIR(2) H 118; Wiseman, NM 235, no. 205. If the Picene leader in the Social War, T. Herennius, was his grandfather his praenomen would be omitted, as in the case of Asinius Pollio's grandfather.[101x]\n" ;
+	dprr:hasID 7259 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6468> rdfs:label "Post Assertion Note: #6468" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Possibly Proconsul in Asia (see Cuntz, JOEAI 25 [1929] 72, who believes that the inscription of Ephesus, GIBM 3.521-SIG³ 784, refers to this man and not to his son [Cos. Suff. 1 A. D.], a view accepted by Grant, From Imperium to Auctoritas 395, and tentatively by Magie, Roman Rule in Asia Minor 2.1580)." ;
+	dprr:hasID 6468 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6432> rdfs:label "Post Assertion Note: #6432" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Held office from November 1 (Fast. Ven., Degrassi 251, 254f.; Fast. Pinc., ibid. 277f.; Fast. Mag. Vic., ibid. 283, 288, cf. 136, 508f.). On his filiation and cognomen, see Degrassi 251; Cuntz, JOEAI 25 (1929) 72." ;
+	dprr:hasID 6432 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7221> rdfs:label "Post Assertion: #7221" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2911> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7259> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6468> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "M. Herennius (Picens?) (13)" ;
+	dprr:hasOfficeXref "Cos. Suff. 34" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7221 ;
+	dprr:hasDateStart -33 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -33 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7183> rdfs:label "Post Assertion: #7183" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2911> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7259> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6432> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "M. Herennius (M.? f. T.? n. Picens?) (13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 7183 ;
+	dprr:hasDateStart -34 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -34 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2911> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isFiliationUncertain true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "HERE2911 M. Herennius (13) M'. f. T. n. Fab. Picens" ;
+	dprr:hasOrigin "Asculum?" ;
+	dprr:hasNomen "Herennius" ;
+	dprr:hasID 2911 ;
+	dprr:hasHighestOffice "cos. suff. 34" ;
+	dprr:hasFiliation "M'. f. T. n." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "HERE2911" ;
+	dprr:hasCognomen "Picens" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2911> .

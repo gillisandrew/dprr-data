@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5739> rdfs:label "Relationship Assertion: #5739" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/141> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/113> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1674> rdfs:label "Relationship Assertion: #1674" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/141> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/32> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/250> rdfs:label "Primary Source Reference: #250" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. V 1.3f." ;
+	dprr:hasID 250 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/246> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9857> rdfs:label "Post Assertion Note: #9857" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "(X vir consul. imp. leg. scrib.). Liv. 3.35.1-9" ;
+	dprr:hasID 9857 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/203> rdfs:label "Post Assertion Note: #203" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.15.1; Diod. 11.85.1; Fast. Cap. (V.'s name entire); Dion. Hal. 10.9.1; Chr. 354 (Publicola II et Inreligiense); Fast. Hyd. (Publicola II et Sabino); so also Chr. Pasc.; Cassiod.; John Ant. 47, FHG 4.556; Degrassi 24f., 92, 340f. Valerius is represented as using his ancestral favor with the Plebs to win united support against Ap. Herdonius, the Sabine who had seized the Capitol, while Claudius maintained a strong anti-popular stand (Liv. 3.17.1-19.2; Dion. Hal. 10.9.1-17.1). Valerius was killed while fighting Herdonius (Liv. 3.18.8; Dion. Hal. 10.17.1). On Valerius, see Münzer, Gent. Val. 34, no. 2." ;
+	dprr:hasID 203 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/202> rdfs:label "Post Assertion Note: #202" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On the cognomina of Claudius, see those of his brother in Fast. Cap. on 451 and 450, and the evidence regarding Ap. Claudius, Consul in 471. Degrassi (92, 360f.) suggests Crassus from this source." ;
+	dprr:hasID 202 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/246> rdfs:label "Post Assertion: #246" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/141> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/203> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/202> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Claudius Ap. f. M. n. (Crassus ?) Inrigillensis Sabinus Pat. (322)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 246 ;
+	dprr:hasDateStart -460 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -460 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10252> rdfs:label "Post Assertion: #10252" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/141> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9857> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/255> ;
+	dprr:hasID 10252 ;
+	dprr:hasDateStart -450 ;
+	dprr:hasDateSourceText "450" ;
+	dprr:hasDateEnd -450 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/32> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "321" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonName "CLAU0032 Ap. Claudius (321) M. f. Sabinus Inregillensis" ;
+	dprr:hasOtherNames "Inregillensis" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasNobilisNotes "Liv. 2.27.3, 10.8.6, Tac. Ann. 4.9.2" ;
+	dprr:hasID 32 ;
+	dprr:hasHighestOffice "cos. 495" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "CLAU0032" ;
+	dprr:hasCognomen "Sabinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/32> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/141> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "322" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CLAU0141 C. Claudius (322) Ap. f. M. n. Crassus Inregillensis Sabinus" ;
+	dprr:hasOtherNames "Inregillensis Sabinus" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 141 ;
+	dprr:hasHighestOffice "cos. 460" ;
+	dprr:hasFiliation "Ap. f. M. n." ;
+	dprr:hasEraTo -460 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "CLAU0141" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/141> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/113> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "123" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonName "CLAU0113 Ap. Claudius (123) Ap. f. M. n. Crassinus Inregillensis Sabinus" ;
+	dprr:hasOtherNames "Inregillensis Sabinus" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasNobilisNotes "Cic. Rep. 2.37.62, Liv. 3.67.8, 4.15.5" ;
+	dprr:hasID 113 ;
+	dprr:hasHighestOffice "cos. 471" ;
+	dprr:hasFiliation "Ap. f. M. n." ;
+	dprr:hasEraTo -449 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "CLAU0113" ;
+	dprr:hasCognomen "Crassinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/113> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/168> rdfs:label "Date Information: #168" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/141> ;
+	dprr:hasValue -460 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, against Sabines." ;
+	dprr:hasID 168 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1155> rdfs:label "Primary Source Reference: #1155" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XLIV 35.14" ;
+	dprr:hasID 1155 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1135> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1150> rdfs:label "Primary Source Reference: #1150" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XLII 48.5" ;
+	dprr:hasID 1150 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1130> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1114> rdfs:label "Primary Source Reference: #1114" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. per. 133" ;
+	dprr:hasID 1114 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1094> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/843> rdfs:label "Post Assertion Note: #843" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 9.15.9-10; Fast. Cap. (L. Corn[elius - f. - n. Len]tulus); cf. Claud. Quad., fr. 21, Peter. See above, Consuls. No triumph is reported this year in Act. Tr. See Degrassi 36f., 109, 416f." ;
+	dprr:hasID 843 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/838> rdfs:label "Post Assertion Note: #838" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "As senior member of the legates who received the Samnite terms, he argued for acceptance (Liv. 9.4)." ;
+	dprr:hasID 838 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/797> rdfs:label "Post Assertion Note: #797" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 8.22.8; Diod. 17.110.1, and 112.1; Chr. 354 (Lentulo et Philo II); Fast. Hyd. (Lentulo et Silone); so also Chr. Pasc.; Cassiod.; Degrassi 108, 412f. Both held command in Campania, Cornelius facing the Samnites while Publilius besieged Palaeopolis (Liv. 8.22.8-23.12; Dion. Hal. 15.5-10). On Publilius, see Lübker no. 2." ;
+	dprr:hasID 797 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1135> rdfs:label "Post Assertion: #1135" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/565> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/843> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius - f. - n. Lentulus Pat. (186)" ;
+	dprr:hasOfficeXref "Cos. 327" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 1135 ;
+	dprr:hasDateStart -320 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -320 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1130> rdfs:label "Post Assertion: #1130" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/565> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/838> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Lentulus Pat. (186)" ;
+	dprr:hasOfficeXref "Cos. 327" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 1130 ;
+	dprr:hasDateStart -321 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -321 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1094> rdfs:label "Post Assertion: #1094" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/565> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/797> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius - f. - n. Lentulus Pat. (186)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1094 ;
+	dprr:hasDateStart -327 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -327 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/565> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "186" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN0565 L. Cornelius (186) Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 565 ;
+	dprr:hasHighestOffice "cos. 327" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "CORN0565" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/565> .

@@ -1,0 +1,123 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3890> rdfs:label "Relationship Assertion: #3890" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/764> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1173> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3434> rdfs:label "Relationship Assertion: #3434" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/764> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/939> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1605> rdfs:label "Primary Source Reference: #1605" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. C. Gracch. 19.1" ;
+	dprr:hasID 1605 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1538> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1192> rdfs:label "Post Assertion Note: #1192" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; see Degrassi 42f., 117, 436f. Fundanius, and probably his colleague, served in Sicily (Diod. 24.9.2-3)." ;
+	dprr:hasID 1192 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1191> rdfs:label "Post Assertion Note: #1191" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On the spelling of the cognomen Galus, see Mommsen RF 1.119." ;
+	dprr:hasID 1191 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1538> rdfs:label "Post Assertion: #1538" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/764> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1192> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1191> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Sulpicius C. f. Ser. n. Galus Pat. (65)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1538 ;
+	dprr:hasDateStart -243 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -243 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/939> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SULP0939 C. Sulpicius (8) (Galus)" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 939 ;
+	dprr:hasHighestOffice "pr. 211" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SULP0939" ;
+	dprr:hasCognomen "(Galus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/939> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/764> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "65" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SULP0764 C. Sulpicius (65) C. f. Ser. n. Galus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 764 ;
+	dprr:hasHighestOffice "cos. 243" ;
+	dprr:hasFiliation "C. f. Ser. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "SULP0764" ;
+	dprr:hasCognomen "Galus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/764> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1173> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "66" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SULP1173 C. Sulpicius (66) C. f. C. n. Galus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasNobilisNotes "Cic. Brut. 20.78" ;
+	dprr:hasID 1173 ;
+	dprr:hasHighestOffice "cos. 166" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -209 ;
+	dprr:hasDprrID "SULP1173" ;
+	dprr:hasCognomen "Galus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1173> .

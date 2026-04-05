@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/412> rdfs:label "Tribe Assertion: #412" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2783> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/34> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p229." ;
+	dprr:hasID 412 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/34> rdfs:label "Tribe: Sergia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Sergia" ;
+	dprr:hasID 34 ;
+	dprr:hasAbbreviation "Ser." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7251> rdfs:label "Post Assertion Note: #7251" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Possibly a Leg., lieut. in Spain ca. 42. Against Kubitschek and Münzer, L. R. Taylor held that the forms Ser and Sergia On the coins issued by these two Manlii (MRR 2.444 and 365 resp.) represent the name of their tribe and are included to distinguish them from the patrician Manlii who used the praenomina A. and T., though not Q. (VDRR 229-230)." ;
+	dprr:hasID 7251 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6191> rdfs:label "Post Assertion Note: #6191" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named on a coin of Brutobriga in Spain; possibly, like Peducaeus and Livius in 40, a Legate (see 40, Legates; Grant, From Imperium to Auctoritas 381)." ;
+	dprr:hasID 6191 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6910> rdfs:label "Post Assertion: #6910" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2783> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7251> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6191> ;
+	dprr:hasPosition 13 ;
+	dprr:hasOriginalText "? T. Manlius T. f. Sergia(nus) Pat. (64)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6910 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2783> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isOtherNamesUncertain true ;
+	dprr:hasReNumber "64" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MANL2783 T. Manlius (64) T. f. Ser. Torquatus Sergia(nus)" ;
+	dprr:hasOtherNames "Sergia(nus)" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 2783 ;
+	dprr:hasHighestOffice "leg. lieut.? before 41" ;
+	dprr:hasFiliation "T. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "MANL2783" ;
+	dprr:hasCognomen "Torquatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2783> .

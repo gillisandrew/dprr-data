@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/218> rdfs:label "Tribe Assertion: #218" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4575> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/35> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 218 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/35> rdfs:label "Tribe: Stellatina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Stellatina" ;
+	dprr:hasID 35 ;
+	dprr:hasAbbreviation "Ste." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/209> rdfs:label "Status Assertion Note: #209" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 137. Cic. Rosc. Am. 46. accusator of Sex. Roscius of Ameria" ;
+	dprr:hasID 209 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/209> rdfs:label "Status Assertion: #209" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4575> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/209> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "C. ERUCIUS (2)" ;
+	dprr:hasID 209 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9750> rdfs:label "Post Assertion Note: #9750" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 137." ;
+	dprr:hasID 9750 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9485> rdfs:label "Post Assertion: #9485" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4575> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9750> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. ERUCIUS (2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/204> ;
+	dprr:hasID 9485 ;
+	dprr:hasDateStart -81 ;
+	dprr:hasDateSourceText "81" ;
+	dprr:hasDateEnd -81 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4575> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ERUC4575 C. Erucius (2) Ste." ;
+	dprr:hasOrigin "Umbria?" ;
+	dprr:hasNomen "Erucius" ;
+	dprr:hasID 4575 ;
+	dprr:hasHighestOffice "eq. R.? late C2/C1" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ERUC4575" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4575> .

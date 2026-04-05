@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/3> rdfs:label "Tribe Assertion: #3" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1808> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/12> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "S.C. de Prienensibus. Sherk 1969, 54-58, no. 10B" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/287> rdfs:label "Tribe Assertion: #287" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1808> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/13> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "S.C. de Prienensibus. Sherk 1969, 54-58, no. 10B" ;
+	dprr:hasID 287 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/13> rdfs:label "Tribe: Falerna" ;
+	a dprr:Tribe ;
+	dprr:hasName "Falerna" ;
+	dprr:hasID 13 ;
+	dprr:hasAbbreviation "Fal." .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/12> rdfs:label "Tribe: Fabia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Fabia" ;
+	dprr:hasID 12 ;
+	dprr:hasAbbreviation "Fab." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/827> rdfs:label "Status Assertion: #827" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1808> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 827 ;
+	dprr:hasDateStart -161 ;
+	dprr:hasDateEnd -161 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> rdfs:label "Secondary Source: Broughton MRR II Appendix 3" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 3" ;
+	dprr:hasID 4 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 3. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 3" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7711> rdfs:label "Post Assertion Note: #7711" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator 161. See MRR 2.493. Read T. Manlius Fab. or Fal. The name as written on the stone (SIG(3) 679, II) is # :.., perhaps the same as the # of II Maccab. 11.34. Probably patrician. (LRT)" ;
+	dprr:hasID 7711 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6915> rdfs:label "Post Assertion Note: #6915" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator, perhaps ca. 161 (SIG(3) 679 II; see 161, Praetors, on Aemilius)." ;
+	dprr:hasID 6915 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7671> rdfs:label "Post Assertion: #7671" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1808> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7711> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6915> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Mallius Fab. (10)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7671 ;
+	dprr:hasDateStart -161 ;
+	dprr:hasDateSourceText "perhaps ca. 161" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasDateEnd -161 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1808> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatricianUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MANL1808 T. Manlius (10) Fab. Fal." ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1808 ;
+	dprr:hasHighestOffice "sen. 161" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MANL1808" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1808> .

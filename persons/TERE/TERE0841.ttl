@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1748> rdfs:label "Primary Source Reference: #1748" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Sen. dial. X de brev. vit. 5.2" ;
+	dprr:hasID 1748 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1678> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9176> rdfs:label "Post Assertion Note: #9176" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726, footnote 15" ;
+	dprr:hasID 9176 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1313> rdfs:label "Post Assertion Note: #1313" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to recall Flaminius before he should enter office in Gaul (Liv. 21.63.11-12; see 217, Consuls). The account is dubious (CAH 8.43; Seeck Hermes 8 [1874] 153-166), but the names may be authentic (see on Terentius, Münzer, RE nos. 30 and 43)." ;
+	dprr:hasID 1313 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8177> rdfs:label "Post Assertion: #8177" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/841> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9176> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Terentius (30)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8177 ;
+	dprr:hasDateStart -219 ;
+	dprr:hasDateSourceText "before 218" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -219 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1678> rdfs:label "Post Assertion: #1678" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/841> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1313> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Terentius (30)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 1678 ;
+	dprr:hasDateStart -218 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -218 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/841> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "TERE0841 Q. Terentius (30)" ;
+	dprr:hasNomen "Terentius" ;
+	dprr:hasID 841 ;
+	dprr:hasHighestOffice "pr. before 218" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "TERE0841" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/841> .

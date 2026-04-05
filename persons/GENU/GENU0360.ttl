@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/672> rdfs:label "Primary Source Reference: #672" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. XII 27" ;
+	dprr:hasID 672 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/663> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/642> rdfs:label "Primary Source Reference: #642" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. IX 5" ;
+	dprr:hasID 642 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/633> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/485> rdfs:label "Post Assertion Note: #485" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.18.2; Diod. 14.90.1; Fast. Cap. (see note 1); Chr. 354 (Pansa II et Volso); Degrassi 30f., 99, 384f. Titinius and Genucius were in command at Falerii and Capena, where Genucius was killed (Liv. 5.18.7-12)." ;
+	dprr:hasID 485 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/484> rdfs:label "Post Assertion Note: #484" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: [- - -S]accus II; [- - - -E]squilinus II; [- - - -]Capitolinus II; Q. Manlius A. f. [- - - -]; Cn. Genuciu[s - - - -]; L. Atilius L. [f.- - - -]. Fast. Cap. and Diod. agree regarding these names, though Maelius appears in Diod. as {Gr}, and it is not clear whether Diod. had the elder Licinius (Mil. Tr. in 400) like Fast. Cap., or his son, like Livy. In Livy the name is P. Maenius, but at 5.12.10 on the college of 400 he has Maelius, and should agree here. He omits the name of Manlius, perhaps after or before the similar beginning of that of Maelius. He states that the college of 400 was reelected, but only three of them were, while Manlius seems new, and Atilius and Genucius held office in 399. See Conway and Walters ad loc." ;
+	dprr:hasID 484 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/477> rdfs:label "Post Assertion Note: #477" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.13.3; Diod. 14.54.1; Fast. Cap. (see note 1); Chr. 354 (Augurino et Longo); Degrassi 28f., 99, 382f. According to Livy (5.13.3), Veturius was the only patrician in this college." ;
+	dprr:hasID 477 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/476> rdfs:label "Post Assertion Note: #476" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved as follows in Fast. Cap.: [Cn. Genu]cius, etc., [L. Atiliu]s, etc., [M. Pomp]onius, etc., the rest entire as above except Vetur[i]us, and Po[b]lilius. In Livy Duillius has the praenomen Cn., but C. is indicated in Fast. Cap. and Diod. ({Gr}). Livy's reading Publicius is corrected from 2.55.4, and Fast. Cap. Diod. has {Gr}, with the variants {Gr} P and {Gr} F. Diod. and Fast. Cap. agree against Livy on the order of names given above." ;
+	dprr:hasID 476 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/663> rdfs:label "Post Assertion: #663" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/360> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/485> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/484> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Cn. Genucius M. f. M. n. Augurinus (10)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 399" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 663 ;
+	dprr:hasDateStart -396 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -396 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/633> rdfs:label "Post Assertion: #633" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/360> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/477> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/476> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Cn. Genucius M. f. M. n. Augurinus (10)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 396" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 633 ;
+	dprr:hasDateStart -399 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -399 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/360> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "GENU0360 Cn. Genucius (10) M. f. M. n. Augurinus" ;
+	dprr:hasNomen "Genucius" ;
+	dprr:hasID 360 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 396" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -396 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "GENU0360" ;
+	dprr:hasCognomen "Augurinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/360> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/846> rdfs:label "Date Information: #846" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/360> ;
+	dprr:hasValue -396 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, against Capena." ;
+	dprr:hasID 846 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

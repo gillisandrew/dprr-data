@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1392> rdfs:label "Status Assertion: #1392" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2726> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1392 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7143> rdfs:label "Post Assertion Note: #7143" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proquaestor in Crete and Cyrene, 43, 42. See MRR 2.342, 360. R. D. Weigel (CPh 73, 1978, 42-45) presents the possibility that the P. of the praenomen of P. Lepidus named as proquaestor under Brutus may stand for Paullus and identify him as a son of the consul of 50, L. Aemilius Lepidus Paullus (81), Paullus Aemilius L. f. M. n. Paullus (82), the future consul suffectus of 34. Syme suggested that as the praenomen P. was not in use among the known Aemilii Lepidi, the nomen of P. Lepidus remains uncertain, but he might be an Aemilius adopted into another gens (Syme, CPh 50, 1955, 133). On the governor of Cyrene, see G. Perl, Klio 52, 1970, 319-354, esp. 336-338.\n" ;
+	dprr:hasID 7143 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6156> rdfs:label "Post Assertion Note: #6156" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proquaestor in Crete, which he held for Brutus (see 43, Promagistrates)." ;
+	dprr:hasID 6156 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> rdfs:label "Post Assertion Note: #6155" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "1 The use of the terms Legate and Proconsul under the Second Triumvirate is of necessity attended by uncertainty and confusion. Commanders, like Ventidius Bassus, who were for the most part ex-Consuls, held command over large and important areas and armies, and apparently acted with considerable initiative, are termed Legati in Latin sources such as the Periochae of Livy and Florus and # in Dio (Liv. Per. 127, 128; Flor. 2.19; Dio 48.41.5; cf. 49.21, and Act. Tr. for 38, on the title and triumph of Ventidius), and yet many of them appear in the lists of triumphs as Proconsuls. In mentioning the triumph of Domitius Calvinus, Dio (48.42.3-4) remarks that those in power granted honors at will # (see also 49.42.3; 54.12.1-2). Mommsen finds the beginning of this contradiction in Caesar's grant of triumphs at the end of 45 to his Legates Fabius Maximus and Q. Pedius (see 45, Promagistrates). Like these, the later commanders were Legates also under the superior imperium of the Triumviri, and their appearance as Proconsuls depended upon a fictive grant of imperium for the day of their triumph (Str. 1.125, 130f.; 2.245, note 1). The term Proconsul cannot refer to their status in command since a Legate never had more than an imperium pro praetore. The term Legatus pro consule does not occur, and indeed cannot occur because it is intrinsically self-contradictory (ibid. 1.130f.). Moreover it was simply this permission to triumph that made it logically possible for some of these Legates to accept acclamation as Imperator (see, on Sosius, Mommsen Str. 1.125). Mommsen's doctrine is difficult to test because in nearly all cases no official inscriptions remain from the period of command, and several of the commands are known only from the record of the triumph (see 34-32, Promagistrates, on Norbanus Flaccus, Statilius Taurus, Marcius Philippus, Olaudius Pulcher, and L. Cornificius). The term Legatus in Livy and Florus is strongly in his favor, since Die might have been affected by the regular system of Legati pro praetore in the Empire. However, as Canter saw (46-55), the situation was more complicated. The illogicality of a subordinate with an imperium pro consule occurs under Antony on the official coinage in Greece of M. lunius Silanus, who terms himself Quaestor pro consule (see 34, Promagistrates; note that in the Empire Pliny could be given the exceptional position of Legatus pro praetore consulari potestate), and raises the question how many commanders senior to Silanus may not also have held an imperium pro consule under the superior imperium of the Triumviri. Moreover, Sosius (Cos. 32) apparently termed himself Imperator on his coinage from 37 B. C. (see 37, Promagistrates), on a rather distant anticipation of the moment of a fictive grant of imperium pro consule for a day in 34; and there were others, like Laronius (see 33, Consules Suffecti), who took the title Imperator and did not triumph at all. The period of the Second Triumvirate was a period of transition in which irregularities and illogicalities could frequently occur in the government of the Roman Empire, before the Augustan regime rebuilt the pattern anew. I have therefore been inclined to keep the question open; and to list among the Promagistrates the holders of important commands under Octavian and Antony who received acclamation as Imperatores or celebrated triumphs. It must be granted that the superior position of the Triumvirs in this period made the difference between the functions of a Promagistrate and of a Legate much less than it had been before. See Ganter 46-55." ;
+	dprr:hasID 6155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6058> rdfs:label "Post Assertion Note: #6058" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Won Crete for Brutus and Cassius late in 44 or early in 43 (App. Be 5.2, Lepidus), and is named as Proquaestor on his coins (Grant, From Imperium to Auctoritas 35f., formerly read as P. Licinius, B.M.Cat., Cyrenaica 11, no. 2, perhaps Proq. pr. pr.)." ;
+	dprr:hasID 6058 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6875> rdfs:label "Post Assertion: #6875" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2726> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7143> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6156> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Aemilius Lepidus Pat. (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 6875 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6764> rdfs:label "Post Assertion: #6764" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2726> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7143> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6058> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Aemilius P. f. Lepidus Pat. (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 6764 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10922> rdfs:label "Post Assertion: #10922" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2726> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 10922 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2726> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "AEMI2726 P. (or Paullus) Aemilius (not in RE) P. f. Lepidus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 2726 ;
+	dprr:hasHighestOffice "sen. 43" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "AEMI2726" ;
+	dprr:hasCognomen "Lepidus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2726> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Paullus> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1986> rdfs:label "Date Information: #1986" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2726> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 3" ;
+	dprr:hasID 1986 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

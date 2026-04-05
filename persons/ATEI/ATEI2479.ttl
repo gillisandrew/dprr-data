@@ -1,0 +1,199 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/51> rdfs:label "Tribe Assertion: #51" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "S.C. de provinciis consularibus. Cic. Fam. 8.8.5-6" ;
+	dprr:hasID 51 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/2> rdfs:label "Tribe: Aniensis" ;
+	a dprr:Tribe ;
+	dprr:hasName "Aniensis" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "Ani." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/296> rdfs:label "Status Assertion Note: #296" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 35. Tac. Ann. 3.75. son of a centurion, praetor before 51" ;
+	dprr:hasID 296 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/296> rdfs:label "Status Assertion: #296" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/296> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. ATEIUS (4) CAPITO" ;
+	dprr:hasID 296 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2796> rdfs:label "Status Assertion: #2796" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2796 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8382> rdfs:label "Post Assertion Note: #8382" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See PIR² 1.260, on his son." ;
+	dprr:hasID 8382 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8324> rdfs:label "Post Assertion Note: #8324" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "These men were witnesses to the resolutions of the Senate reported by Caelius to Cicero in Fam. 8.8.5-6." ;
+	dprr:hasID 8324 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7686> rdfs:label "Post Assertion Note: #7686" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Perhaps identifiable with the CAP who issued coins as an officer of the triumviri at Lipara in 37-36 (MRR 2.405-406; Grant, FITA 52-54). (TJC) See MRR 2.462; Wiseman NM 215-216, no. 53.\n" ;
+	dprr:hasID 7686 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6872> rdfs:label "Post Assertion Note: #6872" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator in 51 (Cic. Fam. 8.8.5). See 51, note." ;
+	dprr:hasID 6872 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6554> rdfs:label "Post Assertion Note: #6554" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tac. Ann. 3.75, a praetorius; cf. Fast. Cap., Degrassi 60f., 141, 528f., his son held the consulship in 5 A. D." ;
+	dprr:hasID 6554 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5438> rdfs:label "Post Assertion Note: #5438" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "It is apparent that these senators are arranged in the order of seniority. L. Villius Annalis therefore held the praetorship before 57, and L. Ateius Capito and M. Eppius were ex- Quaestors in 51." ;
+	dprr:hasID 5438 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7888> rdfs:label "Post Assertion: #7888" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7686> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Ateius L. f. Ani. Capito (9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 7888 ;
+	dprr:hasDateStart -36 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7887> rdfs:label "Post Assertion: #7887" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7686> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Ateius L. f. Ani. Capito (9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 7887 ;
+	dprr:hasDateStart -37 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -37 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7309> rdfs:label "Post Assertion: #7309" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6554> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Ateius (9) Capito" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7309 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "after 51" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5998> rdfs:label "Post Assertion: #5998" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2479> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8382> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8324> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6872> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5438> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? L. Ateius Capito (9)" ;
+	dprr:hasOfficeXref "Pr. –" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 5998 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSourceText "before 51" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2479> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ATEI2479 L. Ateius (9) L. f. Ani. Capito" ;
+	dprr:hasOrigin "Castrum Novum" ;
+	dprr:hasNomen "Ateius" ;
+	dprr:hasID 2479 ;
+	dprr:hasHighestOffice "pr. after 51" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ATEI2479" ;
+	dprr:hasCognomen "Capito" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2479> .

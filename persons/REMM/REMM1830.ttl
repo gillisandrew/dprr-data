@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/846> rdfs:label "Status Assertion: #846" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1830> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 846 ;
+	dprr:hasDateStart -122 ;
+	dprr:hasDateEnd -122 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1958> rdfs:label "Status Assertion: #1958" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1830> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1958 ;
+	dprr:hasDateStart -96 ;
+	dprr:hasDateEnd -96 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7128> rdfs:label "Post Assertion Note: #7128" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Aedile ca. 120, or ca. 94. If he was a colleague of the elder M. Livius Drusus (17), Tr. pl. 122, whose aedileship is not attested, the date would be between 122 and 115. See Wiseman, NM 250, no. 356. Münzer holds that there is no need to doubt the notice that Remmius was a colleague of the younger Drusus in his aedileship, because the office, though mentioned in the Auct. Vir. Ill. 66.1, is not mentioned in the Elogium, since it could easily have been omitted in our single sixteenth-century copy of it (Mommsen, CIL 192).199)" ;
+	dprr:hasID 7128 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3746> rdfs:label "Post Assertion Note: #3746" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A colleague of Livius (Auct. Vir. Ill. 66.1-2), and possibly author of a law regarding calumnia (Cic. Rosc. Amer. 55; Schol. Gron. 309 Stangl)." ;
+	dprr:hasID 3746 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9271> rdfs:label "Post Assertion: #9271" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1830> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7128> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3746> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/45> ;
+	dprr:hasID 9271 ;
+	dprr:hasDateStart -120 ;
+	dprr:hasDateEnd -120 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4396> rdfs:label "Post Assertion: #4396" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1830> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7128> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3746> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Remmius (1, 2?)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/45> ;
+	dprr:hasID 4396 ;
+	dprr:hasDateStart -94 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -94 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1830> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1, 2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "REMM1830 -. Remmius (1, 2)" ;
+	dprr:hasNomen "Remmius" ;
+	dprr:hasID 1830 ;
+	dprr:hasHighestOffice "aed. c. 120 or c. 94" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "REMM1830" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1830> .

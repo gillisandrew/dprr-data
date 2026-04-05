@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> rdfs:label "Secondary Source: Shackleton Bailey 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Speeches" ;
+	dprr:hasID 33 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's speeches. Stuttgart : Teubner, 1992." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2234> rdfs:label "Relationship Assertion Reference: #2234" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2234 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3681> rdfs:label "Relationship Assertion: #3681" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5311> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2234> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4453> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2569> rdfs:label "Person Note: #2569" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p83. Rosc. passim. of Ameria, father and son" ;
+	dprr:hasID 2569 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5311> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2569> ;
+	dprr:hasPersonName "ROSC5311 Sex. Roscius (7) Sex. f." ;
+	dprr:hasOrigin "Ameria" ;
+	dprr:hasNomen "Roscius" ;
+	dprr:hasID 5311 ;
+	dprr:hasHighestOffice "son of Sex. Roscius (6) (eq. R. ?)" ;
+	dprr:hasFiliation "Sex. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "ROSC5311" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5311> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4453> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "ROSC4453 Sex. Roscius (6)" ;
+	dprr:hasOrigin "Ameria" ;
+	dprr:hasNomen "Roscius" ;
+	dprr:hasID 4453 ;
+	dprr:hasHighestOffice "eq. R.? late C2-C1" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ROSC4453" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4453> .

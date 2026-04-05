@@ -1,0 +1,480 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2180> rdfs:label "Status Assertion: #2180" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2180 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateEnd -164 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1136> rdfs:label "Relationship Assertion Reference: #1136" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1136 ;
+	dprr:hasExtraInfo "Liv. XLIV 3.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1129> rdfs:label "Relationship Assertion Reference: #1129" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1129 ;
+	dprr:hasExtraInfo "Liv. XLII 42.4" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/954> rdfs:label "Relationship Assertion: #954" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1129> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3659> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/953> rdfs:label "Relationship Assertion: #953" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1129> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3382> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4194> rdfs:label "Relationship Assertion: #4194" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1136> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1403> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2477> rdfs:label "Relationship Assertion: #2477" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4874> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2476> rdfs:label "Relationship Assertion: #2476" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/681> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2475> rdfs:label "Relationship Assertion: #2475" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4787> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8493> rdfs:label "Post Assertion Note: #8493" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 731, footnote 63" ;
+	dprr:hasID 8493 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2820> rdfs:label "Post Assertion Note: #2820" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 50f., 123, 460f.; Fast. Ant., ib. 160f.; Val. Max. 7.5.3; Plin. NH 7.214; 26.5; Fest. 360 L; and on Paullus, CIL 1\n     .2, 763b; Elog., CIL 1(2), nos. 15 and 24- Inscr. Ital. 13.3.81 and 71b; Diod. 31.25; cf. Fest. 360 L. They expelled only three persons from the Senate, reviewed the knights with moderation, and reappointed M. Aemilius Lepidus Princeps Senatus (Plut. Aem. 38.5-6; cf. Liv. Per. 46). Marcius erected a statue of Concordia (Cic. Dom. 130), and had a sundial set more exactly (Plin. NH 7.214)." ;
+	dprr:hasID 2820 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2795> rdfs:label "Post Assertion Note: #2795" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent with instructions from the Senate to assist Paullus in organizing Macedonia (Liv. 45.17.2-3, and 29-31). Claudius and Domitius went to Achaea to summon the Achaean leaders to Rome in person (Liv. 45.31.9-11; cf. Polyb. 30.13.8-11), and Fabius went to Lesbos to destroy Antissa and incorporate it with Methymna (Liv. 45.31.14)." ;
+	dprr:hasID 2795 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2792> rdfs:label "Post Assertion Note: #2792" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Marcius is nowhere named among the Legates. His name was inserted by Weissenborn because his previous experience in Macedonia made him a probable candidate for the missing place. See the commission of 196.{437}" ;
+	dprr:hasID 2792 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2741> rdfs:label "Post Assertion Note: #2741" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In command in Macedonia until succeeded by Paullus (Polyb. 29.25.2-5)." ;
+	dprr:hasID 2741 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2698> rdfs:label "Post Assertion Note: #2698" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 78; Sen. 14; Liv. 43.11.6; Fast. Cap., Degrassi 50f., 123, 460f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Marcius, SIG\n     649; I. de Délos 3.1429 A 31-32; Polyb. 28.16.3. Marcius was assigned the province of Macedonia with authority to handle other problems in the East (Liv. 43.12.1, and 15.3; Polyb. 28.1.9). Crossed the mountains from Thessaly to the coast of Macedonia but advanced no further (Polyb. 28.13; Diod. 30.10.1; Liv. 44.1-9; Flor. 1.28.5; App. Mac. 17; Zon. 9.22; cf. Grueber, CRRBM 1.175; 2.277; Cesano, Stud. Num. 1.199ff.). On his dealings with the Achaeans and the Rhodians,\n     \n      1\n     \n     see Polyb. 28.12-13, 16-17; 29.24-25; cf. SIG(3) 649; App. Mac. 17; and on his dedications at Delos, I. de Délos 3.1429 A 31-32; 1450 A 69. Servilius' province was Italy (Liv. 43.12.1; 44.17.2-4, and 18.5), and he served in Gaul (43.15.3-5)." ;
+	dprr:hasID 2698 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2662> rdfs:label "Post Assertion Note: #2662" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "After his embassy (see 172, no. d), he was sent back to Greece with some ships of war (Liv. 42.47.9), but the title of his office is not given. He captured Alope and Larisa Cremaste and brought his ships to Chalcis (42.56.7)" ;
+	dprr:hasID 2662 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2633> rdfs:label "Post Assertion Note: #2633" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to the various Greek communities to keep them in alliance with Rome against Macedon, they sailed with a guard to Corcyra and there apportioned regions to each member of the embassy: to Marcius and Atilius, northern and central Greece and the Peloponnese; to the Lentuli, Cephallenia and the western Peloponnese; and to Decimius, King Gentius of Illyria (Liv. 42.37.1-9). Marcius and Atilius proceeded through Epirus and Acarnania to the Thessalian council at Larisa, and then in a conference with Perseus encouraged him to send envoys to Rome under agreement for a truce (Liv. 42.38.1-47.3, cf. 47.1-9; T. Frank, CPh 5 [1910] 358-361). They went on to break up the Boeotian League, placing pro-Roman parties in control and attaching the communities individually to Rome (Polyb. 27.1.1-2.10; Liv. 42.43.4-44.6), and summoned Ser. Cornelius to stay at Chalcis. At Argos they induced the council of the Achaeans to send a guard to Chalcis (Polyb. 27.2.11; Liv. 42.44.7-8), then making an end of these winter activities they rejoined P. Cornelius and returned to Rome (Polyb. 27.2.12; Liv. 42.44.8, principio hiemis !). Decimius in Illyria fell under suspicion of accepting bribes (Liv. 42.45.8). Cf. App. Mac. 11.4." ;
+	dprr:hasID 2633 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2632> rdfs:label "Post Assertion Note: #2632" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "This embassy is reported only in an annalistic portion of Livy, and so is considered doubtful (Nissen, Untersuch. 246f.; Kahrstedt, Klio 11 [1911] 421-423), but the account, based on Polybius, of the meeting of Marcius Philippus with Perseus (see no. d) assumes that a formal declaration of war, which in turn would follow a formal repetitio rerum, had already occurred (see 42.43.1, indutiarum petitio, and 47; also 42.36.1-3, and 48.1-3). On the charges against Perseus, see Livy 42.11-17, and 40-42; SIG(3) 643." ;
+	dprr:hasID 2632 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2468> rdfs:label "Post Assertion Note: #2468" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Q. Marcius Philippus succeeded C. Servilius Geminus. Liv. 40.42.11-12. Cf. in 174, Liv. 41.21.10-11." ;
+	dprr:hasID 2468 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2375> rdfs:label "Post Assertion Note: #2375" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "After giving hearings in Rome to envoys from Greek cities, Eumenes, and Philip (his son, Demetrius), the Senate sent Philippus and others to Macedon, and also to the Peloponnese to settle disputes between the Achaeans and Sparta and Messene (Polyb. 23.4.16, and 8.1-7; Liv. 39.47.11, 48.5-6, and 53.1-11). They later reported their mission to the Senate (Polyb. 23.9.4-6 and 8-9; Liv. 40.2.6-3.7).{380}" ;
+	dprr:hasID 2375 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2306> rdfs:label "Post Assertion Note: #2306" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 39.6.1, cf. 23.1; Fast. Cap., Degrassi 48f., 122, 456f.; Plin. NH 33.138; Eutrop. 4.5; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. Both Consuls were assigned Liguria (Liv. 39.20.2), but Albinus was wholly, and Philippus for most of the year, occupied with the investigation{371} of the Bacchanalian mysteries (Liv. 39.8-19; Val. Max. 6.3.7; cf. CIL 1\n     .2.581- ILS 18; Cic. Leg. 2.37; Val. Max. 1.3.1). Philippus raided the territory of the Apuan Ligurians and suffered heavy losses (Liv. 39.20; Oros. 4.20.26). On Postumius, see Münzer, APF 213." ;
+	dprr:hasID 2306 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2272> rdfs:label "Post Assertion Note: #2272" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections: Liv. 38.35.2 Provinces and armies 38.35.10." ;
+	dprr:hasID 2272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9985> rdfs:label "Post Assertion: #9985" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2468> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/15> ;
+	dprr:hasID 9985 ;
+	dprr:hasDateStart -180 ;
+	dprr:hasDateEnd -164 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3447> rdfs:label "Post Assertion: #3447" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2820> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 3447 ;
+	dprr:hasDateStart -164 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -164 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3407> rdfs:label "Post Assertion: #3407" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2795> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2792> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3407 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3336> rdfs:label "Post Assertion: #3336" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2741> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 3336 ;
+	dprr:hasDateStart -168 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -168 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3286> rdfs:label "Post Assertion: #3286" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2698> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Marcius L. f. Q. n. Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3286 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3245> rdfs:label "Post Assertion: #3245" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2662> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 3245 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3197> rdfs:label "Post Assertion: #3197" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2633> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2632> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Marcius (Philippus) (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3197 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2873> rdfs:label "Post Assertion: #2873" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2375> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2873 ;
+	dprr:hasDateStart -183 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -183 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2793> rdfs:label "Post Assertion: #2793" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2306> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Marcius L. f. Q. n. Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 169, Pr. 188" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2793 ;
+	dprr:hasDateStart -186 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -186 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2746> rdfs:label "Post Assertion: #2746" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8493> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2272> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Q. Marcius Philippus (79)" ;
+	dprr:hasOfficeXref "Cos. 186, 169 Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2746 ;
+	dprr:hasDateStart -188 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -188 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1435> rdfs:label "Person Note: #1435" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/11> ;
+	dprr:hasNoteText "Zur Beendigung einer wütenden Seuche sprach er den Text eines aufgrund der libri Sibyllini erfolgenden Gelübdes vor (174). Errichtung einer Concordiastatue als Censor (164)." ;
+	dprr:hasID 1435 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1434> rdfs:label "Person Note: #1434" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 40,42,12." ;
+	dprr:hasID 1434 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1433> rdfs:label "Person Note: #1433" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "220er-nach 164 v. Chr." ;
+	dprr:hasID 1433 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1432> rdfs:label "Person Note: #1432" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1432 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1431> rdfs:label "Person Note: #1431" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt D 17; MRR 1,390; Szemler D 12." ;
+	dprr:hasID 1431 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1430> rdfs:label "Person Note: #1430" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Marcius 79. NP Marcius I.17." ;
+	dprr:hasID 1430 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1429> rdfs:label "Person Note: #1429" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2382" ;
+	dprr:hasID 1429 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/681> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "78" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC0681 Q. Marcius (78) Q. f. Q. n. Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 681 ;
+	dprr:hasHighestOffice "cos. 281" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "MARC0681" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/681> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4874> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "B" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MARC4874 L. Marcius (B)" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4874 ;
+	dprr:hasHighestOffice "son of? Q. Marcius (78) Q. f. Q. n. Philippus (cos. 281)" ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "MARC4874" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4874> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4787> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC4787 Q. Marcius (A) Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4787 ;
+	dprr:hasHighestOffice "son of? Q. Marcius (80) Q. f. L. n. Philippus (leg. amb.? 163)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MARC4787" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4787> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3659> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "82" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC3659 Q. (Marcius) (82) Philippus" ;
+	dprr:hasNomen "(Marcius)" ;
+	dprr:hasID 3659 ;
+	dprr:hasHighestOffice "grandson of? Q. Marcius (79) L. f. Q. n. Philippus (cos. 186)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MARC3659" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3659> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3382> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "81" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC3382 Q. Marcius (81) Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 3382 ;
+	dprr:hasHighestOffice "pr. before 100" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "MARC3382" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3382> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1403> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "80" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MARC1403 Q. Marcius (80) Q. f. L. n. Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1403 ;
+	dprr:hasHighestOffice "leg. amb.? 163" ;
+	dprr:hasFiliation "Q. f. L. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MARC1403" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1403> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1205> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "79" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1435> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1434> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1433> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1432> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1431> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1430> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1429> ;
+	dprr:hasPersonName "MARC1205 Q. Marcius (79) L. f. Q. n. Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1205 ;
+	dprr:hasHighestOffice "cos. 186" ;
+	dprr:hasFiliation "L. f. Q. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -230 ;
+	dprr:hasDprrID "MARC1205" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1205> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1465> rdfs:label "Date Information: #1465" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1205> ;
+	dprr:hasValue -230 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1465 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "A" .

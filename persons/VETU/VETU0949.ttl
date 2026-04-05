@@ -1,0 +1,351 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3522> rdfs:label "Relationship Assertion: #3522" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/824> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3521> rdfs:label "Relationship Assertion: #3521" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5005> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2266> rdfs:label "Primary Source Reference: #2266" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "26.2" ;
+	dprr:hasID 2266 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2128> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2265> rdfs:label "Primary Source Reference: #2265" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Ampel. 19.4" ;
+	dprr:hasID 2265 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2128> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2264> rdfs:label "Primary Source Reference: #2264" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ti. Gracch. 21.2" ;
+	dprr:hasID 2264 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2128> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2263> rdfs:label "Primary Source Reference: #2263" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. C. Gracch. 17.5" ;
+	dprr:hasID 2263 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2128> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2227> rdfs:label "Primary Source Reference: #2227" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Ad Brut. 2.2.1" ;
+	dprr:hasID 2227 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2102> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2218> rdfs:label "Primary Source Reference: #2218" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. 4.13.18" ;
+	dprr:hasID 2218 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2095> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2155> rdfs:label "Primary Source Reference: #2155" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. 2.4.56" ;
+	dprr:hasID 2155 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2053> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2074> rdfs:label "Primary Source Reference: #2074" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 93.2" ;
+	dprr:hasID 2074 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2002> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2015> rdfs:label "Primary Source Reference: #2015" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 29.1" ;
+	dprr:hasID 2015 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1943> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1990> rdfs:label "Primary Source Reference: #1990" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Varro r.r. II 4.1f." ;
+	dprr:hasID 1990 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1918> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8891> rdfs:label "Post Assertion Note: #8891" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 728" ;
+	dprr:hasID 8891 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7666> rdfs:label "Post Assertion Note: #7666" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 206. Probably a legate under the consul Ap. Claudius Pulcher (293) at Capua in 212 (Liv. 26.33.5-7). His curule aedileship in 210 should be queried (see MRR 1.279, 284, note 2).\n" ;
+	dprr:hasID 7666 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1897> rdfs:label "Post Assertion Note: #1897" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by Scipio to bring the Carthaginian envoys to Rome (Liv. 30.38.4). On Veturius, see Lübker, no. 9." ;
+	dprr:hasID 1897 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1764> rdfs:label "Post Assertion Note: #1764" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 29.11.9; Fast. Cap.; see above, Dictator. See Lübker, no. 9." ;
+	dprr:hasID 1764 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1741> rdfs:label "Post Assertion Note: #1741" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 28.9.18-10.2; Cic. Brut. 57; Fast. Cap., Degrassi 46f., 120, 450f.; Dio fr. 57.59; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; cf. Eutrop. 3.19. Both Consuls were assigned to face Hannibal in Bruttium and Lucania (Liv. 28.10.8, and 11.8-12.9; Dio fr. 56.59-60; Eutrop. 3.19, with the name Valerius; Zon. 9.11). On Veturius, see Lübker, no. 9." ;
+	dprr:hasID 1741 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1736> rdfs:label "Post Assertion Note: #1736" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The envoys who brought to Rome news of the victory at the Metaurus (Liv. 27.51.3-6; cf. 28.9.19-20)." ;
+	dprr:hasID 1736 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1695> rdfs:label "Post Assertion Note: #1695" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued as Propraetor in Gaul (Liv. 27.22.6). See Lübker, no. 9." ;
+	dprr:hasID 1695 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1646> rdfs:label "Post Assertion Note: #1646" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Election Liv. 27.6.12 Provinces and armies 27.7.8-12, cf. 22.5-6Received special funds from the sacred treasury (Liv. 27.10.12). See Lübker, no. 9." ;
+	dprr:hasID 1646 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1606> rdfs:label "Post Assertion Note: #1606" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 27.6.19. On Veturius, see Lübker, no. 9." ;
+	dprr:hasID 1606 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1605> rdfs:label "Post Assertion Note: #1605" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "On Veturius' praenomen, given by the corrector A\n   \n    7\n   \n   and the editors Aldus and Selenius, see Conway and Walters ad loc. The two Curule Aediles of this year should be plebeians (Mommsen RF 1.101), and in support of the view that this Veturius was one, Mommsen cited the Veturius Calvinus who was Consul in 334 and 321, Ti. Veturius Sempronius Gracchus, Augur 174, and the moneyer of about a century later (RMW 555f.; Grueber, CRRBM 2.281f.). But the evidence for plebeian Veturii in this period fails if Geer is right in claiming that the Augur of 174, who actually did occupy a plebeian place in the college (see 174, note 5), was correctly named Ti. Sempronius Gracchus Veturianus (AJPh 60 [1939] 466f.). Since the evidence for plebeian Veturii is weak and the lists of Curule Aediles from 213 to 210 are incomplete Willems (1.376f.) and Münzer (APF 126-128) suggest that the list is confused, and that this is the patrician L. Veturius Philo, Leg. at Capua 212, Pr. 209, Cos. 206. According to Seidel (26, note 1) he might have held the office in 211, but the plebeian listed in 210 should not be rejected on that account. Since plebeian Veturii are known, though not with certainty in this period, Seidel's is probably the best view." ;
+	dprr:hasID 1605 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1581> rdfs:label "Post Assertion Note: #1581" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Ap. Claudius at Capua (Liv. 26.33.5-7). See 210, note 2." ;
+	dprr:hasID 1581 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9302> rdfs:label "Post Assertion: #9302" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7666> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Veturius L. f. L. n. Philo (20 cf. 3a)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 9302 ;
+	dprr:hasDateStart -212 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -212 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2269> rdfs:label "Post Assertion: #2269" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1897> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Veturius Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 2269 ;
+	dprr:hasDateStart -202 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -202 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2128> rdfs:label "Post Assertion: #2128" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1764> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Veturius L. f. L. n. Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 2128 ;
+	dprr:hasDateStart -205 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -205 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2102> rdfs:label "Post Assertion: #2102" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1741> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Veturius L. f. L. n. Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2102 ;
+	dprr:hasDateStart -206 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -206 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2095> rdfs:label "Post Assertion: #2095" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1736> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Veturius Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 2095 ;
+	dprr:hasDateStart -207 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -207 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2053> rdfs:label "Post Assertion: #2053" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasProvinceOriginal "Gallia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1695> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "L. Veturius Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 2053 ;
+	dprr:hasDateStart -208 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -208 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2002> rdfs:label "Post Assertion: #2002" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8891> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1646> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Veturius Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206 Pr. Peregrinus, and Gaul" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2002 ;
+	dprr:hasDateStart -209 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1943> rdfs:label "Post Assertion: #1943" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7666> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1606> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1605> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Veturius (*15)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 1943 ;
+	dprr:hasDateStart -210 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1918> rdfs:label "Post Assertion: #1918" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1581> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "L. Veturius Philo Pat. (*15)" ;
+	dprr:hasOfficeXref "Cos. 206, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1918 ;
+	dprr:hasDateStart -211 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -211 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/949> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*15" ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VETU0949 L. Veturius (20) L. f. L. n. Philo" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 949 ;
+	dprr:hasHighestOffice "cos. 206" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -240 ;
+	dprr:hasDprrID "VETU0949" ;
+	dprr:hasCognomen "Philo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/949> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/824> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*14" ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VETU0824 L. Veturius (19) L. f. Post. n. Philo" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 824 ;
+	dprr:hasHighestOffice "cos. 220" ;
+	dprr:hasFiliation "L. f. Post. n." ;
+	dprr:hasEraTo -209 ;
+	dprr:hasEraFrom -260 ;
+	dprr:hasDprrID "VETU0824" ;
+	dprr:hasCognomen "Philo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/824> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5005> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VETU5005 L. Veturius (2)" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 5005 ;
+	dprr:hasHighestOffice "son of L. Veturius (20) L. f. L. n. Philo (cos. 206)" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "VETU5005" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5005> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1116> rdfs:label "Date Information: #1116" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/949> ;
+	dprr:hasValue -240 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 60." ;
+	dprr:hasID 1116 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

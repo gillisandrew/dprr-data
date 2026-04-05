@@ -1,0 +1,130 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2854> rdfs:label "Status Assertion: #2854" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2675> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2854 ;
+	dprr:hasDateStart -46 ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6203> rdfs:label "Post Assertion Note: #6203" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His command in Transalpine Gaul (see 43, Legates) may have extended into 42. We do not know at what moment Antony sent Fufius Calenus there (see 41, Promagistrates)." ;
+	dprr:hasID 6203 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6128> rdfs:label "Post Assertion Note: #6128" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "When Antony took over Transalpine Gaul from Plancus in late summer or autumn of 43 he placed it under the command of Cotyla with six legions (Plut. Ant. 18.4). See R-G. 1.261." ;
+	dprr:hasID 6128 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6090> rdfs:label "Post Assertion Note: #6090" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Returned to Rome with the Envoys listed in no. 1 bearing Antony's counter-proposals (Cic. Phil. 8.24 and 28 and 33; Zonar. 10.14; on these proposals, see Cic. Phil. 8.25-27; App. BC 3.62-63; Dio 46.30, cf. 35.3). See Legates, Lieutenants; D.-G. 1.184." ;
+	dprr:hasID 6090 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5968> rdfs:label "Post Assertion Note: #5968" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An aedilicius in 43 (Cic. Phil. 8.24; 13.26), and probably Aedile in 44, since he held the office at a time when Antony (Consul in 44) had authority to make public slaves beat him in a banquet (Cic. Phil. 8.24). He defended Antony in the Senate meeting on December 20 (Cic. Phil. 5.5 and 7). See Legates, Envoys, and Lieutenants." ;
+	dprr:hasID 5968 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6922> rdfs:label "Post Assertion: #6922" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2675> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gallia Transalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6203> ;
+	dprr:hasPosition 25 ;
+	dprr:hasOriginalText "? L. Varius Cotyla (*5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6922 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6842> rdfs:label "Post Assertion: #6842" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2675> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gallia Transalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6128> ;
+	dprr:hasPosition 31 ;
+	dprr:hasOriginalText "L. Varius Cotyla (*5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6842 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6800> rdfs:label "Post Assertion: #6800" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2675> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6090> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Varius Cotyla" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 6800 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6656> rdfs:label "Post Assertion: #6656" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2675> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5968> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Varius Cotyla (*5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/45> ;
+	dprr:hasID 6656 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/24> rdfs:label "Person Note: #24" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "On the cognomen, see Cic. Phil. 5.5 and 7, Cotylo, but in Phil. 8.24 and 28, and 13.26, Cotyla. In Plut. Ant. 18.8, it is #; cf. Cotulo in CIL 12.5686. On the praenomen, see Cic. Phil. 8.33. See MRR 2.323.\n" ;
+	dprr:hasID 24 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2675> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*5" ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/24> ;
+	dprr:hasPersonName "VARI2675 L. Varius (6) Cotyla" ;
+	dprr:hasNomen "Varius" ;
+	dprr:hasID 2675 ;
+	dprr:hasHighestOffice "aed. 44" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "VARI2675" ;
+	dprr:hasCognomen "Cotyla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2675> .

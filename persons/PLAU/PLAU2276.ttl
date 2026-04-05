@@ -1,0 +1,439 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/235> rdfs:label "Tribe Assertion: #235" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 235 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/2> rdfs:label "Tribe: Aniensis" ;
+	a dprr:Tribe ;
+	dprr:hasName "Aniensis" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "Ani." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/274> rdfs:label "Status Assertion Note: #274" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 275. Cic. Planc. 17. son of a Roman knight" ;
+	dprr:hasID 274 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/274> rdfs:label "Status Assertion: #274" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/274> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "A. PLAUTIUS (8)" ;
+	dprr:hasID 274 ;
+	dprr:hasDateStart -54 ;
+	dprr:hasDateSourceText "54-51" ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2700> rdfs:label "Status Assertion: #2700" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2700 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2880> rdfs:label "Relationship Assertion: #2880" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1885> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9735> rdfs:label "Post Assertion Note: #9735" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 63, Legates." ;
+	dprr:hasID 9735 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9287> rdfs:label "Post Assertion Note: #9287" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 431" ;
+	dprr:hasID 9287 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9117> rdfs:label "Post Assertion Note: #9117" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 755, footnote 485" ;
+	dprr:hasID 9117 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8320> rdfs:label "Post Assertion Note: #8320" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "That these Legates continued in command for at least three years, and probably more, is indicated by the term of command of Gellius over his fleet (Cic. P. Red. ad Quir. 17, referring almost certainly to 63)." ;
+	dprr:hasID 8320 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8319> rdfs:label "Post Assertion Note: #8319" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pompey's Legates in the war with the pirates (see 67, Legates) probably remained in their positions. L. Octavius may have substituted for the deceased L. Cornelius Sisenna." ;
+	dprr:hasID 8319 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8285> rdfs:label "Post Assertion Note: #8285" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The date of these aedileships remains in dispute. Against the date in 54 usually accepted (see MRR 2.223), L. R. Taylor, noting the difficulty of explaining their prosecution under the Lex Licinia de sodaliciis in 54 if that was the year of their office, saw that the conditions of election in 55 after an interregnum made it quite possible for these tribunes of the plebs in 56, leaving that office on December 10, to qualify as candidates for the aedileship of 55; and, as Cicero (Planc. 49) shows, Pompey, auctor, not lator, of that law, was in charge of that election (Athenaeum 42, 1964, 12-28; see also J. Linderski, Studi E. Volterra 2.284-302). There is no definite proof that Aemilius Paullus (81) and Nonius (50) were curule aediles at that time (MRR 2.216, and see above, on Nonius Sufenas [52]). Against this dating, Sumner (Phoenix 25, 1971, 249, note 12) presents the following considerations, while admitting that 55 is a possibility: he finds no implication in Planc. 49 that the consul who presided over the comitia superiora also presided over the final election; Pompey could have held the elections for 54, and as there still were elections in prospect in mid-November 55 (Att. 4.13.1), the passage in Planc. 49 may mean that the elections for aediles were delayed into 54; if Plancius had been aedile in 55, why did Cicero  in 54 make no reference to his achievement in office? And the legal difficulty of a trial in the year of office is met if the proposal, rejected in 55, of a period of 60 days between election and entrance into office, had been accepted for 54. There is no evidence that there was such a period, and the aedilician coinage of Plautius with its reference to the Megalesian games in April is rather against it, while the date of the trial of Plancius, in August near the time of the Roman games, is still more so. On balance, 55 seems the more probable year.\n" ;
+	dprr:hasID 8285 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7323> rdfs:label "Post Assertion Note: #7323" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Pl. 70. R. E. Smith (CQ 7, 1957, 82-85) suggests that 70-69 was the date of the passage of the Lex Plautia agraria and that the law was intended to reward Pompey's veterans of the war with Sertorius. This Plautius may be the A. Plautius or Plotius (no. 8) who served as a legatus under Pompey in 67, but see MRR 2.149, and 151, note 17. See also Wiseman, NM 251-252, nos. 322-324; Shackleton Bailey, CLA 1.333.\n" ;
+	dprr:hasID 7323 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5667> rdfs:label "Post Assertion Note: #5667" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Possibly governor of Bithynia and Pontus in 49-48 (Cic. Fam. 13.29.4)." ;
+	dprr:hasID 5667 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5553> rdfs:label "Post Assertion Note: #5553" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably governor of Bithynia and Pontus in 49-48 (Cic. Fam. 13.29.4)." ;
+	dprr:hasID 5553 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5378> rdfs:label "Post Assertion Note: #5378" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Att. 5.15.1; cf. Fam. 13.29.4. See Lübker no. 3." ;
+	dprr:hasID 5378 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5232> rdfs:label "Post Assertion Note: #5232" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Planc. 17 and 53; Grueber, CRRBM 1.490f. See Lübker no. 2." ;
+	dprr:hasID 5232 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5138> rdfs:label "Post Assertion Note: #5138" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Read to the Senate a letter from the Egyptian King asking to be restored to his kingdom by Pompey with two lictors (Dio 39.16.2). See Lübker no. 3." ;
+	dprr:hasID 5138 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4923> rdfs:label "Post Assertion Note: #4923" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 63, Legates." ;
+	dprr:hasID 4923 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4882> rdfs:label "Post Assertion Note: #4882" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The inscription Bacchius Iudaeus on the coins of his aedileship in 54 probably refers to his service under Pompey in Palestine in this year (Grueber, CRRBM 1.490)." ;
+	dprr:hasID 4882 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4844> rdfs:label "Post Assertion Note: #4844" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 63, Legates." ;
+	dprr:hasID 4844 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4807> rdfs:label "Post Assertion Note: #4807" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Other Legates appointed under the Gabinian and Manilian laws probably continued to serve under Pompey (see 67, and 66, Legates)." ;
+	dprr:hasID 4807 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4737> rdfs:label "Post Assertion Note: #4737" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Held command in Sicily (App., #; Flor., Plotius)." ;
+	dprr:hasID 4737 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4736> rdfs:label "Post Assertion Note: #4736" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "17 Gelenius substituted the reading # for the Mss reading #, but Groebe is inclined to delete it as merely a repetition of the cognomen of the following name Terentius Varro, and identify the Plotius of Appian and Florus with Plautius or Plotius, who was Aedile along with Plancius in 54 and Praetor in 51 (Klio 10 [1910] 381), and distinguish him from P. Plautius Hypsaeus, who as Pompey's Quaestor in 64 could hardly have been Legatus pro praetore in 67." ;
+	dprr:hasID 4736 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4723> rdfs:label "Post Assertion Note: #4723" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "15 Under the Gabinian law Pompey was entitled to appoint Legates with praetorian imperium (App. Mith. 94; cf. SIG³ 750; Plut. Pomp. 26) to the number, according to Plutarch, of 15 (Pomp. 25; cf. Dio 36.37), according to Appian (Mith. 94), of 24; of that number we have the names of the 15 listed above, 13 of whom held command each in one of the 13 special areas designated by Pompey (see Zonar. 10.3). Their appointment may well have been extended in a number of cases with the extension of the term of Pompey's command under the Manilian law. At any rate Gellius was still in command of a fleet in 63 (Cic. P. Red. ad Quir. 17). See Mommsen, Str. 2.656, note 2; Th. Reinach, RPh 14 (1890) 150. On his Legates and plan of campaign, see P. Groebe, Klio 10 (1910) 374-389; H. A. Ormerod, Liverpool Annals of Art and Archaeology 10 (1923) 46-51." ;
+	dprr:hasID 4723 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4722> rdfs:label "Post Assertion Note: #4722" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Under Cn. Pompeius Magnus against the pirates:" ;
+	dprr:hasID 4722 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9392> rdfs:label "Post Assertion: #9392" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8285> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 9392 ;
+	dprr:hasDateStart -54 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -54 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9359> rdfs:label "Post Assertion: #9359" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Fleet" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8320> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8319> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "A. Plotius (*4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/178> ;
+	dprr:hasID 9359 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9106> rdfs:label "Post Assertion: #9106" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7323> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 9106 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8551> rdfs:label "Post Assertion: #8551" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9287> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Plautius, A." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 8551 ;
+	dprr:hasDateStart -55 ;
+	dprr:hasDateSourceText "55" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -55 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6343> rdfs:label "Post Assertion: #6343" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5667> ;
+	dprr:hasPosition 20 ;
+	dprr:hasOriginalText "? A. Plautius (Plotius) (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6343 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6229> rdfs:label "Post Assertion: #6229" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5553> ;
+	dprr:hasPosition 20 ;
+	dprr:hasOriginalText "? A. Plautius (Plotius) (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6229 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6046> rdfs:label "Post Assertion: #6046" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9117> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5378> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Plautius (8)" ;
+	dprr:hasOfficeXref "Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6046 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5894> rdfs:label "Post Assertion: #5894" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8285> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5232> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Plautius (Plotius) (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 5894 ;
+	dprr:hasDateStart -55 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -55 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5784> rdfs:label "Post Assertion: #5784" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5138> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "A. Plautius (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5784 ;
+	dprr:hasDateStart -56 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -56 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5518> rdfs:label "Post Assertion: #5518" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Palestine" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4923> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "A. Plautius (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5518 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5476> rdfs:label "Post Assertion: #5476" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Palestine" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4882> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "A. Plautius (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5476 ;
+	dprr:hasDateStart -63 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5438> rdfs:label "Post Assertion: #5438" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4844> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "A. Plautius (Plotius) (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5438 ;
+	dprr:hasDateStart -64 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -64 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5403> rdfs:label "Post Assertion: #5403" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Fleet" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9735> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4807> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "A. Plautius (8)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/178> ;
+	dprr:hasID 5403 ;
+	dprr:hasDateStart -65 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -65 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5329> rdfs:label "Post Assertion: #5329" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2276> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Fleet" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4737> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4736> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4723> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4722> ;
+	dprr:hasPosition 11 ;
+	dprr:hasOriginalText "A. Plotius (*4)" ;
+	dprr:hasOfficeXref "Pr. 51" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/178> ;
+	dprr:hasID 5329 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2276> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "PLAU2276 A. Plautius (Plotius) (8) Ani." ;
+	dprr:hasNomen "Plautius (Plotius)" ;
+	dprr:hasID 2276 ;
+	dprr:hasHighestOffice "pr. 51" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU2276" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2276> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1885> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "PLAU1885 A. Plautius (Plotius) (7)" ;
+	dprr:hasNomen "Plautius (Plotius)" ;
+	dprr:hasID 1885 ;
+	dprr:hasHighestOffice "brother of? M. Plautius (29) Silvanus (tr. pl. 89)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU1885" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1885> .

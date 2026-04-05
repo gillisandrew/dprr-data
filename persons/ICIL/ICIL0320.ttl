@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/574> rdfs:label "Primary Source Reference: #574" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Mur. 32" ;
+	dprr:hasID 574 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/565> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/450> rdfs:label "Post Assertion Note: #450" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Forced the election of plebeians to the quaestorship and return to the election of Military Tribunes c. p. (Liv. 4.54.4-9, and 56.1, three of one family at once)." ;
+	dprr:hasID 450 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/565> rdfs:label "Post Assertion: #565" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/320> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/450> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? Icilius (RE 850f. and no. 3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 565 ;
+	dprr:hasDateStart -409 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -409 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/320> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "RE 850f. and no. 3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ICIL0320 -. Icilius (RE 850f. and no. 3)" ;
+	dprr:hasNomen "Icilius" ;
+	dprr:hasID 320 ;
+	dprr:hasHighestOffice "tr. pl.? 409" ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "ICIL0320" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/320> .

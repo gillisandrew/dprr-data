@@ -1,0 +1,141 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/497> rdfs:label "Relationship Assertion Reference: #497" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 497 ;
+	dprr:hasExtraInfo "Cic. fam. XVI 26.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1507> rdfs:label "Relationship Assertion Reference: #1507" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1507 ;
+	dprr:hasExtraInfo "Plut. Cic. 1.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/560> rdfs:label "Relationship Assertion: #560" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4078> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/497> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1507> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2072> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2302> rdfs:label "Relationship Assertion: #2302" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4078> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4047> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2301> rdfs:label "Relationship Assertion: #2301" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4078> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2216> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2300> rdfs:label "Relationship Assertion: #2300" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4078> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4093> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/12> rdfs:label "Relationship: mother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 52 ;
+	dprr:hasName "mother of" ;
+	dprr:hasID 12 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4093> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "TULL4093 M. Tullius (28) Cor. Cicero" ;
+	dprr:hasOrigin "Arpinum" ;
+	dprr:hasNomen "Tullius" ;
+	dprr:hasID 4093 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -64 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "TULL4093" ;
+	dprr:hasCognomen "Cicero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4093> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4078> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "HELV4078  Helvia (19)" ;
+	dprr:hasNomen "Helvia" ;
+	dprr:hasID 4078 ;
+	dprr:hasHighestOffice "mother of M. Tullius (29) M. f. M. n. Cor. Cicero (cos. 63)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "HELV4078" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4078> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4047> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "HELV4047  Helvia (18)" ;
+	dprr:hasNomen "Helvia" ;
+	dprr:hasID 4047 ;
+	dprr:hasHighestOffice "married to C. Visellius (1) Aculeo (eq. R. C2/C1)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "HELV4047" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4047> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2216> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "31" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "TULL2216 Q. Tullius (31) M. f. M. n. Cor. Cicero" ;
+	dprr:hasOrigin "Arpinum" ;
+	dprr:hasNomen "Tullius" ;
+	dprr:hasID 2216 ;
+	dprr:hasHighestOffice "pr. 62" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -102 ;
+	dprr:hasDprrID "TULL2216" ;
+	dprr:hasCognomen "Cicero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2216> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2072> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2211> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2210> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2209> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2208> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2207> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2206> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2205> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2204> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2203> ;
+	dprr:hasPersonName "TULL2072 M. Tullius (29) M. f. M. n. Cor. Cicero" ;
+	dprr:hasOrigin "Arpinum" ;
+	dprr:hasNovusNotes "Cic. Leg. Ag. 2.3; Cic. Leg. Ag. 2.4; Q. Cic. Comm. Pet. 4; Q. Cic. Comm. Pet. 2; Q. Cic. Comm. Pet. 7; Q. Cic. Comm. Pet. 13; Sall. Cat. 23; Vell. 2.34; Vell. 2.128; Cic. Att. 1.7; Asc. Tog. Cand. 94C" ;
+	dprr:hasNomen "Tullius" ;
+	dprr:hasNobilisNotes "[Cic.] Inv. Sall. 2.5 (founder of family's nobilitas), Vell. 2.34.3 (\"nova nobilitas\"), Macrob. 2.1.8ff, 3.11.9-11, Eutrop. 7.2, Schol. Bob. Sull. 80 Stangl, Schol. Bob. Sest. 139, SHA. Tyr. Trig. 30.1 (entering nobility through union of Tullia to C. Piso Frugi q. 58)" ;
+	dprr:hasID 2072 ;
+	dprr:hasHighestOffice "cos. 63" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -106 ;
+	dprr:hasDprrID "TULL2072" ;
+	dprr:hasCognomen "Cicero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2072> .

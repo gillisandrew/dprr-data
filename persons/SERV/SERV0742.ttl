@@ -1,0 +1,172 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3427> rdfs:label "Relationship Assertion: #3427" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4996> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3426> rdfs:label "Relationship Assertion: #3426" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/919> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3425> rdfs:label "Relationship Assertion: #3425" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/919> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3424> rdfs:label "Relationship Assertion: #3424" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/21> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3959> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3423> rdfs:label "Relationship Assertion: #3423" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/21> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/747> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/21> rdfs:label "Relationship: cousin of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 39 ;
+	dprr:hasName "cousin of" ;
+	dprr:hasID 21 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1551> rdfs:label "Primary Source Reference: #1551" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato min. 41.2" ;
+	dprr:hasID 1551 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1493> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1159> rdfs:label "Post Assertion Note: #1159" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire); Act. Tr., on Sempronius; Polyb. 1.39.1; Eutrop. 2.23; Chr. 354; Fast. Hyd.; Chr. Pasc.; Oros. 4.9.10; Solin. 27.40; Cassiod.; Zon. 8.14; see Degrassi, 42f., 116, 434f. The Consuls together ravaged the coast of Africa, but lost most of their fleet in a storm while returning to Italy (Polyb. 1.39.1-6; Diod. 23.19; Eutrop. 2.23; Oros. 4.9.10-12; Solin. 27.40; Zon. 8.14). Sempronius celebrated a triumph De Poenis (<i>Act. Tr.,</i> Degrassi, 76f., 548)." ;
+	dprr:hasID 1159 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1493> rdfs:label "Post Assertion: #1493" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/742> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1159> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Cn. Servilius Cn. f. Cn. n. Caepio Pat. (43)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1493 ;
+	dprr:hasDateStart -253 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -253 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/919> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "44" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1988> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1987> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1986> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1985> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1984> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1983> ;
+	dprr:hasPersonName "SERV0919 Cn. Servilius (44) Cn. f. Cn. n. Caepio" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 919 ;
+	dprr:hasHighestOffice "cos. 203" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo -174 ;
+	dprr:hasEraFrom -237 ;
+	dprr:hasDprrID "SERV0919" ;
+	dprr:hasCognomen "Caepio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/919> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/747> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "62" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SERV0747 P. Servilius (62) Q. f. Cn. n. Geminus" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 747 ;
+	dprr:hasHighestOffice "cos. 252" ;
+	dprr:hasFiliation "Q. f. Cn. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "SERV0747" ;
+	dprr:hasCognomen "Geminus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/747> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/742> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "43" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "SERV0742 Cn. Servilius (43) Cn. f. Cn. n. Caepio" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 742 ;
+	dprr:hasHighestOffice "cos. 253" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "SERV0742" ;
+	dprr:hasCognomen "Caepio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/742> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4996> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "F" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "SERV4996 Cn. Servilius (F)" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 4996 ;
+	dprr:hasHighestOffice "father of? Cn. Servilius (43) Cn. f. Cn. n. Caepio (cos. 253)" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "SERV4996" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4996> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3959> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "63" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "SERV3959 Q. Servilius (63) Geminus" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 3959 ;
+	dprr:hasHighestOffice "son of? Q. Servilius (D)" ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "SERV3959" ;
+	dprr:hasCognomen "Geminus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3959> .

@@ -1,0 +1,276 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/442> rdfs:label "Status Assertion: #442" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 442 ;
+	dprr:hasDateStart -193 ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2473> rdfs:label "Relationship Assertion: #2473" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/808> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2472> rdfs:label "Relationship Assertion: #2472" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1460> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9854> rdfs:label "Post Assertion Note: #9854" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9854 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8924> rdfs:label "Post Assertion Note: #8924" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 730" ;
+	dprr:hasID 8924 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2641> rdfs:label "Post Assertion Note: #2641" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "M. Valerius Messalla succeeded L. Aemilius Papus. Liv. 42.28.10-13. See Münzer, Gent. Val. 51, no. 53. Bardt (30) holds that his son, Consul 161, may have been the successor (cf. Münzer, Gent. Val. 52, no. 54)." ;
+	dprr:hasID 2641 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2640> rdfs:label "Post Assertion Note: #2640" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "See 211, Decemviri sacris faciundis; Bardt 30. Papus may have succeeded M. Aemilius Lepidus who assumed this priesthood in 211." ;
+	dprr:hasID 2640 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2601> rdfs:label "Post Assertion Note: #2601" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Early in 173 these reported their failure to meet King Perseus and the Preparations for war in Macedonia (Liv. 42.2.1-2)." ;
+	dprr:hasID 2601 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2566> rdfs:label "Post Assertion Note: #2566" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Macedonia to King Perseus (Liv. 41.22.3). See 173, Legates; and on Valerius, Münzer, Gent. Val. 51, no. 53." ;
+	dprr:hasID 2566 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2271> rdfs:label "Post Assertion Note: #2271" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 38.35.1; Fast. Cap., Degrassi 48f., 122, 454f.; Obseq. 2; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Livius, SIG\n     611; cf. Holleaux, BCH 54 (1930) 40f., and Daux, Delphes 262. Livius was assigned to Gaul, and Valerius to Pisa and Liguria (Liv. 38.35.7-10, and 42.1; and on the foundation of Forum Livii, see RE s. v.). On Valerius, see Münzer, Gent. Val. 51, no. 53." ;
+	dprr:hasID 2271 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2127> rdfs:label "Post Assertion Note: #2127" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "SIG\n     601. See Münzer, Gent. Val. 51, no. 53." ;
+	dprr:hasID 2127 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2120> rdfs:label "Post Assertion Note: #2120" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections: Liv. 34.54.2 Provinces and armies Liv. 34.55.6, and 56.9." ;
+	dprr:hasID 2120 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3211> rdfs:label "Post Assertion: #3211" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2641> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2640> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius Messalla Pat. (*40)" ;
+	dprr:hasOfficeXref "Cos. 188, Pr. 193" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/15> ;
+	dprr:hasID 3211 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3155> rdfs:label "Post Assertion: #3155" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2601> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius Messalla Pat. (*40)" ;
+	dprr:hasOfficeXref "Cos. 188, Pr. 193" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3155 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3113> rdfs:label "Post Assertion: #3113" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2566> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius Messalla Pat. (*40)" ;
+	dprr:hasOfficeXref "Cos. 188, Pr. 193" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3113 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -174 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2740> rdfs:label "Post Assertion: #2740" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2271> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Valerius M. f. M'. n. Messalla Pat. (*40)" ;
+	dprr:hasOfficeXref "Pr. 193" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2740 ;
+	dprr:hasDateStart -188 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -188 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2558> rdfs:label "Post Assertion: #2558" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8924> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2127> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2120> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "M. Valerius Messalla Pat. (252)" ;
+	dprr:hasOfficeXref "Cos. 188 Pr. Peregrinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2558 ;
+	dprr:hasDateStart -193 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -193 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10249> rdfs:label "Post Assertion: #10249" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9854> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/254> ;
+	dprr:hasID 10249 ;
+	dprr:hasDateStart -189 ;
+	dprr:hasDateSourceText "189" ;
+	dprr:hasDateEnd -189 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/808> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*31" ;
+	dprr:hasReNumber "251" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0808 M. Valerius (251) M'. f. M. n. (Maximus) Messalla" ;
+	dprr:hasOtherNames "Messalla" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 808 ;
+	dprr:hasHighestOffice "cos. 226" ;
+	dprr:hasFiliation "M'. f. M. n." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "VALE0808" ;
+	dprr:hasCognomen "(Maximus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/808> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1460> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*45" ;
+	dprr:hasReNumber "253" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2283> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2282> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2281> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2280> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2279> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2278> ;
+	dprr:hasPersonName "VALE1460 M. Valerius (253) M. f. M. n. Messalla" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1460 ;
+	dprr:hasHighestOffice "cos. 161" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -204 ;
+	dprr:hasDprrID "VALE1460" ;
+	dprr:hasCognomen "Messalla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1460> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1201> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*40" ;
+	dprr:hasReNumber "252" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE1201 M. Valerius (252) M. f. M'. n. Messalla" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1201 ;
+	dprr:hasHighestOffice "cos. 188" ;
+	dprr:hasFiliation "M. f. M'. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -224 ;
+	dprr:hasDprrID "VALE1201" ;
+	dprr:hasCognomen "Messalla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1201> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/100> rdfs:label "Date Information: #100" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1201> ;
+	dprr:hasValue -224 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 128." ;
+	dprr:hasID 100 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

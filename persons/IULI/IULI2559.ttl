@@ -1,0 +1,267 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2823> rdfs:label "Status Assertion: #2823" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2823 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateEnd -46 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/459> rdfs:label "Relationship Assertion Reference: #459" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 459 ;
+	dprr:hasExtraInfo "Cic. fam. IX 7.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6650> rdfs:label "Relationship Assertion: #6650" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2374> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6648> rdfs:label "Relationship Assertion: #6648" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4186> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/527> rdfs:label "Relationship Assertion: #527" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/459> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2044> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7082> rdfs:label "Post Assertion Note: #7082" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 2.265. No mention is made of his quaestorship, but it has been generally assumed in spite of references to his youth (Caes. BC 1.8; Suet. Iul. 75.3; cf. Cic. Att. 7.13a.2) that he went on his mission to Caesar in January 49 as a senator and an official envoy of the Senate, and Sumner attributes one by or before 50 to him because of it (see the stemmata, Phoenix 25, 1971, 204 and 258, and CPh 71, 1976, 343). Although Shackleton Bailey has shown that L. Caesar and L. Roscius were almost certainly not official envoys of the Senate (JRS 50, 1960, 80-83; CLA 4.441-447, App. 3), L. Caesar's later commands and the attainment of the quaestorship by his younger brother Sextus by 48 (Dio 47.26; MRR 2.289; see Sumner, Phoenix 25, 1971, 258) strongly favor quaestorian rank. But see also Shackleton Bailey, CLF 2.314, and Onom.[110x]\n" ;
+	dprr:hasID 7082 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5806> rdfs:label "Post Assertion Note: #5806" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proquaestor under Cato at Utica (Bell. Afr. 88; 89.4; Plut. Cat. Min. 66; Dio 43.12.3). He was pardoned by Caesar, but later put to death, probably without Caesar's consent (Suet. Iul. 75.3; cf. Cic. Fam. 9.7.1; Dio 43.12.3)." ;
+	dprr:hasID 5806 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5749> rdfs:label "Post Assertion Note: #5749" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably a Proquaestor under Cato in Africa, as in 46 (Bell. Afr. 88.3; see 46, Promagistrates)." ;
+	dprr:hasID 5749 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5716> rdfs:label "Post Assertion Note: #5716" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 49, Prefects, and 47, Promagistrates." ;
+	dprr:hasID 5716 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5610> rdfs:label "Post Assertion Note: #5610" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prefect of a small fleet under Attius Varus in Africa (Caes. BC 2.23.3; see above, Legates, Envoys)." ;
+	dprr:hasID 5610 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5568> rdfs:label "Post Assertion Note: #5568" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "With Roscius Fabatus he went as a public envoy to Caesar, but also bore a personal statement from Pompey (Caes. BC 1.8; Dio 41.5.3), and in return brought back a counter-offer from Caesar, the terms of which were discussed by Pompey, the Consuls, and a number of senators. Iulius and Roscius were sent again to Caesar to report acceptance of his terms, but with attached conditions, which Caesar rejected (Caes. BC 1.9-11; Dio 41.5- 6; cf. Cic. Att. 7.13A.2, and 14.1, and 16.2, and 17.2, and 18.2, and 19; 8.12.2; Fam. 16.12.3-4; see K. von Fritz, TAPhA 72 [1941] 125-156, on these missions). See below, Prefects." ;
+	dprr:hasID 5568 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9018> rdfs:label "Post Assertion: #9018" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7082> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Iulius L. f. L. n. Caesar Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9018 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "before 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6490> rdfs:label "Post Assertion: #6490" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5806> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "L. Iulius Caesar Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 6490 ;
+	dprr:hasDateStart -46 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -46 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6430> rdfs:label "Post Assertion: #6430" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5749> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "L. Iulius Caesar Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 6430 ;
+	dprr:hasDateStart -47 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -47 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6390> rdfs:label "Post Assertion: #6390" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5716> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Iulius Caesar Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 6390 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6288> rdfs:label "Post Assertion: #6288" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5610> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Iulius Caesar Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/112> ;
+	dprr:hasID 6288 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6244> rdfs:label "Post Assertion: #6244" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7082> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5568> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Iulius Caesar. Pat. (144)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 6244 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4186> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "IULI4186 Cn. Iulius (A) Caesar" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 4186 ;
+	dprr:hasHighestOffice "son of L. Iulius (143) L. f. L. n. Caesar (cos. 64)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "IULI4186" ;
+	dprr:hasCognomen "Caesar" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4186> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2559> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "144" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "IULI2559 L. Iulius (144) L. f. L. n. Caesar" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 2559 ;
+	dprr:hasHighestOffice "q.? before 49" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -46 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "IULI2559" ;
+	dprr:hasCognomen "Caesar" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2559> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2374> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "152, 153" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1160> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1159> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1158> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1157> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1156> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1155> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1154> ;
+	dprr:hasPersonName "IULI2374 Sex. Iulius (152, 153) Caesar" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 2374 ;
+	dprr:hasHighestOffice "q. before 47" ;
+	dprr:hasEraTo -46 ;
+	dprr:hasEraFrom -83 ;
+	dprr:hasDprrID "IULI2374" ;
+	dprr:hasCognomen "Caesar" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2374> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2044> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "143" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1153> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1152> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1151> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1150> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1149> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1148> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1147> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1146> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1145> ;
+	dprr:hasPersonName "IULI2044 L. Iulius (143) L. f. L. n. Caesar" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 2044 ;
+	dprr:hasHighestOffice "cos. 64" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -40 ;
+	dprr:hasEraFrom -110 ;
+	dprr:hasDprrID "IULI2044" ;
+	dprr:hasCognomen "Caesar" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2044> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/726> rdfs:label "Date Information: #726" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2559> ;
+	dprr:hasValue -46 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "executed." ;
+	dprr:hasID 726 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2769> rdfs:label "Post Assertion Note: #2769" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to investigate and decide boundary disputes between Pisa and the colony of Luna (Liv. 45.13.10-11; see 180 and 177)." ;
+	dprr:hasID 2769 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3375> rdfs:label "Post Assertion: #3375" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1437> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2769> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Naevius Balbus (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/97> ;
+	dprr:hasID 3375 ;
+	dprr:hasDateStart -168 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -168 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1437> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "NAEV1437 L. Naevius (11) Balbus" ;
+	dprr:hasNomen "Naevius" ;
+	dprr:hasID 1437 ;
+	dprr:hasHighestOffice "V vir fin. cognosc. stat. 168" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "NAEV1437" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1437> .

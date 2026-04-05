@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2902> rdfs:label "Person Note: #2902" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/35> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p48. Brut. 170. II. cent." ;
+	dprr:hasID 2902 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5642> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2902> ;
+	dprr:hasPersonName "PAPI5642 L. Papirius (19) Fregellanus" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 5642 ;
+	dprr:hasEraTo -101 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "PAPI5642" ;
+	dprr:hasCognomen "Fregellanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5642> .

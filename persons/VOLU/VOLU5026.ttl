@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3658> rdfs:label "Relationship Assertion: #3658" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5026> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4613> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5026> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VOLU5026 -. Volumnia (16)" ;
+	dprr:hasNomen "Volumnia" ;
+	dprr:hasID 5026 ;
+	dprr:hasHighestOffice "married to C. (or Cn.) Marcius (50) Coriolanus (repulsa (cos.) 491)" ;
+	dprr:hasEraTo -450 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "VOLU5026" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5026> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4613> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "50" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MARC4613 C. (or Cn.) Marcius (50) Coriolanus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4613 ;
+	dprr:hasHighestOffice "repulsa (cos.) 491" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "MARC4613" ;
+	dprr:hasCognomen "Coriolanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4613> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> .

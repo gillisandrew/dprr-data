@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7091> rdfs:label "Post Assertion Note: #7091" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See now Degrassi's comments on ILLRP 1274a and in Acta of the 5th Internat. Congress of Gr. and Lat. Epig., 155. A sarcophagus found in Rome at the Via Cristophoro Colombo and now in the Epigraphical Museum of the Capitoline Museum bears the inscription in early letters P. Cornelio P. f. Scapola pontfex (sic) max. This person is otherwise unknown, nor has the inscription been fully published. Degrassi notes that this inscription confirms that the Scapula known from Fast. Cap. as mag. eq. in 362 (MRR 2.118) may be a Cornelius, and supports the reading in Liv. 8.22.1, P. Cornelio Scapula, for the name of the consul of 328 (MRR 2.145; RE no. 316, cf. 315). See AEpig. 1967, no. 19, and J. M. Reynolds, JRS 61, 1971, 138-139. See now H. Blanck, Zwei Corneliersarcophage, MDAI(R) 73-74, 1968, 72-77.\n" ;
+	dprr:hasID 7091 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9159> rdfs:label "Post Assertion: #9159" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3782> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7091> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P. Cornelius P. f. Scapula" ;
+	dprr:hasOfficeXref "Pont. Max." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 9159 ;
+	dprr:hasDateStart -400 ;
+	dprr:hasDateSourceText "4C?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -301 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3782> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN3782 P. Cornelius (not in RE) P. f. Scapula" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 3782 ;
+	dprr:hasHighestOffice "pont. C4?" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -301 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "CORN3782" ;
+	dprr:hasCognomen "Scapula" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3782> .

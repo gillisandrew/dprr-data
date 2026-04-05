@@ -1,0 +1,186 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2265> rdfs:label "Status Assertion: #2265" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2265 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateEnd -154 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9979> rdfs:label "Post Assertion Note: #9979" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de rege Gentio et Illurieis. MRR I.434, Itgenshorst no. 202, Rich no. 201." ;
+	dprr:hasID 9979 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8577> rdfs:label "Post Assertion Note: #8577" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 735, footnote 100" ;
+	dprr:hasID 8577 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6985> rdfs:label "Post Assertion Note: #6985" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "On the succession of embassies from 156 to 154 caused by the hostilities between Prusias II of Bithynia and Attalus lI of Pergamum, see Chr. Habicht (Hermes 84, 1956, 90-116, and RE s. v. Prusias II), whose reordering of the relevant fragments of Polybius has been accepted by Walbank (Comm. Polyb. III, on 32.16.1; 33.1; 32.15.1-4; 33.7, 12.1-13.10, with references to earlier discussions on p. 540). See MRR 1.448-451. The attack on Attalus in 156 caused Lentulus to return to Rome with the Attalid prince Athenaeus, but before their arrival a doubting Senate had sent L. Appuleius and C. Petronius. The report of Lentulus and Athenaeus led to the immediate appointment, probably late in 156, of a new embassy, C. Claudius Centho, L. Hortensius and C. Aurunculeius, who reached Pergamum in the spring of 155 in time to arrange a conference which was ruined by Pharnaces' treachery, to be immured in Pergamum and to see the havoc Pharnaces caused. By autumn they had returned to Rome, and a commission of ten was sent, led by L. Anicius Gallus, C. Fannius Strabo, and Q. Fabius Maximus Aemilianus, late in 155 or early in 154, who observed Attalus' victorious counterattack and returned. Finally, in summer 154, a new embassy, Ap. Claudius Centho, L. Oppius, and A. Postumius Albinus, secured peace between the two kings, and the payment of indemnities by Prusias to Attalus and the Greek cities. See also L. Robert, Et. Anat. 110-115." ;
+	dprr:hasID 6985 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2893> rdfs:label "Post Assertion Note: #2893" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent with seven others stop the war between Prusias and Attalus when the previous embassy failed (see 155, Legates, no. a). Upon Prusias' refusal to withdraw they ordered Attalus to protect his kingdom, and separated, some to report to the Senate, some to break up Prusias' alliances (Polyb. 33.7.1-4, and 12-13.4; cf. App. Mith. 3)." ;
+	dprr:hasID 2893 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2857> rdfs:label "Post Assertion Note: #2857" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Didasc. Ter. Adelph.; Fast. Cap., Degrassi 50f., 123, 462f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Anicius, Cic. Brut. 287. Cethegus drained a portion of the Pomptine marshes (Liv. Per. 46)." ;
+	dprr:hasID 2857 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2781> rdfs:label "Post Assertion Note: #2781" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Illyria (Liv. 45.16.2; Act. Tr. Cap. and Urbisalv., Degrassi 80f., 338f., 556). With the aid of five senatorial Legates, he completed the peace settlement with Illyria, and returned to celebrate his triumph over King Gentius (Liv. 45.26.1-5, and 43.1-9; Polyb. 30.22.1-12; Act. Tr. Cap. and Urbisalv.; Vell. 1.9.5; App. Illyr. 9; Eutrop. 4.8)." ;
+	dprr:hasID 2781 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2732> rdfs:label "Post Assertion Note: #2732" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Succeeding Claudius Centho, he destroyed the fleet of Gentius, besieged him in Scodra, and reduced him to surrender (Liv. 44.21.4-10, and 30-32.5; 45.3.1-2; cf. Diod. 31.8.10; Plut. Aem. 13.2; Flor. 1.29; App. Ill. 9; Eutrop. 4.6; Zon. 9.24)." ;
+	dprr:hasID 2732 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2731> rdfs:label "Post Assertion Note: #2731" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 44.17.5 Provinces and armies Liv. 44.17.9-10." ;
+	dprr:hasID 2731 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9146> rdfs:label "Post Assertion: #9146" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6985> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Anicius (Gallus) (15)" ;
+	dprr:hasOfficeXref "Cos. 160, Pr. 168" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 9146 ;
+	dprr:hasDateStart -155 ;
+	dprr:hasDateSourceText "155-154" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3539> rdfs:label "Post Assertion: #3539" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6985> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2893> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Anicius (Gallus) (15)" ;
+	dprr:hasOfficeXref "Cos. 160, Pr. 168" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3539 ;
+	dprr:hasDateStart -154 ;
+	dprr:hasDateSourceText "155-154" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3491> rdfs:label "Post Assertion: #3491" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2857> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Anicius L. f. L. n. Gallus (15)" ;
+	dprr:hasOfficeXref "Pr. 168" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3491 ;
+	dprr:hasDateStart -160 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -160 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3391> rdfs:label "Post Assertion: #3391" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2781> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Anicius Gallus (15)" ;
+	dprr:hasOfficeXref "Cos. 160, Pr. 168" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 3391 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3325> rdfs:label "Post Assertion: #3325" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8577> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2732> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2731> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Anicius Gallus (15)" ;
+	dprr:hasOfficeXref "Cos. 160 Pr. Peregrinus, then Illyria" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3325 ;
+	dprr:hasDateStart -168 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -168 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10374> rdfs:label "Post Assertion: #10374" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1408> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9979> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10374 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateSourceText "167" ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1408> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ANIC1408 L. Anicius (15) L. f. L. n. Gallus" ;
+	dprr:hasNomen "Anicius" ;
+	dprr:hasID 1408 ;
+	dprr:hasHighestOffice "cos. 160" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "ANIC1408" ;
+	dprr:hasCognomen "Gallus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1408> .

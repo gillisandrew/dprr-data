@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> rdfs:label "Secondary Source: Shackleton Bailey 1995" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Letters" ;
+	dprr:hasID 34 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's letters. Stuttgart : Teubner, 1995." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1995" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3977> rdfs:label "Relationship Assertion: #3977" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5443> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2573> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2701> rdfs:label "Person Note: #2701" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p42. Fam. 12.25.1. brought a letter to Cicero in 43" ;
+	dprr:hasID 2701 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5443> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2701> ;
+	dprr:hasPersonName "CORN5443 -. Cornificius (3)" ;
+	dprr:hasNomen "Cornificius" ;
+	dprr:hasID 5443 ;
+	dprr:hasHighestOffice "son of? Q. Cornificius (8) Q. f. Mae. (pr.? 45)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CORN5443" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5443> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2573> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/831> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/830> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/829> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/828> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/827> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/826> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/825> ;
+	dprr:hasPersonName "CORN2573 Q. Cornificius (8) Q. f. Mae." ;
+	dprr:hasOrigin "Lanuvium (Farney E34)" ;
+	dprr:hasNomen "Cornificius" ;
+	dprr:hasID 2573 ;
+	dprr:hasHighestOffice "pr.? 45" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -90 ;
+	dprr:hasDprrID "CORN2573" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2573> .

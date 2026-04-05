@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1883> rdfs:label "Post Assertion Note: #1883" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Subordinates of the Aediles were condemned for theft of treasury funds, with detriment to Lucullus' reputation (Liv. 30.39.6-7)." ;
+	dprr:hasID 1883 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1882> rdfs:label "Post Assertion Note: #1882" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Scipio's Legate, Q. Fulvius Gillo, returned to Africa late in 203 with the Carthaginian envoys (Liv. 30.25.9-10; cf. De Sanctis 3.2.587). This would not however differentiate him from the Q. Fulvius above, since in one case, L. Cornelius Lentulus in 205, the Curule Aedile was absent in Spain during his magistracy. See Münzer, RE." ;
+	dprr:hasID 1882 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2254> rdfs:label "Post Assertion: #2254" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1055> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1883> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1882> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Fulvius (Gillo) (25, cf. 69)" ;
+	dprr:hasOfficeXref "Pr. 200" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 2254 ;
+	dprr:hasDateStart -202 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -202 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1055> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "25, cf. 69" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FULV1055 Q. Fulvius (25, cf. 69) (Gillo)" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 1055 ;
+	dprr:hasHighestOffice "aed. cur. 202" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "FULV1055" ;
+	dprr:hasCognomen "(Gillo)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1055> .

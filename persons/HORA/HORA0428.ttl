@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/780> rdfs:label "Primary Source Reference: #780" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. I 130" ;
+	dprr:hasID 780 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/771> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/549> rdfs:label "Post Assertion Note: #549" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.6.3 and 13-15; Diod. 15.25.1; Chr. 354 (Aluginense [sic] et Cincinnato); Degrassi 101, 390f. Camillus is credited with victories over Volscians, Latins and Hernici (Liv. 6.6-9; Frontin. Str. 2.8.4), then retook Sutrium and Nepete in Etruria (6.9-10), while the Elogium (CIL 1\n     , p. 191 and Inscr. Ital. 13.3.61) mentions action against Velitrae. Valerius accompanied him (Liv. 6.6-10), while Horatius and Quinctius succeeded to the Volscian command (Liv. 6.9.6). Servilius {101} held command near the city and Cornelius presided over civil affairs (Liv. 6.6.13 and 15). On Valerius, see Münzer, Gent. Val. 37, no. 7." ;
+	dprr:hasID 549 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/548> rdfs:label "Post Assertion Note: #548" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. has only four Military Tribunes this year, and makes no mention of Valerius and Horatius. In Diod. Cornelius' praenomen is M. The full name of Valerius appears in Fast. Cap. on 380 (Degrassi 32f.), where Degrassi's reading of the numeral III agrees with Livy's tertium, and ends the doubts raised by Hülsen (Klio 2 [1902] 248ff.) regarding his place in the regular lists for this year." ;
+	dprr:hasID 548 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/771> rdfs:label "Post Assertion: #771" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/428> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/549> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/548> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Horatius - f. - n. Pulvillus Pat. (14)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 771 ;
+	dprr:hasDateStart -386 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -386 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/428> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "HORA0428 L. Horatius (14) Pulvillus" ;
+	dprr:hasNomen "Horatius" ;
+	dprr:hasID 428 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 386" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "HORA0428" ;
+	dprr:hasCognomen "Pulvillus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/428> .

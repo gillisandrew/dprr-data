@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/158> rdfs:label "Primary Source Reference: #158" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 56.5" ;
+	dprr:hasID 158 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/154> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/157> rdfs:label "Primary Source Reference: #157" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasID 157 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/154> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/156> rdfs:label "Primary Source Reference: #156" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 56.4" ;
+	dprr:hasID 156 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/154> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/155> rdfs:label "Primary Source Reference: #155" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 56.1" ;
+	dprr:hasID 155 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/154> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/145> rdfs:label "Primary Source Reference: #145" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 37.1" ;
+	dprr:hasID 145 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/144> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/115> rdfs:label "Post Assertion Note: #115" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.43.1; Fast. Cap. ([- - - -] Vibulanus II); Dion. Hal. 8.90.5, cf. 10.56.2; Chr. 354 (Pelos et Vibulano II); Fast. Hyd. (Tertullo et Fabio II), so also Chr. Pasc.; Cassiod.; Lyd. Magg. 1.38; on Iulius, Ascon. 76 C. See Degrassi 24f., 89, 354f. Livy and Dion. Hal. mention fighting with Aequi and Veientani." ;
+	dprr:hasID 115 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/114> rdfs:label "Post Assertion Note: #114" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "These Consuls are omitted in Diodorus. Livy (2.43.1, see apparatus in Conway and Walters edition) has the reading C. Tullius, but Dion. Hal., Cassiod., and Fast. Cap. under 451 furnish the correct forms. On his filiation, see Fast. Cap. under 451, Degrassi 27, and on the cognomen Iullus, see 489, note 2." ;
+	dprr:hasID 114 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/105> rdfs:label "Post Assertion Note: #105" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.41.12; Diod. 11.27.1 (with the cognomina Tricostus and Silvanus, resp.); Dion. Hal. 8.77.1; Chr. 354 (Vivulano et Malucinense); Fast. Hyd. (Fabio et Maloginense), so also Chr. Pasc.; Cassiod.; see Degrassi 89, 354f. C. raided Veientane territory (Dion. Hal. 8.82.1); Fabius attacked the Volsci and Aequi (8.82.1-3), and became unpopular for refusing to distribute plunder (Liv. 2.42.1-2; Dion. Hal. 8.82.1-3, and 90.6, a differing version)." ;
+	dprr:hasID 105 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/154> rdfs:label "Post Assertion: #154" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/77> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/115> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/114> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Fabius K. f. - n. Vibulanus Pat. (164, cf. 159)" ;
+	dprr:hasOfficeXref "Cos. 485" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 154 ;
+	dprr:hasDateStart -482 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/144> rdfs:label "Post Assertion: #144" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/77> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/105> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Fabius K. f. - n. Vibulanus Pat. (164, cf. 159)" ;
+	dprr:hasOfficeXref "Cos. 482" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 144 ;
+	dprr:hasDateStart -485 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -485 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/77> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "164, cf. 159" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FABI0077 Q. Fabius (164, cf. 159) K. f.  Vibulanus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 77 ;
+	dprr:hasHighestOffice "cos. 485" ;
+	dprr:hasFiliation "K. f. " ;
+	dprr:hasEraTo -480 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "FABI0077" ;
+	dprr:hasCognomen "Vibulanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/77> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1007> rdfs:label "Date Information: #1007" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/77> ;
+	dprr:hasValue -480 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, against Veii." ;
+	dprr:hasID 1007 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

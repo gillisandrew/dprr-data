@@ -1,0 +1,142 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1470> rdfs:label "Primary Source Reference: #1470" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Aem. 5.3(4)" ;
+	dprr:hasID 1470 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1414> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1090> rdfs:label "Post Assertion Note: #1090" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Put to death for impurity (Liv. Per. 14; and Jerome, Chr. ad ann. 276, p. 130 Helm; Syncell. 522,19; Oros. 4.2.8). See Münzer, Philol. 92 (1937-38) 214f." ;
+	dprr:hasID 1090 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1414> rdfs:label "Post Assertion: #1414" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/693> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1090> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sextilia (31)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/25> ;
+	dprr:hasID 1414 ;
+	dprr:hasDateStart -273 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -273 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10131> rdfs:label "Post Assertion: #10131" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/693> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/25> ;
+	dprr:hasID 10131 ;
+	dprr:hasDateStart -275 ;
+	dprr:hasDateEnd -274 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10130> rdfs:label "Post Assertion: #10130" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/693> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/25> ;
+	dprr:hasID 10130 ;
+	dprr:hasDateStart -285 ;
+	dprr:hasDateEnd -276 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2060> rdfs:label "Person Note: #2060" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/12> ;
+	dprr:hasNoteText "Münzer 1937:214 f." ;
+	dprr:hasID 2060 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2059> rdfs:label "Person Note: #2059" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. per. 14; Hier. Chr. a. Abr. 1740 (276 v. Chr.) (ohne Namen); Oros. 4,2,8." ;
+	dprr:hasID 2059 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2058> rdfs:label "Person Note: #2058" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Anfang 3. Jh.-274 v. Chr." ;
+	dprr:hasID 2058 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2057> rdfs:label "Person Note: #2057" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Fem. Pleb." ;
+	dprr:hasID 2057 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2056> rdfs:label "Person Note: #2056" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Klose V 5; MRR 1,197; Saquete 52." ;
+	dprr:hasID 2056 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2055> rdfs:label "Person Note: #2055" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Sextilius 31. KP Sextilius I.9." ;
+	dprr:hasID 2055 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2054> rdfs:label "Person Note: #2054" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3083" ;
+	dprr:hasID 2054 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/693> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "31" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2060> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2059> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2058> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2057> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2056> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2055> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2054> ;
+	dprr:hasPersonName "SEXT0693  Sextilia (31)" ;
+	dprr:hasNomen "Sextilia" ;
+	dprr:hasID 693 ;
+	dprr:hasHighestOffice "vestal. 273" ;
+	dprr:hasEraTo -273 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "SEXT0693" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/693> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/971> rdfs:label "Date Information: #971" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/693> ;
+	dprr:hasValue -273 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "executed." ;
+	dprr:hasID 971 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1607> rdfs:label "Date Information: #1607" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/693> ;
+	dprr:hasValue -300 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1607 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

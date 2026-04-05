@@ -1,0 +1,274 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2201> rdfs:label "Status Assertion: #2201" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2201 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1120> rdfs:label "Relationship Assertion Reference: #1120" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1120 ;
+	dprr:hasExtraInfo "Liv. XL 44.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/946> rdfs:label "Relationship Assertion: #946" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1120> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/822> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3553> rdfs:label "Relationship Assertion: #3553" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1567> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2506> rdfs:label "Relationship Assertion: #2506" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1500> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2505> rdfs:label "Relationship Assertion: #2505" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1289> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9856> rdfs:label "Post Assertion Note: #9856" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9856 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8537> rdfs:label "Post Assertion Note: #8537" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 733" ;
+	dprr:hasID 8537 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2541> rdfs:label "Post Assertion Note: #2541" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 48f., 122, 458f.; Obseq. 10; Chr. 354; Oros. 4.20.34; Cassiod.; and on Lepidus, Cic. Prov. Cons. 20; Val. Max.{402} 4.2.1; 6.6.1; Fast. Hyd.; Chr. Pasc. Both consuls campaigned in Liguria and celebrated triumphs (Act. Tr. Cap. and Urbisalv., Degrassi 80f., 338f., 555; cf. Liv. 41.19.1-2)." ;
+	dprr:hasID 2541 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2540> rdfs:label "Post Assertion Note: #2540" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Obsequens and Cassiodorus give Q. as the praenomen, confusing him with his brother, the Consul of 174." ;
+	dprr:hasID 2540 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2474> rdfs:label "Post Assertion Note: #2474" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Placed in charge of the investigation of cases of poisoning (Liv. 40.44.6)." ;
+	dprr:hasID 2474 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2473> rdfs:label "Post Assertion Note: #2473" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 40.44.2 Provinces 40.44.6-7." ;
+	dprr:hasID 2473 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10164> rdfs:label "Post Assertion Note: #10164" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Liguribus. MRR I.401-2, Itgenshorst no. 197, Rich no. 196." ;
+	dprr:hasID 10164 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3088> rdfs:label "Post Assertion: #3088" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2541> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2540> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Mucius Q. f. P. n. Scaevola (16)" ;
+	dprr:hasOfficeXref "Pr. 179" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3088 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2996> rdfs:label "Post Assertion: #2996" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8537> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2474> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2473> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Mucius Scaevola (16)" ;
+	dprr:hasOfficeXref "Cos. 175 Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2996 ;
+	dprr:hasDateStart -179 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -179 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10559> rdfs:label "Post Assertion: #10559" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10164> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10559 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSourceText "175" ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10251> rdfs:label "Post Assertion: #10251" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1288> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9856> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/253> ;
+	dprr:hasID 10251 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSourceText "169" ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/822> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1509> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1508> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1507> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1506> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1505> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1504> ;
+	dprr:hasPersonName "MUCI0822 Q. Mucius (19) P. f. Scaevola" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasID 822 ;
+	dprr:hasHighestOffice "cos. 220" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -209 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MUCI0822" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/822> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1567> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1497> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1496> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1495> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1494> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1493> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1492> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1491> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1490> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1489> ;
+	dprr:hasPersonName "MUCI1567 P. Mucius (17) P. f. Q. n. Scaevola" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasNobilisNotes "Auct. Vir. Ill. 64.7" ;
+	dprr:hasID 1567 ;
+	dprr:hasHighestOffice "cos. 133" ;
+	dprr:hasFiliation "P. f. Q. n." ;
+	dprr:hasEraTo -114 ;
+	dprr:hasEraFrom -180 ;
+	dprr:hasDprrID "MUCI1567" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1567> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1500> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "72" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1292> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1291> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1290> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1289> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1288> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1287> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1286> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1285> ;
+	dprr:hasPersonName "LICI1500 P. Licinius (72) P. f. P. n. Crassus Dives Mucianus" ;
+	dprr:hasOtherNames "Dives Mucianus" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasNobilisNotes "Gell. 1.13.9-10" ;
+	dprr:hasID 1500 ;
+	dprr:hasHighestOffice "cos. 131" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -130 ;
+	dprr:hasEraFrom -169 ;
+	dprr:hasDprrID "LICI1500" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1500> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1289> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MUCI1289 Q. Mucius (20) Q. f. P. n. Scaevola" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasID 1289 ;
+	dprr:hasHighestOffice "cos. 174" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MUCI1289" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1289> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1288> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "MUCI1288 P. Mucius (16) Q. f. P. n. Scaevola" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasID 1288 ;
+	dprr:hasHighestOffice "cos. 175" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MUCI1288" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1288> .

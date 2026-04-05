@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> rdfs:label "Secondary Source: Shackleton Bailey 1992" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Speeches" ;
+	dprr:hasID 33 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's speeches. Stuttgart : Teubner, 1992." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1992" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3970> rdfs:label "Relationship Assertion: #3970" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5212> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1712> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3969> rdfs:label "Relationship Assertion: #3969" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5212> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3967> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2470> rdfs:label "Person Note: #2470" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p30. Pis. fr,IX, (xiii, xv Nisbet,62, 67). father of Calventia, grandfather of L. Calpurnius (88) Piso" ;
+	dprr:hasID 2470 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5212> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2470> ;
+	dprr:hasPersonName "CALV5212 -. Calventius (not in RE)" ;
+	dprr:hasNomen "Calventius" ;
+	dprr:hasID 5212 ;
+	dprr:hasHighestOffice "father of Calventia (B)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CALV5212" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5212> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3967> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "B" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CALV3967  Calventia (B)" ;
+	dprr:hasNomen "Calventia" ;
+	dprr:hasID 3967 ;
+	dprr:hasHighestOffice "daughter of -. Calventius (not in RE)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CALV3967" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3967> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1712> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "88" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CALP1712 L. Calpurnius (88) L. f. C. n. Piso Caesoninus" ;
+	dprr:hasOtherNames "Caesoninus" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 1712 ;
+	dprr:hasHighestOffice "cos. 112" ;
+	dprr:hasFiliation "L. f. C. n." ;
+	dprr:hasEraTo -107 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CALP1712" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1712> .

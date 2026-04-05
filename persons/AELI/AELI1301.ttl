@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2497> rdfs:label "Post Assertion Note: #2497" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served in the third legion under Manlius Vulso in Istria (Liv. 41.1.7). Aided in the counterattack on the Istri who had captured Manlius' camp (Liv. 41.4.3). See below, note 7." ;
+	dprr:hasID 2497 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2496> rdfs:label "Post Assertion Note: #2496" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "C. Aelius may be the Caelius whom Ennius celebrated in Annals 15 (401-408 V) for his valor against the Istri (Macrob. Sat. 6.3.3). It is notable that according to Livy the Tribune who withstood the enemy and was killed was not Caelius but M. Licinius Strabo. Perhaps Livy or his source mistook the role as well as the name. M. Agnew convincingly suggests that C. Caecilius in a fragment of Cato (FOR 1.217, no. 242) should be corrected to C. Caelius and assigned to the speech De Re Histriae Militari (FOR 1.57f., 188; cf. AJPh 60 [1939] 214-219)." ;
+	dprr:hasID 2496 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3038> rdfs:label "Post Assertion: #3038" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1301> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2497> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2496> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Aelius (or Caelius) (6, cf. Caelius 1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 3038 ;
+	dprr:hasDateStart -178 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -178 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1301> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6, cf. Caelius 1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "AELI1301 C. Aelius (6, cf. Caelius 1) (or Caelius)" ;
+	dprr:hasOtherNames "Caelius)" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 1301 ;
+	dprr:hasHighestOffice "tr. mil. 178" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "AELI1301" ;
+	dprr:hasCognomen "(or" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1301> .

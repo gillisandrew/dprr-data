@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/200> rdfs:label "Primary Source Reference: #200" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. acad. II 13" ;
+	dprr:hasID 200 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/196> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/160> rdfs:label "Post Assertion Note: #160" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Secured passage of the bill to transfer elections of Tribunes to the Comitia Tributa and to increase their number to five (Liv. 2.55.10-58.2; Dion. Hal. 9.43-49; cf. Zon. 7.17; Rotondi 197). According to Diod. (11.68.7), the number was increased to four." ;
+	dprr:hasID 160 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/196> rdfs:label "Post Assertion: #196" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/115> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/160> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Laetorius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 196 ;
+	dprr:hasDateStart -471 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -471 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/115> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "LAET0115 C. Laetorius (1)" ;
+	dprr:hasNomen "Laetorius" ;
+	dprr:hasID 115 ;
+	dprr:hasHighestOffice "tr. pl. 471" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "LAET0115" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/115> .

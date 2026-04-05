@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/951> rdfs:label "Post Assertion Note: #951" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Plebeians added under the Ogulnian law (Liv. 10.9.2; and on Marcius, ILS 9338; Val. Max. 4.1.3; Plut. Cor. 1; on Minucius, see Grueber, CRRBM 1.135f.; Cesano, Stud. Num. 1.147f.)." ;
+	dprr:hasID 951 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9895> rdfs:label "Post Assertion: #9895" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/633> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/951> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 9895 ;
+	dprr:hasDateStart -300 ;
+	dprr:hasDateEnd -300 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1082> rdfs:label "Person Note: #1082" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 10,9,2." ;
+	dprr:hasID 1082 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1081> rdfs:label "Person Note: #1081" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "3. V. 4. Jh.-kurz nach 300 v. Chr." ;
+	dprr:hasID 1081 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1080> rdfs:label "Person Note: #1080" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1080 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1079> rdfs:label "Person Note: #1079" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt A 5; MRR 1,172; Szemler Pri 6." ;
+	dprr:hasID 1079 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1078> rdfs:label "Person Note: #1078" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Genucius 3. KP Genucius 1." ;
+	dprr:hasID 1078 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1077> rdfs:label "Person Note: #1077" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "1846" ;
+	dprr:hasID 1077 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/633> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1082> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1081> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1080> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1079> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1078> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1077> ;
+	dprr:hasPersonName "GENU0633 C. Genucius (3) (Augurinus)" ;
+	dprr:hasNomen "Genucius" ;
+	dprr:hasID 633 ;
+	dprr:hasHighestOffice "aug. c. 300" ;
+	dprr:hasEraTo -295 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "GENU0633" ;
+	dprr:hasCognomen "(Augurinus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/633> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1392> rdfs:label "Date Information: #1392" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/633> ;
+	dprr:hasValue -300 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNotes "Shortly after 300" ;
+	dprr:hasID 1392 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1391> rdfs:label "Date Information: #1391" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/633> ;
+	dprr:hasValue -325 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1391 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "B" .

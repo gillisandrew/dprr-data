@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2654> rdfs:label "Status Assertion: #2654" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2180> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2654 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9100> rdfs:label "Post Assertion Note: #9100" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 749, footnote 326" ;
+	dprr:hasID 9100 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4751> rdfs:label "Post Assertion Note: #4751" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cicero's colleague in the aedileship (see 69, Aediles), and a possible competitor for the consulship of 63 (Cic. Att. 1.1.1)." ;
+	dprr:hasID 4751 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4748> rdfs:label "Post Assertion Note: #4748" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "2 As in the list of Praetors given in 67, only eight of the nine listed above can have held the praetorship in 66. None can be later; three, Caesonius, Cornificius, and Sulpicius Galba, may be earlier, while the date of Varinius depends upon the correct order of the governors of Asia." ;
+	dprr:hasID 4748 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4596> rdfs:label "Post Assertion Note: #4596" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Verr. 1.29; Ps.-Ascon. 216 Stangl; Schol. Gron. 351 Stangl." ;
+	dprr:hasID 4596 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4595> rdfs:label "Post Assertion Note: #4595" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "5 Mommsen (Str. 1.443, note 2; 2.518-522; RF 1.100) and Seidel (FA) supposed that Cicero and his colleague Caesonius were Curule Aediles. The games however that Cicero gave were dedicated to Ceres, Liber and Libera, and to Flora (Verr. 2.5.36-37). He never refers to himself as Curule Aedile, or records giving the Megalesian games. The primi Romani ludi of Verr. 2.5.36-37 were probably not the Ludi Romani but the Ludi Plebeii. On the whole question, see L. R. Taylor, AJPh 60 (1939) 200, note 25." ;
+	dprr:hasID 4595 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8101> rdfs:label "Post Assertion: #8101" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2180> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9100> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4751> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4748> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Caesonius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8101 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSourceText "66" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5201> rdfs:label "Post Assertion: #5201" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2180> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4596> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4595> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Caesonius (1)" ;
+	dprr:hasOfficeXref "Pr. 66?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 5201 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2180> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CAES2180 M. Caesonius (1)" ;
+	dprr:hasNomen "Caesonius" ;
+	dprr:hasID 2180 ;
+	dprr:hasHighestOffice "pr. 66" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CAES2180" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2180> .

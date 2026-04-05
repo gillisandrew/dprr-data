@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/902> rdfs:label "Primary Source Reference: #902" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLV 15.4" ;
+	dprr:hasID 902 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/889> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/884> rdfs:label "Primary Source Reference: #884" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLIV 20.5" ;
+	dprr:hasID 884 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/871> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/599> rdfs:label "Post Assertion Note: #599" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.42.3; Fast. Cap. ([- -C]ossus II; [- -M]aluginens. II; [- -M]acerinus; and the rest entire); Chr. 354 (Cosso II et Grasso); Degrassi 32f., 104, 398f. On Valerius, see Münzer, Gent. Val. 37, no. 7." ;
+	dprr:hasID 599 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/589> rdfs:label "Post Assertion Note: #589" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.36.6; Diod. 15.77.1; Fast. Cap. ([- - -]n. Cossus; [- -Mal]uginensis; [- - -Cicur]in. [I]I; and Fabius' name entire); Chr. 354 (Fidenas III et Maluginense); Degrassi 32f., 103, 396f." ;
+	dprr:hasID 589 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/588> rdfs:label "Post Assertion Note: #588" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Servilius may be a son of the Mil. Tr. of 386. The cognomen and filiation of Veturius are based on that of L. Veturius, Mil. Tr. 368 and 367, who may be his brother. Quinctius is omitted by Diod. who lists only five names. His cognomen is only a conjecture. According to Münzer, RE no. 249, Cornelius Maluginensis may possibly be identified with no. 248, the Censor Suffectus of 393. For Fabius, Diod. has {Gr}." ;
+	dprr:hasID 588 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/889> rdfs:label "Post Assertion: #889" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/473> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/599> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "A. Cornelius - f. - n. Cossus Pat. (115)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 369" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 889 ;
+	dprr:hasDateStart -367 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -367 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/871> rdfs:label "Post Assertion: #871" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/473> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/589> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/588> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Cornelius - f. - n. Cossus Pat. (115)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 367" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 871 ;
+	dprr:hasDateStart -369 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -369 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/473> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "115" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "CORN0473 A. Cornelius (115) Cossus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 473 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 367" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "CORN0473" ;
+	dprr:hasCognomen "Cossus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/473> .

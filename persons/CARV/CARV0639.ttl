@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1322> rdfs:label "Primary Source Reference: #1322" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VII 674f." ;
+	dprr:hasID 1322 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1275> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1321> rdfs:label "Primary Source Reference: #1321" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VII 610ff" ;
+	dprr:hasID 1321 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1275> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1320> rdfs:label "Primary Source Reference: #1320" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Lucan. VII 379ff." ;
+	dprr:hasID 1320 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1275> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/957> rdfs:label "Post Assertion Note: #957" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.9.12-13, from Piso, fr. 28 Peter." ;
+	dprr:hasID 957 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/956> rdfs:label "Post Assertion Note: #956" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Münzer doubts the two plebeians despite Livy's preference and the authority of Piso, since patricians should hold the office in regular course in an odd year; and Domitius was defeated in 305 (Plin. NH 33.17, probably also from Piso). See Seidel, 14f. Could magistrates of successive years have been telescoped?" ;
+	dprr:hasID 956 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1275> rdfs:label "Post Assertion: #1275" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/639> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/957> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/956> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Carvilius Q. f. - n. Maximus (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 1275 ;
+	dprr:hasDateStart -299 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -299 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/639> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "CARV0639 Sp. Carvilius (8) Q. f. - n. Maximus" ;
+	dprr:hasNomen "Carvilius" ;
+	dprr:hasID 639 ;
+	dprr:hasHighestOffice "aed. cur. 299" ;
+	dprr:hasFiliation "Q. f. - n." ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "CARV0639" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/639> .

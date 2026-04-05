@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/460> rdfs:label "Primary Source Reference: #460" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fam. IV 9.2" ;
+	dprr:hasID 460 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/451> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/459> rdfs:label "Primary Source Reference: #459" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fam. IV 9.4" ;
+	dprr:hasID 459 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/451> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/458> rdfs:label "Primary Source Reference: #458" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fam. IV 7.6" ;
+	dprr:hasID 458 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/451> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/457> rdfs:label "Primary Source Reference: #457" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fam. IV 11.1" ;
+	dprr:hasID 457 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/451> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/366> rdfs:label "Post Assertion Note: #366" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.25.5; Diod. 12.60.1; Chr. 354 (Mamercino et Medullino); Degrassi 95, 372f." ;
+	dprr:hasID 366 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/365> rdfs:label "Post Assertion Note: #365" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "In Diod. the praenomen {Gr} is followed, probably after omission of Postumius, by the name Pinarius. In Livy Pinarius' cognomen is Mamercus. Furius' filiation is suggested by Fast. Cap. on 405. He may have been the Consul of 413 and 409, but the lapse of time favors assigning these consulships to a son of the same name. Instead of Postumius, some Mss of Diod. have {Gr}. Postumius' filiation is suggested by the name of the Consul of 466." ;
+	dprr:hasID 365 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/451> rdfs:label "Post Assertion: #451" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/251> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/366> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/365> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Pinarius - f. - n. Mamercinus Pat. (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 451 ;
+	dprr:hasDateStart -432 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -432 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/251> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PINA0251 L. Pinarius (11) Mamercinus" ;
+	dprr:hasNomen "Pinarius" ;
+	dprr:hasID 251 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 432" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "PINA0251" ;
+	dprr:hasCognomen "Mamercinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/251> .

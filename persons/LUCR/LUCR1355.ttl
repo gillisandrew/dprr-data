@@ -1,0 +1,177 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2240> rdfs:label "Status Assertion: #2240" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2240 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateEnd -162 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2528> rdfs:label "Relationship Assertion: #2528" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1020> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8562> rdfs:label "Post Assertion Note: #8562" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 735" ;
+	dprr:hasID 8562 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2843> rdfs:label "Post Assertion Note: #2843" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "While they were in Syria Octavius was killed by Leptines of Laodiceia (Polyb. 31.11.1, 12.4, and 33.5; 32.2.1-8, 3.1-3, and 10-13; Cic. Phil. 9.4, and 7, and 14; Diod. 31.29; Plin. NH 34.24; App. Syr. 46-47; Obseq. 15; Zon. 9.25)." ;
+	dprr:hasID 2843 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2836> rdfs:label "Post Assertion Note: #2836" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to the East with instructions to disarm Syria, now ruled by the minor son of Antiochus IV, burn the warships and hamstring the elephants, and to survey the situation in Macedonia, Galatia, and Cappadocia, also to reconcile the two Ptolemies in Alexandria (Polyb. 31.2.9-14, and 8.4-8; Cic. Phil. 9.4; App. Syr. 46; cf. Durrbach and Roussel, I. de Délos 3.1429, on Octavius' offering at Delos; also Holleaux, {Gr}. 157f.). See 162, Legates." ;
+	dprr:hasID 2836 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2724> rdfs:label "Post Assertion Note: #2724" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Philippus in Macedonia (Liv. 44.7.1 and 12)." ;
+	dprr:hasID 2724 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2649> rdfs:label "Post Assertion Note: #2649" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They probably remained for a time in Hither and Farther Spain respectively (see 172), until Canuleius came to succeed them (see Praetors)." ;
+	dprr:hasID 2649 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2610> rdfs:label "Post Assertion Note: #2610" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 42.9.8 Provinces and armies 42.10.13-14, and 18.2 and 6-7." ;
+	dprr:hasID 2610 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3477> rdfs:label "Post Assertion: #3477" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2843> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Lucretius (14)" ;
+	dprr:hasOfficeXref "Pr. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3477 ;
+	dprr:hasDateStart -162 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3464> rdfs:label "Post Assertion: #3464" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2836> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Lucretius (14)" ;
+	dprr:hasOfficeXref "Pr. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3464 ;
+	dprr:hasDateStart -163 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -163 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3313> rdfs:label "Post Assertion: #3313" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2724> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "? Sp. Lucretius (14)" ;
+	dprr:hasOfficeXref "Pr. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 3313 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3223> rdfs:label "Post Assertion: #3223" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2649> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Lucretius (14)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 3223 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3179> rdfs:label "Post Assertion: #3179" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1355> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8562> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2610> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Sp. Lucretius (14)" ;
+	dprr:hasOfficeXref "Farther Spain" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3179 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1355> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "LUCR1355 Sp. Lucretius (14)" ;
+	dprr:hasNomen "Lucretius" ;
+	dprr:hasID 1355 ;
+	dprr:hasHighestOffice "pr. 172" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "LUCR1355" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1355> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1020> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "LUCR1020 Sp. Lucretius (13)" ;
+	dprr:hasNomen "Lucretius" ;
+	dprr:hasID 1020 ;
+	dprr:hasHighestOffice "pr. 205" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "LUCR1020" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1020> .

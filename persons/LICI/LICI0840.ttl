@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1746> rdfs:label "Primary Source Reference: #1746" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Sen. dial. X de brev. vit. 17.6" ;
+	dprr:hasID 1746 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1676> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1312> rdfs:label "Post Assertion Note: #1312" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "These men, defined by Livy as maiores natu, were sent to Carthage with Rome's ultimatum (Liv. 21.18.1, cf. 21.19.6, and 20.9; Dio fr. 55.10; Zon. 8.22; cf. Polyb. 3.20.6 and 9, and 33.1-4, and 40.2; Frontin. Str. 1.11.4; Sil. Ital. 2.1-390; App. Ib. 13)." ;
+	dprr:hasID 1312 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1310> rdfs:label "Post Assertion Note: #1310" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The term maiores natu favors identifying Licinius with the Consul of 236 even though he is listed after the Consuls of 219. Otherwise he would be an unknown ex-Praetor, possibly the father of P. Licinius Crassus, the Consul of 171 (Münzer RE)." ;
+	dprr:hasID 1310 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1676> rdfs:label "Post Assertion: #1676" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/840> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1312> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1310> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "C. Licinius (Varus ?) (12, cf. 174)" ;
+	dprr:hasOfficeXref "Cos. 236" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 1676 ;
+	dprr:hasDateStart -218 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -218 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/840> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "12, cf. 174" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "LICI0840 C. Licinius (12, cf. 174) (Varus)" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 840 ;
+	dprr:hasHighestOffice "leg. amb. 218" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "LICI0840" ;
+	dprr:hasCognomen "(Varus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/840> .

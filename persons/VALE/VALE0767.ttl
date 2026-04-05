@@ -1,0 +1,220 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7570> rdfs:label "Relationship Assertion: #7570" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/779> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3440> rdfs:label "Relationship Assertion: #3440" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4997> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3439> rdfs:label "Relationship Assertion: #3439" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1022> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1629> rdfs:label "Primary Source Reference: #1629" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Mor. 197" ;
+	dprr:hasID 1629 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1561> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1621> rdfs:label "Primary Source Reference: #1621" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Marc. 2.3" ;
+	dprr:hasID 1621 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1553> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1611> rdfs:label "Primary Source Reference: #1611" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Flamin. 18.2" ;
+	dprr:hasID 1611 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1543> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8848> rdfs:label "Post Assertion Note: #8848" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726" ;
+	dprr:hasID 8848 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1210> rdfs:label "Post Assertion Note: #1210" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Varro in Gell. 17.21.43; Fast. Cap. (names entire); Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod., with Manlius for Mamilius; see Degrassi 42f., 117, 438f. On Valerius, see Münzer, Gent. Val. 48, no. 40." ;
+	dprr:hasID 1210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1206> rdfs:label "Post Assertion Note: #1206" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Celebrated a naval triumph pro praetore ex Sicilia (Act. Tr., Degrassi 76f., 549; cf. Val. Max. 2.8.2). See Münzer, Gent. Val. 48, no. 40." ;
+	dprr:hasID 1206 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1196> rdfs:label "Post Assertion Note: #1196" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent as colleague with Catulus, and as the latter was wounded was actively in charge at the battle of the Aegates Islands (Val. Max. 2.8.2; Zon. 8.17, with the cognomen Flaccus). See Münzer, Gent. Val. 48, no. 40." ;
+	dprr:hasID 1196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10237> rdfs:label "Post Assertion Note: #10237" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Naval Triumph ex Sicilia. MRR I.220, Itgenshorst no. 142, Rich no. 141." ;
+	dprr:hasID 10237 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1561> rdfs:label "Post Assertion: #1561" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1210> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Valerius Q. f. P. n. Falto Pat. (157)" ;
+	dprr:hasOfficeXref "Pr. 242" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1561 ;
+	dprr:hasDateStart -239 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -239 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1553> rdfs:label "Post Assertion: #1553" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1206> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Valerius Falto Pat. (157)" ;
+	dprr:hasOfficeXref "Cos. 239" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 1553 ;
+	dprr:hasDateStart -241 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -241 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1543> rdfs:label "Post Assertion: #1543" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8848> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1196> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Valerius Falto Pat. (157)" ;
+	dprr:hasOfficeXref "Cos. 239 Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1543 ;
+	dprr:hasDateStart -242 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -242 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10632> rdfs:label "Post Assertion: #10632" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/767> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10237> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10632 ;
+	dprr:hasDateStart -241 ;
+	dprr:hasDateSourceText "241" ;
+	dprr:hasDateEnd -241 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/779> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "155" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0779 P. Valerius (155) Q. f. P. n. Falto" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 779 ;
+	dprr:hasHighestOffice "cos. 238" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "VALE0779" ;
+	dprr:hasCognomen "Falto" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/779> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/767> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "157" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "VALE0767 Q. Valerius (157) Q. f. P. n. Falto" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 767 ;
+	dprr:hasHighestOffice "cos. 239" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "VALE0767" ;
+	dprr:hasCognomen "Falto" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/767> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4997> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "156" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "VALE4997 Q. Valerius (156) Falto" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 4997 ;
+	dprr:hasHighestOffice "father of? Q. Valerius (157) Q. f. P. n. Falto (cos. 239)" ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "VALE4997" ;
+	dprr:hasCognomen "Falto" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4997> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1022> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "153" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE1022 M. Valerius (153) Falto" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1022 ;
+	dprr:hasHighestOffice "pr. 201" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -231 ;
+	dprr:hasDprrID "VALE1022" ;
+	dprr:hasCognomen "Falto" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1022> .

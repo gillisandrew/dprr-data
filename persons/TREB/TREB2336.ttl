@@ -1,0 +1,437 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/283> rdfs:label "Status Assertion Note: #283" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 355. Cic. Fam. 15.21.2. quaestor" ;
+	dprr:hasID 283 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/283> rdfs:label "Status Assertion: #283" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/283> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "C. TREBONIUS (6)" ;
+	dprr:hasID 283 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1997> rdfs:label "Status Assertion: #1997" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1997 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1175> rdfs:label "Status Assertion: #1175" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1175 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/667> rdfs:label "Relationship Assertion Reference: #667" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 667 ;
+	dprr:hasExtraInfo "Cic. Phil. XIII 23" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/665> rdfs:label "Relationship Assertion: #665" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/667> ;
+	dprr:hasRelationshipNumber 1 ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4114> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7372> rdfs:label "Post Assertion Note: #7372" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor 60 or 58, in 60 if Cic. Fam. 15.21.2 refers to opposition to the attempt of Clodius to become a plebeian, but 58 if the consuls he opposed were Gabinius and Piso and the tribune was Clodius himself (see Shackleton Bailey, CLF 2.367, who favors 60). Mention of a colleague  suggests that he was one of the two quaestores urbani (ibid.).\n" ;
+	dprr:hasID 7372 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6082> rdfs:label "Post Assertion Note: #6082" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Asia (see 44, Promagistrates). He attempted to expedite Dolabella's passage through Asia by providing supplies while refusing to open cities to him, but Dolabella captured Smyrna by surprise, and put Trebonius to death, about the middle of January, and, according to Cicero, after torturing him (Cic. Phil. 11.5-9; App. BC 3.26; Dio 47.29; cf. Cic. Phil. 11, passim; 12.21 and 25; 13.22 and 36-39; 14.8; Ad Brut. 2.3.1 and 5; Fam. 12.12.1, and 14.5, and 15.4; Liv. Per. 119; Strabo 14.1.37; Vell. 2.69.1; App. BC 3.61; 4.58; Dio 47.30.6; Oros. 6.18.6; on the date, see Joseph. AJ 14.225, a letter of Dolabella, Imperator, to Ephesus, dated Lenaeon 1-January 24, and of Brutus in Cic. Ad Brut. 2.3. 1, dated April 1, still expecting word of the reaction in Rome to news of Trebonius' death)." ;
+	dprr:hasID 6082 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6009> rdfs:label "Post Assertion Note: #6009" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named to be Proconsul of Asia by Caesar before his death (App. BC 3.2; cf. Plut. Brut. 19.2). An active member of the conspiracy against Caesar, though his part at the end was to draw Antony aside (Cic. Phil. 2.27 and 30 and 34; 13.22; Fam. 10.28.1; Vell. 2.56.3, and 69.1., Liv. Per. 116; Plut. Caes. 66.2, Brutus Albinus; Brut. 17.1; Ant. 13.4; App. BC 2.113, and 117; 3.19; Dio 44.14.3-4, and 19.1 and 3). He promptly departed to his province of Asia and there raised money and troops at the request of Brutus and Cassius (Cic. Att. 14.10.1; Fam. 12.16; App. BC 3.2, and 6), and later aided Cassius on his way to Syria (Dio 47.21.3, and 26.1; cf. Lentulus in Cic. Fam. 12.14.5). On his treatment of Theopompus of Cnidus, see Cic. Phil. 13.33. See Sternkopf, Hermes 47 (1912) 330, 335." ;
+	dprr:hasID 6009 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5869> rdfs:label "Post Assertion Note: #5869" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He entered office with Fabius Maximus (Fast. Cap., Degrassi 56f., 133, 500f.; Fast. Amer., ibid. 242; Fast. Colot., ibid. 274; Dio 43.46.2; cf. Cic. Phil. 11.5; Vell. 2.69.1; Suet. Iul. 76.2; and see above, on Caesar, for the date)." ;
+	dprr:hasID 5869 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5818> rdfs:label "Post Assertion Note: #5818" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Farther Spain (see 47, Promagistrates), but was driven out by the Pompeians by the summer of this year (Bell. Hisp. 7.4; 12.2; Dio 43.29.3). He returned with Caesar at the end of the year (Cic. Fam. 15.20, and 21; on his meeting with Antony at Narbo to sound him out regarding a plot against Caesar, see Cic. Phil. 2.34; Plut. Ant. 13). See 45, Promagistrates, on Fabius, Pedius, and Carrinas in Spain." ;
+	dprr:hasID 5818 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5754> rdfs:label "Post Assertion Note: #5754" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul (Bell. Alex. 64.2) in Farther Spain, in succession to Q. Cassius Longinus (see above), and remained into 46 with increasing difficulty against mutinous legions, while the Pompeians rallied their supporters (Dio 43.29)." ;
+	dprr:hasID 5754 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5634> rdfs:label "Post Assertion Note: #5634" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He opposed the measures proposed by Caelius Rufus (Caes. BC 3.20.1-22.3; Dio 42.22.2-4; see above), aided Cicero after his return to Italy (Cic. Att. 11.6.3; Fan?.. 15.21.2), and was hurriedly sent to Spain as Proconsul at the end of the year (Cic. Fam. 15.21.2; cf. Auct. Bell. Alex. 64.2)." ;
+	dprr:hasID 5634 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5603> rdfs:label "Post Assertion Note: #5603" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Legate of Caesar (Caes. BC 1.36.4; 2.1.1), who brought the Gallic legions to Spain (Cic. Att. 8.3.7), and was placed in command of operations against Massilia (Caes. BC 1.36.4; 2.1-16, and 22; Liv. Per. 110; Dio 41.19.3; Oros. 6.15.6; Schol. Bern. on Lucan 3, pp. 113, 115 Usener). See above, on D. Brutus." ;
+	dprr:hasID 5603 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5485> rdfs:label "Post Assertion Note: #5485" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul, placed in charge of the winter-quarters in Belgic Gaul (Hirt. in Caes. BG 8.54.4)." ;
+	dprr:hasID 5485 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5424> rdfs:label "Post Assertion Note: #5424" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul (Hirt. in Caes. BG 8.6.1, 11.1, 14.1, and 46.4)." ;
+	dprr:hasID 5424 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5369> rdfs:label "Post Assertion Note: #5369" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul (Caes. BG 7.11.2, and 81.6)." ;
+	dprr:hasID 5369 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5308> rdfs:label "Post Assertion Note: #5308" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul, with special command against the Eburones (Caes. BG 6.33)." ;
+	dprr:hasID 5308 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5266> rdfs:label "Post Assertion Note: #5266" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Caesar in Gaul. He shared in the expedition to Britain (Caes. BG 5.17.2), and in the autumn was stationed among the Belgae (BG 5.24.3), and aided in the relief of Quintus Cicero. See Cic. QF 3.1.9." ;
+	dprr:hasID 5266 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5189> rdfs:label "Post Assertion Note: #5189" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried against all obstruction his law to give Crassus command of Syria and Pompey of both Spanish provinces, each for five years (Liv. Per. 105; Cic. Att. 4.9.1; Vell. 2.46.2; Plut. Pomp. 52; Crass. 15; Cat. Min. 43; Dio 39.33-36)." ;
+	dprr:hasID 5189 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4972> rdfs:label "Post Assertion Note: #4972" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Fam. 15.21.2, if the passage is correctly interpreted as referring to the attempt of Clodius to transfer himself to the Plebs." ;
+	dprr:hasID 4972 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9425> rdfs:label "Post Assertion: #9425" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Urbanus" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7372> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Trebonius C. f. - n. (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9425 ;
+	dprr:hasDateStart -58 ;
+	dprr:hasDateSourceText "60 or 58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6788> rdfs:label "Post Assertion: #6788" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Asia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6082> ;
+	dprr:hasPosition 25 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6788 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6701> rdfs:label "Post Assertion: #6701" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Asia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6009> ;
+	dprr:hasPosition 23 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6701 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6554> rdfs:label "Post Assertion: #6554" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5869> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Trebonius C. f. - n. (6)" ;
+	dprr:hasOfficeXref "Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 6554 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6502> rdfs:label "Post Assertion: #6502" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Ulterior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5818> ;
+	dprr:hasPosition 20 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6502 ;
+	dprr:hasDateStart -46 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -46 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6435> rdfs:label "Post Assertion: #6435" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Ulterior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5754> ;
+	dprr:hasPosition 15 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6435 ;
+	dprr:hasDateStart -47 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -47 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6313> rdfs:label "Post Assertion: #6313" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5634> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45 Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6313 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6279> rdfs:label "Post Assertion: #6279" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5603> ;
+	dprr:hasPosition 29 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6279 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6161> rdfs:label "Post Assertion: #6161" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5485> ;
+	dprr:hasPosition 16 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6161 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6090> rdfs:label "Post Assertion: #6090" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5424> ;
+	dprr:hasPosition 20 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6090 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6035> rdfs:label "Post Assertion: #6035" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5369> ;
+	dprr:hasPosition 16 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6035 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5972> rdfs:label "Post Assertion: #5972" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5308> ;
+	dprr:hasPosition 17 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5972 ;
+	dprr:hasDateStart -53 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -53 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5926> rdfs:label "Post Assertion: #5926" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5266> ;
+	dprr:hasPosition 13 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5926 ;
+	dprr:hasDateStart -54 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -54 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5844> rdfs:label "Post Assertion: #5844" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5189> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5844 ;
+	dprr:hasDateStart -55 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -55 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5575> rdfs:label "Post Assertion: #5575" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Urbanus" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7372> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4972> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? C. Trebonius (6)" ;
+	dprr:hasOfficeXref "Cos. Suff. 45, Pr. 48" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 5575 ;
+	dprr:hasDateStart -60 ;
+	dprr:hasDateSourceText "60 or 58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -60 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4114> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TREB4114 C. Trebonius (5)" ;
+	dprr:hasOrigin "Etruria?" ;
+	dprr:hasNomen "Trebonius" ;
+	dprr:hasID 4114 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TREB4114" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4114> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2336> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TREB2336 C. Trebonius (6) C. f." ;
+	dprr:hasNomen "Trebonius" ;
+	dprr:hasID 2336 ;
+	dprr:hasHighestOffice "cos. suff. 45" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "TREB2336" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2336> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/631> rdfs:label "Date Information: #631" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2336> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "executed by Dolabella." ;
+	dprr:hasID 631 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

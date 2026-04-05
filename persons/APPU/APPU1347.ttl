@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2607> rdfs:label "Post Assertion Note: #2607" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected to assign unoccupied lands in Liguria and Gaul to individual settlers, ten iugera each to Romans, three each to Latins (Liv. 42.4.3-4)." ;
+	dprr:hasID 2607 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3168> rdfs:label "Post Assertion: #3168" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1347> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2607> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "Q. Appuleius (16)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/91> ;
+	dprr:hasID 3168 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1347> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "APPU1347 Q. Appuleius (16)" ;
+	dprr:hasNomen "Appuleius" ;
+	dprr:hasID 1347 ;
+	dprr:hasHighestOffice "X vir agr. dand. assig. 173" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "APPU1347" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1347> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9411> rdfs:label "Post Assertion Note: #9411" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 282" ;
+	dprr:hasID 9411 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6979> rdfs:label "Post Assertion Note: #6979" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Curator denariorum flandorum? In MRR 2.432, refer also to Crawford, RRC 1.298f., no. 282, 118 B.C. He was a junior associate of the IIviri coloniae deducendae for Narbo, L. Licinius Crassus (55) and Cn. Domitius Ahenobarbus (21), and has his name, along with those of L. Cosconius, C. Malleolus, L. Pomponius, and L. Porcius Licinus, on the coinage. He can hardly be identified with M. Aurelius Scaurus (215) who became Cos. suff. in 108, but he was perhaps the quaestor in the late- second century who wished to prosecute his proconsular commander, L. Flaccus (Cic. Div. in Caec. 63; cf. Badian, Studies 101, note 98; Gnomon 33, 1961, 498). Perhaps father of M. Aurelius M. f. Vol. (a Scaurus? or a Cotta?) in the consilium of Pompeius Strabo at Asculum (see Criniti, L'Epigrafe di Asculum 18, 111-112). See below on no. 216. See Sumner, Orators 79-82, on the generations of Aurelii Scauri; and Badian, Klio 66, 1984, 298-301, who now, in view of Crawford's dating of the moneyer to 118, and Sumner's discussion, would accept the identification of the moneyer with the consul of 108. If so, his son was probably the M. Aurelius Scaurus who was quaestor in Asia of uncertain date (I. de Delos 1858 bis-ILLRP 373; Cic. Verr. 2.1.85, nuper) and may be identified with the M. Aurelius Scaurus who was debarred from prosecuting his proconsul L. Flaccus (Cic. Div. in Caec. 63). Flaccus would be L. Valerius Flaccus (178), proconsul of Asia in the 90s. See below, on Valerius (176, 177, 178). The identity of M. Aurelius M. f. Vol. (see the next entry) remains obscure.\n" ;
+	dprr:hasID 6979 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8670> rdfs:label "Post Assertion: #8670" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3596> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Narbo" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9411> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6979> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Aurelius Scaurus, M." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/185> ;
+	dprr:hasID 8670 ;
+	dprr:hasDateStart -118 ;
+	dprr:hasDateSourceText "118" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -118 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3596> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "cf. 215, 216" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "AURE3596 M. Aurelius (cf. 215, 216) Scaurus" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 3596 ;
+	dprr:hasHighestOffice "cur. denar. fland. 118" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "AURE3596" ;
+	dprr:hasCognomen "Scaurus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3596> .

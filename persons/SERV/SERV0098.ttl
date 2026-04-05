@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/187> rdfs:label "Primary Source Reference: #187" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Caes. b.Alex. 77.2" ;
+	dprr:hasID 187 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/183> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/180> rdfs:label "Primary Source Reference: #180" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Aur. Vict. 2.1" ;
+	dprr:hasID 180 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/176> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/144> rdfs:label "Post Assertion Note: #144" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under the Consul Valerius (Dion. Hal. 9.35.4)." ;
+	dprr:hasID 144 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/139> rdfs:label "Post Assertion Note: #139" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.51.4; Diod. 11.54.1; Fast. Cap. ([- -St]ructus); Dion. Hal. 9.25.1, and 28.1; Chr. 354 (Rutilo et Structo); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 24f., 90, 356f. They fought Etruscans at the Janiculum (Liv. 2.51.4-9; Dion. Hal. 9.26.4-9)." ;
+	dprr:hasID 139 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/138> rdfs:label "Post Assertion Note: #138" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "In Liv. Servilius' praenomen is Sp., in Dion. Hal., Servius, and in Diod., Gaius. Sp. however is clear in the filiations of the consul of 463, who was probably his son, and the Dictator of 418 in Fast. Cap. Diodorus supplies the respective cognomina Tricostus and Structus." ;
+	dprr:hasID 138 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/183> rdfs:label "Post Assertion: #183" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/98> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/144> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sp. Servilius (Priscus Structus) Pat. (85)" ;
+	dprr:hasOfficeXref "Cos. 476" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 183 ;
+	dprr:hasDateStart -475 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -475 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/176> rdfs:label "Post Assertion: #176" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/98> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/139> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/138> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Servilius (P. ? f. - n.) Structus Pat. (85)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 176 ;
+	dprr:hasDateStart -476 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -476 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/98> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "85" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "SERV0098 Sp. Servilius (85) (P. ? f. - n.) Structus" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 98 ;
+	dprr:hasHighestOffice "cos. 476" ;
+	dprr:hasFiliation "(P. ? f. - n.)" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "SERV0098" ;
+	dprr:hasCognomen "Structus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/98> .

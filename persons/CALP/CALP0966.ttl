@@ -1,0 +1,197 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2042> rdfs:label "Relationship Assertion: #2042" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1222> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2146> rdfs:label "Primary Source Reference: #2146" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Tac. Ann. 1.12.4" ;
+	dprr:hasID 2146 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2045> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2145> rdfs:label "Primary Source Reference: #2145" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. NH pr.31" ;
+	dprr:hasID 2145 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2045> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2082> rdfs:label "Primary Source Reference: #2082" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Zon. 8 (15)" ;
+	dprr:hasID 2082 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2010> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2023> rdfs:label "Primary Source Reference: #2023" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 39.1" ;
+	dprr:hasID 2023 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1951> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1965> rdfs:label "Primary Source Reference: #1965" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. VI 7.3" ;
+	dprr:hasID 1965 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1893> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8887> rdfs:label "Post Assertion Note: #8887" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 727" ;
+	dprr:hasID 8887 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1687> rdfs:label "Post Assertion Note: #1687" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ordered to remain in command in Etruria until the arrival of his successor (Hostilius Tubulus, Liv. 27.22.13)." ;
+	dprr:hasID 1687 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1655> rdfs:label "Post Assertion Note: #1655" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued as Propraetor in Etruria (Liv. 27.7.10, and 21.6)." ;
+	dprr:hasID 1655 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1613> rdfs:label "Post Assertion Note: #1613" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Imperium prorogued, probably as Propraetor (Liv. 27.6.1; cf. 21.6) in Etruria (Liv. 26.28.6; cf. 27.7.10), though he was summoned to a brief command at Capua (27.6.1)." ;
+	dprr:hasID 1613 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1553> rdfs:label "Post Assertion Note: #1553" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 26.3.9, 15.8, and 21.1. Commanded the citadel when Hannibal was near Rome (26.20.2). Celebrated the Ludi Apollinares (Liv. 26.23.3; Fest. 436, with praenomen M., and 438 L; see Grueber, CRRBM{273} 1.251ff., and 450ff.; Cesano, Stud. Num. 1.166f.). See also Gaius 4.19; Lange, 2.662; and Appendix, Tribunes of the Plebs." ;
+	dprr:hasID 1553 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1552> rdfs:label "Post Assertion Note: #1552" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "As no Pr. Peregrinus is mentioned, Calpurnius probably combined the duties of both praetorships. See Mommsen, Str. 2.210, note 5." ;
+	dprr:hasID 1552 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1551> rdfs:label "Post Assertion Note: #1551" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections and Provinces Liv. 25.41.12-13; armies: 26.1.9-13, cf. 28.10-12" ;
+	dprr:hasID 1551 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2045> rdfs:label "Post Assertion: #2045" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1687> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (61)" ;
+	dprr:hasOfficeXref "Pr. 211" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 2045 ;
+	dprr:hasDateStart -208 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -208 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2010> rdfs:label "Post Assertion: #2010" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1655> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (61)" ;
+	dprr:hasOfficeXref "Pr. 211" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 2010 ;
+	dprr:hasDateStart -209 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1951> rdfs:label "Post Assertion: #1951" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1613> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (61)" ;
+	dprr:hasOfficeXref "Pr. 211" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 1951 ;
+	dprr:hasDateStart -210 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -210 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1893> rdfs:label "Post Assertion: #1893" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8887> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1553> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1552> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1551> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (61, cf. 8)" ;
+	dprr:hasOfficeXref "Pr. Urbanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1893 ;
+	dprr:hasDateStart -211 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -211 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/966> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "61" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CALP0966 C. Calpurnius (61) Piso" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 966 ;
+	dprr:hasHighestOffice "pr. 211" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -251 ;
+	dprr:hasDprrID "CALP0966" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/966> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1222> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "62" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CALP1222 C. Calpurnius (62) C. f. C. n. Piso" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 1222 ;
+	dprr:hasHighestOffice "cos. 180" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -180 ;
+	dprr:hasEraFrom -230 ;
+	dprr:hasDprrID "CALP1222" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1222> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2220> rdfs:label "Date Information: #2220" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/966> ;
+	dprr:hasValue -251 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 73." ;
+	dprr:hasID 2220 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

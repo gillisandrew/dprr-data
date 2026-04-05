@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6759> rdfs:label "Post Assertion Note: #6759" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proquaestor pro praetore in Farther Spain (Hubner, Eph. Epig. 8.502, no. 277, found at Arcos de la Frontera, date uncertain)." ;
+	dprr:hasID 6759 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7514> rdfs:label "Post Assertion: #7514" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3103> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6759> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "(L. Scribonius) L.f. Libo (20?)" ;
+	dprr:hasOfficeXref "Cos. 34?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/195> ;
+	dprr:hasID 7514 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSourceText "date uncertain - C2 or after?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3103> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "20?" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "SCRI3103 L. (Scribonius) (20?) L.f. Libo" ;
+	dprr:hasNomen "(Scribonius)" ;
+	dprr:hasID 3103 ;
+	dprr:hasHighestOffice "proq. pro pr. date uncertain" ;
+	dprr:hasFiliation "L.f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SCRI3103" ;
+	dprr:hasCognomen "Libo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3103> .

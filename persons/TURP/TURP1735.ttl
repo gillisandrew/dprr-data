@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8063> rdfs:label "Post Assertion Note: #8063" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praef. soc.? 109. Plutarch (Mar. 8.1-2; see MRR 1.547) refers to him as a praefectus fabrum (#).\n" ;
+	dprr:hasID 8063 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3473> rdfs:label "Post Assertion Note: #3473" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commander and sole survivor of the troops at Vaga, and so was convicted of treason and put to death (Sall. Iug. 68-69; Plut. Mar. 8.1-2; App. Num. 3)." ;
+	dprr:hasID 3473 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3472> rdfs:label "Post Assertion Note: #3472" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "According to Appian (Num. 3), Turpilius was a Roman. Could Mommsen's text of Sall. Iug. 69.4 (Nam is civis ex Latio erat), if correct, mean that he was a Roman citizen of Latin origin ? See Reid, JRS 1 (1911) 77-83, and Sherwin-White, Rom. Citizenship 127f., on the status of Turpilius; and on the date of the massacre at Vaga, Carcopino, RH 158 (1928) 17f." ;
+	dprr:hasID 3472 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4167> rdfs:label "Post Assertion: #4167" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1735> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8063> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3473> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3472> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? T. Turpilius Silanus (10)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/148> ;
+	dprr:hasID 4167 ;
+	dprr:hasDateStart -109 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -109 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1735> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "TURP1735 T. Turpilius (10) Silanus" ;
+	dprr:hasNomen "Turpilius" ;
+	dprr:hasID 1735 ;
+	dprr:hasHighestOffice "praef. soc.? 109" ;
+	dprr:hasEraTo -109 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TURP1735" ;
+	dprr:hasCognomen "Silanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1735> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/315> rdfs:label "Date Information: #315" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1735> ;
+	dprr:hasValue -109 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "executed." ;
+	dprr:hasID 315 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3932> rdfs:label "Post Assertion Note: #3932" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They were sent to restore Nicomedes of Bithynia and Ariobarzanes of Cappadocia to their thrones (App. Mith. 11; Iustin 38.3.4, and 4.4-5). They then incited the kings to raid the territory of Mithridates and refused to heed the latter's protests (App. Mith. 11-17; Iustin 38.3.4-9; cf. Sall. Hist. 4.69M). Maltinus was driven from Cappadocia before negotiations ended (Iustin 38.3.8, and 4.4; cf. App. Mith. 15; Trogus Prol. 38). See 88, Legates." ;
+	dprr:hasID 3932 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3931> rdfs:label "Post Assertion Note: #3931" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "19 It remains doubtful whether the name Mancinus in Appian (Mith. 11 and 19) is simply a corruption for Maltinus, or whether he was T. Manlius Mancinus, Tr. Pl. 107, or an otherwise unknown possessor of the cognomen. See Th. Reinach, Mithridates Eupator 110 (trans. Goetz), and Münzer, RE, s. v. \"Manlius,\" nos. 59 and 61. On the date, see Reinach, op. cit. 109ff.; Magie, Roman Rule in Asia Minor 1.209f., and 2. 1100." ;
+	dprr:hasID 3931 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4561> rdfs:label "Post Assertion: #4561" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1918> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3932> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3931> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Mancinus (Manlius 61)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 4561 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11159> rdfs:label "Post Assertion: #11159" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1918> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3932> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 11159 ;
+	dprr:hasDateStart -88 ;
+	dprr:hasDateEnd -88 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1918> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Manlius 61" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MANC1918 -. Mancinus (Manlius 61)" ;
+	dprr:hasNomen "Mancinus" ;
+	dprr:hasID 1918 ;
+	dprr:hasHighestOffice "leg. amb. 89" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MANC1918" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1918> .

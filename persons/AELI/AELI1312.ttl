@@ -1,0 +1,251 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/486> rdfs:label "Status Assertion: #486" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 486 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1999> rdfs:label "Status Assertion: #1999" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1999 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1123> rdfs:label "Relationship Assertion Reference: #1123" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1123 ;
+	dprr:hasExtraInfo "Liv. XLI 21.8" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/949> rdfs:label "Relationship Assertion: #949" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1123> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1006> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8931> rdfs:label "Post Assertion Note: #8931" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 735, footnote 96" ;
+	dprr:hasID 8931 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2771> rdfs:label "Post Assertion Note: #2771" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 109; Liv. 45.16.1; Fast. Cap., Degrassi 50f., 123, 460f.; Obseq. 11; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. Aelius held command in Gaul and Iunius at Pisa against the Ligurians (Liv. 45.16.3, 17.6, and 44.1). Iunius also consulted the Senate regarding the Rhodians (Liv. 45.20.6)." ;
+	dprr:hasID 2771 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2669> rdfs:label "Post Assertion Note: #2669" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "By the Lex Villia the Consul of 167 must have been Praetor during or before 170. Paetus probably appeared in the lacuna before Liv. 43.4." ;
+	dprr:hasID 2669 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2572> rdfs:label "Post Assertion Note: #2572" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Q. Aelius Paetus succeeded P. Aelius Paetus." ;
+	dprr:hasID 2572 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2571> rdfs:label "Post Assertion Note: #2571" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Liv. 41.21.8-9." ;
+	dprr:hasID 2571 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2514> rdfs:label "Post Assertion Note: #2514" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Vetoed his colleagues' attempt to recall Manlius Vulso from his prorogued command in Istria (Liv. 41.6.3)." ;
+	dprr:hasID 2514 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2512> rdfs:label "Post Assertion Note: #2512" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The cognomen is not preserved. He may be Paetus, Consul 167, or Tubero, the son-in-law of Aemilius Paullus." ;
+	dprr:hasID 2512 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2511> rdfs:label "Post Assertion Note: #2511" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "As they were in office at the end of the consular year 178, they are to be listed in 177 (cf. Niccolini, FTP 122)." ;
+	dprr:hasID 2511 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9647> rdfs:label "Post Assertion: #9647" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2572> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2571> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 9647 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3378> rdfs:label "Post Assertion: #3378" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2771> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Q. Aelius P. f. Q. n. Paetus (104)" ;
+	dprr:hasOfficeXref "Pr. 170 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3378 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3256> rdfs:label "Post Assertion: #3256" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8931> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2669> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Aelius Paetus (104)" ;
+	dprr:hasOfficeXref "Cos. 167" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3256 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3055> rdfs:label "Post Assertion: #3055" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2514> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2512> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2511> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Aelius (Paetus ?) or Tubero ?) (104)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3055 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -177 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/71> rdfs:label "Person Note: #71" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 41,21,9." ;
+	dprr:hasID 71 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/70> rdfs:label "Person Note: #70" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "210er-nach 167 v. Chr." ;
+	dprr:hasID 70 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/69> rdfs:label "Person Note: #69" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 69 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/68> rdfs:label "Person Note: #68" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt A 19; MRR 1,405; Szemler A 14." ;
+	dprr:hasID 68 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/67> rdfs:label "Person Note: #67" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Aelius 104. NP Aelius I.10." ;
+	dprr:hasID 67 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/66> rdfs:label "Person Note: #66" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "478" ;
+	dprr:hasID 66 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1312> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "104" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/71> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/70> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/69> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/68> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/67> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/66> ;
+	dprr:hasPersonName "AELI1312 Q. Aelius (104) P. f. Q. n. Paetus" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 1312 ;
+	dprr:hasHighestOffice "cos. 167" ;
+	dprr:hasFiliation "P. f. Q. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -219 ;
+	dprr:hasDprrID "AELI1312" ;
+	dprr:hasCognomen "Paetus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1312> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1006> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "101" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/59> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/58> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/57> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/56> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/55> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/54> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/53> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/52> ;
+	dprr:hasPersonName "AELI1006 P. Aelius (101) Q. f. P. n. Paetus" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 1006 ;
+	dprr:hasHighestOffice "cos. 201" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -174 ;
+	dprr:hasEraFrom -239 ;
+	dprr:hasDprrID "AELI1006" ;
+	dprr:hasCognomen "Paetus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1006> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1163> rdfs:label "Date Information: #1163" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1312> ;
+	dprr:hasValue -219 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1163 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

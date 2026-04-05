@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/893> rdfs:label "Primary Source Reference: #893" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XLIX 40.2" ;
+	dprr:hasID 893 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/880> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/592> rdfs:label "Post Assertion Note: #592" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.38.2; Diod. 15.78.1; Fast. Cap. ([- -C]apitolin.; [- -M]alugin. VII; [- -Praet]extat. IIII; the rest entire); Chr. 354 (Capitolino et Structo); Degrassi 32f., 103f., 398f." ;
+	dprr:hasID 592 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/591> rdfs:label "Post Assertion Note: #591" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. names only three Military Tribunes in this year, the first three in the list above. On the name of Quinctius, see also Fast. Cap. on 367." ;
+	dprr:hasID 591 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/880> rdfs:label "Post Assertion: #880" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/477> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/592> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/591> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Sp. Servilius C. f. C. n. Structus Pat. (86)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 880 ;
+	dprr:hasDateStart -368 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -368 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/477> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "86" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "SERV0477 Sp. Servilius (86) C. f. C. n. Structus" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 477 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 368" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "SERV0477" ;
+	dprr:hasCognomen "Structus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/477> .

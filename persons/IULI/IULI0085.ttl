@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/359> rdfs:label "Primary Source Reference: #359" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Cael. 24" ;
+	dprr:hasID 359 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/354> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/319> rdfs:label "Primary Source Reference: #319" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Brut. 104" ;
+	dprr:hasID 319 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/314> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/159> rdfs:label "Primary Source Reference: #159" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 57.4" ;
+	dprr:hasID 159 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/155> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/277> rdfs:label "Post Assertion Note: #277" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to negotiate with the plebeians who had seceded to the Aventine (Liv. 3.50.15-16; Ascon. 77 C)." ;
+	dprr:hasID 277 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/260> rdfs:label "Post Assertion Note: #260" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prepared and caused the enactment of ten tables of laws (Cic. Rep. 2.61; Liv. 3.33.1-36.2; Diod. 12.23.1; Dion. Hal. 10.56.1-2; Tac. Ann. 3.27; Gell. 11.18.6; 17.21.15; 20.1; Dig. 1.2.2.3-4 and 24; Zon. 7.18)." ;
+	dprr:hasID 260 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/252> rdfs:label "Post Assertion Note: #252" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. preserves all or part of eight names, omitting Sestius and Curiatius, Fast. Cap. all or part of six with space for the rest, those of Sestius, Curiatius, Romilius and Postumius, which are supplied from the information on their consulships (Degrassi 26f., 94, 364f.). According to Dion. Hal. (10.56.2) they were all consulars, but this principle was not applied consistently in Livy or Fast. Cap. See notes 3 and 4." ;
+	dprr:hasID 252 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/115> rdfs:label "Post Assertion Note: #115" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 2.43.1; Fast. Cap. ([- - - -] Vibulanus II); Dion. Hal. 8.90.5, cf. 10.56.2; Chr. 354 (Pelos et Vibulano II); Fast. Hyd. (Tertullo et Fabio II), so also Chr. Pasc.; Cassiod.; Lyd. Magg. 1.38; on Iulius, Ascon. 76 C. See Degrassi 24f., 89, 354f. Livy and Dion. Hal. mention fighting with Aequi and Veientani." ;
+	dprr:hasID 115 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/114> rdfs:label "Post Assertion Note: #114" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "These Consuls are omitted in Diodorus. Livy (2.43.1, see apparatus in Conway and Walters edition) has the reading C. Tullius, but Dion. Hal., Cassiod., and Fast. Cap. under 451 furnish the correct forms. On his filiation, see Fast. Cap. under 451, Degrassi 27, and on the cognomen Iullus, see 489, note 2." ;
+	dprr:hasID 114 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/354> rdfs:label "Post Assertion: #354" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/85> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/277> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Iulius (Iullus) Pat. (294)" ;
+	dprr:hasOfficeXref "Cos. 482" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 354 ;
+	dprr:hasDateStart -449 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -449 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/314> rdfs:label "Post Assertion: #314" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/85> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/260> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/252> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "C. Iulius C. f. L. n. Iullus Pat. (294)" ;
+	dprr:hasOfficeXref "Cos. 482" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/33> ;
+	dprr:hasID 314 ;
+	dprr:hasDateStart -451 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -451 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/155> rdfs:label "Post Assertion: #155" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/85> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/115> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/114> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Iulius C. f. L. n. Iullus Pat. (294)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 155 ;
+	dprr:hasDateStart -482 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -482 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/85> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "294" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "IULI0085 C. Iulius (294) C. f. L. n. Iullus" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 85 ;
+	dprr:hasHighestOffice "cos. 482" ;
+	dprr:hasFiliation "C. f. L. n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "IULI0085" ;
+	dprr:hasCognomen "Iullus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/85> .

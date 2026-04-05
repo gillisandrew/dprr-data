@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1410> rdfs:label "Primary Source Reference: #1410" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. VII 122" ;
+	dprr:hasID 1410 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1354> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8312> rdfs:label "Post Assertion Note: #8312" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Additions and Corrections. The date of the Lex Aquilia de Damno is quite uncertain (see Arrangio-Ruiz, Storia di Diritto Romano 132; cited by G. Bagnani, Phoenix 6 (1952) 72), accordingly the author should be included in the list of magistrates of uncertain date in Appendix II." ;
+	dprr:hasID 8312 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7403> rdfs:label "Post Assertion Note: #7403" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Author of the Lex Aquilia de damno, of uncertain date (see V. Arangio-Ruiz, Storia di diritto romano 132; cited by G. Bagnani, Phoenix 6, 1952, 72). Berger (Encyclopedic Dictionary 547548) suggests the late third century, and A. Watson considers 287 (XII Tables 6). It was perhaps a tribunicial law (Niccolini, FTP 391, citing Inst. IV, 3, 15).\n" ;
+	dprr:hasID 7403 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1034> rdfs:label "Post Assertion Note: #1034" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Niccolini (FTP 390f.) suggests this date for the author, apparently a Tribune (Iustin. Inst. 4.3.15), of the Lex Aquilia de Damno, which was carried in a time of strife between Plebs and Patres (Anon. ad Bas. 60.3.1, and Theoph. 4.3.15 cited by Niccolini), and was considered ancient in 76 B.C. (Cic. Tull. 9; 11; 41-42; cf. Brut. 131). See Gaius 3.210-219; 4.9; Dig. 9.2; Cod. Theod. 3.35; Novellae 18.8; Bruns, FIR 45; Rotondi, Leges Pub. 241f." ;
+	dprr:hasID 1034 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1354> rdfs:label "Post Assertion: #1354" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/667> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8312> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7403> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1034> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Aquilius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1354 ;
+	dprr:hasDateStart -300 ;
+	dprr:hasDateSourceText "uncertain date, late 3C?, 287?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/667> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "AQUI0667 -. Aquillius (not in RE)" ;
+	dprr:hasNomen "Aquillius" ;
+	dprr:hasID 667 ;
+	dprr:hasHighestOffice "tr. pl.? C3?" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "AQUI0667" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/667> .

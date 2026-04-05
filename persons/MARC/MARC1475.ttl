@@ -1,0 +1,257 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2301> rdfs:label "Status Assertion: #2301" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2301 ;
+	dprr:hasDateStart -162 ;
+	dprr:hasDateEnd -147 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3844> rdfs:label "Relationship Assertion: #3844" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3552> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3843> rdfs:label "Relationship Assertion: #3843" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1947> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2580> rdfs:label "Relationship Assertion: #2580" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/26> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/601> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2579> rdfs:label "Relationship Assertion: #2579" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4887> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2578> rdfs:label "Relationship Assertion: #2578" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1652> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/26> rdfs:label "Relationship: great grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 1 ;
+	dprr:hasName "great grandson of" ;
+	dprr:hasID 26 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8600> rdfs:label "Post Assertion Note: #8600" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 737" ;
+	dprr:hasID 8600 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2967> rdfs:label "Post Assertion Note: #2967" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 52f., 124, 464f.; Fast. Ant., ib. 160f. Cornelius was elected in spite his previous conviction under the Lex Caecilia (Val. Max. 6.9.10; Fest. 360 L; see 154, on Caecilius Metellus). P. Cornelius Scipio Nasica Corculum was probably chosen Princeps Senatus (Diod. 34-35.33.6; Val. Max. 7.5.2; cf. Plut. Aem. 15.2; see Willems, Sénat 1.113, note 3)." ;
+	dprr:hasID 2967 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2936> rdfs:label "Post Assertion Note: #2936" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 61; Acad. 2.102; Att. 12.5b; Liv. Per. 49, and Oxy. Per. 49; Fast. Cap., Degrassi 52f., 124, 464f. ([L. Marci]us C. [f. C.] n. Censorinus; Manilius entire); Fast. Ant., Degrassi 160f. ([L. Ma]rci. Cen[s]orin., M. Ma[- - - -]); Censorin. DN 17.11; Eutrop. 4.10; Chr. 354; Fast. Hyd.; Chr. Pasc.; Oros. 4.22.1; Cassiod.; Zon. 9.26; and on Manilius, Polyb. 36.11.1. Both Consuls proceeded to Africa, Marcius in command of the fleet and Manilius of the land forces. Surprised by the desperate resistance of the Carthaginians, they both met with reverses, Marcius in his attack on the city from side of the gulf of Tunis, and Manilius both in his siege of the city and his operations in Carthaginian territory, and both, according to the Polybian tradition, were saved from a more serious situation by Scipio Aemilianus (see Tribunes of the Soldiers). Marcius almost lost his fleet to Carthaginian fire ships, made coastal raids and captured Aegimurus, and in autumn returned to hold the elections (Polyb. 36.1-8; App. Lib. 74-104; cf. Cic. Rep. 6.9.1; Diod. 32.6-8; Liv. Per. 49-50, and Oxy. Per. 49; Vell. 1.13.1; Flor. 1.31.1-12; Dio fr. 70; Eutrop. 4.10; Auct. Vir. Ill. 58.2; Oros. 4.22.1-7; Zon. 9.26-27)." ;
+	dprr:hasID 2936 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2911> rdfs:label "Post Assertion Note: #2911" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible date for his praetorship." ;
+	dprr:hasID 2911 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2908> rdfs:label "Post Assertion Note: #2908" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "A son of Cato the Censor, M. Porcius M. f. M. n. Cato Licinianus (see 168, Legates) died about this time. According to Livy (Per. 48) and Plutarch (Cat. Mai. 24.6) he died in office as Praetor, but Cicero (Tusc. 3.70) and Gellius (13.20.9) agree that he was Praetor-elect. See D.- G. 5.160, no. 16." ;
+	dprr:hasID 2908 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2860> rdfs:label "Post Assertion Note: #2860" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Didasc. Ter. Hec." ;
+	dprr:hasID 2860 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3619> rdfs:label "Post Assertion: #3619" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2967> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Marcius C. f. C. n. Censorinus (46)" ;
+	dprr:hasOfficeXref "Cos. 149" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 3619 ;
+	dprr:hasDateStart -147 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -147 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3589> rdfs:label "Post Assertion: #3589" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2936> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Marcius C. f. C. n. Censorinus (46)" ;
+	dprr:hasOfficeXref "Pr. by 152" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3589 ;
+	dprr:hasDateStart -149 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -149 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3565> rdfs:label "Post Assertion: #3565" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8600> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2911> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2908> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? L. Marcius Censorinus (46)" ;
+	dprr:hasOfficeXref "Cos. 149" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3565 ;
+	dprr:hasDateStart -152 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -152 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3496> rdfs:label "Post Assertion: #3496" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1475> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2860> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Marcius (Censorinus) (46)" ;
+	dprr:hasOfficeXref "Cos. 149" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 3496 ;
+	dprr:hasDateStart -160 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -160 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/601> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "98" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1449> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1448> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1447> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1446> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1445> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1444> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1443> ;
+	dprr:hasPersonName "MARC0601 C. Marcius (98) C. f. L. n. Rutilus Censorinus" ;
+	dprr:hasOtherNames "Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 601 ;
+	dprr:hasHighestOffice "cos. 310" ;
+	dprr:hasFiliation "C. f. L. n." ;
+	dprr:hasEraTo -260 ;
+	dprr:hasEraFrom -340 ;
+	dprr:hasDprrID "MARC0601" ;
+	dprr:hasCognomen "Rutilus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/601> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4887> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MARC4887 C. Marcius (not in RE) Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4887 ;
+	dprr:hasHighestOffice "son of L. Marcius (46) C. f. C. n. Censorinus (cos. 149)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MARC4887" ;
+	dprr:hasCognomen "Censorinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4887> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3552> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "47" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MARC3552 L. Marcius (47) Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 3552 ;
+	dprr:hasHighestOffice "sen. 82" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MARC3552" ;
+	dprr:hasCognomen "Censorinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3552> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1947> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "43" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MARC1947 C. Marcius (43) Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1947 ;
+	dprr:hasHighestOffice "sen. 82" ;
+	dprr:hasEraTo -82 ;
+	dprr:hasEraFrom -111 ;
+	dprr:hasDprrID "MARC1947" ;
+	dprr:hasCognomen "Censorinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1947> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1652> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "45" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "MARC1652 Cn. Marcius (45) Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1652 ;
+	dprr:hasHighestOffice "tr. pl.? 123" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "MARC1652" ;
+	dprr:hasCognomen "Censorinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1652> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1475> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "46" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MARC1475 L. Marcius (46) C. f. C. n. Censorinus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 1475 ;
+	dprr:hasHighestOffice "cos. 149" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MARC1475" ;
+	dprr:hasCognomen "Censorinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1475> .

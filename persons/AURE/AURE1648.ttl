@@ -1,0 +1,169 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2405> rdfs:label "Status Assertion: #2405" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1648> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2405 ;
+	dprr:hasDateStart -125 ;
+	dprr:hasDateEnd -119 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1299> rdfs:label "Relationship Assertion Reference: #1299" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1299 ;
+	dprr:hasExtraInfo "Lucil. XI 413" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1462> rdfs:label "Relationship Assertion: #1462" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1648> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1774> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1001> rdfs:label "Relationship Assertion: #1001" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1648> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1299> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1485> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8986> rdfs:label "Post Assertion Note: #8986" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 741, footnote 160" ;
+	dprr:hasID 8986 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7261> rdfs:label "Post Assertion Note: #7261" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An incomplete milestone, found at Vulci, gives the name of an Aurelius Cotta, consul (.. ]AV[...|[C]otta Co[s]), and the distance from Rome. It points to the builder of the Via Aurelia and must be earlier than the date of its extension in the Via Aurelia Scauri, in 109. The consul of 144, or perhaps L. Aurelius Cotta (99). Cos. 119, may be meant. See A. Degrassi, Scritti vari 3.33-34; cf. E. Fentress, Via Aurelia, Via Aemilia, PBSR 52, 1984, 72-76.\n" ;
+	dprr:hasID 7261 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7046> rdfs:label "Post Assertion Note: #7046" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 1.525, 527, 529. Analysis of the confused notices in Appian Illyr. 10 and 11, and Eutropius 4.20, with consideration of the special geographical difficulties of campaigning in Dalmatia and Illyricum, leads M. G. Morgan to propose as probable solutions: (1) that Metellus Delmaticus campaigned only against the Delmatae, making Salona his base, and only in 119 and 118, and might have celebrated his triumph in 118 instead of 117, then proceeding to restore the temple of Castor and Pollux de manubiis; and (2) that the expedition of the consul of 119, L. Aurelius Cotta, and a Metellus against the Segestani involved only the one consul and a different Metellus, the praetorius Diadematus, as his legatus (Athenaeum 49, 1971, 271-301, esp. 289-294). In MRR 1.525, refer the Delmatae to Metellus and the Segestani to Cotta; in 1.526, insert Metellus Diadematus as legatus or pro praetore, with references to App. Illyr. 10; and in 1.527 and 529 give 118 or 117 as possible dates for the triumph of Delmaticus.\n" ;
+	dprr:hasID 7046 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3336> rdfs:label "Post Assertion Note: #3336" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Ant., Degrassi 162f. (L. Caecili. Met[el.], L. Au[reli. Cotta]); Obseq. 34; Chr. 354 (Metello et Cotta), so also Fast. Hyd., and Chr. Pasc.; Cassiod.; on Cotta, Plut. Mar. 4.2; on Metellus, App. Illyr. 11; and on his filiation, Act. Tr. for 117. See Degrassi 127, 472f. The Consuls opposed Marius' law (see Tribunes of the Plebs), and were threatened with imprisonment when they had the Senate summon him before it (Plut. Mar. 4.2-3). Metellus, perhaps with the aid of his colleague, campaigned against the Illyrian Segestani and the Dalmatians (App. Illyr. 10-11; Liv. Per. 62; Eutrop. 4.23.2)." ;
+	dprr:hasID 3336 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7987> rdfs:label "Post Assertion: #7987" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1648> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8986> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Aurelius (99) ?f. ?n. Cotta" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7987 ;
+	dprr:hasDateStart -123 ;
+	dprr:hasDateSourceText "before 122" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -123 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4032> rdfs:label "Post Assertion: #4032" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1648> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasProvinceOriginal "Illyricum" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7261> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7046> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3336> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Aurelius - f. - n. Cotta (99)" ;
+	dprr:hasOfficeXref "Pr. by 122" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4032 ;
+	dprr:hasDateStart -119 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -119 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1774> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "100" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AURE1774 L. Aurelius (100) Cotta" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 1774 ;
+	dprr:hasHighestOffice "pr. 95" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -135 ;
+	dprr:hasDprrID "AURE1774" ;
+	dprr:hasCognomen "Cotta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1774> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1648> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "99" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AURE1648 L. Aurelius (99) Cotta" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 1648 ;
+	dprr:hasHighestOffice "cos. 119" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "AURE1648" ;
+	dprr:hasCognomen "Cotta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1648> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1485> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "98" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AURE1485 L. Aurelius (98) L.? f. C. n. Cotta" ;
+	dprr:hasNomen "Aurelius" ;
+	dprr:hasID 1485 ;
+	dprr:hasHighestOffice "cos. 144" ;
+	dprr:hasFiliation "L.? f. C. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -187 ;
+	dprr:hasDprrID "AURE1485" ;
+	dprr:hasCognomen "Cotta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1485> .

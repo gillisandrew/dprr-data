@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9484> rdfs:label "Post Assertion Note: #9484" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 206" ;
+	dprr:hasID 9484 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7685> rdfs:label "Post Assertion Note: #7685" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Crawford notes that since there is never a point between S and AFRA on these coins, the legend should be regarded as a cognomen, not a nomen such as the S. Afra(nius) in MRR 2.431 (RRC 1.251, no. 206, 150 B.C.).\n" ;
+	dprr:hasID 7685 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8741> rdfs:label "Post Assertion: #8741" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3667> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9484> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7685> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Safra" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8741 ;
+	dprr:hasDateStart -150 ;
+	dprr:hasDateSourceText "150" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -150 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3667> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ANON3667 -. - (not in RE) Safra" ;
+	dprr:hasNomen "-" ;
+	dprr:hasID 3667 ;
+	dprr:hasHighestOffice "monetal. 150" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "ANON3667" ;
+	dprr:hasCognomen "Safra" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3667> .

@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2193> rdfs:label "Status Assertion: #2193" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1273> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2193 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> rdfs:label "Secondary Source: Kelly 2006" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Kelly HERR" ;
+	dprr:hasID 19 ;
+	dprr:hasBiblio "Kelly, G. P., A history of exile in the Roman Republic. Cambridge ; New York : Cambridge University Press, c2006." ;
+	dprr:hasAbbreviation "Kelly 2006" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8529> rdfs:label "Post Assertion Note: #8529" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 734" ;
+	dprr:hasID 8529 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2589> rdfs:label "Post Assertion Note: #2589" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Accused of peculation in office by several communities of Spain, he went into exile at Tibur in 171 (Liv. 43.2.8-11)." ;
+	dprr:hasID 2589 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2588> rdfs:label "Post Assertion Note: #2588" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The praenomen is given as M. in Liv. 42.1.5; and 43.2.9; cf. Klotz, Hermes 50 (1915) 517, note 1." ;
+	dprr:hasID 2588 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2583> rdfs:label "Post Assertion Note: #2583" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 41.28.5 Provinces 42.1.5." ;
+	dprr:hasID 2583 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2439> rdfs:label "Post Assertion Note: #2439" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Province: from the promontory of Minerva northward to Massilia (Liv. 40. 18.7-8, 26.8, and 28.7; cf. Lucilius 219 M)." ;
+	dprr:hasID 2439 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3141> rdfs:label "Post Assertion: #3141" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1273> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8529> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2589> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2588> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2583> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "C. Matienus (2)" ;
+	dprr:hasOfficeXref "Farther Spain" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3141 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2949> rdfs:label "Post Assertion: #2949" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1273> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2439> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Matienus (2)" ;
+	dprr:hasOfficeXref "Pr. 173" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/49> ;
+	dprr:hasID 2949 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -181 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1273> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MATI1273 C. Matienus (2)" ;
+	dprr:hasNomen "Matienus" ;
+	dprr:hasID 1273 ;
+	dprr:hasHighestOffice "pr. 173" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MATI1273" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1273> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/6> rdfs:label "Date Type: exiled" ;
+	a dprr:DateType ;
+	dprr:hasName "exiled" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/128> rdfs:label "Date Information: #128" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1273> ;
+	dprr:hasValue -171 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> ;
+	dprr:hasNotes "no record of restoration. Kelly no. 7." ;
+	dprr:hasID 128 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/6> ;
+	dprr:hasDateInterval "S" .

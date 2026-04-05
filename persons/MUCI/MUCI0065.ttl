@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/142> rdfs:label "Primary Source Reference: #142" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. de praen. 2" ;
+	dprr:hasID 142 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/141> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/132> rdfs:label "Primary Source Reference: #132" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Asc. Scaur. 25f. C" ;
+	dprr:hasID 132 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/131> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/104> rdfs:label "Post Assertion Note: #104" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Festus 180 L." ;
+	dprr:hasID 104 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/103> rdfs:label "Post Assertion Note: #103" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "A curious and broken notice in Festus (180 L) mentions a wide stone paving and the burning near the Circus of a number of persons, whose names, partially preserved, for the most part agree with names in the consular Fasti. Val. Max. (6.3.2) mentions a P. Mucius, Tr. Pl., who burned his nine colleagues for conspiring with Sp. Cassius (cf. Dio fr. 22; Zon. 7.17), but no authority places the number of Tribunes of the Plebs at ten so early. As the names are almost all patrician and consular, it remains uncertain to what incident or what losses in the Volscian Wars the passage of Festus refers." ;
+	dprr:hasID 103 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/101> rdfs:label "Post Assertion Note: #101" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See Tribunes of the Soldiers." ;
+	dprr:hasID 101 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/141> rdfs:label "Post Assertion: #141" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/65> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/104> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/103> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "(P. Mu ?)cius Scaevola (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 141 ;
+	dprr:hasDateStart -486 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -486 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/131> rdfs:label "Post Assertion: #131" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/65> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/101> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? P. Mucius Scaevola (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 131 ;
+	dprr:hasDateStart -486 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -486 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/65> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "MUCI0065 P. Mucius (7) Scaevola" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasID 65 ;
+	dprr:hasHighestOffice "tr. pl.? 486" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "MUCI0065" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/65> .

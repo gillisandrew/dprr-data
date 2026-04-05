@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9274> rdfs:label "Post Assertion Note: #9274" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/8> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No. 6, p. 208." ;
+	dprr:hasID 9274 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2953> rdfs:label "Post Assertion Note: #2953" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Val. Max. 6.1.10; cf. Liv. Oxy. Per. 50; Münzer, RE Supb. 3.327, no. 7." ;
+	dprr:hasID 2953 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3605> rdfs:label "Post Assertion: #3605" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1516> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9274> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2953> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? C. Pescennius (col. 1086)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/99> ;
+	dprr:hasID 3605 ;
+	dprr:hasDateStart -150 ;
+	dprr:hasDateSourceText "before 149" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -150 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1516> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19.1086" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "PESC1516 C. Pescennius (19.1086)" ;
+	dprr:hasNomen "Pescennius" ;
+	dprr:hasID 1516 ;
+	dprr:hasHighestOffice "III vir cap. before 149" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "PESC1516" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1516> .

@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/272> rdfs:label "Primary Source Reference: #272" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XII 20.2" ;
+	dprr:hasID 272 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/267> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/245> rdfs:label "Primary Source Reference: #245" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. IX 9.1" ;
+	dprr:hasID 245 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/241> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/221> rdfs:label "Post Assertion Note: #221" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Demanded redress from the Aequi for invading Latin territory contrary to the treaty (Liv. 3.25.6-9; cf. Dion. Hal. 10.22.4-6). On Volumnius, see Lübker no. 2, and on Postumius, no. 16." ;
+	dprr:hasID 221 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/220> rdfs:label "Post Assertion Note: #220" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Possibly the same as Dion. Hal. reports in 466 (9.60.3-68; see RE s. v. \"Fabius\" no. 165)." ;
+	dprr:hasID 220 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/199> rdfs:label "Post Assertion Note: #199" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.10.5, and 18.8; Diod. 11.84.1; Fast. Cap. (V.'s name entire); Dion. Hal. 10.1.1; Val. Max. 1.6.5; Plin. NH 2.147; Chr. 354 (Amentino et Cornuto); Fast. Hyd. (Gallo et Camerio); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 24f., 92, 360f. On Volumnius, see Lübker no. 2." ;
+	dprr:hasID 199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/267> rdfs:label "Post Assertion: #267" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/137> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/221> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/220> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Volumnius Amintinus Gallus Pat. (*2)" ;
+	dprr:hasOfficeXref "Cos. 461" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 267 ;
+	dprr:hasDateStart -458 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -458 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/241> rdfs:label "Post Assertion: #241" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/137> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/199> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Volumnius M. f. M. n. Amintinus Gallus Pat. (*2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 241 ;
+	dprr:hasDateStart -461 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -461 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/137> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*2" ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VOLU0137 P. Volumnius (10) M. f. M. n. Amintinus Gallus" ;
+	dprr:hasOtherNames "Gallus" ;
+	dprr:hasNomen "Volumnius" ;
+	dprr:hasID 137 ;
+	dprr:hasHighestOffice "cos. 461" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "VOLU0137" ;
+	dprr:hasCognomen "Amintinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/137> .

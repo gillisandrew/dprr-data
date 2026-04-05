@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2571> rdfs:label "Person Note: #2571" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/33> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p83. Rosc. Am. 17-9,21,23 f. ,30,77,84,(86-8),92-8 passim,(102-4),108,(118),119. " ;
+	dprr:hasID 2571 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5313> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2571> ;
+	dprr:hasPersonName "ROSC5313 T. Roscius (18) Magnus" ;
+	dprr:hasNomen "Roscius" ;
+	dprr:hasID 5313 ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ROSC5313" ;
+	dprr:hasCognomen "Magnus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5313> .

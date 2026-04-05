@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3656> rdfs:label "Relationship Assertion: #3656" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5022> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5024> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3655> rdfs:label "Relationship Assertion: #3655" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5022> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/608> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/608> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*3" ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VOLU0608 L. Volumnius (13) C. f. C. n. Flamma Violens" ;
+	dprr:hasOtherNames "Violens" ;
+	dprr:hasNomen "Volumnius" ;
+	dprr:hasID 608 ;
+	dprr:hasHighestOffice "cos. 307" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -225 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "VOLU0608" ;
+	dprr:hasCognomen "Flamma" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/608> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5024> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "VERG5024 A. Verginius (5)" ;
+	dprr:hasNomen "Verginius" ;
+	dprr:hasID 5024 ;
+	dprr:hasHighestOffice "father of Verginia (25)" ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "VERG5024" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5024> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5022> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VERG5022  Verginia (25)" ;
+	dprr:hasNomen "Verginia" ;
+	dprr:hasID 5022 ;
+	dprr:hasHighestOffice "daughter of A. Verginius (5)" ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "VERG5022" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5022> .

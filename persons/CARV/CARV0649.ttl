@@ -1,0 +1,240 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/397> rdfs:label "Status Assertion Note: #397" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 82. Vell. 2.128. eques Romanus, homo novus, cos. 293" ;
+	dprr:hasID 397 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/397> rdfs:label "Status Assertion: #397" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/397> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Sp . CARVILIUS (9) Maximus" ;
+	dprr:hasID 397 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1987> rdfs:label "Relationship Assertion: #1987" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/789> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1472> rdfs:label "Primary Source Reference: #1472" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 10.3(2)" ;
+	dprr:hasID 1472 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1416> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1401> rdfs:label "Primary Source Reference: #1401" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. VI 21.23" ;
+	dprr:hasID 1401 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1345> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1389> rdfs:label "Primary Source Reference: #1389" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. VI 16.5" ;
+	dprr:hasID 1389 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1333> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1372> rdfs:label "Primary Source Reference: #1372" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Oros. IV 18.1" ;
+	dprr:hasID 1372 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1317> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/994> rdfs:label "Post Assertion Note: #994" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 10.39.1; Fast. Cap. ([L.] Papirius L. f. Sp. n. Cursor; Sp. [Carvilius C. f. C. n. Maxi]mus); Act. Tr.; Fast. Hyd.; Chr. Pasc.; Cassiod.; Degrassi 38f., 112, 426f. Papirius captured Duronia, won a victory at Aquilonia, captured Saepinum, celebrated a triumph over the Samnites, dedicated the temple of Quirinus vowed by his father, and led his army to winter quarters in the Ager Vestinus, while his colleague captured Amiternum, Cominium, Velia, Palumbinum, and Herculaneum from the Samnites, and in Etruria captured Troilus and compelled Falerii to sue for peace, then celebrated a triumph, also over Samnites, used part of the booty for a temple of Fors Fortuna, and set up a statue of Jove on the Capitol from the captured armor (Liv. 10.39-46; Act. Tr., Degrassi 72f., 544; Val. Max. 7.5.5; Plin. NH 7.213, on P.; 34.43, on C.; Frontin. Str. 2.4.1; Dio fr. 36.29, and Zon. 8.1; Oros. 3.22.3). On Papirius, see Lübker no. 10." ;
+	dprr:hasID 994 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/993> rdfs:label "Post Assertion Note: #993" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Carvilius' name is preserved entire in Act. Tr., while in the case of Papirius Fast. Cap. and Act. Tr. supplement each other. As Amiternum was a Sabine town, Beloch (RG 430) claims that Carvilius' triumph over the Samnites was really over the Sabines." ;
+	dprr:hasID 993 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1091> rdfs:label "Post Assertion Note: #1091" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire except [L.] Papirius); Act. Tr.; Frontin. Aq. 1.6; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; see Degrassi, 40f., 114, 430f. Both Consuls campaigned against Samnites, Lucanians and Bruttians, but, though Pyrrhus' general Milo yielded the citadel of Tarentum to Papirius, both celebrated their triumphs over Tarentines as well as the other foes (Act. Tr., Degrassi, 74f., 546; Liv. Per. 14 and 15; Frontin. Str. 3.3.1; Oros. 4.3.1-2; Fest. 228 L, with praenomen T. for L.; Zon. 8.6; cf. Jerome Chr. ad ann. 275, p. 130 Helm; cf. also on the Carthaginian fleet at Tarentum, Liv. Per. 14; Liv. 21.10.8, 24.9.8; Dio fr. 43.1; Ampel. 46.2; Oros. 4.3.1-2; Zon. 8.6). On Papirius, see Lübker no. 10." ;
+	dprr:hasID 1091 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1024> rdfs:label "Post Assertion Note: #1024" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Vell. 2.128.2; Plin. NH 7.133; cf. Degrassi 114, on 269." ;
+	dprr:hasID 1024 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1023> rdfs:label "Post Assertion Note: #1023" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Both the date of this censorship and the names of the Censors remain not completely certain. In Livy (Per. 11) the completion of the lustrum is mentioned between the colonization of Castrum, Sena and Hadria and the secession of the Plebs, therefore between 290 and 287. The plebeians Caedicius and{185} Domitius are listed as Censors in 283 and 280, respectively, with Domitius the first plebeian Censor to complete the lustrum. Carvilius, the one known plebeian Censor of this period who remains unplaced, must have held office during this lustrum. The name of his patrician colleague is harder to ascertain. That Fabius was Censor is simply a probable inference from the fact that, like his father and grandfather, he became Princeps Senatus (Plin.) and was therefore, when chosen, the oldest living ex-Censor (Liv. 27.11.11). There is at least a hint that Scipio held the office in 280, and it is unlikely that Fabius was the unknown colleague of Caedicius who abdicated in 283, since the death of a colleague was the usual cause of abdication and Fabius lived to be Consul in 276. His censorship, if he held one, is best dated here. See De Boor 10." ;
+	dprr:hasID 1023 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1010> rdfs:label "Post Assertion Note: #1010" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Brutus in Etruria (Zon. 8.1)" ;
+	dprr:hasID 1010 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10006> rdfs:label "Post Assertion Note: #10006" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Samnitibus, Lucaneis, Bruttieis, Tarentineisque. MRR I.197, Itgenshorst no. 115, Rich no. 114." ;
+	dprr:hasID 10006 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10005> rdfs:label "Post Assertion Note: #10005" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Samnitibus. MRR I.180, Itgenshorst no. 95, Rich no. 95." ;
+	dprr:hasID 10005 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1416> rdfs:label "Post Assertion: #1416" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1091> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sp. Carvilius C. f. C. n. Maximus (9)" ;
+	dprr:hasOfficeXref "Cos. 293" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1416 ;
+	dprr:hasDateStart -272 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1345> rdfs:label "Post Assertion: #1345" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1024> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1023> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Sp. Carvilius C. f. C. n. Maximus (9)" ;
+	dprr:hasOfficeXref "Cos. 293, 272" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1345 ;
+	dprr:hasDateStart -289 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -289 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1333> rdfs:label "Post Assertion: #1333" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1010> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sp. Carvilius Maximus (9)" ;
+	dprr:hasOfficeXref "Cos. 293, 272" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1333 ;
+	dprr:hasDateStart -292 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -292 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1317> rdfs:label "Post Assertion: #1317" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/994> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/993> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Carvilius C. f. C. n. Maximus (9)" ;
+	dprr:hasOfficeXref "Cos. 272" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1317 ;
+	dprr:hasDateStart -293 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -293 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10401> rdfs:label "Post Assertion: #10401" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10006> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10401 ;
+	dprr:hasDateStart -272 ;
+	dprr:hasDateSourceText "272" ;
+	dprr:hasDateEnd -272 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10400> rdfs:label "Post Assertion: #10400" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/649> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10005> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10400 ;
+	dprr:hasDateStart -293 ;
+	dprr:hasDateSourceText "293" ;
+	dprr:hasDateEnd -293 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/789> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/416> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/415> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/414> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/413> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/412> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/411> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/410> ;
+	dprr:hasPersonName "CARV0789 Sp. Carvilius (10) Sp. f. C. n. Maximus (Ruga)" ;
+	dprr:hasOtherNames "(Ruga)" ;
+	dprr:hasNomen "Carvilius" ;
+	dprr:hasNobilisNotes "Gell. 4.3.2" ;
+	dprr:hasID 789 ;
+	dprr:hasHighestOffice "cos. 234" ;
+	dprr:hasFiliation "Sp. f. C. n." ;
+	dprr:hasEraTo -211 ;
+	dprr:hasEraFrom -272 ;
+	dprr:hasDprrID "CARV0789" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/789> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/649> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "CARV0649 Sp. Carvilius (9) C. f. C. n. Maximus" ;
+	dprr:hasNovusNotes "Vell. 2.128" ;
+	dprr:hasNomen "Carvilius" ;
+	dprr:hasID 649 ;
+	dprr:hasHighestOffice "cos. 293" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "CARV0649" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/649> .

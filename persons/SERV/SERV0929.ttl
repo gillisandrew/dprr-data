@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1165> rdfs:label "Relationship Assertion Reference: #1165" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1165 ;
+	dprr:hasExtraInfo "Liv. XXV 3.15" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/972> rdfs:label "Relationship Assertion: #972" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/929> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1165> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4224> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 81 ;
+	dprr:hasName "related to" ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1939> rdfs:label "Primary Source Reference: #1939" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. V 2.7" ;
+	dprr:hasID 1939 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1867> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1523> rdfs:label "Post Assertion Note: #1523" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Carvilii indicted the publican Postumius for fraud, and when Servilius failed to apply the veto the publicans threw the meeting into disorder (Liv. 25.3.8-5.1)." ;
+	dprr:hasID 1523 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1522> rdfs:label "Post Assertion Note: #1522" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Niccolini (FTP 94f.) accepts the cognomen Casca in Liv. 25.3.17, and in 15, where it is supplied form 17. The cognomen was not in general use until much later and first appears elsewhere in the Servilian gens in the period of Caesar. Münzer accordingly suggests (RE s. v. \"Servilius,\" nos. 51 and 60; APF 140-143) that C. Servilius Geminus, who was Tr. Pl. shortly before he became Aed. Pl. in 209 (Liv. 27.21.9-10; 29.38.7; 30.19.7-9) is the Tribune of 212, that the cognomen Casca was inserted to veil disgraceful conduct in an eminent Servilius, and that he is to be identified with the Legate, C. Servilius, who was commissioned by the Pr. Urbanus, on the authority of the Senate, to{272} buy grain in Etruria. This commission, followed as it was by the supplying of the garrison of Tarentum, was rather difficult for a Tribune of the Plebs to perform. Münzer supposes that the Legate may be an unknown member of another branch of the Servilii. The same may be said of Casca. It is more probable that the Legate is C. Servilius Geminus whose tribunate in the years immediately preceding 209 has passed unmentioned like the majority of the tribunates in this period. See Aymard, REA 45 (1943) 200, note 2, who leaves the question in doubt." ;
+	dprr:hasID 1522 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1867> rdfs:label "Post Assertion: #1867" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/929> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1523> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1522> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Servilius Casca (51)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1867 ;
+	dprr:hasDateStart -212 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -212 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/929> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "51" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "SERV0929 C. Servilius (51) Casca" ;
+	dprr:hasNomen "Servilius" ;
+	dprr:hasID 929 ;
+	dprr:hasHighestOffice "tr. pl. 212" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SERV0929" ;
+	dprr:hasCognomen "Casca" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/929> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4224> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "POST4224 M. Postumius (18) Pyrgensis" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 4224 ;
+	dprr:hasHighestOffice "eq. R. late C3" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "POST4224" ;
+	dprr:hasCognomen "Pyrgensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4224> .

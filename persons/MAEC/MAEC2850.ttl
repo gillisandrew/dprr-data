@@ -1,0 +1,141 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/248> rdfs:label "Tribe Assertion: #248" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/26> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 248 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/26> rdfs:label "Tribe: Pomptina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Pomptina" ;
+	dprr:hasID 26 ;
+	dprr:hasAbbreviation "Pom." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/334> rdfs:label "Status Assertion Note: #334" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 209. Hor. Carm. 1.20.5, Tac. Ann. 6.11. " ;
+	dprr:hasID 334 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/334> rdfs:label "Status Assertion: #334" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/334> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "C. MAECENAS (6)" ;
+	dprr:hasID 334 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70-60- 8 AD" ;
+	dprr:hasDateEnd 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6510> rdfs:label "Post Assertion Note: #6510" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Maecenas was Prefect of Rome and Italy during the Actium campaign and the subsequent period while Octavian was in the East (Dio 51.3.5; cf. 49.16.2). See PIR 2.315, no. 306." ;
+	dprr:hasID 6510 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6358> rdfs:label "Post Assertion Note: #6358" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A group, whose journey to Brundisium with the poets Horace, Vergil, Varius, and Plotius, and the rhetor Apollodorus (Heliodorus) in their company is described by Horace (Sat. 1.5; in the spring, see lines 10-15 on the frogs). Their mission preceded the meeting of Antony and Octavian at Tarentum (see Porphyr. on Hor. Sat. 1.5.27, who errs regarding the date and the destination). See De Laet no. 119, on Cocceius; above, on Fonteius." ;
+	dprr:hasID 6358 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6335> rdfs:label "Post Assertion Note: #6335" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by Octavian to Antony in Syria after the defeats of this year, he gained from him a promise of assistance (App. BC 5.92-93)." ;
+	dprr:hasID 6335 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7267> rdfs:label "Post Assertion: #7267" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6510> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Maecenas (6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/7> ;
+	dprr:hasID 7267 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7102> rdfs:label "Post Assertion: #7102" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6358> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Maecenas (Maecenas 6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 7102 ;
+	dprr:hasDateStart -37 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -37 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7076> rdfs:label "Post Assertion: #7076" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6335> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Maecenas (6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 7076 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2850> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MAEC2850 C. Maecenas (6) Pom." ;
+	dprr:hasOrigin "Arretium" ;
+	dprr:hasNomen "Maecenas" ;
+	dprr:hasNobilisNotes "Hor. Carm. 4.12, Juv. Sat. 7.91f, Porphyr. Hor. Carm. 1.1, 4.12, [Acro.] Hor. Carm. 4.12, [Acro.] Hor. Sat. 1.6, 2.8" ;
+	dprr:hasID 2850 ;
+	dprr:hasHighestOffice "praef. urbi 31" ;
+	dprr:hasEraTo -8 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "MAEC2850" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2850> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/785> rdfs:label "Date Information: #785" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2850> ;
+	dprr:hasValue -8 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "Suet. Vit. Hor. (59 days before Horace died), Tac. Ann. 3.30." ;
+	dprr:hasID 785 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

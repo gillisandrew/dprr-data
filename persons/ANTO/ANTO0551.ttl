@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1088> rdfs:label "Primary Source Reference: #1088" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Hist. Aug. Max. et Balb. 7.3" ;
+	dprr:hasID 1088 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1068> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1082> rdfs:label "Primary Source Reference: #1082" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Gell. XVII 18" ;
+	dprr:hasID 1082 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1062> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/773> rdfs:label "Post Assertion Note: #773" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "According to Livy (8.17.3-4) these were appointed under the Consuls of 334, but abdicated when declared faultily appointed. In Chr. 354 is found the note: hoc anno dictatores, non fuerunt (consules). This is the first of the four \"Dictator\" years, 333, 324, 309, and 301, which were listed in Fast. Cap., but appear in none of the rest of our sources, though the Dictator and the Master of Horse in each case are listed in Livy under the Consuls of the year preceding (334, 325, 310, 302). See Fast. Hyd.; Degrassi 107, 410f., and esp. 110 on 309 B.C." ;
+	dprr:hasID 773 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/771> rdfs:label "Post Assertion Note: #771" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 8.17.3-4. See 333." ;
+	dprr:hasID 771 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7347> rdfs:label "Post Assertion Note: #7347" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "On these and the magistrates of the other Dictator years, 324, 309, and 301, see A. Drummond, The Dictator Years, Historia 27, 1978, 550-572: they were an invention which appears first in connection with the Liber Annalis of Atticus (Cic. Brut. 72; cf. 13-15), and may perhaps have been used to justify Caesar's annual dictatorships. See MRR 1.141.\n" ;
+	dprr:hasID 7347 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1068> rdfs:label "Post Assertion: #1068" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/551> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/773> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7347> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Antonius - f. - n. (26)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1068 ;
+	dprr:hasDateStart -333 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -333 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1062> rdfs:label "Post Assertion: #1062" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/551> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/771> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Antonius - f. - n. (26)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1062 ;
+	dprr:hasDateStart -334 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -334 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/551> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "ANTO0551 M. Antonius (26)" ;
+	dprr:hasNomen "Antonius" ;
+	dprr:hasID 551 ;
+	dprr:hasHighestOffice "mag. eq. 333" ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "ANTO0551" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/551> .

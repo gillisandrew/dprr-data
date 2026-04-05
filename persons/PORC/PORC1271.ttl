@@ -1,0 +1,151 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/456> rdfs:label "Tribe Assertion: #456" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1271> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/22> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p248. From Tusculum, hence PAP." ;
+	dprr:hasID 456 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/22> rdfs:label "Tribe: Papiria" ;
+	a dprr:Tribe ;
+	dprr:hasName "Papiria" ;
+	dprr:hasID 22 ;
+	dprr:hasAbbreviation "Pap." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2120> rdfs:label "Relationship Assertion Reference: #2120" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2120 ;
+	dprr:hasExtraInfo "Liv. 40.34.4" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2497> rdfs:label "Relationship Assertion: #2497" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2120> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1154> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2496> rdfs:label "Relationship Assertion: #2496" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3574> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2638> rdfs:label "Post Assertion Note: #2638" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to bring a fleet of 38 quinquiremes to Brundisium (Liv. 42.27.7)." ;
+	dprr:hasID 2638 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2437> rdfs:label "Post Assertion Note: #2437" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Dedicated the temple of Venus Erycina near the Porta Collina (Liv. 40.34.4). See D.- G. 5.98, no. 4." ;
+	dprr:hasID 2437 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3207> rdfs:label "Post Assertion: #3207" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2638> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? L. Porcius Licinus (*3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 3207 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2947> rdfs:label "Post Assertion: #2947" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2437> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Porcius L. f. Licinus (*3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/229> ;
+	dprr:hasID 2947 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -181 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3574> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PORC3574 L. Porcius (25) Pap. Licinus" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 3574 ;
+	dprr:hasHighestOffice "grandson of? L. Porcius (24) L. f. Pap.? Licinus (praef.? 172)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PORC3574" ;
+	dprr:hasCognomen "Licinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3574> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1271> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*3" ;
+	dprr:hasReNumber "24" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PORC1271 L. Porcius (24) L. f. Pap. Licinus" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1271 ;
+	dprr:hasHighestOffice "praef.? 172" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "PORC1271" ;
+	dprr:hasCognomen "Licinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1271> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1154> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*2" ;
+	dprr:hasReNumber "23" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PORC1154 L. Porcius (23) L. f. M. n. Pap. Licinus" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1154 ;
+	dprr:hasHighestOffice "cos. 184" ;
+	dprr:hasFiliation "L. f. M. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -226 ;
+	dprr:hasDprrID "PORC1154" ;
+	dprr:hasCognomen "Licinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1154> .

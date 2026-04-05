@@ -1,0 +1,181 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2223> rdfs:label "Status Assertion: #2223" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2223 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2518> rdfs:label "Relationship Assertion: #2518" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2517> rdfs:label "Relationship Assertion: #2517" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3200> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8935> rdfs:label "Post Assertion Note: #8935" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 734, footnote 90" ;
+	dprr:hasID 8935 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7370> rdfs:label "Post Assertion Note: #7370" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., amb. 173, no. c (MRR 1.409). Valerius and the other members of this embassy were sent to other cities and states as well, Pergamum, Syria, cities in Asia and perhaps in Cappadocia and Bithynia too: cf. in 172, Liv. 42.17.1 and 26.7-9 (MRR 1.414; see Meloni, Perseo 149, 163, 165, notes 2 and 3, and 166; Walbank, Comm. Polyb. 3.289).\n" ;
+	dprr:hasID 7370 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2600> rdfs:label "Post Assertion Note: #2600" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to King Perseus to observe conditions in Macedonia, and to Alexandria to renew Roman friendship with King Ptolemy (Liv. 42.6.4-5). On Valerius, see Münzer, Gent. Val. 47, no. 36." ;
+	dprr:hasID 2600 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2598> rdfs:label "Post Assertion Note: #2598" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See 175, note 3, and 174, note 1. On Baebius, see IG 5.2.146, 147; and Münzer, RE, Supb. 3.112, no. 53." ;
+	dprr:hasID 2598 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2549> rdfs:label "Post Assertion Note: #2549" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See above, on Baebius Sulca. Lutatius is named second in the group." ;
+	dprr:hasID 2549 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2548> rdfs:label "Post Assertion Note: #2548" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See note 3." ;
+	dprr:hasID 2548 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> rdfs:label "Post Assertion Note: #2542" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the Praetors of 175, see especially Münzer, APF 218f." ;
+	dprr:hasID 2542 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3150> rdfs:label "Post Assertion: #3150" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7370> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2600> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2598> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Cn. Lutatius Cerco (11)" ;
+	dprr:hasOfficeXref "Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3150 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3094> rdfs:label "Post Assertion: #3094" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8935> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2549> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2548> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "? Cn. Lutatius Cerco (11)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3094 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/768> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "LUTA0768 Q. Lutatius (13) C. f. C. n. Cerco" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 768 ;
+	dprr:hasHighestOffice "cos. 241" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -236 ;
+	dprr:hasEraFrom -274 ;
+	dprr:hasDprrID "LUTA0768" ;
+	dprr:hasCognomen "Cerco" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/768> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3200> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "1, 12" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "LUTA3200 Cn. Lutatius (1, 12) Cn. f. Ani. Arn. Cerco" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 3200 ;
+	dprr:hasHighestOffice "sen. 140" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "LUTA3200" ;
+	dprr:hasCognomen "Cerco" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3200> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1327> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "LUTA1327 Cn. Lutatius (11) Cerco" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 1327 ;
+	dprr:hasHighestOffice "pr.? 175" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "LUTA1327" ;
+	dprr:hasCognomen "Cerco" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1327> .

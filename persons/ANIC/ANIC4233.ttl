@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1308> rdfs:label "Relationship Assertion Reference: #1308" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1308 ;
+	dprr:hasExtraInfo "Nep. Att. 2.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1580> rdfs:label "Relationship Assertion: #1580" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4233> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1308> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/16> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3965> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1008> rdfs:label "Relationship Assertion: #1008" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4233> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1308> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4907> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/16> rdfs:label "Relationship: related to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 81 ;
+	dprr:hasName "related to" ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4907> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonName "SULP4907 Ser. Sulpicius (19)" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 4907 ;
+	dprr:hasHighestOffice "married to Anicia (18)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -124 ;
+	dprr:hasDprrID "SULP4907" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4907> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4233> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ANIC4233  Anicia (18)" ;
+	dprr:hasNomen "Anicia" ;
+	dprr:hasID 4233 ;
+	dprr:hasHighestOffice "married to Ser. Sulpicius (19)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -110 ;
+	dprr:hasDprrID "ANIC4233" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4233> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3965> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "102" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "POMP3965 T. Pomponius (102) Atticus" ;
+	dprr:hasOrigin "Rome" ;
+	dprr:hasNomen "Pomponius" ;
+	dprr:hasNobilisNotes "Corn. Nepos Atticus 1.3" ;
+	dprr:hasID 3965 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -32 ;
+	dprr:hasEraFrom -110 ;
+	dprr:hasDprrID "POMP3965" ;
+	dprr:hasCognomen "Atticus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3965> .

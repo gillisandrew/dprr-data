@@ -1,0 +1,331 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2698> rdfs:label "Status Assertion: #2698" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2698 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2062> rdfs:label "Relationship Assertion Reference: #2062" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2062 ;
+	dprr:hasExtraInfo "CIL 6.29782=ILS 5985 (Calpurnia)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1481> rdfs:label "Relationship Assertion Reference: #1481" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1481 ;
+	dprr:hasExtraInfo "Plut. Cato min. 25.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1441> rdfs:label "Relationship Assertion Reference: #1441" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1441 ;
+	dprr:hasExtraInfo "Plut. Brut. 13.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1801> rdfs:label "Relationship Assertion: #1801" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2062> ;
+	dprr:hasRelationshipNumber 1 ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2739> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1800> rdfs:label "Relationship Assertion: #1800" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2062> ;
+	dprr:hasRelationshipNumber 2 ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4766> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1080> rdfs:label "Relationship Assertion: #1080" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1481> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1441> ;
+	dprr:hasRelationshipNumber 2 ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3890> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8790> rdfs:label "Post Assertion Note: #8790" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 753, footnote 434" ;
+	dprr:hasID 8790 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5652> rdfs:label "Post Assertion Note: #5652" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul (see 51-49, Promagistrates), and commander of Pompey's fleet. He died early in 48 after failing to prevent Caesar from crossing to Epirus (Caes. BC 3.5.4, and 7, and 8, and 15; Dio 41.44, and 46, and 48; Oros. 6.15.10). See IG 9.1.722." ;
+	dprr:hasID 5652 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5540> rdfs:label "Post Assertion Note: #5540" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul (see 50, Promagistrates). When he returned from Syria, he was placed in general command of Pompey's fleet in the Adriatic (Cic. Att. 9.9.2; Caes. BC 3.5.4; Plut. Cat. Min. 54.2-4; App. BC 2.49; Dio 41.44.3; cf. IG 9.1.722)." ;
+	dprr:hasID 5540 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5455> rdfs:label "Post Assertion Note: #5455" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Syria (see 51, Promagistrates), whose slight achievement was honored with a supplicatio (Cic. Att. 6.1.13 and 15; 6.5.3, and 8.5; 7.2.6-7, and 3.5; 9.6.1; Fam. 2.17; 8.6.4 [Caelius]; 12.9.2; Caes. BC 3.31.3; Liv. Per. 108; Plut. Ant. 5.2; App. Syr. 5 1; cf. Caes. BC 3. 10.6; Cic. Att. 6.5.3; Fam. 2.17.6; and Val. Max. 4.1.15, on the murder of two of his sons in Egypt)." ;
+	dprr:hasID 5455 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5390> rdfs:label "Post Assertion Note: #5390" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Syria (Cic. Fam. 15.3.2), where he arrived late in the year after Cassius (see below) had already turned back a Parthian invasion at Antioch (Cic. Att. 5.16.4, and 18.1, and 20.4, and 21.2; Fam. 2.10.2; 15.1.1, and 3.2, and 4.7-8; Phil. 11.34-35; Liv. Per. 108; App. Syr. 51; BC 5.10; Dio 40.30.1)." ;
+	dprr:hasID 5390 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4994> rdfs:label "Post Assertion Note: #4994" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "3 For full discussion and citations of sources for the history and the legislation of Caesar's consulship in 59, see D. -G. 3.180-202, and Motz, in RE 10. 196-201, who is less detailed. See also T. Rice Holmes, Roman Republic 1.312-327; and for recent interpretations, Gelzer, Julius Caesar (3rd. ed., 1941) 83-114; L. R. Taylor, Party Politics in the Age of Caesar 132-137; and \"On the Chronology of Caesar's First Consulship,\" MPh 62 (1951) 254-268." ;
+	dprr:hasID 4994 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4993> rdfs:label "Post Assertion Note: #4993" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "2 This inscription may refer to other years when Caesar held the consulship." ;
+	dprr:hasID 4993 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4992> rdfs:label "Post Assertion Note: #4992" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 12.2.753, 918, and cf., on Caesar, 754 ; Fast. Cap., Degrassi 56f., 131, 490f. (C. Iulius C. f. C. n. [-]); Suet. Iul. 19.2; Plut. Caes. 14.1; Gell. 4.10.5; Dio 38, Index; Chr. 354 (Caesare et Vivulo); Fast. Hyd. (Decio Caesare et Bibolo); Chr. Pasc. (#u); Eutrop. 6.17.1; Oros. 6.7.1; Cassiod.; Schol. Bob. 135 Stangl. Bibulus, with the support of three Tribunes of the Plebs (see below, Tribunes of the Plebs), opposed Caesar's agrarian law, but when proved powerless against the combination of Caesar, Pompey, and Crassus, retired to his house, and by announcements that he was watching for omens kept Caesar's legislation technically invalid (Cic. Att. 2.4-24, passim; Vat. 22; Har. Resp. 48; Dom. 39-40; Planc. 35; Pam. 1.9.7 and 12; 13.4.2; Vell. 2.44; Suet. Iul. 19-20; Plut. Pomp. 47-48; Caes. 14; Cat. Min. 31-33; cf. Liv. Per. 103; Gell. 4.10.8; APP. BC 2.10-14; Dio 38.1-12; Eutrop. 6.17; Schol. Bob. 161f., 148f. Stangl). Caesar carried a Lex Iulia Agraria early in the year, Probably in January (Cic. Att. 2.3.3, and 16.2; Fam. 13.4.2; Suet. Iul. 20; Plut. Pomp. 47-48; Caes. 14.2-3; Cat. Min. 31.4-32.6; App. BC 2.10-12; Dio 38.1.1-7.2), and in May added another to distribute the Campanian land to needy citizens with families (Cic. Att. 2.16.1, cf. 17.1, and 19.3; Fam. 1.9.7 and 12; QF 2.1.1, and 5.1, and 6.2; Vell. 2.44; Suet. Iul. 20.3; Plut. Cat. Min. 31.1, cf. Pomp. 47.3, and Caes. 14.1; App. BC 2.10; Dio 38.7.3; cf. Liv. Per. 103). He had the acts of Pompey in the East ratified in a single law (Bell. Alex. 68; cf. Cic. Att. 2.16.2; Vell. 2.44.2; Suet. Iul. 19.2; Plut. Pomp. 48.3; Cat. Min. 31.1; App. BC 2.9; Dio 38.7.5), and satisfied Crassus by remitting one-third of the contracts to the tax farmers of Asia (Cic. Att. 2.16.2; Planc. 35; Val. Max. 2.10.7; Suet. Iul. 20; App. BC 2.13; Dio 38.7.4; Schol. Bob. 157 and 159 Stangl). In return for a huge sum he ratified the position of Ptolemy Auletes as king of Egypt (Cic. Att. 2.16.2; Rab. Post. 6; Caes. BC 3.107; Plin. NH. 33.136; Suet. Iul. 54.3; Dio 39.12.1). Besides minor measures such as the publication of the Acta of the Senate, with which he began his regime (Suet. Iul. 20.1), and his revival of the custom of being followed by his lictors in the months when he did not hold the fasces (Suet. Iul. 20. 1), he carried an important Lex de repetundis which regulated the procedures and demands of provincial governors more closely than before (Cic. Sest. 135; Vat. 29; Rab. Post. 8 and 12; Pis. 37 and 50 and 90; Dom. 23; Prov. Cons. 7; Fam. 2.17.2; 5.20.2; 8.8.3, Att. 5.10.2, and 16.21; Val. Max. 8.1.10; Tac. Ann. 14.28; Hist. 1.77; Plin. Epist. 2.11.3, and 19.8; 4.9.9; 6.29.9; Paul. Sent. 5.28, FIRA 2.413; Dig. 48.11; C. Th. 9.27; C. 9.27; 4.18.11.1; Schol. Bob. 140, and 149 Stangl). He received command of Cisalpine Gaul and Illyricum by the Vatinian law (see below, Tribunes of the Plebs), and with Pompey's support the Senate decreed him Transalpine Gaul in addition (Suet. Iul. 22; cf. Cic. Att. 8.3.3)." ;
+	dprr:hasID 4992 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4991> rdfs:label "Post Assertion Note: #4991" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "1 On the filiation of Bibulus, see IG 9.1.722." ;
+	dprr:hasID 4991 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4892> rdfs:label "Post Assertion Note: #4892" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Crushed Catilinarian sympathizers among the Paeligni (Oros. 6.6.7; cf. Dio 37.41.1), and in Rome stood in opposition to his colleague Caesar (Caes. BC 3.16.3)." ;
+	dprr:hasID 4892 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4786> rdfs:label "Post Assertion Note: #4786" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Bibulus was overshadowed in office by Caesar (Suet. Iul. 10; Dio 37.8.2), whose magnificent games won him considerable popularity (Caes. BC 3.16.3; Sall. Cat. 49.3; Plin. NH 33.53; Suet. Iul. 9.2; 10; Plut. Caes. 6.1-3). He restored the trophies of Marius (Vell. 2.43.4; Suet. Iul. 11; Plut. Caes. 6.1-4), and supported the plan of Crassus to annex Egypt (Cic. Leg. Agr. 1.1; 2.41-44; Suet. Iul. 11)." ;
+	dprr:hasID 4786 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6328> rdfs:label "Post Assertion: #6328" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5652> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59, Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6328 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6216> rdfs:label "Post Assertion: #6216" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5540> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59, Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6216 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6131> rdfs:label "Post Assertion: #6131" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5455> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59, Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6131 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6056> rdfs:label "Post Assertion: #6056" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5390> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59, Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6056 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5608> rdfs:label "Post Assertion: #5608" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4994> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4993> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4992> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4991> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Calpurnius C. f. - n. Bibulus (28)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 5608 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5487> rdfs:label "Post Assertion: #5487" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8790> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4892> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5487 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5383> rdfs:label "Post Assertion: #5383" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4786> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Calpurnius Bibulus (28)" ;
+	dprr:hasOfficeXref "Cos. 59, Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 5383 ;
+	dprr:hasDateStart -65 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -65 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4766> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CALP4766  Calpurnia (A)" ;
+	dprr:hasNomen "Calpurnia" ;
+	dprr:hasID 4766 ;
+	dprr:hasHighestOffice "daughter of M. Calpurnius (28) C. f. Bibulus (cos. 59)" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CALP4766" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4766> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3890> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PORC3890  Porcia (28)" ;
+	dprr:hasNomen "Porcia" ;
+	dprr:hasID 3890 ;
+	dprr:hasHighestOffice "daughter of M. Porcius (16) M. f. M. n. Pap.? Cato (Uticensis) (pr. 54)" ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PORC3890" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3890> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2739> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CALP2739 L. Calpurnius (27) Bibulus" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 2739 ;
+	dprr:hasHighestOffice "promag.? 32" ;
+	dprr:hasEraTo -32 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CALP2739" ;
+	dprr:hasCognomen "Bibulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2739> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2272> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CALP2272 M. Calpurnius (28) C. f. Bibulus" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 2272 ;
+	dprr:hasHighestOffice "cos. 59" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -48 ;
+	dprr:hasEraFrom -102 ;
+	dprr:hasDprrID "CALP2272" ;
+	dprr:hasCognomen "Bibulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2272> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/604> rdfs:label "Date Information: #604" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasValue -48 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasID 604 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/603> rdfs:label "Date Information: #603" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2272> ;
+	dprr:hasValue -102 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R207." ;
+	dprr:hasID 603 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

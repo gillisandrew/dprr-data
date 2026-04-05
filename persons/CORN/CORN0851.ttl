@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1761> rdfs:label "Primary Source Reference: #1761" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Serv. Aen. VI 824" ;
+	dprr:hasID 1761 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1691> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7077> rdfs:label "Post Assertion Note: #7077" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 1.240, Special Commissions, on the Triumviri agris dandis assignandis for the founding of Cremona and Placentia. On the basis of a fresh analysis of the discordant ancient texts (see MRR 1.240, and 241, note 12), G. Bandelli has concluded that there were two colonial commissions, one for Placentia, led by P. Cornelius Scipio Asina with P. Papirius Maso and Cn. Cornelius Scipio as colleagues, and the other for Cremona, led by C. Lutatius Catulus with C. Servilius Geminus and M. Annius as his colleagues. When the Gauls revolted the members of the Placentia commission escaped and took refuge in Mutina, but members of the Cremona commission were captured at Tannetum. When M'. Acilius and C. Herennius came as envoys from Mutina to negotiate for the restoration of the captives the Gauls seized them too. See G. Bandelli, QSAE 2, 1978, 39-57.\n" ;
+	dprr:hasID 7077 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1320> rdfs:label "Post Assertion Note: #1320" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A commission (or commissions) of three men assigned land to colonists at Placentia and Cremona, and were attacked by the Boii at Placentia (Polyb. 3.40.5 and 9-10, cf. 67.7; Liv. 21.25.3-5; Ascon. 3 C; cf. Liv. Per. 20; Tac. Hist. 3.34). See note 12." ;
+	dprr:hasID 1320 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1318> rdfs:label "Post Assertion Note: #1318" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Livy found in his sources three discordant records of the membership of this commission. Polybius mentions only one, consisting of the ex-Consul C. Lutatius and two ex-Praetors, whom he does not name. All of Livy's sources agree upon Lutatius, but differ as indicated above regarding the other two. The position of Servilius, who had held a curule office (Liv. 27.21.10; 30.19.9), is independently confirmed by the proof of his long detention as a prisoner of the Boii (Liv. 27.21.10; 30.19.9; see A. Aymard, REA 45 [1943] 199-224; cf. Botsford, Roman Assemblies 342f.). Annius therefore was probably the third commissioner, and both are to be identified with the two ex-Praetors in Polybius' account (Maxis 18-19). Asconius however preserves the record of another commission, the three names given last, who founded the colony of Placentia on June first of this year. Polybius clearly identifies the envoys who were sent to the Boii and captured by them with the commissioners, but Livy finds the record confused as between violation of envoys by the Boii or direct attack and capture of commissioners at work. Münzer (RE, on P. Cornelius Asina) suggests that Asconius' account is a doublet from Caelius Antipater, occasioned by the fact that Asina's father had been captured when he went into the Carthaginian camp as an envoy (see 260, Consuls). It seems however more probable that there was more than one commission, since two{242} colonies were being founded. If the commission named by Asconius is authentic, Cn. Cornelius Scipio and P. Papirius Maso are two men whose careers remain otherwise unknown." ;
+	dprr:hasID 1318 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1691> rdfs:label "Post Assertion: #1691" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/851> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7077> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1320> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1318> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "Cn. Cornelius Scipio Pat. (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/59> ;
+	dprr:hasID 1691 ;
+	dprr:hasDateStart -218 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -218 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/851> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN0851 Cn. Cornelius (not in RE) Scipio" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 851 ;
+	dprr:hasHighestOffice "III vir agr. dand. assig. 218" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CORN0851" ;
+	dprr:hasCognomen "Scipio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/851> .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9141> rdfs:label "Post Assertion Note: #9141" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 756, footnote 497" ;
+	dprr:hasID 9141 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6573> rdfs:label "Post Assertion Note: #6573" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praetor, at an uncertain but quite early date, who undertook a self-imposed exile rather than fulfil a portent that he should be king (Val. Max. 5.6.3; Plin. NH 11.123; Ovid Met. 15.565ff.; see RE 5.2565)." ;
+	dprr:hasID 6573 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8142> rdfs:label "Post Assertion: #8142" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2956> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9141> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6573> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Genucius (16, RE III 2 col. 2565) Cipus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8142 ;
+	dprr:hasDateStart -400 ;
+	dprr:hasDateSourceText "?C4-C3" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2956> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "GENU2956 -. Genucius (16) Cipus" ;
+	dprr:hasNomen "Genucius" ;
+	dprr:hasID 2956 ;
+	dprr:hasHighestOffice "pr. C4-C3?" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "GENU2956" ;
+	dprr:hasCognomen "Cipus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2956> .

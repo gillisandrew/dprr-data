@@ -1,0 +1,164 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/177> rdfs:label "Tribe Assertion: #177" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/38> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 177 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/38> rdfs:label "Tribe: Tromentina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Tromentina" ;
+	dprr:hasID 38 ;
+	dprr:hasAbbreviation "Tro." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/62> rdfs:label "Status Assertion Note: #62" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 170. Cic. Sest. 111. nomen ordinis equestris retinet" ;
+	dprr:hasID 62 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/62> rdfs:label "Status Assertion: #62" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/62> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "(-). GELLIUS (1?) (Poplicola)" ;
+	dprr:hasID 62 ;
+	dprr:hasDateStart -56 ;
+	dprr:hasDateSourceText "old in 56" ;
+	dprr:hasDateEnd -56 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2107> rdfs:label "Relationship Assertion Reference: #2107" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2107 ;
+	dprr:hasExtraInfo "Cic. Sest. 111,Schol. Bob. 135St" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2319> rdfs:label "Relationship Assertion: #2319" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2107> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/23> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1764> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2318> rdfs:label "Relationship Assertion: #2318" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1822> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/23> rdfs:label "Relationship: stepson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 25 ;
+	dprr:hasName "stepson of" ;
+	dprr:hasID 23 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4429> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isOtherNamesUncertain true ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "GELL4429 Q.? Gellius (1) Tro. (Poplicola) Canus" ;
+	dprr:hasOtherNames "Canus" ;
+	dprr:hasNomen "Gellius" ;
+	dprr:hasID 4429 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -110 ;
+	dprr:hasDprrID "GELL4429" ;
+	dprr:hasCognomen "(Poplicola)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4429> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1822> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "GELL1822 L. Gellius (17) L. f. L. n. Tro. Poplicola" ;
+	dprr:hasNomen "Gellius" ;
+	dprr:hasID 1822 ;
+	dprr:hasHighestOffice "cos. 72" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -135 ;
+	dprr:hasDprrID "GELL1822" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1822> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1764> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "75" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1421> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1420> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1419> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1418> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1417> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1416> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1415> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1414> ;
+	dprr:hasPersonName "MARC1764 L. Marcius (75) Q. f. Q. n. Philippus" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasNobilisNotes "Cic. Rab. Perd. 7.21, Cic. Planc. 21.52, Cic. Quinct. 2.9, Cic. Mur. 36, Cic. Brut. 45.166, Flor. Epit. 2.5.5, Macrob. 3.15.6" ;
+	dprr:hasID 1764 ;
+	dprr:hasHighestOffice "cos. 91" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -136 ;
+	dprr:hasDprrID "MARC1764" ;
+	dprr:hasCognomen "Philippus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1764> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2181> rdfs:label "Date Information: #2181" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasValue -110 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Aequalis of Atticus." ;
+	dprr:hasID 2181 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2180> rdfs:label "Date Information: #2180" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4429> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 59" ;
+	dprr:hasID 2180 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

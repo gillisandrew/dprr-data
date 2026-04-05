@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7875> rdfs:label "Post Assertion Note: #7875" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Mil. 43. In MRR 2.350, refer also to App. BC 4.19-20; Seneca, Suas. 6.20; Contr. 7.2.8; Dio 47.11.1-2; Jerome, Chr. P. 156 Helm.\n" ;
+	dprr:hasID 7875 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6087> rdfs:label "Post Assertion Note: #6087" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "One of the murderers of Cicero (Plut. Cic. 48.1-2, #; though a centurion named Herennius actually killed him; Liv. Per. 120, a legionary soldier; Val. Max. 5.3.4)." ;
+	dprr:hasID 6087 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6793> rdfs:label "Post Assertion: #6793" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2732> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7875> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6087> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Popillius Laenas (*22)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 6793 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2732> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*22" ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "POPI2732 C. Popillius (16) Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 2732 ;
+	dprr:hasHighestOffice "tr. mil. 43" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "POPI2732" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2732> .

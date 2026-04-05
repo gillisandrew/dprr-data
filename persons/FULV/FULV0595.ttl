@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1200> rdfs:label "Primary Source Reference: #1200" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXVIII 21.1" ;
+	dprr:hasID 1200 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1180> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/882> rdfs:label "Post Assertion Note: #882" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Founded a Latin colony at Saticula (Fest. 458 L; cf. Liv. 27.10.7; Vell. 1.14.4)." ;
+	dprr:hasID 882 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7133> rdfs:label "Post Assertion Note: #7133" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "IIIvir col. deduc. 313. See MRR 1.159. R. D. Weigel in a paper entitled Roman Colonial Commissioners and Prior Service (presented at the Annual Meeting of the Am. Philol. Assoc., December 1982) notes (1) that there is only one other Publius and no other Longus recorded in the Fulvian gens, and (2) that the Romans tended to select persons with prior experience in the region to serve on colonial commissions. He suggests, in place of the above, L. Fulvius Curvus (46), cos. 322, who had won a triumph over the Samnites, and had besieged Saticula in 316 (MRR 1.149-150, and 157). The commission, however, as reported in Festus (458L) conforms to the regular pattern of two seniors and one younger member.\n" ;
+	dprr:hasID 7133 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1180> rdfs:label "Post Assertion: #1180" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/595> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/882> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7133> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Fulvius Longus (78)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/73> ;
+	dprr:hasID 1180 ;
+	dprr:hasDateStart -313 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -313 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/595> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "78" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "FULV0595 P. Fulvius (78) Longus" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 595 ;
+	dprr:hasHighestOffice "III vir col. deduc. 313" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "FULV0595" ;
+	dprr:hasCognomen "Longus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/595> .

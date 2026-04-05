@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1825> rdfs:label "Primary Source Reference: #1825" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Suet. Caes. 74.2" ;
+	dprr:hasID 1825 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1753> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8025> rdfs:label "Post Assertion Note: #8025" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praef. Soc. 216. See MRR 1.251. As Marius is a praenomen, he should be indexed with the Statilii. (RS, CP)\n" ;
+	dprr:hasID 8025 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1396> rdfs:label "Post Assertion Note: #1396" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In command under Paullus of Lucanian allies (Liv. 22.42.4-6, and 43.7). For the anecdote showing how Fabius kept his loyalty, see Val. Max. 7.3.7; Frontin. Str. 4.7.36; Plut. Fab. 20; Auct. Vir. Ill. 43.5; cf. on Marcellus and Bantius, Liv. 23.15; Plut. Marc. 10; Dio fr. 57.33)." ;
+	dprr:hasID 1396 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1753> rdfs:label "Post Assertion: #1753" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/886> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8025> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1396> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Marius Statilius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 1753 ;
+	dprr:hasDateStart -216 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -216 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/886> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marius> ;
+	dprr:hasPersonName "STAT0886 Marius Statilius (7)" ;
+	dprr:hasNomen "Statilius" ;
+	dprr:hasNobilisNotes "Frontin. Strat. 4.7.36 (cf. Plut. Fab. Max. 20.1-3: \"high birth\")" ;
+	dprr:hasID 886 ;
+	dprr:hasHighestOffice "praef. 216" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "STAT0886" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/886> .

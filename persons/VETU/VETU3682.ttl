@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9499> rdfs:label "Post Assertion Note: #9499" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 234" ;
+	dprr:hasID 9499 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7598> rdfs:label "Post Assertion Note: #7598" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.455, and Index, 633, delete the word B(arrus), and refer also to Crawford, RRC 1.266-267, no. 234, 137 B.C. Perhaps a son of T. Veturius Gracchi f. Sempronianus, augur from 174 (Badian, Arethusa 1, 1968, 31-36).\n" ;
+	dprr:hasID 7598 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8756> rdfs:label "Post Assertion: #8756" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3682> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9499> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7598> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Veturius, Tiberius" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8756 ;
+	dprr:hasDateStart -137 ;
+	dprr:hasDateSourceText "137" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -137 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3682> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Tiberius> ;
+	dprr:hasPersonName "VETU3682 Ti. Veturius (6)" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 3682 ;
+	dprr:hasHighestOffice "monetal. 137" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "VETU3682" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3682> .

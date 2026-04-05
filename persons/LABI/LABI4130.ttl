@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/264> rdfs:label "Tribe Assertion: #264" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4130> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/39> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 264 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/39> rdfs:label "Tribe: Velina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Velina" ;
+	dprr:hasID 39 ;
+	dprr:hasAbbreviation "Vel." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/382> rdfs:label "Status Assertion Note: #382" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 192. Cic. Rab. Perd. 22. eques Romanus" ;
+	dprr:hasID 382 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/382> rdfs:label "Status Assertion: #382" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4130> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/382> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Q. LABIENUS (4) " ;
+	dprr:hasID 382 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateSourceText "c. 101" ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/722> rdfs:label "Relationship Assertion Reference: #722" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 722 ;
+	dprr:hasExtraInfo "Cic. Rab. perd. 21f." .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/721> rdfs:label "Relationship Assertion Reference: #721" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 721 ;
+	dprr:hasExtraInfo "Cic. Rab. perd. 14" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/693> rdfs:label "Relationship Assertion: #693" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4130> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/722> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/721> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/15> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2292> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/15> rdfs:label "Relationship: uncle of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 57 ;
+	dprr:hasName "uncle of" ;
+	dprr:hasID 15 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4130> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "LABI4130 Q. Labienus (4) Vel." ;
+	dprr:hasOrigin "Picenum (Cingulum)?" ;
+	dprr:hasNomen "Labienus" ;
+	dprr:hasID 4130 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "LABI4130" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4130> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2292> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "LABI2292 T. Labienus (6) Vel. 'Rabienus'" ;
+	dprr:hasOrigin "Cingulum?" ;
+	dprr:hasNomen "Labienus" ;
+	dprr:hasID 2292 ;
+	dprr:hasHighestOffice "pr. before 58" ;
+	dprr:hasEraTo -45 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "LABI2292" ;
+	dprr:hasCognomen "'Rabienus'" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2292> .

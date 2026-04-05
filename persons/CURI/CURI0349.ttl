@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/631> rdfs:label "Primary Source Reference: #631" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. II 98" ;
+	dprr:hasID 631 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/622> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/473> rdfs:label "Post Assertion Note: #473" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Lacerius and Acutius were coopted contrary to the Trebonian law (see 448), and agitation by Trebonius at this led the other three as a diversion to prosecute and convict Verginius and Sergius (see 402) as responsible for the defeats of that year (Liv. 5.10.10-12.2). The Tribunes proposed an agrarian law (Liv. 5.12.3)." ;
+	dprr:hasID 473 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/622> rdfs:label "Post Assertion: #622" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/349> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/473> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Curatius (4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 622 ;
+	dprr:hasDateStart -401 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -401 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/349> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CURI0349 P. Curiatius (4)" ;
+	dprr:hasNomen "Curiatius" ;
+	dprr:hasID 349 ;
+	dprr:hasHighestOffice "tr. pl. 401" ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CURI0349" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/349> .

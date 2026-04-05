@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/16> rdfs:label "Tribe Assertion: #16" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1913> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/8> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasID 16 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/8> rdfs:label "Tribe: Cornelia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Cornelia" ;
+	dprr:hasID 8 ;
+	dprr:hasAbbreviation "Cor." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/249> rdfs:label "Status Assertion Note: #249" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 6. ILS 8888. consilium of Cn. Pompeius. 13th rank of equites" ;
+	dprr:hasID 249 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/249> rdfs:label "Status Assertion: #249" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1913> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/249> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "D. AEBUTIUS (3)" ;
+	dprr:hasID 249 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSourceText "89" ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9803> rdfs:label "Post Assertion Note: #9803" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cichorius identifies him as a Tribune of the Soldiers based on the list of members of the staff of Pompeius Strabo at Asculum (ILS 8888; RS 144-155)." ;
+	dprr:hasID 9803 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7500> rdfs:label "Post Assertion Note: #7500" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. mil.? Badian, Historia 12, 1963, 131, notes that he was not certainly a tr. mil. in the consilium of Pompeius Strabo (see MRR 2.35), and that Cichorius identifies him with the Aeb]utius (above) named in Gran. Lic. See Criniti, L'epigrafe di Asculum 117-119.\n" ;
+	dprr:hasID 7500 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3928> rdfs:label "Post Assertion Note: #3928" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "16 Very probably the <Aeb>utius who fell with Octavius in 87 (Gran. Lic. 25B, Mommsen's emendation). Octavius' forces included six cohorts from the army of Pompeius Strabo." ;
+	dprr:hasID 3928 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10370> rdfs:label "Post Assertion Note: #10370" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "D.19." ;
+	dprr:hasID 10370 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4555> rdfs:label "Post Assertion: #4555" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1913> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9803> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7500> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3928> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10370> ;
+	dprr:hasPosition 11 ;
+	dprr:hasOriginalText "D. Aebutius D. f. Cor. (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 4555 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1913> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Decimus> ;
+	dprr:hasPersonName "AEBU1913 D. Aebutius (3) D. f. Cor." ;
+	dprr:hasOrigin "Ardea?" ;
+	dprr:hasNomen "Aebutius" ;
+	dprr:hasID 1913 ;
+	dprr:hasHighestOffice "tr. mil.? 89" ;
+	dprr:hasFiliation "D. f." ;
+	dprr:hasEraTo -87 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "AEBU1913" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1913> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/431> rdfs:label "Date Information: #431" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1913> ;
+	dprr:hasValue -87 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "KIA, against Cinno-Marians?" ;
+	dprr:hasID 431 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

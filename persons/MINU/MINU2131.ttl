@@ -1,0 +1,333 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/37> rdfs:label "Tribe Assertion: #37" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/37> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "SIG (3) 747" ;
+	dprr:hasID 37 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/37> rdfs:label "Tribe: Teretina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Teretina" ;
+	dprr:hasID 37 ;
+	dprr:hasAbbreviation "Ter." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1041> rdfs:label "Status Assertion: #1041" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1041 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2855> rdfs:label "Relationship Assertion: #2855" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4719> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> rdfs:label "Post Assertion Note: #9267" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The list of senators in a dated inscription of this year (SIG(3) 747) provides good evidence for the names of a group of ex-magistrates, although it is not wholly conclusive because of the additions to the Senate by the reforms of Sulla." ;
+	dprr:hasID 9267 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9091> rdfs:label "Post Assertion Note: #9091" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 755, footnote 481" ;
+	dprr:hasID 9091 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6089> rdfs:label "Post Assertion Note: #6089" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent as Envoys from the Senate to Sextus Pompey in Massilia (Cic. Phil. 13.13; see Promagistrates, on Sextus Pompey). See 48, Promagistrates." ;
+	dprr:hasID 6089 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5551> rdfs:label "Post Assertion Note: #5551" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably Propraetor (Praetor, Caes. BC 1.12.1). Driven from Iguvium by Curio (Caes. BC 1.12.1-3; Cic. Att. 7.13A.3, and 23.1; Lucan 2.463; Flor. 2.13.19)." ;
+	dprr:hasID 5551 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5460> rdfs:label "Post Assertion Note: #5460" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Asia, whence he returned to Italy this year (Cic. Fam. 2.17.6; 2.18; 13.54, 55, and 57; Att. 6.1.3; cf. I. v. Priene 106; Milet 1.2.101, no. 3)." ;
+	dprr:hasID 5460 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5396> rdfs:label "Post Assertion Note: #5396" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor (Cic. Fam. 13.53, and 55, and 56) in Asia. See also Cic. Att. 5.13.2, and 20.10, and 21.14." ;
+	dprr:hasID 5396 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5351> rdfs:label "Post Assertion Note: #5351" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Asia, certainly in 51 (Cic. Fam. 13.53-56), but probably in 52 since he returned to Rome in 50." ;
+	dprr:hasID 5351 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5040> rdfs:label "Post Assertion Note: #5040" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Fam. 13.57, prescript; cf. Att. 5.13.2; 6.1.13. See 52, Promagistrates." ;
+	dprr:hasID 5040 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5038> rdfs:label "Post Assertion Note: #5038" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The following men held provincial governorships immediately after the passage in 52 of the Pompeian law which established an interval between the praetorship or consulship and a provincial command, and may therefore have held the praetorship before 57 (all the Praetors of 57 are known). It is however more probable that the law did not apply to magistrates in office in 53 and 52 (see 54, Praetors), hence these dates remain only as possibilities." ;
+	dprr:hasID 5038 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4902> rdfs:label "Post Assertion Note: #4902" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Aided Cato against the proposal of Metellus Nepos to summon Pompey (Plut. Cat. Min. 27-28; Dio 37.43.1-2)." ;
+	dprr:hasID 4902 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4491> rdfs:label "Post Assertion Note: #4491" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cf. Grueber, CRRBM 2.364f." ;
+	dprr:hasID 4491 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10438> rdfs:label "Post Assertion Note: #10438" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "App. BC 5.139. Named alongside C. Fannius, Libo, Cassius Parmensis, Q. Nasidius, Saturninus, and Antistius as a senior and longstanding associate of Sextus Pompey, all in the East in 35. Following Sextus' downfall, all surrender to Antony." ;
+	dprr:hasID 10438 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10437> rdfs:label "Post Assertion Note: #10437" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Presumably with Sex. Pompey between his proscription and Pompey's downfall." ;
+	dprr:hasID 10437 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8444> rdfs:label "Post Assertion: #8444" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4491> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Minucius Q. f. Ter. Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. by 58" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 8444 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSourceText "before 73" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8092> rdfs:label "Post Assertion: #8092" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "?/?provincia declined/Asia" ;
+	dprr:hasProvinceOriginal "?/?Z/A" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9091> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5040> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5038> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Minucius (67) (Q.f.) Thermus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8092 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSourceText "before 51" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6798> rdfs:label "Post Assertion: #6798" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6089> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. 53?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 6798 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6227> rdfs:label "Post Assertion: #6227" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5551> ;
+	dprr:hasPosition 18 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr.53? or by 58?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 6227 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6136> rdfs:label "Post Assertion: #6136" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5460> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. before 57? or 53?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 6136 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6062> rdfs:label "Post Assertion: #6062" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5396> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. bef. 57? or 53?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 6062 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6016> rdfs:label "Post Assertion: #6016" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5351> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. 53 or by 58?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 6016 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5498> rdfs:label "Post Assertion: #5498" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4902> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Q. Minucius Thermus (67)" ;
+	dprr:hasOfficeXref "Pr. by 58? or 53" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5498 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10870> rdfs:label "Post Assertion: #10870" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10438> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10870 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSourceText "35" ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10869> rdfs:label "Post Assertion: #10869" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10437> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 10869 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSourceText "42-36" ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4719> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "71" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MINU4719  Minucia (71)" ;
+	dprr:hasNomen "Minucia" ;
+	dprr:hasID 4719 ;
+	dprr:hasHighestOffice "daughter of? Q. Minucius (67) Q. f. Ter. Thermus (pr. before 51)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MINU4719" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4719> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2131> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "67" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MINU2131 Q. Minucius (67) Q. f. Ter. Thermus" ;
+	dprr:hasNomen "Minucius" ;
+	dprr:hasNobilisNotes "Cic. Fam. 13.64.1" ;
+	dprr:hasID 2131 ;
+	dprr:hasHighestOffice "pr. before 51" ;
+	dprr:hasFiliation "Q. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MINU2131" ;
+	dprr:hasCognomen "Thermus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2131> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1889> rdfs:label "Date Information: #1889" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2131> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 90" ;
+	dprr:hasID 1889 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

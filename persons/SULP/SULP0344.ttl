@@ -1,0 +1,178 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3071> rdfs:label "Relationship Assertion: #3071" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4936> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3070> rdfs:label "Relationship Assertion: #3070" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/13> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/246> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3069> rdfs:label "Relationship Assertion: #3069" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/138> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/13> rdfs:label "Relationship: nephew of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 27 ;
+	dprr:hasName "nephew of" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/653> rdfs:label "Primary Source Reference: #653" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. VIII 19" ;
+	dprr:hasID 653 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/644> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/619> rdfs:label "Primary Source Reference: #619" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. II 14" ;
+	dprr:hasID 619 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/610> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/479> rdfs:label "Post Assertion Note: #479" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.14.5; Diod. 14.82.1; Fast. Cap. (see note 1); Chr. 354 (Potito et Medulliano); Degrassi 28f., 99, 384f. Abdicated before the end of their term (Plut. Cam. 2.5). Valerius Potitus ravaged Faliscan territory (Liv. 5.14.7), while the rest, except Camillus, pressed the siege of Veii (Liv. 5.15; Dion. Hal. 12.11-13). On L. Valerius, see Münzer, Gent. Val. 35, no. 4; on M. Valerius, 49, no. 47." ;
+	dprr:hasID 479 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/478> rdfs:label "Post Assertion Note: #478" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. gives the total number as six, but makes no mention of Valerius Maximus and Furius Medullinus, while in F are added the apocryphal names listed above ({Gr}). In Fast. Cap. the names are preserved as follows: [L. Valeriu]s L. f. P. Potitus V; [M. Valerius] M. f. M. n. Lactucin. Maxum.; [- -Camillu]s II; L. Furiu[s L.] f. Sp. n.  Medullin. III; Q. Servilius [Q. f. p. n. Fi]denas II; Q. Sulpicius Ser. [f- ]. On the cognomen Lactucinus, see Pliny NH 19.59." ;
+	dprr:hasID 478 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/470> rdfs:label "Post Assertion Note: #470" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.8.1; Diod. 14.38.1; Fast. Cap. (see note 1); Chr. 354 (Structo III et Cornuto); Degrassi 28f., 98, 382f. When Sergius at Veii was defeated by Veientanes and Faliscans because his enemy, Verginius, refused him assistance, the Senate with Ahala's aid compelled the abdication of the college and the entrance of new Military Tribunes into office on October first (Liv. 5.8-9, and 11-12; cf. Diod. 14.43.5)." ;
+	dprr:hasID 470 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/469> rdfs:label "Post Assertion Note: #469" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names in Fast. Cap. are preserved as follows: [C. Se]rvilius P. f. Q. n. Aha[la III]; [Q.] Servilius Q. f. P. n. Fiden[as]; [L. Ve]rginius L. f. Opetr. n. Tricost. Esqui[lin.]; the rest entire as above. Diod. omits the name of Q. Servilius. Manlius appears as {Gr} in Diod., who has {Gr} (in P) for M'. Sergius. The praenomen M. in Livy is corrected to M'. as in Fast. Cap. The two additional names in Diod., {Gr} and {Gr} (in F), are apocryphal." ;
+	dprr:hasID 469 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/644> rdfs:label "Post Assertion: #644" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/479> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/478> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Q. Sulpicius Ser. f. Ser. n. Camerinus Cornutus Pat. (34)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 402" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 644 ;
+	dprr:hasDateStart -398 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -398 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/610> rdfs:label "Post Assertion: #610" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/344> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/470> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/469> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Q. Sulpicius Ser. f. Ser. n. Camerinus Cornutus Pat. (34)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 398" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 610 ;
+	dprr:hasDateStart -402 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -402 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4936> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonName "SULP4936 Ser. Sulpicius (not in RE) Camerinus Cornutus" ;
+	dprr:hasOtherNames "Cornutus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 4936 ;
+	dprr:hasHighestOffice "son of? Ser. (or P.) Sulpicius (36) - f. Ser. n. Camerinus Cornutus (cos. 461)" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "SULP4936" ;
+	dprr:hasCognomen "Camerinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4936> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/344> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "34" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "SULP0344 Q. Sulpicius (34) Ser. f. Ser. n. Camerinus Cornutus" ;
+	dprr:hasOtherNames "Cornutus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 344 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 402" ;
+	dprr:hasFiliation "Ser. f. Ser. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "SULP0344" ;
+	dprr:hasCognomen "Camerinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/344> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/246> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "37" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "SULP0246 Q. Sulpicius (37) Ser. ? f. - n. Camerinus Praetextatus" ;
+	dprr:hasOtherNames "Praetextatus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 246 ;
+	dprr:hasHighestOffice "cos. 434" ;
+	dprr:hasFiliation "Ser. ? f. - n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "SULP0246" ;
+	dprr:hasCognomen "Camerinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/246> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/138> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "36" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/28> ;
+	dprr:hasPersonName "SULP0138 Ser. (or P.) Sulpicius (36) - f. Ser. n. Camerinus Cornutus" ;
+	dprr:hasOtherNames "Cornutus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 138 ;
+	dprr:hasHighestOffice "cos. 461" ;
+	dprr:hasFiliation "- f. Ser. n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "SULP0138" ;
+	dprr:hasCognomen "Camerinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/138> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> .

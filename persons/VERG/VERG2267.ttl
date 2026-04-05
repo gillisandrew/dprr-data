@@ -1,0 +1,299 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2695> rdfs:label "Status Assertion: #2695" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2695 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -46 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8788> rdfs:label "Post Assertion Note: #8788" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 753, footnote 432" ;
+	dprr:hasID 8788 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8393> rdfs:label "Post Assertion Note: #8393" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 69, Promagistrates." ;
+	dprr:hasID 8393 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7324> rdfs:label "Post Assertion Note: #7324" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Combine the two notices in MRR 2.133, and 155, about his proquaestorship in Sicily. The date is uncertain, but falls more probably in the early 60s, as he held the praetorship in 62. Gundel (RE no. 3) rejects the identification of the propraetor in Sicily with the legate in Macedonia (RE no. 2) in 57-55. The officer at Thapsus in 46 (MRR 2.303) was an ex-praetor (Bell. Afr. 28.1).\n" ;
+	dprr:hasID 7324 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5853> rdfs:label "Post Assertion Note: #5853" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer in the Pompeian forces in Africa, who had command of the garrison in Thapsus (Bell. Afr. 28.2; 44.1; 79; 86; 93.3)." ;
+	dprr:hasID 5853 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5169> rdfs:label "Post Assertion Note: #5169" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Piso in Macedonia (Cic. Prov. Cons. 7)." ;
+	dprr:hasID 5169 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5113> rdfs:label "Post Assertion Note: #5113" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Piso in Macedonia (Cic. Prov. Cong. 7; possibly the Praetor of 62, Propr. in Sicily, 61-58)." ;
+	dprr:hasID 5113 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5060> rdfs:label "Post Assertion Note: #5060" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Sicily (see 6 1, Promagistrates). Debarred by the terms of the law of Clodius from giving Cicero a refuge (Cic. Planc. 95-96)" ;
+	dprr:hasID 5060 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5023> rdfs:label "Post Assertion Note: #5023" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Sicily (see 61, Promagistrates; cf. Cic. QF 1.2.7)." ;
+	dprr:hasID 5023 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4981> rdfs:label "Post Assertion Note: #4981" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Sicily (see 61-58, Promagistrates)." ;
+	dprr:hasID 4981 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4955> rdfs:label "Post Assertion Note: #4955" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Sicily (Cic. Planc. 96, praetor; Schol. Bob. 87 Stangl). See 60-58, Promagistrates." ;
+	dprr:hasID 4955 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4897> rdfs:label "Post Assertion Note: #4897" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Planc. 95; cf. Bell. Afr. 28.1. See 61, Promagistrates." ;
+	dprr:hasID 4897 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4787> rdfs:label "Post Assertion Note: #4787" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. QF 1.2.7; Att. 1.4.1; Planc. 95." ;
+	dprr:hasID 4787 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4773> rdfs:label "Post Assertion Note: #4773" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "IG 14.356, Proquaestor in Sicily. The date is uncertain, probably after Verres, and several years before his praetorship." ;
+	dprr:hasID 4773 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4612> rdfs:label "Post Assertion Note: #4612" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proquaestor in Sicily, honored by Halaesa (IG 14.356-IGRP 1.508)." ;
+	dprr:hasID 4612 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9316> rdfs:label "Post Assertion: #9316" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8393> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? C. Vergilius C. f. Balbus (2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 9316 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9315> rdfs:label "Post Assertion: #9315" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7324> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4773> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4612> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (3 cf. 2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 9315 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSourceText "early 60s" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9314> rdfs:label "Post Assertion: #9314" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5060> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Vergilius (Balbus?) (2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 9314 ;
+	dprr:hasDateStart -58 ;
+	dprr:hasDateSourceText "61-58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9313> rdfs:label "Post Assertion: #9313" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Macedonia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7324> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5113> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Vergilius (Balbus) (2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 9313 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -57 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9312> rdfs:label "Post Assertion: #9312" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Macedonia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7324> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5169> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Vergilius (Balbus?) (2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 9312 ;
+	dprr:hasDateStart -56 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -56 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6538> rdfs:label "Post Assertion: #6538" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Africa" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7324> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5853> ;
+	dprr:hasPosition 29 ;
+	dprr:hasOriginalText "? C. Vergilius (Virgilius *2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 6538 ;
+	dprr:hasDateStart -46 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -46 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5638> rdfs:label "Post Assertion: #5638" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5023> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (Virgilius *2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 5638 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateSourceText "61-58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5584> rdfs:label "Post Assertion: #5584" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4981> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (Virgilius *2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 5584 ;
+	dprr:hasDateStart -60 ;
+	dprr:hasDateSourceText "61-58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -60 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5550> rdfs:label "Post Assertion: #5550" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Sicilia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4955> ;
+	dprr:hasPosition 12 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (Virgilius *2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 5550 ;
+	dprr:hasDateStart -61 ;
+	dprr:hasDateSourceText "61-58" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -61 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5493> rdfs:label "Post Assertion: #5493" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8788> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4897> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (Virgilius *2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5493 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5386> rdfs:label "Post Assertion: #5386" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2267> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4787> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Vergilius Balbus (Virgilius *2)" ;
+	dprr:hasOfficeXref "Pr. 62" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 5386 ;
+	dprr:hasDateStart -65 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -65 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2267> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "Virgilius *3, *2" ;
+	dprr:hasReNumber "3, 2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "VERG2267 C. Vergilius (3, 2) C. f. Balbus" ;
+	dprr:hasNomen "Vergilius" ;
+	dprr:hasID 2267 ;
+	dprr:hasHighestOffice "pr. 62" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VERG2267" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2267> .

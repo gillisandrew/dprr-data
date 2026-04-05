@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/475> rdfs:label "Tribe Assertion: #475" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4631> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/26> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p258. CIL 1(2) 665" ;
+	dprr:hasID 475 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/26> rdfs:label "Tribe: Pomptina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Pomptina" ;
+	dprr:hasID 26 ;
+	dprr:hasAbbreviation "Pom." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9808> rdfs:label "Post Assertion Note: #9808" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p258. CIL 1(2) 665." ;
+	dprr:hasID 9808 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9634> rdfs:label "Post Assertion: #9634" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4631> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9808> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 9634 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSourceText "C2" ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4631> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "TEID4631 P. Teidius (1) P. f. Pom." ;
+	dprr:hasNomen "Teidius" ;
+	dprr:hasID 4631 ;
+	dprr:hasHighestOffice "sen.? C2" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "TEID4631" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4631> .

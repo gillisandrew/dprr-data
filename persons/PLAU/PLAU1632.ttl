@@ -1,0 +1,181 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2395> rdfs:label "Status Assertion: #2395" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2395 ;
+	dprr:hasDateStart -130 ;
+	dprr:hasDateEnd -125 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2661> rdfs:label "Relationship Assertion: #2661" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1190> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2660> rdfs:label "Relationship Assertion: #2660" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2970> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2659> rdfs:label "Relationship Assertion: #2659" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1574> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8646> rdfs:label "Post Assertion Note: #8646" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 739, footnote 125" ;
+	dprr:hasID 8646 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3236> rdfs:label "Post Assertion Note: #3236" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Ant., Degrassi 162f. ([M.] Ful[- - - -]); Val. Max. 9.5.1; Frontin. Aq. 1.8; Obseq. 30; Chr. 354 (Hypseo et Flacco); Fast. Hyd. (Ipseo et Flacco), so also Chr. Pasc.; Phleg. Trall. Mir. 10; Oros. 5.11.1; Cassiod.; on Plautius, Val. Max. 9.5, ext. 4, in FOR 2.143; on Flaccus, Cic. Phil. 8.14; Vell. 2.6.4; and on his name, Act. Tr. for 123. See Degrassi 126, 470f. Flaccus proposed bills to grant citizenship to Italians (Val. Max. 9.5.1; App. BC 1.21), and to grant them the right of appeal (Val. Max.), but to divert him he was sent to aid Massilia against the Salluvii and the Vocontii (Liv. Per. 60; App. BC 1.34; Plut. CG 15.1; Obseq. 30; see 123, Promagistrates)." ;
+	dprr:hasID 3236 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3219> rdfs:label "Post Assertion Note: #3219" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible dates for their praetorships under the Lex Villia." ;
+	dprr:hasID 3219 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3927> rdfs:label "Post Assertion: #3927" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3236> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Plautius - f. - n. Hypsaeus (*11)" ;
+	dprr:hasOfficeXref "Pr. by 128" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3927 ;
+	dprr:hasDateStart -125 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -125 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3901> rdfs:label "Post Assertion: #3901" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1632> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8646> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3219> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? M. Plautius Hypsaeus (*11)" ;
+	dprr:hasOfficeXref "Cos. 125" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3901 ;
+	dprr:hasDateStart -128 ;
+	dprr:hasDateSourceText "by 128" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -128 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2970> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PLAU2970 M. Plautius (22) Hypsaeus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 2970 ;
+	dprr:hasHighestOffice "pr. before 100" ;
+	dprr:hasEraTo -22 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PLAU2970" ;
+	dprr:hasCognomen "Hypsaeus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2970> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1632> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*11" ;
+	dprr:hasReNumber "21" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PLAU1632 M. Plautius (21) Hypsaeus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 1632 ;
+	dprr:hasHighestOffice "cos. 125" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "PLAU1632" ;
+	dprr:hasCognomen "Hypsaeus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1632> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1574> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*11 ?" ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PLAU1574 L. Plautius (20) Hypsaeus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 1574 ;
+	dprr:hasHighestOffice "pr.? 138" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "PLAU1574" ;
+	dprr:hasCognomen "Hypsaeus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1574> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1190> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*7" ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PLAU1190 L. Plautius (19) Hypsaeus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 1190 ;
+	dprr:hasHighestOffice "pr. 189" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "PLAU1190" ;
+	dprr:hasCognomen "Hypsaeus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1190> .

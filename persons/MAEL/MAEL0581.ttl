@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1160> rdfs:label "Primary Source Reference: #1160" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XLV 33.8" ;
+	dprr:hasID 1160 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1140> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/847> rdfs:label "Post Assertion Note: #847" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Since they too had pledged themselves at Caudium, they abdicated and were handed over to the Samnites (Liv. 9.8.13-10.2, Livius and Maelius; Cic. Off. 3.109, Numicius and Maelius; see note 1)." ;
+	dprr:hasID 847 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1140> rdfs:label "Post Assertion: #1140" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/581> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/847> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Maelius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1140 ;
+	dprr:hasDateStart -320 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -320 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/581> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "MAEL0581 Q. Maelius (3)" ;
+	dprr:hasNomen "Maelius" ;
+	dprr:hasID 581 ;
+	dprr:hasHighestOffice "tr. pl. 320" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "MAEL0581" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/581> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/8> rdfs:label "Date Type: extradited" ;
+	a dprr:DateType ;
+	dprr:hasName "extradited" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/939> rdfs:label "Date Information: #939" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/581> ;
+	dprr:hasValue -320 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "Cic. Off. 3.30.109, Liv. 9.10.1-11.13, Liv. Per. 9 (to Samnium, reception refused by Samnites)." ;
+	dprr:hasID 939 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/8> ;
+	dprr:hasDateInterval "S" .

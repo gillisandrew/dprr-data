@@ -1,0 +1,461 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2477> rdfs:label "Status Assertion: #2477" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2477 ;
+	dprr:hasDateStart -103 ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2060> rdfs:label "Relationship Assertion: #2060" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1557> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9548> rdfs:label "Post Assertion Note: #9548" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 294" ;
+	dprr:hasID 9548 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8689> rdfs:label "Post Assertion Note: #8689" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 746, footnote 244" ;
+	dprr:hasID 8689 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> rdfs:label "Post Assertion Note: #7049" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 98. Monetalis. In MRR 2.438, and Index, 559, refer also to Crawford, RRC 1.308, no. 294, 113 or 112 B.C. Praetor and proconsul in Macedonia, 101-100 or 99. See MRR 1.571, 573, note 1, 577; 2.3 and 4, note 11. See now the Cnidian copy of the Lex de Piratis, M. Hassall, M. H. Crawford, and J. M. Reynolds, JRS 64, 1974, 195-220, esp. 204, 208, 213 (SEG 26, no. 1227; 27, no. 720; 28, no. 844); E. Badian and Th. R. Martin, ZPE 35, 1979, 15316,7; cf. also Sumner, GRBS 19, 1978, 211-225; J. H. Oliver, ZPE 32, 1978, 279. On the evidence of the coinage of P. Fonteius Capito, dated ca. 55 (see below), in which one issue has a building and the legend T. DIDI IMP VIL PUB on the reverse, and another has a mounted soldier attacking an enemy who wears a Gallic helmet and bears a Gallic shield, M. G. Morgan suggests that T. Didius rebuilt the Villa Publica with booty from his victory in Macedonia and his triumph over the Scordisci,  not from his later command in Spain (97-93 B.C.) (Klio 55, 1973, 215-231). '\n" ;
+	dprr:hasID 7049 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3940> rdfs:label "Post Assertion Note: #3940" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably served under Cato and then Sulla. Along with Velleius' ancestor (3.16.2), he captured Herculaneum, but died in battle on June 11 (Ovid Fasti 6.567 f.)." ;
+	dprr:hasID 3940 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3878> rdfs:label "Post Assertion Note: #3878" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under the Consul L. Iulius Caesar (Cic. Font. 43; App. BC 1.40)." ;
+	dprr:hasID 3878 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3877> rdfs:label "Post Assertion Note: #3877" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "17 The praenomen P. in Cicero's text must be emended to T. as the person Inentioned was the ex-Consul, T. Didius." ;
+	dprr:hasID 3877 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3766> rdfs:label "Post Assertion Note: #3766" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Celebrated a triumph, his second, as Proconsul ex Hispania de Celtibereis (Act. Tr., Degrassi 85 and 562; Cic. Planc. 61)." ;
+	dprr:hasID 3766 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3752> rdfs:label "Post Assertion Note: #3752" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Nearer Spain (see 98, Consuls, and 97-93, Promagistrates)." ;
+	dprr:hasID 3752 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3740> rdfs:label "Post Assertion Note: #3740" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Nearer Spain (see 98, Consuls, and 97-93, Promagistrates)." ;
+	dprr:hasID 3740 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3731> rdfs:label "Post Assertion Note: #3731" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Nearer Spain (see 98, Consuls, and 97-93, Promagistrates)." ;
+	dprr:hasID 3731 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3714> rdfs:label "Post Assertion Note: #3714" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Nearer Spain (Act. Tr. for 93; Liv. Per. 70). He was severely engaged in war with the Celtiberi in the course of which he slew 20,000 of the Arevaci, destroyed Colenda and moved the population of Termes" ;
+	dprr:hasID 3714 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3713> rdfs:label "Post Assertion Note: #3713" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "4 According to Liv. Per. 70 and Obseq. 48 the chief victories of Didius should be dated at the end of 98 or early in 97, though operations in Spain continued for some time. Obsequens (50) mentions peace at home and abroad in 95." ;
+	dprr:hasID 3713 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3691> rdfs:label "Post Assertion Note: #3691" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 12.2.681; Fast. Cap., Degrassi 54f., 128, 478f.; Ascon. 63C; Obseq. 47; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Didius, Cic. Mur. 17. They carried a law to require three nundinae in the period from announcement of a bill to its passage (Cic. Dom. 41; Sest. 135, and Schol. Bob. 140 Stangl; Phil. 5.3; cf. Att. 2.9.1; Leg. 3.11 and 43; Festus 416L), and one to forbid the union of unrelated measures in a single bill (Cic. Dom. 53). Didius received the province of Nearer Spain (Obseq. 47; see 97-93, Promagistrates)." ;
+	dprr:hasID 3691 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3688> rdfs:label "Post Assertion Note: #3688" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Pis. 61; cf. SEG 3.378. See 101, Praetors, and 100, Promagistrates." ;
+	dprr:hasID 3688 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3687> rdfs:label "Post Assertion Note: #3687" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "11 Degrassi (562) and Passerini (Athenaeum 12 [1934] 134ff.) are inclined to date his departure from Macedonia and his return to celebrate his triumph in 100 B. C.; note in SEG 3.378 the phrase [####]" ;
+	dprr:hasID 3687 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3659> rdfs:label "Post Assertion Note: #3659" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor, probably Proconsul, in Macedonia (Lex Delphica de Piratis, SEG 3.378; 101, Praetors and note 1)." ;
+	dprr:hasID 3659 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3629> rdfs:label "Post Assertion Note: #3629" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible date under the Lex Villia. In this year or the next he defeated the Scordisci in Thrace, and returned by 99 at the latest to celebrate a triumph (Cic. Pis. 61; Flor. 1.39.3-5; Ruf. Fest. Brev. 9; Amm. Marc. 27.4.10; Jerome, Chr. ad ann. 100, p. 149 Helm; cf. Lex. Delphica de Piratis, SEG 3.378; Riccobono, Font. Iur. Rom. Anteiustin. 1.121ff.)." ;
+	dprr:hasID 3629 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3628> rdfs:label "Post Assertion Note: #3628" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Florus, Ammian, and Rufius Festus all confuse the order of the governors of Macedonia in this period (see 112-106). The Lex Delphica de Piratis refers to Didius' victory in Thrace, which must therefore be dated by or before 100 (SEG 3.378: {Gr}; see Jones, JRS 16 [1926] 160-173; Carcopino, Mél. Glotz 1.117ff., both of whom date the law to 100). Didius' triumph from Spain in 93 is numbered II in Act. Tr." ;
+	dprr:hasID 3628 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3591> rdfs:label "Post Assertion Note: #3591" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. De Or. 2.197; see below, on Norbanus." ;
+	dprr:hasID 3591 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10063> rdfs:label "Post Assertion Note: #10063" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph ex Hispania de Celtibereis. MRR II.15, Itgenshorst no. 239, Rich no. 239." ;
+	dprr:hasID 10063 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10062> rdfs:label "Post Assertion Note: #10062" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph ex Macedonia. MRR I.571, II.3, II.4n.11, Itgenshorst no. 236, Rich no. 236." ;
+	dprr:hasID 10062 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8798> rdfs:label "Post Assertion: #8798" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9548> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Didius, T." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8798 ;
+	dprr:hasDateStart -112 ;
+	dprr:hasDateSourceText "113 - 112" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -112 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4567> rdfs:label "Post Assertion: #4567" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3940> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4567 ;
+	dprr:hasDateStart -89 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -89 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4509> rdfs:label "Post Assertion: #4509" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3878> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3877> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 4509 ;
+	dprr:hasDateStart -90 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -90 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4414> rdfs:label "Post Assertion: #4414" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3766> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4414 ;
+	dprr:hasDateStart -93 ;
+	dprr:hasDateSourceText "97-93" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -93 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4401> rdfs:label "Post Assertion: #4401" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3752> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4401 ;
+	dprr:hasDateStart -94 ;
+	dprr:hasDateSourceText "97-93" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -94 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4387> rdfs:label "Post Assertion: #4387" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3740> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4387 ;
+	dprr:hasDateStart -95 ;
+	dprr:hasDateSourceText "97-93" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -95 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4377> rdfs:label "Post Assertion: #4377" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3731> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4377 ;
+	dprr:hasDateStart -96 ;
+	dprr:hasDateSourceText "97-93" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -96 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4364> rdfs:label "Post Assertion: #4364" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3714> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3713> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4364 ;
+	dprr:hasDateStart -97 ;
+	dprr:hasDateSourceText "97-93" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -97 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4347> rdfs:label "Post Assertion: #4347" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Hispania Citerior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3691> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Didius T. f. Sex. n. (5)" ;
+	dprr:hasOfficeXref "Pr. by 101" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4347 ;
+	dprr:hasDateStart -98 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -98 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4344> rdfs:label "Post Assertion: #4344" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3688> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3687> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Diditus (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4344 ;
+	dprr:hasDateStart -99 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -99 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4320> rdfs:label "Post Assertion: #4320" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasProvinceOriginal "Macedonia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3659> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 4320 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "100 (to 99?)" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -100 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4294> rdfs:label "Post Assertion: #4294" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8689> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7049> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3629> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3628> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98 Macedonia" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4294 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateSourceText "by 101" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4264> rdfs:label "Post Assertion: #4264" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3591> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "T. Didius (5)" ;
+	dprr:hasOfficeXref "Cos. 98, Pr. 101 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4264 ;
+	dprr:hasDateStart -103 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -103 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11149> rdfs:label "Post Assertion: #11149" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9548> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 11149 ;
+	dprr:hasDateStart -113 ;
+	dprr:hasDateEnd -113 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10458> rdfs:label "Post Assertion: #10458" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10063> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10458 ;
+	dprr:hasDateStart -93 ;
+	dprr:hasDateSourceText "93" ;
+	dprr:hasDateEnd -93 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10457> rdfs:label "Post Assertion: #10457" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10062> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10457 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "100?" ;
+	dprr:hasDateEnd -100 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1776> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "DIDI1776 T. Didius (5) T. f. Sex. n." ;
+	dprr:hasNovusNotes "Cic. Mur. 17" ;
+	dprr:hasNomen "Didius" ;
+	dprr:hasID 1776 ;
+	dprr:hasHighestOffice "cos. 98" ;
+	dprr:hasFiliation "T. f. Sex. n." ;
+	dprr:hasEraTo -89 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "DIDI1776" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1776> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1557> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "DIDI1557 T. Didius (1)" ;
+	dprr:hasNomen "Didius" ;
+	dprr:hasID 1557 ;
+	dprr:hasHighestOffice "tr. pl. 143" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "DIDI1557" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1557> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/352> rdfs:label "Date Information: #352" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1776> ;
+	dprr:hasValue -89 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "KIA, Social War." ;
+	dprr:hasID 352 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

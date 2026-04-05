@@ -1,0 +1,192 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1881> rdfs:label "Relationship Assertion: #1881" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/300> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/656> rdfs:label "Primary Source Reference: #656" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. X 10" ;
+	dprr:hasID 656 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/647> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/627> rdfs:label "Primary Source Reference: #627" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. II 56" ;
+	dprr:hasID 627 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/618> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/602> rdfs:label "Primary Source Reference: #602" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. off. III 62" ;
+	dprr:hasID 602 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/593> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/589> rdfs:label "Primary Source Reference: #589" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. off. I 15" ;
+	dprr:hasID 589 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/580> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8327> rdfs:label "Post Assertion Note: #8327" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Liv. 5.16.8-11. See 398" ;
+	dprr:hasID 8327 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/481> rdfs:label "Post Assertion Note: #481" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Delphi to consult Apollo regarding the portentous rise in the Alban lake (Plut. Cam. 4.4, who gives the names; cf. Liv. 5.15-16; Dion. Hal. 12.10 (11)). On L. Valerius, see above; on C. Valerius, see Münzer, Gent. Val. 36, no. 5." ;
+	dprr:hasID 481 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/472> rdfs:label "Post Assertion Note: #472" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.10.1; Diod. 14.44.1; Fast. Cap. (see note 1); Chr. 354 (Camello et Iulo); Degrassi 28f., 98, 382f. Valerius held command against the{84} Volscians at Anxur (Liv. 5.10.2, and 12.6), Furius against Falerii (5.12.5), Aemilius at Veii (5.12.4), and Cornelius against Capena (5.12.5). On Valerius, see Münzer, Gent. Val. 35, no. 4." ;
+	dprr:hasID 472 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/471> rdfs:label "Post Assertion Note: #471" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved entire as above in Fast. Cap. except [M.F]urius etc., [Cn. C]ornelius, etc., [L. Vale]rius, etc. On the mark of iteration after Camillus' name in Livy, see 403, note 1. M'. Aemilius, as usual, appears in Livy as M., and his cognomen as Mamercus (see 410). Iterum in Livy after Cossus' name is an error (see 406 and 404). As in 404, Livy has the praenomen C. for Fabius (see Conway and Walters ad loc.). In the name of Iulius the Iulus of Fast. Cap. and Livy's Tullus probably stand for an earlier Iullus (see 489, note 1). Diod. omits Valerius, but the following apocryphal name is found in F: {Gr}." ;
+	dprr:hasID 471 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/465> rdfs:label "Post Assertion Note: #465" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.61.4; Diod. 14.19.1; Fast. Cap. ([- -Mal]uginensis; [- -Cos]sus II; [- -Amb]ustus; Nautius entire, and Valerius also, except for [L.] f., with numeral III after each; M'. Serg[ius L. f. L. n.] Fidenas); Chr. 354 (Maluginense et Cicurino III); Degrassi 28f., 98, 380f. They captured Artena from the Volscians and continued the siege of Veii (Liv. 4.61.5-11). Colonized Velitrae (Diod. 14.34.7). On Valerius, see Münzer, Gent. Val. 36, no. 5." ;
+	dprr:hasID 465 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/464> rdfs:label "Post Assertion Note: #464" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the filiation of Sergius, see Fast. Cap. on 402; his praenomen M. in Livy (Manlium ED) is corrected to M'. in Conway and Walters edition from Fast. Cap. The filiation of Cornelius Maluginensis is based on the assumption that the Mil. Tr. c. p. of 397 was his son, that of Cossus on Fast. Cap. on 401. In the case of Fabius, Livy probably follows a tradition different from that of Fast. Cap. and Diod., since he has the praenomen C. and treats Kaeso's Military Tribunate in 401 as his first, while they have K. and {Gr}, respectively, and Fast. Cap. treats the office in 401 as his second. In the name of Nautius, Livy's Rutilius is an error for Rutilus and the word \"iterum\" is equally an error since Livy lists him under 419 and 416. In Diod. the sixth name, instead of Cossus, is {Gr} (add. F)." ;
+	dprr:hasID 464 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/460> rdfs:label "Post Assertion Note: #460" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.58.6, and 59.1; Diod. 14.12.1; Fast. Cap. ([- -Ru]tilus Cossus; [- -] Cossus; the rest entire, Valerius with numeral II); Chr. 354 (Cosso et Potito); Degrassi 28f., 98, 380f. They warred upon the Volscians,{80} P. Cossus at Ecetrae (Liv.4.59.3), Fabius taking Anxur (Liv. 4.59.3-10; Enn. Ann. 4.162 V; Diod. 14.16.5), and Valerius at Antium (Liv. 4.59.3). Under them began the war with Veii and the introduction of pay for the army (Liv. 4.58-60; Diod. 14.16.5; Flor. 1.6.8; Zon. 7.20). On Valerius, see Münzer, Gent. Val. 35, no. 4." ;
+	dprr:hasID 460 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/459> rdfs:label "Post Assertion Note: #459" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On P. Cossus' name and filiation, see 408, Dictator; on that of Cn. Cossus see Fast. Cap. on 401. As in 407, Livy has Cn. for the praenomen N. in the case of a Fabius; see 421, note 1; Degrassi 96. Instead of Cn. Cornelius, Diod. has the quite different name {Gr} (add. F)." ;
+	dprr:hasID 459 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7790> rdfs:label "Post Assertion: #7790" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8327> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 7790 ;
+	dprr:hasDateStart -397 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -397 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/647> rdfs:label "Post Assertion: #647" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/481> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "(Cn. Cornelius) Cossus Pat. (117)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 406, 404, 401" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 647 ;
+	dprr:hasDateStart -398 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -398 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/618> rdfs:label "Post Assertion: #618" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/472> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/471> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. A. n. Cossus Pat. (117)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 406, 404" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 618 ;
+	dprr:hasDateStart -401 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -401 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/593> rdfs:label "Post Assertion: #593" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/465> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/464> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. A. n. Cossus Pat. (117)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 406, 401" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 593 ;
+	dprr:hasDateStart -404 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -404 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/580> rdfs:label "Post Assertion: #580" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/330> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/460> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/459> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. A. n. Cossus Pat. (117)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 404, 401" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 580 ;
+	dprr:hasDateStart -406 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -406 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/330> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "117" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN0330 Cn. Cornelius (117) P. f. A. n. Cossus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 330 ;
+	dprr:hasHighestOffice "son of? P. Cornelius (118) A. f. P. n. Cossus" ;
+	dprr:hasFiliation "P. f. A. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CORN0330" ;
+	dprr:hasCognomen "Cossus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/330> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/300> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "118" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN0300 P. Cornelius (118) A. f. P. n. Cossus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 300 ;
+	dprr:hasHighestOffice "father of? Cn. Cornelius (117) P. f. A. n. Cossus" ;
+	dprr:hasFiliation "A. f. P. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CORN0300" ;
+	dprr:hasCognomen "Cossus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/300> .

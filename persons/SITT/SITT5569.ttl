@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> rdfs:label "Secondary Source: Shackleton Bailey 1995" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Letters" ;
+	dprr:hasID 34 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's letters. Stuttgart : Teubner, 1995." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1995" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2246> rdfs:label "Relationship Assertion Reference: #2246" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2246 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3987> rdfs:label "Relationship Assertion: #3987" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5569> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2246> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4139> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2829> rdfs:label "Person Note: #2829" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p92. Fam. 5.17.2. son of P. Sittius (3)" ;
+	dprr:hasID 2829 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5569> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "cf. 3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2829> ;
+	dprr:hasPersonName "SITT5569 P. Sittius (cf. 3) P. f. P. n." ;
+	dprr:hasNomen "Sittius" ;
+	dprr:hasID 5569 ;
+	dprr:hasHighestOffice "son of P. Sittius (3)" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "SITT5569" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5569> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4139> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SITT4139 P. Sittius (3)" ;
+	dprr:hasNomen "Sittius" ;
+	dprr:hasID 4139 ;
+	dprr:hasHighestOffice "son of P. Sittius (2)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SITT4139" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4139> .

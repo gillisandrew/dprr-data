@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3352> rdfs:label "Relationship Assertion: #3352" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4611> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/499> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1192> rdfs:label "Primary Source Reference: #1192" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXVII 21.9" ;
+	dprr:hasID 1192 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1172> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/875> rdfs:label "Post Assertion Note: #875" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 9.28.2; Fast. Cap. (rei gerendae causa); Varro LL 7.105; Degrassi 36f., 110, 418f. Credited by Livy's source with the winning of Fregellae and Nola, but the variant which credits Iunius with Nola has Poetelius appointed clavi figendi causa (Liv. 9.28.2-6). On the Lex Poetelia, see 326. See Lübker no. 2." ;
+	dprr:hasID 875 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1172> rdfs:label "Post Assertion: #1172" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4611> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/875> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Poetelius C. f. C. n. Libo Visolus (not in *RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 1172 ;
+	dprr:hasDateStart -313 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -313 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/499> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "POET0499 C. Poetelius (7) C. f. Q. n. Libo Visolus" ;
+	dprr:hasOtherNames "Visolus" ;
+	dprr:hasNomen "Poetelius" ;
+	dprr:hasID 499 ;
+	dprr:hasHighestOffice "cos. 360" ;
+	dprr:hasFiliation "C. f. Q. n." ;
+	dprr:hasEraTo -275 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "POET0499" ;
+	dprr:hasCognomen "Libo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/499> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4611> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "POET4611 C. Poetelius (8) Libo Visolus" ;
+	dprr:hasOtherNames "Visolus" ;
+	dprr:hasNomen "Poetelius" ;
+	dprr:hasID 4611 ;
+	dprr:hasHighestOffice "dict. 313" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "POET4611" ;
+	dprr:hasCognomen "Libo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4611> .

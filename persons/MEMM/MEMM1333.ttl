@@ -1,0 +1,175 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2229> rdfs:label "Status Assertion: #2229" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2229 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3853> rdfs:label "Relationship Assertion: #3853" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1595> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3852> rdfs:label "Relationship Assertion: #3852" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1714> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8555> rdfs:label "Post Assertion Note: #8555" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 735, footnote 93" ;
+	dprr:hasID 8555 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2612> rdfs:label "Post Assertion Note: #2612" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ordered to repair and send ships to Brundisium (Liv. 42.27.2)." ;
+	dprr:hasID 2612 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2610> rdfs:label "Post Assertion Note: #2610" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 42.9.8 Provinces and armies 42.10.13-14, and 18.2 and 6-7." ;
+	dprr:hasID 2610 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2603> rdfs:label "Post Assertion Note: #2603" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Early in 173 these reported the increase in factional strife in Aetolia (Liv. 42.2.1-2)." ;
+	dprr:hasID 2603 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2602> rdfs:label "Post Assertion Note: #2602" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "M. is a probable restoration. The activities recorded favor the view that the Envoy was a consular and one or other of the two mutually indistinguishable Marcelli of this period, not no. 225, the Consul of 166, 155, and 152." ;
+	dprr:hasID 2602 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2568> rdfs:label "Post Assertion Note: #2568" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Aetolia to compose serious factional strife there and reported their inability to do so (Liv. 41.25.5-6, and 27.4). See 173, Legates; and on Valerius, Münzer, Gent. Val. 47, no. 36; on Popillius, Münzer, APF 216ff." ;
+	dprr:hasID 2568 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2567> rdfs:label "Post Assertion Note: #2567" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Since Memmius occupies a praetorian place in the list of names, this embassy has been used to support the view that he was Praetor in 175 and Praetor iterum in 172 (Liv. 42.9.8). The word iterum however refers to Cn. Sicinius, Pr. 183, and 172. Moreover, this list is in disorder since Claudius, the senior consular, is placed second, and, regardless of the date of Memmius' praetorship, Popillius Laenas (Pr. 176), who follows him, is his senior (Münzer, APF 218; cf. Maxis, Praetoren 51, 56; and see 172, note 1)." ;
+	dprr:hasID 2567 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3180> rdfs:label "Post Assertion: #3180" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8555> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2612> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2610> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Memmius (4)" ;
+	dprr:hasOfficeXref "Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3180 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3159> rdfs:label "Post Assertion: #3159" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2603> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2602> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Memmius (4)" ;
+	dprr:hasOfficeXref "Pr. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3159 ;
+	dprr:hasDateStart -173 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -173 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3117> rdfs:label "Post Assertion: #3117" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1333> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2568> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2567> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Memmius (4)" ;
+	dprr:hasOfficeXref "Pr. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3117 ;
+	dprr:hasDateStart -174 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -174 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1714> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "12, 13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MEMM1714 L. Memmius (12, 13)" ;
+	dprr:hasNomen "Memmius" ;
+	dprr:hasID 1714 ;
+	dprr:hasHighestOffice "leg. amb.? 112" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "MEMM1714" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1714> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1595> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5, 3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2946> ;
+	dprr:hasPersonName "MEMM1595 C. Memmius (5, 3)" ;
+	dprr:hasNomen "Memmius" ;
+	dprr:hasID 1595 ;
+	dprr:hasHighestOffice "pr.? 104" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -143 ;
+	dprr:hasDprrID "MEMM1595" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1595> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1333> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MEMM1333 C. Memmius (4)" ;
+	dprr:hasNomen "Memmius" ;
+	dprr:hasID 1333 ;
+	dprr:hasHighestOffice "pr. 172" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MEMM1333" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1333> .

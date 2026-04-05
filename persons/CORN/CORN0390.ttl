@@ -1,0 +1,142 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5786> rdfs:label "Relationship Assertion: #5786" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/426> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5783> rdfs:label "Relationship Assertion: #5783" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/373> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1902> rdfs:label "Relationship Assertion: #1902" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/334> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/707> rdfs:label "Primary Source Reference: #707" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Planc. 99" ;
+	dprr:hasID 707 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/698> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/505> rdfs:label "Post Assertion Note: #505" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In place of C. Iulius who died in office (Fast. Cap. (M. Cornelius P. f. M. [- - -]); Liv. 5.31.6; 9.34.20; Dion. Hal. 1.74.5; Plut. Cam. 14.1; Degrassi 30f., 100, 386f.). The capture of Rome during this lustrum led to the rule that if one Censor died in office the other must abdicate (Liv. 5.31.6; Mommsen Str. 1.216; 2.341). They named Lucretius (above) Princeps Senatus (Plut. Cam. 32; cf. Liv. 5.55)." ;
+	dprr:hasID 505 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/698> rdfs:label "Post Assertion: #698" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/390> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/505> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Cornelius P. f. M. n. Maluginensis Pat. (248)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/40> ;
+	dprr:hasID 698 ;
+	dprr:hasDateStart -393 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -393 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/426> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "254" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonName "CORN0426 Ser. Cornelius (254) P. f. M. n. Maluginensis" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 426 ;
+	dprr:hasHighestOffice "cos.? 393" ;
+	dprr:hasFiliation "P. f. M. n." ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "CORN0426" ;
+	dprr:hasCognomen "Maluginensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/426> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/390> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "248" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CORN0390 M. Cornelius (248) P. f. M. n. Maluginensis" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasNobilisNotes "Liv. 9.34.6 (all censors between lex Aemilia and 310 \"nobilissimi... viri\")" ;
+	dprr:hasID 390 ;
+	dprr:hasHighestOffice "cens. 393" ;
+	dprr:hasFiliation "P. f. M. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "CORN0390" ;
+	dprr:hasCognomen "Maluginensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/390> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/373> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "252" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN0373 P. Cornelius (252) P. f. M. n. Maluginensis" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 373 ;
+	dprr:hasHighestOffice "cos.? 393" ;
+	dprr:hasFiliation "P. f. M. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CORN0373" ;
+	dprr:hasCognomen "Maluginensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/373> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/334> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "250, cf. 39" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN0334 P. Cornelius (250, cf. 39) (M. f. M. n.) Maluginensis" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 334 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 404" ;
+	dprr:hasFiliation "(M. f. M. n.)" ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CORN0334" ;
+	dprr:hasCognomen "Maluginensis" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/334> .

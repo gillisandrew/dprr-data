@@ -1,0 +1,122 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/454> rdfs:label "Status Assertion: #454" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1233> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 454 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateEnd -154 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8510> rdfs:label "Post Assertion Note: #8510" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 732, footnote 73" ;
+	dprr:hasID 8510 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2898> rdfs:label "Post Assertion Note: #2898" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Liguria when Massilia complained of attacks by the Oxybii and the Deciates (see above, Consuls), but were mistreated and Flaminius wounded (Polyb. 33.8-9; cf. Obseq. 17)." ;
+	dprr:hasID 2898 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2369> rdfs:label "Post Assertion Note: #2369" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Placed in charge of a quaestio de Bacchanalibus (Liv. 40.19.10). See Lübker, no. 3." ;
+	dprr:hasID 2369 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2366> rdfs:label "Post Assertion Note: #2366" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 39.45.1-2 Provinces 39.45.4-5." ;
+	dprr:hasID 2366 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2325> rdfs:label "Post Assertion Note: #2325" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 39.39.2. On Pupius, see Lübker no. 3." ;
+	dprr:hasID 2325 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2324> rdfs:label "Post Assertion Note: #2324" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Livy terms them Aediles (39.39.2), but during this period plebeians in odd numbered years can only be Aediles of the Plebs." ;
+	dprr:hasID 2324 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3549> rdfs:label "Post Assertion: #3549" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1233> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2898> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Pupius (5 ?)" ;
+	dprr:hasOfficeXref "Pr. 183 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3549 ;
+	dprr:hasDateStart -154 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2864> rdfs:label "Post Assertion: #2864" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1233> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8510> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2369> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2366> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Pupius (*4)" ;
+	dprr:hasOfficeXref "Apulia" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2864 ;
+	dprr:hasDateStart -183 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -183 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2815> rdfs:label "Post Assertion: #2815" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1233> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2325> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2324> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Pupius (*4)" ;
+	dprr:hasOfficeXref "Pr. 183" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 2815 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -185 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1233> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*4" ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PUPI1233 L. Pupius (5)" ;
+	dprr:hasNomen "Pupius" ;
+	dprr:hasID 1233 ;
+	dprr:hasHighestOffice "pr. 183" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "PUPI1233" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1233> .

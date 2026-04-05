@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/175> rdfs:label "Tribe Assertion: #175" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4407> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/16> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 175 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/16> rdfs:label "Tribe: Lemonia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Lemonia" ;
+	dprr:hasID 16 ;
+	dprr:hasAbbreviation "Lem." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/40> rdfs:label "Status Assertion Note: #40" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 119. father of a knight" ;
+	dprr:hasID 40 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/40> rdfs:label "Status Assertion: #40" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4407> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/40> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. COSSINIUS (1)" ;
+	dprr:hasID 40 ;
+	dprr:hasDateStart -125 ;
+	dprr:hasDateSourceText "C2-C1" ;
+	dprr:hasDateEnd -76 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1967> rdfs:label "Relationship Assertion: #1967" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4407> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2100> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4407> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "COSS4407 L. Cossinius (1) Lem." ;
+	dprr:hasOrigin "Tibur" ;
+	dprr:hasNomen "Cossinius" ;
+	dprr:hasID 4407 ;
+	dprr:hasHighestOffice "eq. R.? late C2-C1" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "COSS4407" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4407> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2100> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "COSS2100 L. Cossinius (2) Lem." ;
+	dprr:hasOrigin "Tibur" ;
+	dprr:hasNomen "Cossinius" ;
+	dprr:hasID 2100 ;
+	dprr:hasHighestOffice "pr. 73" ;
+	dprr:hasEraTo -73 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "COSS2100" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2100> .

@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7700> rdfs:label "Post Assertion Note: #7700" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr(ocos.?) Syria 32-31. In MRR 2.419, refer also to Sydenham, CRR lxix, 200; Crawford, RRC 1.545, no. 550, who rejects this attribution and this date, and tentatively suggests Q. Oppius (20), above.\n" ;
+	dprr:hasID 7700 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6498> rdfs:label "Post Assertion Note: #6498" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 32, Promagistrates." ;
+	dprr:hasID 6498 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6482> rdfs:label "Post Assertion Note: #6482" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Grant (From Imperium to Auctoritas 61-64) holds that Grueber's attribution of the coins of Q. Oppius (CRRBM 1.541) to a prefecture in Rome in 46-45 is invalid. He interprets the inscription PR as Pr(aetor) or Pr(oconsul), and assigns the coins on the basis of types to a governorship of Syria between the death of Bibulus in this year and the arrival of Didius late in 31." ;
+	dprr:hasID 6482 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7255> rdfs:label "Post Assertion: #7255" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7700> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6498> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "? Q. Oppius (21)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7255 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7238> rdfs:label "Post Assertion: #7238" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7700> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6482> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "? Q. Oppius (21)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7238 ;
+	dprr:hasDateStart -32 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -32 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2916> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "21" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "OPPI2916 Q. Oppius (21)" ;
+	dprr:hasNomen "Oppius" ;
+	dprr:hasID 2916 ;
+	dprr:hasHighestOffice "procos.? 31" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "OPPI2916" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2916> .

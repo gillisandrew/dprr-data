@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/967> rdfs:label "Primary Source Reference: #967" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XXXVI 44.3" ;
+	dprr:hasID 967 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/948> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/656> rdfs:label "Post Assertion Note: #656" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried a bill to limit interest rates to eight and one-third per cent (unciario faenore; Liv. 7.16.1; Tac. Ann. 6.16)." ;
+	dprr:hasID 656 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/948> rdfs:label "Post Assertion: #948" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/506> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/656> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Duilius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 948 ;
+	dprr:hasDateStart -357 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -357 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/506> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "DUIL0506 M. Duillius (7)" ;
+	dprr:hasNomen "Duillius" ;
+	dprr:hasID 506 ;
+	dprr:hasHighestOffice "tr. pl. 357" ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "DUIL0506" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/506> .

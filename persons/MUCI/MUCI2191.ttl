@@ -1,0 +1,221 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2863> rdfs:label "Relationship Assertion: #2863" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1692> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2862> rdfs:label "Relationship Assertion: #2862" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3908> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9595> rdfs:label "Post Assertion Note: #9595" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 403" ;
+	dprr:hasID 9595 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7459> rdfs:label "Post Assertion Note: #7459" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.436, and Index, 550, refer also to Crawford, RRC 1.413, no. 403, ca. 70. Wiseman suggests that he was a Cordius, an attested nomen, or that Cordus was a cognomen (NM 226, no. 134), and Crawford that the monetalis was a Mucius Scaevola recalling the cognomen of an earlier Mucius.\n" ;
+	dprr:hasID 7459 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4988> rdfs:label "Post Assertion Note: #4988" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The successors to P. Mucius Scaevola, Sex. Quinctilius Varus, Mam. Aemilius Lepidus, D. Iunius Silanus and Q. Latatius Catulus \n     were C. Fannius, M. Aemilius Lepidus, P. Cornelius Lentulus SPinther, M. Aemilius Scaurus, M. Licinius Crassus Dives, M. Licinius Crassus and C. Scribonius Curio. These lists of the Pontifices who died between the death of Metellus Pius in 64 or 63 (see 63, Pontifices) and that of Catulus (before May, 60, Cic. Att. 1.20.3; Dio 37.46.3-4), and of their successors, are based on the order of the lists of priests in Macrob. Sat. 3.13.11 (before 6913.C.) and in Cicero (Har. Resp. 12; Dom. 118; in 57 B.C.), and assume that in both cases they are named in the order of their inauguration into the college. The lower limit is drawn on the assumption that the two plebeians, Crassus, whether he be the Consul of 70 or his son, and Curio, are probably the successors of the two plebeians Silanus and Catulus. As the earlier list is not complete there is room for an additional name in the list of successors. On the whole question, see L. R. Taylor, AJPh 63 (1942) 384-412, esp. 388ff., and 411f." ;
+	dprr:hasID 4988 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4985> rdfs:label "Post Assertion Note: #4985" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "1 See 69, Pontifices, and note 10." ;
+	dprr:hasID 4985 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4623> rdfs:label "Post Assertion Note: #4623" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "The following persons, named in a list in Macrobius (Sat. 3.13.11) appear to have entered the college of Pontifices after Caesar was inaugurated in 73 and before P. Sulpicius Galba, who entered at the latest in 69 (see L. R. Taylor, AJPh 63 [1942] 385-412):" ;
+	dprr:hasID 4623 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8838> rdfs:label "Post Assertion: #8838" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9595> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7459> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Mucius Scaevola, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8838 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10003> rdfs:label "Post Assertion: #10003" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4988> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4985> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10003 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10002> rdfs:label "Post Assertion: #10002" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4623> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10002 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateEnd -71 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1503> rdfs:label "Person Note: #1503" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Macr. Sat. 3,13,11." ;
+	dprr:hasID 1503 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1502> rdfs:label "Person Note: #1502" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Um 100-zwischen 63 und 58 v. Chr." ;
+	dprr:hasID 1502 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1501> rdfs:label "Person Note: #1501" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1501 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1500> rdfs:label "Person Note: #1500" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt; MRR 2,134. 3,145; Szemler P 51." ;
+	dprr:hasID 1500 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1499> rdfs:label "Person Note: #1499" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Mucius 18. KP Mucius 8." ;
+	dprr:hasID 1499 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1498> rdfs:label "Person Note: #1498" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2481" ;
+	dprr:hasID 1498 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3908> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MUCI3908  Mucia (28) Tertia" ;
+	dprr:hasNomen "Mucia" ;
+	dprr:hasID 3908 ;
+	dprr:hasHighestOffice "daughter of Q. Mucius (22) P. f. P. n. Scaevola 'Pontifex' (cos. 95)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MUCI3908" ;
+	dprr:hasCognomen "Tertia" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3908> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2191> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1503> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1502> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1501> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1500> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1499> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1498> ;
+	dprr:hasPersonName "MUCI2191 P. Mucius (18) Q. f. P. n. Scaevola Cordus" ;
+	dprr:hasOtherNames "Cordus" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasID 2191 ;
+	dprr:hasHighestOffice "pont. 70" ;
+	dprr:hasFiliation "Q. f. P. n." ;
+	dprr:hasEraTo -57 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MUCI2191" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2191> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1692> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1526> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1525> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1524> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1523> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1522> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1521> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1520> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1519> ;
+	dprr:hasPersonName "MUCI1692 Q. Mucius (22) P. f. P. n. Scaevola 'Pontifex'" ;
+	dprr:hasOtherNames "'Pontifex'" ;
+	dprr:hasNomen "Mucius" ;
+	dprr:hasNobilisNotes "Cic. Rab. Perd. 7.21, Liv. Per. 86" ;
+	dprr:hasID 1692 ;
+	dprr:hasHighestOffice "cos. 95" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -82 ;
+	dprr:hasEraFrom -140 ;
+	dprr:hasDprrID "MUCI1692" ;
+	dprr:hasCognomen "Scaevola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1692> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1483> rdfs:label "Date Information: #1483" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasValue -57 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1483 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1482> rdfs:label "Date Information: #1482" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2191> ;
+	dprr:hasValue -100 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1482 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

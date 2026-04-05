@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2684> rdfs:label "Status Assertion: #2684" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2236> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2684 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9110> rdfs:label "Post Assertion Note: #9110" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 753, footnote 429" ;
+	dprr:hasID 9110 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4851> rdfs:label "Post Assertion Note: #4851" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Was hissed in the theater for his tribunician bill reserving the fourteen rows for the knights (see 67, Tribunes of the Plebs), and championed by Cicero, the Consul. He was probably Praetor (Plut. Cic. 13, with the praenomen Marcus, cf. Fragments of Cicero's speech, ed. Müller, 4.3, p. 209; Macrob. Sat. 3.14.12)." ;
+	dprr:hasID 4851 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4695> rdfs:label "Post Assertion Note: #4695" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried a law to reserve the fourteen rows in the theater for the knights (Cic. Corn. 1, fr. 52; Att. 2.19.3; Mur. 40; Phil. 2.44; Liv. Per. 99; Hor. Epod. 4.15-16, with Porphyr. ad loc.; Epist. 1.1.62; Vell. 2.32.3; Ascon. 78-79 C; Tac. Ann. 15.32; Iuven. 3.159, and Schol. ad loc.; 14.324; Suet. Aug. 40; Nero 11; Dom. 8; SHA, Hadr. 17; cf. Cic. Att. 2.1.3; Cum a lud. cont. avoc. fr. 1; Plin. NH 7.117; Plut. Cic. 13; Macrob. Sat. 3.14.12). Supported Trebellius against Gabinius (Dio 36.24.4, and 30.3)." ;
+	dprr:hasID 4695 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5446> rdfs:label "Post Assertion: #5446" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2236> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9110> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4851> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "? L. Roscius Otho (22)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5446 ;
+	dprr:hasDateStart -63 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5299> rdfs:label "Post Assertion: #5299" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2236> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4695> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "L. Roscius Otho (22)" ;
+	dprr:hasOfficeXref "Pr. 63?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5299 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2236> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "ROSC2236 L. Roscius (22) Otho" ;
+	dprr:hasNomen "Roscius" ;
+	dprr:hasID 2236 ;
+	dprr:hasHighestOffice "pr.? 63" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ROSC2236" ;
+	dprr:hasCognomen "Otho" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2236> .

@@ -1,0 +1,198 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2011> rdfs:label "Relationship Assertion Reference: #2011" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2011 ;
+	dprr:hasExtraInfo "Zon. 8 (17)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3441> rdfs:label "Relationship Assertion: #3441" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1327> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1390> rdfs:label "Relationship Assertion: #1390" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2011> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/765> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1640> rdfs:label "Primary Source Reference: #1640" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Pomp. 42.7" ;
+	dprr:hasID 1640 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1572> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1614> rdfs:label "Primary Source Reference: #1614" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Luc. 1.6" ;
+	dprr:hasID 1614 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1546> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1215> rdfs:label "Post Assertion Note: #1215" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Lutatius died in office (Fast. Cap., Degrassi 44f., 117, 438f.)." ;
+	dprr:hasID 1215 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1199> rdfs:label "Post Assertion Note: #1199" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap.; Act. Tr. (both names entire); Liv. 30.44.1; Val. Max. 6.5.1, on Lutatius; Eutrop. 2.28; Chr. 354; Fast. Hyd. (Torquato et Catone), so also Chr. Pasc.; Oros. 4.11.6; Cassiod.; Zon. 8.17, and 18; see Degrassi 42f., 117, 438f. The two Consuls subdued the so-called Faliscan revolt and celebrated triumphs De Falisceis (<i>Act. Tr.,</i> Degrassi 76f., 549; Val. Max. 6.5.1; Eutrop. 2.28; Zon. 8.17; cf. Polyb. 1.65.1; Liv. Per. 20; Oros. 4.11.5-10; cf. on Lutatius, Grueber, CRRBM 2.297; Cesano, Stud. Num. 1.161f.). Lutatius also went to Sicily, probably early in the year (see dates in Act. Tr.), to assist his brother in making peace with the Carthaginians and in organizing the new territory in Sicily (Zon. 8.17; cf. Polyb. 1.62-64; Val. Max. 1.3.1)." ;
+	dprr:hasID 1199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1198> rdfs:label "Post Assertion Note: #1198" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Cerco's name has been confused with Catulus in Eutrop., Oros., and Cassiod." ;
+	dprr:hasID 1198 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10140> rdfs:label "Post Assertion Note: #10140" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Falisceis. MRR I.219, Itgenshorst no. 143, Rich no. 142." ;
+	dprr:hasID 10140 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1572> rdfs:label "Post Assertion: #1572" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1215> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Lutatius C. f. C. n. Cerco (13)" ;
+	dprr:hasOfficeXref "Cos. 241" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1572 ;
+	dprr:hasDateStart -236 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -236 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1546> rdfs:label "Post Assertion: #1546" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1199> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1198> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Q. Lutatius C. f. C. n. Cerco (13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1546 ;
+	dprr:hasDateStart -241 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -241 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10535> rdfs:label "Post Assertion: #10535" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10140> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10535 ;
+	dprr:hasDateStart -241 ;
+	dprr:hasDateSourceText "241" ;
+	dprr:hasDateEnd -241 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/768> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "LUTA0768 Q. Lutatius (13) C. f. C. n. Cerco" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 768 ;
+	dprr:hasHighestOffice "cos. 241" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -236 ;
+	dprr:hasEraFrom -274 ;
+	dprr:hasDprrID "LUTA0768" ;
+	dprr:hasCognomen "Cerco" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/768> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/765> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "LUTA0765 C. Lutatius (4) C. f. C. n. Catulus" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 765 ;
+	dprr:hasHighestOffice "cos. 242" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "LUTA0765" ;
+	dprr:hasCognomen "Catulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/765> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1327> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "LUTA1327 Cn. Lutatius (11) Cerco" ;
+	dprr:hasNomen "Lutatius" ;
+	dprr:hasID 1327 ;
+	dprr:hasHighestOffice "pr.? 175" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "LUTA1327" ;
+	dprr:hasCognomen "Cerco" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1327> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1002> rdfs:label "Date Information: #1002" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasValue -236 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 1002 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1001> rdfs:label "Date Information: #1001" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/768> ;
+	dprr:hasValue -274 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 44." ;
+	dprr:hasID 1001 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

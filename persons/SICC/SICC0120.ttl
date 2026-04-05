@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/208> rdfs:label "Primary Source Reference: #208" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. ad Q. fr. I 1.10" ;
+	dprr:hasID 208 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/204> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7594> rdfs:label "Post Assertion Note: #7594" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. pl. 470. See MRR 1.31. Note that J.-C. Richard, Origines de la plebe romaine 529, prefers Sicinius, the reading of Diodorus and the properly plebeian name; cf. Ogilvie, Comm. Liv. 382. See T. Sicinius (13). Cos. 487.\n" ;
+	dprr:hasID 7594 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/164> rdfs:label "Post Assertion Note: #164" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Diod. (11.68.7) and Piso (in Liv. 2.58.2) agree on four names to which Piso adds Mecilius as a fifth. Duillius and Siccius prosecuted Ap. Claudius, Consul 471, who died before the proceedings ended (Liv. 2.61.1-9; Dion. Hal. 9.52.1-54.6). Note, however that according to Fast. Cap. he became Consul in 451 and Decemvir in 451 and 450." ;
+	dprr:hasID 164 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/163> rdfs:label "Post Assertion Note: #163" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "C. Sicinius in Diod. almost certainly refers to the same person as Livy's Siccius. See 493, Tribunes of the Plebs." ;
+	dprr:hasID 163 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/204> rdfs:label "Post Assertion: #204" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/120> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7594> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/164> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/163> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "Cn. Siccius (1, cf. Sicinius 4)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 204 ;
+	dprr:hasDateStart -470 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -470 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/120> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1, cf. Sicinius 4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "SICC0120 Cn. Siccius (1, cf. Sicinius 4)" ;
+	dprr:hasNomen "Siccius" ;
+	dprr:hasID 120 ;
+	dprr:hasHighestOffice "tr. pl. 470" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "SICC0120" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/120> .

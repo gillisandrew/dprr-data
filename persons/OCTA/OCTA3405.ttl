@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6147> rdfs:label "Relationship Assertion: #6147" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3405> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1607> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6145> rdfs:label "Relationship Assertion: #6145" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3405> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1617> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3066> rdfs:label "Relationship Assertion: #3066" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3405> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1356> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9248> rdfs:label "Post Assertion Note: #9248" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 756, footnote 503" ;
+	dprr:hasID 9248 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8249> rdfs:label "Post Assertion: #8249" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3405> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "?urbanus" ;
+	dprr:hasProvinceOriginal "?U" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9248> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "?Octavius (7 = ?17) Cn.f." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8249 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSourceText "?C2" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3405> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7 = ?17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "OCTA3405 -. Octavius (7 = ?17) Cn. f." ;
+	dprr:hasNomen "Octavius" ;
+	dprr:hasID 3405 ;
+	dprr:hasHighestOffice "pr.? C2?" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "OCTA3405" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3405> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1617> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "OCTA1617 Cn. Octavius (18) Cn. f. Cn. n." ;
+	dprr:hasNomen "Octavius" ;
+	dprr:hasID 1617 ;
+	dprr:hasHighestOffice "cos. 128" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "OCTA1617" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1617> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1607> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "31" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "OCTA1607 M. Octavius (31)" ;
+	dprr:hasNomen "Octavius" ;
+	dprr:hasID 1607 ;
+	dprr:hasHighestOffice "tr. pl. 133" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -163 ;
+	dprr:hasDprrID "OCTA1607" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1607> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1356> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1561> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1560> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1559> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1558> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1557> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1556> ;
+	dprr:hasPersonName "OCTA1356 Cn. Octavius (17) Cn. f. Cn. n." ;
+	dprr:hasNovusNotes "Cic. Off. 1.39.138; Cic. Phil. 9.4" ;
+	dprr:hasNomen "Octavius" ;
+	dprr:hasID 1356 ;
+	dprr:hasHighestOffice "cos. 165" ;
+	dprr:hasFiliation "Cn. f. Cn. n." ;
+	dprr:hasEraTo -162 ;
+	dprr:hasEraFrom -209 ;
+	dprr:hasDprrID "OCTA1356" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1356> .

@@ -1,0 +1,336 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2129> rdfs:label "Status Assertion: #2129" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2129 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateEnd -188 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1629> rdfs:label "Relationship Assertion Reference: #1629" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1629 ;
+	dprr:hasExtraInfo "Pol. XXI 46 (XXII 26)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1225> rdfs:label "Relationship Assertion Reference: #1225" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1225 ;
+	dprr:hasExtraInfo "Liv. XXXVIII 37.11" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/990> rdfs:label "Relationship Assertion: #990" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1629> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1225> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1103> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6160> rdfs:label "Relationship Assertion: #6160" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1370> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5948> rdfs:label "Relationship Assertion: #5948" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1413> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4517> rdfs:label "Relationship Assertion: #4517" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1515> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2438> rdfs:label "Relationship Assertion: #2438" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/836> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2437> rdfs:label "Relationship Assertion: #2437" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/734> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2436> rdfs:label "Relationship Assertion: #2436" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1151> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8449> rdfs:label "Post Assertion Note: #8449" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 729, footnote 45" ;
+	dprr:hasID 8449 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2288> rdfs:label "Post Assertion Note: #2288" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 189, Legates. Sent to collect funds from Oroanda (Liv. 38.37.11; cf. Polyb. 21.41.7), and to exact from Antiochus the oath ratifying the treaty (Liv. 38.39.1; Polyb. 21.43.1-2)." ;
+	dprr:hasID 2288 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2268> rdfs:label "Post Assertion Note: #2268" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under his brother Manlius Vulso in Asia (Liv. 38.20.7, 22.1, and 23.3)." ;
+	dprr:hasID 2268 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2013> rdfs:label "Post Assertion Note: #2013" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cf. Cic. Verr. 2.2.123, with the mistaken praenomen T." ;
+	dprr:hasID 2013 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2012> rdfs:label "Post Assertion Note: #2012" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Called Manlius Vulso in Liv. 32.27.7, and Manlius in 32.28.2. Cicero mentions a T. Manlius, Praetor, who by decree of the Senate brought colonists{335} from other towns of Sicily to Agrigentum. Münzer (RE) would prefer to identify him with L. Manlius Vulso rather than emend Cicero's text to C. Mamilius (Pr. 207; RE 5). Since the Leges Scipionis under which Agrigentum was governed assume the presence of the colonists this Manlius seems a bit late in date and Mamilius too early. Perhaps Scipio authorized the colonization and Manlius carried it out." ;
+	dprr:hasID 2012 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2010> rdfs:label "Post Assertion Note: #2010" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Six Praetors were elected this year for the first time (Liv. 32.27.6)." ;
+	dprr:hasID 2010 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2009> rdfs:label "Post Assertion Note: #2009" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Election Liv. 32.27.7 Provinces Liv. 32.28.2 and 11" ;
+	dprr:hasID 2009 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2770> rdfs:label "Post Assertion: #2770" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2288> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Manlius (Vulso) Pat. (93)" ;
+	dprr:hasOfficeXref "Pr. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 2770 ;
+	dprr:hasDateStart -188 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -188 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2735> rdfs:label "Post Assertion: #2735" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2268> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Manlius Vulso Pat. (93)" ;
+	dprr:hasOfficeXref "Pr. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 2735 ;
+	dprr:hasDateStart -189 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -189 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2415> rdfs:label "Post Assertion: #2415" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1100> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8449> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2013> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2012> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2010> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2009> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Manlius Vulso Pat. (93)" ;
+	dprr:hasOfficeXref "Sicily" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2415 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -197 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/836> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "92" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MANL0836 L. Manlius (92) (Vulso)" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 836 ;
+	dprr:hasHighestOffice "pr. 218 or 219" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MANL0836" ;
+	dprr:hasCognomen "(Vulso)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/836> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/734> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "101" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MANL0734 L. Manlius (101) A. f. P. n. Vulso Longus" ;
+	dprr:hasOtherNames "Longus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 734 ;
+	dprr:hasHighestOffice "cos. 256" ;
+	dprr:hasFiliation "A. f. P. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "MANL0734" ;
+	dprr:hasCognomen "Vulso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/734> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1515> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "94" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MANL1515 L. Manlius (94) Vulso" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1515 ;
+	dprr:hasHighestOffice "leg. amb. 149" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MANL1515" ;
+	dprr:hasCognomen "Vulso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1515> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1413> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "26, cf. 43" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MANL1413 L. Manlius (26, cf. 43) (Acidinus)" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1413 ;
+	dprr:hasHighestOffice "q. 168" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "MANL1413" ;
+	dprr:hasCognomen "(Acidinus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1413> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1370> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "43, 26?" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MANL1370 -. Manlius (43, 26?) L. f. Acidinus" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1370 ;
+	dprr:hasHighestOffice "tr. mil. 171" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "MANL1370" ;
+	dprr:hasCognomen "Acidinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1370> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1151> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "90" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "MANL1151 A. Manlius (90) Cn. f. L. n. Vulso" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1151 ;
+	dprr:hasHighestOffice "cos. 178" ;
+	dprr:hasFiliation "Cn. f. L. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -221 ;
+	dprr:hasDprrID "MANL1151" ;
+	dprr:hasCognomen "Vulso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1151> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1103> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "91" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "MANL1103 Cn. Manlius (91) Cn. f. L. n. Vulso" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasNobilisNotes "Liv. 39.40.2-3, 39.41.1" ;
+	dprr:hasID 1103 ;
+	dprr:hasHighestOffice "cos. 189" ;
+	dprr:hasFiliation "Cn. f. L. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -227 ;
+	dprr:hasDprrID "MANL1103" ;
+	dprr:hasCognomen "Vulso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1103> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1100> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "93" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MANL1100 L. Manlius (93) Vulso" ;
+	dprr:hasNomen "Manlius" ;
+	dprr:hasID 1100 ;
+	dprr:hasHighestOffice "pr. 197" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MANL1100" ;
+	dprr:hasCognomen "Vulso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1100> .

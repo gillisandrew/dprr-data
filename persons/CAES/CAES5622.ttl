@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2882> rdfs:label "Person Note: #2882" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/35> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p21. Brut. 131. ?accusator de plebe? II-I cent." ;
+	dprr:hasID 2882 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5622> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2882> ;
+	dprr:hasPersonName "CAES5622 L. Caesulenus (1)" ;
+	dprr:hasNomen "Caesulenus" ;
+	dprr:hasID 5622 ;
+	dprr:hasEraTo -1 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CAES5622" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5622> .

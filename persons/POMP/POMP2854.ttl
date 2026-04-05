@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> rdfs:label "Secondary Source: Suolahti 1955" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Suolahti" ;
+	dprr:hasID 26 ;
+	dprr:hasBiblio "Suolahti, J., The junior officers of the Roman army in the Republican period : a study on social structure. Helsinki : Suomalainen Tiedeakatemia, 1955." ;
+	dprr:hasAbbreviation "Suolahti 1955" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6392> rdfs:label "Post Assertion Note: #6392" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "An officer (no title preserved) under Sextus Pompey, who held command at Mylae against Agrippa (App. BC 5.104-107; Dio 49.2-7), against Lepidus in western Sicily (App. 5.105-106; Dio 49.8.2), and committed suicide after Naulochus (Dio 49.10.4)." ;
+	dprr:hasID 6392 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6341> rdfs:label "Post Assertion Note: #6341" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A freedman, probably of Pompey, who is described in Appian (BC 5.83) as a subordinate officer of Sextus Pompey's Lieutenant Menecrates, and took part as such in the battle off Cumae (App. BC 5.83; cf. Dio 48.46.4- 5; Oros. 6.18.21; Zonar. 10.23), but instead of using his advantage there sailed away to Pompey, and took part as an officer in command in the battle at the straits (App. BC 5.84-86; Dio 48.47; cf. Suet. Aug. 16, praefectus)." ;
+	dprr:hasID 6341 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10302> rdfs:label "Post Assertion Note: #10302" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C.188, 196 (MRR lists Demochares as legatus but admits that this naval commander's title is not preserved, Suolahti has praefectus classis)." ;
+	dprr:hasID 10302 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10301> rdfs:label "Post Assertion Note: #10301" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C.188, 196 (MRR lists Demochares as legatus but admits that this naval commander's title is not preserved, Suolahti has praefectus classis)." ;
+	dprr:hasID 10301 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7141> rdfs:label "Post Assertion: #7141" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2854> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6392> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "(Pompeius) Demochares (Papias) (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7141 ;
+	dprr:hasDateStart -36 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7082> rdfs:label "Post Assertion: #7082" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2854> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6341> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "(Pompeius?) Demochares (Demochares 7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7082 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10697> rdfs:label "Post Assertion: #10697" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2854> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10302> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/112> ;
+	dprr:hasID 10697 ;
+	dprr:hasDateStart -36 ;
+	dprr:hasDateSourceText "36" ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10696> rdfs:label "Post Assertion: #10696" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2854> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/26> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10301> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/112> ;
+	dprr:hasID 10696 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSourceText "38" ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2854> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "Demochares 7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "POMP2854 -. Pompeius (Demochares 7) Demochares Papias" ;
+	dprr:hasOtherNames "Papias" ;
+	dprr:hasNomen "Pompeius" ;
+	dprr:hasID 2854 ;
+	dprr:hasHighestOffice "leg. lieut. 36" ;
+	dprr:hasEraTo -36 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "POMP2854" ;
+	dprr:hasCognomen "Demochares" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2854> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/786> rdfs:label "Date Information: #786" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2854> ;
+	dprr:hasValue -36 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "suicide." ;
+	dprr:hasID 786 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

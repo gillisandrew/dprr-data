@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/442> rdfs:label "Primary Source Reference: #442" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. dom. 136" ;
+	dprr:hasID 442 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/436> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/394> rdfs:label "Primary Source Reference: #394" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. de orat. I 240" ;
+	dprr:hasID 394 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/389> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/352> rdfs:label "Post Assertion Note: #352" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.21.10. See Degrassi 95, 370f." ;
+	dprr:hasID 352 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/306> rdfs:label "Post Assertion Note: #306" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See Conway-Walters ed., ad loc." ;
+	dprr:hasID 306 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/305> rdfs:label "Post Assertion Note: #305" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.11.1\n     , and 21.12; Diod. 12.34.1; Chr. 354 (Vivullano et Helva); Fast. Hyd. (Vibulano et Helva), so also Chr. Pasc.; Cassiod.; cf. Auct. De Praenom. 3 (on Postumus); Degrassi 95, 368f. Enacted a measure to send a Latin colony to Ardea (Liv. 4.11.1-7; cf. Diod. 12.34.5)." ;
+	dprr:hasID 305 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/304> rdfs:label "Post Assertion Note: #304" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Aebutius' cognomen in Diod. is {Gr}." ;
+	dprr:hasID 304 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/436> rdfs:label "Post Assertion: #436" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/215> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/352> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Postumus Aebutius - f. - n. Helva Cornicen Pat. (14)" ;
+	dprr:hasOfficeXref "Cos. 442" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 436 ;
+	dprr:hasDateStart -435 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -435 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/389> rdfs:label "Post Assertion: #389" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/215> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/306> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/305> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/304> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Post. Aebutius - f. - n. Helva Cornicen Pat. (14)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 389 ;
+	dprr:hasDateStart -442 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -442 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/215> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Postumus> ;
+	dprr:hasPersonName "AEBU0215 Post. Aebutius (14) Helva Cornicen" ;
+	dprr:hasOtherNames "Cornicen" ;
+	dprr:hasNomen "Aebutius" ;
+	dprr:hasID 215 ;
+	dprr:hasHighestOffice "cos. 442" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "AEBU0215" ;
+	dprr:hasCognomen "Helva" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/215> .

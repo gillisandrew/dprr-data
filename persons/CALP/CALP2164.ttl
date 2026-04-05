@@ -1,0 +1,276 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1062> rdfs:label "Status Assertion: #1062" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1062 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateEnd -61 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1789> rdfs:label "Relationship Assertion: #1789" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1575> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1788> rdfs:label "Relationship Assertion: #1788" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1561> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9095> rdfs:label "Post Assertion Note: #9095" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 752, footnote 385" ;
+	dprr:hasID 9095 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> rdfs:label "Post Assertion Note: #6992" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 67. Praetor 71. As he is termed praetor urbis in Val. Max. 7.7.5 in connection with business about an inheritance definitely within the province of the pr. urb., it seems preferable  to date his office a year earlier to 71 (cf. MRR 2.127), since in 70 M. Mummius (9) received communications from Sicily more suitable for a pr. urb. than a pr. pereg. (MRR 2.127; R. Seager, CR 20, 1970, 11; Sumner, Orators 128). Proconsul in both Gallic provinces in 66 and 65 (Larsen, CPh 26, 1931, 427-428; MRR 2.154, 159), he may have continued in charge of the Cisalpina in 64 and perhaps even into 63, as Murena was governor only of Transalpine Gaul (MRR 2.163, 169), and no successor in Cisalpina is named before Metellus Celer (86). Cos. 60, in 63 (MRR 2.166). On the governors of the Gallic provinces, see Badian, Mel. Piganiol 901ff., esp. 913-917. Caesar's prosecution of him is not certainly dated (Cic. Flacc. 98; Sall. Cat. 49.2). See Badian, Mel. Piganiol 913-916; cf. W. Allen, Jr., TAPhA 83, 1952, 233ff.; CPh 48, 1953, 176f. Addendum. As he held the office of praetor urbanus, B. W. Frier (TAPhA 113, 1983, 224-225, 229) would date it to 72, not 71 as  suggested above, thus leaving room to place the urban praetorship of L. Caecilius C. f. Q. n. Metellus (74). Cos. 68, in 71, the probable date of his grant of action for damnum vi hominibus armatis coactisve datum.\n" ;
+	dprr:hasID 6992 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4794> rdfs:label "Post Assertion Note: #4794" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Continued as Proconsul in command of both Transalpine and Cisalpine Gaul (Cic. Att. 1.1.2; see 67, Consuls, and 66, Promagistrates). In 63 he was accused of extortion for punishments he imposed on a Transpadane (Cic. Flacc. 98; Sall. Cat. 49.2)." ;
+	dprr:hasID 4794 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4768> rdfs:label "Post Assertion Note: #4768" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Continued in command of Cisalpine and of Transalpine Gaul (see 67, Consuls), and subdued a rising of the Allobroges (Cic. Att. 1.13.2, cf. 1.1.2; Dio 36.37.2)." ;
+	dprr:hasID 4768 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4674> rdfs:label "Post Assertion Note: #4674" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 12.2.748, 2511; Cic. Phil. 2.12; Dio 36.12. 1, and 24.3; Chr. 354 (Pisone et Glabria); Fast. Hyd. (Pisone et Glabrione), so also Chr. Pasc.; Cassiod.; on Piso, Ascon. 57 C; and on Glabrio, CIL 12.2.959; Dio 36.41.2. See Degrassi 131, 488f. Piso was strongly opposed to the proposals of the Tribune Gabinius (Dio 36.24.3; cf. Plut. Pomp. 25.4), to the recruitment of forces for Pompey (Dio 36.37.2-3; Plut. Pomp. 27.1), and the proposals of the Tribune Cornelius (Ascon. 58 C; Dio 36.38-39), and to counter the latter was compelled to carry a bribery law of his own (Cic. Corn. 1, fr. 23, and 45; Mur. 46 and 67 and 72-73; Tog. Cand. in Ascon. 88 C; Sall. Cat. 18.2; Ascon. 69, 75, 88 C; Dio 36.38-39; Schol. Bob. 78 Stangl; cf. Cic. Sull. 74). He was assigned the province of Transalpine Gaul during his consulship (Dio 36.37.2-3), and also the Cisalpine province (Cic. Att. 1.1.2; cf. Flacc. 98; Sall. Cat. 49.2; see Larsen, CPh 26 [1931] 427-429). He stopped Lollius Palicanus from his candidacy for the consulship (Val. Max. 3.8.3; cf. Cic. Att. 1.1.1). Glabrio supported his colleague's bribery law (Dio 36.38. 1), and under a law of Gabinius received command of Bithynia and Pontus (Cic. Leg. Man. 5 and 26; Sall. Hist. 5.13 M, Lex Gabinia; Dio 36.14.4, and 17.1; cf. App. Mith. 90, Asia; Eutrop. 6.9.3; Schol. Gron. 319 Stangl)." ;
+	dprr:hasID 4674 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4568> rdfs:label "Post Assertion Note: #4568" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Val. Max. 7.7.5." ;
+	dprr:hasID 4568 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4567> rdfs:label "Post Assertion Note: #4567" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "2 The latest year possible under the Cornelian law." ;
+	dprr:hasID 4567 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8280> rdfs:label "Post Assertion: #8280" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginalExpanded "urbanus/?provincia declined" ;
+	dprr:hasProvinceOriginal "U/?Z" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9095> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4568> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4567> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (63)" ;
+	dprr:hasOfficeXref "cos. 67" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8280 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateSourceText "71" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -71 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8265> rdfs:label "Post Assertion: #8265" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Gallia Cisalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (63)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 8265 ;
+	dprr:hasDateStart -63 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8264> rdfs:label "Post Assertion: #8264" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Gallia Cisalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (63)" ;
+	dprr:hasOfficeXref "Cos. 67" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 8264 ;
+	dprr:hasDateStart -64 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -64 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5391> rdfs:label "Post Assertion: #5391" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Gallia Cisalpina & Gallia Transalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4794> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (63)" ;
+	dprr:hasOfficeXref "Cos. 67" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5391 ;
+	dprr:hasDateStart -65 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -65 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5361> rdfs:label "Post Assertion: #5361" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Gallia Cisalpina & Gallia Transalpina" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6992> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4768> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Calpurnius Piso (63)" ;
+	dprr:hasOfficeXref "Cos. 67" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 5361 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5280> rdfs:label "Post Assertion: #5280" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4674> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Calpurnius - f. - n. Piso (63)" ;
+	dprr:hasOfficeXref "Pr. by 70" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 5280 ;
+	dprr:hasDateStart -67 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -67 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2164> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumber "63" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CALP2164 C. Calpurnius (63) -. f. Cn. or Q.? n. Piso" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasNobilisNotes "Schol. Bob. Sest. 139 Stangl" ;
+	dprr:hasID 2164 ;
+	dprr:hasHighestOffice "cos. 67" ;
+	dprr:hasFiliation "-. f. Cn. or Q.? n." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -110 ;
+	dprr:hasDprrID "CALP2164" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2164> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1575> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "86" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "CALP1575 Q. Calpurnius (86) C. f. C. n. Piso" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 1575 ;
+	dprr:hasHighestOffice "cos. 135" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -180 ;
+	dprr:hasDprrID "CALP1575" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1575> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1561> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "73" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CALP1561 Cn. Calpurnius (73) Piso" ;
+	dprr:hasNomen "Calpurnius" ;
+	dprr:hasID 1561 ;
+	dprr:hasHighestOffice "cos. 139" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CALP1561" ;
+	dprr:hasCognomen "Piso" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1561> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/558> rdfs:label "Date Information: #558" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasValue -61 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasNotes "Cic. Att. 1.13.2." ;
+	dprr:hasID 558 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/557> rdfs:label "Date Information: #557" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2164> ;
+	dprr:hasValue -110 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R181." ;
+	dprr:hasID 557 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

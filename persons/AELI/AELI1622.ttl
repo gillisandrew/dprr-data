@@ -1,0 +1,268 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/324> rdfs:label "Tribe Assertion: #324" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/38> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p186-7." ;
+	dprr:hasID 324 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/38> rdfs:label "Tribe: Tromentina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Tromentina" ;
+	dprr:hasID 38 ;
+	dprr:hasAbbreviation "Tro." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2389> rdfs:label "Status Assertion: #2389" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2389 ;
+	dprr:hasDateStart -132 ;
+	dprr:hasDateEnd -127 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/568> rdfs:label "Relationship Assertion Reference: #568" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 568 ;
+	dprr:hasExtraInfo "Cic. Mur. 76" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/567> rdfs:label "Relationship Assertion Reference: #567" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 567 ;
+	dprr:hasExtraInfo "Cic. Mur. 75" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/319> rdfs:label "Relationship Assertion Reference: #319" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 319 ;
+	dprr:hasExtraInfo "Cic. Brut. 117" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2024> rdfs:label "Relationship Assertion Reference: #2024" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2024 ;
+	dprr:hasExtraInfo "Cic. Mur. 75,76,Cic. De Orat. 2.341,Cic. Brut. 117,VM 7.5.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1897> rdfs:label "Relationship Assertion Reference: #1897" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1897 ;
+	dprr:hasExtraInfo "Val. Max. VII 5.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/384> rdfs:label "Relationship Assertion: #384" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/568> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/567> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/319> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1897> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4022> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1455> rdfs:label "Relationship Assertion: #1455" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2024> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1429> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9870> rdfs:label "Post Assertion Note: #9870" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9870 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9869> rdfs:label "Post Assertion Note: #9869" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9869 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9275> rdfs:label "Post Assertion Note: #9275" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/8> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No. 7, pp. 208-10, dating the triumvirate to before 132. Cascione further has the triumvir as Tr. Pl. 132, Pr.?, and Cos. Suff.? LM." ;
+	dprr:hasID 9275 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7099> rdfs:label "Post Assertion Note: #7099" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "As a judicial Triumvir (Cic. Brut. 117, where Malcovati, ed., and Sumner both reject Schètz's emendation of triumviratu to tribunatu), he gave judgment, contrary to the testimony of Scipio Aemilianus, that augurs were not exempt from service on juries. The date must precede, perhaps by several years, the death of Scipio in 129, but is otherwise uncertain. See Niccolini, FTP 414f., but cf. Mommsen, StR 2?.600. Sumner suggests, although evidence is lacking, that he may have become tribune of the plebs ca. 132, and was sponsor of the Lex Aelia (AJPh 84, 1963, 347-348; Orators 70-71), but cf. Cic. Pis. 10 and Vat. 23, above, on Aelius (1). According to Cicero (Mur. 75-76), and Val. Max. (7.5.1), he was an unsuccessful candidate for the praetorship soon after Scipio's death.[4]\n" ;
+	dprr:hasID 7099 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3196> rdfs:label "Post Assertion Note: #3196" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "As Tribune (triumviratu, Mss, Cic. Brut. 117) he gave judgment, contrary to the testimony of Scipio, that Augurs were liable to service on juries. The date must precede Scipio's death in 129 but is otherwise uncertain. See Niccolini, FTP 414f.; but cf. Mommsen, Str. 2.600." ;
+	dprr:hasID 3196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7871> rdfs:label "Post Assertion: #7871" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9275> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7099> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/99> ;
+	dprr:hasID 7871 ;
+	dprr:hasDateStart -130 ;
+	dprr:hasDateSourceText "uncertain, but before 129; before ca. 132 if tr. pl. then" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -130 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3872> rdfs:label "Post Assertion: #3872" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9275> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7099> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3196> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Q. Aelius Tubero (155)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3872 ;
+	dprr:hasDateStart -132 ;
+	dprr:hasDateSourceText "ca. 132" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -132 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10265> rdfs:label "Post Assertion: #10265" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9870> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/258> ;
+	dprr:hasID 10265 ;
+	dprr:hasDateStart -128 ;
+	dprr:hasDateSourceText "128" ;
+	dprr:hasDateEnd -128 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10264> rdfs:label "Post Assertion: #10264" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9869> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/258> ;
+	dprr:hasID 10264 ;
+	dprr:hasDateStart -127 ;
+	dprr:hasDateSourceText "127" ;
+	dprr:hasDateEnd -127 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4022> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "151" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "AEMI4022  Aemilia (151)" ;
+	dprr:hasNomen "Aemilia" ;
+	dprr:hasID 4022 ;
+	dprr:hasHighestOffice "daughter of L. Aemilius (114) L. f. M. n. Paullus Macedonicus (cos. 182)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "AEMI4022" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4022> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1622> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "155" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "AELI1622 Q. Aelius (155) Tro. Tubero" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasNobilisNotes "Cic. Mur. 75, Cic. Rep. 1.19.31" ;
+	dprr:hasID 1622 ;
+	dprr:hasHighestOffice "tr. pl.? c. 132" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -163 ;
+	dprr:hasDprrID "AELI1622" ;
+	dprr:hasCognomen "Tubero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1622> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1429> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "154" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "AELI1429 Q. Aelius (154) Tro. Tubero" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 1429 ;
+	dprr:hasHighestOffice "tr. pl. 177" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "AELI1429" ;
+	dprr:hasCognomen "Tubero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1429> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/250> rdfs:label "Date Information: #250" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1622> ;
+	dprr:hasValue -163 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R80." ;
+	dprr:hasID 250 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

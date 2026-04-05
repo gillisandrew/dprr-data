@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9137> rdfs:label "Post Assertion Note: #9137" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726, footnote 16" ;
+	dprr:hasID 9137 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6559> rdfs:label "Post Assertion Note: #6559" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. Urbanus The Praetor who killed a portentous woodpecker and died shortly afterwards (Plin. NH 10.41; Frontin. Str. 4.5.14, with the names L. Aelius and Laelius; cf. Varro in Non. Marc. 518 L; Val. Max. 5.6.4, on the Pr. Aelius, who died at Cannae)." ;
+	dprr:hasID 6559 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8138> rdfs:label "Post Assertion: #8138" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2943> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "urbanus" ;
+	dprr:hasProvinceOriginal "U" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9137> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6559> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C.? Aelius (103, cf. 148, 149) Tubero" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8138 ;
+	dprr:hasDateStart -219 ;
+	dprr:hasDateSourceText "?before 218" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -219 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2943> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "103, cf. 148, 149" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "AELI2943 C. (or L.) Aelius (103, cf. 148, 149) Tubero" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 2943 ;
+	dprr:hasHighestOffice "pr. before 218" ;
+	dprr:hasEraTo -216 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "AELI2943" ;
+	dprr:hasCognomen "Tubero" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2943> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/791> rdfs:label "Date Information: #791" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2943> ;
+	dprr:hasValue -216 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "death?" ;
+	dprr:hasID 791 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

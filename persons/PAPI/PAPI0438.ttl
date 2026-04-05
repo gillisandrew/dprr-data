@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/805> rdfs:label "Primary Source Reference: #805" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. II iv 56" ;
+	dprr:hasID 805 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/796> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/560> rdfs:label "Post Assertion Note: #560" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.22.1; Diod. 15.41.1; Chr. 354 (Fidenas et Grasso); Degrassi 101, 392f. War with Velitrae and Praeneste (Liv. 6.22.1-4)." ;
+	dprr:hasID 560 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/559> rdfs:label "Post Assertion Note: #559" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "According to Diodorus there were only four Military Tribunes this year. The confused tradition in the Mss contains no trace of the names Sulpicius and Aemilius; on the others, see CIL 1(2).1, p. 123; Degrassi 101, 392f. Münzer (RE no. 12) holds that both the Papirii of this year bore the cognomen Crassus. It seems probable in the case of Sp. Papirius, since the filiation of the Military Tribune c. p. of 368 was Sp. f. C. n. His name therefore should probably be read Sp. Papirius C. f. - n. Crassus. Münzer would identify L. Papirius with the Military Tribune c. p. of 376 and the obscure Papirius cited in Chr. 354 under the year 374. Degrassi (101) lists L. Papirius as a Crassus but does not suggest any cognomen for Sp. Papirius. An L. Papirius Mugillanus is named in Fast. Cap. for 380 as a Military Tribune c. p. for the second time, but the date of his earlier Military Tribunate remains uncertain. Münzer (RE no. 66) would identify him with the L. Papirius, Military Tribune in 389, who is named only in Diodorus, and Degrassi suggests that his name should be inserted as the one that has been lost from the list for 385. He admits however that the second Military Tribunate of Cn. Sergius Fidenas Coxo could be listed there. I am inclined to place Sergius Coxo in 385, to consider that the L. Papirius mentioned in 389 is imperfectly attested, and to suggest that the L. Papirius who is listed as a Military Tribune in this year is a Mugillanus, not a Crassus, and held the office for the second time in 380. The filiation, however, of L. Papirius L. f. L. n. Crassus, Cos. 336, and 330, indicates that there was an L. Papirius Crassus in Rome in this generation." ;
+	dprr:hasID 559 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/796> rdfs:label "Post Assertion: #796" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/438> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/560> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/559> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Sp. Papirius - f. - n. Crassus Pat. (49)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 796 ;
+	dprr:hasDateStart -382 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -382 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/438> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "49" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "PAPI0438 Sp. Papirius (49) Crassus" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 438 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 382" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "PAPI0438" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/438> .

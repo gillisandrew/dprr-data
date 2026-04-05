@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1490> rdfs:label "Primary Source Reference: #1490" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 54.1" ;
+	dprr:hasID 1490 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1433> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1103> rdfs:label "Post Assertion Note: #1103" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Act. Tr. (names entire except Re[gu]lus); Fast. Cap. ([- - - -Iul]ius L. f. L. n. Libo); Eutrop. 2.17, with the nomen Iunius; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Regulus, Cic. Fin. 2.65; Off. 3.99; Plin. NH 18.27. See Degrassi, 40f., 74f., 115, 432f., 547. Both Consuls campaigned against the Sallentini, captured Brundisium, and celebrated triumphs de Sallentineis (Act. Tr., Degrassi, 74f., 547; Cic. Fin. 2.65; Flor. 1.15; Auct. Vir. Ill. 40; Schol. Bern. Verg. Georg. 3.1, on Regulus; and on Libo, Act. Tr.; cf. Liv. Per. 15; Zon. 8.7)." ;
+	dprr:hasID 1103 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10120> rdfs:label "Post Assertion Note: #10120" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Sallentineis. MRR I.200, Itgenshorst no. 121, Rich no. 120." ;
+	dprr:hasID 10120 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1433> rdfs:label "Post Assertion: #1433" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/704> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1103> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Iulius L. f. L. n. Libo Pat. (318)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1433 ;
+	dprr:hasDateStart -267 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -267 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10515> rdfs:label "Post Assertion: #10515" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/704> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10120> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10515 ;
+	dprr:hasDateStart -267 ;
+	dprr:hasDateSourceText "267" ;
+	dprr:hasDateEnd -267 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/704> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "318" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "IULI0704 L. Iulius (318) L. f. L. n. Libo" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 704 ;
+	dprr:hasHighestOffice "cos. 267" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "IULI0704" ;
+	dprr:hasCognomen "Libo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/704> .

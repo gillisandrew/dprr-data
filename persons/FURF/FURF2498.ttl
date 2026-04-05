@@ -1,0 +1,214 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2806> rdfs:label "Status Assertion: #2806" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2806 ;
+	dprr:hasDateStart -57 ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8827> rdfs:label "Post Assertion Note: #8827" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 750, footnote 338" ;
+	dprr:hasID 8827 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> rdfs:label "Post Assertion Note: #7029" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His praetorship in 46 (MRR 2.295) is simply an inference from his proconsulate in Sicily in 45 (Cic. Fam. 6.9; 8.3), insufficient for proof, as Sumner points out (Phoenix 25, 1971, 268-269). Sumner suggests that the special distinction of the jury on which he served in Milo's trial in 52 (Cic. Mil. 74-75; cf. Ascon. 38-39C; Veil. 2.76.1) implies that he was a senator by 52. If so, his quaestorship was considerably earlier, not in 51 (MRR 2.241), and his command in Sicily in 50 and 49 (2.250, 262) was not as proquaestor but possibly as an ex praetor (cf. Shackleton Bailey, CLA 4.311). It must have begun before 51, and, in view of the decree of 53 setting an interval of five years between city magistracy and provincial command, by 53. Hence his praetorship would date from 55 at the latest (Sumner, loc. cit.). Cf. J. Linderski, Stud. E. Volterra 2.285, on M. Nonius Sufenas, pr. 55, and governor of an eastern province in 51-50. On Furfanius' name, see Shackleton Bailey, CLA 2.311, 7.96ff.; CLF 2.403; and Studies 40, with evidence favoring the form Furfanus. See Wiseman, NM 233, no. 188.\n" ;
+	dprr:hasID 7029 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5894> rdfs:label "Post Assertion Note: #5894" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Sicily (Cic. Fam. 6.9, and 8.3)." ;
+	dprr:hasID 5894 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5791> rdfs:label "Post Assertion Note: #5791" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Proconsul of Sicily in 45 was probably a Praetor in 46 (see 45, Promagistrates)." ;
+	dprr:hasID 5791 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5549> rdfs:label "Post Assertion Note: #5549" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In command of Sicily, perhaps Proquaestor pro praetore, at the beginning of 49 (Cic. Att. 7.15.2; on the name, see Fam. 6.8.3)." ;
+	dprr:hasID 5549 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5457> rdfs:label "Post Assertion Note: #5457" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Apparently continued as Proquaestor in Sicily (Cic. Att. 7.15.2; see 51, Quaestors)." ;
+	dprr:hasID 5457 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5385> rdfs:label "Post Assertion Note: #5385" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor in Sicily (Cic. Att. 7.15.2; see 50, and 46, Promagistrates; and on the name, Fam. 6.8.3)." ;
+	dprr:hasID 5385 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8950> rdfs:label "Post Assertion: #8950" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 8950 ;
+	dprr:hasDateStart -53 ;
+	dprr:hasDateSourceText "by 53 to 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -53 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8949> rdfs:label "Post Assertion: #8949" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 8949 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSourceText "by 53 to 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8948> rdfs:label "Post Assertion: #8948" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 8948 ;
+	dprr:hasDateStart -51 ;
+	dprr:hasDateSourceText "by 53 to 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -51 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8946> rdfs:label "Post Assertion: #8946" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/130> ;
+	dprr:hasID 8946 ;
+	dprr:hasDateStart -52 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -52 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8945> rdfs:label "Post Assertion: #8945" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5457> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (7.307)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 8945 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "by 53 to 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6579> rdfs:label "Post Assertion: #6579" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5894> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOfficeXref "Pr. 46?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6579 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6475> rdfs:label "Post Assertion: #6475" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8827> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5791> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6475 ;
+	dprr:hasDateStart -55 ;
+	dprr:hasDateSourceText "55 at the latest" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -55 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6225> rdfs:label "Post Assertion: #6225" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5549> ;
+	dprr:hasPosition 16 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/190> ;
+	dprr:hasID 6225 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSourceText "by 53 to 49" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -49 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6052> rdfs:label "Post Assertion: #6052" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2498> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7029> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5385> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Furfanius Postumus (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 6052 ;
+	dprr:hasDateStart -58 ;
+	dprr:hasDateSourceText "58 at the latest" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -58 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2498> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "FURF2498 T. Furfanius (1) Postumus" ;
+	dprr:hasNomen "Furfanius" ;
+	dprr:hasID 2498 ;
+	dprr:hasHighestOffice "pr. before 54" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FURF2498" ;
+	dprr:hasCognomen "Postumus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2498> .

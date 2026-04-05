@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9979> rdfs:label "Post Assertion: #9979" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4661> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/243> ;
+	dprr:hasID 9979 ;
+	dprr:hasDateStart -300 ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1399> rdfs:label "Person Note: #1399" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/11> ;
+	dprr:hasNoteText "Die Carmina Marciana, die in die Sibyllinischen Bücher(libri Sibyllini aufgenommen wurden, weisen Marcius oder die Marcii als inspirierte Propheten aus, die jenseits der offiziellen Priesterschaften auftraten." ;
+	dprr:hasID 1399 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1398> rdfs:label "Person Note: #1398" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Cic. div. 1,115; 2,113; Liv. 25,12,3 f.; Plin. nat. 7,119; Amm. 14,1,7; Macr. Sat. 1,17,25. 28; Porphyr. Hor. ep. 2,1,26; Zonar. 9,1; Fest. 162,5-7 L. Mehrzahl: Cic. div. 1,89) ); 2,113; Serv. Aen. 6,70; Symmach. epist. 4,34,3." ;
+	dprr:hasID 1398 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1397> rdfs:label "Person Note: #1397" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Vermutlich 3. Jh. v. Chr." ;
+	dprr:hasID 1397 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1396> rdfs:label "Person Note: #1396" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 1396 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1395> rdfs:label "Person Note: #1395" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Marcius 2. NP Marcius I.2." ;
+	dprr:hasID 1395 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1394> rdfs:label "Person Note: #1394" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2367" ;
+	dprr:hasID 1394 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4661> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1399> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1398> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1397> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1396> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1395> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1394> ;
+	dprr:hasPersonName "MARC4661 Cn. Marcius (2)" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 4661 ;
+	dprr:hasHighestOffice "vates? C3?" ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -350 ;
+	dprr:hasDprrID "MARC4661" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4661> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1457> rdfs:label "Date Information: #1457" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4661> ;
+	dprr:hasValue -300 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1457 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

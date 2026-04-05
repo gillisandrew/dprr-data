@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2326> rdfs:label "Status Assertion: #2326" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1529> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2326 ;
+	dprr:hasDateStart -148 ;
+	dprr:hasDateEnd -145 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8965> rdfs:label "Post Assertion Note: #8965" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 740, footnote 136" ;
+	dprr:hasID 8965 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2985> rdfs:label "Post Assertion Note: #2985" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Disastrously defeated by Viriathus (Flor. 1.33.16; Auct. Vir. Ill. 71.1; Oros. 5.4.2)." ;
+	dprr:hasID 2985 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2971> rdfs:label "Post Assertion Note: #2971" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The known date of the command of Fabius in Farther Spain (145 B.C.) and the order of the commanders mentioned in Appian (Ib. 61-65) and other sources led Wilsdorf (Leipzig. Stud. 1 [1878] 97-100), and after him De Ruggiero and Stella Maranca (314), to date Vetilius in 149. Schulten however would assign Claudius Unimanus to Hither Spain in 146, thus leaving room for Vetilius in 147, the date favored by the placing of the notice about him in Liv. Per. 52, Plautius in 146, and Fabius in 145 (NJ 39 [1917] 217-221; cf. Gesch. Num. 65). This dating is also supported by Appian's statement that there was an interval between the administration of Galba in 150 and the outbreak of the great war with Viriathus (Ib. 60)." ;
+	dprr:hasID 2971 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7966> rdfs:label "Post Assertion: #7966" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1529> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasProvinceOriginalExpanded "Hispania Citerior" ;
+	dprr:hasProvinceOriginal "HC" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8965> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Claudius (376) Unimanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7966 ;
+	dprr:hasDateStart -145 ;
+	dprr:hasDateSourceText "145" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -145 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3635> rdfs:label "Post Assertion: #3635" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1529> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2985> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2971> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "- Claudius Unimanus Pat. ? (376)" ;
+	dprr:hasOfficeXref "Hither Spain" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3635 ;
+	dprr:hasDateStart -146 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -146 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1529> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "376" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CLAU1529 -. Claudius (376) Unimanus" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 1529 ;
+	dprr:hasHighestOffice "pr.? 146" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CLAU1529" ;
+	dprr:hasCognomen "Unimanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1529> .

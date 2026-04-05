@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1642> rdfs:label "Primary Source Reference: #1642" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Pomp. 47.6(4)" ;
+	dprr:hasID 1642 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1574> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1217> rdfs:label "Post Assertion Note: #1217" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "When sent ahead by Varus to Corsica, he made an agreement which was repudiated; whereupon he was delivered to the Corsi, returned by them, and then either imprisoned or banished (Val. Max. 6.3.3; Zon. 8.18; cf. Dio fr. 45; Ammian. 14.11.32)." ;
+	dprr:hasID 1217 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1574> rdfs:label "Post Assertion: #1574" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/784> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1217> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Claudius Clineas (115)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1574 ;
+	dprr:hasDateStart -236 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -236 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/784> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "115" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "CLAU0784 M. Claudius (115) Clineas" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 784 ;
+	dprr:hasHighestOffice "leg. lieut. 236" ;
+	dprr:hasEraTo -236 ;
+	dprr:hasEraFrom -275 ;
+	dprr:hasDprrID "CLAU0784" ;
+	dprr:hasCognomen "Clineas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/784> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/9> rdfs:label "Date Type: restored" ;
+	a dprr:DateType ;
+	dprr:hasName "restored" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/8> rdfs:label "Date Type: extradited" ;
+	a dprr:DateType ;
+	dprr:hasName "extradited" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/6> rdfs:label "Date Type: exiled" ;
+	a dprr:DateType ;
+	dprr:hasName "exiled" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1012> rdfs:label "Date Information: #1012" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/784> ;
+	dprr:hasValue -236 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "exile? Dio 12.45, Zon. 8.18." ;
+	dprr:hasID 1012 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/6> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1011> rdfs:label "Date Information: #1011" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/784> ;
+	dprr:hasValue -236 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "execution. VM 6.3.3a." ;
+	dprr:hasID 1011 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1010> rdfs:label "Date Information: #1010" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/784> ;
+	dprr:hasValue -236 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "VM 6.3.3a, Dio 12.45, Amm. Marc. 14.11.32, Zon. 8.18." ;
+	dprr:hasID 1010 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/8> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1009> rdfs:label "Date Information: #1009" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/784> ;
+	dprr:hasValue -236 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "VM 6.3.3a, Dio 12.45, Amm. Marc. 14.11.32, Zon. 8.18." ;
+	dprr:hasID 1009 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/9> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,265 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/453> rdfs:label "Status Assertion: #453" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 453 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6060> rdfs:label "Relationship Assertion: #6060" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1109> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3550> rdfs:label "Relationship Assertion: #3550" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1200> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2485> rdfs:label "Relationship Assertion: #2485" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/807> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2484> rdfs:label "Relationship Assertion: #2484" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4873> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8509> rdfs:label "Post Assertion Note: #8509" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 732" ;
+	dprr:hasID 8509 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2665> rdfs:label "Post Assertion Note: #2665" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commanded the left wing under Licinius at Callinicus (Liv. 42.58.12). See Münzer, Gent. Val. 47, no. 35." ;
+	dprr:hasID 2665 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2432> rdfs:label "Post Assertion Note: #2432" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Aemilius Paullus in Liguria (Liv. 40.27.3 and 7). See Münzer, Gent. Val. 47, no. 35." ;
+	dprr:hasID 2432 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2431> rdfs:label "Post Assertion Note: #2431" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Of three possible candidates, 1. Laevinus, Pr. 182, 2. Messalla, Cos. 188, and 3. Messalla, Cos. 161, the first seems most probable, cf. Münzer, Gent. Val. 60." ;
+	dprr:hasID 2431 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2395> rdfs:label "Post Assertion Note: #2395" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See Münzer, Gent. Val. 47, no. 35." ;
+	dprr:hasID 2395 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2390> rdfs:label "Post Assertion Note: #2390" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections: Liv. 39.51.5 Provinces and armies 40.1.1-2 and 4 and 7." ;
+	dprr:hasID 2390 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2323> rdfs:label "Post Assertion Note: #2323" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Either he or the Consul of 210 was the Curule Aedile who was summoned to appear in a Praetor's court (Varro in Gell. 13.13.4; see Münzer, Gent. Val. 47, note 1)." ;
+	dprr:hasID 2323 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3248> rdfs:label "Post Assertion: #3248" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2665> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "M. Valerius Laevinus Pat. (210)" ;
+	dprr:hasOfficeXref "Pr. 182" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 3248 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2938> rdfs:label "Post Assertion: #2938" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2432> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2431> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Valerius (Laevinus) (210)" ;
+	dprr:hasOfficeXref "Pr. 182" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 2938 ;
+	dprr:hasDateStart -181 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -181 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2900> rdfs:label "Post Assertion: #2900" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8509> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2395> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2390> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "M. Valerius Laevinus Pat. (210)" ;
+	dprr:hasOfficeXref "Pr. Peregrinus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2900 ;
+	dprr:hasDateStart -182 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -182 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2814> rdfs:label "Post Assertion: #2814" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2323> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M. Valerius Laevinus Pat. (210)" ;
+	dprr:hasOfficeXref "Pr. 182" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 2814 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -185 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/807> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "211" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE0807 M. Valerius (211) P. f. P. n. Laevinus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 807 ;
+	dprr:hasHighestOffice "cos. 220" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -254 ;
+	dprr:hasDprrID "VALE0807" ;
+	dprr:hasCognomen "Laevinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/807> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4873> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "214" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE4873 P. Valerius (214) Laevinus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 4873 ;
+	dprr:hasHighestOffice "son of M. Valerius (211) P. f. P. n. Laevinus (cos. 220)" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "VALE4873" ;
+	dprr:hasCognomen "Laevinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4873> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1232> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "210" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE1232 M. Valerius (210) Laevinus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1232 ;
+	dprr:hasHighestOffice "pr. 182" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -220 ;
+	dprr:hasDprrID "VALE1232" ;
+	dprr:hasCognomen "Laevinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1232> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1200> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "208" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "VALE1200 C. Valerius (208) M. f. P. n. Laevinus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 1200 ;
+	dprr:hasHighestOffice "cos. suff. 176" ;
+	dprr:hasFiliation "M. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -219 ;
+	dprr:hasDprrID "VALE1200" ;
+	dprr:hasCognomen "Laevinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1200> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1109> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "91" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FULV1109 M. Fulvius (91) M. f. Ser. n. Nobilior" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasNobilisNotes "Liv. 39.40.2-3, 39.41.1, 40.45.6-7, Gell. 12.8.cap-6 (\"Fulvius Flaccus\")" ;
+	dprr:hasID 1109 ;
+	dprr:hasHighestOffice "cos. 189" ;
+	dprr:hasFiliation "M. f. Ser. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -226 ;
+	dprr:hasDprrID "FULV1109" ;
+	dprr:hasCognomen "Nobilior" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1109> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/114> rdfs:label "Date Information: #114" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1232> ;
+	dprr:hasValue -220 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 127." ;
+	dprr:hasID 114 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

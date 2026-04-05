@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6703> rdfs:label "Post Assertion Note: #6703" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Lucilius 467-468 M. Under this name Lucilius satirized some Quaestor whose real name is lost. See Cichorius, Untersuch. Lucil. 317-320, possibly Tuticanus Gallus (cf. Caes. BC 3.71)." ;
+	dprr:hasID 6703 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7458> rdfs:label "Post Assertion: #7458" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3055> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6703> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "(P. Pavus Tubitanus) (RE s. v. Pavus)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7458 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3055> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Pavus" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "PAVU3055 P. Tubitanus (Pavus) Pavus" ;
+	dprr:hasNomen "Tubitanus" ;
+	dprr:hasID 3055 ;
+	dprr:hasHighestOffice "q. C1?" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PAVU3055" ;
+	dprr:hasCognomen "Pavus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3055> .

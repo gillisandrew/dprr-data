@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/499> rdfs:label "Primary Source Reference: #499" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fam. XIII 76" ;
+	dprr:hasID 499 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/490> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/396> rdfs:label "Post Assertion Note: #396" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.35.4, and 36.5; Diod. 12.82.1; Chr. 354 (Crasso et Fidenas); Degrassi 96, 374f. Claudius was left in charge of the city and held the elections (Liv. 4.36.5)." ;
+	dprr:hasID 396 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/395> rdfs:label "Post Assertion Note: #395" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Claudius, given the praenomen of Titus in Diod., was a son of the Decemvir. Livy calls him Ap. at 4.36.5. Degrassi (96) suggests Ti. in Fast. Cap. For Nautius (Diod.) Livy has Naevius Rutilius, but at 4.35.6 all are stated to be patricians, and at 4.44.13 the name appears as above. In Sergius' case the praenomen T. in Livy is corrected from Diod. ({Gr}), and from comparison with Liv. 4.25.2, and 45.5, and Fast. Cap. on 418. As to Iullus, the reading Tullus in Livy is changed in accordance with such cases as those in Fast. Cap. on 451 and the Chronographers on 489. See Conway and Walters on Liv. 4.35.4." ;
+	dprr:hasID 395 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/490> rdfs:label "Post Assertion: #490" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/272> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/396> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/395> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Sp. Nautius Sp. f. - n. Rutilus Pat. (9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 490 ;
+	dprr:hasDateStart -424 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -424 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/272> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "NAUT0272 Sp. Nautius (9) Sp. f. - n. Rutilus" ;
+	dprr:hasNomen "Nautius" ;
+	dprr:hasID 272 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 424" ;
+	dprr:hasFiliation "Sp. f. - n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "NAUT0272" ;
+	dprr:hasCognomen "Rutilus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/272> .

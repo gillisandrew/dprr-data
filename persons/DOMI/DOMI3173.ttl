@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1591> rdfs:label "Status Assertion: #1591" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3173> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1591 ;
+	dprr:hasDateStart -129 ;
+	dprr:hasDateEnd -129 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> rdfs:label "Secondary Source: Broughton MRR II Appendix 3" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 3" ;
+	dprr:hasID 4 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 3. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 3" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7434> rdfs:label "Post Assertion Note: #7434" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Listed in the consilium in the SC de agro Pergameno; see now Sherk, RDGE no. 12, 63-73. Delete the tribe Pup., in MRR 2.490 and the Index, 560. He may be identified as a son of no. 19, Cos. 162, and a brother of no. 20, Cos. 122. See MRR 1.496-497, note 1. On the date, see above, M.' Aquillius (10)\n" ;
+	dprr:hasID 7434 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6863> rdfs:label "Post Assertion Note: #6863" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator in 129 (S. C. de Agro Pergameno). Identified by Cichorius with L. Domitius Ahenobarbus, Cos. 94 (Untersuch. Lucil. 3f.; followed by Magie, Roman Rule in Asia Minor 2.1055, note 25), but as the S. C. de Agro Pergameno should probably be dated in 129 Domitius is more probably a member of the previous generation (see above, 133, note 1)." ;
+	dprr:hasID 6863 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7619> rdfs:label "Post Assertion: #7619" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3173> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7434> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6863> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Domitius Cn. f. Pup. (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7619 ;
+	dprr:hasDateStart -129 ;
+	dprr:hasDateSourceText "129" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasDateEnd -129 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3173> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "DOMI3173 L. Domitius (not in RE) Cn. f. (Cn. n.) (Ahenobarbus)" ;
+	dprr:hasNomen "Domitius" ;
+	dprr:hasID 3173 ;
+	dprr:hasHighestOffice "sen. 129" ;
+	dprr:hasFiliation "Cn. f. (Cn. n.)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "DOMI3173" ;
+	dprr:hasCognomen "(Ahenobarbus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3173> .

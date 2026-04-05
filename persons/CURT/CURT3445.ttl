@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2416> rdfs:label "Person Note: #2416" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His praenomen, given as M. due to the incorrect identification of Cicero's client with the M. Curtius whom Cicero recommended to Caesar for a military tribunate in 54 (QF 2.14.3; 3.1.10), is established as C. by that of his freedman C. Curtius Mithres (Fam. 13.69.1). See Shackleton Bailey, Studies 33- 34." ;
+	dprr:hasID 2416 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3445> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "cf. 24" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2416> ;
+	dprr:hasPersonName "CURT3445 C. Curtius (cf. 24) Postumus" ;
+	dprr:hasNomen "Curtius" ;
+	dprr:hasID 3445 ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CURT3445" ;
+	dprr:hasCognomen "Postumus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3445> .

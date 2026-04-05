@@ -1,0 +1,123 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2468> rdfs:label "Status Assertion: #2468" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1760> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2468 ;
+	dprr:hasDateStart -106 ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9457> rdfs:label "Post Assertion Note: #9457" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 292" ;
+	dprr:hasID 9457 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8686> rdfs:label "Post Assertion Note: #8686" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 746, footnote 241" ;
+	dprr:hasID 8686 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7575> rdfs:label "Post Assertion Note: #7575" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. 104. Monetalis. In MRR 2.443, and Index, 581, refer also to Crawford, RRC 1.306-307, no. 292, 113 or 112 B.C. Note Crawford's opposing discussion of L. R. Taylor, RVA 39, on the arrangement and meaning of the voting scenes.\n" ;
+	dprr:hasID 7575 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3558> rdfs:label "Post Assertion Note: #3558" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "As governor of Sicily, he carried out senatorial instructions to investigate and set free citizens of allied states who were held in slavery. Many of the slaves conspired and revolted, balked his attempt to take Murgantia, and occupied much of the island (Diod. 36.3-6; Dio 27, fr. 93.1-3)." ;
+	dprr:hasID 3558 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3557> rdfs:label "Post Assertion Note: #3557" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Diod. and Dio use the terms {Gr} and {Gr}, respectively, to describe Nerva's command in Sicily; and Wehrman, FP, lists him as Pr. in 104. The possibility that he was Pr. in 105 and Propraetor in 104 is not excluded." ;
+	dprr:hasID 3557 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9202> rdfs:label "Post Assertion: #9202" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1760> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9457> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7575> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Licinius Nerva, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 9202 ;
+	dprr:hasDateStart -112 ;
+	dprr:hasDateSourceText "113 - 112" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -112 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4238> rdfs:label "Post Assertion: #4238" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1760> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8686> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3558> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3557> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "? P. Licinius Nerva (135)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4238 ;
+	dprr:hasDateStart -104 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11147> rdfs:label "Post Assertion: #11147" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1760> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9457> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7575> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 11147 ;
+	dprr:hasDateStart -113 ;
+	dprr:hasDateEnd -113 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1760> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "135, 136" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "LICI1760 P. Licinius (135, 136) Nerva" ;
+	dprr:hasNomen "Licinius" ;
+	dprr:hasID 1760 ;
+	dprr:hasHighestOffice "pr. before 103" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "LICI1760" ;
+	dprr:hasCognomen "Nerva" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1760> .

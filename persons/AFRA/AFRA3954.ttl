@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2042> rdfs:label "Relationship Assertion Reference: #2042" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2042 ;
+	dprr:hasExtraInfo "AE 1957.165, SEG 14 1957.644" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/186> rdfs:label "Relationship Assertion Reference: #186" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 186 ;
+	dprr:hasExtraInfo "Caes. b.c. I 84.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/232> rdfs:label "Relationship Assertion: #232" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3954> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/186> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2074> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1565> rdfs:label "Relationship Assertion: #1565" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3954> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2042> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4714> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2422> rdfs:label "Person Note: #2422" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Honored as a patron at Magnesia on the Maeander (L Magn. 143), and at Caunus along with his brother Aulus (G. E. Bean, JHS 74, 1954, 90, no. 26-AEpig. 1957, 165). Probably sons of the consul of 60, but not specifically termed magistrates or senators: See Wiseman, NM 210, no. 9." ;
+	dprr:hasID 2422 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4714> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2422> ;
+	dprr:hasPersonName "AFRA4714 A. Afranius (A)" ;
+	dprr:hasNomen "Afranius" ;
+	dprr:hasID 4714 ;
+	dprr:hasHighestOffice "son of L. Afranius (6) A. f. Vel.? (cos. 60)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "AFRA4714" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4714> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3954> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2422> ;
+	dprr:hasPersonName "AFRA3954 -. Afranius (1)" ;
+	dprr:hasNomen "Afranius" ;
+	dprr:hasID 3954 ;
+	dprr:hasHighestOffice "son of L. Afranius (6) A. f. Vel.? (cos. 60)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "AFRA3954" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3954> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2074> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AFRA2074 L. Afranius (6) A. f. Vel." ;
+	dprr:hasOrigin "Cupra Maritima?" ;
+	dprr:hasNomen "Afranius" ;
+	dprr:hasID 2074 ;
+	dprr:hasHighestOffice "cos. 60" ;
+	dprr:hasFiliation "A. f." ;
+	dprr:hasEraTo -46 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "AFRA2074" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2074> .

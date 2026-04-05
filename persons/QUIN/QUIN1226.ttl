@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2092> rdfs:label "Status Assertion: #2092" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2092 ;
+	dprr:hasDateStart -186 ;
+	dprr:hasDateEnd -183 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2482> rdfs:label "Relationship Assertion: #2482" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8505> rdfs:label "Post Assertion Note: #8505" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 732" ;
+	dprr:hasID 8505 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2380> rdfs:label "Post Assertion Note: #2380" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to found Mutina and Parma (Liv. 39.55.7-8). On Quinctius, see Lübker no. 8; Münzer, APF 117." ;
+	dprr:hasID 2380 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2356> rdfs:label "Post Assertion Note: #2356" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor of Hither Spain. Returned to celebrate a triumph (Liv. 39.42.2-3; Degrassi 554). See 185, Praetors; Lübker no. 8." ;
+	dprr:hasID 2356 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2329> rdfs:label "Post Assertion Note: #2329" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Livy refers to both Piso and his colleague Crispinus (Praetors in 186) as praetores in 185 (39.30.1, and 31.4 and 18), and in 184, when they returned, as veteres praetores (39.42.2)." ;
+	dprr:hasID 2329 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2328> rdfs:label "Post Assertion Note: #2328" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor (Praetor,\n     Liv. 39.30.1) of Hither Spain. See above, on Calpurnius Piso." ;
+	dprr:hasID 2328 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2311> rdfs:label "Post Assertion Note: #2311" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See Münzer, APF 117." ;
+	dprr:hasID 2311 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2307> rdfs:label "Post Assertion Note: #2307" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections: Liv. 39.6.2 Provinces and armies Liv. 39.8.2." ;
+	dprr:hasID 2307 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10204> rdfs:label "Post Assertion Note: #10204" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Lusitaneis, Celtibereisque. MRR I.376, Itgenshorst no. 184, Rich no. 183." ;
+	dprr:hasID 10204 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2879> rdfs:label "Post Assertion: #2879" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2380> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Quinctius Crispinus Pat. (Cin. *13)" ;
+	dprr:hasOfficeXref "Pr. 186" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/73> ;
+	dprr:hasID 2879 ;
+	dprr:hasDateStart -183 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -183 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2845> rdfs:label "Post Assertion: #2845" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2356> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Quinctius Crispinus Pat. (Cin. *13)" ;
+	dprr:hasOfficeXref "Pr. 186" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 2845 ;
+	dprr:hasDateStart -184 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -184 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2819> rdfs:label "Post Assertion: #2819" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2329> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2328> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "L. Quinctius Crispinus Pat. (Cin. *13)" ;
+	dprr:hasOfficeXref "Pr. 186" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 2819 ;
+	dprr:hasDateStart -185 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -185 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2799> rdfs:label "Post Assertion: #2799" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8505> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2311> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2307> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "L. Quinctius Crispinus Pat. (Cin. *13)" ;
+	dprr:hasOfficeXref "Hither Spain" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2799 ;
+	dprr:hasDateStart -186 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -186 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10599> rdfs:label "Post Assertion: #10599" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10204> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10599 ;
+	dprr:hasDateStart -184 ;
+	dprr:hasDateSourceText "184" ;
+	dprr:hasDateEnd -184 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/916> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *12" ;
+	dprr:hasReNumber "38" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN0916 T. Quinctius (38) L. f. L. n. Crispinus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 916 ;
+	dprr:hasHighestOffice "cos. 208" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -208 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "QUIN0916" ;
+	dprr:hasCognomen "Crispinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/916> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1226> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *13" ;
+	dprr:hasReNumber "37" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN1226 L. Quinctius (37) Crispinus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1226 ;
+	dprr:hasHighestOffice "pr. 186" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "QUIN1226" ;
+	dprr:hasCognomen "Crispinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1226> .

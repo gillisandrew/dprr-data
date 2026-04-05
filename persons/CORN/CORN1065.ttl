@@ -1,0 +1,205 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2120> rdfs:label "Status Assertion: #2120" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2120 ;
+	dprr:hasDateStart -199 ;
+	dprr:hasDateEnd -193 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2140> rdfs:label "Post Assertion Note: #2140" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Africa to arbitrate a boundary dispute between Carthage and Masinissa, they left it undecided (Liv. 34.62.16-18; Zon. 9.18; cf. App. Lib. 67)." ;
+	dprr:hasID 2140 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2091> rdfs:label "Post Assertion Note: #2091" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 48f., 121, 454f. These Censors were the first to set apart special seats for senators at the games. They removed three senators, demoted a few knights, repaired the Atrium Libertatis and the Villa Publica, and completed the lustrum (Val. Ant. fr. 37 Peter; Liv. 34.44.4-5; 35.9.1; Val. Max. 4.5.1; Ascon. 69-70 C). They chose Scipio Africanus Princeps Senatus for the second time (Liv. 34.44.4)." ;
+	dprr:hasID 2091 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2008> rdfs:label "Post Assertion Note: #2008" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 73; Liv. 32.27.5; Fast. Cap., Degrassi 48f., 121, 452f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; Zon. 9.16. Cornelius and Mi{333}nucius were assigned Italy as their province (Polyb. 18.11.2, and 12.1; Liv. 32.28.8). The former campaigned against the Gauls and the latter against the Gauls and the Ligurians (Liv. 32.28-31; 33.22-23; cf. the Elogium of Cornelius, Degrassi, Bull. Com. 67 [1939] 5-10). Cornelius celebrated a triumph over the Insubres and the Cenomani (Liv. 33.23.1), Minucius an ovatio over the Boii and the Ligurians (Liv. 33.23.8; Act. Tr., Degrassi 78f., 552; and Elogium, above)." ;
+	dprr:hasID 2008 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1964> rdfs:label "Post Assertion Note: #1964" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 31.50.7-10; 32.7.14. On Valerius, see Münzer, Gent. Val. 40, no. 19." ;
+	dprr:hasID 1964 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1936> rdfs:label "Post Assertion Note: #1936" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Spain (Liv. 31.49.7), probably appointed by plebiscite in 201 (Liv. 30.41.4-5). Won a victory in the Ager Sedetanus (31.49.7), and was elected Curule Aedile (31.50.6. see 199)." ;
+	dprr:hasID 1936 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1910> rdfs:label "Post Assertion Note: #1910" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected by plebiscite, probably this year, to succeed L. Cornelius Lentulus in Spain (Liv. 30.41.4-5; cf. 31.49.7)." ;
+	dprr:hasID 1910 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10029> rdfs:label "Post Assertion Note: #10029" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Galleis Insubribus, Cenomaneisque. MRR I.332-3, Itgenshorst no. 166, Rich no. 165." ;
+	dprr:hasID 10029 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2574> rdfs:label "Post Assertion: #2574" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2140> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Cornelius Cethegus Pat. (88)" ;
+	dprr:hasOfficeXref "Cos. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 2574 ;
+	dprr:hasDateStart -193 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -193 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2514> rdfs:label "Post Assertion: #2514" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2091> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Cornelius L. f. M. n. Cethegus Pat. (88)" ;
+	dprr:hasOfficeXref "Cos. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 2514 ;
+	dprr:hasDateStart -194 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -194 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2411> rdfs:label "Post Assertion: #2411" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2008> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Cornelius L. f. M. n. Cethegus Pat. (88)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2411 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -197 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2367> rdfs:label "Post Assertion: #2367" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1964> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Cornelius Cethegus Pat. (88)" ;
+	dprr:hasOfficeXref "Cos. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 2367 ;
+	dprr:hasDateStart -199 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2323> rdfs:label "Post Assertion: #2323" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1936> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Cornelius Cethegus Pat. (88)" ;
+	dprr:hasOfficeXref "Cos. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2323 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -200 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2287> rdfs:label "Post Assertion: #2287" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1910> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Cornelius Cethegus Pat. (88)" ;
+	dprr:hasOfficeXref "Cos. 197" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 2287 ;
+	dprr:hasDateStart -201 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -201 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10424> rdfs:label "Post Assertion: #10424" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10029> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10424 ;
+	dprr:hasDateStart -197 ;
+	dprr:hasDateSourceText "197" ;
+	dprr:hasDateEnd -197 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1065> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "88" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "CORN1065 C. Cornelius (88) L. f. M. n. Cethegus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1065 ;
+	dprr:hasHighestOffice "cos. 197" ;
+	dprr:hasFiliation "L. f. M. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -243 ;
+	dprr:hasDprrID "CORN1065" ;
+	dprr:hasCognomen "Cethegus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1065> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/31> rdfs:label "Date Information: #31" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1065> ;
+	dprr:hasValue -243 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 116." ;
+	dprr:hasID 31 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

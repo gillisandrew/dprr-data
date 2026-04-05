@@ -1,0 +1,274 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1341> rdfs:label "Status Assertion: #1341" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1341 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateEnd -25 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1464> rdfs:label "Relationship Assertion Reference: #1464" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1464 ;
+	dprr:hasExtraInfo "Plut. Caes. 5.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1089> rdfs:label "Relationship Assertion: #1089" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1464> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2162> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> rdfs:label "Post Assertion Note: #7167" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See above, on L. Antistius (13). Shackleton Bailey has shown (Studies 11-13) that the supposed quaestor of 61 never existed (cf MRR 2.214, note 2). To the references given on L. Antistius (13) and Antistius Vetus (47), above, add E. S. Gruen, Athenaeum 49, 1971, 62-67, and LGRR 292. The tribune of the plebs of 56, L. Antistius Vetus, must be clearly distinguished from this C. Antistius Vetus (47), quaestor pro praetore in Syria in 45-44, legatus of Brutus in 43 (MRR 2.352), commander against the Salassi in 35-34 (MRR 2.407), and Cos. Suff. In 30 (Degrassi, Fast. Cons. 171, 254, 283; see PIR(2) 1.146, no. 770).\n" ;
+	dprr:hasID 7167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7095> rdfs:label "Post Assertion Note: #7095" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. pl. 58; Antistius Vetus (47). Tr. pl. 56. The entry in MRR 2.195, 58 B.C., should be deleted and this tribune identified with Antistius Vetus (47). Tr. pl. 56 (MRR 2.209), as the one who attempted to prosecute Caesar then (Badian, CQ 19, 1969, 200-204; Salmon Studies 145-166; Shackleton Bailey, Studies 11- 13). Caesar, who was quaestor under an Antistius Vetus (46) in Hisp. Ult. in 69 (see MRR 2.132, 133), is reported to have made a son of this Antistius his quaestor in turn when he was in power (#, Plut. Caes. 5.3). This was not, as is often assumed, when he was proconsul in Hisp. Ult. himself in 61, but most probably when in 45 he appointed C. Antistius Vetus (47) to be quaestor pro praetore in Syria (MRR 2.308). This Antistius became consul suffectus in 30. See Shackleton Bailey, loc. cit.\n" ;
+	dprr:hasID 7095 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6435> rdfs:label "Post Assertion Note: #6435" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Perhaps governor of Gaul. His campaigns against the Salassi continued through this year (App. Illyr. 17; cf. Dio 49.38.3, who erroneously names Messalla; see 35, Promagistrates). See PIR² 1.146, no. 770; De Laet no. 31." ;
+	dprr:hasID 6435 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6403> rdfs:label "Post Assertion Note: #6403" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No title preserved. As a commander under Octavian he warred with the Salassi in 35 and 34 (App. Illyr. 17, based on Augustus' Memoirs; cf. Strabo 4.6.7; Dio 49.38.3). Perhaps, as Ganter holds (12, 69-71), he was governor of Transalpine Gaul. since he attacked them by way of the passes (App.). See PIR² 1.146, no. 770; Do Lact no. 31." ;
+	dprr:hasID 6403 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6098> rdfs:label "Post Assertion Note: #6098" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He returned to Rome from Brutus in Macedonia (see above, Promagistrates) in June, but soon went back to Brutus as a Legate (Cic. Ad Brut. 1.11.2, and 12.1). See PIR² 1.146, no. 770." ;
+	dprr:hasID 6098 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6059> rdfs:label "Post Assertion Note: #6059" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 44, Promagistrates. He remained for some time with Brutus, who wished him to remain in service with him, and called him Imperator (Cic. Ad Brut. 1. 11.2). See below, Legates; and PIR² 1.146, no. 770." ;
+	dprr:hasID 6059 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5991> rdfs:label "Post Assertion Note: #5991" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor pro praetore in Syria (see 45, Promagistrates). He returned from Syria when succeeded by Staius Murcus (see below) and on his way, probably late in 44, handed over to Brutus the tribute he was bringing with him, and entered his service (Brutus in Cic. Ad Brut. 1. 11. 1-2; 2.3.5; Plut. Brut. 25. 1, for Appuleius; cf. Vell. 2.62.3). See PIR2 1.146, no. 770." ;
+	dprr:hasID 5991 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5889> rdfs:label "Post Assertion Note: #5889" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably a Quaestor pro praetore by appointment from Caesar in Syria (Dio 47.27.2-4; cf. Plut. Caes. 5.3; Vell. 2.43.4, and 52.3), and besieged Caecilius Bassus there until the Parthians came to his relief (Cic. Att. 14.9.3; Dio 47.27.2-4). He probably received salutation as Imperator (Brutus in Cic. Ad Brut. 1.11.2). See 44, Promagistrates; PIR² 1.146, no. 770; Sternkopf, Hermes 47 (1912) 331f." ;
+	dprr:hasID 5889 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5133> rdfs:label "Post Assertion Note: #5133" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "2 It is extremely improbable that the Quaestor of 61 and Tribune of 56 should be identified with the Consul Suffectus of 30 (see PIR² 1.147), since Caesar made (#) the latter Quaestor (Plut. Caes. 5.3), a process hardly within his power in 61." ;
+	dprr:hasID 5133 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5046> rdfs:label "Post Assertion Note: #5046" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Attempted to prosecute Caesar for his actions while Consul (Suet. Iul. 23), but was restrained by his colleagues." ;
+	dprr:hasID 5046 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9601> rdfs:label "Post Assertion: #9601" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7095> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5133> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5046> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Antistius (13)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 9601 ;
+	dprr:hasDateStart -56 ;
+	dprr:hasDateEnd -56 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7186> rdfs:label "Post Assertion: #7186" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6435> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7186 ;
+	dprr:hasDateStart -34 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -34 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7154> rdfs:label "Post Assertion: #7154" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6403> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7154 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6812> rdfs:label "Post Assertion: #6812" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6098> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6812 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6765> rdfs:label "Post Assertion: #6765" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6059> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/187> ;
+	dprr:hasID 6765 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6682> rdfs:label "Post Assertion: #6682" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Syria" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5991> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30, Pr. bef. 34" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/187> ;
+	dprr:hasID 6682 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6574> rdfs:label "Post Assertion: #6574" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Syria" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7167> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7095> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5889> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Antistius Vetus (47)" ;
+	dprr:hasOfficeXref "Cos. Suff. 30" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 6574 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2640> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "47" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ANTI2640 C. Antistius (47) C. f. Vetus" ;
+	dprr:hasNomen "Antistius" ;
+	dprr:hasID 2640 ;
+	dprr:hasHighestOffice "tr. pl. 56" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "ANTI2640" ;
+	dprr:hasCognomen "Vetus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2640> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2162> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "46" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ANTI2162 C.? Antistius (46) Vetus" ;
+	dprr:hasNomen "Antistius" ;
+	dprr:hasID 2162 ;
+	dprr:hasHighestOffice "pr. 70" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ANTI2162" ;
+	dprr:hasCognomen "Vetus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2162> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1957> rdfs:label "Date Information: #1957" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasValue -25 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Legatus in Hispania Citerior" ;
+	dprr:hasID 1957 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1956> rdfs:label "Date Information: #1956" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2640> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "possibly proscribed? Hinard 43 no. 8" ;
+	dprr:hasID 1956 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

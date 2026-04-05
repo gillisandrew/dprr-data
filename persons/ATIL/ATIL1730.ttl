@@ -1,0 +1,209 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/289> rdfs:label "Tribe Assertion: #289" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/4> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "If he was the senator in 129 named on the SC de agro Pergameno." ;
+	dprr:hasID 289 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/4> rdfs:label "Tribe: Camilia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Camilia" ;
+	dprr:hasID 4 ;
+	dprr:hasAbbreviation "Cam." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/763> rdfs:label "Status Assertion: #763" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 763 ;
+	dprr:hasDateStart -129 ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1472> rdfs:label "Relationship Assertion: #1472" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1572> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1471> rdfs:label "Relationship Assertion: #1471" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1140> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1470> rdfs:label "Relationship Assertion: #1470" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4137> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8679> rdfs:label "Post Assertion Note: #8679" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 743" ;
+	dprr:hasID 8679 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7335> rdfs:label "Post Assertion Note: #7335" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably a senator in 129, named in the SC de agro Pergameno (Badian, Historia 12, 1963, 132; Sherk, RDGE 66, 70). If Cam. is the correct tribe for the Atilii Serrani (it seems to be Aem. in Joseph. AJ 14.239) this fragmentary name might be taken to be that of the consul of 106, C. Atilius Sex. f. Serranus (64) (Badian, loc. cit.). On the date, see M'. Aquillius (10), above.\n" ;
+	dprr:hasID 7335 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3513> rdfs:label "Post Assertion Note: #3513" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1\n     .2.677, 678; Fast. Ant., Degrassi 162f. (Q. Servili. Ca[epio, C. Atili.] Serra.); Obseq. 41; Chr. 354 (Serrano et Ceplo); Fast. Hyd. (Serrano et Caepione), so also Chr. Pasc.; Cassiod.; on Caepio, Fast. Cap.,\n     \n      1\n     \n     Degrassi 54f. ([Q. Servil]ius Cn. f. Cn.[n.- - - -]), 128, 476f.; Val. Max. 6.9.13; and on Serranus, Cic. Planc. 12; Rab. Perd. 21. Servilius secured passage of a law to restore senators to the juries in the quaestio de repetundis (Cic. Inv. 1.92; De Or. 2.199f., and 223; Brut. 161-164; Cluent. 140; Val. Max. 6.9.13), along with the knights, according to the Livian tradition (Liv. 66, in Cassiod. MGH 11, p. 132; Obseq. 41), but exclusively, according to another (Tac. Ann. 12.60; cf. Ascon. 79 C). In Gaul he attacked the Volcae Tectosages and seized the sacred treasure at Tolosa, which disappeared under suspicious circumstances while being transported to Massilia for dispatch to Rome (Strabo 4.1.13, quoting Posidonius and Timagenes; Gell. 3.9.7; Dio 27, fr. 90; Iustin. 32.3.9-11; Oros. 5.15.25, proconsule; cf. Cic. ND 3.64; Auct. Vir. Ill. 73.5)." ;
+	dprr:hasID 3513 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3459> rdfs:label "Post Assertion Note: #3459" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible date for their praetorships under the Lex Villia. Catulus was a candidate for the consulship of 106 (Cic. Planc. 12).{546}" ;
+	dprr:hasID 3459 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4203> rdfs:label "Post Assertion: #4203" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7335> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3513> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Atilius - f. - n. Serranus (64)" ;
+	dprr:hasOfficeXref "Pr. by 109" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4203 ;
+	dprr:hasDateStart -106 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4154> rdfs:label "Post Assertion: #4154" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1730> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8679> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3459> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? C. Atilius Serranus (64)" ;
+	dprr:hasOfficeXref "Cos. 106" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4154 ;
+	dprr:hasDateStart -109 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -109 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4137> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "ATIL4137 -. Atilius (A) Serranus" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 4137 ;
+	dprr:hasHighestOffice "son of? C. Atilius (64) Cam.? Serranus (cos. 106)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "ATIL4137" ;
+	dprr:hasCognomen "Serranus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4137> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1730> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "64" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "ATIL1730 C. Atilius (64) Cam. Serranus" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasNobilisNotes "Cic. Planc. 5.12" ;
+	dprr:hasID 1730 ;
+	dprr:hasHighestOffice "cos. 106" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "ATIL1730" ;
+	dprr:hasCognomen "Serranus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1730> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1572> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "69" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Sextus> ;
+	dprr:hasPersonName "ATIL1572 Sex. Atilius (69) M. f. Serranus" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 1572 ;
+	dprr:hasHighestOffice "cos. 136" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "ATIL1572" ;
+	dprr:hasCognomen "Serranus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1572> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1140> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "60" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "ATIL1140 A. Atilius (60) C. f. C. n. Serranus" ;
+	dprr:hasNomen "Atilius" ;
+	dprr:hasID 1140 ;
+	dprr:hasHighestOffice "cos. 170" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "ATIL1140" ;
+	dprr:hasCognomen "Serranus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1140> .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/12> rdfs:label "Primary Source Reference: #12" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. b.c. I 26 (115)" ;
+	dprr:hasID 12 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/12> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/14> rdfs:label "Post Assertion Note: #14" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Chosen to continue the religious functions of the king (Dion. Hal. 5.1.4; cf. Liv. 2.2.1-2; 3.39.4; Fest. 422 L)." ;
+	dprr:hasID 14 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/12> rdfs:label "Post Assertion: #12" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/9> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/14> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M'. Papirius Pat. (20, cf. 1-5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/9> ;
+	dprr:hasID 12 ;
+	dprr:hasDateStart -509 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -509 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/9> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "20, cf. 1-5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "PAPI0009 M'. Papirius (20, cf. 1-5)" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 9 ;
+	dprr:hasHighestOffice "rex sacr. 509" ;
+	dprr:hasEraTo -450 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "PAPI0009" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/9> .

@@ -1,0 +1,203 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2398> rdfs:label "Status Assertion: #2398" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2398 ;
+	dprr:hasDateStart -128 ;
+	dprr:hasDateEnd -123 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2664> rdfs:label "Relationship Assertion: #2664" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1449> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2663> rdfs:label "Relationship Assertion: #2663" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3825> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8650> rdfs:label "Post Assertion Note: #8650" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 741, footnote 158" ;
+	dprr:hasID 8650 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3253> rdfs:label "Post Assertion Note: #3253" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "This passage more probably refers to this Caesar than to the Consul of 91, for the Drusus whose decision is compared with his was Pr. Urbanus in 115 (see RE no. 17)." ;
+	dprr:hasID 3253 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3252> rdfs:label "Post Assertion Note: #3252" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Dom. 136; Brut. 81, 259; Fast. Min. in CIL 1\n     .1, p. 60- ILS 9338; Fast. Ant., Degrassi 162f. (T. Qu[- - - -]); Eutrop. 4.21; Chr. 354 (Metello et Appelate); Fast. Hyd. (Metello et Flaminino), so also Chr. Pasc.; Oros. 5.12.1 (L. Caelio Metello, Q. Titio Flaminino); Cassiod.; on Metellus, Cic. Fin. 5.82; Val. Max. 7.1.1; Vell. 1.11.7; Plin. NH 7.142; Plut. Fort. Rom. 4, 318c; and on Flamininus, CIL 1(2).2.655-657.{513} See Degrassi 126, 472f. Metellus received command against the piratical inhabitants of the Balearic islands (Liv. Per. 60; Strabo 3.5.1; Flor. 1.43; Oros. 5.13.1)." ;
+	dprr:hasID 3252 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3251> rdfs:label "Post Assertion Note: #3251" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The filiation of Metellus is given by Act. Tr. for 121; but in the case of Flamininus, T. f. depends on CIL 1(2).2.655-657, which are best referred to the age of the Gracchi on the basis both of the forms of the letters and the known road building of the time. T. n., though probable, is not attested." ;
+	dprr:hasID 3251 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3228> rdfs:label "Post Assertion Note: #3228" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible dates for their praetorships under the Lex Villia. On Flamininus, see Strabo 6.2.11; cf. Plin. NH 2.203; Obseq. 29." ;
+	dprr:hasID 3228 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3227> rdfs:label "Post Assertion Note: #3227" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Strabo quotes Posidonius' personal remembrance of the formation of islands in the Lipari group by volcanic action at a time when a \"T. Flaminius\" was governor of Sicily. Pliny, without mentioning names, places such an event in the third year of the 163rd Olympiad (126-125 B.C.; cf. Jerome, Chr. ad ann. 126, p. 146 Helm), about the time when T. Quinctius Flamininus must have been Praetor. Moreover the praenomen T. is more usual in the Gens Quinctia, and \"T. Flaminius\" is otherwise unknown (RE no. 5). It is therefore probable that the text of Strabo should be emended to read {Gr}. Another such eruption occurred in 90 or 89 B.C. (Plin. NH 2.238). See 89, Praetors." ;
+	dprr:hasID 3227 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3952> rdfs:label "Post Assertion: #3952" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3253> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3252> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3251> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Quinctius T. f. T. ? n. Flamininus Pat. (47)" ;
+	dprr:hasOfficeXref "Pr. by 126" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3952 ;
+	dprr:hasDateStart -123 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -123 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3921> rdfs:label "Post Assertion: #3921" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8650> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3228> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3227> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? T. Quinctius Flamininus Pat. (*7)" ;
+	dprr:hasOfficeXref "Cos. 123 Sicily ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3921 ;
+	dprr:hasDateStart -126 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -126 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3825> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "48" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN3825 T. Q(uinctius) (48) (Flamininus)" ;
+	dprr:hasNomen "Q(uinctius)" ;
+	dprr:hasID 3825 ;
+	dprr:hasHighestOffice "son of? T. Quinctius (47) T. f. T.? n. Flamininus (cos. 123)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "QUIN3825" ;
+	dprr:hasCognomen "(Flamininus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3825> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1636> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumberOld "*7" ;
+	dprr:hasReNumber "47" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN1636 T. Quinctius (47) T. f. T.? n. Flamininus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1636 ;
+	dprr:hasHighestOffice "cos. 123" ;
+	dprr:hasFiliation "T. f. T.? n." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -166 ;
+	dprr:hasDprrID "QUIN1636" ;
+	dprr:hasCognomen "Flamininus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1636> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1449> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*6" ;
+	dprr:hasReNumber "46" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1876> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1875> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1874> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1873> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1872> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1871> ;
+	dprr:hasPersonName "QUIN1449 T. Quinctius (46) T. f. T. n. Flamininus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1449 ;
+	dprr:hasHighestOffice "cos. 150" ;
+	dprr:hasFiliation "T. f. T. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -189 ;
+	dprr:hasDprrID "QUIN1449" ;
+	dprr:hasCognomen "Flamininus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1449> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/260> rdfs:label "Date Information: #260" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1636> ;
+	dprr:hasValue -166 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R74." ;
+	dprr:hasID 260 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

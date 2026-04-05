@@ -1,0 +1,208 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> rdfs:label "Secondary Source: Develin 1979" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Develin" ;
+	dprr:hasID 14 ;
+	dprr:hasBiblio "Develin, R., Patterns in office-holding 366-49 B.C. Bruxelles : Latomus, 1979." ;
+	dprr:hasAbbreviation "Develin 1979" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3795> rdfs:label "Relationship Assertion: #3795" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1085> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1530> rdfs:label "Primary Source Reference: #1530" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cato mai. 27.5(8)" ;
+	dprr:hasID 1530 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1472> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1499> rdfs:label "Primary Source Reference: #1499" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Brut. 14.3(2)" ;
+	dprr:hasID 1499 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1442> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1478> rdfs:label "Primary Source Reference: #1478" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 20.1" ;
+	dprr:hasID 1478 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1422> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1138> rdfs:label "Post Assertion Note: #1138" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Polyb. 1.25.1; Fast. Cap. (A. 's name entire; Cn. [- - - -]); Chr. 354 (Regulo et Blesio II); Fast. Hyd. (Regulo et Blaeso); Chr. Pasc. ({Gr}); Cassiod., with Erranus instead of Regulus; Degrassi 42f., 116, 434f. Atilius celebrated a naval triumph for a victory over the Carthaginians off Tyndaris (Polyb. 1.25.1-6; Act. Tr., Degrassi 76f., 548; cf. Val. Max. 4.4.5; Oros. 4.8.5; Fest. 156 L; Zon. 8.12). Cornelius served in Sicily (Zon. 8.12)." ;
+	dprr:hasID 1138 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1137> rdfs:label "Post Assertion Note: #1137" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The notice in Chr. 354 identifies Cornelius with the Consul of 270, whose filiation was P. f. Cn. n., and almost certainly with the Censor of 265. On the cognomen Erranus (i. e. Serranus), which appears late in the Atilian family, see Degrassi 116. It remains uncertain which Atilius was the legendary sower (Serranus) who was called, like Cincinnatus, from his labors, but to a consulship, and celebrated a triumph (Cic. Rosc. Amer. 50; Sest. 72; Val. Max. 4.4.5; Plin. NH 18.20; Serv. ad Aen. 6.844; Symmach. Ep. 1.48; Schol. Gron. 308 Stangl)." ;
+	dprr:hasID 1137 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1114> rdfs:label "Post Assertion Note: #1114" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (names entire), Degrassi, 40f., 115, 432f. Marcius, elected for the second time (see 294), sponsored a law against iteration in this office (Val. Max. 4.1.3; Plut. Cor. 1.1). They completed the lustrum in 264 (Liv. Per. 16)." ;
+	dprr:hasID 1114 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1113> rdfs:label "Post Assertion Note: #1113" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Only the lower bars of the letters are preserved. L. f. is read in CIL, but Degrassi (40f., 115) follows Mancini in reading P. f. and identifying this Cornelius with the Consul of 270 and 257. See Degrassi, Plate 34, fragment xx." ;
+	dprr:hasID 1113 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1095> rdfs:label "Post Assertion Note: #1095" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., ([- - - -] Clepsina II; Cornelius entire); Act. Tr. ([- - - -] Cornel [- - - -]); Chr. 354 (Clepsina II et Lesio); Cassiod. (C. Genucius et Cn. Cornelius); see Degrassi, 40f., 114, 430f. Genucius is credited by Dion. Hal. (20.16) and Orosius (4.3.3-6) with charge of operations against the Campanians who had seized Rhegium (cf. Polyb. 1.7.8-13, both Consuls; Liv. Per. 15), but Blasio, according to Act. Tr., Degrassi 74f., 546f., was the one who celebrated the triumph; cf. Cesano, Stud. Num. 1.151f. See Tribunes of the Plebs." ;
+	dprr:hasID 1095 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10027> rdfs:label "Post Assertion Note: #10027" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Regineis. MRR I.198, Itgenshorst no. 117, Rich no. 116." ;
+	dprr:hasID 10027 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9566> rdfs:label "Post Assertion: #9566" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 9566 ;
+	dprr:hasDateStart -247 ;
+	dprr:hasDateSourceText "ca. 247/ca. 241" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -247 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1472> rdfs:label "Post Assertion: #1472" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1138> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1137> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. Cn. n. Blasio Pat. (73)" ;
+	dprr:hasOfficeXref "Cos. 270" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1472 ;
+	dprr:hasDateStart -257 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -257 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1442> rdfs:label "Post Assertion: #1442" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1114> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1113> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. Cn. n. Blasio Pat. (73)" ;
+	dprr:hasOfficeXref "Cos. 270, 257" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1442 ;
+	dprr:hasDateStart -265 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -265 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1422> rdfs:label "Post Assertion: #1422" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1095> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Cn. Cornelius P. f. Cn. n. Blasio Pat. (73)" ;
+	dprr:hasOfficeXref "Cos. 257" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/222> ;
+	dprr:hasID 1422 ;
+	dprr:hasDateStart -247 ;
+	dprr:hasDateSourceText "ca. 247/ca. 241" ;
+	dprr:hasDateEnd -247 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10422> rdfs:label "Post Assertion: #10422" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10027> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10422 ;
+	dprr:hasDateStart -270 ;
+	dprr:hasDateSourceText "270" ;
+	dprr:hasDateEnd -270 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/698> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "73" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN0698 Cn. Cornelius (73) P. f. Cn. n. Blasio" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 698 ;
+	dprr:hasHighestOffice "cos. 265" ;
+	dprr:hasFiliation "P. f. Cn. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "CORN0698" ;
+	dprr:hasCognomen "Blasio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/698> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1085> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "74" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN1085 Cn. Cornelius (74) Blasio" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1085 ;
+	dprr:hasHighestOffice "pr. 194" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CORN1085" ;
+	dprr:hasCognomen "Blasio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1085> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/973> rdfs:label "Date Information: #973" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/698> ;
+	dprr:hasValue -300 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/14> ;
+	dprr:hasNotes "Develin no. 20." ;
+	dprr:hasID 973 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

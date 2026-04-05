@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9463> rdfs:label "Post Assertion Note: #9463" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 473" ;
+	dprr:hasID 9463 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7092> rdfs:label "Post Assertion Note: #7092" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The monetalis Palikanus, whose denarii with a tribune's bench or a curule chair on the reverse are now dated by Crawford (RRC 1.482, no. 473) to 45 (to 47 by others, MRR 2.444), may perhaps be identified with L. Lollius, a governor named on coins of Crete and Cyrenaica about 35 (so E. S. G. Robinson, BMC Catalogue, Cyrenaica, cciii, ccvii, 1141; cf. Grant, FITA 54-58), with more probability than with the senator, - f. Pob. Pallakeinos, whose name is partially preserved in the SC de Panamareis of 39, as suggested by TIC. See below, on M. Quinctius Plancinus (51), and Badian, Gnomon 33, 1961, 496; Historia 12, 1963, 137. He was earlier identified with Palikanus named on an aes coinage issued later than the Augustan reorganization of 23 (see G. Perl, Kho 52, 1970, 319-354, esp. 350; cf. MRR 2.498).\n" ;
+	dprr:hasID 7092 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6444> rdfs:label "Post Assertion Note: #6444" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor in Crete and Cyrene (see 35, Promagistrates)." ;
+	dprr:hasID 6444 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6412> rdfs:label "Post Assertion Note: #6412" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named on coins of Crete and Cyrenaica, and may possibly be dated ca. 35-34 (Grant, From Imperium to Auctoritas 54-58; see Robinson, B.M.Cat., Cyrenaica cciii f., ccvii, 114ff.)." ;
+	dprr:hasID 6412 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9618> rdfs:label "Post Assertion: #9618" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2890> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7092> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 9618 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSourceText "about 35" ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9232> rdfs:label "Post Assertion: #9232" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2890> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9463> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7092> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "(Lollius) Palicanus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 9232 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSourceText "45" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7195> rdfs:label "Post Assertion: #7195" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2890> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Crete and Cyrenaica" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6444> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "? L. Lollius Palicanus (20)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7195 ;
+	dprr:hasDateStart -34 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -34 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7163> rdfs:label "Post Assertion: #7163" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2890> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Crete and Cyrenaica" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6412> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "L. Lollius (Palicanus?) (20)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7163 ;
+	dprr:hasDateStart -35 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -35 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2890> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "LOLL2890 L. Lollius (20) Palicanus" ;
+	dprr:hasNomen "Lollius" ;
+	dprr:hasID 2890 ;
+	dprr:hasHighestOffice "promag.? 34" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "LOLL2890" ;
+	dprr:hasCognomen "Palicanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2890> .

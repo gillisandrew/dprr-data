@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1479> rdfs:label "Status Assertion: #1479" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2978> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1479 ;
+	dprr:hasDateStart -48 ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7427> rdfs:label "Post Assertion Note: #7427" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. Desig. between 43 and 33. An augur, who committed suicide under pressure of threats from Octavian (Suet. Aug. 27.3, with the name Tedius Afer). Cf. CIL 14.3615-Inscr. Ital. 4.1.134, at Tibur, with the nomen Uttiedius, and the title augur. See Wiseman, NM 268, no. 454. Cf. MRR 2.446.[210x]\n" ;
+	dprr:hasID 7427 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6596> rdfs:label "Post Assertion Note: #6596" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Consul Designatus under the Second Triumvirate, who committed suicide because of threats from Octavian (Suet. Aug. 27.3; cf. on Uttiedius Afer, Augur and Cos. Desig., Inscr. Ital. 1.1, Tibur, 134)." ;
+	dprr:hasID 6596 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9335> rdfs:label "Post Assertion: #9335" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2978> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7427> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6596> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Uttiedius L. f. Afer (Tedius 1, RE 5A.1.106-107)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/121> ;
+	dprr:hasID 9335 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "Between 43 and 33" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -33 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10168> rdfs:label "Post Assertion: #10168" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2978> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7427> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 10168 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2234> rdfs:label "Person Note: #2234" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Inscr. It. 4,1,134 = CIL 14,3615." ;
+	dprr:hasID 2234 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2233> rdfs:label "Person Note: #2233" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "2. V. 1. Jh.-30er v. Chr." ;
+	dprr:hasID 2233 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2232> rdfs:label "Person Note: #2232" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 2232 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2231> rdfs:label "Person Note: #2231" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Howe 5,24; Hoffman A 54." ;
+	dprr:hasID 2231 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2230> rdfs:label "Person Note: #2230" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "PIR &sup1V 692. RE Suppl. 14,974 = Uttedius 2." ;
+	dprr:hasID 2230 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2229> rdfs:label "Person Note: #2229" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3352" ;
+	dprr:hasID 2229 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2978> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "Tedius 1, RE 5A.1.106-7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2234> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2233> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2232> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2231> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2230> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2229> ;
+	dprr:hasPersonName "UTTI2978 -. Uttiedius (Tedius 1, RE 5A.1.106-7) L. f. Afer" ;
+	dprr:hasNomen "Uttiedius" ;
+	dprr:hasID 2978 ;
+	dprr:hasHighestOffice "cos. desig. after 44" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -29 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "UTTI2978" ;
+	dprr:hasCognomen "Afer" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2978> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1649> rdfs:label "Date Information: #1649" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2978> ;
+	dprr:hasValue -29 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNotes "suicide (MRR). In the 30s (Ruepke)" ;
+	dprr:hasID 1649 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1648> rdfs:label "Date Information: #1648" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2978> ;
+	dprr:hasValue -75 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1648 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "A" .

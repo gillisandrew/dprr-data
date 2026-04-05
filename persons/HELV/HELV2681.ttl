@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/389> rdfs:label "Tribe Assertion: #389" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2681> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/12> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p219. From Brixia" ;
+	dprr:hasID 389 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/12> rdfs:label "Tribe: Fabia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Fabia" ;
+	dprr:hasID 12 ;
+	dprr:hasAbbreviation "Fab." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2860> rdfs:label "Status Assertion: #2860" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2681> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2860 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8023> rdfs:label "Post Assertion Note: #8023" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Pl. 44. In MRR 2.324, refer also to Syme, JRS 51, 1961, 23-24-RP 2.518-519; Wiseman, NM 233, no. 203.\n" ;
+	dprr:hasID 8023 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5976> rdfs:label "Post Assertion Note: #5976" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He proposed the measure which deprived Caesetius and Marullus of their tribunician powers (see above; Liv. Per. 116; Nic. Dam. Vit. Caes. 20.9, FGrH 2A.405; 22.1, ibid. 406; App. BC 2.108; Dio 44.10.3; 46.49.2; Obseq. 70), and it was said had already drawn up a bill at Caesar's wish empowering Caesar to marry such and so many wives as he wished (Suet. Iul. 52.3; Dio 44.7.3). He was killed by the crowd after Caesar's funeral by mistake for the Praetor Cinna (Val. Max. 9.9.1; Suet. Iul. 85; Plut. Caes. 68.2; Brut. 20.5-6; App. BC 2.147; Dio 44.50.4, and 52.2; 45.6.3; 46.49.2; 47.11.3; Obseq. 70; Zonar. 10.12). On his identification with the poet Cinna, see Plut. Brut. 20.5; Schwabe, Philologus 47 (1889) 169f., and against it, Deutsch, CJ 20 (1925) 326ff." ;
+	dprr:hasID 5976 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6664> rdfs:label "Post Assertion: #6664" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2681> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8023> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5976> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "C. Helvius Cinna (11, cf. 12)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 6664 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2681> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11, cf. 12" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "HELV2681 C. Helvius (11, cf. 12) Fab. Cinna" ;
+	dprr:hasOrigin "Brixia" ;
+	dprr:hasNomen "Helvius" ;
+	dprr:hasID 2681 ;
+	dprr:hasHighestOffice "tr. pl. 44" ;
+	dprr:hasEraTo -44 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "HELV2681" ;
+	dprr:hasCognomen "Cinna" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2681> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/750> rdfs:label "Date Information: #750" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2681> ;
+	dprr:hasValue -44 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "murdered in riot." ;
+	dprr:hasID 750 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

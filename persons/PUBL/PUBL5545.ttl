@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> rdfs:label "Secondary Source: Shackleton Bailey 1995" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "SB Letters" ;
+	dprr:hasID 34 ;
+	dprr:hasBiblio "Shackleton Bailey, D. R., Onomasticon to Cicero's letters. Stuttgart : Teubner, 1995." ;
+	dprr:hasAbbreviation "Shackleton Bailey 1995" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2243> rdfs:label "Relationship Assertion Reference: #2243" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2243 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7269> rdfs:label "Relationship Assertion: #7269" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5545> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4964> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3984> rdfs:label "Relationship Assertion: #3984" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5545> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2243> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4004> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2805> rdfs:label "Person Note: #2805" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/34> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p84. Att. 12.18a.2, 12.24.1, 12.28.3, 12.32.1, 13.34, 13.47a.2, 14.19.4, 16.2.1, 16.6.3, (Fam. 4.14.3), 16.22.1. brother of Publilia" ;
+	dprr:hasID 2805 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5545> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2805> ;
+	dprr:hasPersonName "PUBL5545 -. Publilius (4)" ;
+	dprr:hasNomen "Publilius" ;
+	dprr:hasID 5545 ;
+	dprr:hasHighestOffice "son of? -. Publilius (3)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PUBL5545" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5545> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4964> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PUBL4964 -. Publilius (3)" ;
+	dprr:hasNomen "Publilius" ;
+	dprr:hasID 4964 ;
+	dprr:hasHighestOffice "father of? Publilia (17)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PUBL4964" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4964> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4004> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PUBL4004  Publilia (17)" ;
+	dprr:hasNomen "Publilia" ;
+	dprr:hasID 4004 ;
+	dprr:hasHighestOffice "daughter of? -. Publilius (3)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -106 ;
+	dprr:hasDprrID "PUBL4004" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4004> .

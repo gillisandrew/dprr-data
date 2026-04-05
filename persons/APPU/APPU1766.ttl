@@ -1,0 +1,253 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/795> rdfs:label "Status Assertion: #795" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 795 ;
+	dprr:hasDateStart -103 ;
+	dprr:hasDateEnd -100 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2149> rdfs:label "Status Assertion: #2149" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2149 ;
+	dprr:hasDateStart -104 ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2026> rdfs:label "Relationship Assertion Reference: #2026" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2026 ;
+	dprr:hasExtraInfo "Oros. 5.17.10" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1479> rdfs:label "Relationship Assertion: #1479" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2026> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3383> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9547> rdfs:label "Post Assertion Note: #9547" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 317" ;
+	dprr:hasID 9547 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8263> rdfs:label "Post Assertion Note: #8263" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor at Ostia, 104 or 105. An interval between quaestorship and tribunate during which he reformed is suggested by Diodorus (36.12; cf. Gruen, RPCC 163, note 35). Sumner (Orators 119) notes also the rule (which Saturninus might have circumvented) which prevents magistrates in office from becoming candidates before expiration of their term (Mommsen, StR 1?.531-535). But his replacement in charge of the grain supply at Ostia by no less a person than the Princeps Senatus, M. Aemilius Scaurus (MRR 1.560), points to a time of crisis. While 105 was such a year (Gran. Lic. 33.25-27, ed. Criniti p. 12), the defeat at Arausio (late in 105) and the effect on the annona of the slave revolt in Sicily point more strongly to 104 than to 105 (Sumner, loc. cit.). Crawford (RRC 1.323-324, no. 317) dates his coinage to 104. Tribune of the Plebs, 103, 100. The grain law of Saturninus should more probably be dated to his first tribunate in 103 than to his second in 100, as in MRR 1.575, 578, note 3, and may be considered a measure to meet conditions caused by the slave revolt in Sicily, perhaps also a response to his removal from that charge when quaestor at Ostia in 104 (MRR 1.560; see above). A date in 103 is favored by Last (CAH 9.165), Passerini (Athenaeum 12, 1934, 107143), and Balsdon (PBSR 14, 1938, 98-114, who would admit even 104). See below, on the quaestorships of L.  Calpurnius Piso (Caesoninus) (89) and Q. Servilius Caepio (50). The settlement of Marian veterans in Africa after .the Jugurthine war (MRR 1.563, 565, note 3) has been further confirmed by the discovery at Thuburnica  of an inscription honoring Marius as conditor coloniae (sic) (P. Quoniam, CRAI 1950, 383-386-AEpig. 1951,  no. 81). These settlements were dated to the first tribunate of Saturninus in 103 by E. Gabba (Athenaeum 29, 1951, 16, and note 1; and in his ed. of App. BC 1.29, 130) rather than 100, since he interpreted Cic. Balb. 48,  and Leg. 2.14, to mean that the legislation of 100 was annulled. Passerini (Athenaeum 12, 1934, 348351) and Badian (Gnomon 33, 1961, 495) hold that they mean the opposite; see now E. Gabba, Republican Rome, the Army and the Allies 199-200, note 167; J. Linderski, \"\"A Witticism of Appuleius Saturninus,\"\" RFIC 111, 1983, 457-458, note 1. The colony of Eporedia is not a test case since it was founded at the recommendation of the Xviri s. f. (Puny NH 3.123; Fraccaro, Opuscula 3.98; Gabba, Athenaeum 33, 1955, 225-230). In any case, given Marius' preference for' fresh troops for his campaigns in the north (Frontin. Str. 4.2.2), the African settlements may well be dated to 103. If so, the commissions to which C. Iulius Caesar Strabo (135) and C. Iulius Caesar (130), the dictator's father, belonged (see MRR 1.577 and 578, note 6) may be dated before 100, thus making room for earlier dates in their careers. Appian dates the death of Saturninus on the day after the consular  elections for 99 had begun with the murder of Glaucia's rival Memmius and the other disorders attendant upon Glaucia's illegal candidacy, and on the day of his own entrance upon his third tribunate (i.e., December 10, accepted in MRR 1.576). E. Gabba on Appian BC 1.32-33 expressed doubts (accepted by Badian, Gnomon 33, 1961, 494, and Historia 11, 1962, 219, note 87; and Gruen, Historia 15, 1966, 33, note 6, and RPCC 186-189) in favor of an earlier season, for the following reasons: (1) December is an unusually late date for consular elections; (2) C. Saufeius is termed a quaestor (see below); (3) in Val. Max. 3.2.18, L. Equitius is described as tribunus plebis designatus, while according to Cicero (Rab. Perd. 20) all the tribunes except Saturninus were called by the SCU to the defense of the state; (4) P. Furius, who is described in Dio 28, fr. 95.3, as a supporter of Saturninus who later deserted him, would on Appian's dating be a tribune of 99 (see below, on P. Furius [22]); and (5) the text of Auct. Vir. Ill. 73.10, as well as the cutting of the water conduits to the Capitoline, point to a warmer season than December. R. Seager has countered most of these points in CR 18, 1968, 9-10. In the pre- Sullan period elections late in the year are not so surprising. The reading of the text in Auct. Vir. Ill., maximo aestu, is merely an emendation of the unintelligible mss readings questu and gusto (astu might be possible). There is no evidence that P. Furius was a colleague when he was supporting Saturninus, and prompt action will explain his actions between December 10 and the end of Marius' consular year, One item remains unexplained and may be decisive; C. Saufeius (3; see MRR 2.2), if quaestor in 100, would no longer be in office on December 10, since his term had ended on December 5, and he could not be quaestor designate for 99, for at his death the consular elections for 99 had not yet been completed and so, although presumably tribunes and aediles of the plebs had been elected earlier, the elections for praetors, curule aediles, and quaestors had not yet been held. Saufeius' quaestorship points to a date before December 5, 100. On Saufeius, see also Badian, Chiron 14, 1984, 101-147, esp. 106. Badian interprets the recourse of Saturninus and his associates to the Capitolium as an attempt, after Glaucia's illegal candidacy was refused (Cic. Brut. 224, si rationem eius haberi licere iudicatum esset, presumably by Marius), to call an assembly there and secure for him an exemption from the leges annales. If the date given by Appian and accepted in MRR for the deaths of Saturninus and his associates should be placed earlier in the year, as seems very probable, the dates of other magistrates should be changed as follows: Tribunes of the Plebs. Tranfer from 99 to 100: L. Appuleius Saturninus (29) and L. Equitius (3), both designated for 99, but killed before taking office, P. Furius (22) (MRR 2.2), Q. Pompeius Rufus (31) (MRR 2.2), M. Porcius Cato (12) (MRR 2.2). Quaestors. Transfer from 99 to 100: C. Saufeius (3) (MRR 2.2). See above. Tribunes of the Plebs. Transfer from 98 to 99: C. Appuleius Decianus (21) (MRR 2.4-5), Q. Calidius (5) (MRR 2.4; cf. 6, not 4: possibly still in 98, when Metellus Numidicus returned from exile), C. Canuleius (3) (MRR 2.5, 6, note 5). On these tribunes now see Gruen, Historia 15, 1966, 32-38. These lists are also based on the assumption that at the death of Saturninus the tribunicial elections had been held, and that the consular ones were interrupted by the murder of Memmius, perhaps after the election of M. Antonius who was said to be certain. Badian notes that in Rab. Perd. 26 Cicero does call him cos. desig.\n" ;
+	dprr:hasID 8263 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3673> rdfs:label "Post Assertion Note: #3673" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "tr. pl. des. for 99. The two Tribunes were killed on their first day of office, December 10, 100 B.C. (App. BC 1.32-33; cf. Cic. Rab. Perd. 20; Val. Max. 3.2.18; Dio 37.26; and on Saturninus, Inscr. Ital. 13.3.16 and 83-CIL 12.1, p. 195; see 102, Censors; and 100, Consuls, and Tribunes of the Plebs)." ;
+	dprr:hasID 3673 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3653> rdfs:label "Post Assertion Note: #3653" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The terminus post quem for the grain law of Saturninus is 103, his first tribunate, and the terminus ante quem is his second in 100. The revolt of the slaves in Sicily could have caused a shortage of grain in either year. Caepio could have been Quaestor Urbanus in either year if, as I believe, the Lex Appuleia de maiestate, under which he was accused, was passed in 103 (Auct. Ad Herenn. 1.21; 2.17). Niccolini points out (FTP 200) that Saufeius, killed while Quaestor Urbanus on December 10 (see 99, Quaestors) entered office on December 5, 100, and therefore leaves room for Piso and Caepio to hold these offices in 100. Last (CAH 9.165) favors 103 because the Gracchan analogue came early in the development of the program of C. Gracchus, and so too, does Passerini (Athenaeum 12 [1934] 107-143). But 100 was the year when Saturninus and Glaucia put forth their greatest effort to gain popular support. The price set for the grain is usually read semissibus et trientibus (5/6 as) rather than senis et trientibus (6 1/3 asses) the modius, the Gracchan price." ;
+	dprr:hasID 3653 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3652> rdfs:label "Post Assertion Note: #3652" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 224; Sest. 37; Cat. 1.4; Phil. 8.15; Corn. 2.5, in Ascon. 80 C; Leg. 2.14; Diod. 36.15.3; Liv. Per. 69; Vell. 2.12.6; Val. Max. 9.7.1 and 3; Plut. Mar. 29-30; App. BC 1.28; Flor. 2.4.1-6; Auct. Vir. Ill. 73.5; Oros. 5.17.3-4; see 101, Tribunes of the Plebs, on Glaucia. With Glaucia the Praetor and Marius the Consul, he embarked upon a program of popular legislation, and then of illegal seizure of office, which in the end lost him his popularity and even turned Marius against him. His legislation included: 1. a grain law, probably to be dated in 100,\n     which set a low price for grain, and was carried over the veto of his colleagues and the violence organized by the Quaestor Caepio (Auct. Ad Herenn. 1.21; cf. 2.17); 2. a bill for veteran colonies in Sicily, Achaea, Macedonia, and perhaps Africa,\n     \n      4\n     \n     giving Marius power to grant citizenship to three non-Romans in each colony (Auct. Vir. Ill. 73.5; cf. Balb. 48); 3. an agrarian law to assign Gallic land once held by the Cimbri, which contained a clause providing that senators who did not take the oath to obey it within five days of its passage should lose their place and pay a fine of twenty talents. This bill, carried by violence and against the auspices, caused Metellus{576} Numidicus to leave Rome, and was followed by another bill of Saturninus calling upon Marius to interdict him from fire and water (App. BC 1.29-31; Plut. Mar. 29; Liv. Per. 69; cf. Cic. Leg. 3.26; Sest. 37, 101, 130; Dom. 82; P. Red. in Sen. 25, and 37; Cluent. 95; Pis. 20; Planc. 89; Schol. Bob. 111, 168, 174 Stangl; Vell. 2.15.4, cf. 1.15.5, on Eporedia; Val. Max. 3.8.4; Flor. 2.4.2-3; Auct. Vir. Ill. 73.7-8; Oros. 5.17.4). In an attempt to control the government in 99 he secured his own reelection to the tribunate along with L. Equitius, the false Gracchus, and other supporters as Tribunes and Quaestors, but the murder of Glaucia's rival Memmius led to a union of moderate and conservative elements and the declaration of martial law. Marius besieged his former associates on the Capitol, accepted their surrender, and placed them in the Curia Hostilia to await trial, where Saturninus, Saufeius, and Labienus were murdered (Cic. Rab. Perd. 7, 18-31, and 35; Liv. Per. 69; Elogium of Marius, above; Plut. Mar. 30.1-3; App. BC 1.32; Flor. 2.4.4-6; Auct. Vir. Ill. 73.9-12; Oros. 5.17.6-10; cf. Cic. Cat. 1.4; Mil. 8, and 14; Schol. Bob. 113f., 174 Stangl; Phil. 8.15; Pro Var. fr. 6, ed. Müller; Brut. 224; Leg. 2.14; 3.20; Caes. BC 1.7.5-6; Vell. 2.12.6; Val. Max. 3.2.18; 8.6.2; 9.15.1; Ascon. 5 C; Suet. Iul. 12.1). His property was confiscated (Oros. 5.17.10), his house razed (Val. Max. 6.3.1), and his laws annulled (Cic. Balb. 48; Leg. 2.14)." ;
+	dprr:hasID 3652 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3587> rdfs:label "Post Assertion Note: #3587" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The cognomen Marianum in the titles of the African towns of Thibaris and Uchi Maius indicates that this settlement was made on land annexed for the purpose, but the crisis in the north may have delayed the settlement and possibly even the measure authorizing it until Saturninus' second tribunate in 100 (CIL 8.26181, 15450, 15454, 15455, 26270, 26275, 26281; see Frank, AJPh 47 [1926] 61ff.; Heichelheim, PhW 49 [1929] 1150; and opposed, Gsell Hist. anc. Afr. Nord 7.10; on Marius' preference for fresh troops in the north, Frontin. Str. 4.2.2; cf. Niccolini, FTP 192). The settlement established in Cercina by Julius Caesar's father (Elogium, Inscr. Ital. 13.3.7; Frank, AJPh 58 [1937] 90-93) may have been authorized under this law (see 100, Special Commissions)." ;
+	dprr:hasID 3587 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3586> rdfs:label "Post Assertion Note: #3586" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Tribune in the popular interest (Cic. Corn. in Ascon. 80 C; Caes. BC 1.7.6; Diod. 36.12; App. BC 1.28), he carried a law to assign 100 iugera of land in Africa to each of Marius' veterans (Auct. Vir. Ill. 73.1);\n     and at the end of the year used his supporters to create the appearance of a great popular demand for the reelection of Marius (Liv. Per. 67; Plut. Mar. 7-8). To this year belongs his law on maiestas,\n     \n      4\n     \n     which constituted a quaestio with an equestrian jury, and among other provisions included violent opposition to magistrates under the term (Auct. Ad Herenn. 2.17; Cic. De Or. 2.107, 109, 164, 197-201; Inv. 2.53; Part. Or. 105; Sall. Hist. 1.62 M), and probably also his proposal of a plebiscite to send Cn. Mallius into exile (Gran. Lic. 21 B; cf. Cic. De Or. 2.125; see below, on Norbanus). Finally, he suborned a freedman named Equitius (Quinctius, Auct. Vir. Ill. 62.1) to pose as a son of Ti. Gracchus (Auct. Vir. Ill. 73.3-4; see 102, Censors, and 100 and 99, Tribunes of the Plebs).\n     \n      5" ;
+	dprr:hasID 3586 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3566> rdfs:label "Post Assertion Note: #3566" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor at Ostia, and when a rise in the price of grain became an excuse for the Senate to transfer his duties to Aemilius Scaurus, he became a popular candidate for the tribunate (Cic. Sest. 39; Har. Resp. 43; Diod. 36.12; see 103, Tribunes of the Plebs)." ;
+	dprr:hasID 3566 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8797> rdfs:label "Post Assertion: #8797" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9547> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Appuleius Saturninus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 8797 ;
+	dprr:hasDateStart -104 ;
+	dprr:hasDateSourceText "104" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4314> rdfs:label "Post Assertion: #4314" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8263> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3673> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3653> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3652> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Appuleius Saturninus (29)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4314 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -100 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4261> rdfs:label "Post Assertion: #4261" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8263> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3587> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3586> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Appuleius Saturninus (29)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4261 ;
+	dprr:hasDateStart -103 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -103 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4244> rdfs:label "Post Assertion: #4244" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8263> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3566> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Appuleius Saturninus (29)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4244 ;
+	dprr:hasDateStart -105 ;
+	dprr:hasDateSourceText "105 or 104" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -105 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11047> rdfs:label "Post Assertion: #11047" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8263> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 11047 ;
+	dprr:hasDateStart -104 ;
+	dprr:hasDateEnd -104 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3383> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "133" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN3383 Cn. Cornelius (133) Dolabella" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 3383 ;
+	dprr:hasHighestOffice "pr. before 100" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CORN3383" ;
+	dprr:hasCognomen "Dolabella " ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3383> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1766> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "APPU1766 L. Appuleius (29) Saturninus" ;
+	dprr:hasNomen "Appuleius" ;
+	dprr:hasID 1766 ;
+	dprr:hasHighestOffice "tr. pl. 103" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -133 ;
+	dprr:hasDprrID "APPU1766" ;
+	dprr:hasCognomen "Saturninus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1766> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/346> rdfs:label "Date Information: #346" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasValue -133 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R167." ;
+	dprr:hasID 346 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/345> rdfs:label "Date Information: #345" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1766> ;
+	dprr:hasValue -100 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "murdered in riot." ;
+	dprr:hasID 345 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

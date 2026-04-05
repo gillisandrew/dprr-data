@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1915> rdfs:label "Relationship Assertion Reference: #1915" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1915 ;
+	dprr:hasExtraInfo "Varro l.l. V 158" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1346> rdfs:label "Relationship Assertion Reference: #1346" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1346 ;
+	dprr:hasExtraInfo "Ovid Fast. V 283-294" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1026> rdfs:label "Relationship Assertion: #1026" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4203> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1915> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1346> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/771> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/771> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*2, *3" ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PUBL0771 M. Publicius (22) L. f. L. n. Malleolus" ;
+	dprr:hasNomen "Publicius" ;
+	dprr:hasID 771 ;
+	dprr:hasHighestOffice "cos. 232" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -264 ;
+	dprr:hasDprrID "PUBL0771" ;
+	dprr:hasCognomen "Malleolus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/771> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4203> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "20" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PUBL4203 L. Publicius (20) Malleolus" ;
+	dprr:hasNomen "Publicius" ;
+	dprr:hasID 4203 ;
+	dprr:hasHighestOffice "brother of M. Publicius (22) L. f. L. n. Malleolus (cos. 232)" ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -264 ;
+	dprr:hasDprrID "PUBL4203" ;
+	dprr:hasCognomen "Malleolus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4203> .

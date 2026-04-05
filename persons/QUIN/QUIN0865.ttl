@@ -1,0 +1,166 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3485> rdfs:label "Relationship Assertion: #3485" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/865> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/696> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9182> rdfs:label "Post Assertion Note: #9182" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726, footnote 20" ;
+	dprr:hasID 9182 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1354> rdfs:label "Post Assertion Note: #1354" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected to let the contract for building a temple of Concord (Liv. 22.33.7-9)." ;
+	dprr:hasID 1354 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1353> rdfs:label "Post Assertion Note: #1353" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "In *RE Pupius' praenomen is given as Cn., and Quinctius' office is wrongly placed in 216." ;
+	dprr:hasID 1353 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8183> rdfs:label "Post Assertion: #8183" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/865> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9182> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "K. Quinctius (41) Flamininus" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 8183 ;
+	dprr:hasDateStart -219 ;
+	dprr:hasDateSourceText "??before 218" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasDateEnd -219 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10083> rdfs:label "Post Assertion: #10083" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/865> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1354> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1353> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/246> ;
+	dprr:hasID 10083 ;
+	dprr:hasDateStart -217 ;
+	dprr:hasDateEnd -217 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1855> rdfs:label "Person Note: #1855" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/11> ;
+	dprr:hasNoteText "Bau eines Concordia-Tempels auf dem Kapitol." ;
+	dprr:hasID 1855 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1854> rdfs:label "Person Note: #1854" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 22,37,8." ;
+	dprr:hasID 1854 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1853> rdfs:label "Person Note: #1853" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Mitte 3. Jh.-nach 217 v. Chr." ;
+	dprr:hasID 1853 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1852> rdfs:label "Person Note: #1852" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 1852 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1851> rdfs:label "Person Note: #1851" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "MRR 1,245. 3,179." ;
+	dprr:hasID 1851 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1850> rdfs:label "Person Note: #1850" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Quinctius 41." ;
+	dprr:hasID 1850 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1849> rdfs:label "Person Note: #1849" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2876" ;
+	dprr:hasID 1849 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/14> rdfs:label "Person Note: #14" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The praenomen Q. is rare in the Gens Claudia, and the cognomen, which is given in the dative (Flamini) appears in one group of manuscripts as Flaminio. The cognomen Claudus of the consul of 271 raises the suggestion that Claudius Flamen's name may possibly have been Quinctius Claudus Flamininus, perhaps also the IIvir of 217. But Livy repeatedly refers to him during his years at Tarentum as Q. Claudius (MRR 1.290, 295, 299). Badian's suggestion, given above, also suggests that he was an uncle of Flamininus, the future consul of 198, who appears in 205, 204, and perhaps until 202, as propraetor in Tarentum in succession to him (Liv. 29.13.6 in 204, with the phrase ut priore anno; see MRR 1.303, 308). See Badian, JRS 61, 1971, 106-110. But see also E. Rawson's convincing arguments for keeping the name of Q. Claudius Flamen (Historia 26, 1977, 340-357, esp. 349-351)." ;
+	dprr:hasID 14 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/865> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*1" ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Caeso> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1855> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1854> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1853> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1852> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1851> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1850> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1849> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/14> ;
+	dprr:hasPersonName "QUIN0865 K. Quinctius (41) Flamininus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 865 ;
+	dprr:hasHighestOffice "pr. before 218" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "QUIN0865" ;
+	dprr:hasCognomen "Flamininus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/865> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/696> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "36" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Caeso> ;
+	dprr:hasPersonName "QUIN0696 K. Quinctius (36) L. f. Cn. n. Claudus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 696 ;
+	dprr:hasHighestOffice "cos. 271" ;
+	dprr:hasFiliation "L. f. Cn. n." ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "QUIN0696" ;
+	dprr:hasCognomen "Claudus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/696> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1567> rdfs:label "Date Information: #1567" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/865> ;
+	dprr:hasValue -250 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1567 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/94> rdfs:label "Primary Source Reference: #94" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. Pun. 101 (478)" ;
+	dprr:hasID 94 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/93> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/109> rdfs:label "Primary Source Reference: #109" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Asc. Cornel. 74C" ;
+	dprr:hasID 109 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/108> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/85> rdfs:label "Post Assertion Note: #85" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leaders of the Plebs against Coriolanus (Liv. 2.33-35; Dion. Hal. 7.33.1-66.3; 8.31.4, Icilius; Plut. Cor. 13.1-21.4; cf. Fab. Pict. fr. 17, Peter; Gell. 17.21.11; Dio fr. 18; Eutrop. 1.15; Auct. Vir. Ill. 19; Zon. 7.16)." ;
+	dprr:hasID 85 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/76> rdfs:label "Post Assertion Note: #76" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent at Menenius' request by the Plebs to the Senate to conclude the agreement (Dion. Hal. 6.88.4)." ;
+	dprr:hasID 76 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/93> rdfs:label "Post Assertion: #93" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/46> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/76> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Decius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 93 ;
+	dprr:hasDateStart -493 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -493 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/108> rdfs:label "Post Assertion: #108" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/46> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/85> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Decius (7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 108 ;
+	dprr:hasDateStart -491 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -491 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/46> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "DECI0046 M. Decius (7)" ;
+	dprr:hasNomen "Decius" ;
+	dprr:hasID 46 ;
+	dprr:hasHighestOffice "tr. pl. 491" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "DECI0046" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/46> .

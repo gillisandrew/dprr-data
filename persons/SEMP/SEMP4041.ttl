@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/979> rdfs:label "Relationship Assertion Reference: #979" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 979 ;
+	dprr:hasExtraInfo "Diod. XXXVII 8" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/355> rdfs:label "Relationship Assertion Reference: #355" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 355 ;
+	dprr:hasExtraInfo "Cic. Cael. 2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/447> rdfs:label "Relationship Assertion: #447" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4041> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/979> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/355> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/22> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2823> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/22> rdfs:label "Relationship: adoptive father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 53 ;
+	dprr:hasName "adoptive father of" ;
+	dprr:hasID 22 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4041> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "SEMP4041 L. Sempronius (27) Atratinus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasID 4041 ;
+	dprr:hasHighestOffice "adoptive father of L. Sempronius (26) L. f. L. n. Fal. Atratinus (cos. suff. 34)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SEMP4041" ;
+	dprr:hasCognomen "Atratinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4041> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2823> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1921> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1920> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1919> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1918> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1917> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1916> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1915> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/12> ;
+	dprr:hasPersonName "SEMP2823 L. Sempronius (26) L. f. L. n. Fal. Atratinus" ;
+	dprr:hasNomen "Sempronius" ;
+	dprr:hasNobilisNotes "Cic. Cael. 1.1, Quint. Inst. Or. 11.1.68" ;
+	dprr:hasID 2823 ;
+	dprr:hasHighestOffice "cos. suff. 34" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo 7 ;
+	dprr:hasEraFrom -73 ;
+	dprr:hasDprrID "SEMP2823" ;
+	dprr:hasCognomen "Atratinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2823> .

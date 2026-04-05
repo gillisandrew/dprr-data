@@ -1,0 +1,98 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/261> rdfs:label "Tribe Assertion: #261" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4108> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/37> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasID 261 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/37> rdfs:label "Tribe: Teretina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Teretina" ;
+	dprr:hasID 37 ;
+	dprr:hasAbbreviation "Ter." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/377> rdfs:label "Status Assertion Note: #377" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 156. Cic. Phil. 2.41. eques Romanus" ;
+	dprr:hasID 377 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/377> rdfs:label "Status Assertion: #377" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4108> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/377> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Q. FUFIUS (7)" ;
+	dprr:hasID 377 ;
+	dprr:hasDateStart -49 ;
+	dprr:hasDateSourceText "c. 49-44" ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/614> rdfs:label "Relationship Assertion Reference: #614" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 614 ;
+	dprr:hasExtraInfo "Cic. Phil. II 40f." .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3914> rdfs:label "Relationship Assertion: #3914" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4108> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/614> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/29> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4107> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/29> rdfs:label "Relationship: halfbrother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 37 ;
+	dprr:hasName "halfbrother of" ;
+	dprr:hasID 29 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4108> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FUFI4108 Q. Fufius (7) Ter." ;
+	dprr:hasOrigin "Casinum?" ;
+	dprr:hasNomen "Fufius" ;
+	dprr:hasID 4108 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FUFI4108" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4108> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4107> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "12" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "RUBR4107 L. Rubrius (12)" ;
+	dprr:hasNomen "Rubrius" ;
+	dprr:hasID 4107 ;
+	dprr:hasHighestOffice "halfbrother of Q. Fufius (7) Ter.? (eq. R. ?)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "RUBR4107" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4107> .

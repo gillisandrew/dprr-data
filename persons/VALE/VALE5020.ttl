@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3695> rdfs:label "Relationship Assertion: #3695" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5020> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4988> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3652> rdfs:label "Relationship Assertion: #3652" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5020> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3651> rdfs:label "Relationship Assertion: #3651" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5020> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/51> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/51> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "301" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0051 P. Valerius (301) P. f. Volus. n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 51 ;
+	dprr:hasHighestOffice "cos. 475" ;
+	dprr:hasFiliation "P. f. Volus. n." ;
+	dprr:hasEraTo -460 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "VALE0051" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/51> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5020> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "386" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VALE5020  Valeria (386)" ;
+	dprr:hasNomen "Valeria" ;
+	dprr:hasID 5020 ;
+	dprr:hasHighestOffice "daughter of P. Valerius (302) Volus. f. - n. Poplicola (cos. suff. 509)" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "VALE5020" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5020> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4988> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "73" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE4988 M. Valerius (73)" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 4988 ;
+	dprr:hasHighestOffice "son of? P. Valerius (302) Volus. f. - n. Poplicola (cos. suff. 509)" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "VALE4988" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4988> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "302" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VALE0003 P. Valerius (302) Volus. f. - n. Poplicola" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 3 ;
+	dprr:hasHighestOffice "cos. suff. 509" ;
+	dprr:hasFiliation "Volus. f. - n." ;
+	dprr:hasEraTo -503 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "VALE0003" ;
+	dprr:hasCognomen "Poplicola" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3> .

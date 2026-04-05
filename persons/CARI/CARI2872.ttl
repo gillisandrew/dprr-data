@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7333> rdfs:label "Post Assertion Note: #7333" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Leg., lieut. or praef. class. 36. Read P.? or T.? Carisius. In Appian (BC 5.111) the reading is #, emended to Kapaoup by Gardthausen (Augustus 2.138, note 10) as the gentilicium Carcius is not attested. He may be identified with either T. Carisius (9). Monetalis (below), or with P. Carisius, the future legatus pro praetore in Spain (PIR(2) 2.99, no. 422, who is however called # in Dio 53.25.8). (TJC)\n" ;
+	dprr:hasID 7333 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6385> rdfs:label "Post Assertion Note: #6385" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "No title preserved. Octavian gave him command of the left wing of the fleet at Tauromenium (App. BC 5.111). See PIR² 2.99, no. 422; De Laet no. 93." ;
+	dprr:hasID 6385 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7134> rdfs:label "Post Assertion: #7134" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2872> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7333> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6385> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "P.? Carisius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/149> ;
+	dprr:hasID 7134 ;
+	dprr:hasDateStart -36 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -36 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2872> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CARI2872 P. (or T.) Carisius (1)" ;
+	dprr:hasNomen "Carisius" ;
+	dprr:hasID 2872 ;
+	dprr:hasHighestOffice "officer (title not preserved) 36" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "CARI2872" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2872> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> .

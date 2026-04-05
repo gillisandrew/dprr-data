@@ -1,0 +1,165 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2166> rdfs:label "Relationship Assertion: #2166" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/579> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/402> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1194> rdfs:label "Primary Source Reference: #1194" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXVII 29.4" ;
+	dprr:hasID 1194 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1174> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1189> rdfs:label "Primary Source Reference: #1189" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXVI 3.10" ;
+	dprr:hasID 1189 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1169> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1169> rdfs:label "Primary Source Reference: #1169" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XXII 53.1" ;
+	dprr:hasID 1169 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1149> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1154> rdfs:label "Primary Source Reference: #1154" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Liv. XLIII 2.5" ;
+	dprr:hasID 1154 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1134> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/878> rdfs:label "Post Assertion Note: #878" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "With the Dictator Poetelius, according to Livy (9.28.2)." ;
+	dprr:hasID 878 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/873> rdfs:label "Post Assertion Note: #873" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 9.26.7; Fast. Cap.; Degrassi 36f., 110, 418f.; cf. Diod. 19.76.3 ({Gr})." ;
+	dprr:hasID 873 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/855> rdfs:label "Post Assertion Note: #855" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 9.20.1 (with cognomina Flaccina and Venox); Diod. 19.2.1 ({Gr}); Fast. Cap. (names entire, with cognomina Flaccinator and Venno); Chr. 354 (Venno et Flaccina{155}tore); Fast. Hyd. (Venoce et Flaccino); Chr. Pasc. ({Gr}); Cassiod.; Degrassi 36f., 109, 416f. Plautius subdued Teanum Apulum and Canusia in Apulia (Liv. 9.20.4-6; cf. Diod. 19.10.2)." ;
+	dprr:hasID 855 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/842> rdfs:label "Post Assertion Note: #842" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (M. Fos[lius C. f. M. n. Flac]cinator Ma[g- -]). See Degrassi 36f., 109, 416f." ;
+	dprr:hasID 842 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/839> rdfs:label "Post Assertion Note: #839" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The various names of Consuls, Dictators, and Masters of Horse, are filled out from Fast. Cap. and Act. Tr., Papirius from Fast. Cap. on 315, Publilius, ib. on 315, Maenius and Folius, ib. 314, and Manlius, Act. Tr. on 340. See Degrassi 36f., 68f. On the surrender of persons to the Samnites, see also Cic. Off. 3.109; Sen. 41; Gell. 17.21.36; Flor. 1.16.11; Dio fr. 36.19-21, and Zon. 7.26. On Papirius, see also 326, note 1, and 319, Consuls." ;
+	dprr:hasID 839 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1174> rdfs:label "Post Assertion: #1174" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/579> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/878> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Folius (C. f. M. n. Flaccinator) Pat. (3)" ;
+	dprr:hasOfficeXref "Cos. 318" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1174 ;
+	dprr:hasDateStart -313 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -313 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1169> rdfs:label "Post Assertion: #1169" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/579> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/873> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Folius C. f. M. n. Flaccinator Pat. (3)" ;
+	dprr:hasOfficeXref "Cos. 318" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1169 ;
+	dprr:hasDateStart -314 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -314 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1149> rdfs:label "Post Assertion: #1149" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/579> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/855> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Folius C. f. M. n. Flaccinator Pat. (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1149 ;
+	dprr:hasDateStart -318 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -318 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1134> rdfs:label "Post Assertion: #1134" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/579> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/842> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/839> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Folius C. f. M. n. Flaccinator Pat. (3)" ;
+	dprr:hasOfficeXref "Cos. 318" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1134 ;
+	dprr:hasDateStart -320 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -320 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/579> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FOLI0579 M. Folius (3) C. f. M. n. Flaccinator" ;
+	dprr:hasNomen "Folius" ;
+	dprr:hasNobilisNotes "Liv. 9.26.4-21 (volunteers own trial during conspiracy of nobles)" ;
+	dprr:hasID 579 ;
+	dprr:hasHighestOffice "cos. 318" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -250 ;
+	dprr:hasEraFrom -375 ;
+	dprr:hasDprrID "FOLI0579" ;
+	dprr:hasCognomen "Flaccinator" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/579> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/402> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "1, 2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/977> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/976> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/975> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/974> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/973> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/972> ;
+	dprr:hasPersonName "FOLI0402 M. Folius (1, 2) M. f. (Flaccinator)" ;
+	dprr:hasNomen "Folius" ;
+	dprr:hasID 402 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 433" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -390 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "FOLI0402" ;
+	dprr:hasCognomen "(Flaccinator)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/402> .

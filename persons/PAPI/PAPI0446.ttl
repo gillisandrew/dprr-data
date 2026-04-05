@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/825> rdfs:label "Primary Source Reference: #825" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio frg. 96.3 (XXVIII)" ;
+	dprr:hasID 825 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/816> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/565> rdfs:label "Post Assertion Note: #565" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.27.2; Diod. 15.50.1; Fast. Cap. (note 1); Chr. 354 (Publicola V et Mamertino VI); Degrassi 32f., 102, 392f." ;
+	dprr:hasID 565 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/564> rdfs:label "Post Assertion Note: #564" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved in Fast. Cap. as follows: L. Valerius L. f. [- - - -]; P. (Valerius) L. f. L. [n. Poti]tus Poplicol. III; Connelius, Menenius, and Sulpicius, entire as above; [- - - -]n. Mamercin. VI; Cn. [Sergius - f. - n.] Fiden. Coxo III; Ti. Papiri[us - f. - n.] Crassus; L. (Papirius) [- f. - n.] Mugillanus II. Livy lists six, L. and P. Valerius, C. (sic) Sergius, Licinius (sic) Menenius, P. (sic) Papirius, and Sergius (sic) Cornelius Maluginensis. Diod. indicates eight, and in his confused Mss tradition may be identified two Valerii (of P. the praenomen only), Menenius (with praenomen L.), Sulpicius, Aemilius, Papirius (only one, with praenomen T.), and the apocryphal names {Gr} (add. F), C. or Cn. Terentius, and {Gr} (add. F); Degrassi 393. The nine named in Fast. Cap. have no parallel, and it appears that no college of more than eight was known to Claudius (ILS 212; cf. Liv. 5.2.10; 6.37.6; Dion. Hal. 11.56.3). Clearly Fast. Cap. has the most seriously interpolated tradition." ;
+	dprr:hasID 564 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/816> rdfs:label "Post Assertion: #816" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/446> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/565> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/564> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "Ti. Papirius - f. - n. Crassus Pat. (50)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 816 ;
+	dprr:hasDateStart -380 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -380 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/446> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "50" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Tiberius> ;
+	dprr:hasPersonName "PAPI0446 Ti. Papirius (50) Crassus" ;
+	dprr:hasNomen "Papirius" ;
+	dprr:hasID 446 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 380" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "PAPI0446" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/446> .

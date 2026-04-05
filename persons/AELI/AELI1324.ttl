@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2220> rdfs:label "Status Assertion: #2220" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1324> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2220 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/271> rdfs:label "Relationship Assertion Reference: #271" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 271 ;
+	dprr:hasExtraInfo "Cic. Att. XII 23.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/328> rdfs:label "Relationship Assertion: #328" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1324> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/271> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3998> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8932> rdfs:label "Post Assertion Note: #8932" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 734, footnote 87, 89" ;
+	dprr:hasID 8932 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2790> rdfs:label "Post Assertion Note: #2790" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent by the Senate to assist Anicius in making a settlement in Illyria (Liv. 45.17.4, and 26.11-15)." ;
+	dprr:hasID 2790 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2609> rdfs:label "Post Assertion Note: #2609" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 42.9.8; Fast. Cap., Degrassi 50f., 123, 458f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. The first plebeian college of Consuls (Fast. Cap.). Both Consuls were assigned to Liguria (Liv. 42.10.10-12). Popillius supported the unjust acts of his brother (Cos. 173) against the Statelliates despite senatorial criticism and decrees (Liv. 42.10.10-12, 21.1-5, 22.1 and 5) and returned late to report on Liguria and hold{411} the elections (42.28.1-3). Aelius instituted the debate on the acts of Popillius but was overawed by his colleague (42.10.9-11). See below, Praetors, on Crassus; and on Popillius, see Lübker, no. 3." ;
+	dprr:hasID 2609 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2543> rdfs:label "Post Assertion Note: #2543" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Under the Lex Villia Annalis his praetorship must fall in this or a previous year, and the earlier places are filled." ;
+	dprr:hasID 2543 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> rdfs:label "Post Assertion Note: #2542" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the Praetors of 175, see especially Münzer, APF 218f." ;
+	dprr:hasID 2542 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3399> rdfs:label "Post Assertion: #3399" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1324> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2790> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Aelius Ligus (84)" ;
+	dprr:hasOfficeXref "Cos. 172, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3399 ;
+	dprr:hasDateStart -167 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -167 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3175> rdfs:label "Post Assertion: #3175" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1324> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2609> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Aelius P. f. P. n. Ligus (84)" ;
+	dprr:hasOfficeXref "Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3175 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3090> rdfs:label "Post Assertion: #3090" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1324> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8932> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2543> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Aelius Ligus (84)" ;
+	dprr:hasOfficeXref "Cos. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3090 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3998> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNomenUncertain true ;
+	dprr:hasReNumber "Gamala 3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "AELI3998 -. Aelius (Gamala 3) Gamala" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 3998 ;
+	dprr:hasHighestOffice "son of P. Aelius (84) P. f. P. n. Ligus (cos. 172)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "AELI3998" ;
+	dprr:hasCognomen "Gamala" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3998> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1324> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "84" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "AELI1324 P. Aelius (84) P. f. P. n. Ligus" ;
+	dprr:hasNomen "Aelius" ;
+	dprr:hasID 1324 ;
+	dprr:hasHighestOffice "cos. 172" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "AELI1324" ;
+	dprr:hasCognomen "Ligus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1324> .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/990> rdfs:label "Primary Source Reference: #990" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Diod. XXXI 7" ;
+	dprr:hasID 990 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/971> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/674> rdfs:label "Post Assertion Note: #674" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed in camp to meet a false threat of war with Etruscans; used his office to try to elect patrician Consuls (Liv. 7.21.9-22.1). See Degrassi 105, 404f." ;
+	dprr:hasID 674 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/971> rdfs:label "Post Assertion: #971" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/512> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/674> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Iulius (- f. - n. Iullus ?) Pat. (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 971 ;
+	dprr:hasDateStart -352 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -352 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/512> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "IULI0512 C. Iulius (17) (Iullus)" ;
+	dprr:hasNomen "Iulius" ;
+	dprr:hasID 512 ;
+	dprr:hasHighestOffice "dict. 352" ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "IULI0512" ;
+	dprr:hasCognomen "(Iullus)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/512> .

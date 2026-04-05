@@ -1,0 +1,258 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/478> rdfs:label "Tribe Assertion: #478" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/37> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p259. From Minturnae" ;
+	dprr:hasID 478 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/37> rdfs:label "Tribe: Teretina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Teretina" ;
+	dprr:hasID 37 ;
+	dprr:hasAbbreviation "Ter." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/348> rdfs:label "Status Assertion Note: #348" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 345. Cic. 2 Verr. 1.128. senator" ;
+	dprr:hasID 348 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/348> rdfs:label "Status Assertion: #348" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/348> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "Q. TITINIUS (17)" ;
+	dprr:hasID 348 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1681> rdfs:label "Status Assertion: #1681" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1681 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> rdfs:label "Secondary Source: Broughton MRR II Appendix 3" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 3" ;
+	dprr:hasID 4 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 3. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 3" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/778> rdfs:label "Relationship Assertion Reference: #778" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 778 ;
+	dprr:hasExtraInfo "Cic. Verr. II i 128" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/241> rdfs:label "Relationship Assertion Reference: #241" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 241 ;
+	dprr:hasExtraInfo "Cic. Att. IX 9.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/240> rdfs:label "Relationship Assertion Reference: #240" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Die einzige namentliche Erwähnung (Cic. Att. IX 19,2) des Sohnes von Titinius legt nahe, dass dieser von einem Pontius adoptiert wurde. Dort wird er zwar nicht als Sohn des Titinius bezeichnet, wegen des Kontextes kommt aber sonst niemand in Frage." ;
+	dprr:hasID 240 ;
+	dprr:hasExtraInfo "Cic. Att. IX 19.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/745> rdfs:label "Relationship Assertion: #745" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/778> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4152> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3049> rdfs:label "Relationship Assertion: #3049" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4274> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3048> rdfs:label "Relationship Assertion: #3048" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4273> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/299> rdfs:label "Relationship Assertion: #299" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/241> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/240> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3982> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7846> rdfs:label "Post Assertion Note: #7846" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator in 70. A member of the jury in the trial of Verres (Cic. Verr. 2.1.128). See C. Titinius (cf. 6), above. See Wiseman, NM 266, no. 433.\n" ;
+	dprr:hasID 7846 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6968> rdfs:label "Post Assertion Note: #6968" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A juror in the trial of Verres (Cic. Verr. 2.1.128)." ;
+	dprr:hasID 6968 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8501> rdfs:label "Post Assertion: #8501" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7846> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6968> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Titinius (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/130> ;
+	dprr:hasID 8501 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7724> rdfs:label "Post Assertion: #7724" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3271> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7846> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6968> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Q. Titinius (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/146> ;
+	dprr:hasID 7724 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSourceText "70" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/4> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4274> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "TITI4274 C. Titinius (8)" ;
+	dprr:hasOrigin "Minturnae" ;
+	dprr:hasNomen "Titinius" ;
+	dprr:hasID 4274 ;
+	dprr:hasHighestOffice "eq. R.? c. 100" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "TITI4274" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4274> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4273> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "21" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "FANN4273  Fannia (21)" ;
+	dprr:hasNomen "Fannia" ;
+	dprr:hasID 4273 ;
+	dprr:hasHighestOffice "married to C. Titinius (8) (eq. R.? c. 100)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "FANN4273" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4273> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4152> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "FANN4152 Cn. Fannius (11) Ter." ;
+	dprr:hasOrigin "Campania (Minturnae)" ;
+	dprr:hasNomen "Fannius" ;
+	dprr:hasID 4152 ;
+	dprr:hasHighestOffice "eq. R." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "FANN4152" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4152> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3982> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PONT3982 -. Pontius (22) Titinianus" ;
+	dprr:hasOrigin "Minturnae" ;
+	dprr:hasNomen "Pontius" ;
+	dprr:hasID 3982 ;
+	dprr:hasHighestOffice "eq. R.? C1" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "PONT3982" ;
+	dprr:hasCognomen "Titinianus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3982> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3271> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "TITI3271 Q. Titinius (17) C. f. Ter." ;
+	dprr:hasOrigin "Minturnae" ;
+	dprr:hasNomen "Titinius" ;
+	dprr:hasID 3271 ;
+	dprr:hasHighestOffice "sen. 70" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "TITI3271" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3271> .

@@ -1,0 +1,368 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2295> rdfs:label "Status Assertion: #2295" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2295 ;
+	dprr:hasDateStart -165 ;
+	dprr:hasDateEnd -124 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> rdfs:label "Secondary Source: Ryan 1998" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Ryan RPRS" ;
+	dprr:hasID 16 ;
+	dprr:hasBiblio "Ryan, F. X., Rank and participation in the Republican Senate. Stuttgart : F. Steiner, 1998." ;
+	dprr:hasAbbreviation "Ryan 1998" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5975> rdfs:label "Relationship Assertion: #5975" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1474> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1678> rdfs:label "Relationship Assertion: #1678" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/877> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9804> rdfs:label "Post Assertion Note: #9804" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 223" ;
+	dprr:hasID 9804 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8951> rdfs:label "Post Assertion Note: #8951" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 740" ;
+	dprr:hasID 8951 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6983> rdfs:label "Post Assertion Note: #6983" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He very probably governed a province after his consulship, for he was convicted of res repetundae (Val. Max 6.9.10 refers wrongly to a Lex Caecilia repetundarum, which is usually taken as a mistake for the Lex Calpurnia; see Mommsen, GS 1.16-17; Strafrecht 708, note 3, 729, note 1; and cf. Cic. Brut. 106; Off. 2.75; Festus 360L-285M; Lucilius, 20.607-608, in LCL). But see C. Busacca, Iura 19, 1968, 83-93, who holds that the Lex Caecilia set up a quaestio extraordinaria, through which Lentulus was convicted of res repetundae ca. 154, but which did not involve, like the Lex Calpurnia, the creation of a quaestio perpetua. M. G. Morgan holds, against Zippel and De Sanctis, that Lupus was not the Cornelius mentioned by Polybius (frag. 64 B-W; see Walbank, Comm. Polybius III, p. 748, ad loc.; App. Illyr. 14) who was defeated by the Pannonians, nor the commander who suffered a disaster at the hands of the Scordisci (Historia 23, 1974, 183-216). Xvir s. f. The L. Cornelius Lentulus who in 140 raised the question of bringing an aqueduct to the Capitolium, though termed a praetor in RE nos. 190192, was one of the Xviri s. f. and was acting for the college (Frontin. Aq. 1.7, accepting Schone's emendation pro collegio; cf. Liv. OXy. Per. 54), and may best be identified with the consul of 156 (Sumner, Orators 48). The notices on L. Cornelius Lentulus, Pr. 140, in MRR 1.479, and of any connection with the consul of 130 should be deleted.\n" ;
+	dprr:hasID 6983 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3070> rdfs:label "Post Assertion Note: #3070" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Raised the question of bringing an aqueduct to the Capitol contrary to the Sibylline oracles (Frontin. Aq. 1.7; cf. Liv. Oxy. Per. 54).{480}" ;
+	dprr:hasID 3070 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3033> rdfs:label "Post Assertion Note: #3033" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Bardt (Priester 30) accepts the emendation collegio in Frontin. Aq. 1.7 (see above, Praetors, and note 1), identifies Lepidus and Lentulus as above, and because of the mention of the Sibylline Oracles lists them as Decemviri." ;
+	dprr:hasID 3033 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2967> rdfs:label "Post Assertion Note: #2967" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 52f., 124, 464f.; Fast. Ant., ib. 160f. Cornelius was elected in spite his previous conviction under the Lex Caecilia (Val. Max. 6.9.10; Fest. 360 L; see 154, on Caecilius Metellus). P. Cornelius Scipio Nasica Corculum was probably chosen Princeps Senatus (Diod. 34-35.33.6; Val. Max. 7.5.2; cf. Plut. Aem. 15.2; see Willems, Sénat 1.113, note 3)." ;
+	dprr:hasID 2967 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2873> rdfs:label "Post Assertion Note: #2873" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Brut. 79; Fast. Cap., Degrassi 50f., 123f., 462f.; Fast. Ant., ib. 160f.; Obseq. 16; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; and on Marcius, Val. Max. 9.3.2. Marcius received command in Dalmatia where, after initial reverses, he captured several towns and besieged Delminium (Liv. Per. 47; Flor. 2.25; App. Illyr. 11; Obseq. 16; cf. Polyb. 32.14.2, who mentions commissioners that were sent to Illyria with Marcius)." ;
+	dprr:hasID 2873 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2864> rdfs:label "Post Assertion Note: #2864" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Reported a decree of the Senate to the People of Tibur (CIL 1\n     .2.586- ILS 19). This Cornelius is generally identified with Lupus the Consul of 156, and so must have held the praetorship by 159." ;
+	dprr:hasID 2864 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2845> rdfs:label "Post Assertion Note: #2845" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "After Demetrius' escape to Syria, these were appointed to examine the condition of Greece; and in Asia, to observe the result of Demetrius' action, the attitude of the other kings, and to settle their disputes with the Galatians (Polyb. 31.15.9-12, and 32-33; Diod. 31.28)." ;
+	dprr:hasID 2845 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2830> rdfs:label "Post Assertion Note: #2830" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Didasc. Ter. Heaut. Tim. On Valerius, see Münzer, Gent. Val. 40, no. 18." ;
+	dprr:hasID 2830 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9796> rdfs:label "Post Assertion: #9796" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6983> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3070> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3033> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/15> ;
+	dprr:hasID 9796 ;
+	dprr:hasDateStart -140 ;
+	dprr:hasDateEnd -130 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9795> rdfs:label "Post Assertion: #9795" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/15> ;
+	dprr:hasID 9795 ;
+	dprr:hasDateStart -160 ;
+	dprr:hasDateEnd -141 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9579> rdfs:label "Post Assertion: #9579" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/16> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9804> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/222> ;
+	dprr:hasID 9579 ;
+	dprr:hasDateStart -130 ;
+	dprr:hasDateSourceText "130?" ;
+	dprr:hasDateEnd -130 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9153> rdfs:label "Post Assertion: #9153" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6983> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius Cn. f. L. n. Lentulus Lupus Pat. (224)" ;
+	dprr:hasOfficeXref "Cos. 156" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 9153 ;
+	dprr:hasDateStart -154 ;
+	dprr:hasDateSourceText "ca 154" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3618> rdfs:label "Post Assertion: #3618" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2967> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Cn. f. L. n. Lentulus Lupus Pat. (224)" ;
+	dprr:hasOfficeXref "Cos. 156" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 3618 ;
+	dprr:hasDateStart -147 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -147 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3514> rdfs:label "Post Assertion: #3514" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2873> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Cn. f. L. n. Lentulus Lupus Pat. (224)" ;
+	dprr:hasOfficeXref "Pr. by 159" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3514 ;
+	dprr:hasDateStart -156 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -156 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3502> rdfs:label "Post Assertion: #3502" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8951> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2864> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Cn. f. (L. n. Lentulus Lupus) Pat. (224)" ;
+	dprr:hasOfficeXref "Cos. 156" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3502 ;
+	dprr:hasDateStart -159 ;
+	dprr:hasDateSourceText "by 159" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -159 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3480> rdfs:label "Post Assertion: #3480" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2845> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Cornelius Lentulus Lupus Pat. (224)" ;
+	dprr:hasOfficeXref "Cos. 156" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3480 ;
+	dprr:hasDateStart -162 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3458> rdfs:label "Post Assertion: #3458" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2830> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Cornelius Lentulus (Lupus) Pat. (224)" ;
+	dprr:hasOfficeXref "Cos. 156" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 3458 ;
+	dprr:hasDateStart -163 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -163 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/652> rdfs:label "Person Note: #652" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Frontin. aq. 75." ;
+	dprr:hasID 652 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/651> rdfs:label "Person Note: #651" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Kurz nach 200-zwischen 130 und 125 v. Chr." ;
+	dprr:hasID 651 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/650> rdfs:label "Person Note: #650" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 650 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/649> rdfs:label "Person Note: #649" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt D 25; MRR 1,473. 3,67 f." ;
+	dprr:hasID 649 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/648> rdfs:label "Person Note: #648" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Cornelius 224. NP Cornelius I.51." ;
+	dprr:hasID 648 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/647> rdfs:label "Person Note: #647" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "1347" ;
+	dprr:hasID 647 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/877> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "176" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/626> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/625> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/624> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/623> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/622> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/621> ;
+	dprr:hasPersonName "CORN0877 Cn. Cornelius (176) L. f. L. n. Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 877 ;
+	dprr:hasHighestOffice "cos. 201" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -184 ;
+	dprr:hasEraFrom -239 ;
+	dprr:hasDprrID "CORN0877" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/877> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1474> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "175, 177" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "CORN1474 Cn. Cornelius (175, 177) Cn. f. L. n. Lentulus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1474 ;
+	dprr:hasHighestOffice "cos. 146" ;
+	dprr:hasFiliation "Cn. f. L. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "CORN1474" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1474> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1465> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "224" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/652> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/651> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/650> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/649> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/648> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/647> ;
+	dprr:hasPersonName "CORN1465 L. Cornelius (224) Cn. f. L. n. Lentulus Lupus" ;
+	dprr:hasOtherNames "Lupus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 1465 ;
+	dprr:hasHighestOffice "cos. 156" ;
+	dprr:hasFiliation "Cn. f. L. n." ;
+	dprr:hasEraTo -124 ;
+	dprr:hasEraFrom -199 ;
+	dprr:hasDprrID "CORN1465" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1465> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/180> rdfs:label "Date Information: #180" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasValue -199 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 180 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1298> rdfs:label "Date Information: #1298" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1465> ;
+	dprr:hasValue -124 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1298 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "B" .

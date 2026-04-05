@@ -1,0 +1,192 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2495> rdfs:label "Relationship Assertion: #2495" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/125> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/273> rdfs:label "Primary Source Reference: #273" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XII 21.1" ;
+	dprr:hasID 273 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/268> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/244> rdfs:label "Primary Source Reference: #244" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. IX 19.2" ;
+	dprr:hasID 244 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/240> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/242> rdfs:label "Primary Source Reference: #242" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. IV 2.4" ;
+	dprr:hasID 242 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/238> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/224> rdfs:label "Primary Source Reference: #224" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. I 12.3" ;
+	dprr:hasID 224 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/220> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/150> rdfs:label "Primary Source Reference: #150" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Auct. vir. ill. 49.4" ;
+	dprr:hasID 150 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/149> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/221> rdfs:label "Post Assertion Note: #221" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Demanded redress from the Aequi for invading Latin territory contrary to the treaty (Liv. 3.25.6-9; cf. Dion. Hal. 10.22.4-6). On Volumnius, see Lübker no. 2, and on Postumius, no. 16." ;
+	dprr:hasID 221 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/220> rdfs:label "Post Assertion Note: #220" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Possibly the same as Dion. Hal. reports in 466 (9.60.3-68; see RE s. v. \"Fabius\" no. 165)." ;
+	dprr:hasID 220 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/197> rdfs:label "Post Assertion Note: #197" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ILS 9338, 2 ([-Postu]mius A. f. P. n. Albus [- - -]); coopted this year. See 439, note 4; Degrassi 91; Lübker nos. 17 and 16, respectively." ;
+	dprr:hasID 197 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/196> rdfs:label "Post Assertion Note: #196" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ILS 9338, 2 ([-Postu]mius A. f. P. n. Albus [- - -]); coopted this year. See 439, note 4; Degrassi 91; Lübker nos. 17 and 16, respectively." ;
+	dprr:hasID 196 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/180> rdfs:label "Post Assertion Note: #180" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 3.4.1; Diod. 11.78.1; Fast. Cap. (P.'s name entire except Regill[ens.]); Dion. Hal. 9.62.1; Chr. 354 (Religiense et Medullino III); Cassiod.; Degrassi 24f., 91, 360f. The Consuls carried on separate operations against the Aequi, Furius in Hernican territory (Liv. 3.4.7-5.13; Dion. Hal. 9.62.2-66.4). On Postumius, see Lübker, no. 16." ;
+	dprr:hasID 180 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/108> rdfs:label "Post Assertion Note: #108" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to dedicate the temple of Castor (Liv. 2.42.5; cf. Iordan, Topogr. 1.2.370). See Lübker, no. 16 or 17." ;
+	dprr:hasID 108 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/268> rdfs:label "Post Assertion: #268" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/221> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/220> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "A. Postumius Albus Regillensis Pat. (*5)" ;
+	dprr:hasOfficeXref "Cos. 464" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 268 ;
+	dprr:hasDateStart -458 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -458 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/240> rdfs:label "Post Assertion: #240" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/197> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Postumius Albus Regillensis Pat. (*5)" ;
+	dprr:hasOfficeXref "Cos. 464" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 240 ;
+	dprr:hasDateStart -462 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -462 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/238> rdfs:label "Post Assertion: #238" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/196> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "A. Postumius Albus Regillensis Pat. (*5)" ;
+	dprr:hasOfficeXref "Cos. 464" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/16> ;
+	dprr:hasID 238 ;
+	dprr:hasDateStart -462 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -462 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/220> rdfs:label "Post Assertion: #220" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/180> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "A. Postumius A. f. P. n. Albus Regillensis Pat. (*5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 220 ;
+	dprr:hasDateStart -464 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -464 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/149> rdfs:label "Post Assertion: #149" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/126> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/108> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "A. (or Sp.) Postumius Albus Regillensis Pat. (52a or 52b)" ;
+	dprr:hasOfficeXref "Cos. 464 or 466" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/229> ;
+	dprr:hasID 149 ;
+	dprr:hasDateStart -484 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -484 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/126> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*5" ;
+	dprr:hasReNumber "52a" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "POST0126 A. Postumius (52a) A. f. P. n. Albus Regillensis" ;
+	dprr:hasOtherNames "Regillensis" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 126 ;
+	dprr:hasHighestOffice "cos. 464" ;
+	dprr:hasFiliation "A. f. P. n." ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "POST0126" ;
+	dprr:hasCognomen "Albus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/126> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/125> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*4" ;
+	dprr:hasReNumber "52b" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "POST0125 Sp. Postumius (52b) A. f. P. n. Albus Regillensis" ;
+	dprr:hasOtherNames "Regillensis" ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 125 ;
+	dprr:hasHighestOffice "cos. 466" ;
+	dprr:hasFiliation "A. f. P. n." ;
+	dprr:hasEraTo -439 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "POST0125" ;
+	dprr:hasCognomen "Albus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/125> .

@@ -1,0 +1,319 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> rdfs:label "Secondary Source: Sumner Orators" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Sumner Orators" ;
+	dprr:hasID 17 ;
+	dprr:hasBiblio "Sumner, G. V., The orators in Cicero's Brutus : prosopography and chronology. [Toronto] : University of Toronto Press, [1973]." ;
+	dprr:hasAbbreviation "Sumner Orators" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/531> rdfs:label "Relationship Assertion Reference: #531" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 531 ;
+	dprr:hasExtraInfo "Cic. inv. II 52" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/150> rdfs:label "Relationship Assertion Reference: #150" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 150 ;
+	dprr:hasExtraInfo "Auct. vir. ill. 51.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/592> rdfs:label "Relationship Assertion: #592" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/531> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4090> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/202> rdfs:label "Relationship Assertion: #202" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/150> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/989> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1763> rdfs:label "Primary Source Reference: #1763" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Sil It. VII 709ff." ;
+	dprr:hasID 1763 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1693> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1721> rdfs:label "Primary Source Reference: #1721" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Quintil. inst. XI 1.80" ;
+	dprr:hasID 1721 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1652> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1713> rdfs:label "Primary Source Reference: #1713" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Quintil. inst. IX 4.14" ;
+	dprr:hasID 1713 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1644> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1699> rdfs:label "Primary Source Reference: #1699" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Pol. XXIX 14.1" ;
+	dprr:hasID 1699 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1631> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1682> rdfs:label "Primary Source Reference: #1682" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Pol. VIII 1 (3).4" ;
+	dprr:hasID 1682 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1614> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1658> rdfs:label "Primary Source Reference: #1658" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Sulla 1.1" ;
+	dprr:hasID 1658 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1590> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8853> rdfs:label "Post Assertion Note: #8853" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 726, footnote 12" ;
+	dprr:hasID 8853 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7353> rdfs:label "Post Assertion Note: #7353" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 223, 217. Tribune of the plebs 232. See MRR 1.225. The Lex de modo agrorum mentioned by Appian (BC 1 .8) and Plutarch (TG 8.2) is attributed to Flaminius by A. Valvo, Miscell. Gr. a Lat. 5, 1977, 179-224; cf. E. Gabba, Comm. on App. BC 1.7 and 8. Refer also to an inscription found near Spina that mentions Galicos colonos (G. Uggeri, Atene a Roma 22, 1977, 128-137).\n" ;
+	dprr:hasID 7353 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1322> rdfs:label "Post Assertion Note: #1322" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Polyb. 3.75.5-7; Nep. Hann. 3-4; Liv. 21.15.6, and 57.4; 27.6.7, and 33.8; 33.44.2; Fast. Cap. ([- -] Q. n. Geminus; Flaminius' name entire), Degrassi 44f., 118, 444f., cf. Fast. Fer. Lat., 148f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; on Servilius, Polyb. 3.106.2; Liv. 22.1.4; and on Flaminius, Cic. Acad. 2.13. The dubious tradition of Flaminius' entrance into office in Gaul and the evil omens attending it appears in Cic. Div. 1.77-78; 2.21, 67, 71; ND 2.8 (Coelius fr. 19 and 20 Peter); Liv. 21.62-63; 22.1.8-20, and 3.11-13; Val. Max. 1.6; Plut. Fab. 2.3-3.1. He was active at Arretium (Polyb. 3.77.1-2, and 80.1-5; Liv. 22.2.1; Zon. 8.25), was drawn into a trap by Hannibal at Lake Trasimene, and perished with his army (Polyb. 3.82.1-84.5, and 106.2; Coelius fr. 20 Peter; Nep. Hann. 4.3; Cic. Brut. 57; Div. 1.77; Inv. 2.52; Liv. 22.3.1-7.5; 23.45.8; 26.2.14; 27.6.7; Fast. Cap.; Ovid Fast. 6.763-768; Val. Max. 1.6.5b; Plin. NH 2.200, 241; Frontin. Str. 2.5.24; Sil. It. 5.376ff.; Plut. Fab. 3.1-3; App. Hann. 8-10; Flor. 1.22.13-14; Eutrop. 3.9; Auct. Vir. Ill. 42, and 51; Fest. Epit. 89; Oros. 4.15.1-6; Zon. 8.25). Servilius received the command at Ariminum (Polyb. 3.77.1-2, and 86.1-3; Liv. 22.8.1, and 31.9; App. Hann. 10-11). After Trasimene he gave his army over to the Dictator Fabius, and received command of a fleet (Polyb. 3.88.8, and 96.8-14; Liv. 22.11.2-12.1, 25.5, and 31.1-6; App. Hann. 12; Zon. 8.26; cf. Plut. Fab. 4.2); but resumed command of an army at the end of the year (Polyb. 3.96.14; Liv. 22.31.7-32.1; App. Hann. 16; Dio fr. 57.21; Zon. 8.26)." ;
+	dprr:hasID 1322 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1282> rdfs:label "Post Assertion Note: #1282" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 23.21.6, and 22.3, and 23.5; 24.11.7; Plin. NH 35.197; Degrassi 118, 442f. Their activities perhaps included registration of freedmen in the four city tribes (Liv. Per. 20), certainly support for the Lex{236} Metilia de Fullonibus (Plin. NH 35.197), and the construction by Flaminius of the Flaminian way and the Circus Flaminius (Liv. Per. 20; Cassiod.; Fest. 79 L). Colonies were sent to Placentia and Cremona (Liv. Per. 20, see 218, Special Commissions)." ;
+	dprr:hasID 1282 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1281> rdfs:label "Post Assertion Note: #1281" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Mommsen (Str. 3.270f.) is inclined to place in this censorship the reform of the centuriate assembly, because of the shift in the registration of freedmen; but Botsford and others (Roman Assemblies, 214ff.) favor 241, because the tribes reached the final number of 35 at that time, and this reform is not included in the many charges brought in our tradition against Flaminius." ;
+	dprr:hasID 1281 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1275> rdfs:label "Post Assertion Note: #1275" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Val. Max. 1.1.5; Plut. Marc. 5.4; see Degrassi 118, 442f. The Suffect Dictator and Master of Horse remain unknown." ;
+	dprr:hasID 1275 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1262> rdfs:label "Post Assertion Note: #1262" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Polyb. 2.32.1; Fast. Cap. (names entire); Act. Tr. (names entire); Plut. Marc. 4.2; 6.1; Flor. 1.20.4; Chr. 354; Fast. Hyd.; Chr. Pasc.; Oros. 4.13.14; Cassiod.; Zon. 8.20; and on Flaminius, Liv. 21.63.7. See Degrassi 44f., 118, 440f. With his colleague, Flaminius won an important victory over the Insubrian Gauls (Polyb. 2.32-33); but other sources emphasize the portents that attended him, his neglect of the auspices, and disobedience to the Senate, which led to a senatorial demand for abdication of the consulate and refusal of a triumph (Liv. 21.63; 22.3; 22.6.3; 23.14.4; and cf. Per. 20; Sil. Ital. 4.704-6; 5.107-113, and 649-655; Plut. Marc. 4.2-5; 6.1; Fab. 2.4; Flor. 1.20.4; Oros. 4.13.14; Zon. 8.20; but no mention of abdication in Fast. Cap.). He celebrated a triumph De Galleis by popular vote (Act. Tr., Degrassi 78f., 550; Liv. 21.63.2; 23.14.4; Sil. Ital. 5.653-5; Plut. Marc. 4.2-5; cf. 6.1; Zon. 8.20). His colleague also was asked to abdicate his office (Plut. Marc. 4.3; 6.1; Zon. 8.20; also not noted in Fast. Cap.); and celebrated a triumph De Galleis et Liguribus (Act. Tr., Degrassi 78f., 550; Zon. 8.20). On coins celebrating these victories, see Grueber CRRBM 2.278 and 283, respectively; Cesano, Stud. Num. 1 (1942) 163f." ;
+	dprr:hasID 1262 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1246> rdfs:label "Post Assertion Note: #1246" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "First Praetor in Sicily (Solin. 5.1, p. 52 M; cf., on the election of four Praetors, Liv. Per. 20; Liv. 33.42.8; Dig. 1.2.2.32; Rotondi 248). See 232, note 1." ;
+	dprr:hasID 1246 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1229> rdfs:label "Post Assertion Note: #1229" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried against senatorial opposition an agrarian law under which individual allotments were made to Roman citizens in the Ager Gallicus et Picenus (Polyb. 2.21.7-8; Cato, fr. 43 Peter; Cic. Sen. 11; Inv. 2.52; Acad. 2.13; Brut. 57; Leg. 3.20; Liv. 21.63.2; Val. Max. 5.4.5)." ;
+	dprr:hasID 1229 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1228> rdfs:label "Post Assertion Note: #1228" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The date of Flaminius' tribunate is given by Polybius (2.21.7) as the consulate of Lepidus, by Cicero (Sen. 11) as the second consulate of Fabius Maximus (see RE for earlier discussions). Niccolini (FTP 89) resolves the difficulty by accepting Polybius' date: Cicero's mistake arose because the first part of Flaminius' term coincided with the latter part of Fabius' first consulship, and the measures were officially opposed by him. Hence also Cicero's assumption that Carvilius (Cos. 228) remained quiescent: he was not involved." ;
+	dprr:hasID 1228 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10087> rdfs:label "Post Assertion Note: #10087" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Galleis. MRR I.232, Itgenshorst no. 153, Rich no. 152." ;
+	dprr:hasID 10087 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1693> rdfs:label "Post Assertion: #1693" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1322> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Flaminius C. f. L. n. (2)" ;
+	dprr:hasOfficeXref "Cos. 223, Pr. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1693 ;
+	dprr:hasDateStart -217 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -217 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1652> rdfs:label "Post Assertion: #1652" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1282> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1281> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Flaminius C. f. L. n. (2)" ;
+	dprr:hasOfficeXref "Cos. 223, 217, Pr. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1652 ;
+	dprr:hasDateStart -220 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -220 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1644> rdfs:label "Post Assertion: #1644" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1275> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Flaminius C. f. L. n. (2)" ;
+	dprr:hasOfficeXref "Cos. 223, 217, Pr. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 1644 ;
+	dprr:hasDateStart -221 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -221 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1631> rdfs:label "Post Assertion: #1631" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1262> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Flaminius C. f. L. n. (2)" ;
+	dprr:hasOfficeXref "Cos. 217, Pr. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1631 ;
+	dprr:hasDateStart -223 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -223 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1614> rdfs:label "Post Assertion: #1614" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8853> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1246> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Flaminius (2)" ;
+	dprr:hasOfficeXref "Cos. 223, 217" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 1614 ;
+	dprr:hasDateStart -227 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -227 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1590> rdfs:label "Post Assertion: #1590" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7353> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1229> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1228> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Flaminius (2)" ;
+	dprr:hasOfficeXref "Cos. 223, 217, Pr. 227" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1590 ;
+	dprr:hasDateStart -232 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -232 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10482> rdfs:label "Post Assertion: #10482" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10087> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10482 ;
+	dprr:hasDateStart -223 ;
+	dprr:hasDateSourceText "223" ;
+	dprr:hasDateEnd -223 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/989> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FLAM0989 C. Flaminius (3) C. f. C. n." ;
+	dprr:hasNomen "Flaminius" ;
+	dprr:hasID 989 ;
+	dprr:hasHighestOffice "cos. 187" ;
+	dprr:hasFiliation "C. f. C. n." ;
+	dprr:hasEraTo -218 ;
+	dprr:hasEraFrom -236 ;
+	dprr:hasDprrID "FLAM0989" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/989> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/793> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FLAM0793 C. Flaminius (2) C. f. L. n." ;
+	dprr:hasNomen "Flaminius" ;
+	dprr:hasNobilisNotes "Cic. Brut. 14.57-16.62 (founder of family's nobilitas)" ;
+	dprr:hasID 793 ;
+	dprr:hasHighestOffice "cos. 223" ;
+	dprr:hasFiliation "C. f. L. n." ;
+	dprr:hasEraTo -217 ;
+	dprr:hasEraFrom -261 ;
+	dprr:hasDprrID "FLAM0793" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/793> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4090> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "A" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "FLAM4090 C. Flaminius (A)" ;
+	dprr:hasNomen "Flaminius" ;
+	dprr:hasID 4090 ;
+	dprr:hasHighestOffice "father of C. Flaminius (2) C. f. L. n. (cos. 223)" ;
+	dprr:hasEraTo -200 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "FLAM4090" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4090> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1023> rdfs:label "Date Information: #1023" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasValue -217 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "KIA, B. of Trasimene." ;
+	dprr:hasID 1023 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1022> rdfs:label "Date Information: #1022" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/793> ;
+	dprr:hasValue -261 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/17> ;
+	dprr:hasNotes "Sumner R9 (by 260?), Develin no. 38 (by 257)." ;
+	dprr:hasID 1022 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "B" .

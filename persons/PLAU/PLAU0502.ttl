@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/972> rdfs:label "Primary Source Reference: #972" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XXXVII 51.2" ;
+	dprr:hasID 972 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/953> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/960> rdfs:label "Primary Source Reference: #960" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XXXIX 60.3" ;
+	dprr:hasID 960 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/941> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/661> rdfs:label "Post Assertion Note: #661" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.17.6. See Degrassi 105, 402f.; Lübker no. 11." ;
+	dprr:hasID 661 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/647> rdfs:label "Post Assertion Note: #647" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 7.12.6 and 9; Diod. 16.23.1; Fast. Cap. ([- -Amb]ustus; P.'s name entire); Fast. Hyd. (Ambusto et Proculo), so also Chr. Pasc.; Cassiod.; Degrassi 34f., 105, 402f. Fabius was defeated by Tarquinii (Liv. 7.12.6, and 15.9-10), while Plautius reduced the Hernici to submission (Liv.), and celebrated a triumph (Act. Tr., Degrassi 68f., 540). On Plautius, see Lübker, no. 11." ;
+	dprr:hasID 647 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/646> rdfs:label "Post Assertion Note: #646" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "In Diod. Fabius has the praenomen Marcus; while Chr. 354 by mistake lists here the Consuls of 356. The filiation of C. Fabius is supplied from that of M. Fabius, Consul in 360." ;
+	dprr:hasID 646 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10180> rdfs:label "Post Assertion Note: #10180" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Herniceis. MRR I.121, Itgenshorst p. 263, Rich no. 58." ;
+	dprr:hasID 10180 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/953> rdfs:label "Post Assertion: #953" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/502> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/661> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Plautius P. f. P. n. Proculus (*1)" ;
+	dprr:hasOfficeXref "Cos. 358" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/14> ;
+	dprr:hasID 953 ;
+	dprr:hasDateStart -356 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -356 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/941> rdfs:label "Post Assertion: #941" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/502> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/647> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/646> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Plautius P. f. P. n. Proculus (*1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 941 ;
+	dprr:hasDateStart -358 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -358 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10575> rdfs:label "Post Assertion: #10575" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/502> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10180> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10575 ;
+	dprr:hasDateStart -358 ;
+	dprr:hasDateSourceText "358" ;
+	dprr:hasDateEnd -358 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/502> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*1" ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "PLAU0502 C. Plautius (27) P. f. P. n. Proculus" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 502 ;
+	dprr:hasHighestOffice "cos. 358" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -300 ;
+	dprr:hasEraFrom -400 ;
+	dprr:hasDprrID "PLAU0502" ;
+	dprr:hasCognomen "Proculus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/502> .

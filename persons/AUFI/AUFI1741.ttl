@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2452> rdfs:label "Status Assertion: #2452" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1741> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2452 ;
+	dprr:hasDateStart -109 ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/440> rdfs:label "Relationship Assertion Reference: #440" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cicero erörtert hier, ob die Adoption des Clodius rechtmäßig war. Bedingungen der Adoption sind, dass der Adoptierende keine Kinder mehr zeugen kann und es versucht hat, solange er konnte (dom. 34). Dies impliziert, dass er keine Kinder haben darf. Cicero nennt als Gründe einer Adoption quae ratio generum ac dignitatis, quae sacrorum. Adoption ermöglicht den Eintritt in Namen, Vermögen und Kult des Adoptierenden, wenn dieser keine Kinder hat. Sie soll die natürlichen Verhältnisse soweit möglich nachbilden. Eine Instrumentalisierung der Adoption, um sich eines hinderlichen Patriziates zu entledigen, das den Zugang zu gewissen Ämtern sperrt kann nicht zugelassen werden, weil andere Stellen nur von Patriziern bekleidet werden dürfen. Wenn aber alle Patrizier ihren Stand verlassen um Karriere zu machen, verwaisen diese für den Staat notwendigen Stellen, ebenso wie die Ahnenkulte der patrizischen gentes. Deshalb muss gegen die Adoption des Clodius vorgegangen werden." ;
+	dprr:hasID 440 ;
+	dprr:hasExtraInfo "Cic. dom. 34ff." .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/505> rdfs:label "Relationship Assertion: #505" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1741> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/440> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/22> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/22> rdfs:label "Relationship: adoptive father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 53 ;
+	dprr:hasName "adoptive father of" ;
+	dprr:hasID 22 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7314> rdfs:label "Post Assertion Note: #7314" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 71. Procos. 76, MRR 2.93, and 96, note 4. From this note, R. E. Smith (Service in the Post-Marian Roman Army 17, note 9) would remove the reference to IG 12.5.722, on the ground that the title # can refer only to the pre-Sullan Aufidius of ca. 107, 106 (see MRR 1.551, 552, note 2, 553). On the adoptive name and status of Orestes, see Shackleton Bailey, Studies 84-85; Sumner, Orators 46, 82.\n" ;
+	dprr:hasID 7314 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3516> rdfs:label "Post Assertion Note: #3516" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor ({Gr}, IG 12.5.722) in Asia. See 107, Praetors, and note 2." ;
+	dprr:hasID 3516 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3496> rdfs:label "Post Assertion Note: #3496" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Fin. 5.54; Tusc. 5.112; cf. Dom. 35, and Cons. fr. 19 (ed. Müller)." ;
+	dprr:hasID 3496 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3495> rdfs:label "Post Assertion Note: #3495" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See 106, Promagistrates; and note IG 12.5.722. See also 77, Praetors, and 76, Promagistrates. This praetorship is placed conjecturally about 107 by Waddington, Fasti des provinces asiatiques, p. 666, and Chapot, Prov. rom. procons. Asie 307. It may have followed or preceded that of Billienus." ;
+	dprr:hasID 3495 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4206> rdfs:label "Post Assertion: #4206" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1741> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7314> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3516> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? Cn. Aufidius (6 and 7)" ;
+	dprr:hasOfficeXref "Pr. ca. 107" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 4206 ;
+	dprr:hasDateStart -106 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -106 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4187> rdfs:label "Post Assertion: #4187" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1741> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7314> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3496> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3495> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? Cn. Aufidius (6 and 7)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4187 ;
+	dprr:hasDateStart -107 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -107 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2032> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "32" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "AUFI2032 Cn. Aufidius (32) Cn. f. Orestes" ;
+	dprr:hasNomen "Aufidius" ;
+	dprr:hasID 2032 ;
+	dprr:hasHighestOffice "cos. 71" ;
+	dprr:hasFiliation "Cn. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "AUFI2032" ;
+	dprr:hasCognomen "Orestes" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1741> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6, 7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "AUFI1741 Cn. Aufidius (6, 7)" ;
+	dprr:hasNomen "Aufidius" ;
+	dprr:hasID 1741 ;
+	dprr:hasHighestOffice "pr. c. 107" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "AUFI1741" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1741> .

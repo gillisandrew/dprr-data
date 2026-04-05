@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7668> rdfs:label "Post Assertion Note: #7668" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor pro pr. Named in an inscription of Tibur, probably early Augustan: Pacceio L. f. I q. pro pr. | Ostienses | navicularei (CIL 14.3603-ILS 6171; Aepig. 1955, no. 178). See Wiseman, NM 248, no. 299.\n" ;
+	dprr:hasID 7668 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9082> rdfs:label "Post Assertion: #9082" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3764> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7668> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/187> ;
+	dprr:hasID 9082 ;
+	dprr:hasDateStart -31 ;
+	dprr:hasDateSourceText "probably early Augustan" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -10 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3764> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PACC3764 -. Pacceius (1) L. f." ;
+	dprr:hasNomen "Pacceius" ;
+	dprr:hasID 3764 ;
+	dprr:hasHighestOffice "q. pro pr. early Augustan?" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "PACC3764" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3764> .

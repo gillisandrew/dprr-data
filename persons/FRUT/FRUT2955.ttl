@@ -1,0 +1,112 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/380> rdfs:label "Tribe Assertion: #380" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2955> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/23> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p215. CIL 1(2) 826" ;
+	dprr:hasID 380 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/23> rdfs:label "Tribe: Poblilia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Poblilia" ;
+	dprr:hasID 23 ;
+	dprr:hasAbbreviation "Pob." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7933> rdfs:label "Post Assertion Note: #7933" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr., Aed., Tr. pl. In MRR 464, 467, and 469, refer also to ILLRP 440, and Degrassi's comment, aetatis, ut videtur, Caesaris.\n" ;
+	dprr:hasID 7933 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6628> rdfs:label "Post Assertion Note: #6628" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Held office in the late Republic or the Early Augustan period. CIL 12. 2. 826; see PIR(2) 3.203, no. 494." ;
+	dprr:hasID 6628 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6609> rdfs:label "Post Assertion Note: #6609" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Late Republic or Early Augustan period. CIL 1(2).2.826; see PIR(2) 3.203, no. 494." ;
+	dprr:hasID 6609 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6572> rdfs:label "Post Assertion Note: #6572" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "CIL 1(2).2.826. Late Republic. Date and identification uncertain." ;
+	dprr:hasID 6572 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7383> rdfs:label "Post Assertion: #7383" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2955> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7933> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6628> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Fruticius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 7383 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "Caesarian" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -10 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7364> rdfs:label "Post Assertion: #7364" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2955> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7933> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6609> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Fruticius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/45> ;
+	dprr:hasID 7364 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "Caesarian" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -10 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7327> rdfs:label "Post Assertion: #7327" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2955> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7933> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6572> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Fruticius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 7327 ;
+	dprr:hasDateStart -50 ;
+	dprr:hasDateSourceText "Caesarian" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -10 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2955> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FRUT2955 M. Fruticius (1) M. f. Pob." ;
+	dprr:hasOrigin "Verona?" ;
+	dprr:hasNomen "Fruticius" ;
+	dprr:hasID 2955 ;
+	dprr:hasHighestOffice "pr. late Republic/early Augustan" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FRUT2955" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2955> .

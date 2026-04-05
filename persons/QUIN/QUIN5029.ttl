@@ -1,0 +1,153 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5761> rdfs:label "Relationship Assertion: #5761" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5029> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/303> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5759> rdfs:label "Relationship Assertion: #5759" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5029> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/254> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5755> rdfs:label "Relationship Assertion: #5755" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5029> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/231> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3667> rdfs:label "Relationship Assertion: #3667" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5029> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/142> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3666> rdfs:label "Relationship Assertion: #3666" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5029> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5019> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5029> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Caeso> ;
+	dprr:hasPersonName "QUIN5029 K. Quinctius (8)" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 5029 ;
+	dprr:hasHighestOffice "son of L. Quinctius (27) L. f. L. n. Cincinnatus (cos. suff. 460)" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "QUIN5029" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5029> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5019> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "2" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "RACI5019  Racilia (2)" ;
+	dprr:hasNomen "Racilia" ;
+	dprr:hasID 5019 ;
+	dprr:hasHighestOffice "married to L. Quinctius (27) L. f. L. n. Cincinnatus (cos. suff. 460)" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "RACI5019" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5019> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/303> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "QUIN0303 Q. Quinctius (30) L. f. L. n. Cincinnatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 303 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 415" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "QUIN0303" ;
+	dprr:hasCognomen "Cincinnatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/303> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/254> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *4" ;
+	dprr:hasReNumber "34" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN0254 T. Quinctius (34) L. f. L. n. Pennus Cincinnatus" ;
+	dprr:hasOtherNames "Cincinnatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 254 ;
+	dprr:hasHighestOffice "cos. 431" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "QUIN0254" ;
+	dprr:hasCognomen "Pennus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/254> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/231> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *3" ;
+	dprr:hasReNumber "28" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN0231 L. Quinctius (28) L. f. L. n. Cincinnatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 231 ;
+	dprr:hasHighestOffice "cos. 428" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "QUIN0231" ;
+	dprr:hasCognomen "Cincinnatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/231> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/142> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *1" ;
+	dprr:hasReNumber "27" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN0142 L. Quinctius (27) L. f. L. n. Cincinnatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 142 ;
+	dprr:hasHighestOffice "cos. suff. 460" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -519 ;
+	dprr:hasDprrID "QUIN0142" ;
+	dprr:hasCognomen "Cincinnatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/142> .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/405> rdfs:label "Primary Source Reference: #405" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. de orat. II 220" ;
+	dprr:hasID 405 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/400> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/317> rdfs:label "Post Assertion Note: #317" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Aedile who first distributed grain to the Plebs at one as per modius (Plin. NH 18.15; see types on the coins of M. Marcius M'. f., Grueber, CRRBM 1.149f.; Cesano, Stud. Num. 1 [1942] 203)." ;
+	dprr:hasID 317 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/316> rdfs:label "Post Assertion Note: #316" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The date of Marcius is uncertain but is placed in Pliny before the affair of Sp. Maelius in 439. Grueber and Cesano favor a date about the middle of the second century B.C." ;
+	dprr:hasID 316 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/400> rdfs:label "Post Assertion: #400" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/224> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/317> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/316> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M'. Marcius (17)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 400 ;
+	dprr:hasDateStart -440 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -440 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/224> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Manius> ;
+	dprr:hasPersonName "MARC0224 M'. Marcius (17)" ;
+	dprr:hasNomen "Marcius" ;
+	dprr:hasID 224 ;
+	dprr:hasHighestOffice "aed. pl. 440" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "MARC0224" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/224> .

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3094> rdfs:label "Relationship Assertion: #3094" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3615> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2536> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9430> rdfs:label "Post Assertion Note: #9430" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 435" ;
+	dprr:hasID 9430 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7657> rdfs:label "Post Assertion Note: #7657" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.454, and Index, 630, refer also to Crawford, RRC 1.457, no. 435, 53 B.C. He was perhaps the cos. suff. of 32 (no. 255), or a son of the cos. of 53 (268).\n" ;
+	dprr:hasID 7657 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8689> rdfs:label "Post Assertion: #8689" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3615> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9430> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7657> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Valerius Messalla, M." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8689 ;
+	dprr:hasDateStart -53 ;
+	dprr:hasDateSourceText "53" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -53 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3615> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "254" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VALE3615 M. Valerius (254) Messalla" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 3615 ;
+	dprr:hasHighestOffice "son of? M. Valerius (268) M. f. Lem.? Messalla Rufus (cos. 53)" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "VALE3615" ;
+	dprr:hasCognomen "Messalla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3615> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2536> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:isFiliationUncertain true ;
+	dprr:hasReNumberOld "*77" ;
+	dprr:hasReNumber "268" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2320> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2319> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2318> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2317> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2316> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2315> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2314> ;
+	dprr:hasPersonName "VALE2536 M. Valerius (268) M. f. Lem. Messalla Rufus" ;
+	dprr:hasOtherNames "Rufus" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasNobilisNotes "Cic. Rosc. Am. 51.149 (\"[M?] Messalla\")" ;
+	dprr:hasID 2536 ;
+	dprr:hasHighestOffice "cos. 53" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -26 ;
+	dprr:hasEraFrom -119 ;
+	dprr:hasDprrID "VALE2536" ;
+	dprr:hasCognomen "Messalla" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2536> .

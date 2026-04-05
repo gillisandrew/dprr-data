@@ -1,0 +1,346 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/62> rdfs:label "Tribe Assertion: #62" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/6> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "Cic. Balb. 57. Adopted son of Theophanes." ;
+	dprr:hasID 62 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/6> rdfs:label "Tribe: Clustumina" ;
+	a dprr:Tribe ;
+	dprr:hasName "Clustumina" ;
+	dprr:hasID 6 ;
+	dprr:hasAbbreviation "Clu." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/332> rdfs:label "Status Assertion Note: #332" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 118. Tac. Ann. 12. 60. cos. suff. 40, praefectus fabrum 62, praefectus fabrum 59" ;
+	dprr:hasID 332 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/332> rdfs:label "Status Assertion: #332" ;
+	a dprr:StatusAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/332> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "L. CORNELIUS (69) BALBUS" ;
+	dprr:hasID 332 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2886> rdfs:label "Status Assertion: #2886" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2886 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateEnd -40 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/312> rdfs:label "Relationship Assertion Reference: #312" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 312 ;
+	dprr:hasExtraInfo "Cic. Balb. 57" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/258> rdfs:label "Relationship Assertion Reference: #258" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 258 ;
+	dprr:hasExtraInfo "Cic. Att. VII 7.6" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1068> rdfs:label "Relationship Assertion Reference: #1068" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1068 ;
+	dprr:hasExtraInfo "Hist. Aug. Max. et Balb. 7.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4814> rdfs:label "Relationship Assertion: #4814" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/15> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2550> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/308> rdfs:label "Relationship Assertion: #308" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/312> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/258> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1068> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/7> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3985> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1856> rdfs:label "Relationship Assertion: #1856" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4777> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/7> rdfs:label "Relationship: adopted son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 23 ;
+	dprr:hasName "adopted son of" ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/15> rdfs:label "Relationship: uncle of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 57 ;
+	dprr:hasName "uncle of" ;
+	dprr:hasID 15 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9691> rdfs:label "Post Assertion Note: #9691" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 518" ;
+	dprr:hasID 9691 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> rdfs:label "Post Assertion Note: #7255" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. Suff. 40. Praefectus fabrum of Caesar during his praetorship in 62 and his consulship in 59 (Cic. Balb. 63), perhaps also during his proconsulate in Hisp. Ult. in 61-60. Pro praetore, 41? If the coins with the inscription Balbus Pro Pr refer to him rather than to his nephew (see MRR 2.381), they should date before his consulship. In MRR 2.381, and Index, 550, refer also to Crawford, RRC 1.526-527, no. 518, 41 B.C., who rejects the possibility of an issue in Spain.\n" ;
+	dprr:hasID 7255 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6269> rdfs:label "Post Assertion Note: #6269" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Coins, probably from Hither Spain, name a Balbus Pro Pr. (Grueber, CRRBM 2.406f., with attribution to Gaul) who may perhaps be identified with the # (Legate) who was in Spain in 40 B. C. (App. BC 5.54). If the elder Balbus is referred to, the position preceded his consulship, if the younger, no more is known of his activities for some years (see RE no. 69, article by Münzer, and no. 70, article by Groag; PIR² 2.311, no. 1331, Groag; and Ganter 14; cf. also below, Legates, on C. Livius)." ;
+	dprr:hasID 6269 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6257> rdfs:label "Post Assertion Note: #6257" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Sacerd., CIL 12.1, p. 60, no. III-ILS 9338, no. 3; Fast. Colot., Degrassi 273-275; Fast. Mag. Vic., ibid. 282, 287; Fast. Biond., ibid. 291f.; ibid. 135, 504f.; and on Balbus, CIL 10.3854-ILS 888; Plin. NH 7.136; Dio 48.32.2." ;
+	dprr:hasID 6257 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9133> rdfs:label "Post Assertion: #9133" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius L. f. Balbus (69)" ;
+	dprr:hasOfficeXref "Cos. Suff. 40" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/147> ;
+	dprr:hasID 9133 ;
+	dprr:hasDateStart -59 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -59 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9132> rdfs:label "Post Assertion: #9132" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Hispania Ulterior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius L. f. Balbus (69)" ;
+	dprr:hasOfficeXref "Cos. Suff. 40" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/147> ;
+	dprr:hasID 9132 ;
+	dprr:hasDateStart -60 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -60 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9131> rdfs:label "Post Assertion: #9131" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasProvinceOriginal "Hispania Ulterior" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius L. f. Balbus (69)" ;
+	dprr:hasOfficeXref "Cos. Suff. 40" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/147> ;
+	dprr:hasID 9131 ;
+	dprr:hasDateStart -61 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -61 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9130> rdfs:label "Post Assertion: #9130" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Cornelius L. f. Balbus (69)" ;
+	dprr:hasOfficeXref "Cos. Suff. 40" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/147> ;
+	dprr:hasID 9130 ;
+	dprr:hasDateStart -62 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -62 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8908> rdfs:label "Post Assertion: #8908" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9691> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Cornelius Balbus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 8908 ;
+	dprr:hasDateStart -41 ;
+	dprr:hasDateSourceText "41" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -41 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7000> rdfs:label "Post Assertion: #7000" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7255> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6269> ;
+	dprr:hasPosition 5 ;
+	dprr:hasOriginalText "L. Cornelius L. f. Balbus (69)" ;
+	dprr:hasOfficeXref "Cos. Suff. 40" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7000 ;
+	dprr:hasDateStart -41 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -41 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6985> rdfs:label "Post Assertion: #6985" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6257> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Coelius L. f. Balbus (69)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 6985 ;
+	dprr:hasDateStart -40 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -40 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4777> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "cf. 69" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN4777 L. Cornelius (cf. 69) Balbus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 4777 ;
+	dprr:hasHighestOffice "father of L. Cornelius (69) L. f. Clu. Balbus (cos. suff. 40)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "CORN4777" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4777> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3985> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "47" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonName "POMP3985 Cn. Pompeius (47) Theophanes" ;
+	dprr:hasNomen "Pompeius" ;
+	dprr:hasID 3985 ;
+	dprr:hasHighestOffice "adoptive father of L. Cornelius (69) L. f. Clu. Balbus (cos. suff. 40)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "POMP3985" ;
+	dprr:hasCognomen "Theophanes" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3985> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2819> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "69" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CORN2819 L. Cornelius (69) L. f. Clu. Balbus" ;
+	dprr:hasOrigin "Gades (Farney E36)" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasNobilisNotes "Cic. Balb. 19.43 (from Gades, Spanish nobility)" ;
+	dprr:hasID 2819 ;
+	dprr:hasHighestOffice "cos. suff. 40" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CORN2819" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2819> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2550> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "70" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/802> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/801> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/800> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/799> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/798> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/797> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/796> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/795> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/794> ;
+	dprr:hasPersonName "CORN2550 L. Cornelius (70) P. f. Balbus ('Balbillus')" ;
+	dprr:hasOtherNames "('Balbillus')" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2550 ;
+	dprr:hasHighestOffice "q. 44" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -79 ;
+	dprr:hasDprrID "CORN2550" ;
+	dprr:hasCognomen "Balbus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2550> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/781> rdfs:label "Date Information: #781" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2819> ;
+	dprr:hasValue -32 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "Nep. Att. 21.4." ;
+	dprr:hasID 781 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,539 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+rdfs:label a rdf:Property .
+dprr:isUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "TribeAssertion uncertain" , "StatusAssertion uncertain" , "RelationshipAssertion uncertain" , "PostAssertion uncertain" , "DateInformation uncertain" ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "When true, specifies that the information in the Aseertion is uncertain.  Only appears if \"true\"." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isSex rdfs:range dprr:Sex ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "the Sex of the person." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:isProvinceUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "StatusAssertionProvince uncertain" , "PostAssertionProvince uncertain" ;
+	rdfs:domain dprr:NoteForProvince ;
+	rdfs:comment "When true, specifies that the connection to the given Province is uncertain.  Only appears if \"true\"." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isPraenomenUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person praenomen_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the Praenomen provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isPatricianUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person patrician_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the assertion that this person was a Patrician provided here is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isPatrician rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person patrician" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "is true if DPRR believes that the person was considered a \"patrician\".  Only asserted if true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isOtherNamesUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person other_names_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the \"other names\" provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isNovusUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person novus_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the assertion that this person was considered a Novus that is provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isNovus rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person novus" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "is true if DPRR believes that the person was considered a \"novus\".  Only asserted if true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isNomenUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person nomen_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the recorded Nomen provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isNobilisUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person nobilis_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the recorded \"nobilis\" provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isNobilis rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person nobilis" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "is true if DPRR believes that the person was considered a \"nobilis\".  Only asserted if true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isFiliationUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person filiation_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the recorded Filiation provided here for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isDateStartUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "StatusAssertion date_start_uncertain" , "PostAssertion date_start_uncertain" ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "A boolean to indicate whether the start date in :hasDateStart is uncertain.  Recorded only if \"true\"." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isDateEndUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "StatusAssertion date_end_uncertain" , "PostAssertion date_end_uncertain" ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "A boolean to indicate whether the end date in :hasDateEnd is uncertain.  Recorded only if \"true\"." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isCognomenUncertain rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+	rdfs:label "Person cognomen_uncertain" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "if true indicates that the DPRR team believe that the recorded Cognomen for this person is uncertain.  This property is only provided in the data if it is true." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:isAboutPerson rdfs:range dprr:Person ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "Connects the assertion to the person the assertion is about." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasValue rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "DateInformation value" ;
+	rdfs:domain dprr:DateInformation ;
+	rdfs:comment "The year associated with this life date." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasTribe rdfs:range dprr:Tribe ;
+	rdfs:domain dprr:TribeAssertion ;
+	rdfs:comment "in :TribeAssertion specifies which :Tribe is being asserted." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasStatusAssertionNote rdfs:range dprr:StatusAssertionNote ;
+	rdfs:domain dprr:StatusAssertion ;
+	rdfs:comment "links the assertion to the particular note (:StatusAssertionNote) that applies" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasStatusAssertion rdfs:range dprr:StatusAssertion ;
+	rdfs:domain dprr:StatusAssertionProvince ;
+	rdfs:comment "connects a :Province to a :StatusAssertion" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasStatus rdfs:range dprr:Status ;
+	rdfs:domain dprr:StatusAssertion ;
+	rdfs:comment "links a status assertion to the particular status that applies" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasSourceText rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "DateInformation source_text" ;
+	rdfs:domain dprr:DateInformation ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasSecondarySourceForNote rdfs:range dprr:SecondarySource ;
+	rdfs:domain dprr:Note ;
+	rdfs:comment "Specifies the original secondary source that DPRR used for the information in this Note." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasSecondarySource rdfs:range dprr:SecondarySource ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "Specifies the original secondary source that DPRR used for the information." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasRelationshipReference rdfs:range dprr:RelationshipAssertionReference ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasRelationshipNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "RelationshipAssertion relationship_number" ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	rdfs:comment "allows collection of relationahip assertions for a particular person to be sorted in the most temporarily appropriate order: sons usually after brothers, wives in the right order, etc etc." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasRelationship rdfs:range dprr:Relationship ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	rdfs:comment "points to the particular :Relationship that this relationahip assertion is making." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasRelatedRelationship rdfs:range dprr:RelationshipAssertion ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	rdfs:comment "allows two relationship assertions that are related in DPRR's view to be connected." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasRelatedPerson rdfs:seeAlso "If A is mother of B, the person pointer shared by all assertions (:hasPerson) will point to A." ;
+	rdfs:range dprr:Person ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	rdfs:comment "provides the reference to the 2nd person in a relationship.  If A is mother of B, then :hasRelatedPerson will point to B." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasReNumberOld rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person re_number_old" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "The reference used in the past (earlier schoalrship) to the person in the Real-Encyclopädie der classischen Altertumswissenschaft (Pauly et al 1893-). When provided, this has been supplanted by DPRR's more current view on which RE number is appropriate, as recorded in :hasReNumber." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasReNumber rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person re_number" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "The reference to the person in the Real-Encyclopädie der classischen Altertumswissenschaft (Pauly et al 1893-)." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasProvinceOriginalExpanded rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "PostAssertion province_original_expanded" ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A text string providing an expanded form of a province name (created by DPRR) taken from the secondary source that identifies the province associated with the post. A link to the structured version of the province (:Province) can be found through class :PostAssertionProvince." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasProvinceOriginal rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "PostAssertion province_original" ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A text string taken from the secondary source that identifies the province associated with the post. A link to the structured version of the province (:Province) can be found through class :PostAssertionProvince." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasProvince rdfs:range dprr:Province ;
+	rdfs:domain dprr:NoteForProvince ;
+	rdfs:comment ":PostAssertionProvince and :StatusAssertionProvince classes are mean to link a :PostAssertion or :StatusAssertion to a :Province.  This is the pointer to the :Province in it." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPrimarySource rdfs:range dprr:PrimarySource ;
+	rdfs:domain dprr:PrimarySourceReference ;
+	rdfs:comment "links this :PrimarySourceReference to a :PrimarySource" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPraenomen rdfs:seeAlso ":hasAltPraenomen" ;
+	rdfs:range dprr:Praenomen ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "links to the primary Praenomen associated with this person." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPostAssertionNote rdfs:range dprr:PostAssertionNote ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A link to a :PostAssertionNote that is connected to this :PostAssertion" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPostAssertion rdfs:range dprr:PostAssertion ;
+	rdfs:domain dprr:PostAssertionProvince ;
+	rdfs:comment "A :PostAssertionProvince class is mean to link a :PostAssertion to a :Province.  This is the pointer to the :PostAssertion" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPosition rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "PostAssertion position" ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A numeric value provided to assist web display mechanism to order posts in the most historically useful order." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasPersonNote rdfs:range dprr:PersonNote ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "links to one or more notes about the person that DPRR has recorded as :PersonNote instances." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasPersonName rdfs:subPropertyOf rdfs:label , dprr:hasName ;
+	rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "The DPRR name-identifier assigned to a DPRR historical person. E.g. \"L. Iunius (46a, Supb. 5.356ff.) M. f. Brutus\" (for Person/1)" ;
+	a owl:DatatypeProperty , owl:AnnotationProperty .
+dprr:hasPatricianNotes rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person patrician_notes" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A note that records the reason why DPRR considers this person to have been thought of as a \"patrician\".  Usually this takes the form of one or two brief primary source references. This field was very rarely used by the DPRR team." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasParent rdfs:range dprr:HierarchicalAuthority ;
+	rdfs:label "Province Parent" ;
+	rdfs:domain dprr:HierarchicalAuthority ;
+	rdfs:comment "used in authority lists that have a hierarchical structure to provide the hierarchical parent for each instance." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasOtherNames rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person other_names" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A text string in which DPRR records other names (beyond the usual 3 part nameing convention) that apply to the person." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOriginalText rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "StatusAssertion original_text" , "RelationshipAssertion original_text" , "PostAssertion original_text" ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "Provides the original text, or an excerpt from it, as found in the source for the assertion." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOrigin rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person origin" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A short bit of text that specifies what DPRR believes to be a plausible geographic origin for the person, as provided in the secondary and primary sources." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOrderNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "Relationship order number" ;
+	rdfs:domain dprr:Relationship ;
+	rdfs:comment "A number that provides a mechanism which provides a helpful ordering of a list of relationships from this table. If a list of relationships are generated, this number can be used to order them." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOfficeXref rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "PostAssertion office_xref" ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A text string associated with a Post Assertion which generally asserts the post in an abbreviated form: an abbrevation for the office (e.g. cos. for Consul) and the BCE year.  This text was taken primary from Broughton sources." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOffice rdfs:range dprr:Office ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "links to the :Office that is attached to the post in this assertion." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasNovusNotes rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person novus_notes" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A note that records the reason why DPRR considers this person to have been thought of as a \"novus\".  Usually this takes the form of one or two brief primary source references. Not much used." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasNotes rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "TribeAssertion notes" , "DateInformation notes" ;
+	rdfs:domain dprr:Assertion ;
+	rdfs:comment "Text of notes (primarily from secondary sources) that came with this particular information." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasNoteType rdfs:range dprr:NoteType ;
+	rdfs:domain dprr:Note ;
+	rdfs:comment "In some sources (Broughton and Ruepke in particular) notes provided are typed.  This is the place where the type of note (for these and other sources) is specified." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasNoteText rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "StatusAssertionProvince note" , "StatusAssertionNote text" , "RelationshipAssertionReference text" , "PrimarySourceReference text" , "PostAssertionProvince note" , "PostAssertionNote text" , "PersonNote text" ;
+	rdfs:domain dprr:NoteContainer ;
+	rdfs:comment "the text of the note" ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasNomen rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person nomen" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A text field containing the Nomen part of this DPRR person's name." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasNobilisNotes rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person nobilis_notes" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A note that records the reason why DPRR considers this person to have been thought of as a \"nobilis\".  Usually this takes the form of one or two brief primary source references." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasName rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Tribe name" , "Status name" , "Sex name" , "SecondarySource name" , "Relationship name" , "Province name" , "PrimarySource name" , "Praenomen name" , "Office name" , "NoteType name" , "DateType name" ;
+	rdfs:domain dprr:ThingWithName ;
+	rdfs:comment "The name of the thing." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasInverseRelationship rdfs:range dprr:Relationship ;
+	rdfs:domain dprr:RelationshipInverse ;
+	rdfs:comment "A mechanism to allow DPRR to assert the particular inverse relationship that applies for the particular relationship being specified. For example, if A is father of B there are two possible inverse relationships: B is son of A or B is daughter of A.  This mechanism allows DPRR to make explicit which one applies." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasID rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "TribeAssertion id" , "Tribe id" , "StatusAssertionProvince id" , "StatusAssertionNote id" , "StatusAssertion id" , "Status id" , "Sex id" , "SecondarySource id" , "RelationshipType id" , "RelationshipAssertionReference id" , "Relationship Inverse id" , "Province id" , "PrimarySourceReference id" , "PrimarySource id" , "Praenomen id" , "PostAssertionProvince id" , "PostAssertionNote id" , "PostAssertion id" , "PersonNote id" , "Person id" , "NoteType id" , "DateType id" , "DateInformation id" ;
+	rdfs:domain dprr:ThingWithID ;
+	rdfs:comment "The ID associated with an instance of class :ThingWithID.  All DPRR classes are subclasses of :ThingWithID, so all instances of all classes have a value for :hasID" ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasHighestOffice rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person Highest Office" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A text property that describes what DPRR believes to be the highest office attained by the person." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasFiliation rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person filiation" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A field for the filiation (a person's family member -- usually father) associated with a DPRR person and chosen to be recorded by the DPRR research team." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasExtraInfo rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Tribe extra_info" , "StatusAssertionNote extra_info" , "StatusAssertion extra_info" , "RelationshipAssertionReference extra_info" , "RelationshipAssertion extra_info" , "PostAssertionNote extra_info" , "PersonNote extra_info" , "Person extra_info" ;
+	rdfs:domain dprr:ThingWithExtraInfo ;
+	rdfs:comment "A place to record some prose text about many kinds of class instances in DPRR.  At the time of writing for this ontology, this property had not yet been used." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasEraTo rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "Person era_to" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A numeric field that provides the ending date (year) for a date range in whid DPRR believes the person lived.  Often no birth or death date is available from the surviving record, so this is an estimate only." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasEraFrom rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "Person era_from" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A numeric field that provides the beginning date (year) for a date range in whid DPRR believes the person lived.  Often no birth or death date is available from the surviving record, so this is an estimate only." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasEraDisplayText rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person era display text" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A field to contain a comment about the range of dates when DPRR believed a person lived.  Rarely used." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDprrID rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person DPRR ID" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A short string made up of the first four letters of the person's Nomen and a four digit value of their key (ID). As the name suggest, could, at some point in the future, become a formal ID for the person in DPRR, rather than the numeric ID/key." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDescription rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Status description" , "Relationship description" , "Province description" , "Office description" , "NoteType description" , "DateType description" ;
+	rdfs:domain dprr:AuthorityWithDescription ;
+	rdfs:comment "provides the text for the description associated with the instance of the particular authority list." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDateType rdfs:range dprr:DateType ;
+	rdfs:domain dprr:DateInformation ;
+	rdfs:comment "The kind of life event (e,g, attestation, birth or death date, date of exile, etc) that this instance is referring to." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasDateStart rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "StatusAssertion date_start" , "PostAssertion date_start" ;
+	rdfs:domain dprr:AssertionWithDateRange ;
+	rdfs:comment "Provides the starting point (year) for the period of time that the assertion covers." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDateSourceText rdfs:seeAlso ":hasDateDisplayText (which was meant to provide a similar function to :hasDateSourceText but has been little used." ;
+	rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "StatusAssertion date_source_text" , "PostAssertion date_source_text" ;
+	rdfs:domain dprr:AssertionWithDateRange ;
+	rdfs:comment "A field to contain a human-readable interpretation of the range of dates to which a status or post applied.  Whereas the associated year numeric fields :hasDateState and :hasDateEnd have perharps a rather \"cut and dried\" character to them (e.g. 52-50 BC), this interpretation string allows a more subtle statement about the date range to be made (\"ca. 51 BC\")." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDateSecondarySource rdfs:range dprr:SecondarySource ;
+	rdfs:domain dprr:AssertionWithDateRange ;
+	rdfs:comment "A link to a secondary source that supports the dates given in this assertion." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasDateInterval rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "DateInformation date_interval" ;
+	rdfs:domain dprr:DateInformation ;
+	rdfs:comment "A single letter that records an interval assocated with the date: S=single, B=before and A=after." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDateEnd rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "StatusAssertion date_end" , "PostAssertion date_end" ;
+	rdfs:domain dprr:AssertionWithDateRange ;
+	rdfs:comment "provides a date (a year) which is the endpoint for the period of time covered by the assertion." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasDateDisplayText rdfs:seeAlso "See :hasDisplaySourceText" ;
+	rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "StatusAssertion date_display_text" , "PostAssertion date_display_text" ;
+	rdfs:domain dprr:AssertionWithDateRange ;
+	rdfs:comment "A field to contain a comment about the range of dates when DPRR believed a status or post applied.  Rarely used." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasCognomen rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Person cognomen" ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "A text string for the person's Cognomen" ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasBiblio rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "SecondarySource biblio" , "PrimarySource biblio" ;
+	rdfs:domain dprr:Source ;
+	rdfs:comment "A bilbiographic reference for the source." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasAssociatedWebpage rdfs:label "associated Webpage for Person" ;
+	a rdf:Property .
+dprr:hasAssertedRelationshipInverse rdfs:range dprr:RelationshipAssertion ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasAltPraenomen rdfs:range dprr:Praenomen ;
+	rdfs:domain dprr:Person ;
+	rdfs:comment "provides what DPRR considers to be an alternative Praenomen for the person." ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:hasAbbreviation rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+	rdfs:label "Tribe abbreviation" , "Status abbreviation" , "SecondarySource abbreviated name" , "PrimarySource abbreviated name" , "Office abbreviated name" ;
+	rdfs:domain dprr:AuthorityWithAbbreviation ;
+	rdfs:comment "Provides a text string that is the abbreviated form of the name for the authority list item" ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:forSex rdfs:seeAlso "to use :RelationshipInverse as a lookup mechanism, one must also provide :forRelationship" ;
+	rdfs:range dprr:Sex ;
+	rdfs:domain dprr:RelationshipInverse ;
+	rdfs:comment "use this property with :forRelationship to look up the inverse of a given relationship" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:forRelationship rdfs:seeAlso "The other \"lookup\" property is :forSex" ;
+	rdfs:range dprr:Relationship ;
+	rdfs:domain dprr:RelationshipInverse ;
+	rdfs:comment "use this property (one of two, see also :forSex) to lookup the inverse of a given relationship" ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:forAssertion rdfs:range dprr:Assertion ;
+	rdfs:label "PrimarySourceReference postAssertion_id" ;
+	rdfs:domain dprr:PrimarySourceReference ;
+	a owl:ObjectProperty , rdf:Property .
+dprr:TribeAssertion rdfs:subClassOf dprr:Assertion ;
+	rdfs:label "TribeAssertion" , "Tribe Assertion" ;
+	rdfs:comment "An assertion that a DPRR person belonged to a particular tribe." ;
+	a owl:Class , rdfs:Class .
+dprr:Tribe rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:AuthorityWithAbbreviation ;
+	rdfs:label "Tribe" ;
+	rdfs:comment "The tribes into which the ancient Roman's grouped themselves." ;
+	a owl:Class , rdfs:Class .
+dprr:ThingWithName rdfs:subClassOf dprr:ThingWithID ;
+	rdfs:label "Thing with Name" ;
+	rdfs:comment "An entity in DPRR that has a name.  Many DPRR classes represent things that have names, and are, thus, subclasses of this class." ;
+	a owl:Class .
+dprr:ThingWithID rdfs:comment "DPRR's source for RDF data is a relational database, and its mapping to RDF follows rather closely the DB's structure, in particular DPRR's tables to owl:Classes.  Thus, since all of DPRR's tables have ID keys, all DPRR[s classes have ID, and, hence, all DPRR classes are subclasses of :ThingWithID" ;
+	a owl:Class .
+dprr:ThingWithExtraInfo rdfs:subClassOf dprr:ThingWithID ;
+	a owl:Class .
+dprr:StatusAssertionProvince rdfs:subClassOf dprr:NoteForProvince ;
+	rdfs:label "StatusAssertionProvince" , "Status Assertion Province" ;
+	rdfs:comment "is used to link a :StatusAssertion to an associated :Province." ;
+	a owl:Class , rdfs:Class .
+dprr:StatusAssertionNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
+	rdfs:label "StatusAssertionNote" , "Status Assertion Note" ;
+	rdfs:comment "for notes associated with status assertions" ;
+	a owl:Class , rdfs:Class .
+dprr:StatusAssertion rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:AssertionWithDateRange ;
+	rdfs:label "StatusAssertion" , "Status Assertion" ;
+	rdfs:comment "provides a mechanism to assert that a person had a particular status at a particular time." ;
+	a owl:Class , rdfs:Class .
+dprr:Status rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
+	rdfs:label "Status" ;
+	rdfs:comment "an authority list of status terms used for people in DPRR.  At present, only two are identified in this way, \"eques\" and \"senator\"" ;
+	a owl:Class , rdfs:Class .
+dprr:Source rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
+	rdfs:comment "Represents a primary or secondary source that provided information for DPRR.  There are two subclasses :PrimarySource and :SecondarySource, but, because of time pressures, in fact only :SecondarySource has been populated by DPRR." ;
+	a owl:Class .
+dprr:Sex rdfs:subClassOf dprr:AuthorityList ;
+	rdfs:label "Sex" ;
+	rdfs:comment "The person's Sex: Male or Female." ;
+	a owl:Class , rdfs:Class .
+dprr:SecondarySource rdfs:subClassOf dprr:Source ;
+	rdfs:label "SecondarySource" , "Secondary Source" ;
+	rdfs:comment "A modern source.  DPRR is primarily built by harvesting data from 19th, 20th and 21st century scholarship." ;
+	a owl:Class , rdfs:Class .
+dprr:RelationshipInverse rdfs:subClassOf dprr:ThingWithID ;
+	rdfs:label "Relationship Inverse" ;
+	rdfs:comment "A class used to provide inverse relationships implied by primary ones.  For instance, A is father of B implies B is daughter of A is B is female, and B is son of A if B is male. In this class, for type or relationship in :forRelationship, when the sex of B is as provided in :forSex, then the appropriate inverse relationship is in :hasInverseRelationship" ;
+	a owl:Class , rdfs:Class .
+dprr:RelationshipAssertionReference rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
+	rdfs:label "RelationshipAssertionReference" , "Relationship Assertion Reference" ;
+	rdfs:comment "This class allows Relationahip Assertions to be connected to Secondary Sources from which the information in the assertion was drawn." ;
+	a owl:Class , rdfs:Class .
+dprr:RelationshipAssertion rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Assertion ;
+	rdfs:label "RelationshipAssertion" , "Relationship Assertion" ;
+	rdfs:comment "Provides information about an assertion about a familial relationship between two people." ;
+	a owl:Class , rdfs:Class .
+dprr:Relationship rdfs:subClassOf dprr:AuthorityWithDescription ;
+	rdfs:label "RelationshipType" , "Relationship Type" ;
+	rdfs:comment "This is the authority list for kinds of familial relationships that appear in DPRR." ;
+	a owl:Class , rdfs:Class .
+dprr:Province rdfs:subClassOf dprr:HierarchicalAuthority , dprr:AuthorityWithDescription ;
+	rdfs:label "Province" ;
+	rdfs:comment "An area of jurisdition for an office (such as governor) in the Roman State. Most are geographic areas, but some represent domains of authority within the state, e.g. \"cum imperio consulari\"." ;
+	a owl:Class , rdfs:Class .
+dprr:PrimarySourceReference rdfs:subClassOf dprr:NoteContainer ;
+	rdfs:label "PrimarySourceReference" , "Primary Source Reference" ;
+	rdfs:comment "A place to record primary source references.  The primary source data has not been worked on in DPRR.  It is a :NoteContainer because, as well as its primary founction, it also can carry a note." ;
+	a owl:Class , rdfs:Class .
+dprr:PrimarySource rdfs:subClassOf dprr:Source ;
+	rdfs:label "PrimarySource" , "Primary Source" ;
+	rdfs:comment "An historical textual source" ;
+	a owl:Class , rdfs:Class .
+dprr:Praenomen rdfs:subClassOf dprr:AuthorityWithAbbreviation ;
+	rdfs:label "Praenomen" ;
+	rdfs:comment "A list of ancient Roman's first or personal name, for example *Marcus* Tullius Cicero.  The Romans seem to have used a relatively small numer of names as Praenomen." ;
+	a owl:Class , rdfs:Class .
+dprr:PostAssertionProvince rdfs:subClassOf dprr:NoteForProvince ;
+	rdfs:label "PostAssertionProvince" , "Post Assertion Province" ;
+	rdfs:comment "is used to link a :PostAssertion to an associated :Province." ;
+	a owl:Class , rdfs:Class .
+dprr:PostAssertionNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
+	rdfs:label "PostAssertionNote" , "Post Assertion Note" ;
+	rdfs:comment "for notes associated with post assertions.  Broughton often provides text that supports his assertions, and many of the :PostAssertionNote items are from his book." ;
+	a owl:Class , rdfs:Class .
+dprr:PostAssertion rdfs:subClassOf dprr:AssertionWithDateRange ;
+	rdfs:label "PostAssertion" , "Post Assertion" ;
+	rdfs:comment "provides an mechanism that a DPRR person held a particular office at a particular date or date range." ;
+	a owl:Class , rdfs:Class .
+dprr:PersonNote rdfs:subClassOf dprr:ThingWithExtraInfo , dprr:Note ;
+	rdfs:label "PersonNote" , "Person Note" ;
+	rdfs:comment "A note attached to a DPRR person" ;
+	a owl:Class , rdfs:Class .
+dprr:Person rdfs:subClassOf dprr:ThingWithName , dprr:ThingWithExtraInfo ;
+	rdfs:label "Person" ;
+	rdfs:comment "A DPRR historical person." ;
+	a owl:Class , rdfs:Class .
+dprr:Office rdfs:subClassOf dprr:HierarchicalAuthority , dprr:AuthorityWithDescription , dprr:AuthorityWithAbbreviation ;
+	rdfs:label "Office" ;
+	rdfs:comment "An office in the Roman state, such as consul or praetor." ;
+	a owl:Class , rdfs:Class .
+dprr:NoteType rdfs:subClassOf dprr:AuthorityWithDescription ;
+	rdfs:label "NoteType" , "Note Type" ;
+	rdfs:comment "A scheme for classifying notes.  Draws almost exclusively on the classification of materials used by Broughton and Ruepke" ;
+	a owl:Class , rdfs:Class .
+dprr:NoteForProvince rdfs:subClassOf dprr:NoteContainer ;
+	rdfs:comment "This is a note about an association to a Province made by an assertion." ;
+	a owl:Class .
+dprr:NoteContainer rdfs:subClassOf dprr:ThingWithID ;
+	rdfs:comment "A note container is an object that contains a note:  a bit of text, often provided by the source to say something further about the information provided by it.  A note container object may also contain other information provided by the source, whereas its subclass :Note is purely a note with no other semantic significance." ;
+	a owl:Class .
+dprr:Note rdfs:subClassOf dprr:NoteContainer ;
+	rdfs:comment "A note is  a bit of text, often provided by the source to say something further about the information provided by it.  :Note is a subclass of :NoteContainer.  Whereas a note is purely and simply a note, its :NoteContainer superclass may also contain other information as well as the note." ;
+	a owl:Class .
+dprr:HierarchicalAuthority rdfs:subClassOf dprr:AuthorityList ;
+	rdfs:comment "this authority list has an hierarichal structure between its members." ;
+	a owl:Class .
+dprr:DateType rdfs:subClassOf dprr:AuthorityWithDescription ;
+	rdfs:label "DateType" , "Date Type" ;
+	rdfs:comment "A classification scheme for kinds of life dates.  Examples, birth, death, exiled, etc." ;
+	a owl:Class , rdfs:Class .
+dprr:DateInformation rdfs:subClassOf dprr:Assertion ;
+	rdfs:label "Life Date Information" , "DateInformation" ;
+	rdfs:comment "An :Assertion for life date information for DPRR's historial persons." ;
+	a owl:Class , rdfs:Class .
+dprr:AuthorityWithDescription rdfs:subClassOf dprr:AuthorityList ;
+	rdfs:comment "In DPRR several authority lists provide not only names for their instances, but also brief descriptions of that the instance is.  This is the place where the description is recorded." ;
+	a owl:Class .
+dprr:AuthorityWithAbbreviation rdfs:subClassOf dprr:AuthorityList ;
+	rdfs:comment "In DPRR several authority lists provide not only names for their instances, but also abbreviated forms of the name.  This is the place where the abbreviated form is recorded." ;
+	a owl:Class .
+dprr:AuthorityList rdfs:subClassOf dprr:ThingWithName ;
+	rdfs:comment "represents a list of a particular kind of things that might be thought of as functioning like what in library science is called an Authority File.  Two examples: one Authority list in DPRR is the list of offices, another is the list of secondary sources." ;
+	a owl:Class .
+dprr:AssertionWithDateRange rdfs:subClassOf dprr:Assertion ;
+	rdfs:comment "some assertions come with a date period (year in which a post was held, for example).  This kind of :Assertion supports the recording of a date." ;
+	a owl:Class .
+dprr:Assertion rdfs:subClassOf dprr:ThingWithID ;
+	rdfs:comment "In DPRR an :Assertion is a statement made about a DPRR person in a secondary source." ;
+	a owl:Class .
+dprr:Abbreviation rdfs:label "Praenomen abbreviation" ;
+	a rdf:Property .
+dprr: owl:versionInfo "1"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	rdfs:label "Ontology for DPRR data" ;
+	rdfs:comment "An ontology for the data created by the Digital Prosopography of the Roman Republic project (see http://www.romanrepublic.ac.uk).  The major data repository for the work of the DPRR project was a relational database.  This ontology provides a definition of an RDF expression of the data in that database." ;
+	a owl:Ontology .

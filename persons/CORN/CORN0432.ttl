@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/788> rdfs:label "Primary Source Reference: #788" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Verr. II i 153" ;
+	dprr:hasID 788 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/779> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/552> rdfs:label "Post Assertion Note: #552" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Victory and triumph over the Volscians (Liv. 6.11-14, and 16.5). Arrested M. Manlius Capitolinus (Liv. 6.15-16; Plut. Cam. 36.4, who names Quintus Capitolinus; cf. Diod. 15.35.3, who places the trial and execution in this year). See Degrassi 101, 391, and on the triumph 539." ;
+	dprr:hasID 552 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10032> rdfs:label "Post Assertion Note: #10032" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Volsceis. MRR I.101, Itgenshorst p. 263, Rich no. 50." ;
+	dprr:hasID 10032 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/779> rdfs:label "Post Assertion: #779" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/432> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/552> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "A. Cornelius - f. - n. Cossus Pat. (114, cf. 112 and 113)" ;
+	dprr:hasOfficeXref "Cos. 413 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 779 ;
+	dprr:hasDateStart -385 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -385 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10427> rdfs:label "Post Assertion: #10427" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/432> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10032> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10427 ;
+	dprr:hasDateStart -385 ;
+	dprr:hasDateSourceText "385" ;
+	dprr:hasDateEnd -385 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/432> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "114, cf. 112, 113" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Aulus> ;
+	dprr:hasPersonName "CORN0432 A. Cornelius (114, cf. 112, 113) Cossus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 432 ;
+	dprr:hasHighestOffice "dict. 385" ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "CORN0432" ;
+	dprr:hasCognomen "Cossus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/432> .

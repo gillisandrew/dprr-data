@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/854> rdfs:label "Primary Source Reference: #854" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio XL 63.3" ;
+	dprr:hasID 854 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/844> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/575> rdfs:label "Post Assertion Note: #575" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 6.32.3; Diod. 15.61.1; Dio fr. 29 and Zon. 7.24 (on Sulpicius Rufus); Chr. 354 (Mamertino et Cincinnato). Aemilius and Valerius held command against the Volscians at Satricum while Sulpicius and L. Quinctius recovered Tusculum from the Latins (Liv. 6.32-33). On Valerius, see Münzer, Gent. Val. 37 no. 7." ;
+	dprr:hasID 575 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/574> rdfs:label "Post Assertion Note: #574" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Aemilius' filiation is quite uncertain (see Fast. Cap.). On the name of Valerius, see Fast. Cap. on 367. The name of Veturius is tentatively supplemented on the analogy of that of L. Veturius, Mil. Tr. in 367 (see Fast. Cap.). On Sulpicius, see also Praetextatus, RE, no. 88, since the numbers III and IIII after his name in Fast. Cap. on 370 and 368 imply that these either listed him as Mil. Tr. in this year or differed from our other sources in their treatment of the years without magistrates. The name Rufus, preserved in Dio. and Zon. (above) favors the identification given first above. See Degrassi 102, 394f." ;
+	dprr:hasID 574 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/844> rdfs:label "Post Assertion: #844" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/466> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/575> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/574> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "C. Quinctius - f. - n. Cincinnatus Pat. (Cin. *9)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 844 ;
+	dprr:hasDateStart -377 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -377 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/466> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *9" ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "QUIN0466 C. Quinctius (26) Cincinnatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 466 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 377" ;
+	dprr:hasFiliation "- f. - n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -425 ;
+	dprr:hasDprrID "QUIN0466" ;
+	dprr:hasCognomen "Cincinnatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/466> .

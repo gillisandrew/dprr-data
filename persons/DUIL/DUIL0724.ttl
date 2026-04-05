@@ -1,0 +1,126 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1661> rdfs:label "Primary Source Reference: #1661" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Sulla 28.4(7)" ;
+	dprr:hasID 1661 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1593> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1523> rdfs:label "Primary Source Reference: #1523" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Caes. 62.1" ;
+	dprr:hasID 1523 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1465> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1517> rdfs:label "Primary Source Reference: #1517" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Caes. 1.1" ;
+	dprr:hasID 1517 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1459> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1231> rdfs:label "Post Assertion Note: #1231" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "To hold the elections (Fast. Cap., name entire, Degrassi 44f., 117, 440f.)." ;
+	dprr:hasID 1231 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1134> rdfs:label "Post Assertion Note: #1134" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap. (C. Duilius M. f. M. [n.], [L. Cor]n[elius L. f. Cn.] n. S[c]ip[io]), Degrassi 42f., 116, 434f. On Scipio, see CIL 1\n     .2.8 and 9- ILS 2 and 3." ;
+	dprr:hasID 1134 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1129> rdfs:label "Post Assertion Note: #1129" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Among our sources Livy, Val. Max., Eutrop., Polyaen., Oros. and Zon. emphasize that Asina was captured by fraud during a conference. Polybius has Scipio commander of the fleet, and Duilius of the army. He then took charge when Asina was captured. Zonaras reverses the commands." ;
+	dprr:hasID 1129 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1128> rdfs:label "Post Assertion Note: #1128" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Polyb. 1.21.4, and 22.1; Fast. Cap. (names entire); Flor. 1.18.7; Eutrop. 2.20; Chr. 354; Fast. Hyd.; Chr. Pasc.; Oros. 4.4.7; Cassiod.; Zon. 8.10; Degrassi, 42f., 115, 432f. Cornelius held command of the fleet, but at the Lipari islands was caught and made captive\n     by the Carthaginians (Polyb. 1.21.4-9; Liv. Per. 17; Val. Max. 6.6.2, and 9.11; Flor. 1.18.11; App. Lib. 63; Eutrop. 2.20; Polyaen. 6.16.5; Ampel. 36.1; Polyb. 8.35.9; Oros. 4.7.7-9; Zon. 8.10, and 12). Duilius, commander of the land forces, succeeded to the command of fleet, defeated the Carthaginians at Mylae, and then on land relieved Segesta and took Macella (Polyb. 1.22-24.1; Cic. Rep. 1.1; Or. 153; Liv. Per. 17; Diod. 23.10; Val. Max. 7.3, ext. 7; Sen. Brev. Vit. 13.3; Plin. NH 16.192; Frontin. Str. 1.5.6; 2.3.24; 3.2.2; Flor. 1.18.7-11; Eutrop. 2.20; Ampel. 46.3; Oros. 4.7.7-10; Zon. 8.10-11; cf. CIL 1(2), p. 193- Inscr. Ital. 13.3.13; CIL 1(2).2.25- Inscr. Ital. 13.3.69- ILS 65; Oros. 4.7.10). He celebrated the first naval triumph over the Sicilians and the Punic fleet, was honored with the columna rostrata in the Forum, and other privileges besides (CIL, as above; Cic. Sen. 44; Liv. Per. 17; Act. Tr., Degrassi, 76f., 548; Val. Max. 3.6.4; Plin. NH 34.20; Quintil. Inst. Or. 1.7.12; Sil. Ital. 6.663-9; Frontin. Str. 1.5.6; Tac. Ann. 2.49; Flor. 1.18.10; Eutrop. 2.20; Serv. ad Aen. 11.206; Georg. 3.29; Ammian. 26.3.5; Jerom. Adv. Jov. 1.46)." ;
+	dprr:hasID 1128 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10067> rdfs:label "Post Assertion Note: #10067" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Naval Triumph de Siculeis et classe Poenica. MRR I.205, Itgenshorst no. 128, Rich no. 127." ;
+	dprr:hasID 10067 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1593> rdfs:label "Post Assertion: #1593" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1231> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Duilius M. f. M. n. (3)" ;
+	dprr:hasOfficeXref "Cos. 260" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/13> ;
+	dprr:hasID 1593 ;
+	dprr:hasDateStart -231 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -231 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1465> rdfs:label "Post Assertion: #1465" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1134> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Duilius M. f. M. n. (3)" ;
+	dprr:hasOfficeXref "Cos. 260" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/35> ;
+	dprr:hasID 1465 ;
+	dprr:hasDateStart -258 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -258 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1459> rdfs:label "Post Assertion: #1459" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1129> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1128> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Duilius M. f. M. n. (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 1459 ;
+	dprr:hasDateStart -260 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -260 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10462> rdfs:label "Post Assertion: #10462" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/724> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10067> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10462 ;
+	dprr:hasDateStart -260 ;
+	dprr:hasDateSourceText "260" ;
+	dprr:hasDateEnd -260 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/724> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "DUIL0724 C. Duillius (3) M. f. M. n." ;
+	dprr:hasNomen "Duillius" ;
+	dprr:hasID 724 ;
+	dprr:hasHighestOffice "cos. 260" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "DUIL0724" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/724> .

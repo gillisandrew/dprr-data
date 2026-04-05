@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3058> rdfs:label "Relationship Assertion: #3058" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4955> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/608> rdfs:label "Primary Source Reference: #608" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Orat. 153" ;
+	dprr:hasID 608 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/599> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/467> rdfs:label "Post Assertion Note: #467" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.1.2; Diod. 14.35.1; Fast. Cap., note 1; Chr. 354; Degrassi 28f., 98, 380f. Claudius remained in charge at Rome while the rest were serving against Veii (Liv. 5.2.13-7.1). On Valerius, see Münzer, Gent. Val. 35, no. 4." ;
+	dprr:hasID 467 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/466> rdfs:label "Post Assertion Note: #466" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Fast. Cap. preserves the following names: [- - - - -]ius Mam. f. M. n. M[amerc]in. II; [- - - Clau]dius P. f. Ap. n. [Crass]us; [- - Qui]nctilius L. f. L. n. [Var]us; M. Fur[ius-f.-n.] Fusus; L. Iuli[us Sp. f. Vopisci n.] Iulus; Val. entire, numeral III. Chr. 354 has Mamertino et Fuso. Fast. Cap. and Diod. indicate only six (Diod. lists five) Military Tribunes, while Livy mentions eight. In his list five names agree with those in the other sources, but he has M. Postumius for Furius Fusus, and his final two, Camillus and Postumius Albinus, appear in Fast. Cap., Val. Max. and Plutarch as Censors. Livy or his source has probably incorporated the Censors of this year in the list of Military Tribunes. Belcoh thinks that they were Military Tribunes with censorial powers (RG 77ff.). Substitution of M. Postumius for M. Furius is probably only a slip (RE, no. 60)." ;
+	dprr:hasID 466 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/599> rdfs:label "Post Assertion: #599" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/336> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/467> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/466> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "M. Quinctilius L. f. L. n. Varus Pat. (*2)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 599 ;
+	dprr:hasDateStart -403 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -403 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4955> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "7" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN4955 L. Quinctilius (7)" ;
+	dprr:hasNomen "Quinctilius" ;
+	dprr:hasID 4955 ;
+	dprr:hasHighestOffice "father of M. Quinctilius (9) L. f. L. n. Varus (tr. mil. c. p. 403)" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "QUIN4955" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4955> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/336> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*2" ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "QUIN0336 M. Quinctilius (9) L. f. L. n. Varus" ;
+	dprr:hasNomen "Quinctilius" ;
+	dprr:hasID 336 ;
+	dprr:hasHighestOffice "tr. mil. c. p. 403" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "QUIN0336" ;
+	dprr:hasCognomen "Varus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/336> .

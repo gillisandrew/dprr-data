@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1588> rdfs:label "Primary Source Reference: #1588" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Cic. 46.4(2)" ;
+	dprr:hasID 1588 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1522> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8224> rdfs:label "Post Assertion Note: #8224" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See MRR 2.485, and now RE s. v. Viocurus, 9A.156.\n" ;
+	dprr:hasID 8224 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1182> rdfs:label "Post Assertion Note: #1182" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "They prosecuted Claudius Pulcher for perduellio, and when that action was stopped by a storm, they succeeded in having him condemned to a fine of 120,000 asses (Schol. Bob., p. 90 Stangl; cf. Polyb. 1.52.3; Cic. ND 2.7; Div. 1.29; Liv. Per. 19; Val. Max. 8.1, abs. 4; Suet. Tib. 2; Gell. 10.6)." ;
+	dprr:hasID 1182 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1181> rdfs:label "Post Assertion Note: #1181" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The name Pullius does not appear elsewhere in official lists or literary texts. Cf. however, CIL 1(2).2.251-255, and 1711; app. num., p. 747; CIL 6.25217, 25218; 11.7553; Varro, LL 5.158, and Solin., 1.26, on the Clivus Pullius." ;
+	dprr:hasID 1181 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1522> rdfs:label "Post Assertion: #1522" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8224> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1182> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1181> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "Pullius (*6.1.277)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 1522 ;
+	dprr:hasDateStart -248 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -248 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/756> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*6.1.277" ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PULL0756 -. Pullius (1)" ;
+	dprr:hasNomen "Pullius" ;
+	dprr:hasID 756 ;
+	dprr:hasHighestOffice "tr. pl. 248" ;
+	dprr:hasEraTo -175 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "PULL0756" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/756> .

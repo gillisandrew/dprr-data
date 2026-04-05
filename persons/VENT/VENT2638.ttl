@@ -1,0 +1,402 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/495> rdfs:label "Tribe Assertion: #495" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/12> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p264. Vell. 2.65.3, Gell. 15.4.3, Dio 43.51.4" ;
+	dprr:hasID 495 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/12> rdfs:label "Tribe: Fabia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Fabia" ;
+	dprr:hasID 12 ;
+	dprr:hasAbbreviation "Fab." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/319> rdfs:label "Status Assertion Note: #319" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 379. Gell. N.A. 15.4. humili loco, tr. pl. 45, cos. suff. 43" ;
+	dprr:hasID 319 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/319> rdfs:label "Status Assertion: #319" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/319> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "P. VENTIDIUS (5) BASSUS" ;
+	dprr:hasID 319 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1339> rdfs:label "Status Assertion: #1339" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1339 ;
+	dprr:hasDateStart -47 ;
+	dprr:hasDateEnd -37 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9672> rdfs:label "Post Assertion Note: #9672" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 531" ;
+	dprr:hasID 9672 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7154> rdfs:label "Post Assertion Note: #7154" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. suff. 43: See MRR, Index, 2.362, and the years listed there. His tribunate might precede 45 (see MRR 2.308). Caesar enrolled him in the Senate, probably late in 47 or in 46 (Gell. 15.4.3; cf. Dio 43.51.5). In MRR 2.388, 39 B.C. and 393, 38 B.C., note that he issued coins in the East under the command of Mark Antony, IIIvir r. p. c. (Crawford, RRC 1.533, no. 531, 39 B.C.), inscribed PONT. IMP. On his origins, status, and career, see Gell. 15.4.3; Cic. Fam. 10.18.3; Plin. NH 7.135; Syme, Latomus 17, 1958, 63- 80-RP 1.395-399, not Sabinus ille of Catalepton 10; Badian, Historia 12, 1963, 141-142; L. R. Taylor, VDRR 264; Wiseman, NM 271-272, no. 474.\n" ;
+	dprr:hasID 7154 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6333> rdfs:label "Post Assertion Note: #6333" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Proconsul in Syria under Antony (see 40, Promagistrates). He crushed a second Parthian invasion, killing their leader Pacorus, and then attacked Antiochus of Commagene (Dio 49.19-21; Vell. 2.78.1; Joseph. AJ 14.420-421, and 434; BJ 1.309 and 317; Tac. Hist. 5.9; Plut. Ant. 34; Iustin. 42.4.7-14; Fronto ad Ver. 2.1.5, LCL 2.136; Eutrop. 7.5; Oros. 6.18.23). Upon his arrival in Syria Antony took chief command, and sent Ventidius home to celebrate a triumph ex Tauro monte et Partheis (Act. Tr., Degrassi 86f., 569; Fast. Barb., ibid. 342f.; Vell. 2.65.3; Val. Max. 6.9.9; Plin. NH 7.135; Plut. Ant. 34.5; Fronto Ad Ver. 2.1.5; Gell. 15.4.4; Eutrop. 7.5)." ;
+	dprr:hasID 6333 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6307> rdfs:label "Post Assertion Note: #6307" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Termed a Legatus of Antony (Liv. Per. 127; cf. Gell. 15.4.4), but he held an imperium pro consulare at his triumph (Act. Tr. for 38, Degrassi 86f., 568). He defeated Labienus and the Parthians near the Taurus mountains, thus driving them from Asia Minor (Dio 48.39-40), then following up the Legate Silo (see below) he defeated them again at the Amanus mountains, an engagement after which Labienus was caught and put to death, and recovered Syria (Dio 48.41; cf. Joseph. AJ 14. 392 and 394 and 418, cf. 392-419; BJ 1.288-289, cf. 288-302; Liv. Per. 127, and 128; Plut. Ant. 33.4; Flor. 2.19.5; Gell. 15.4.3-4; Iustin 42.4.7; Eutrop. 7.5; Oros. 6.18.23). Josephus charges him with accepting bribes from Antigonus rather than relieve Herod’s followers in Masada (Aj 14.390; see below, Legatus, on Silo)." ;
+	dprr:hasID 6307 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6281> rdfs:label "Post Assertion Note: #6281" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "His attempt to relieve Lucius Antonius was stopped at Fulginium, (App. BC 5.35). After the fall of Perusia he retired into southern Italy, where he was chosen commander of the Antonian troops (5.50). After the peace of Brundisium, Antony sent him as Proconsul to resist the Parthians who had overrun Syria and Asia Minor (App. BC 6.65; Dio 48.39.2; cf. Plut. Ant. 33. 1, who names his first base in Asia rather than his main command in Syria, and places his appointment after the treaty of Puteoli in 39; see Ganter 41)." ;
+	dprr:hasID 6281 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6242> rdfs:label "Post Assertion Note: #6242" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commander in a Gallic province, either the western part of the Cisalpine or, as Ganter supposes (9f.), with Fulius Calenus in the Transalpine one, and was acclaimed Imperator (Dio 48.10.1; cf. App. BC 5.31, #; Grueber, CRRBM 2.403). With Calenus he prevented the advance of Salvidienus Rulus toward Spain (Dio 48. 10. 1). He later came to aid Lucius Antony at Perusia but, like Pollio and the other Antonian commanders in Cisalpine Gaul, remained inactive and confused regarding Mark Antony's wishes (App. Be 5.31-32; cf. 5.50; Veil. 2.76.2)." ;
+	dprr:hasID 6242 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6174> rdfs:label "Post Assertion Note: #6174" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably but not certainly in command of a Gallic province for Antony in this year (see 41, Promagistrates; Dio, 48.10.1-2)." ;
+	dprr:hasID 6174 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> rdfs:label "Post Assertion Note: #6155" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "1 The use of the terms Legate and Proconsul under the Second Triumvirate is of necessity attended by uncertainty and confusion. Commanders, like Ventidius Bassus, who were for the most part ex-Consuls, held command over large and important areas and armies, and apparently acted with considerable initiative, are termed Legati in Latin sources such as the Periochae of Livy and Florus and # in Dio (Liv. Per. 127, 128; Flor. 2.19; Dio 48.41.5; cf. 49.21, and Act. Tr. for 38, on the title and triumph of Ventidius), and yet many of them appear in the lists of triumphs as Proconsuls. In mentioning the triumph of Domitius Calvinus, Dio (48.42.3-4) remarks that those in power granted honors at will # (see also 49.42.3; 54.12.1-2). Mommsen finds the beginning of this contradiction in Caesar's grant of triumphs at the end of 45 to his Legates Fabius Maximus and Q. Pedius (see 45, Promagistrates). Like these, the later commanders were Legates also under the superior imperium of the Triumviri, and their appearance as Proconsuls depended upon a fictive grant of imperium for the day of their triumph (Str. 1.125, 130f.; 2.245, note 1). The term Proconsul cannot refer to their status in command since a Legate never had more than an imperium pro praetore. The term Legatus pro consule does not occur, and indeed cannot occur because it is intrinsically self-contradictory (ibid. 1.130f.). Moreover it was simply this permission to triumph that made it logically possible for some of these Legates to accept acclamation as Imperator (see, on Sosius, Mommsen Str. 1.125). Mommsen's doctrine is difficult to test because in nearly all cases no official inscriptions remain from the period of command, and several of the commands are known only from the record of the triumph (see 34-32, Promagistrates, on Norbanus Flaccus, Statilius Taurus, Marcius Philippus, Olaudius Pulcher, and L. Cornificius). The term Legatus in Livy and Florus is strongly in his favor, since Die might have been affected by the regular system of Legati pro praetore in the Empire. However, as Canter saw (46-55), the situation was more complicated. The illogicality of a subordinate with an imperium pro consule occurs under Antony on the official coinage in Greece of M. lunius Silanus, who terms himself Quaestor pro consule (see 34, Promagistrates; note that in the Empire Pliny could be given the exceptional position of Legatus pro praetore consulari potestate), and raises the question how many commanders senior to Silanus may not also have held an imperium pro consule under the superior imperium of the Triumviri. Moreover, Sosius (Cos. 32) apparently termed himself Imperator on his coinage from 37 B. C. (see 37, Promagistrates), on a rather distant anticipation of the moment of a fictive grant of imperium pro consule for a day in 34; and there were others, like Laronius (see 33, Consules Suffecti), who took the title Imperator and did not triumph at all. The period of the Second Triumvirate was a period of transition in which irregularities and illogicalities could frequently occur in the government of the Roman Empire, before the Augustan regime rebuilt the pattern anew. I have therefore been inclined to keep the question open; and to list among the Promagistrates the holders of important commands under Octavian and Antony who received acclamation as Imperatores or celebrated triumphs. It must be granted that the superior position of the Triumvirs in this period made the difference between the functions of a Promagistrate and of a Legate much less than it had been before. See Ganter 46-55." ;
+	dprr:hasID 6155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6138> rdfs:label "Post Assertion Note: #6138" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "He probably became a Pontifex late in 43 (Gell. 15.4.3, before he became Consul)." ;
+	dprr:hasID 6138 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6044> rdfs:label "Post Assertion Note: #6044" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Though Praetor in office (Cic. Phil. 13.26; 14.21; Gell. 15.4; Dio 47.15.2), he recruited three legions for Antony in Picenum (Cic. Phil. 12.23; App. BC 3.66, and 72). He joined Antony with these in his retreat on the Ligurian coast at Vada (Cic. Fam. 10.17.1, and 18.3, mulio, and 33.4, and 34.1; 11.9, and 10.3, and 13.3; App. BC 3.72, and 80), and was declared a public enemy (Cic. Ad Brut. 1.5.1; Gell. 15.4). Upon the establishment of the Triumvirate he resigned the praetorship and received the consulship (see above, Consuls)." ;
+	dprr:hasID 6044 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6033> rdfs:label "Post Assertion Note: #6033" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Amer., Degrassi 242 (P. Ventidius); Fast. Colot., ibid. 274f. (C. Carrinas C. f., P. Ventidius P. f.); Fast. Mag. Vic., ibid. 282f. They came into office for the final portion of the year. Ventidius, a Praetor of this year (see below), abdicated his praetorship and became Octavian's successor (Vell. 2.65.3; App. BC 4.2; Dio 47.15.2; and of. Gell. 15.4; Dio 43.51.5; Vergil, Catalepton 10)." ;
+	dprr:hasID 6033 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5886> rdfs:label "Post Assertion Note: #5886" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Gell. 15.4.3. As the Tribunes of 44 are known, 45 is the latest year for his tribunate." ;
+	dprr:hasID 5886 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10251> rdfs:label "Post Assertion Note: #10251" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph ex Tauro Monte et Partheis. MRR II.388, 393, Itgenshorst no. 278, Rich no. 279." ;
+	dprr:hasID 10251 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8889> rdfs:label "Post Assertion: #8889" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9672> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7154> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Ventidius Bassus, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 8889 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateSourceText "39" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -39 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7074> rdfs:label "Post Assertion: #7074" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Syria" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6333> ;
+	dprr:hasPosition 9 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7074 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7046> rdfs:label "Post Assertion: #7046" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6307> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7046 ;
+	dprr:hasDateStart -39 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -39 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7013> rdfs:label "Post Assertion: #7013" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6281> ;
+	dprr:hasPosition 18 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 7013 ;
+	dprr:hasDateStart -40 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -40 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6966> rdfs:label "Post Assertion: #6966" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6242> ;
+	dprr:hasPosition 17 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6966 ;
+	dprr:hasDateStart -41 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -41 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6893> rdfs:label "Post Assertion: #6893" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6174> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6155> ;
+	dprr:hasPosition 19 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6893 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6750> rdfs:label "Post Assertion: #6750" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6044> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6750 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6737> rdfs:label "Post Assertion: #6737" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6033> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "P. Ventidius P. f. Bassus (*2)" ;
+	dprr:hasOfficeXref "Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 6737 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6571> rdfs:label "Post Assertion: #6571" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7154> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5886> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? P. Ventidius Bassus (*2)" ;
+	dprr:hasOfficeXref "Cos. Suff. 43, Pr. 43" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 6571 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSourceText "by 45" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10646> rdfs:label "Post Assertion: #10646" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10251> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10646 ;
+	dprr:hasDateStart -38 ;
+	dprr:hasDateSourceText "38" ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10186> rdfs:label "Post Assertion: #10186" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6138> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10186 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateEnd -38 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2342> rdfs:label "Person Note: #2342" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Gell.15,4,3 f. (Vita); RRC 531 (39 v. Chr.)." ;
+	dprr:hasID 2342 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2341> rdfs:label "Person Note: #2341" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Um 98-kurz nach 38 v. Chr." ;
+	dprr:hasID 2341 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2340> rdfs:label "Person Note: #2340" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb. Picenter." ;
+	dprr:hasID 2340 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2339> rdfs:label "Person Note: #2339" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt P 86; MRR 2,356. 398. 3,217; Hoffman P 8." ;
+	dprr:hasID 2339 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2338> rdfs:label "Person Note: #2338" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Ventidius 5. N Ventidius I.3." ;
+	dprr:hasID 2338 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2337> rdfs:label "Person Note: #2337" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3450" ;
+	dprr:hasID 2337 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2638> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*2" ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2342> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2341> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2340> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2339> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2338> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2337> ;
+	dprr:hasPersonName "VENT2638 P. Ventidius (5) P. f. Fab. Bassus" ;
+	dprr:hasOrigin "Asculum or Auximum?" ;
+	dprr:hasNomen "Ventidius" ;
+	dprr:hasNobilisNotes "VM. 6.9.7-9" ;
+	dprr:hasID 2638 ;
+	dprr:hasHighestOffice "cos. suff. 43" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -37 ;
+	dprr:hasEraFrom -98 ;
+	dprr:hasDprrID "VENT2638" ;
+	dprr:hasCognomen "Bassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2638> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/742> rdfs:label "Date Information: #742" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasValue -37 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasID 742 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1676> rdfs:label "Date Information: #1676" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2638> ;
+	dprr:hasValue -98 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1676 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,166 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1336> rdfs:label "Status Assertion: #1336" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1336 ;
+	dprr:hasDateStart -47 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7865> rdfs:label "Post Assertion Note: #7865" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Praetor 45? His praetorship, inferred from his command in Bithynia and Pontus in 44-43, remains uncertain (Sumner, Phoenix 25, 1971, 361).\n" ;
+	dprr:hasID 7865 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6199> rdfs:label "Post Assertion Note: #6199" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commander of a legion and of a squadron of Cassius' fleet, he outflanked Decidius and Norbanus in the pass of the Corpilans (App. Be 4.102) and later joined his commander at Philippi (4.105, no title preserved)." ;
+	dprr:hasID 6199 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6081> rdfs:label "Post Assertion Note: #6081" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor, probably Proconsul, in Bithynia and Pontus (see 44, Promagistrates). He sent a fleet against Dolabella (see Quaestors, on Turullius; Cic. Fam. 12.13.3), and himself led an army against him in Asia Minor (Cic. Ad Brut. 1.6.3; Dio 47.31.1-2)." ;
+	dprr:hasID 6081 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6008> rdfs:label "Post Assertion Note: #6008" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Governor, probably Proconsul, of Bithynia and Pontus, appointed before Caesar's death (App. BC 3.2; cf. Plut. Brut. 19.2). An active member of the conspiracy, he initiated proceedings on the Ides of March by asking for pardon for his brother (Nic. Dam. Vit. Caes. 24, FGrH 2A.408f.; Suet. Iul. 82.1; Plut. Caes. 66.3-4; Brut. 17.2-4; App. BC 2.113, and 117; Dio 47.31.1; cf. Cic. Phil. 2.27; Senec. Ep. Mor. 83.12; Ira 3.30.4-5; Dio 44.19.4). He immediately departed to Bithynia, succeeding Marcius Crispus, and prepared a fleet (Cic. Fam. 12.13.3) as well as money and troops at Brutus' request (App. BC 3.6; see 43, Promagistrates). See Sternkopf, Hermes 47 (1912) 331." ;
+	dprr:hasID 6008 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5882> rdfs:label "Post Assertion Note: #5882" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Probably Praetor in 45, since he became Proconsul of Bithynia and Pontus in 44 (see 44, Promagistrates)." ;
+	dprr:hasID 5882 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6918> rdfs:label "Post Assertion: #6918" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6199> ;
+	dprr:hasPosition 21 ;
+	dprr:hasOriginalText "L. Tullius Cimber (5)" ;
+	dprr:hasOfficeXref "Pr. 45" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6918 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6787> rdfs:label "Post Assertion: #6787" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Bithynia and Pontus" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6081> ;
+	dprr:hasPosition 24 ;
+	dprr:hasOriginalText "L. Tillius Cimber (5)" ;
+	dprr:hasOfficeXref "Pr. 45?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6787 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "44-43" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6700> rdfs:label "Post Assertion: #6700" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasProvinceOriginal "Bithynia and Pontus" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6008> ;
+	dprr:hasPosition 22 ;
+	dprr:hasOriginalText "L. Tillius Cimber (5)" ;
+	dprr:hasOfficeXref "Pr. 45?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 6700 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateSourceText "44-43" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6567> rdfs:label "Post Assertion: #6567" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7865> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5882> ;
+	dprr:hasPosition 10 ;
+	dprr:hasOriginalText "L. Tillius Cimber (5)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 6567 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -45 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2634> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "TILL2634 L. Tillius (5) Cimber" ;
+	dprr:hasNomen "Tillius" ;
+	dprr:hasID 2634 ;
+	dprr:hasHighestOffice "pr.? 45" ;
+	dprr:hasEraTo -30 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "TILL2634" ;
+	dprr:hasCognomen "Cimber" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2634> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1953> rdfs:label "Date Information: #1953" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasValue -30 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "All of the Liberators were dead by 30." ;
+	dprr:hasID 1953 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1952> rdfs:label "Date Information: #1952" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2634> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 135" ;
+	dprr:hasID 1952 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,234 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2249> rdfs:label "Status Assertion: #2249" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2249 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6063> rdfs:label "Relationship Assertion: #6063" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1248> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2102> rdfs:label "Relationship Assertion: #2102" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1109> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8568> rdfs:label "Post Assertion Note: #8568" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 736, footnote 107" ;
+	dprr:hasID 8568 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2867> rdfs:label "Post Assertion Note: #2867" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Celebrated as Proconsul a triumph over the Eleate Ligurians (Fast. Cap. and Urbisalv., Degrassi 82f., 338f., 557)." ;
+	dprr:hasID 2867 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2862> rdfs:label "Post Assertion Note: #2862" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 50f., 123, 462f.; Suet. Vit. Ter. 5; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. Fulvius held command in Liguria (see 158); and both Consuls carried a bribery law (Liv. Per. 47)." ;
+	dprr:hasID 2862 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2839> rdfs:label "Post Assertion Note: #2839" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The most probable date for Dolabella, who was Curule Aedile in 165. For Nobilior, who was Curule Aedile in 166, this is the latest possible date." ;
+	dprr:hasID 2839 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2810> rdfs:label "Post Assertion Note: #2810" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The Andria of Terence was performed at the Ludi Megalenses under their charge, Didasc. Ter. And. (Donatus)." ;
+	dprr:hasID 2810 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2648> rdfs:label "Post Assertion Note: #2648" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In opposition to their colleagues they wished to refer the appeal of the veteran centurions against the levy to the magistrates in charge of the war rather than take cognizance of it themselves (Liv. 42.32.7-8)." ;
+	dprr:hasID 2648 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10099> rdfs:label "Post Assertion Note: #10099" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Triumph de Liguribus Eleatibus. MRR I.446, Itgenshorst no. 205, Rich no. 204." ;
+	dprr:hasID 10099 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3506> rdfs:label "Post Assertion: #3506" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2867> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Fulvius Nobilior (93)" ;
+	dprr:hasOfficeXref "Cos. 159" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 3506 ;
+	dprr:hasDateStart -158 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3499> rdfs:label "Post Assertion: #3499" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2862> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Fulvius M. f. M. n. Nobilior (93)" ;
+	dprr:hasOfficeXref "Pr. by 162" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3499 ;
+	dprr:hasDateStart -159 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -159 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3471> rdfs:label "Post Assertion: #3471" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8568> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2839> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? M. Fulvius Nobilior (93)" ;
+	dprr:hasOfficeXref "Cos. 159" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3471 ;
+	dprr:hasDateStart -162 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -162 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3435> rdfs:label "Post Assertion: #3435" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2810> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Fulvius (Nobilior) (93)" ;
+	dprr:hasOfficeXref "Cos. 159" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 3435 ;
+	dprr:hasDateStart -166 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -166 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3221> rdfs:label "Post Assertion: #3221" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2648> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Fulvius Nobilior (93)" ;
+	dprr:hasOfficeXref "Cos. 159" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 3221 ;
+	dprr:hasDateStart -171 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -171 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10494> rdfs:label "Post Assertion: #10494" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1369> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10099> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10494 ;
+	dprr:hasDateStart -158 ;
+	dprr:hasDateSourceText "158" ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1369> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "93" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FULV1369 M. Fulvius (93) M. f. M. n. Nobilior" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 1369 ;
+	dprr:hasHighestOffice "cos. 159" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "FULV1369" ;
+	dprr:hasCognomen "Nobilior" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1369> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1248> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "95" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FULV1248 Q. Fulvius (95) M. f. M. n. Nobilior" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasID 1248 ;
+	dprr:hasHighestOffice "cos. 153" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -204 ;
+	dprr:hasDprrID "FULV1248" ;
+	dprr:hasCognomen "Nobilior" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1248> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1109> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "91" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FULV1109 M. Fulvius (91) M. f. Ser. n. Nobilior" ;
+	dprr:hasNomen "Fulvius" ;
+	dprr:hasNobilisNotes "Liv. 39.40.2-3, 39.41.1, 40.45.6-7, Gell. 12.8.cap-6 (\"Fulvius Flaccus\")" ;
+	dprr:hasID 1109 ;
+	dprr:hasHighestOffice "cos. 189" ;
+	dprr:hasFiliation "M. f. Ser. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -226 ;
+	dprr:hasDprrID "FULV1109" ;
+	dprr:hasCognomen "Nobilior" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1109> .

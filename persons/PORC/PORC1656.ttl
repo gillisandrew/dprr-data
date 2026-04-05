@@ -1,0 +1,321 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/447> rdfs:label "Tribe Assertion: #447" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/22> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p248. From Tusculum, hence PAP." ;
+	dprr:hasID 447 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/22> rdfs:label "Tribe: Papiria" ;
+	a dprr:Tribe ;
+	dprr:hasName "Papiria" ;
+	dprr:hasID 22 ;
+	dprr:hasAbbreviation "Pap." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2410> rdfs:label "Status Assertion: #2410" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2410 ;
+	dprr:hasDateStart -123 ;
+	dprr:hasDateEnd -118 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> rdfs:label "Secondary Source: Brennan 2000" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Praetorship in the Roman Republic" ;
+	dprr:hasID 7 ;
+	dprr:hasBiblio "Brennan, T. Corey. The Praetorship in the Roman Republic. 2 Vols.   Oxford:  Oxford University Press, 2000.  ISBN 0-19-511459-0.  ISBN 0-19-511460-4." ;
+	dprr:hasAbbreviation "Brennan 2000" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1472> rdfs:label "Relationship Assertion Reference: #1472" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Plutarch unterläuft hier ein Fehler. Der Sohn des Salonianus, M., war kein Consul und er ist der Vater, nicht der Großvater des Uticensis." ;
+	dprr:hasID 1472 ;
+	dprr:hasExtraInfo "Plut. Cato mai. 27.5(8)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1042> rdfs:label "Relationship Assertion Reference: #1042" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1042 ;
+	dprr:hasExtraInfo "Gell XIII 20.17" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/911> rdfs:label "Relationship Assertion: #911" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1472> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1042> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1433> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6213> rdfs:label "Relationship Assertion: #6213" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1682> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6210> rdfs:label "Relationship Assertion: #6210" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4020> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4182> rdfs:label "Relationship Assertion: #4182" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1042> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1831> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2679> rdfs:label "Relationship Assertion: #2679" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/13> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1504> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2678> rdfs:label "Relationship Assertion: #2678" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/907> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/13> rdfs:label "Relationship: nephew of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 27 ;
+	dprr:hasName "nephew of" ;
+	dprr:hasID 13 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8658> rdfs:label "Post Assertion Note: #8658" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 739" ;
+	dprr:hasID 8658 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3349> rdfs:label "Post Assertion Note: #3349" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Ant., Degrassi 162f. (M. Por[ci.] Cato, Q. [- - - -]); Vell. 1.15.5; 2.7.8; Val. Max. 5.10.3; Plin. NH 2.99; Gell. 13.20.10; Obseq. 35; Eutrop. 4.23.1; Chr. 354 (Catdne et Rige); Fast. Hyd. (Catone et Marcio Rega); Chr. Pasc. ({Gr}); Cassiod.; on Marcius, CIL 1\n     .2.660, but see 68 B.C.; Cic. Cons. fr. 15; and on his filiation, Act. Tr. for 117. See Degrassi 127, 472f. Marcius campaigned against the Stoeni in Liguria (Liv. Per. 62; Oros. 5.14.5). Porcius died in Africa, perhaps while engaged in settling the succession to Micipsa in Numidia (Gell. 13.20.10; cf. Gsell, Hist. anc. Afr. Nord 7.22, 66, 142). At some time in his career he proposed a bill to regulate interest rates (FOR 2.22f., and 118f.). On Cato, see D.- G. 5.161, no. 17." ;
+	dprr:hasID 3349 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3297> rdfs:label "Post Assertion Note: #3297" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible date for their praetorships under the Lex Villia." ;
+	dprr:hasID 3297 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4041> rdfs:label "Post Assertion: #4041" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3349> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Porcius M. f. M. n. Cato (*13)" ;
+	dprr:hasOfficeXref "Pr. by 121" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 4041 ;
+	dprr:hasDateStart -118 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -118 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3989> rdfs:label "Post Assertion: #3989" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8658> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3297> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? M. Porcius Cato (*13)" ;
+	dprr:hasOfficeXref "Cos. 118" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3989 ;
+	dprr:hasDateStart -121 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -121 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/907> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNovus true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*10" ;
+	dprr:hasReNumber "9" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2424> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1734> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1733> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1732> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1731> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1730> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1729> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1728> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1727> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1726> ;
+	dprr:hasPersonName "PORC0907 M. Porcius (9) M. f. Pap. Cato 'Censorius'" ;
+	dprr:hasOtherNames "'Censorius'" ;
+	dprr:hasOrigin "Tusculum" ;
+	dprr:hasNovusNotes "Liv. 39.41; Cic. Verr. 2.5.181; Cic. Mur. 17; Cic. Rep. 1.1; Vell. 2.128; Plut. Cat. 1.2" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasNobilisNotes "Cic. Brut. 15.61-16.62 (founder of family's nobilitas), VM. 3.4.6, Sen. Ep. Mor. Ad Lucil. 86.10, Macrob. 2.1.8ff" ;
+	dprr:hasID 907 ;
+	dprr:hasHighestOffice "cos. 195" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -149 ;
+	dprr:hasEraFrom -234 ;
+	dprr:hasDprrID "PORC0907" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/907> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4020> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "152" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "AEMI4020  Aemilia (152)" ;
+	dprr:hasNomen "Aemilia" ;
+	dprr:hasID 4020 ;
+	dprr:hasHighestOffice "daughter of L. Aemilius (114) L. f. M. n. Paullus Macedonicus (cos. 182)" ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "AEMI4020" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4020> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1831> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*14" ;
+	dprr:hasReNumber "11" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PORC1831 M. Porcius (11) Pap. Cato" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1831 ;
+	dprr:hasHighestOffice "pr. before 91?" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "PORC1831" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1831> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1682> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*15" ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "PORC1682 C. Porcius (5) M. f. M. n. Pap. Cato" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1682 ;
+	dprr:hasHighestOffice "cos. 114" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -157 ;
+	dprr:hasDprrID "PORC1682" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1682> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1656> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*13" ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PORC1656 M. Porcius (10) M. f. M. n. Pap. Cato" ;
+	dprr:hasOrigin "Tusculum?" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1656 ;
+	dprr:hasHighestOffice "cos. 118" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -118 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "PORC1656" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1656> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1504> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "335" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/715> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/714> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/713> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/712> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/711> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/710> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/709> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/708> ;
+	dprr:hasPersonName "CORN1504 P. Cornelius (335) P. f. P. n. Scipio Africanus Aemilianus" ;
+	dprr:hasOtherNames "Africanus Aemilianus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasNobilisNotes "Terent. Adelph. 15, Gell. 3.4.cap-1, VM. 3.2.6b, Porc. Licinus Carm. fr.3 ap. Suet. Vit. Terent. 1, 5, Porc. Latro ap. Sen. Controv. 2.1.17, Juv. Sat. 8.1-32, Suet. Vit. Terent. 1, 3" ;
+	dprr:hasID 1504 ;
+	dprr:hasHighestOffice "cos. 147" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -129 ;
+	dprr:hasEraFrom -185 ;
+	dprr:hasDprrID "CORN1504" ;
+	dprr:hasCognomen "Scipio" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1504> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1433> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*11" ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "PORC1433 M. Porcius (14) M. f. M. n. Cato Licinianus" ;
+	dprr:hasOtherNames "Licinianus" ;
+	dprr:hasNomen "Porcius" ;
+	dprr:hasID 1433 ;
+	dprr:hasHighestOffice "pr. 152" ;
+	dprr:hasFiliation "M. f. M. n." ;
+	dprr:hasEraTo -152 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "PORC1433" ;
+	dprr:hasCognomen "Cato" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1433> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/273> rdfs:label "Date Information: #273" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1656> ;
+	dprr:hasValue -118 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 273 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .

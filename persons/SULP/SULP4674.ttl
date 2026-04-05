@@ -1,0 +1,68 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10138> rdfs:label "Post Assertion: #10138" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4674> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/251> ;
+	dprr:hasID 10138 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateEnd -75 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2097> rdfs:label "Person Note: #2097" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "CIL 1&sup2,1263 = 6,2247 = ILLRP 159 = SIRIS 377." ;
+	dprr:hasID 2097 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2096> rdfs:label "Person Note: #2096" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "1. H. 1. Jh. v. Chr." ;
+	dprr:hasID 2096 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2095> rdfs:label "Person Note: #2095" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 2095 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2094> rdfs:label "Person Note: #2094" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Mora 3,321." ;
+	dprr:hasID 2094 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2093> rdfs:label "Person Note: #2093" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3177" ;
+	dprr:hasID 2093 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4674> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2097> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2096> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2095> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2094> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2093> ;
+	dprr:hasPersonName "SULP4674 T. Sulpicius (not in RE) T. f." ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 4674 ;
+	dprr:hasHighestOffice "sacerdos Isidis c. 100-75?" ;
+	dprr:hasFiliation "T. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "SULP4674" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4674> .

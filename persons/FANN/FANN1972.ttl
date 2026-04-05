@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2556> rdfs:label "Status Assertion: #2556" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1972> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2556 ;
+	dprr:hasDateStart -88 ;
+	dprr:hasDateEnd -80 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9574> rdfs:label "Post Assertion Note: #9574" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 351" ;
+	dprr:hasID 9574 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8725> rdfs:label "Post Assertion Note: #8725" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 751, footnote 352" ;
+	dprr:hasID 8725 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7882> rdfs:label "Post Assertion Note: #7882" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Aed. pl. , Dated to 83, with a query, in MRR 2.63, 65, note 4. See now Crawford, RRC 1.367, no. 351, 86 B.C. See below on M. Fannius (15).\n" ;
+	dprr:hasID 7882 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7246> rdfs:label "Post Assertion Note: #7246" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Aed. pl. 86, pr. 80. In MRR 2.63, and Index, 565, transfer the notices of L. Fan(nius) and L. Crit(onius), aediles of the plebs, from 83 to 86 (to MRR 2.54), and refer also to Crawford, RRC 1.367, no. 151. The date in 86 makes uncertain the date of his subsequent service as iudex quaestionis (MRR 2.76) when he presided over the quaestio de sicariis et veneficis (Cic. Rosc. Amer. 11), perhaps as early as 85, before presiding over it again as praetor in 80. See T. E. Kinsey, Mnemosyne 20, 1967, 61-67.\n" ;
+	dprr:hasID 7246 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4233> rdfs:label "Post Assertion Note: #4233" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Rosc. Amer. 11-12; Schol, Gron. 304 Stangl." ;
+	dprr:hasID 4233 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4205> rdfs:label "Post Assertion Note: #4205" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A Iudex in the Quaestio de sicariis before he presided over the same court as Praetor in 80 (Cic. Rosc. Amer. 11)." ;
+	dprr:hasID 4205 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4115> rdfs:label "Post Assertion Note: #4115" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Grueber, CRRBM 1.314f.; CIL 12.2, p. 756, no. 272." ;
+	dprr:hasID 4115 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8818> rdfs:label "Post Assertion: #8818" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1972> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasProvinceOriginal "Rome" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9574> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Fannius, M." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 8818 ;
+	dprr:hasDateStart -86 ;
+	dprr:hasDateSourceText "86" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -86 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4827> rdfs:label "Post Assertion: #4827" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1972> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8725> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4233> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Fannius (15)" ;
+	dprr:hasOfficeXref "Quaestio de sicariis" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 4827 ;
+	dprr:hasDateStart -80 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -80 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4801> rdfs:label "Post Assertion: #4801" ;
+	a dprr:PostAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1972> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7246> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4205> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Fannius (15)" ;
+	dprr:hasOfficeXref "Pr. 80" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/108> ;
+	dprr:hasID 4801 ;
+	dprr:hasDateStart -85 ;
+	dprr:hasDateSourceText "as early as 85" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -85 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4721> rdfs:label "Post Assertion: #4721" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1972> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7882> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7246> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4115> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Fannius (15)" ;
+	dprr:hasOfficeXref "Pr. 80" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/20> ;
+	dprr:hasID 4721 ;
+	dprr:hasDateStart -86 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -86 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1972> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "FANN1972 M. Fannius (15)" ;
+	dprr:hasNomen "Fannius" ;
+	dprr:hasID 1972 ;
+	dprr:hasHighestOffice "pr. 80" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "FANN1972" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1972> .

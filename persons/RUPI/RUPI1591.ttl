@@ -1,0 +1,245 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/238> rdfs:label "Status Assertion Note: #238" ;
+	a dprr:StatusAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Nicolet Ref 305. Val. Max. 5.9.8. cos. 132" ;
+	dprr:hasID 238 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/238> rdfs:label "Status Assertion: #238" ;
+	a dprr:StatusAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/238> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> ;
+	dprr:hasOriginalText "P. RUPILIUS (5)" ;
+	dprr:hasID 238 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2370> rdfs:label "Status Assertion: #2370" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2370 ;
+	dprr:hasDateStart -137 ;
+	dprr:hasDateEnd -131 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/Status/1> rdfs:label "Status: eques Romanus" ;
+	a dprr:Status ;
+	dprr:hasName "eques Romanus" ;
+	dprr:hasID 1 ;
+	dprr:hasAbbreviation "eq. R." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> rdfs:label "Secondary Source: Rich 2014" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rich Triumphs" ;
+	dprr:hasID 30 ;
+	dprr:hasBiblio "Rich, J., 'The Triumph in the Roman Republic: Frequency, Fluctuation and Policy' in Carsten Hjort Lange & Frederik Juliaan Vervaet (eds.) The Roman Republican triumph : beyond the spectacle. 197-258. Roma : Edizioni Quasar, 2014." ;
+	dprr:hasAbbreviation "Rich 2014" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/22> rdfs:label "Secondary Source: Alexander 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Alexander TLRR" ;
+	dprr:hasID 22 ;
+	dprr:hasBiblio "Alexander, M. C., Trials in the late Roman Republic, 149 BC to 50 BC. Toronto : University of Toronto Press, 1990." ;
+	dprr:hasAbbreviation "Alexander 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/13> rdfs:label "Secondary Source: Nicolet 1974" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Nicolet" ;
+	dprr:hasID 13 ;
+	dprr:hasBiblio "Nicolet, C., L'Ordre équestre à l'époque républicaine (312-43 av. J.-C.) 2 vols. Paris : E. de Boccard, 1966-1974." ;
+	dprr:hasAbbreviation "Nicolet 1974" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/764> rdfs:label "Relationship Assertion Reference: #764" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 764 ;
+	dprr:hasExtraInfo "Cic. Tusc. IV 40" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1816> rdfs:label "Relationship Assertion Reference: #1816" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Die Stelle ist verdorben und aus Iulius Paris ergänzt. Nach Münzer könnte es sich bei diesem Q. Fabius um den Sohn des Servilianus handeln. Dann wäre (5) nicht nur mit Scipio befreundet, sondern auch nahe verwandt." ;
+	dprr:hasID 1816 ;
+	dprr:hasExtraInfo "Val. Max. II 7.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/731> rdfs:label "Relationship Assertion: #731" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/764> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1602> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1307> rdfs:label "Relationship Assertion: #1307" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1816> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4235> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8634> rdfs:label "Post Assertion Note: #8634" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 738" ;
+	dprr:hasID 8634 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3175> rdfs:label "Post Assertion Note: #3175" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cic. Verr. 2.4.112; Lael. 37; Att. 13.32.3; Fast. Cap., Degrassi 52f., 125f., 470f. (P. Popi[11]ius C. f. P. [n. Laenas]; Rupilius' name entire){498} Chr. 354 (Laenas et Calibo); Fast. Hyd. (Laenate et Rutilio), so also Chr. Pasc.; Cassiod., with Sulpicius for Rupilius; and on Popillius, CIL 1\n     .2.637; Cic. Cluent. 95. The Consuls had charge of the senatorial inquisition into supporters of Ti. Gracchus (Cic. Lael. 37; Val. Max. 3.7.1). Popillius built and repaired roads in Italy (CIL 1(2).2.637, 638- ILS 23), while Rupilius finally subdued the slave revolt in Sicily (Cic. Verr. 2.3.125; Liv. Per. 59; Diod. 34-35.2.20-23; Val. Max. 2.7.3; 6.9.8; 9.12, ext. 1; Oros. 5.9.7), possibly earning a triumph (Degrassi 558), and with the help of a senatorial commission reorganized the island under the Lex Rupilia (Cic. Verr. 2.2.32-44, 59, 90, 125; Val. Max. 6.9.8; Ps.-Ascon. 264 Stangl; Schol. Gron. 334 Stangl; cf. CIL 1(2), p. 764, no. 383 n, P. Ru[pilius]). On Popillius, see Lübker no. 7." ;
+	dprr:hasID 3175 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3131> rdfs:label "Post Assertion Note: #3131" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The latest possible date under the Lex Villia." ;
+	dprr:hasID 3131 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10207> rdfs:label "Post Assertion Note: #10207" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ovation? de Sicilia. Itgenshorst no.214b (ovatio incertus), Rich no. 214. Not listed in MRR." ;
+	dprr:hasID 10207 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3842> rdfs:label "Post Assertion: #3842" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3175> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Rupilius P. f. P. n. (5)" ;
+	dprr:hasOfficeXref "Pr. by 135" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3842 ;
+	dprr:hasDateStart -132 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -132 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3789> rdfs:label "Post Assertion: #3789" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8634> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3131> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "? P. Rupilius (5)" ;
+	dprr:hasOfficeXref "Cos. 132" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3789 ;
+	dprr:hasDateStart -135 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -135 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10602> rdfs:label "Post Assertion: #10602" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/30> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10207> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/260> ;
+	dprr:hasID 10602 ;
+	dprr:hasDateStart -132 ;
+	dprr:hasDateSourceText "132" ;
+	dprr:hasDateEnd -132 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4235> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "12" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "RUPI4235  Rupilia (12)" ;
+	dprr:hasNomen "Rupilia" ;
+	dprr:hasID 4235 ;
+	dprr:hasHighestOffice "daughter of P. Rupilius (5) P. f. P. n. (cos. 132)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "RUPI4235" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4235> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1602> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "4" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "RUPI1602 L. Rupilius (4)" ;
+	dprr:hasNomen "Rupilius" ;
+	dprr:hasID 1602 ;
+	dprr:hasHighestOffice "pr. before 132" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "RUPI1602" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1602> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1591> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "RUPI1591 P. Rupilius (5) P. f. P. n." ;
+	dprr:hasNomen "Rupilius" ;
+	dprr:hasNobilisNotes "VM. 6.9.7-8" ;
+	dprr:hasID 1591 ;
+	dprr:hasHighestOffice "cos. 132" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -131 ;
+	dprr:hasEraFrom -185 ;
+	dprr:hasDprrID "RUPI1591" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1591> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/235> rdfs:label "Date Information: #235" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasValue -131 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/22> ;
+	dprr:hasNotes "Alexander." ;
+	dprr:hasID 235 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "B" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/234> rdfs:label "Date Information: #234" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1591> ;
+	dprr:hasValue -185 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "Cic. De Am. 27.101 (aequalis of C. Laelius Sapiens & Scipio Aemilianus)." ;
+	dprr:hasID 234 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

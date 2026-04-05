@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/356> rdfs:label "Relationship Assertion Reference: #356" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 356 ;
+	dprr:hasExtraInfo "Cic. Cael. 34" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/5861> rdfs:label "Relationship Assertion: #5861" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4042> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/858> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/449> rdfs:label "Relationship Assertion: #449" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4042> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/356> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/8> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/744> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/8> rdfs:label "Relationship: daughter of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 22 ;
+	dprr:hasName "daughter of" ;
+	dprr:hasID 8 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/858> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "293" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Appius> ;
+	dprr:hasPersonName "CLAU0858 Ap. Claudius (293) P. f. Ap. n. Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 858 ;
+	dprr:hasHighestOffice "cos. 212" ;
+	dprr:hasFiliation "P. f. Ap. n." ;
+	dprr:hasEraTo -211 ;
+	dprr:hasEraFrom -247 ;
+	dprr:hasDprrID "CLAU0858" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/858> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/744> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "304" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CLAU0744 P. Claudius (304) Ap. f. C. n. Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasNobilisNotes "Schol. Bob. Clod. et Curio. 89 Stangl" ;
+	dprr:hasID 744 ;
+	dprr:hasHighestOffice "cos. 249" ;
+	dprr:hasFiliation "Ap. f. C. n." ;
+	dprr:hasEraTo -246 ;
+	dprr:hasEraFrom -283 ;
+	dprr:hasDprrID "CLAU0744" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/744> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4042> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "435" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CLAU4042  Claudia (435) Quinta" ;
+	dprr:hasNomen "Claudia" ;
+	dprr:hasNobilisNotes "Ovid. Fast. 4.305-306" ;
+	dprr:hasID 4042 ;
+	dprr:hasHighestOffice "daughter of P. Claudius (304) Ap. f. C. n. Pulcher (cos. 249)" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "CLAU4042" ;
+	dprr:hasCognomen "Quinta" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4042> .

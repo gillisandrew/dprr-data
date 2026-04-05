@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> rdfs:label "Secondary Source: Kelly 2006" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Kelly HERR" ;
+	dprr:hasID 19 ;
+	dprr:hasBiblio "Kelly, G. P., A history of exile in the Roman Republic. Cambridge ; New York : Cambridge University Press, c2006." ;
+	dprr:hasAbbreviation "Kelly 2006" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2> rdfs:label "Primary Source Reference: #2" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Amm. Marc. XIV 6.8" ;
+	dprr:hasID 2 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3> rdfs:label "Post Assertion Note: #3" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Husband of Lucretia, and according to part of the developed tradition elected first Consul along with Brutus (Augustine CD 3.16; Liv. 1.60.4; Dion. Hal. 4.84.5; 5.1.2; Plut. Popl. 1.4; Dio fr. 11; Chr. 354; Fast. Hyd.; Chr. Pasc.; Eutrop. 1.9.2; Cassiod.; Zon. 7.12; see Degrassi 88, 348f.). He soon either abdicated his office or had his imperium abrogated, in the one version to avoid the enmity attaching to the Tarquin name, in the other because he was inclined to deal less harshly with his nephews than Brutus with his sons who were involved in a conspiracy to restore the Tarquins (see above on Brutus)." ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> rdfs:label "Post Assertion: #2" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Tarquinius Egeri f. Collatinus Pat. (8)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2 ;
+	dprr:hasDateStart -509 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -509 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "8" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "TARQ0002 L. Tarquinius (8) Egeri f. Collatinus" ;
+	dprr:hasNomen "Tarquinius" ;
+	dprr:hasID 2 ;
+	dprr:hasHighestOffice "cos. 509" ;
+	dprr:hasFiliation "Egeri f." ;
+	dprr:hasEraTo -450 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "TARQ0002" ;
+	dprr:hasCognomen "Collatinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/6> rdfs:label "Date Type: exiled" ;
+	a dprr:DateType ;
+	dprr:hasName "exiled" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/796> rdfs:label "Date Information: #796" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2> ;
+	dprr:hasValue -509 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/19> ;
+	dprr:hasNotes "Kelly p.70." ;
+	dprr:hasID 796 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/6> ;
+	dprr:hasDateInterval "S" .

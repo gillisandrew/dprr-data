@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/5> rdfs:label "Primary Source Reference: #5" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Ampel. 19.3" ;
+	dprr:hasID 5 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/23> rdfs:label "Primary Source Reference: #23" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. b.c. II 105 (439)" ;
+	dprr:hasID 23 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/23> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/10> rdfs:label "Primary Source Reference: #10" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Ampel. 46.5" ;
+	dprr:hasID 10 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6> rdfs:label "Post Assertion Note: #6" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected as successor to Lucretius (Augustine CD 3.16; Liv. 2.8.4-5; Dion. Hal. 5.19.2; 11.5.1; Plut. Popl. 12.4; Flor. 1.3.4; Eutrop. 1.10.2; Zon. 7.13), known however to Polybius (3.22.1, cf. 26.1) as Brutus' colleague and one of the first Consuls of the Republic. He dedicated the temple of the Capitoline Triad (Liv. 2.8.6-8; 7.3.8; Dion. Hal. 5.35.3, who mentions his name on the inscription; Tac. Hist. 3.72, iterum consul; Plut. Popl. 14; Dio fr. 13; cf. Serv. ad Aen. 6.8 and 11.2; Cic. Dom. 139). See below, Pontifices." ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/23> rdfs:label "Post Assertion Note: #23" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Dion. Hal. 5.21; Chr. 354 (Publicola III et Pulbillio); Fast. Hyd. (Publicola II et Publilio); so also Chr. Pasc. ({Gr} for Publilio); Cassiod.; and on Horatius, Tac. Hist. 3.72. See Degrassi 88, 348f. On Valerius, see Münzer, Gent. Val. 9ff." ;
+	dprr:hasID 23 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/22> rdfs:label "Post Assertion Note: #22" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Livy omits both Consuls (but see 2.16.2, Valerius quartum; and the crit. app. to 2.15.1). Dionysius places Porsenna's attack in this year, and also the dedication of the Capitoline temple by Horatius (see 509, 508, and Dion. Hal. 2.35.3; Tac. Hist. 3.72). See below, 506." ;
+	dprr:hasID 22 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/21> rdfs:label "Post Assertion Note: #21" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senec. Ad Marc. 13.1; cf. Val. Max. 5.10.1; see 509, 507." ;
+	dprr:hasID 21 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/12> rdfs:label "Post Assertion Note: #12" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "According to Cicero (Dom. 139; fr. 15 of Consol., ed Müller 4.3.336f.) and Valerius Maximus (5.10.1), Horatius dedicated the temple of the{4} Capitoline Triad as Pontifex (cf. Senec. Cons. ad Marc. 13.1; Symmach. Ep. 3.6.3)." ;
+	dprr:hasID 12 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/11> rdfs:label "Post Assertion Note: #11" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Cicero apparently has Horatius perform the dedication not as Consul but as Pontifex, while Dionysius and Tacitus date it in his second consulship with Valerius in 507 (5.35.3; cf. 3.69.2; 4.61.3; Tac. Hist. 3.72), the year which Livy has omitted from his record. Polybius however (3.22.1, cf. 26.1) names Brutus and Horatius as the first Consuls and says that the dedication took place through them ({Gr}), and dates the first treaty with Carthage by them,{5} though he does not specifically say that their names were on it. See the literature referred to in RE above; CAH 7.859-862 and 914; and most recently, Hanell, Das altrömische Eponyme Amt, who holds that Horatius was simply the first eponym in a system that began with the dedication of the temple and was connected with the expulsion of the kings only in a later tradition." ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5> rdfs:label "Post Assertion: #5" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "M. Horatius M. f. - n. Pulvillus Pat. (15)" ;
+	dprr:hasOfficeXref "Cos. 507" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/4> ;
+	dprr:hasID 5 ;
+	dprr:hasDateStart -509 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -509 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/23> rdfs:label "Post Assertion: #23" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/23> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/22> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Horatius M. f. - n. Pulvillus Pat. (15)" ;
+	dprr:hasOfficeXref "Cos. Suff. 509" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 23 ;
+	dprr:hasDateStart -507 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -507 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10> rdfs:label "Post Assertion: #10" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/5> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/21> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/12> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/11> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Horatius Pulvillus Pat. (15)" ;
+	dprr:hasOfficeXref "Cos. 509, 507" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10 ;
+	dprr:hasDateStart -509 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -508 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/5> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "HORA0005 M. Horatius (15) M. f. - n. Pulvillus" ;
+	dprr:hasNomen "Horatius" ;
+	dprr:hasID 5 ;
+	dprr:hasHighestOffice "cos. suff. 509" ;
+	dprr:hasFiliation "M. f. - n." ;
+	dprr:hasEraTo -450 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "HORA0005" ;
+	dprr:hasCognomen "Pulvillus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/5> .

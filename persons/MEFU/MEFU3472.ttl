@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7514> rdfs:label "Post Assertion Note: #7514" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "IIIvir. CIL 1(2).2.802-ILS 2994-ILLRP 187: [D]iovei victore | T. Mefu [ . . . ] M. f. | IIIvir [resti]tuit. An early date. The name is probably Mefulanus, formed like Mevulanus. Such a commission for restoring buildings is recorded in Livy (25.7.5-6, without names). (RS, CP)\n" ;
+	dprr:hasID 7514 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9993> rdfs:label "Post Assertion: #9993" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3472> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7514> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/244> ;
+	dprr:hasID 9993 ;
+	dprr:hasDateStart -200 ;
+	dprr:hasDateEnd -151 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1460> rdfs:label "Person Note: #1460" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "CIL 1&sup2,802 = 6,438 = 6,30767a ILS 2994 = ILLRP 187." ;
+	dprr:hasID 1460 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1459> rdfs:label "Person Note: #1459" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "2. Jh. v. Chr.?" ;
+	dprr:hasID 1459 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1458> rdfs:label "Person Note: #1458" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1458 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1457> rdfs:label "Person Note: #1457" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "MRR 3,141." ;
+	dprr:hasID 1457 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1456> rdfs:label "Person Note: #1456" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2422" ;
+	dprr:hasID 1456 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3472> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1460> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1459> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1458> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1457> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1456> ;
+	dprr:hasPersonName "MEFU3472 T. Mefu- (not in RE) M. f." ;
+	dprr:hasNomen "Mefu-" ;
+	dprr:hasID 3472 ;
+	dprr:hasHighestOffice "III vir aed. refic. C2?" ;
+	dprr:hasFiliation "M. f." ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "MEFU3472" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3472> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1473> rdfs:label "Date Information: #1473" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3472> ;
+	dprr:hasValue -200 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1473 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .

@@ -1,0 +1,235 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2119> rdfs:label "Relationship Assertion Reference: #2119" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2119 ;
+	dprr:hasExtraInfo "Liv. 32.7.15" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6013> rdfs:label "Relationship Assertion: #6013" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1192> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2431> rdfs:label "Relationship Assertion: #2431" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/936> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2430> rdfs:label "Relationship Assertion: #2430" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2119> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1336> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1984> rdfs:label "Post Assertion Note: #1984" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cn. Cornelius Scipio (Hispallus) succeeded C. Sulpicius Galba." ;
+	dprr:hasID 1984 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1982> rdfs:label "Post Assertion Note: #1982" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Liv. 32.7.15." ;
+	dprr:hasID 1982 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1900> rdfs:label "Post Assertion Note: #1900" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "C. Sulpicius Galba succeeded T. Manlius Torquatus. Liv. 30.39.6." ;
+	dprr:hasID 1900 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1899> rdfs:label "Post Assertion Note: #1899" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Note that the appointment of Sulpicius Galba brings two members of the family into the college of Pontifices at once. See Mommsen, RF 1.89." ;
+	dprr:hasID 1899 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10141> rdfs:label "Post Assertion: #10141" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1984> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1982> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1900> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1899> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10141 ;
+	dprr:hasDateStart -202 ;
+	dprr:hasDateEnd -199 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2114> rdfs:label "Person Note: #2114" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "Liv. 30,39,6 (Kooptation); 32,7,15 (Tod)." ;
+	dprr:hasID 2114 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2113> rdfs:label "Person Note: #2113" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "Um 230-199 v. Chr." ;
+	dprr:hasID 2113 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2112> rdfs:label "Person Note: #2112" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 2112 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2111> rdfs:label "Person Note: #2111" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt P 43; MRR 1,318. 329; Szemler P 11." ;
+	dprr:hasID 2111 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2110> rdfs:label "Person Note: #2110" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Sulpicius 49." ;
+	dprr:hasID 2110 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2109> rdfs:label "Person Note: #2109" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3183" ;
+	dprr:hasID 2109 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/936> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "64" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "SULP0936 P. Sulpicius (64) Ser. f. P. n. Galba Maximus" ;
+	dprr:hasOtherNames "Maximus" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 936 ;
+	dprr:hasHighestOffice "cos. 211" ;
+	dprr:hasFiliation "Ser. f. P. n." ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "SULP0936" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/936> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1336> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "50" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2120> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2119> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2118> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2117> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2116> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2115> ;
+	dprr:hasPersonName "SULP1336 C. Sulpicius (50) C. f. Galba" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 1336 ;
+	dprr:hasHighestOffice "pr. 171" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -210 ;
+	dprr:hasDprrID "SULP1336" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1336> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1192> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "57" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Servius> ;
+	dprr:hasPersonName "SULP1192 Ser. Sulpicius (57) Galba" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 1192 ;
+	dprr:hasHighestOffice "pr. 187" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "SULP1192" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1192> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1060> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "49" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2114> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2113> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2112> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2111> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2110> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2109> ;
+	dprr:hasPersonName "SULP1060 C. Sulpicius (49) Galba" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasID 1060 ;
+	dprr:hasHighestOffice "pont. 202" ;
+	dprr:hasEraTo -199 ;
+	dprr:hasEraFrom -230 ;
+	dprr:hasDprrID "SULP1060" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1060> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/24> rdfs:label "Date Information: #24" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasValue -199 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasID 24 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1620> rdfs:label "Date Information: #1620" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1060> ;
+	dprr:hasValue -230 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1620 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

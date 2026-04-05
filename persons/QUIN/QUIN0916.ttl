@@ -1,0 +1,225 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3495> rdfs:label "Relationship Assertion: #3495" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3824> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3494> rdfs:label "Relationship Assertion: #3494" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1226> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2116> rdfs:label "Primary Source Reference: #2116" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Dio 45.47.3" ;
+	dprr:hasID 2116 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2115> rdfs:label "Primary Source Reference: #2115" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "App. Sik. 6.2" ;
+	dprr:hasID 2115 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2114> rdfs:label "Primary Source Reference: #2114" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plut. Ant. 1.1" ;
+	dprr:hasID 2114 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2113> rdfs:label "Primary Source Reference: #2113" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. 2.42" ;
+	dprr:hasID 2113 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2032> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/2073> rdfs:label "Primary Source Reference: #2073" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Vell. II 93.1" ;
+	dprr:hasID 2073 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2001> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1957> rdfs:label "Primary Source Reference: #1957" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. VI 2.3" ;
+	dprr:hasID 1957 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1885> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1918> rdfs:label "Primary Source Reference: #1918" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Val. Max. IV 5.3" ;
+	dprr:hasID 1918 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1846> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8880> rdfs:label "Post Assertion Note: #8880" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 728" ;
+	dprr:hasID 8880 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1675> rdfs:label "Post Assertion Note: #1675" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 27.22.1; 30.27.11; Fast. Cap., Degrassi 46f., 120, 448f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod.; on Quinctius, Liv. 27.35.3; and{290} on Marcellus, Cic. Div. 2.77-78; Nep. Hann. 5.3; Ascon. 12 C; Plut. Fab. 19; Marc. 1, 28, 30; Comp. Pel. et Marc. 3.4; App. Hann. 50; Auct. Vir. Ill. 45.7; cf. Grueber, CRRBM 1.567. Both Consuls were assigned provinces against Hannibal in southern Italy (Liv. 27.22.2, and 25.6 and 11). Marcellus, after a delay in order to make his temple of Honos and Virtus satisfy religious rules (see 222, Consuls; Liv. 27.25.7-9; cf. Cic. Verr. 2.4.120-123; ND 2.61; Rep. 1.21; Val. Max. 1.1.8; Plut. Marc. 28; Fort. Rom. 5; Ascon. 12 C; Lact. Div. Inst. 1.20.12; cf. CIL 1\n     .2.608, 609), went to Venusia, while Crispinus tried to attack Locri (Liv. 27.25.11-14; cf. Plut. Marc. 29). While both Consuls were reconnoitering near Petelia, they were caught in an ambush, so that Marcellus was killed and Crispinus mortally wounded (Polyb. 10.32; Liv. 27.26-27; Val. Max. 1.6.9; Plut. Marc. 29; App. Hann. 50; Oros. 4.18.6-8; Zon. 9.9; and on Marcellus, Cic. Tusc. 1.89; Nep. Hann. 5.3; Plin. NH 11.189; Plut. Comp. Pel. et Marc. 3; Fab. 19; Flam. 1; Sil. It. 15.334-380; Eutrop. 3.16; Auct. Vir. Ill. 45.7). Crispinus retreated, warned Salapia and other towns, and sent Marcellus' army to Venusia (Liv. 27.28.2-4, and 29.1-6, and 33.6). Died after appointing a Dictator (Liv. 27.33.6; see below, Dictator). On the burial of Marcellus, see Cic. Sen. 75; Liv. 27.28.1; Val. Max. 5.1, ext. 6; Plut. Marc. 30; Comp. Pel. et Marc. 3; App. Hann. 50; Sil. It. 15.381-396; Auct. Vir. Ill. 45.7-8; Suid. 1.2.999 B; Zon. 9.9. On Quinctius, see Münzer, APF 116f.; Lübker, no. 7." ;
+	dprr:hasID 1675 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1645> rdfs:label "Post Assertion Note: #1645" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Election Liv. 27.6.12 Provinces and armies 27.7.8-12, cf. 22.5-6See Lübker, no. 7." ;
+	dprr:hasID 1645 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1544> rdfs:label "Post Assertion Note: #1544" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Marcellus in Sicily; in charge of the camp outside Syracuse when Hippocrates attacked it (Liv. 25.26.4-7). See Lübker, no. 7." ;
+	dprr:hasID 1544 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1543> rdfs:label "Post Assertion Note: #1543" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Since Crispinus was serving in Sicily he cannot be identified with the knight T. Quinctius Crispinus whom Badius the Campanian challenged to a duel at Capua (Liv. 25.18.4-15; Val. Max. 5.1.3; cf. Münzer, APF 50 and 116; De Sanctis 3.2.256, note 107; 293, note 150; 369f.)." ;
+	dprr:hasID 1543 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1501> rdfs:label "Post Assertion Note: #1501" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Appointed to the place of Ap. Claudius by Marcellus (Liv. 24.39.12-13; see De Sanctis, 3.2.329-334; above, 214, note 6). See Lübker, no. 7." ;
+	dprr:hasID 1501 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2032> rdfs:label "Post Assertion: #2032" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1675> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "T. Quinctius L. f. L. n. Crispinus Pat. (Cin. *12)" ;
+	dprr:hasOfficeXref "Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 2032 ;
+	dprr:hasDateStart -208 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -208 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2001> rdfs:label "Post Assertion: #2001" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8880> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1645> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "T. Quinctius Crispinus Pat. (Cin. *12)" ;
+	dprr:hasOfficeXref "Cos. 208 Capua" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2001 ;
+	dprr:hasDateStart -209 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -209 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1885> rdfs:label "Post Assertion: #1885" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1544> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1543> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "(T. Quinctius) Crispinus Pat. (38)" ;
+	dprr:hasOfficeXref "Cos, 208, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1885 ;
+	dprr:hasDateStart -212 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -212 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1846> rdfs:label "Post Assertion: #1846" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1501> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "T. Quinctius Crispinus Pat. (Cin. *12)" ;
+	dprr:hasOfficeXref "Cos. 208, Pr. 209" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 1846 ;
+	dprr:hasDateStart -213 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -213 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/916> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *12" ;
+	dprr:hasReNumber "38" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN0916 T. Quinctius (38) L. f. L. n. Crispinus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 916 ;
+	dprr:hasHighestOffice "cos. 208" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo -208 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "QUIN0916" ;
+	dprr:hasCognomen "Crispinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/916> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3824> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "42" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1863> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1862> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1861> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1860> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1859> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1858> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1857> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1856> ;
+	dprr:hasPersonName "QUIN3824 L. Quinctius (42)" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 3824 ;
+	dprr:hasHighestOffice "father of? T. Quinctius (44) Flamininus" ;
+	dprr:hasEraTo -226 ;
+	dprr:hasEraFrom -279 ;
+	dprr:hasDprrID "QUIN3824" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3824> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1226> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cin. *13" ;
+	dprr:hasReNumber "37" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "QUIN1226 L. Quinctius (37) Crispinus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 1226 ;
+	dprr:hasHighestOffice "pr. 186" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "QUIN1226" ;
+	dprr:hasCognomen "Crispinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1226> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1100> rdfs:label "Date Information: #1100" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/916> ;
+	dprr:hasValue -208 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "mortally wounded against Carthaginian forces." ;
+	dprr:hasID 1100 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .

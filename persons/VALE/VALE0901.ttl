@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/481> rdfs:label "Tribe Assertion: #481" ;
+	a dprr:TribeAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/901> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/42> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p261. From Antium" ;
+	dprr:hasID 481 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/42> rdfs:label "Tribe: Voturia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Voturia" ;
+	dprr:hasID 42 ;
+	dprr:hasAbbreviation "Vot." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1863> rdfs:label "Primary Source Reference: #1863" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Tac. ann. I 5" ;
+	dprr:hasID 1863 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1791> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1437> rdfs:label "Post Assertion Note: #1437" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The position of Antias as Prefect is suggested by the context and by the phrase qui praeesset. In Liv. 23.34.9 Antias seems to have command of both the ships and the captured envoys, while in Liv. 23.38.7, P. Valerius Flaccus was in charge of the ships. Antias may be a mistake for Flaccus, but it is also possible that Flaccus was sent to see about the ships and Antias to watch the prisoners." ;
+	dprr:hasID 1437 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1436> rdfs:label "Post Assertion Note: #1436" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Rome in charge of the captured envoys of Philip and Hannibal (Liv. 23.34.9, but cf. 38.7)." ;
+	dprr:hasID 1436 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1435> rdfs:label "Post Assertion Note: #1435" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Since L. Valerius Antias was serving under two Valerii, M. Laevinus and P. Flaccus, and because the inhabitants of Antium (cf. the cognomen Antias) were skilled seamen, Münzer (Gent. Val. 60) believes that this Prefect was not a person invented by the historian Valerius Antias." ;
+	dprr:hasID 1435 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1791> rdfs:label "Post Assertion: #1791" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/901> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1437> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1436> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1435> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "? L. Valerius Antlas (99)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/39> ;
+	dprr:hasID 1791 ;
+	dprr:hasDateStart -215 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -215 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/901> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "99" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "VALE0901 L. Valerius (99) Vot. Antias" ;
+	dprr:hasOrigin "Antium" ;
+	dprr:hasNomen "Valerius" ;
+	dprr:hasID 901 ;
+	dprr:hasHighestOffice "praef.? 215" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "VALE0901" ;
+	dprr:hasCognomen "Antias" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/901> .

@@ -1,0 +1,124 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3006> rdfs:label "Relationship Assertion: #3006" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/285> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/114> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/593> rdfs:label "Primary Source Reference: #593" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. off. II 29" ;
+	dprr:hasID 593 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/584> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/515> rdfs:label "Primary Source Reference: #515" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. fin. V 82" ;
+	dprr:hasID 515 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/506> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/463> rdfs:label "Post Assertion Note: #463" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.61.1; Diod. 14.17.1; Fast. Cap. ([- -]) Iulus II; [- -Capit]olin. Barb[at.]; [- -Cinc]innatus II; the others entire, Furius with numeral II); Chr. 354 (Iulo II et Mamertino); Degrassi 28f., 98, 380f. These began the siege of Veii (Liv. 4.61.2)." ;
+	dprr:hasID 463 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/462> rdfs:label "Post Assertion Note: #462" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. gives the number as six, but omits Cincinnatus, Furius, and Aemilius; and has Mamilius for Manlius. On T. Quinctius see 421; he was Capitolini f. (Liv. 4.43.1). For Iulius' cognomen, see 489, note 1 (Tullus, Liv.; Iulus, Fast. Cap.). On Furius, see 413, note 1; the numeral in Livy is tertium. Livy's praenomen for Aemilius, M., is corrected to M'. as in Fast. Cap.; for his cognomen Livy has Mamercus. These magistrates are differently ordered in each of our three chief sources. Livy's order is followed above." ;
+	dprr:hasID 462 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/407> rdfs:label "Post Assertion Note: #407" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 4.43.1; Fast. Cap. ([- - - -Capit]olin(us) Barbatus, N. Fabius [- - - - -]); Chr. 354 (Capitolino et Vivullano), so also Fast. Hyd., and Chr. Pasc.; Degrassi 26f., 96, 376f. Fabius celebrated an ovatio for a success over the Aequi (Liv. 4.43.2; Degrassi 539). A law of this year increased the number of the Quaestors from two to four (Liv. 4.43.12; Tac. Ann. 11.22)." ;
+	dprr:hasID 407 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/406> rdfs:label "Post Assertion Note: #406" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Cn., Liv. The praenomen N. is based on Fast. Cap., and is substituted in Livy at 4.49.1, 57.12, and 58.6 by Sigonius (see Conway and Walters ad locc.). According to Auct. De Praenom. (6) and Festus (174 L), Numerius came into use in the Fabian Gens when the survivor of the Cremera disaster married a daughter of Num. Otacilius, a Samnite of Malventum. The date is doubted by many, including Münzer (APF 71), and lastly by Degrassi (96), who considers Cn. preferable to N. The praenomen otherwise appears mainly in the lines of the Pictores and the Buteones." ;
+	dprr:hasID 406 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/584> rdfs:label "Post Assertion: #584" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/285> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/463> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/462> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Quinctius T. f. L. n. Capitolinus Barbatus Pat. (Cap. *2)" ;
+	dprr:hasOfficeXref "Cos. 421" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 584 ;
+	dprr:hasDateStart -405 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -405 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/506> rdfs:label "Post Assertion: #506" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/285> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/407> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/406> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "T. Quinctius T. f. L. n. Capitolinus Barbatus Pat. (Cap. *2)" ;
+	dprr:hasOfficeXref "Mil. Tr. c. p. 405{70}" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 506 ;
+	dprr:hasDateStart -421 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -421 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/285> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cap. *2" ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN0285 T. Quinctius (25) T. f. L. n. Capitolinus Barbatus" ;
+	dprr:hasOtherNames "Barbatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 285 ;
+	dprr:hasHighestOffice "cos. 421" ;
+	dprr:hasFiliation "T. f. L. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -475 ;
+	dprr:hasDprrID "QUIN0285" ;
+	dprr:hasCognomen "Capitolinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/285> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/114> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "Cap. *1" ;
+	dprr:hasReNumber "24" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "QUIN0114 T. Quinctius (24) (L. f. L. n.) Capitolinus Barbatus" ;
+	dprr:hasOtherNames "Barbatus" ;
+	dprr:hasNomen "Quinctius" ;
+	dprr:hasID 114 ;
+	dprr:hasHighestOffice "cos. 471" ;
+	dprr:hasFiliation "(L. f. L. n.)" ;
+	dprr:hasEraTo -375 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "QUIN0114" ;
+	dprr:hasCognomen "Capitolinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/114> .

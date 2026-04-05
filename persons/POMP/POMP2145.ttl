@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7453> rdfs:label "Post Assertion Note: #7453" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "In MRR 2.120, read (M.) Pomponius (1). The praenomen depends on Willems’ identification of the praef. Eq. With M. Pomponius (10), legate under Pompey in 67 (Senat 1.509, no. 277). In Appian Mith. 79 the readings vary between Pomponius and Pompeius, but Pomponius is sure in Plut. Luc. 15.2. (RS, CP)" ;
+	dprr:hasID 7453 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4525> rdfs:label "Post Assertion Note: #4525" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A cavalry commander in the army of Lucullus who was wounded and captured by Mithridates (Plut. Luc. 15.2; App. Mith. 79). See above, on M. Pompeius." ;
+	dprr:hasID 4525 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5127> rdfs:label "Post Assertion: #5127" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2145> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7453> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4525> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Pomponius (*20)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/129> ;
+	dprr:hasID 5127 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2145> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:hasReNumberOld "*20" ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "POMP2145 M.? Pomponius (1)" ;
+	dprr:hasNomen "Pomponius" ;
+	dprr:hasID 2145 ;
+	dprr:hasHighestOffice "praef. eq. 72" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "POMP2145" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2145> .

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/1427> rdfs:label "Primary Source Reference: #1427" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Plin. n.h. VII 79" ;
+	dprr:hasID 1427 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1371> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8301> rdfs:label "Post Assertion Note: #8301" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Not Vibullius as in MRR 1.189, and 2.634. The form of his name and the title of his command vary greatly in the sources: # in Polyb. 1.7.7, # In App. Samn. 9; Diod. 22.1.2-3; and Dio, fr. 40, 7-12; D. Vibellius in Liv. 28.28.4, and Decius Vibellius in Per. 12; Iubellius, Val. Max. 2.7.15. He belonged to a prominent Campanian family. His title is tribunus militum in Livy 28.28.4 # in Diodorus and # in Appian and Dio), but praefectus in Per. 12, which seems most probably correct. From 282 on he was in command of a garrison set up by Rome in Rhegium at the request of its citizens for protection against Lucanians and other South Italian peoples. It was called a legio Campana (octava legio in Orosius 4.3.3-5), but it was an irregular company of Campanians under a Campanian leader. Like the Mamertines a few years before them in Messana, they massacred the citizens they were to protect and took over the city; they entered into friendly relations with the Mamertines, and attacked other cities, such as Croton and Caulonia, but in the end, in the aftermath of the war with Pyrrhus, they were besieged in Rhegium, captured, and severely punished by the Romans. Vibellius is said to have been blinded and committed suicide (see also Dion. Hal. 20.16). See J. Heurgon, Capoue preromaine 203-206, and The Rise of Rome 212-213; Scullard, A History of the Roman World from 753 to 146 B.C 128; Walbank, Comm. Polyb. 1.52; Cassola, I Gruppi Politici Romani nel III Secolo a. C. 171; the detailed treatment by V. La Bua, \"Regio e Decio Vibellio\", MGR 3, 1971, 63-141. Note also the doubt about the story in E. T. Salmon, Samnium and the Samnites 29, note.[219x]" ;
+	dprr:hasID 8301 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1052> rdfs:label "Post Assertion Note: #1052" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Commanded the garrison at Thurii (Liv. 28.27.4; cf. App. Samn. 9; Dio fr. 40.7-12; see above, Consuls)." ;
+	dprr:hasID 1052 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1371> rdfs:label "Post Assertion: #1371" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/677> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8301> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/1052> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "D. Vibullius (not in *RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/148> ;
+	dprr:hasID 1371 ;
+	dprr:hasDateStart -282 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -282 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/677> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Decius> ;
+	dprr:hasPersonName "VIBE0677 Decius Vibellius (1) Campanus" ;
+	dprr:hasNomen "Vibellius" ;
+	dprr:hasID 677 ;
+	dprr:hasHighestOffice "praef. soc.? 282" ;
+	dprr:hasEraTo -182 ;
+	dprr:hasEraFrom -325 ;
+	dprr:hasDprrID "VIBE0677" ;
+	dprr:hasCognomen "Campanus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/677> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1149> rdfs:label "Date Information: #1149" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/677> ;
+	dprr:hasValue -282 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNotes "suicide after being blinded." ;
+	dprr:hasID 1149 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "A" .

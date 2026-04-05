@@ -1,0 +1,363 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2224> rdfs:label "Status Assertion: #2224" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2224 ;
+	dprr:hasDateStart -177 ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> rdfs:label "Secondary Source: Badian 1990" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Consuls, 179-49 BC" ;
+	dprr:hasID 6 ;
+	dprr:hasBiblio "Badian, E., 'The Consuls, 179–49 BC', Chiron 20 (1990) 371-413." ;
+	dprr:hasAbbreviation "Badian 1990" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1128> rdfs:label "Relationship Assertion Reference: #1128" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1128 ;
+	dprr:hasExtraInfo "Liv. XLII 28.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1126> rdfs:label "Relationship Assertion Reference: #1126" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1126 ;
+	dprr:hasExtraInfo "Liv. XLII 10.10" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/951> rdfs:label "Relationship Assertion: #951" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1128> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1126> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1283> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6014> rdfs:label "Relationship Assertion: #6014" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1284> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3556> rdfs:label "Relationship Assertion: #3556" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1590> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2521> rdfs:label "Relationship Assertion: #2521" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/971> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2520> rdfs:label "Relationship Assertion: #2520" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1601> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2519> rdfs:label "Relationship Assertion: #2519" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/6> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1563> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8936> rdfs:label "Post Assertion Note: #8936" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 734, footnote 87" ;
+	dprr:hasID 8936 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7177> rdfs:label "Post Assertion Note: #7177" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cos. 165. Leg., envoy 170-168. See MRR 1.426, no. b. He was sent late in 170 along with C. Popillius Laenas (18), by the Consul, A. Hostilius Mancinus, to visit the Greek cities and strengthen their attachment to the Roman side, and was honored in a decree of Argos. Both envoys returned early in 169 to Hostilius, then proconsul. See P. Charneux, BCH 81, 1957, 181-202; and on the dating, see below on C. Popillius Laenas (18). Cos. 172. Praetor 168. He was honored by Echinus while in command of the fleet in the war with Perseus (Aepig. 1971, no. 450; see MRR 1.428; J. M. Reynolds, JRS 66, 1976, 178).\n" ;
+	dprr:hasID 7177 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2866> rdfs:label "Post Assertion Note: #2866" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Fast. Cap., Degrassi 50f., 123, 462f.; Fast. Ant., ib. 160f.; Piso fr. 37 in Plin. NH 34.30; Censorin. DN 17.13 (with M. f. for M'. f.); Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. On Popillius, see Lübker no. 3. On the reopening of the mines in Macedonia, see Cassiod." ;
+	dprr:hasID 2866 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2750> rdfs:label "Post Assertion Note: #2750" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Egypt where Popillius by a summary demand compelled Antiochus IV to cease hostilities and retire from Egypt (Polyb. 29.2.1-4, and 27; Liv. 44.19.13, and 29.1-5; 45.10-12.8, and 13.1; cf. Cic. Phil. 8.23; Vell. 1.10.1-2; Val. Max. 6.4.3; Iustin. 34.3.1-4; Dio fr. 68; Zon. 9.25; see Otto, ABAW 11 [1934] 80ff.; Swain, CPh 39 [1944] 89-94). They also ordered Ptolemy to send a hostile Rhodian to Rome (Polyb. 30.9.2). On Popillius, see Lübker no. 3." ;
+	dprr:hasID 2750 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2721> rdfs:label "Post Assertion Note: #2721" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent about the Greek communities by Hostilius to strengthen their attachment to the Roman side (Polyb. 28.3-5; Liv. 43.17.2-9). Popillius was placed in command of Ambracia (43.17.10). See Lübker no. 3." ;
+	dprr:hasID 2721 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2692> rdfs:label "Post Assertion Note: #2692" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prevented King Perseus from capturing the Aetolian town of Stratus by introducing a garrison of 1000 soldiers, who had been wintering at Ambracia (Liv. 43.22.2-3, in 170-169). See Lübker no. 3." ;
+	dprr:hasID 2692 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2609> rdfs:label "Post Assertion Note: #2609" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 42.9.8; Fast. Cap., Degrassi 50f., 123, 458f.; Chr. 354; Fast. Hyd.; Chr. Pasc.; Cassiod. The first plebeian college of Consuls (Fast. Cap.). Both Consuls were assigned to Liguria (Liv. 42.10.10-12). Popillius supported the unjust acts of his brother (Cos. 173) against the Statelliates despite senatorial criticism and decrees (Liv. 42.10.10-12, 21.1-5, 22.1 and 5) and returned late to report on Liguria and hold{411} the elections (42.28.1-3). Aelius instituted the debate on the acts of Popillius but was overawed by his colleague (42.10.9-11). See below, Praetors, on Crassus; and on Popillius, see Lübker, no. 3." ;
+	dprr:hasID 2609 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2550> rdfs:label "Post Assertion Note: #2550" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See above, on Aelius Ligus. See Lübker, no. 3." ;
+	dprr:hasID 2550 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> rdfs:label "Post Assertion Note: #2542" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "On the Praetors of 175, see especially Münzer, APF 218f." ;
+	dprr:hasID 2542 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3505> rdfs:label "Post Assertion: #3505" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2866> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "C. Popillius P. f. P. n. Laenas (*7)" ;
+	dprr:hasOfficeXref "Cos. 172, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3505 ;
+	dprr:hasDateStart -158 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -158 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3345> rdfs:label "Post Assertion: #3345" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2750> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Popillius Laenas (*7)" ;
+	dprr:hasOfficeXref "Cos. 172, 158, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/11> ;
+	dprr:hasID 3345 ;
+	dprr:hasDateStart -168 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -168 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3308> rdfs:label "Post Assertion: #3308" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7177> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2721> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Popillius Laenas (*7)" ;
+	dprr:hasOfficeXref "Cos. 172, 158, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 3308 ;
+	dprr:hasDateStart -169 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -169 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3280> rdfs:label "Post Assertion: #3280" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7177> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2692> ;
+	dprr:hasPosition 4 ;
+	dprr:hasOriginalText "C. Popillius (Laenas) Pat. (*7)" ;
+	dprr:hasOfficeXref "Cos. 172, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/21> ;
+	dprr:hasID 3280 ;
+	dprr:hasDateStart -170 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -170 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3174> rdfs:label "Post Assertion: #3174" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2609> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "C. Popillius P. f. P. n. Laenas (*7)" ;
+	dprr:hasOfficeXref "Cos. 158, Pr. 175 ?" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/3> ;
+	dprr:hasID 3174 ;
+	dprr:hasDateStart -172 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -172 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3095> rdfs:label "Post Assertion: #3095" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1328> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8936> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2550> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2542> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "C. Popillius Laenas (*7)" ;
+	dprr:hasOfficeXref "Cos. 172" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 3095 ;
+	dprr:hasDateStart -175 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -175 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/971> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*4" ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "POPI0971 P. Popillius (25) (Laenas)" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 971 ;
+	dprr:hasHighestOffice "father of? C. Popillius (18) P. f. P. n. Laenas (cos. 172)" ;
+	dprr:hasEraTo -150 ;
+	dprr:hasEraFrom -250 ;
+	dprr:hasDprrID "POPI0971" ;
+	dprr:hasCognomen "(Laenas)" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/971> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1601> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "POPI1601 C. Popillius (17) C. f. Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 1601 ;
+	dprr:hasHighestOffice "pr. 133" ;
+	dprr:hasFiliation "C. f." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "POPI1601" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1601> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1590> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*10" ;
+	dprr:hasReNumber "28, cf. 7, 22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "POPI1590 P. Popillius (28, cf. 7, 22) C. f. P. n. Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasNobilisNotes "Cic. Post Red. Quir. 3.6, Cic. Post Red. Sen. 15.37" ;
+	dprr:hasID 1590 ;
+	dprr:hasHighestOffice "cos. 132" ;
+	dprr:hasFiliation "C. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "POPI1590" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1590> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1563> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*9" ;
+	dprr:hasReNumber "22" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/8> ;
+	dprr:hasPersonName "POPI1563 M. Popillius (22) M. f. P. n. Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 1563 ;
+	dprr:hasHighestOffice "cos. 139" ;
+	dprr:hasFiliation "M. f. P. n." ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -200 ;
+	dprr:hasDprrID "POPI1563" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1563> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1328> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*7" ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "POPI1328 C. Popillius (18) P. f. P. n. Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 1328 ;
+	dprr:hasHighestOffice "cos. 172" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "POPI1328" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1328> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1284> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*5" ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "POPI1284 P. Popillius (26) Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasID 1284 ;
+	dprr:hasHighestOffice "son of? P. Popillius (25) (Laenas)" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "POPI1284" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1284> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1283> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*6" ;
+	dprr:hasReNumber "24" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "POPI1283 M. Popillius (24) P. f. P. n. Laenas" ;
+	dprr:hasNomen "Popillius" ;
+	dprr:hasNobilisNotes "Liv. 44.1.2" ;
+	dprr:hasID 1283 ;
+	dprr:hasHighestOffice "cos. 173" ;
+	dprr:hasFiliation "P. f. P. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "POPI1283" ;
+	dprr:hasCognomen "Laenas" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1283> .

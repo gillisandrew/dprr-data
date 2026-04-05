@@ -1,0 +1,281 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1820> rdfs:label "Status Assertion: #1820" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1820 ;
+	dprr:hasDateStart -45 ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1975> rdfs:label "Relationship Assertion Reference: #1975" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1975 ;
+	dprr:hasExtraInfo "Vell. II 67.4" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1974> rdfs:label "Relationship Assertion Reference: #1974" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1974 ;
+	dprr:hasExtraInfo "Vell. II 67.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7057> rdfs:label "Relationship Assertion: #7057" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4364> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7055> rdfs:label "Relationship Assertion: #7055" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3888> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6912> rdfs:label "Relationship Assertion: #6912" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2477> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6905> rdfs:label "Relationship Assertion: #6905" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4016> ;
+	dprr:hasExtraInfo "Inferred Inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1371> rdfs:label "Relationship Assertion: #1371" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1975> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1974> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2450> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9639> rdfs:label "Post Assertion Note: #9639" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "ref. 453" ;
+	dprr:hasID 9639 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7529> rdfs:label "Post Assertion Note: #7529" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Monetalis. In MRR 2.448, and Index, 602, refer also to Crawford, RRC 1.468, no. 453, 47 B.C. He is addressed by Cicero (Att. 16.16A and B) in 44 as praetor designatus (cf. MRR 2.339). See Shackleton Bailey, Studies 124.[158x]\n" ;
+	dprr:hasID 7529 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6020> rdfs:label "Post Assertion Note: #6020" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prefects (or perhaps Legates) whom Caesar appointed in 45 or 44 to assign land to veterans, Plancus at least in the territory of Buthrotum in Epirus. Cicero wrote urging them, and especially Plancus, to whom the other two may have been subordinate, to spare the lands of the Buthrotians in accordance with an edict of the Consuls based on Caesar's acta (Cic. Att. 16.16A, B, and E, to Plancus, C, and F, to Capito, and D, to Cupiennius; cf. Att. 14.12.1, and 17.2, and 20.3; 15.2.2, and 15.1, and 20.3, and 29.3; 16.2.1, and 4.3; see Grant, From Imperium to Auctoritas 9-11). Münzer (RE) considers them a Triumvirate." ;
+	dprr:hasID 6020 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10514> rdfs:label "Post Assertion Note: #10514" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. des. 44, hence probably pr. 43 (see also MRR 3). Hinard accepts him as pr. 43. If we do not accept him as pr. 43 we have to note he was pr. des. 44." ;
+	dprr:hasID 10514 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9636> rdfs:label "Post Assertion: #9636" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6020> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/132> ;
+	dprr:hasID 9636 ;
+	dprr:hasDateStart -44 ;
+	dprr:hasDateEnd -44 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8867> rdfs:label "Post Assertion: #8867" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9639> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7529> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Plautius Plancus, L." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/155> ;
+	dprr:hasID 8867 ;
+	dprr:hasDateStart -47 ;
+	dprr:hasDateSourceText "47" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -47 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10989> rdfs:label "Post Assertion: #10989" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10514> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 10989 ;
+	dprr:hasDateStart -43 ;
+	dprr:hasDateSourceText "43" ;
+	dprr:hasDateEnd -43 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4364> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "MUNA4364  Munatia (41)" ;
+	dprr:hasNomen "Munatia" ;
+	dprr:hasID 4364 ;
+	dprr:hasHighestOffice "daughter of? L. Munatius (29) Plancus" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MUNA4364" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4364> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4016> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "29" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "MUNA4016 L. Munatius (29) Plancus" ;
+	dprr:hasNomen "Munatius" ;
+	dprr:hasID 4016 ;
+	dprr:hasHighestOffice "father of? Munatia (41)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "MUNA4016" ;
+	dprr:hasCognomen "Plancus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4016> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3888> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "MUNA3888 C. Munatius (26) Plancus" ;
+	dprr:hasNomen "Munatius" ;
+	dprr:hasID 3888 ;
+	dprr:hasHighestOffice "son of? L. Munatius (29) Plancus" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MUNA3888" ;
+	dprr:hasCognomen "Plancus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3888> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3775> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10, cf. Munatius 26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "PLAU3775 L. Plautius (Plotius) (10, cf. Munatius 26) Plancus" ;
+	dprr:hasNomen "Plautius (Plotius)" ;
+	dprr:hasID 3775 ;
+	dprr:hasHighestOffice "pr.? 43" ;
+	dprr:hasEraTo -43 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "PLAU3775" ;
+	dprr:hasCognomen "Plancus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3775> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2477> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "32" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "MUNA2477 T. Munatius (32) Cam. Plancus Bursa" ;
+	dprr:hasOtherNames "Bursa" ;
+	dprr:hasNomen "Munatius" ;
+	dprr:hasNobilisNotes "Cic. Phil. 6.3.10" ;
+	dprr:hasID 2477 ;
+	dprr:hasHighestOffice "tr. pl. 52" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "MUNA2477" ;
+	dprr:hasCognomen "Plancus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2477> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2450> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "30" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1541> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1540> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1539> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1538> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1537> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1536> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1535> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1534> ;
+	dprr:hasPersonName "MUNA2450 L. Munatius (30) L. f. L. n. Cam. Plancus" ;
+	dprr:hasOrigin "Tibur" ;
+	dprr:hasNomen "Munatius" ;
+	dprr:hasNobilisNotes "Macrob. 2.1.8ff (Maevia Galla married to a \"Plancus\", assumed L. Munatius)" ;
+	dprr:hasID 2450 ;
+	dprr:hasHighestOffice "cos. 42" ;
+	dprr:hasFiliation "L. f. L. n." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -89 ;
+	dprr:hasDprrID "MUNA2450" ;
+	dprr:hasCognomen "Plancus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2450> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2084> rdfs:label "Date Information: #2084" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "executed as proscriptus. Hinard 43 no. 103" ;
+	dprr:hasID 2084 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2083> rdfs:label "Date Information: #2083" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3775> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 103" ;
+	dprr:hasID 2083 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

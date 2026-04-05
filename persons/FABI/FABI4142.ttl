@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/760> rdfs:label "Relationship Assertion Reference: #760" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 760 ;
+	dprr:hasExtraInfo "Cic. Tusc. I 81" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1826> rdfs:label "Relationship Assertion Reference: #1826" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1826 ;
+	dprr:hasExtraInfo "Val. Max. III 5.2" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1325> rdfs:label "Relationship Assertion Reference: #1325" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1325 ;
+	dprr:hasExtraInfo "Oros. V 16.8" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/729> rdfs:label "Relationship Assertion: #729" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4142> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/760> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1826> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1594> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1018> rdfs:label "Relationship Assertion: #1018" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4142> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1325> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2379> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4142> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "107" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FABI4142 Q. Fabius (107) Maximus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 4142 ;
+	dprr:hasHighestOffice "son of Q. Fabius (110) Q. Aemiliani f. Q. n. Maximus Allobrogicus (cos. 121)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "FABI4142" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4142> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2379> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isOtherNamesUncertain true ;
+	dprr:hasReNumber "108" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FABI2379 Q. Fabius (108) Q. f. Q. n. Maximus (Sanga?)" ;
+	dprr:hasOtherNames "(Sanga?)" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasID 2379 ;
+	dprr:hasHighestOffice "cos. suff. 45" ;
+	dprr:hasFiliation "Q. f. Q. n." ;
+	dprr:hasEraTo -45 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "FABI2379" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2379> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1594> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "110" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Quintus> ;
+	dprr:hasPersonName "FABI1594 Q. Fabius (110) Q. Aemiliani f. Q. n. Maximus Allobrogicus" ;
+	dprr:hasOtherNames "Allobrogicus" ;
+	dprr:hasNomen "Fabius" ;
+	dprr:hasNobilisNotes "Juv. Sat. 8.1-32" ;
+	dprr:hasID 1594 ;
+	dprr:hasHighestOffice "cos. 121" ;
+	dprr:hasFiliation "Q. Aemiliani f. Q. n." ;
+	dprr:hasEraTo -100 ;
+	dprr:hasEraFrom -164 ;
+	dprr:hasDprrID "FABI1594" ;
+	dprr:hasCognomen "Maximus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1594> .

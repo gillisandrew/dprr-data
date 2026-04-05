@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8373> rdfs:label "Post Assertion Note: #8373" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 42, Legates." ;
+	dprr:hasID 8373 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6784> rdfs:label "Post Assertion Note: #6784" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Termed Leg(atus) on coins of Alexandria Troas. Grant suggests that he held office in Asia under Antony in 42-41 (From Imperium to Auctoritas 246f.). See Magie, Roman Rule in Asia Minor 2.1587." ;
+	dprr:hasID 6784 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6292> rdfs:label "Post Assertion Note: #6292" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "See 42, and 41, Legates. Possibly the Antonian commander in Asia who was driven out by the Parthians (a Plancus is named in Dio 48. 24.3, and 26.3, but cf. above, Promagistrates)." ;
+	dprr:hasID 6292 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6200> rdfs:label "Post Assertion Note: #6200" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Named as a Legate on coins of Lampsacus (a settlement dated in 42-41 by Grant, From Imperium to Auctoritas 244-249, who suggests that Turius was also the organizer of the colonies of Alexandria Troas and Parium; see however, Magie, Roman Rule in Asia Minor 1268, notes 34 and 35). If Grant's suggestion is correct Turius might be the governor of Asia after Philippi for whom Dio (48.24.3; cf. 48.26.3) mistakenly substitutes the name of Plancus (see 4 1, and 39, Promagistrates, on Plancus)." ;
+	dprr:hasID 6200 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7026> rdfs:label "Post Assertion: #7026" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2790> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6292> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "M. Turius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7026 ;
+	dprr:hasDateStart -40 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -40 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6965> rdfs:label "Post Assertion: #6965" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2790> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8373> ;
+	dprr:hasPosition 16 ;
+	dprr:hasOriginalText "M. Turius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/26> ;
+	dprr:hasID 6965 ;
+	dprr:hasDateStart -41 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -41 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/6919> rdfs:label "Post Assertion: #6919" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2790> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6784> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6200> ;
+	dprr:hasPosition 22 ;
+	dprr:hasOriginalText "M. Turius (not in RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 6919 ;
+	dprr:hasDateStart -42 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -42 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2790> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "not in RE" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "TURI2790 M. Turius (not in RE)" ;
+	dprr:hasNomen "Turius" ;
+	dprr:hasID 2790 ;
+	dprr:hasHighestOffice "leg. lieut. 40" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "TURI2790" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2790> .

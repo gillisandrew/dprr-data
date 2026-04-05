@@ -1,0 +1,178 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/29> rdfs:label "Secondary Source: AE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "L'Année épigraphique" ;
+	dprr:hasID 29 ;
+	dprr:hasBiblio "L'Année Épigraphique, published in Revue Archéologique and separately (1888-)" ;
+	dprr:hasAbbreviation "AE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> rdfs:label "Secondary Source: Hinard 1985" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Hinard" ;
+	dprr:hasID 27 ;
+	dprr:hasBiblio "Hinard, F., Les proscriptions de la Rome républicaine. Rome, Italie : Ecole française de Rome ; Paris : Diffusion de Boccard, 1985." ;
+	dprr:hasAbbreviation "Hinard 1985" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/181> rdfs:label "Relationship Assertion Reference: #181" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 181 ;
+	dprr:hasExtraInfo "Caes. b.Afr. 89.1-5" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3028> rdfs:label "Relationship Assertion: #3028" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3050> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4316> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/227> rdfs:label "Relationship Assertion: #227" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3050> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/181> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2965> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9818> rdfs:label "Post Assertion Note: #9818" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/29> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "1991 423. quaestor in Spain 41-27" ;
+	dprr:hasID 9818 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7698> rdfs:label "Post Assertion Note: #7698" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor in Spain, late Republic. Correct the praenomen to L. both in MRR 2.476, and the Index, 582. He should not be identified with the monetalis of Vesci, whose praenomen was C. (TJC)\n" ;
+	dprr:hasID 7698 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6697> rdfs:label "Post Assertion Note: #6697" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor in Spain in the late Republic (CIL 6.1446; cf. C. Livius named on coins of Vesci in Spain, Grant, From Imperium to Auctoritas 379f., who suggests a date ca. 40, and refers to L. Cella, named in Bell. Afr. 89.5, and the [GREEK] mentioned as a subordinate commander in Spain in that year by Appian in BC 5.54)." ;
+	dprr:hasID 6697 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10526> rdfs:label "Post Assertion Note: #10526" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Hinard considers the L. Livii Ocellae as identical to the L. Cellae, a father and son in Africa in 46 spared when captured by Caesar (Cae. Bell. Afr. 89), the L. Iulii Mocillae, a praetorius and his son who after Philippi who were aided by Atticus (Nep. Att. 11.2), and the father as being L. Pella, a praetorius who in 42 was dismissed by Brutus from his service for having embezzled provincials (Plut. Brut. 35). Note also L. Livius Ocella, quaestor in Spain ca. 40, who is identified as the son (CIL 6.1446)" ;
+	dprr:hasID 10526 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7452> rdfs:label "Post Assertion: #7452" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3050> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasProvinceOriginal "Spain" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9818> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7698> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6697> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10526> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "C. Livius L. f. (26) Ocella" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 7452 ;
+	dprr:hasDateStart -41 ;
+	dprr:hasDateSourceText "41-27" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/29> ;
+	dprr:hasDateEnd -27 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4316> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "41" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "LIVI4316  Livia (41) Ocellina" ;
+	dprr:hasNomen "Livia" ;
+	dprr:hasID 4316 ;
+	dprr:hasHighestOffice "daughter of L. Livius (26) L. f. Ocella (q. after 41)" ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -50 ;
+	dprr:hasDprrID "LIVI4316" ;
+	dprr:hasCognomen "Ocellina" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4316> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3050> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "26" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "LIVI3050 L. Livius (26) L. f. Ocella" ;
+	dprr:hasNomen "Livius" ;
+	dprr:hasID 3050 ;
+	dprr:hasHighestOffice "q. after 41" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "LIVI3050" ;
+	dprr:hasCognomen "Ocella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3050> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2965> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isCognomenUncertain true ;
+	dprr:hasReNumber "25" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "LIVI2965 L. Livius (25) Ocella or Pella" ;
+	dprr:hasNomen "Livius" ;
+	dprr:hasID 2965 ;
+	dprr:hasHighestOffice "pr. before 42" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -75 ;
+	dprr:hasDprrID "LIVI2965" ;
+	dprr:hasCognomen "Ocella or Pella" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2965> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/3> rdfs:label "Date Type: attested" ;
+	a dprr:DateType ;
+	dprr:hasName "attested" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/11> rdfs:label "Date Type: proscribed" ;
+	a dprr:DateType ;
+	dprr:hasName "proscribed" ;
+	dprr:hasID 11 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2158> rdfs:label "Date Information: #2158" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3050> ;
+	dprr:hasValue -46 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "Caes. Bell. Afr. 89. In Africa with his father, captured and spared by Caesar." ;
+	dprr:hasID 2158 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/3> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2041> rdfs:label "Date Information: #2041" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3050> ;
+	dprr:hasValue -43 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/27> ;
+	dprr:hasNotes "Hinard 43 no. 80" ;
+	dprr:hasID 2041 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/11> ;
+	dprr:hasDateInterval "S" .

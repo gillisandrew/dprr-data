@@ -1,0 +1,269 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2653> rdfs:label "Status Assertion: #2653" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2653 ;
+	dprr:hasDateStart -71 ;
+	dprr:hasDateEnd -47 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> rdfs:label "Secondary Source: Pina Polo 2012" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Pina Polo" ;
+	dprr:hasID 23 ;
+	dprr:hasBiblio "Pina Polo, F., ‘Veteres candidati: losers in the elections in republican Rome’, in F. Marco Simón et al. (edd.), Vae Victis: perdedores en el mundo antiguo (Barcelona, 2012), 63-82." ;
+	dprr:hasAbbreviation "Pina Polo 2012" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> rdfs:label "Secondary Source: RRC" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Roman Republican Coinage" ;
+	dprr:hasID 10 ;
+	dprr:hasBiblio "Crawford, M. H., Roman Republican Coinage. 2 vols. London 1975." ;
+	dprr:hasAbbreviation "RRC" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9913> rdfs:label "Post Assertion Note: #9913" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "pp. 65-72" ;
+	dprr:hasID 9913 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8784> rdfs:label "Post Assertion Note: #8784" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 753, footnote 407" ;
+	dprr:hasID 8784 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7> rdfs:label "Post Assertion Note: #7" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Since Minucius appears to be a name imported from the consular lists for 497 and 491 and used both here and in the legend of Horatius Cocles (cf. Dio fr. 24.5), it is probable that the P. Veturius of Plutarch's text should be identified with the C. Veturius (Liv. 2.19.1; L. in Cassiod.) who was Consul in 499." ;
+	dprr:hasID 7 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7374> rdfs:label "Post Assertion Note: #7374" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Pr. 66? Aed. cur. 69. In MRR 2.132, refer also to Crawford, RRC 1.418, no. 406. Praetor 66. In MRR 2.152, note that he may possibly be the praetorius Galba (RE no. 48) who was killed by mutinous troops of Caesar in 47 (Plut. Caes. 51.5; cf. Dio 42.52.2). See Shackleton Bailey, CLA 1.289, on Att. 1.1.1; and below, on (Sulpicius) Galba, Pr. by 48.\n" ;
+	dprr:hasID 7374 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5115> rdfs:label "Post Assertion Note: #5115" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "The full list of the college of Pontifices, including the Flamen Martialis and the Flamen Quirinalis (no Flamen Dialis had been inaugurated since the death of Merula in 87) and the Pontifices Minores, as it was composed on September 29, 57, can be reconstructed from Cic. Har. Resp. 12:" ;
+	dprr:hasID 5115 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4755> rdfs:label "Post Assertion Note: #4755" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "A candidate for the consulship of 63 (Cic. Att. 1.1.1; Mur. 17; Cic. Comm. Pet. 7; Ascon. 82 C). If his aedileship is correctly dated in 69, this is the most probable year for his praetorship." ;
+	dprr:hasID 4755 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4748> rdfs:label "Post Assertion Note: #4748" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "2 As in the list of Praetors given in 67, only eight of the nine listed above can have held the praetorship in 66. None can be later; three, Caesonius, Cornificius, and Sulpicius Galba, may be earlier, while the date of Varinius depends upon the correct order of the governors of Asia." ;
+	dprr:hasID 4748 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4625> rdfs:label "Post Assertion Note: #4625" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "11 See Aediles, Curule, on Galba. He is not named in the list in Macrobius but appears on that of Cicero in 57, while the coins inscribed P. Galb. cur. aed., bear symbols of the pontificate. The latest date for his cooptation is therefore 69, and it may be slightly earlier. See note 13." ;
+	dprr:hasID 4625 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4623> rdfs:label "Post Assertion Note: #4623" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "The following persons, named in a list in Macrobius (Sat. 3.13.11) appear to have entered the college of Pontifices after Caesar was inaugurated in 73 and before P. Sulpicius Galba, who entered at the latest in 69 (see L. R. Taylor, AJPh 63 [1942] 385-412):" ;
+	dprr:hasID 4623 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4594> rdfs:label "Post Assertion Note: #4594" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "4 Sulpicius was not in office in 70 when Verres rejected him from the jury (Cic. Verr. 2.1.18), nor is it probable that he held the aedileship after 69, since he was a candidate for the consulship of 63 (Cic. Att. 1.1.1). Bardt (Priester 15), Seidel (FA 54f.), and Münzer (RE) place his aedileship in 71, believing him excluded from 69 by the aedileships of Cicero and Caesonius, but with L. R. Taylor's demonstration that they were almost certainly Aediles of the Plebs (see note 5), this year becomes available for Sulpicius. See Pontifices. The evidence above excludes Sydenharn's dating in 65 (page lxiv of his forthcoming work)." ;
+	dprr:hasID 4594 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8837> rdfs:label "Post Assertion: #8837" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7374> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4594> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Sulpicius Galba, P." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 8837 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5345> rdfs:label "Post Assertion: #5345" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8784> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7374> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4755> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4748> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "? P. Sulpicius Galba Pat. (55, cf. 48)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 5345 ;
+	dprr:hasDateStart -66 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5200> rdfs:label "Post Assertion: #5200" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7374> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4594> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? P. Sulpicius Galba Pat. (55)" ;
+	dprr:hasOfficeXref "Pr. 66? Grueber, CRRBM 1.433." ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/180> ;
+	dprr:hasID 5200 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/10> ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10308> rdfs:label "Post Assertion: #10308" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/23> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9913> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/254> ;
+	dprr:hasID 10308 ;
+	dprr:hasDateStart -63 ;
+	dprr:hasDateSourceText "63" ;
+	dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10146> rdfs:label "Post Assertion: #10146" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/5115> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4625> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4623> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10146 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -48 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/10145> rdfs:label "Post Assertion: #10145" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 10145 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2135> rdfs:label "Person Note: #2135" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/11> ;
+	dprr:hasNoteText "Beteiligung am Gutachten über Ciceros Haus (57)." ;
+	dprr:hasID 2135 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2134> rdfs:label "Person Note: #2134" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "RCC 406/1; Cic. har. resp. 12." ;
+	dprr:hasID 2134 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2133> rdfs:label "Person Note: #2133" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "100er-47 v. Chr." ;
+	dprr:hasID 2133 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2132> rdfs:label "Person Note: #2132" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Patric." ;
+	dprr:hasID 2132 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2131> rdfs:label "Person Note: #2131" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt P 65; MRR 2,134. 206. 3,201; Szemler P 52." ;
+	dprr:hasID 2131 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2130> rdfs:label "Person Note: #2130" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Sulpicius 55/48. NP Sulpicius I.7." ;
+	dprr:hasID 2130 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/2129> rdfs:label "Person Note: #2129" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "3186" ;
+	dprr:hasID 2129 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2179> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "55, cf. 48" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2135> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2134> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2133> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2132> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2131> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2130> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/2129> ;
+	dprr:hasPersonName "SULP2179 P. Sulpicius (55, cf. 48) Galba" ;
+	dprr:hasNomen "Sulpicius" ;
+	dprr:hasNobilisNotes "Cic. Leg. Agr. 2.3.6-7, Cic. Phil. 6.6.17, Q. Cic. Comm. Pet. 7, 12" ;
+	dprr:hasID 2179 ;
+	dprr:hasHighestOffice "pr. 66" ;
+	dprr:hasEraTo -47 ;
+	dprr:hasEraFrom -99 ;
+	dprr:hasDprrID "SULP2179" ;
+	dprr:hasCognomen "Galba" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2179> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/2> rdfs:label "Date Type: death" ;
+	a dprr:DateType ;
+	dprr:hasName "death" ;
+	dprr:hasID 2 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1626> rdfs:label "Date Information: #1626" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasValue -47 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1626 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/2> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1625> rdfs:label "Date Information: #1625" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2179> ;
+	dprr:hasValue -99 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 1625 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "B" .

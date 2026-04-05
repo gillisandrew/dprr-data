@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/185> rdfs:label "Primary Source Reference: #185" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Caes. b.Afr. 89.1-5" ;
+	dprr:hasID 185 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/181> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/143> rdfs:label "Post Assertion Note: #143" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prosecuted Sp. Servilius (Cos. 476) unsuccessfully for his defeat at the Janiculum (Liv. 2.52.6-8; Dion. Hal. 9.28.1-33.3)." ;
+	dprr:hasID 143 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/181> rdfs:label "Post Assertion: #181" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/102> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/143> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Caedicius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 181 ;
+	dprr:hasDateStart -475 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -475 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/102> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CAED0102 L. Caedicius (3)" ;
+	dprr:hasNomen "Caedicius" ;
+	dprr:hasID 102 ;
+	dprr:hasHighestOffice "tr. pl. 475" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -525 ;
+	dprr:hasDprrID "CAED0102" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/102> .

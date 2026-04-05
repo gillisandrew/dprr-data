@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6617> rdfs:label "Post Assertion Note: #6617" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Ai[d. cur.], CIL 1(2).2.807, date uncertain, but in the last century of the Republic. With (Cn.? O)ctavius Cn. f." ;
+	dprr:hasID 6617 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7372> rdfs:label "Post Assertion: #7372" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2993> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6617> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "- (Po)stumius A. f. (not in *RE)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 7372 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateSourceText "last century of the Republic" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -1 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2993> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "not in *RE" ;
+	dprr:hasReNumber "?" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "POST2993 -. Postumius (?) A. f." ;
+	dprr:hasNomen "Postumius" ;
+	dprr:hasID 2993 ;
+	dprr:hasHighestOffice "aed. cur. C1" ;
+	dprr:hasFiliation "A. f." ;
+	dprr:hasEraTo 50 ;
+	dprr:hasEraFrom -150 ;
+	dprr:hasDprrID "POST2993" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2993> .

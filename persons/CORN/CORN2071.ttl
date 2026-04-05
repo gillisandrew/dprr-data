@@ -1,0 +1,174 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7060> rdfs:label "Relationship Assertion: #7060" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2071> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2082> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/7058> rdfs:label "Relationship Assertion: #7058" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2071> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4759> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1771> rdfs:label "Relationship Assertion: #1771" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2071> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3780> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7216> rdfs:label "Post Assertion Note: #7216" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Quaestor pro praetore. He was sent in 75, or more probably in 74, to Cyrene as quaestor pro praetore, or perhaps, like Cato to Cyprus in 58, as pro quaestore pro praetore to settle disturbed conditions in Cyrene (MRR 2.103; Oost, CPh 58, 1963, 11-25; Badian, JRS 55, 1965, 119-126; cf. J. M. Reynolds, JRS 52, 1962, 101). On his lineage, Sumner, Orators 92-93, 133, 141-143, with stemma, shows that the suggestion of Willems and Münzer (RE no. 238) identifying him with Lentulus Spinther (238), Cos. 57, is impossible." ;
+	dprr:hasID 7216 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4415> rdfs:label "Post Assertion Note: #4415" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent as Quaestor, probably with imperium, to the province of Cyrene (Sall. Hist. 2.43M). See 75, note 4." ;
+	dprr:hasID 4415 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4380> rdfs:label "Post Assertion Note: #4380" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Sent to Cyrene (Sall. Hist. 2.43M, in 75, Maurenbrecher, or 74, Münzer, RE)." ;
+	dprr:hasID 4380 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4379> rdfs:label "Post Assertion Note: #4379" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "4 See Münzer (RE) on the question whether he should be identified with P. Cornelius Lentulus Spinther, Cos. 57, and (perhaps or) the P. Lentulus P. f. L. n,. Quaestor, who is named on coins of this period (Grueber, CRRBM 1.406)." ;
+	dprr:hasID 4379 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7739> rdfs:label "Post Assertion: #7739" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2071> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7216> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4415> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "P. Cornelius Lentulus Marcellinus Pat. (231, cf. 238)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/187> ;
+	dprr:hasID 7739 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSourceText "75 or 74" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4969> rdfs:label "Post Assertion: #4969" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2071> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7216> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4380> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4379> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "P. Cornelius Lentulus Marcellinus Pat. (231, cf. 238)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/187> ;
+	dprr:hasID 4969 ;
+	dprr:hasDateStart -75 ;
+	dprr:hasDateSourceText "75 or 74" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -75 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4759> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "411" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CORN4759  Cornelia (411)" ;
+	dprr:hasNomen "Cornelia" ;
+	dprr:hasID 4759 ;
+	dprr:hasHighestOffice "daughter of? P. Cornelius (355) P. f. P. n. Scipio Nasica Serapio (cos. 111)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN4759" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4759> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3780> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "230" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN3780 P. Cornelius (230) Marcelli f. Lentulus Marcellinus" ;
+	dprr:hasOtherNames "Marcellinus" ;
+	dprr:hasOrigin "Sabinum (Farney E11)" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 3780 ;
+	dprr:hasHighestOffice "monetal. 100" ;
+	dprr:hasFiliation "Marcelli f." ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -128 ;
+	dprr:hasDprrID "CORN3780" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3780> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2082> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "228, 24" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gnaeus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/658> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/657> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/656> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/655> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/654> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/653> ;
+	dprr:hasPersonName "CORN2082 Cn. Cornelius (228, 24) P. f. Lentulus Marcellinus" ;
+	dprr:hasOtherNames "Marcellinus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2082 ;
+	dprr:hasHighestOffice "cos. 56" ;
+	dprr:hasFiliation "P. f." ;
+	dprr:hasEraTo -45 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "CORN2082" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2082> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2071> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "231" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN2071 P. Cornelius (231) Lentulus Marcellinus" ;
+	dprr:hasOtherNames "Marcellinus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 2071 ;
+	dprr:hasHighestOffice "q. pro pr. c. 75" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CORN2071" ;
+	dprr:hasCognomen "Lentulus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2071> .

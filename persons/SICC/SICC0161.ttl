@@ -1,0 +1,112 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/361> rdfs:label "Primary Source Reference: #361" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Cael. 34" ;
+	dprr:hasID 361 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/356> .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/294> rdfs:label "Primary Source Reference: #294" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Att. XIII 37.3" ;
+	dprr:hasID 294 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/289> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8207> rdfs:label "Post Assertion Note: #8207" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. pl. 454. In Gellius 2.11.1 the name is Sicinius.\n" ;
+	dprr:hasID 8207 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/278> rdfs:label "Post Assertion Note: #278" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Murdered while serving under the Decemviri against the Sabines (Dion. Hal. 11.25.2; cf. 25-27, and 44.1; Liv. 3.43.1-7, and 51.7; Zon. 7.18)." ;
+	dprr:hasID 278 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/239> rdfs:label "Post Assertion Note: #239" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "According to Dion. Hal. (10.48.2-52.2), he secured the conviction of Romilius but gave up his enmity when the latter proposed an embassy to the Greek cities (see below, Legates; Liv. 3.31.7-8; Plin. NH 7.101; Gell. 2.11.1)." ;
+	dprr:hasID 239 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/356> rdfs:label "Post Assertion: #356" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/161> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/278> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "L. Siccius (Dentatus) (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 356 ;
+	dprr:hasDateStart -449 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -449 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/289> rdfs:label "Post Assertion: #289" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/161> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8207> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/239> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "L. Siccius Dentatus (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 289 ;
+	dprr:hasDateStart -454 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -454 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/161> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "SICC0161 L. Siccius (3) Dentatus 'Achilles Romanus'" ;
+	dprr:hasOtherNames "'Achilles Romanus'" ;
+	dprr:hasNomen "Siccius" ;
+	dprr:hasID 161 ;
+	dprr:hasHighestOffice "tr. pl. 454" ;
+	dprr:hasEraTo -449 ;
+	dprr:hasEraFrom -514 ;
+	dprr:hasDprrID "SICC0161" ;
+	dprr:hasCognomen "Dentatus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/161> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/249> rdfs:label "Date Information: #249" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/161> ;
+	dprr:hasValue -449 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNotes "murdered." ;
+	dprr:hasID 249 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/248> rdfs:label "Date Information: #248" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/161> ;
+	dprr:hasValue -514 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNotes "DH 10.36.3 (aged 58 in 455) 10.36.4 (aged 27 in 487)." ;
+	dprr:hasID 248 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "S" .

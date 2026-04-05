@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> rdfs:label "Secondary Source: Broughton MRR II Appendix 2" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II Appendix 2" ;
+	dprr:hasID 3 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II Appendix 2. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II Appendix 2" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6747> rdfs:label "Post Assertion Note: #6747" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Listed by Klein (1.100) as a Proconsul of Sicily, but office, date, and identity remain uncertain. Named on a coin, seen by Borghese, with the inscription Appul(----)." ;
+	dprr:hasID 6747 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10530> rdfs:label "Post Assertion Note: #10530" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "After the start of the First Punic War?" ;
+	dprr:hasID 10530 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7502> rdfs:label "Post Assertion: #7502" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3095> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6747> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/10530> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "- Appuleius (6)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/197> ;
+	dprr:hasID 7502 ;
+	dprr:hasDateStart -264 ;
+	dprr:hasDateSourceText "date uncertain - must be 1st Punic onwards?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasDateEnd -31 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3095> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "6" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "APPU3095 -. Appuleius (6)" ;
+	dprr:hasNomen "Appuleius" ;
+	dprr:hasID 3095 ;
+	dprr:hasHighestOffice "procos.? (Sicily) date uncertain" ;
+	dprr:hasEraTo 25 ;
+	dprr:hasEraFrom -300 ;
+	dprr:hasDprrID "APPU3095" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3095> .

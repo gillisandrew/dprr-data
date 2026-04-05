@@ -1,0 +1,556 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2464> rdfs:label "Status Assertion: #2464" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2464 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> rdfs:label "Secondary Source: Rüpke 2005" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Rüpke" ;
+	dprr:hasID 28 ;
+	dprr:hasBiblio "Rüpke, J., Fasti sacerdotum : die Mitglieder der Priesterschaften und das sakrale Funktionspersonal römischer, griechischer, orientalischer und jüdisch-christlicher Kulte in der Stadt Rom von 300 v. Chr. bis 499 n. Chr. / von Jörg Rüpke ; unter Beifügung einer CD zur Erschliessung des prosopographischen Materials von Bernd Nüsslein ; unter Mitarbeit von Helmut Pannke. Wiesbaden : Steiner, 2005." ;
+	dprr:hasAbbreviation "Rüpke 2005" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/978> rdfs:label "Relationship Assertion Reference: #978" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 978 ;
+	dprr:hasExtraInfo "Diod. XXXVII 10.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/600> rdfs:label "Relationship Assertion Reference: #600" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 600 ;
+	dprr:hasExtraInfo "Cic. Orat. 213" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1775> rdfs:label "Relationship Assertion Reference: #1775" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1775 ;
+	dprr:hasExtraInfo "Suet. Tib. 3.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1700> rdfs:label "Relationship Assertion Reference: #1700" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1700 ;
+	dprr:hasExtraInfo "Strab. III 4.10 (161 C)" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1670> rdfs:label "Relationship Assertion Reference: #1670" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1670 ;
+	dprr:hasExtraInfo "Sen. dial. VI cons. ad Marc. 16.3" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1476> rdfs:label "Relationship Assertion Reference: #1476" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1476 ;
+	dprr:hasExtraInfo "Plut. Cato min. 1.1" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1392> rdfs:label "Relationship Assertion Reference: #1392" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 1392 ;
+	dprr:hasExtraInfo "Plin. n.h. XXXIII 20" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/6368> rdfs:label "Relationship Assertion: #6368" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1865> ;
+	dprr:hasExtraInfo "Inferred" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/635> rdfs:label "Relationship Assertion: #635" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/978> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/600> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1651> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/4806> rdfs:label "Relationship Assertion: #4806" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1775> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/22> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2520> ;
+	dprr:hasExtraInfo "Autogenerated by add_inverse" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1281> rdfs:label "Relationship Assertion: #1281" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1775> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/22> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4311> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1208> rdfs:label "Relationship Assertion: #1208" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1670> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/5> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4293> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1099> rdfs:label "Relationship Assertion: #1099" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1476> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/6> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/3949> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1054> rdfs:label "Relationship Assertion: #1054" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1700> , <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/1392> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4172> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 31 ;
+	dprr:hasName "brother of" ;
+	dprr:hasID 6 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/5> rdfs:label "Relationship: son of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 21 ;
+	dprr:hasName "son of" ;
+	dprr:hasID 5 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/22> rdfs:label "Relationship: adoptive father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 53 ;
+	dprr:hasName "adoptive father of" ;
+	dprr:hasID 22 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8331> rdfs:label "Post Assertion Note: #8331" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Auct. Vir. Ill. 66.1-2." ;
+	dprr:hasID 8331 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6984> rdfs:label "Post Assertion Note: #6984" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. pl. 91. The evidence for details of his career consists of two not wholly reliable sources: the statements in the brief life, Auct. Vir. Ill. 66, which include the title quaestor in Asia and the phrase aedilis munus magnificentissimum dedit, along with examples of his pride or violence and details about his decline in popularity and death, are part of a late compilation; and the text of an Elogium (ILS 49-Inscr. Ital. 13.3, no. 74), which mentions neither the quaestorship nor the aedileship, depends on copies of along-lost inscription, probably going back to Cyriacus of Ancona, and may be neither complete nor in consecutive order. It is difficult to agree with Sumner (Orators 110-111) that it details all his offices. It is, however, true that in MRR 1.570, note 4, Cicero (Rab. Perd. 21) is incorrectly cited to show that Livius was then a senator and therefore had been a quaestor by or before the censorship of 102-101: he may have been merely one of the iuventus who rallied against Saturninus in 100. For a quaestorship in the East there is at least subsidiary evidence in mention in Pliny of a visit and medication at Anticyra (NH 25.52). For the aedileship which, if true, must come after the quaestorship, there is notice and name of a possible colleague (MRR 2.12, 14, note 1, cf. 473), but Livius still, as Sumner points out, appears to be too young, unless perhaps before Sulla the rules governing the plebeian aedileship were still flexible like those for the tribunate.\n" ;
+	dprr:hasID 6984 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6805> rdfs:label "Post Assertion Note: #6805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/3> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, Inscr. Ital. 13.3.74, probably before 100." ;
+	dprr:hasID 6805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3828> rdfs:label "Post Assertion Note: #3828" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "11 The praenomen M. appears in the text of Macrobius, but Mam. can easily be restored as in Obseq. 58 and in Cic. Cluent. 99. The place early in Macrobius' list excludes the Triumvir M. Aemilius Lepidus. Mamereus' position as Pontifex probably added weight to his appeal to Sulla to spare Caesar (Suet. Iul. 1.2). If he did not immediately succeed his brother Livius Drusus he probably soon succeeded to the place of some patrician. See L. R. Taylor, AJPh 63 (1942) 391-393, 401f., 411." ;
+	dprr:hasID 3828 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3827> rdfs:label "Post Assertion Note: #3827" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, Inscr. Ital. 13.3.74-CIL 12.1, p. 199; Cic. Dom. 120. Succeeded by Mam. Aemilius Lepidus." ;
+	dprr:hasID 3827 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3826> rdfs:label "Post Assertion Note: #3826" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, Inser. Ital. 13.3.74-CIL 12.1, p. 199: eodem anno V vir a. d. a. lege Saufeia. See above, Tribunes of the Plebs." ;
+	dprr:hasID 3826 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3823> rdfs:label "Post Assertion Note: #3823" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, Inscr. Ital. 13.3.74-CIL 12.1, p. 199. See above, Tribunes of the Plebs." ;
+	dprr:hasID 3823 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3814> rdfs:label "Post Assertion Note: #3814" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "9 General references to the tribunate of Livius Drusus occur also in Sisenna fr. 44 Peter; Cic. Planc. 33; De Or. 1.97; 3.2-5; Vat. 23; Senee. Benel. 6.34.2; Plin. NH 25.52; 28.148; 33.141; Gell. 17.15.6; Dio 28, fr. 96 (on his quarrel with Caepio). On the portents that appeared in his tribunate, see Cic. Div. 1.99, quoting Sisenna; 2.54; Plin. INH 8.221; Obseq. 54; Oros. 5.18.3-6." ;
+	dprr:hasID 3814 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3813> rdfs:label "Post Assertion Note: #3813" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected Tribune of the Plebs for 91 (Elogium, Inscr. Ital. 13.3.74CIL 12.1, p. 199; Ascon. 68-69C; Oros. 5.18.1; see note 7), and considered, like his advisers Aemilius Scaurus and Licinius Crassus, to be a conservative and a champion of the Senate (Cic. De Or. 1.24-25, ef. 97; Mil. 16; Dom. 50; Sall. Ad Caes. 2.6.4; Liv. Per. 70; Ascon. 21 C; Tac. Ann. 3.27; Dio 28, fr. 96.1-3; Schol. Bob. 117f., and 177 Stangl), Drusus embarked upon a program of reform, in which he hoped to combine the interests and win the support of several classes: 1. the plebs by land and grain laws, with himself as one the commissioners for the assigning of land (Elogium, as above; Liv. Per. 71 ; Vell. 2.13.2; Flor. 2.5.6; App. BC 1.35-36; Auct. Vir. Ill. 66.4 and 10; Ampel. 19.6; cf. Cichorius, RS 116-125); 2. the senatorial and the equestrian orders, by enrolling 300 knights in the Senate and selecting the juries from the enlarged body, thus having them consist equally of senators and of former knights (Liv. Per. 70, and 71; Flor. 2.5.4; App. BC 1.35; Auct. Vir. Ill. 66.4 and 10). He added a clause making the knights liable to prosecution for bribery (Cic. Cluent. 153; Rab. Post. 16; cf. Off. 2.75; Diod. 37.10.3; App. BC 1.35). He also carried a currency law providing for the addition of one-eighth of bronze to the silver coinage (Plin. NH 33.46). At least the first two measures were carried against the auspices and existing laws, and were later annulled as illegal (Cic. Dom. 41; Leg. 2.14 and 31; Diod. 37.10.3; Val. Max. 9.5.2; Vell. 2.13.2; Ascon. 69C; see above, Consuls). With this program he had hoped to gain support for proposals to extend the Roman citizenship to the Italian allies, but failed, in spite of promises he had made to them (Liv. Per. 71; Vell. 2.14.1; Val. Max. 3.1.2; Plin. NH 25.52; 33.20; Flor. 2.5.6-7, and 6.3-4; App. BC 1.35; Auct. Vir. Ill. 66.11; Oros. 5.18.1; Ampel. 19.6; 26.4; Schol. Bob. 117f. Stangl; cf. Diod. 37.11, the oath of the Italians to Drusus; Val. Max. 3.1.2; Plut. Cat. Min. 2.1-4). He himself revealed to the Consuls a plot of the Allies to murder them at the Latin festival and was accused of complicity (Liv. Per. 71; Flor. 2.6.8-9; Dio 28, fr. 96.4; Auct. Vir. Ill. 66.12), and was soon afterwards murdered by some unknown agent (Semp. Asell. fr. 11 Peter, in Gell. 13.22.8; Auct. Ad Herenn. 4.31; Cic. Mil. 16; ND 3.80-81; Sall. Ad Caes. 2.6.4; Elogium, as above; Liv. Per. 71; Vell. 2.14.1-2; Senec. Ad Marc. 16.4; Brev. Vit. 6.1-2; Plin. NH 28.148; Suet. Tib. 3.2; Flor. 2.6.4; App. BC 1.36; Dio 38.27.3; Auct. Vir. Ill. 66.12-13; Oros. 5.18.7; Schol. Bob. 118 and 177 Stangl; Augustin. CD 3.26)." ;
+	dprr:hasID 3813 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3745> rdfs:label "Post Assertion Note: #3745" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "1 The date, though uncertain, must precede 91 B. C. Drusus' station and magnificence suggests the curule aedileship, but the obscurity of Reminius the plebeian one. Seidel (FA 79) doubts that he held the office at all since it is not mentioned in his Elogium (Inscr. Ital. 13.3.74 -CIL 12. 1, p. 199) and Would have preceded his tribunate, and suggests that the passage in Auct. Vir. Ill. refers to his father. But his quaestorship also is not mentioned, although he could hardly have omitted that (Mommsen, Str. 1.542, note 3, and 544, note 2)." ;
+	dprr:hasID 3745 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3615> rdfs:label "Post Assertion Note: #3615" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served in Asia (Auct. Vir. Ill. 66.3)." ;
+	dprr:hasID 3615 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3614> rdfs:label "Post Assertion Note: #3614" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "Both the aedileship and the quaestorship of Livius are attested by Auct. Vir. Ill., although they are omitted from the Elogium (CIL 1(2).1, p. 199- Inscr. Ital. 13.3.74). The date is uncertain but should precede or coincide with the censorship of 102, since Cicero includes him in the list of senators who fought Saturninus (Rab. Perd. 21)." ;
+	dprr:hasID 3614 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3569> rdfs:label "Post Assertion Note: #3569" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, CIL 1(2).1, p. 199- Inscr. Ital. 13.3.74. See 105, note 7, and 102, Quaestors. The date of his office remains uncertain." ;
+	dprr:hasID 3569 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3546> rdfs:label "Post Assertion Note: #3546" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "See Mommsen, Ges. Schr. 7.517f., and the discussion in RE 1 A. 1273." ;
+	dprr:hasID 3546 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3545> rdfs:label "Post Assertion Note: #3545" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elogium, CIL 1(2).1, p. 199- Inscr. Ital. 13.3.74." ;
+	dprr:hasID 3545 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3544> rdfs:label "Post Assertion Note: #3544" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "The date of the Military Tribunate of Livius remains uncertain. It apparently preceded his office as Xvir stlit. iud. and his election as Quaestor (Auct. Vir. Ill. 66)." ;
+	dprr:hasID 3544 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9960> rdfs:label "Post Assertion: #9960" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 9960 ;
+	dprr:hasDateStart -100 ;
+	dprr:hasDateEnd -92 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9959> rdfs:label "Post Assertion: #9959" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3828> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3827> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/8> ;
+	dprr:hasID 9959 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4469> rdfs:label "Post Assertion: #4469" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3826> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/111> ;
+	dprr:hasID 4469 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4460> rdfs:label "Post Assertion: #4460" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3823> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/91> ;
+	dprr:hasID 4460 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4451> rdfs:label "Post Assertion: #4451" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3814> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3813> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 4451 ;
+	dprr:hasDateStart -91 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -91 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4395> rdfs:label "Post Assertion: #4395" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8331> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6984> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3745> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "? M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/45> ;
+	dprr:hasID 4395 ;
+	dprr:hasDateStart -94 ;
+	dprr:hasDateSourceText "by 94?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -94 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4283> rdfs:label "Post Assertion: #4283" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasProvinceOriginal "Asia" ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6984> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3615> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3614> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 4283 ;
+	dprr:hasDateStart -102 ;
+	dprr:hasDateSourceText "by 102?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -102 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4246> rdfs:label "Post Assertion: #4246" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/6805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3569> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/105> ;
+	dprr:hasID 4246 ;
+	dprr:hasDateStart -101 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -101 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/4228> rdfs:label "Post Assertion: #4228" ;
+	a dprr:PostAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3546> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3545> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/3544> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? M. Livius Drusus (18)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/10> ;
+	dprr:hasID 4228 ;
+	dprr:hasDateStart -105 ;
+	dprr:hasDateSourceText "?" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -105 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1314> rdfs:label "Person Note: #1314" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/13> ;
+	dprr:hasNoteText "Gewichtiger Redner (Cic. Brut. 222)." ;
+	dprr:hasID 1314 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1313> rdfs:label "Person Note: #1313" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/10> ;
+	dprr:hasNoteText "CIL 6,1312 = ILS 49 = Inscr. It. 13,3,74 (Elogium); Cic. dom. 120." ;
+	dprr:hasID 1313 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1312> rdfs:label "Person Note: #1312" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/9> ;
+	dprr:hasNoteText "120er-91 v. Chr." ;
+	dprr:hasID 1312 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1311> rdfs:label "Person Note: #1311" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/8> ;
+	dprr:hasNoteText "Mas. Pleb." ;
+	dprr:hasID 1311 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1310> rdfs:label "Person Note: #1310" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/7> ;
+	dprr:hasNoteText "Bardt P 58; MRR 2,23. 3,126; Szemler P 38." ;
+	dprr:hasID 1310 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1309> rdfs:label "Person Note: #1309" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/6> ;
+	dprr:hasNoteText "RE Livius 18. NP Livius I.7." ;
+	dprr:hasID 1309 .
+<http://romanrepublic.ac.uk/rdf/entity/PersonNote/1308> rdfs:label "Person Note: #1308" ;
+	a dprr:PersonNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/5> ;
+	dprr:hasNoteText "2271" ;
+	dprr:hasID 1308 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4311> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "290" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CLAU4311 -. Claudius (290) Pulcher" ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 4311 ;
+	dprr:hasHighestOffice "son of? C. Claudius (302) Ap. f. C. n. Pulcher (cos. 92)" ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CLAU4311" ;
+	dprr:hasCognomen "Pulcher" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4311> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4293> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "409" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "CORN4293  Cornelia (409)" ;
+	dprr:hasNomen "Cornelia" ;
+	dprr:hasID 4293 ;
+	dprr:hasHighestOffice "married to M. Livius (17) C. f. M. n. Drusus (cos. 112)" ;
+	dprr:hasEraTo -75 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "CORN4293" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4293> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4172> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "99" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "SERV4172  Servilia (99)" ;
+	dprr:hasNomen "Servilia" ;
+	dprr:hasID 4172 ;
+	dprr:hasHighestOffice "daughter of Q. Servilius (49) Cn. f. Cn. n. Caepio (cos. 106)" ;
+	dprr:hasEraTo -25 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SERV4172" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4172> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/3949> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "35" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "LIVI3949  Livia (35)" ;
+	dprr:hasNomen "Livia" ;
+	dprr:hasID 3949 ;
+	dprr:hasHighestOffice "daughter of M. Livius (17) C. f. M. n. Drusus (cos. 112)" ;
+	dprr:hasEraTo -92 ;
+	dprr:hasEraFrom -175 ;
+	dprr:hasDprrID "LIVI3949" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/3949> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2520> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LIVI2520 M. Livius (19) Drusus (Claudianus)" ;
+	dprr:hasOtherNames "(Claudianus)" ;
+	dprr:hasNomen "Livius" ;
+	dprr:hasNobilisNotes "Vell. 2.75.3" ;
+	dprr:hasID 2520 ;
+	dprr:hasHighestOffice "pr.? 50" ;
+	dprr:hasEraTo -42 ;
+	dprr:hasEraFrom -100 ;
+	dprr:hasDprrID "LIVI2520" ;
+	dprr:hasCognomen "Drusus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2520> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1865> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "80" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Mamercus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/195> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/194> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/193> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/192> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/191> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/190> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/189> ;
+	dprr:hasPersonName "AEMI1865 Mam. Aemilius (80) Mam. f. Lepidus Livianus" ;
+	dprr:hasOtherNames "Livianus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 1865 ;
+	dprr:hasHighestOffice "cos. 77" ;
+	dprr:hasFiliation "Mam. f." ;
+	dprr:hasEraTo -59 ;
+	dprr:hasEraFrom -119 ;
+	dprr:hasDprrID "AEMI1865" ;
+	dprr:hasCognomen "Lepidus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1865> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1756> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "18" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1314> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1313> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1312> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1311> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1310> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1309> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/1308> ;
+	dprr:hasPersonName "LIVI1756 M. Livius (18) M. f. C. n. Drusus" ;
+	dprr:hasNomen "Livius" ;
+	dprr:hasNobilisNotes "Cic. Planc. 13.33-14.33, Cic. Rab. Perd. 7.21, Cic. Rab. Post. 7.16, Cic. Mil. 7.16, Vell. 2.13.1, Juv. Sat. 8.1-32, Schol. Bob. Arch. 177 Stangl" ;
+	dprr:hasID 1756 ;
+	dprr:hasHighestOffice "aed.? before 93" ;
+	dprr:hasFiliation "M. f. C. n." ;
+	dprr:hasEraTo -91 ;
+	dprr:hasEraFrom -119 ;
+	dprr:hasDprrID "LIVI1756" ;
+	dprr:hasCognomen "Drusus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1756> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1651> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "17" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "LIVI1651 M. Livius (17) C. f. M. n. Drusus" ;
+	dprr:hasNomen "Livius" ;
+	dprr:hasID 1651 ;
+	dprr:hasHighestOffice "cos. 112" ;
+	dprr:hasFiliation "C. f. M. n." ;
+	dprr:hasEraTo -109 ;
+	dprr:hasEraFrom -155 ;
+	dprr:hasDprrID "LIVI1651" ;
+	dprr:hasCognomen "Drusus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1651> .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/4> rdfs:label "Date Type: death - violent" ;
+	a dprr:DateType ;
+	dprr:hasName "death - violent" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/DateType/1> rdfs:label "Date Type: birth" ;
+	a dprr:DateType ;
+	dprr:hasName "birth" ;
+	dprr:hasID 1 .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/335> rdfs:label "Date Information: #335" ;
+	a dprr:DateInformation ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasValue -91 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNotes "murdered." ;
+	dprr:hasID 335 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+	dprr:hasDateInterval "S" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/334> rdfs:label "Date Information: #334" ;
+	a dprr:DateInformation ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1756> ;
+	dprr:hasValue -119 ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/28> ;
+	dprr:hasID 334 ;
+	dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+	dprr:hasDateInterval "B" .

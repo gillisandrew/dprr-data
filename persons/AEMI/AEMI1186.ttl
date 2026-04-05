@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3701> rdfs:label "Relationship Assertion: #3701" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1186> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1645> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2231> rdfs:label "Post Assertion Note: #2231" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under L. Aemilius Regillus in command of the squadron sent to the Hellespont (Liv. 37.31.6)." ;
+	dprr:hasID 2231 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2689> rdfs:label "Post Assertion: #2689" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1186> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2231> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "? L. Aemilius Scaurus Pat. (138)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 2689 ;
+	dprr:hasDateStart -190 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -190 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1645> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:isNobilis true ;
+	dprr:hasReNumber "140" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonNote <http://romanrepublic.ac.uk/rdf/entity/PersonNote/138> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/137> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/136> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/135> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/134> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/133> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/132> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/131> , <http://romanrepublic.ac.uk/rdf/entity/PersonNote/130> ;
+	dprr:hasPersonName "AEMI1645 M. Aemilius (140) M. f. L. n. Cam. Scaurus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasNobilisNotes "Cic. Mur. 16, Sall. Jug. 15.4, 28.4-5, Flor. Epit. 2.5.5, Ascon. Scaur. 22C, Amm. Marc. 22.15.24 (confusing him with son, pr 56), Auct. Vir. Ill. 72.1, Schol. Bob. Arch. 176 Stangl" ;
+	dprr:hasID 1645 ;
+	dprr:hasHighestOffice "cos. 115" ;
+	dprr:hasFiliation "M. f. L. n." ;
+	dprr:hasEraTo -88 ;
+	dprr:hasEraFrom -162 ;
+	dprr:hasDprrID "AEMI1645" ;
+	dprr:hasCognomen "Scaurus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1645> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1186> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "138" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "AEMI1186 L. Aemilius (138) Scaurus" ;
+	dprr:hasNomen "Aemilius" ;
+	dprr:hasID 1186 ;
+	dprr:hasHighestOffice "grandfather of? M. Aemilius (140) M. f. L. n. Cam. Scaurus (cos. 115)" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "AEMI1186" ;
+	dprr:hasCognomen "Scaurus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1186> .

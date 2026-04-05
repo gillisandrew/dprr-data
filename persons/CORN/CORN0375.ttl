@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/679> rdfs:label "Primary Source Reference: #679" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Phil. XIII 49" ;
+	dprr:hasID 679 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/670> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/495> rdfs:label "Post Assertion Note: #495" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.25.2; Diod. 14.97.1; 15.2.1; Fast. Cap. ([- -Camillu]s III); Chr. 354 (Camello III et Publicola); Degrassi 30f., 99f., 386f. Camillus reduced Falerii to surrender (Liv. 5.26.3-27.15; Dion. Hal. 13.1-2; Val. Max. 6.5.1; Plut. Cam. 9-11; Frontin. Str. 4.4.1; Polyaen. 8.7; Dio fr. 24; Eutrop. 1.20; Auct. Vir. Ill. 23; Zon. 7.21; cf. Diod. 14.96.5, and 98.5); while Aemilius and Postumius operated against the Aequi (Liv. 5.28.6-13; cf. Diod. 14.98.5). On Valerius, see Münzer, Gent. Val. 36, no. 6." ;
+	dprr:hasID 495 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/494> rdfs:label "Post Assertion Note: #494" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "According to Diod. There were only three Military Tribunes c. p. (14.97.1; and 15.2.1). On Medullinus' many magistracies, see RE no. 65; 413, note 1. Aemilius' name is completed from Fast. Cap. and Chr. 354 on 391. Postumius is probably a Censor of 380; see that year. Cornelius, now holding{91} the magistracy for the second time (Liv.), may be Scipio (RE 328; Mil. Tr. c. p. 395) or Cossus (120; Mil. Tr. c. p. 395) or Maluginensis (252; Mil. Tr. c. p. 397), preferably the last, though there are several examples in these times of persons who held this office in successive years." ;
+	dprr:hasID 494 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/491> rdfs:label "Post Assertion Note: #491" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 5.24.1; Diod. 14.94.1; Fast. Cap. (see note 1); Chr. 354 (Cosso et Medulliano); Degrassi 30f., 99, 384f. Valerius and Servilius made Capena sue for peace (Liv. 5.24.3), while the two Cornelii ravaged Faliscan territory (Liv. 5.24.2-3; cf. Diod. 14.96.5). On Valerius, see Münzer, Gent. Val. 49, no. 47." ;
+	dprr:hasID 491 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/490> rdfs:label "Post Assertion Note: #490" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "The names are preserved as follows in Fast. Cap.: [- - - -] Co[s]sus; [- - - -] Scipio; [- - -Ambu]stus III; L. Fu[rius- - - -]. The names of the two Cornelii have been confused in the Mss of Diod., see Degrassi 385. On Scipio, see 394, note 1. K. Fabius is listed in Livy as iterum but in Fast. Cap. as III: see 404 and 401." ;
+	dprr:hasID 490 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/9556> rdfs:label "Post Assertion: #9556" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/375> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/495> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/494> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 9556 ;
+	dprr:hasDateStart -394 ;
+	dprr:hasDateEnd -394 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/670> rdfs:label "Post Assertion: #670" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/375> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/491> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/490> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "P. Cornelius P. f. A. n. Cossus Pat. (120)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/34> ;
+	dprr:hasID 670 ;
+	dprr:hasDateStart -395 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -395 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/375> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "120" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "CORN0375 P. Cornelius (120) P. f. A. n. Cossus" ;
+	dprr:hasNomen "Cornelius" ;
+	dprr:hasID 375 ;
+	dprr:hasHighestOffice "tr. mil. c. p.? 394" ;
+	dprr:hasFiliation "P. f. A. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "CORN0375" ;
+	dprr:hasCognomen "Cossus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/375> .

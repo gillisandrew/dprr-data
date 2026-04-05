@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/40> rdfs:label "Tribe Assertion: #40" ;
+	a dprr:TribeAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2134> ;
+	dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/16> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> ;
+	dprr:hasNotes "p203. S.C. de Oropiis. Sherk 1969, 133-38, no. 23, 1984, 85-7" ;
+	dprr:hasID 40 .
+<http://romanrepublic.ac.uk/rdf/entity/Tribe/16> rdfs:label "Tribe: Lemonia" ;
+	a dprr:Tribe ;
+	dprr:hasName "Lemonia" ;
+	dprr:hasID 16 ;
+	dprr:hasAbbreviation "Lem." .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1044> rdfs:label "Status Assertion: #1044" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2134> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 1044 ;
+	dprr:hasDateStart -73 ;
+	dprr:hasDateEnd -73 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> rdfs:label "Secondary Source: Broughton MRR III" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. III" ;
+	dprr:hasID 5 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. III. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR III" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/24> rdfs:label "Secondary Source: Taylor 1960" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "LRT" ;
+	dprr:hasID 24 ;
+	dprr:hasBiblio "Taylor, L. R., The voting districts of the Roman Republic : the thirty-five urban and rural tribes. Rome : American Academy, 1960." ;
+	dprr:hasAbbreviation "Taylor 1960" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> rdfs:label "Post Assertion Note: #9267" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "The list of senators in a dated inscription of this year (SIG(3) 747) provides good evidence for the names of a group of ex-magistrates, although it is not wholly conclusive because of the additions to the Senate by the reforms of Sulla." ;
+	dprr:hasID 9267 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7123> rdfs:label "Post Assertion Note: #7123" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Senator in 73 (see MRR 2.115). This praenomen, said to have been banned among the patrician Claudii, suggests that he was perhaps father of L. Claudius, rex sacrorum in 57 (21) who had become a member of the college of pontifices ca. 62-60. The name of the preceding rex sacrorum is lost in the lacuna in Macrob. Sat. 3.13.11, but he entered office between 74 and 69. L. R. Taylor (VDRR 203) has suggested that since the succession was often in the same family, there may be here a branch of the patrician Claudii kept for this priesthood which barred one from a further political career. If so, the Claudius listed above owed his place in the Senate and in the consilium of 73, not to a quaestorship but to his priesthood.\n" ;
+	dprr:hasID 7123 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4492> rdfs:label "Post Assertion Note: #4492" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Cf. Cic. Verr. 2.1.71; Brut. 264." ;
+	dprr:hasID 4492 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8332> rdfs:label "Post Assertion: #8332" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateStartUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2134> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9267> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7123> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4492> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Claudius L. f. Lem. Pat. (23)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/5> ;
+	dprr:hasID 8332 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSourceText "before 73" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/8331> rdfs:label "Post Assertion: #8331" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2134> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7123> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "L. Claudius L. f. Lem. (23)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/9> ;
+	dprr:hasID 8331 ;
+	dprr:hasDateStart -74 ;
+	dprr:hasDateSourceText "entering office between 74 and 69" ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasDateEnd -74 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2134> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "23" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> ;
+	dprr:hasPersonName "CLAU2134 L. Claudius (23) L. f. Lem." ;
+	dprr:hasNomen "Claudius" ;
+	dprr:hasID 2134 ;
+	dprr:hasHighestOffice "q.? before 73" ;
+	dprr:hasFiliation "L. f." ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "CLAU2134" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2134> .

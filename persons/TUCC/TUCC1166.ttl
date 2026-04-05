@@ -1,0 +1,153 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2101> rdfs:label "Status Assertion: #2101" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateStartUncertain true ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2101 ;
+	dprr:hasDateStart -192 ;
+	dprr:hasDateEnd -186 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8921> rdfs:label "Post Assertion Note: #8921" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/7> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "p. 731, footnote 55" ;
+	dprr:hasID 8921 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2315> rdfs:label "Post Assertion Note: #2315" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Elected at the end of the year to add colonists to the deserted colonies of Sipontum and Buxentum (Liv. 39.23.3-4)." ;
+	dprr:hasID 2315 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2285> rdfs:label "Post Assertion Note: #2285" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Continued as Propraetor in Bruttium (Liv. 38.36.1)." ;
+	dprr:hasID 2285 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2258> rdfs:label "Post Assertion Note: #2258" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Propraetor in Bruttium and Apulia (Liv. 37.50.13; 38.36.1)." ;
+	dprr:hasID 2258 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2205> rdfs:label "Post Assertion Note: #2205" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 37.2.6." ;
+	dprr:hasID 2205 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2201> rdfs:label "Post Assertion Note: #2201" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/3> ;
+	dprr:hasNoteText "Elections: Liv. 36.45.9 Provinces and armies Liv. 37.2.1 and 8-10." ;
+	dprr:hasID 2201 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2155> rdfs:label "Post Assertion Note: #2155" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Liv. 35.41.9-10. Levied fines, which they used for public buildings." ;
+	dprr:hasID 2155 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2804> rdfs:label "Post Assertion: #2804" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2315> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Tuccius (5)" ;
+	dprr:hasOfficeXref "Pr. 190" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/73> ;
+	dprr:hasID 2804 ;
+	dprr:hasDateStart -186 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -186 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2758> rdfs:label "Post Assertion: #2758" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2285> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "M. Tuccius (5)" ;
+	dprr:hasOfficeXref "Pr. 190" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 2758 ;
+	dprr:hasDateStart -188 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -188 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2719> rdfs:label "Post Assertion: #2719" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2258> ;
+	dprr:hasPosition 7 ;
+	dprr:hasOriginalText "M. Tuccius (5)" ;
+	dprr:hasOfficeXref "Pr. 190" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/199> ;
+	dprr:hasID 2719 ;
+	dprr:hasDateStart -189 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -189 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2663> rdfs:label "Post Assertion: #2663" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/8921> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2205> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2201> ;
+	dprr:hasPosition 6 ;
+	dprr:hasOriginalText "M. Tuccius (5)" ;
+	dprr:hasOfficeXref "Apulia and Bruttium" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/42> ;
+	dprr:hasID 2663 ;
+	dprr:hasDateStart -190 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -190 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2602> rdfs:label "Post Assertion: #2602" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1166> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/2155> ;
+	dprr:hasPosition 2 ;
+	dprr:hasOriginalText "M. Tuccius (5)" ;
+	dprr:hasOfficeXref "Pr. 190" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/43> ;
+	dprr:hasID 2602 ;
+	dprr:hasDateStart -192 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -192 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1166> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "5" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "TUCC1166 M. Tuccius (5)" ;
+	dprr:hasNomen "Tuccius" ;
+	dprr:hasID 1166 ;
+	dprr:hasHighestOffice "pr. 190" ;
+	dprr:hasEraTo -125 ;
+	dprr:hasEraFrom -225 ;
+	dprr:hasDprrID "TUCC1166" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1166> .

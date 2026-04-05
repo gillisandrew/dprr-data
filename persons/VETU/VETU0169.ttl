@@ -1,0 +1,161 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> rdfs:label "Secondary Source: Broughton MRR I" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. I" ;
+	dprr:hasID 1 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. I. Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR I" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> rdfs:label "Secondary Source: RE" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "RE" ;
+	dprr:hasID 15 ;
+	dprr:hasBiblio "Pauly, A.,Wissova, G., & Kroll, W. (eds.). Real-Encyclopädie der classischen Alter- tumswissenschaft. Stuttgart & Munich, 1893–" ;
+	dprr:hasAbbreviation "RE" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3901> rdfs:label "Relationship Assertion: #3901" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/169> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/25> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/364> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2694> rdfs:label "Relationship Assertion: #2694" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/169> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/19> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/7> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2693> rdfs:label "Relationship Assertion: #2693" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/169> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/15> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/297> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/3> rdfs:label "Relationship: father of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 51 ;
+	dprr:hasName "father of" ;
+	dprr:hasID 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/25> rdfs:label "Relationship: grandfather of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 61 ;
+	dprr:hasName "grandfather of" ;
+	dprr:hasID 25 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/19> rdfs:label "Relationship: grandson of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 11 ;
+	dprr:hasName "grandson of" ;
+	dprr:hasID 19 .
+<http://romanrepublic.ac.uk/rdf/entity/PrimarySourceReference/317> rdfs:label "Primary Source Reference: #317" ;
+	a dprr:PrimarySourceReference ;
+	dprr:hasNoteText "Cic. Balb. 57" ;
+	dprr:hasID 317 ;
+	dprr:forAssertion <http://romanrepublic.ac.uk/rdf/entity/PostAssertion/312> .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/260> rdfs:label "Post Assertion Note: #260" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Prepared and caused the enactment of ten tables of laws (Cic. Rep. 2.61; Liv. 3.33.1-36.2; Diod. 12.23.1; Dion. Hal. 10.56.1-2; Tac. Ann. 3.27; Gell. 11.18.6; 17.21.15; 20.1; Dig. 1.2.2.3-4 and 24; Zon. 7.18)." ;
+	dprr:hasID 260 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/254> rdfs:label "Post Assertion Note: #254" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "In Fast. Cap. and Diod. (12.23.1) Veturius' praenomen is Sp., in Livy (3.33.3) it is L., and in Dion. Hal. (10.56.3) it is T. If all were consulars, only T. (Cos. 462) and C. (Cos. 455) can be considered, and the filiation of C. disagrees with that in Fast. Cap. (P.[f.- ]). So also does that of T., if the suggestion of Henzen (T. f.; see 462) be kept. See Degrassi 94." ;
+	dprr:hasID 254 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/252> rdfs:label "Post Assertion Note: #252" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/4> ;
+	dprr:hasNoteText "Diod. preserves all or part of eight names, omitting Sestius and Curiatius, Fast. Cap. all or part of six with space for the rest, those of Sestius, Curiatius, Romilius and Postumius, which are supplied from the information on their consulships (Degrassi 26f., 94, 364f.). According to Dion. Hal. (10.56.2) they were all consulars, but this principle was not applied consistently in Livy or Fast. Cap. See notes 3 and 4." ;
+	dprr:hasID 252 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/312> rdfs:label "Post Assertion: #312" ;
+	a dprr:PostAssertion ;
+	dprr:isUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/169> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/260> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/254> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/252> ;
+	dprr:hasPosition 3 ;
+	dprr:hasOriginalText "Sp. Veturius Crassus Cicurinus Pat. (15)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/33> ;
+	dprr:hasID 312 ;
+	dprr:hasDateStart -451 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+	dprr:hasDateEnd -451 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/7> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPraenomenUncertain true ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "16" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Publius> ;
+	dprr:hasPersonName "VETU0007 P. (or C.) Veturius (16) Geminus Cicurinus" ;
+	dprr:hasOtherNames "Cicurinus" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 7 ;
+	dprr:hasHighestOffice "cos. 499" ;
+	dprr:hasEraTo -425 ;
+	dprr:hasEraFrom -550 ;
+	dprr:hasDprrID "VETU0007" ;
+	dprr:hasCognomen "Geminus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/7> ;
+	dprr:hasAltPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/364> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*8" ;
+	dprr:hasReNumber "13" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Marcus> ;
+	dprr:hasPersonName "VETU0364 M. Veturius (13) Ti. f. Sp. n. Crassus Cicurinus" ;
+	dprr:hasOtherNames "Cicurinus" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 364 ;
+	dprr:hasHighestOffice "grandson of? Sp. Veturius (15) Crassus Cicurinus (Xvir cons. imp. leg. scrib. 451)" ;
+	dprr:hasFiliation "Ti. f. Sp. n." ;
+	dprr:hasEraTo -325 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "VETU0364" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/364> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/297> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumberOld "*7" ;
+	dprr:hasReNumber "14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "VETU0297 Sp. Veturius (14) Sp. f. Sp. n. Crassus Cicurinus" ;
+	dprr:hasOtherNames "Cicurinus" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 297 ;
+	dprr:hasHighestOffice "tr. mil. c. p.? 417" ;
+	dprr:hasFiliation "Sp. f. Sp. n." ;
+	dprr:hasEraTo -350 ;
+	dprr:hasEraFrom -450 ;
+	dprr:hasDprrID "VETU0297" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/297> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/169> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isPatrician true ;
+	dprr:hasReNumber "15" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Spurius> ;
+	dprr:hasPersonName "VETU0169 Sp. Veturius (15) Crassus Cicurinus" ;
+	dprr:hasOtherNames "Cicurinus" ;
+	dprr:hasNomen "Veturius" ;
+	dprr:hasID 169 ;
+	dprr:hasHighestOffice "Xvir cons. imp. leg. scrib. 451" ;
+	dprr:hasEraTo -400 ;
+	dprr:hasEraFrom -500 ;
+	dprr:hasDprrID "VETU0169" ;
+	dprr:hasCognomen "Crassus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/169> .

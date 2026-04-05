@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/2646> rdfs:label "Status Assertion: #2646" ;
+	a dprr:StatusAssertion ;
+	dprr:isDateEndUncertain true ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2167> ;
+	dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> ;
+	dprr:hasID 2646 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Status/2> rdfs:label "Status: senator" ;
+	a dprr:Status ;
+	dprr:hasName "senator" ;
+	dprr:hasID 2 ;
+	dprr:hasAbbreviation "sen." .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/21> rdfs:label "Secondary Source: DPRR Team" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "DPRR Team" ;
+	dprr:hasID 21 ;
+	dprr:hasBiblio "DPRR Team" ;
+	dprr:hasAbbreviation "DPRR Team" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> rdfs:label "Post Assertion Note: #9805" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/25> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "p. 257-63" ;
+	dprr:hasID 9805 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7323> rdfs:label "Post Assertion Note: #7323" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Tr. Pl. 70. R. E. Smith (CQ 7, 1957, 82-85) suggests that 70-69 was the date of the passage of the Lex Plautia agraria and that the law was intended to reward Pompey's veterans of the war with Sertorius. This Plautius may be the A. Plautius or Plotius (no. 8) who served as a legatus under Pompey in 67, but see MRR 2.149, and 151, note 17. See also Wiseman, NM 251-252, nos. 322-324; Shackleton Bailey, CLA 1.333.\n" ;
+	dprr:hasID 7323 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4573> rdfs:label "Post Assertion Note: #4573" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Carried, with Caesar's support, a law to restore citizenship to followers of Lepidus who had fled to Sertorius (Suet. Iul. 5; Gell. 13.3.5; Dio 44.47.4; cf. FOR 3.25, and 112). Possibly the author of a Lex Plotia Agraria (Cic. Att. 1.18.6; but see 89, Tribunes of the Plebs; Niccolini, FTP 436), and also of the Lex Plautia de vi (Cic. Cael. 70; Mil. 35; Har. Resp. 15; Fam. 8.8.1; QF 2.3.5; Att. 2.24.4; Sall. Cat. 31.4; Ps.-Sall. In Cic. 2.3; Ascon. 55 C; Quintil. Inst. Or. 9.3.56; Dig. 41.3.33.2; Ind. 2.6.2; Schol. Bob. 84 Stangl; see Niccolini, FTP 252f.)." ;
+	dprr:hasID 4573 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4572> rdfs:label "Post Assertion Note: #4572" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/2> ;
+	dprr:hasNoteText "4 Different dates have been suggested for the law of Plautius by Mommsen (77), Rotondi (73), Niccolini (69), E. Meyer, Denter, and Kübler (70): see FOR 3.25, note 4, where discussions are cited. The decisive points are: first, it must be placed in or after Caesar's military tribunate (71) and before his quaestorship (69; Suet. Iul. 5); second, it cannot be placed in the same year as the Lex Antonia de Termessensibus, when all the Tribunes are known; and third, as a tribunician bill it should probably follow the restoration of the powers of the Tribunes in 70. The Lex Antonia is excluded from 71 and 69 by the names of known Tribunes, and should probably be later than 70 in any case. The conditions of the problem are best met by dating the Lex Plautia in 70, the Lex Antonia in 68, while Caesar's military tribunate has been dated on other grounds to 71 and his quaestorship to 69 (see L. R. Taylor, CPh 36 [1941] 121, note 32)." ;
+	dprr:hasID 4572 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5176> rdfs:label "Post Assertion: #5176" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2167> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/9805> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7323> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4573> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4572> ;
+	dprr:hasPosition 1 ;
+	dprr:hasOriginalText "Plautius (3)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/17> ;
+	dprr:hasID 5176 ;
+	dprr:hasDateStart -70 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2167> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "3" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "PLAU2167 -. Plautius (3)" ;
+	dprr:hasNomen "Plautius" ;
+	dprr:hasID 2167 ;
+	dprr:hasHighestOffice "tr. pl. 70" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "PLAU2167" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2167> .

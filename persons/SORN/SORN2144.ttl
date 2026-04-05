@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> rdfs:label "Secondary Source: Broughton MRR II" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "The Magistrates of the Roman Republic, Vol. II" ;
+	dprr:hasID 2 ;
+	dprr:hasBiblio "Broughton, T. R. S., The Magistrates of the Roman Republic, Vol. II (99 B.C.-31 B.C.). Published by the American Philological Association. New York 1952." ;
+	dprr:hasAbbreviation "Broughton MRR II" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7351> rdfs:label "Post Assertion Note: #7351" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/5> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legatus of Lucullus, attested in 72, 69, and 68 (MRR 2.120, 134, 140). Note also an inscription of Acmonia in Phrygia # (MAMA 6.260-AEpig. 1940, 200), and Syme's suggestion that his cognomen was Barba, and that he, not a Cassius, was the Barba who was a legate of Lucullus in 73 (MRR 2.112). See Syme, Historia 13, 1964, 123-RP 2.601-602; Wiseman, NM 262, no. 406, and 280, no. 525.[199x]\n" ;
+	dprr:hasID 7351 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4671> rdfs:label "Post Assertion Note: #4671" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate under Lucullus in Pontus (see 72, and 69, Legates).Could not induce his mutinous soldiers to leave Pontus and join Lucullus in Armenia (Plut. Luc. 30.3), and became the object of Mithridates' attack in the autumn of 68 (35.1)." ;
+	dprr:hasID 4671 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4618> rdfs:label "Post Assertion Note: #4618" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Legate (I. v. Pergamum 431), whom Lucullus left in command in Pontus when he invaded Armenia (Plut. Luc. 24.1)." ;
+	dprr:hasID 4618 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4522> rdfs:label "Post Assertion Note: #4522" ;
+	a dprr:PostAssertionNote ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Served under Lucullus in Pontus (Plut. Luc. 17.1; cf. 1. v. Pergamon 431, 7upeal[paur~v])." ;
+	dprr:hasID 4522 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7744> rdfs:label "Post Assertion: #7744" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2144> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7351> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4671> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Sornatius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7744 ;
+	dprr:hasDateStart -68 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -68 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/7743> rdfs:label "Post Assertion: #7743" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2144> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7351> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4618> ;
+	dprr:hasPosition 0 ;
+	dprr:hasOriginalText "Sornatius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 7743 ;
+	dprr:hasDateStart -69 ;
+	dprr:hasDateEnd -69 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/5124> rdfs:label "Post Assertion: #5124" ;
+	a dprr:PostAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2144> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasPostAssertionNote <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/7351> , <http://romanrepublic.ac.uk/rdf/entity/PostAssertionNote/4522> ;
+	dprr:hasPosition 8 ;
+	dprr:hasOriginalText "Sornatius (1)" ;
+	dprr:hasOffice <http://romanrepublic.ac.uk/rdf/entity/Office/12> ;
+	dprr:hasID 5124 ;
+	dprr:hasDateStart -72 ;
+	dprr:hasDateSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/2> ;
+	dprr:hasDateEnd -72 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2144> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "SORN2144 -. Sornatius (1)" ;
+	dprr:hasNomen "Sornatius" ;
+	dprr:hasID 2144 ;
+	dprr:hasHighestOffice "leg. lieut. 68" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "SORN2144" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2144> .

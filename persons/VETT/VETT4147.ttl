@@ -1,0 +1,112 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix entity: <http://romanrepublic.ac.uk/rdf/entity/> .
+
+<http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> rdfs:label "Secondary Source: Zmeskal 2009" ;
+	a dprr:SecondarySource ;
+	dprr:hasName "Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr." ;
+	dprr:hasID 11 ;
+	dprr:hasBiblio "Zmeskal, K., Adfinitas : die Verwandtschaften der senatorischen Führungsschicht der römischen Republik von 218-31 v. Chr. Passau : Stutz, 2009" ;
+	dprr:hasAbbreviation "Zmeskal 2009" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/773> rdfs:label "Relationship Assertion Reference: #773" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasNoteText "Erwähnung der Frau des Verres ohne ihren Namen zu nennen." ;
+	dprr:hasID 773 ;
+	dprr:hasExtraInfo "Cic. Verr. I 21" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2192> rdfs:label "Relationship Assertion Reference: #2192" ;
+	a dprr:RelationshipAssertionReference ;
+	dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasNoteType <http://romanrepublic.ac.uk/rdf/entity/NoteType/1> ;
+	dprr:hasID 2192 ;
+	dprr:hasExtraInfo "Cic. Verr. 2.3.166, 2.3.168, 2.5.114" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/739> rdfs:label "Relationship Assertion: #739" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4147> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/773> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/4> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1967> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3596> rdfs:label "Relationship Assertion: #3596" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4147> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2192> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/2344> .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/3231> rdfs:label "Relationship Assertion: #3231" ;
+	a dprr:RelationshipAssertion ;
+	dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4147> ;
+	dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/11> ;
+	dprr:hasRelationshipReference <http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertionReference/2192> ;
+	dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+	dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/4157> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 32 ;
+	dprr:hasName "sister of" ;
+	dprr:hasID 9 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/4> rdfs:label "Relationship: married to" ;
+	a dprr:Relationship ;
+	dprr:hasOrderNumber 42 ;
+	dprr:hasName "married to" ;
+	dprr:hasID 4 .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4157> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumber "10" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VETT4157 -. Vettius (10) Chilo" ;
+	dprr:hasNomen "Vettius" ;
+	dprr:hasID 4157 ;
+	dprr:hasHighestOffice "eq. R. late C2/C1" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT4157" ;
+	dprr:hasCognomen "Chilo" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4157> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/4147> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Female> ;
+	dprr:hasReNumber "19" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/missing> ;
+	dprr:hasPersonName "VETT4147  Vettia (19)" ;
+	dprr:hasNomen "Vettia" ;
+	dprr:hasID 4147 ;
+	dprr:hasHighestOffice "sister of -. Vettius (10) Chilo (eq. R. late C2/C1)" ;
+	dprr:hasEraTo -50 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT4147" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/4147> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/2344> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:hasReNumberOld "*12" ;
+	dprr:hasReNumber "9a, 11, 14" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Titus> ;
+	dprr:hasPersonName "VETT2344 T. Vettius (9a, 11, 14) Ser. Sabinus" ;
+	dprr:hasOrigin "Sabinum (Farney E21)" ;
+	dprr:hasNomen "Vettius" ;
+	dprr:hasID 2344 ;
+	dprr:hasHighestOffice "pr. 59" ;
+	dprr:hasEraTo 0 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VETT2344" ;
+	dprr:hasCognomen "Sabinus" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/2344> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1967> a dprr:Person ;
+	dprr:isSex <http://romanrepublic.ac.uk/rdf/entity/Sex/Male> ;
+	dprr:isNobilis true ;
+	dprr:hasReNumberOld "*6.2471" ;
+	dprr:hasReNumber "1" ;
+	dprr:hasPraenomen <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius> ;
+	dprr:hasPersonName "VERR1967 C. Verres (1) Rom." ;
+	dprr:hasNomen "Verres" ;
+	dprr:hasNobilisNotes "Cic. 2 Verr. 1.13.35" ;
+	dprr:hasID 1967 ;
+	dprr:hasHighestOffice "pr. 74" ;
+	dprr:hasEraTo -41 ;
+	dprr:hasEraFrom -125 ;
+	dprr:hasDprrID "VERR1967" ;
+	dprr:hasAssociatedWebpage <http://www.romanrepublic.ac.uk/person/1967> .
