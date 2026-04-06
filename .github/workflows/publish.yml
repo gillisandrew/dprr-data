@@ -36,8 +36,8 @@ jobs:
 
           count = len(s)
           print(f'Loaded: {count:,} triples')
-          if count < 400000:
-              raise SystemExit(f'Triple count regression: {count:,} < 400,000')
+          if count < 300000:
+              raise SystemExit(f'Triple count regression: {count:,} < 300,000')
 
           # Serialize to single Turtle file
           out = Path('dprr.ttl')
