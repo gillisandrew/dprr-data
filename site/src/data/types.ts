@@ -70,7 +70,7 @@ export interface RelationshipReference {
 export interface DateInfo {
   type: string
   value: number
-  interval: string
+  interval: string | null
   isUncertain: boolean
   notes: string | null
   secondarySource: string
