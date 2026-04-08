@@ -34,7 +34,7 @@ site/src/
 │   ├── date-display.tsx       # <DateDisplay year={-509} uncertain={false} />
 │   ├── source-citation.tsx    # <SourceCitation name="Broughton MRR" abbrev="MRR" />
 │   ├── section.tsx            # <Section title="Offices" defaultOpen={true}>{children}</Section>
-│   ├── person-card.tsx        # <PersonCard person={summary} /> — used in results + relationships
+│   ├── person-card.tsx        # <PersonCard> for results, <PersonLink> for relationships
 │   ├── active-filter-chips.tsx # <ActiveFilterChips filters={...} onRemove={...} />
 │   ├── search-input.tsx       # <SearchInput value={q} onChange={...} />
 │   ├── facet-group.tsx        # <FacetGroup title="Office" items={...} selected={...} onChange={...} />
@@ -155,6 +155,7 @@ export interface PersonSummary {
   praenomen: string
   nomen: string
   cognomen: string | null
+  otherNames: string | null
   sex: "Male" | "Female"
   isPatrician: boolean
   isNobilis: boolean
@@ -169,7 +170,6 @@ export interface PersonSummary {
 /** Full person record with all scholarly data. */
 export interface Person extends PersonSummary {
   uri: string
-  otherNames: string | null
   filiation: string | null
   reNumber: string | null
   nobilisNotes: string | null
@@ -1219,16 +1219,19 @@ export function parsePersonTtl(
       const relTypeUri = first(g, "hasRelationship")
       const relatedUri = first(g, "hasRelatedPerson")
 
-      // Resolve related person name
-      let relatedPersonId = ""
+      // Resolve related person name from co-located entities.
+      // If the related person is in a different file, store the raw
+      // URI in relatedPersonId — the loader's second pass will resolve it.
+      let relatedPersonId = relatedUri ?? ""
       let relatedPersonName = ""
       if (relatedUri) {
         const relatedGroup = personGroups.get(relatedUri)
-        relatedPersonName =
-          (relatedGroup && first(relatedGroup, "hasPersonName")) ?? ""
-        // Extract DPRR ID
-        relatedPersonId =
-          (relatedGroup && first(relatedGroup, "hasDprrID")) ?? ""
+        if (relatedGroup) {
+          relatedPersonName =
+            first(relatedGroup, "hasPersonName") ?? ""
+          relatedPersonId =
+            first(relatedGroup, "hasDprrID") ?? relatedUri
+        }
       }
 
       const refUris = all(g, "hasRelationshipReference")
@@ -1379,8 +1382,10 @@ import { parseConcordanceTtl } from "./parse-concordances"
 import { parsePersonTtl } from "./parse-persons"
 import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
 
-// Path from site/ to repo root
-const REPO_ROOT = join(import.meta.dirname, "../..")
+// Path from site/src/data/ to repo root (3 levels up)
+// Using process.cwd() as fallback since import.meta.dirname may point
+// to bundled output at build time rather than source directory.
+const REPO_ROOT = join(process.cwd(), "..")
 
 let _cache: { persons: Person[]; refs: ReferenceMaps } | null = null
 
@@ -1391,20 +1396,21 @@ async function readTtl(path: string): Promise<string> {
 async function loadAllPersonFiles(): Promise<string[]> {
   const personsDir = join(REPO_ROOT, "persons")
   const gensDirs = await readdir(personsDir)
-  const ttlContents: string[] = []
 
+  // Collect all file paths first, then read in parallel
+  const filePaths: string[] = []
   for (const gens of gensDirs) {
     const gensPath = join(personsDir, gens)
     const files = await readdir(gensPath)
     for (const file of files) {
       if (file.endsWith(".ttl")) {
-        const content = await readFile(join(gensPath, file), "utf-8")
-        ttlContents.push(content)
+        filePaths.push(join(gensPath, file))
       }
     }
   }
 
-  return ttlContents
+  // Read all files in parallel (~4,900 files, ~4KB each)
+  return Promise.all(filePaths.map((fp) => readFile(fp, "utf-8")))
 }
 
 async function loadConcordances(): Promise<Map<string, Concordance[]>> {
@@ -1482,6 +1488,27 @@ export async function loadAllData(): Promise<{
     a.id.localeCompare(b.id)
   )
 
+  // 4. Second pass: resolve cross-file relationship references.
+  // Relationships may point to persons in other TTL files whose
+  // names/IDs were unavailable during the first parse. The parser
+  // stores the raw person URI in relatedPersonId when it can't
+  // resolve the name locally. Now we can resolve using the full set.
+  const personByUri = new Map<string, Person>()
+  for (const p of persons) {
+    personByUri.set(p.uri, p)
+  }
+  for (const p of persons) {
+    for (const rel of p.relationships) {
+      if (rel.relatedPersonName && rel.relatedPersonId) continue
+      // relatedPersonId may contain a raw URI if unresolved
+      const resolved = personByUri.get(rel.relatedPersonId)
+      if (resolved) {
+        rel.relatedPersonId = resolved.id
+        rel.relatedPersonName = resolved.name
+      }
+    }
+  }
+
   _cache = { persons, refs }
   return _cache
 }
@@ -1494,6 +1521,7 @@ export function toSummaries(persons: Person[]): PersonSummary[] {
     praenomen: p.praenomen,
     nomen: p.nomen,
     cognomen: p.cognomen,
+    otherNames: p.otherNames,
     sex: p.sex,
     isPatrician: p.isPatrician,
     isNobilis: p.isNobilis,
@@ -1545,6 +1573,7 @@ const SUMMARIES: PersonSummary[] = [
     praenomen: "Lucius",
     nomen: "Iunius",
     cognomen: "Brutus",
+    otherNames: null,
     sex: "Male",
     isPatrician: true,
     isNobilis: true,
@@ -1560,6 +1589,7 @@ const SUMMARIES: PersonSummary[] = [
     praenomen: "Publius",
     nomen: "Cornelius",
     cognomen: "Scipio Africanus",
+    otherNames: null,
     sex: "Male",
     isPatrician: true,
     isNobilis: true,
@@ -1595,6 +1625,22 @@ describe("buildSearchIndex", () => {
     expect(results.length).toBeGreaterThan(0)
     expect(results[0].id).toBe("CORN0123")
   })
+
+  test("search by otherNames returns matches", () => {
+    const withAltName: PersonSummary[] = [
+      {
+        ...SUMMARIES[0],
+        id: "IUNI2459",
+        name: "IUNI2459 M. Iunius (53) M. f. Brutus",
+        otherNames: "= Q. Servilius Caepio Brutus",
+      },
+    ]
+    const json = buildSearchIndex(withAltName)
+    const ms = MiniSearch.loadJSON(JSON.stringify(json), MINISEARCH_OPTIONS)
+    const results = ms.search("Caepio")
+    expect(results.length).toBeGreaterThan(0)
+    expect(results[0].id).toBe("IUNI2459")
+  })
 })
 ```
 
@@ -1612,7 +1658,7 @@ import MiniSearch, { type Options } from "minisearch"
 import type { PersonSummary } from "./types"
 
 export const MINISEARCH_OPTIONS: Options<PersonSummary> = {
-  fields: ["name", "nomen", "cognomen", "highestOffice"],
+  fields: ["name", "nomen", "cognomen", "otherNames", "highestOffice"],
   storeFields: [
     "id",
     "name",
@@ -1858,7 +1904,7 @@ export function Section({
 }
 ```
 
-- [ ] **Step 4: Create PersonCard component**
+- [ ] **Step 4: Create PersonCard and PersonLink components**
 
 ```tsx
 // site/src/components/person-card.tsx
@@ -1867,6 +1913,7 @@ import { Badge } from "@/components/ui/badge"
 import { EraRange } from "@/components/date-display"
 import type { PersonSummary } from "@/data/types"
 
+/** Full card for search results — shows office, era, badges. */
 export function PersonCard({ person }: { person: PersonSummary }) {
   // Strip the DPRR ID prefix from the display name
   const displayName = person.name.replace(/^[A-Z]{4}\d+ /, "")
@@ -1899,6 +1946,26 @@ export function PersonCard({ person }: { person: PersonSummary }) {
           )}
         </div>
       </div>
+    </Link>
+  )
+}
+
+/** Compact inline link for relationship contexts — just name as a link. */
+export function PersonLink({
+  id,
+  name,
+}: {
+  id: string
+  name: string
+}) {
+  const displayName = name.replace(/^[A-Z]{4}\d+ /, "") || id
+  return (
+    <Link
+      to="/persons/$id"
+      params={{ id }}
+      className="text-primary font-medium hover:underline"
+    >
+      {displayName}
     </Link>
   )
 }
@@ -1935,7 +2002,7 @@ import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
-import { PersonCard } from "@/components/person-card"
+import { PersonLink } from "@/components/person-card"
 import { formatYear } from "@/lib/dates"
 import type {
   Person,
@@ -2162,22 +2229,9 @@ function RelationshipEntry({
         {relationship.relationshipType}:
       </span>
       {relationship.relatedPersonId ? (
-        <PersonCard
-          person={{
-            id: relationship.relatedPersonId,
-            name: relationship.relatedPersonName,
-            praenomen: "",
-            nomen: "",
-            cognomen: null,
-            sex: "Male",
-            isPatrician: false,
-            isNobilis: false,
-            highestOffice: null,
-            eraFrom: null,
-            eraTo: null,
-            tribe: null,
-            offices: [],
-          }}
+        <PersonLink
+          id={relationship.relatedPersonId}
+          name={relationship.relatedPersonName}
         />
       ) : (
         <span>{relatedDisplayName}</span>
@@ -2433,15 +2487,31 @@ export function useSearchState(
     return candidates.filter((p) => matchesFacets(p, state))
   }, [state, summaries, miniSearch])
 
-  const facets = useMemo(
-    () => ({
-      office: computeFacetValues(results, "offices"),
-      nomen: computeFacetValues(results, "nomen"),
-      sex: computeFacetValues(results, "sex"),
-      tribe: computeFacetValues(results, "tribe"),
-    }),
-    [results]
-  )
+  // Disjunctive facet counting: each facet's counts are computed with
+  // that facet's own filter removed but all other filters kept. This
+  // lets users see how many results other values would produce.
+  const facets = useMemo(() => {
+    function countWith(exclude: keyof SearchState, field: keyof PersonSummary) {
+      const relaxed = { ...state, [exclude]: Array.isArray(state[exclude]) ? [] : null }
+      let candidates: PersonSummary[]
+      if (state.q.trim()) {
+        const searchResults = miniSearch.search(state.q)
+        const idSet = new Set(searchResults.map((r) => r.id))
+        candidates = summaries.filter((p) => idSet.has(p.id))
+      } else {
+        candidates = summaries
+      }
+      const filtered = candidates.filter((p) => matchesFacets(p, relaxed))
+      return computeFacetValues(filtered, field)
+    }
+
+    return {
+      office: countWith("office", "offices"),
+      nomen: countWith("nomen", "nomen"),
+      sex: countWith("sex", "sex"),
+      tribe: countWith("tribe", "tribe"),
+    }
+  }, [state, summaries, miniSearch])
 
   const updateState = useCallback(
     (updates: Partial<SearchState>) => {
@@ -2740,7 +2810,7 @@ export function FacetGroup({
 
 ```tsx
 // site/src/components/facet-range-group.tsx
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {
   Collapsible,
   CollapsibleContent,
@@ -2749,6 +2819,30 @@ import {
 import { Input } from "@/components/ui/input"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+
+function useDebouncedNumber(
+  value: number | null,
+  onChange: (v: number | null) => void,
+  delay = 400
+) {
+  const [local, setLocal] = useState(value?.toString() ?? "")
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>()
+
+  useEffect(() => {
+    setLocal(value?.toString() ?? "")
+  }, [value])
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const v = e.target.value
+    setLocal(v)
+    clearTimeout(timeoutRef.current)
+    timeoutRef.current = setTimeout(() => {
+      onChange(v === "" ? null : Number(v))
+    }, delay)
+  }
+
+  return { local, handleChange }
+}
 
 export function FacetRangeGroup({
   title,
@@ -2770,16 +2864,8 @@ export function FacetRangeGroup({
   defaultOpen?: boolean
 }) {
   const [open, setOpen] = useState(defaultOpen)
-
-  function handleFrom(e: React.ChangeEvent<HTMLInputElement>) {
-    const v = e.target.value
-    onFromChange(v === "" ? null : Number(v))
-  }
-
-  function handleTo(e: React.ChangeEvent<HTMLInputElement>) {
-    const v = e.target.value
-    onToChange(v === "" ? null : Number(v))
-  }
+  const from = useDebouncedNumber(fromValue, onFromChange)
+  const to = useDebouncedNumber(toValue, onToChange)
 
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
@@ -2800,16 +2886,16 @@ export function FacetRangeGroup({
           <Input
             type="number"
             placeholder={fromPlaceholder}
-            value={fromValue ?? ""}
-            onChange={handleFrom}
+            value={from.local}
+            onChange={from.handleChange}
             className="h-7 text-xs"
           />
           <span className="text-muted-foreground text-xs">to</span>
           <Input
             type="number"
             placeholder={toPlaceholder}
-            value={toValue ?? ""}
-            onChange={handleTo}
+            value={to.local}
+            onChange={to.handleChange}
             className="h-7 text-xs"
           />
         </div>
@@ -2825,6 +2911,7 @@ export function FacetRangeGroup({
 // site/src/components/facet-sidebar.tsx
 import { FacetGroup } from "./facet-group"
 import { FacetRangeGroup } from "./facet-range-group"
+import { Checkbox } from "@/components/ui/checkbox"
 import type { SearchState, FacetValue } from "@/data/types"
 
 interface FacetSidebarProps {
@@ -2878,6 +2965,29 @@ export function FacetSidebar({
         onChange={(sex) => onUpdate({ sex })}
         defaultOpen={false}
       />
+      <div className="space-y-1 py-2">
+        <p className="text-sm font-semibold">Status</p>
+        <div className="space-y-1 pl-5">
+          <label className="flex cursor-pointer items-center gap-2 text-sm">
+            <Checkbox
+              checked={state.patrician === true}
+              onCheckedChange={(checked) =>
+                onUpdate({ patrician: checked ? true : null })
+              }
+            />
+            <span>Patrician</span>
+          </label>
+          <label className="flex cursor-pointer items-center gap-2 text-sm">
+            <Checkbox
+              checked={state.nobilis === true}
+              onCheckedChange={(checked) =>
+                onUpdate({ nobilis: checked ? true : null })
+              }
+            />
+            <span>Nobilis</span>
+          </label>
+        </div>
+      </div>
       <FacetGroup
         title="Tribe"
         items={facets.tribe}
@@ -2895,7 +3005,7 @@ export function FacetSidebar({
 
 ```tsx
 // site/src/components/results-list.tsx
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { PersonCard } from "./person-card"
 import type { PersonSummary } from "@/data/types"
 
@@ -2903,6 +3013,12 @@ const PAGE_SIZE = 50
 
 export function ResultsList({ results }: { results: PersonSummary[] }) {
   const [page, setPage] = useState(0)
+
+  // Reset to first page when results change (new search/filter)
+  useEffect(() => {
+    setPage(0)
+  }, [results])
+
   const totalPages = Math.ceil(results.length / PAGE_SIZE)
   const visible = results.slice(0, (page + 1) * PAGE_SIZE)
 
@@ -3103,7 +3219,48 @@ git commit -m "feat: add hidden link list for static prerender crawling"
 
 ---
 
-### Task 17: GitHub Pages Deployment Workflow
+### Task 17: 404 Page
+
+**Files:**
+- Create: `site/public/404.html`
+
+- [ ] **Step 1: Create a simple 404 page**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found — DPRR</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #fafafa; color: #333; }
+    .container { text-align: center; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p { color: #666; }
+    a { color: #c0392b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Page Not Found</h1>
+    <p>The person or page you're looking for doesn't exist.</p>
+    <p><a href="/">Back to search</a></p>
+  </div>
+</body>
+</html>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+cd site && git add public/404.html
+git commit -m "feat: add 404 page for GitHub Pages"
+```
+
+---
+
+### Task 18: GitHub Pages Deployment Workflow
 
 **Files:**
 - Create: `.github/workflows/deploy-site.yml`
@@ -3175,7 +3332,7 @@ git commit -m "ci: add GitHub Pages deployment workflow"
 
 ---
 
-### Task 18: Smoke Test & Polish
+### Task 19: Smoke Test & Polish
 
 **Files:**
 - Various (fixes found during testing)
