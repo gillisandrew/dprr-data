@@ -24,13 +24,20 @@ const config = defineConfig({
   },
   plugins: [
     devtools(),
-    nitro(),
+    nitro({
+      preset: "static",
+    }),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
       projects: ["./tsconfig.json"],
     }),
     tailwindcss(),
-    tanstackStart(),
+    tanstackStart({
+      prerender: {
+        enabled: true,
+        crawlLinks: true,
+      },
+    }),
     viteReact(),
   ],
 })
