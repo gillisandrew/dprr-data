@@ -1,6 +1,5 @@
 // site/src/data/loader.ts
-import { readFile } from "node:fs/promises"
-import { readdir } from "node:fs/promises"
+import { readFile, readdir } from "node:fs/promises"
 import { join, basename } from "node:path"
 import { parseReferenceTtl } from "./parse-references"
 import { parseConcordanceTtl } from "./parse-concordances"
@@ -34,8 +33,18 @@ async function loadAllPersonFiles(): Promise<string[]> {
     }
   }
 
-  // Read all files in parallel (~4,900 files, ~4KB each)
-  return Promise.all(filePaths.map((fp) => readFile(fp, "utf-8")))
+  // Read files in batches to avoid file descriptor exhaustion on CI
+  // (~4,900 files, ~4KB each; default FD limit on many CI systems is 1024)
+  const BATCH_SIZE = 200
+  const results: string[] = []
+  for (let i = 0; i < filePaths.length; i += BATCH_SIZE) {
+    const batch = filePaths.slice(i, i + BATCH_SIZE)
+    const batchResults = await Promise.all(
+      batch.map((fp) => readFile(fp, "utf-8"))
+    )
+    results.push(...batchResults)
+  }
+  return results
 }
 
 async function loadConcordances(): Promise<Map<string, Concordance[]>> {

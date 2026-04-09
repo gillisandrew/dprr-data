@@ -238,7 +238,7 @@ export function parsePersonTtl(
       results.push({
         type: (dateTypeUri && refs.dateTypes.get(dateTypeUri)) ?? "",
         value: firstNum(g, "hasValue") ?? 0,
-        interval: first(g, "hasDateInterval") ?? "",
+        interval: first(g, "hasDateInterval") || null,
         isUncertain: first(g, "isUncertain") === "true",
         notes: first(g, "hasNotes"),
         secondarySource: resolveSource(first(g, "hasSecondarySource")),
