@@ -17,6 +17,9 @@ export function SearchInput({
     setLocal(value)
   }, [value])
 
+  // Clear pending debounce on unmount
+  useEffect(() => () => clearTimeout(timeoutRef.current), [])
+
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const v = e.target.value
     setLocal(v)
