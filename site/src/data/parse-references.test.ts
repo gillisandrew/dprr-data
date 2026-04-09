@@ -132,9 +132,7 @@ describe("parseReferenceTtl", () => {
       misc: MISC_TTL,
     })
     expect(
-      refs.noteTypes.get(
-        "http://romanrepublic.ac.uk/rdf/entity/NoteType/1"
-      )
+      refs.noteTypes.get("http://romanrepublic.ac.uk/rdf/entity/NoteType/1")
     ).toBe("Reference Note")
   })
 })

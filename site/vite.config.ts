@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite"
 import { nitro } from "nitro/vite"
 
 const config = defineConfig({
-  lint: {"options":{"typeAware":true,"typeCheck":true}},
+  lint: { options: { typeAware: true, typeCheck: true } },
   fmt: {
     endOfLine: "lf",
     semi: false,

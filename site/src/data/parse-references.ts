@@ -88,9 +88,7 @@ export async function parseReferenceTtl(
 
   // Praenomina
   if (inputs.praenomina) {
-    for (const [uri, props] of groupBySubject(
-      parseTtl(inputs.praenomina)
-    )) {
+    for (const [uri, props] of groupBySubject(parseTtl(inputs.praenomina))) {
       const name = props.get(`${DPRR}hasName`)
       if (name) praenomina.set(uri, name)
     }
@@ -111,9 +109,7 @@ export async function parseReferenceTtl(
 
   // Relationships
   if (inputs.relationships) {
-    for (const [uri, props] of groupBySubject(
-      parseTtl(inputs.relationships)
-    )) {
+    for (const [uri, props] of groupBySubject(parseTtl(inputs.relationships))) {
       const name = props.get(`${DPRR}hasName`)
       if (name) relationships.set(uri, name)
     }

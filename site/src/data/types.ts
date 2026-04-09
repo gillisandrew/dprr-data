@@ -90,8 +90,14 @@ export interface Concordance {
 
 /** Lookup maps built from reference/*.ttl files. */
 export interface ReferenceMaps {
-  offices: Map<string, { name: string; abbreviation: string | null; parent: string | null }>
-  sources: Map<string, { name: string; abbreviation: string | null; biblio: string | null }>
+  offices: Map<
+    string,
+    { name: string; abbreviation: string | null; parent: string | null }
+  >
+  sources: Map<
+    string,
+    { name: string; abbreviation: string | null; biblio: string | null }
+  >
   praenomina: Map<string, string>
   tribes: Map<string, { name: string; abbreviation: string | null }>
   relationships: Map<string, string>
