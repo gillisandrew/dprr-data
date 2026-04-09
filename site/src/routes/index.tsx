@@ -48,6 +48,15 @@ function SearchPage() {
           <ResultsList results={results} />
         </main>
       </div>
+
+      {/* Hidden links for static prerender crawler */}
+      <div className="hidden" aria-hidden="true">
+        {summaries.map((p) => (
+          <a key={p.id} href={`/persons/${p.id}`}>
+            {p.id}
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
