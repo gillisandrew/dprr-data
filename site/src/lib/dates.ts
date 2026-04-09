@@ -1,3 +1,7 @@
+/**
+ * Format a year integer for display.
+ * Negative values are BC, positive are AD. Zero = 1 BC (no year zero).
+ */
 export function formatYear(year: number, uncertain: boolean = false): string {
   const prefix = uncertain ? "c. " : ""
   if (year <= 0) {
@@ -6,7 +10,14 @@ export function formatYear(year: number, uncertain: boolean = false): string {
   return `${prefix}AD ${year}`
 }
 
-export function formatEraRange(from: number | null, to: number | null): string | null {
+/**
+ * Format an era range like "540–509 BC" or "63 BC–AD 14".
+ * Returns null if both values are null.
+ */
+export function formatEraRange(
+  from: number | null,
+  to: number | null
+): string | null {
   if (from === null && to === null) return null
   const fromStr = from !== null ? formatYear(from) : "?"
   const toStr = to !== null ? formatYear(to) : "?"
