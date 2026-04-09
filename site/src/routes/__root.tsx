@@ -15,7 +15,12 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "TanStack Start Starter",
+        title: "DPRR — Digital Prosopography of the Roman Republic",
+      },
+      {
+        name: "description",
+        content:
+          "Search and browse 4,876 persons from the Roman Republic (509–31 BC)",
       },
     ],
     links: [

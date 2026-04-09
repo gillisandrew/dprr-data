@@ -32,12 +32,10 @@ export function Section({
         />
         <h2 className="font-heading text-lg font-semibold">{title}</h2>
         {count !== undefined && (
-          <span className="text-muted-foreground text-sm">({count})</span>
+          <span className="text-sm text-muted-foreground">({count})</span>
         )}
       </CollapsibleTrigger>
-      <CollapsibleContent className="pb-4 pl-6">
-        {children}
-      </CollapsibleContent>
+      <CollapsibleContent className="pb-4 pl-6">{children}</CollapsibleContent>
     </Collapsible>
   )
 }

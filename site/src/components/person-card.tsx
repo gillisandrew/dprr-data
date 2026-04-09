@@ -13,15 +13,13 @@ export function PersonCard({ person }: { person: PersonSummary }) {
     <Link
       to="/persons/$id"
       params={{ id: person.id }}
-      className="hover:bg-accent block rounded-md border p-3 transition-colors"
+      className="block rounded-md border p-3 transition-colors hover:bg-accent"
     >
       <div className="flex items-start justify-between gap-2">
         <div className="min-w-0">
-          <p className="font-heading truncate font-medium">{displayName}</p>
-          <p className="text-muted-foreground text-sm">
-            {person.highestOffice && (
-              <span>{person.highestOffice}</span>
-            )}
+          <p className="truncate font-heading font-medium">{displayName}</p>
+          <p className="text-sm text-muted-foreground">
+            {person.highestOffice && <span>{person.highestOffice}</span>}
             {person.highestOffice && (person.eraFrom || person.eraTo) && (
               <span> · </span>
             )}
@@ -29,12 +27,8 @@ export function PersonCard({ person }: { person: PersonSummary }) {
           </p>
         </div>
         <div className="flex shrink-0 gap-1">
-          {person.isPatrician && (
-            <Badge variant="secondary">Patrician</Badge>
-          )}
-          {person.isNobilis && (
-            <Badge variant="secondary">Nobilis</Badge>
-          )}
+          {person.isPatrician && <Badge variant="secondary">Patrician</Badge>}
+          {person.isNobilis && <Badge variant="secondary">Nobilis</Badge>}
         </div>
       </div>
     </Link>
@@ -42,19 +36,13 @@ export function PersonCard({ person }: { person: PersonSummary }) {
 }
 
 /** Compact inline link for relationship contexts — just name as a link. */
-export function PersonLink({
-  id,
-  name,
-}: {
-  id: string
-  name: string
-}) {
+export function PersonLink({ id, name }: { id: string; name: string }) {
   const displayName = name.replace(/^[A-Z]{4}\d+ /, "") || id
   return (
     <Link
       to="/persons/$id"
       params={{ id }}
-      className="text-primary font-medium hover:underline"
+      className="font-medium text-primary hover:underline"
     >
       {displayName}
     </Link>
