@@ -102,9 +102,11 @@ function PersonHeader({
   return (
     <header className="mb-8">
       <h1 className="font-heading text-3xl font-bold">{displayName}</h1>
-      <p className="mt-1 text-lg text-muted-foreground">
-        <EraRange from={person.eraFrom} to={person.eraTo} />
-      </p>
+      {(person.eraFrom !== null || person.eraTo !== null) && (
+        <p className="mt-1 text-lg text-muted-foreground">
+          <EraRange from={person.eraFrom} to={person.eraTo} />
+        </p>
+      )}
       <div className="mt-3 flex flex-wrap gap-2">
         {person.sex && <Badge variant="outline">{person.sex}</Badge>}
         {person.isPatrician && <Badge variant="secondary">Patrician</Badge>}
@@ -183,7 +185,9 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
               <EraRange from={assertion.dateStart} to={assertion.dateEnd} />
             )
           ) : (
-            <DateDisplay year={assertion.dateStart ?? assertion.dateEnd!} />
+            <DateDisplay
+              year={(assertion.dateStart ?? assertion.dateEnd) as number}
+            />
           )}
         </p>
       )}
@@ -282,14 +286,14 @@ function ConcordanceList({ concordances }: { concordances: Concordance[] }) {
       {[...grouped].map(([system, links]) => (
         <div key={system} className="contents">
           <dt className="font-medium capitalize">{system}</dt>
-          <dd>
+          <dd className="flex flex-col gap-1">
             {links.map((link, i) => (
               <a
                 key={i}
                 href={link.uri}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline"
+                className="text-primary break-all hover:underline"
               >
                 {link.uri}
               </a>
