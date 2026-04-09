@@ -18,6 +18,7 @@ import type {
 export const Route = createFileRoute("/persons/$id")({
   loader: ({ params }) => getPersonById({ data: params.id }),
   head: ({ loaderData: person }) => {
+    if (!person) return {}
     const displayName = person.name.replace(/^[A-Z]{4}\d+ /, "")
     const desc = [person.highestOffice, person.isPatrician ? "Patrician" : null]
       .filter(Boolean)
