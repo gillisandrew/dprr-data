@@ -1,0 +1,154 @@
+// site/src/data/loader.ts
+import { readFile } from "node:fs/promises"
+import { readdir } from "node:fs/promises"
+import { join, basename } from "node:path"
+import { parseReferenceTtl } from "./parse-references"
+import { parseConcordanceTtl } from "./parse-concordances"
+import { parsePersonTtl } from "./parse-persons"
+import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
+
+// Path from site/src/data/ to repo root (3 levels up)
+// Using process.cwd() as fallback since import.meta.dirname may point
+// to bundled output at build time rather than source directory.
+const REPO_ROOT = join(process.cwd(), "..")
+
+let _cache: { persons: Person[]; refs: ReferenceMaps } | null = null
+
+async function readTtl(path: string): Promise<string> {
+  return readFile(join(REPO_ROOT, path), "utf-8")
+}
+
+async function loadAllPersonFiles(): Promise<string[]> {
+  const personsDir = join(REPO_ROOT, "persons")
+  const gensDirs = await readdir(personsDir)
+
+  // Collect all file paths first, then read in parallel
+  const filePaths: string[] = []
+  for (const gens of gensDirs) {
+    const gensPath = join(personsDir, gens)
+    const files = await readdir(gensPath)
+    for (const file of files) {
+      if (file.endsWith(".ttl")) {
+        filePaths.push(join(gensPath, file))
+      }
+    }
+  }
+
+  // Read all files in parallel (~4,900 files, ~4KB each)
+  return Promise.all(filePaths.map((fp) => readFile(fp, "utf-8")))
+}
+
+async function loadConcordances(): Promise<Map<string, Concordance[]>> {
+  const concordDir = join(REPO_ROOT, "concordances")
+  const files = await readdir(concordDir)
+  const merged = new Map<string, Concordance[]>()
+
+  for (const file of files) {
+    if (!file.endsWith(".ttl")) continue
+    const system = basename(file, ".ttl")
+    const content = await readFile(join(concordDir, file), "utf-8")
+    const parsed = parseConcordanceTtl(system, content)
+    for (const [personId, links] of parsed) {
+      const existing = merged.get(personId) ?? []
+      existing.push(...links)
+      merged.set(personId, existing)
+    }
+  }
+
+  return merged
+}
+
+export async function loadAllData(): Promise<{
+  persons: Person[]
+  refs: ReferenceMaps
+}> {
+  if (_cache) return _cache
+
+  // 1. Parse reference files
+  const [offices, sources, praenomina, tribes, relationships, misc] =
+    await Promise.all([
+      readTtl("reference/offices.ttl"),
+      readTtl("reference/sources.ttl"),
+      readTtl("reference/praenomina.ttl"),
+      readTtl("reference/tribes.ttl"),
+      readTtl("reference/relationships.ttl"),
+      readTtl("reference/misc.ttl"),
+    ])
+
+  const refs = await parseReferenceTtl({
+    offices,
+    sources,
+    praenomina,
+    tribes,
+    relationships,
+    misc,
+  })
+
+  // 2. Parse concordances
+  const concordanceMap = await loadConcordances()
+
+  // 3. Parse all person files
+  const personTtls = await loadAllPersonFiles()
+  const allPersons: Person[] = []
+
+  for (const ttl of personTtls) {
+    const persons = parsePersonTtl(ttl, refs, concordanceMap)
+    allPersons.push(...persons)
+  }
+
+  // Deduplicate by DPRR ID (a person can appear in multiple files as
+  // a related person stub — keep the one with the matching filename/most data)
+  const byId = new Map<string, Person>()
+  for (const p of allPersons) {
+    const existing = byId.get(p.id)
+    if (!existing || p.postAssertions.length > existing.postAssertions.length) {
+      byId.set(p.id, p)
+    }
+  }
+
+  const persons = [...byId.values()].sort((a, b) => a.id.localeCompare(b.id))
+
+  // 4. Second pass: resolve cross-file relationship references.
+  // Relationships may point to persons in other TTL files whose
+  // names/IDs were unavailable during the first parse. The parser
+  // stores the raw person URI in relatedPersonId when it can't
+  // resolve the name locally. Now we can resolve using the full set.
+  const personByUri = new Map<string, Person>()
+  for (const p of persons) {
+    personByUri.set(p.uri, p)
+  }
+  for (const p of persons) {
+    for (const rel of p.relationships) {
+      if (rel.relatedPersonName && rel.relatedPersonId) continue
+      // relatedPersonId may contain a raw URI if unresolved
+      const resolved = personByUri.get(rel.relatedPersonId)
+      if (resolved) {
+        rel.relatedPersonId = resolved.id
+        rel.relatedPersonName = resolved.name
+      }
+    }
+  }
+
+  _cache = { persons, refs }
+  return _cache
+}
+
+/** Extract compact summaries for search/faceting. */
+export function toSummaries(persons: Person[]): PersonSummary[] {
+  return persons.map((p) => ({
+    id: p.id,
+    name: p.name,
+    praenomen: p.praenomen,
+    nomen: p.nomen,
+    cognomen: p.cognomen,
+    otherNames: p.otherNames,
+    sex: p.sex,
+    isPatrician: p.isPatrician,
+    isNobilis: p.isNobilis,
+    highestOffice: p.highestOffice,
+    eraFrom: p.eraFrom,
+    eraTo: p.eraTo,
+    tribe: p.tribe,
+    offices: p.offices,
+  }))
+}
