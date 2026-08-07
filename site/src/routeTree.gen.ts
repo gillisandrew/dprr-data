@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TribesIndexRouteImport } from './routes/tribes.index'
 import { Route as OfficesIndexRouteImport } from './routes/offices.index'
+import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
 import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 
@@ -19,9 +21,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TribesIndexRoute = TribesIndexRouteImport.update({
+  id: '/tribes/',
+  path: '/tribes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OfficesIndexRoute = OfficesIndexRouteImport.update({
   id: '/offices/',
   path: '/offices/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TribesSlugRoute = TribesSlugRouteImport.update({
+  id: '/tribes/$slug',
+  path: '/tribes/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PersonsIdRoute = PersonsIdRouteImport.update({
@@ -39,34 +51,61 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/tribes/$slug': typeof TribesSlugRoute
   '/offices/': typeof OfficesIndexRoute
+  '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/tribes/$slug': typeof TribesSlugRoute
   '/offices': typeof OfficesIndexRoute
+  '/tribes': typeof TribesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/tribes/$slug': typeof TribesSlugRoute
   '/offices/': typeof OfficesIndexRoute
+  '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/offices/$slug' | '/persons/$id' | '/offices/'
+  fullPaths:
+    | '/'
+    | '/offices/$slug'
+    | '/persons/$id'
+    | '/tribes/$slug'
+    | '/offices/'
+    | '/tribes/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/offices/$slug' | '/persons/$id' | '/offices'
-  id: '__root__' | '/' | '/offices/$slug' | '/persons/$id' | '/offices/'
+  to:
+    | '/'
+    | '/offices/$slug'
+    | '/persons/$id'
+    | '/tribes/$slug'
+    | '/offices'
+    | '/tribes'
+  id:
+    | '__root__'
+    | '/'
+    | '/offices/$slug'
+    | '/persons/$id'
+    | '/tribes/$slug'
+    | '/offices/'
+    | '/tribes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
+  TribesSlugRoute: typeof TribesSlugRoute
   OfficesIndexRoute: typeof OfficesIndexRoute
+  TribesIndexRoute: typeof TribesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,11 +117,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tribes/': {
+      id: '/tribes/'
+      path: '/tribes'
+      fullPath: '/tribes/'
+      preLoaderRoute: typeof TribesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/offices/': {
       id: '/offices/'
       path: '/offices'
       fullPath: '/offices/'
       preLoaderRoute: typeof OfficesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tribes/$slug': {
+      id: '/tribes/$slug'
+      path: '/tribes/$slug'
+      fullPath: '/tribes/$slug'
+      preLoaderRoute: typeof TribesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/persons/$id': {
@@ -106,7 +159,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
+  TribesSlugRoute: TribesSlugRoute,
   OfficesIndexRoute: OfficesIndexRoute,
+  TribesIndexRoute: TribesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
