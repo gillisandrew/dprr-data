@@ -1,7 +1,6 @@
 // site/src/routes/index.tsx
 import { useEffect, useState } from "react"
 import { createFileRoute } from "@tanstack/react-router"
-import { getAllPersonIds } from "@/server/data"
 import { parseSearchParams, toSearchParams, useSearchState } from "@/lib/search"
 import { useSearchData, type SearchDataBundle } from "@/lib/use-search-data"
 import { SearchInput } from "@/components/search-input"
@@ -15,7 +14,6 @@ type Focus = "office" | "time" | "gens"
 
 export const Route = createFileRoute("/")({
   validateSearch: (search: Record<string, unknown>) => search,
-  loader: () => getAllPersonIds(),
   head: () => ({
     scripts: [
       {
@@ -35,7 +33,6 @@ export const Route = createFileRoute("/")({
 })
 
 function SearchPage() {
-  const personIds = Route.useLoaderData()
   const rawParams = Route.useSearch() as Record<string, string>
   const hasParams =
     Object.keys(toSearchParams(parseSearchParams(rawParams))).length > 0
@@ -73,21 +70,7 @@ function SearchPage() {
     />
   )
 
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
-      {content}
-
-      {/* Hidden links for static prerender crawler — stopgap loader until
-          the /directory/ page (later task) replaces this. */}
-      <div className="hidden" aria-hidden="true">
-        {personIds.map((id) => (
-          <a key={id} href={`${import.meta.env.BASE_URL}persons/${id}`}>
-            {id}
-          </a>
-        ))}
-      </div>
-    </div>
-  )
+  return <div className="mx-auto max-w-6xl px-4 py-6">{content}</div>
 }
 
 function SearchResults({

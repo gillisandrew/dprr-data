@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as DirectoryRouteImport } from './routes/directory'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TribesIndexRouteImport } from './routes/tribes.index'
 import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
@@ -18,6 +19,11 @@ import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
 import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 
+const DirectoryRoute = DirectoryRouteImport.update({
+  id: '/directory',
+  path: '/directory',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -61,6 +67,7 @@ const OfficesSlugRoute = OfficesSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/directory': typeof DirectoryRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
@@ -71,6 +78,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/directory': typeof DirectoryRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
@@ -82,6 +90,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/directory': typeof DirectoryRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
@@ -94,6 +103,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/directory'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
@@ -104,6 +114,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/directory'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
@@ -114,6 +125,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/directory'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
@@ -125,6 +137,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DirectoryRoute: typeof DirectoryRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
   ProvincesSlugRoute: typeof ProvincesSlugRoute
@@ -136,6 +149,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/directory': {
+      id: '/directory'
+      path: '/directory'
+      fullPath: '/directory'
+      preLoaderRoute: typeof DirectoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -197,6 +217,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DirectoryRoute: DirectoryRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
   ProvincesSlugRoute: ProvincesSlugRoute,
