@@ -79,6 +79,23 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   return params
 }
 
+/**
+ * Order candidates by MiniSearch relevance rank (ascending index = best
+ * match first), dropping any candidate that isn't present in the search
+ * results. Pure and independent of React so it can be exercised directly —
+ * `summaries.filter(...)` alone (as used pre-fix) discards MiniSearch's
+ * ranking and falls back to the candidates' original (ID) order.
+ */
+export function orderByQueryRank<T extends { id: string }>(
+  candidates: T[],
+  searchResults: { id: string }[]
+): T[] {
+  const rank = new Map(searchResults.map((r, i) => [r.id, i]))
+  return candidates
+    .filter((c) => rank.has(c.id))
+    .sort((a, b) => rank.get(a.id)! - rank.get(b.id)!)
+}
+
 function computeFacetValues(
   persons: PersonSummary[],
   field: keyof PersonSummary
@@ -115,19 +132,19 @@ export function useSearchState(bundle: SearchDataBundle) {
     [payload]
   )
 
-  const filtered = useMemo(() => {
-    let candidates: PersonSummary[]
+  // MiniSearch is only re-queried when the query text itself changes, then
+  // reused by both `filtered` and every `countWith` call below — previously
+  // each of those called miniSearch.search independently (8 calls per
+  // render with a query active).
+  const queryCandidates = useMemo(() => {
+    if (!state.q.trim()) return summaries
+    return orderByQueryRank(summaries, miniSearch.search(state.q))
+  }, [state.q, summaries, miniSearch])
 
-    if (state.q.trim()) {
-      const searchResults = miniSearch.search(state.q)
-      const idSet = new Set(searchResults.map((r) => r.id))
-      candidates = summaries.filter((p) => idSet.has(p.id))
-    } else {
-      candidates = summaries
-    }
-
-    return candidates.filter((p) => matchesFacets(p, state, ctx))
-  }, [state, summaries, miniSearch, ctx])
+  const filtered = useMemo(
+    () => queryCandidates.filter((p) => matchesFacets(p, state, ctx)),
+    [queryCandidates, state, ctx]
+  )
 
   const results = useMemo(
     () => sortResults(filtered, state.sort, state.q.trim().length > 0),
@@ -143,15 +160,7 @@ export function useSearchState(bundle: SearchDataBundle) {
         ...state,
         [exclude]: Array.isArray(state[exclude]) ? [] : null,
       }
-      let candidates: PersonSummary[]
-      if (state.q.trim()) {
-        const searchResults = miniSearch.search(state.q)
-        const idSet = new Set(searchResults.map((r) => r.id))
-        candidates = summaries.filter((p) => idSet.has(p.id))
-      } else {
-        candidates = summaries
-      }
-      const filteredForCount = candidates.filter((p) =>
+      const filteredForCount = queryCandidates.filter((p) =>
         matchesFacets(p, relaxed, ctx)
       )
       return computeFacetValues(filteredForCount, field)
@@ -167,7 +176,7 @@ export function useSearchState(bundle: SearchDataBundle) {
       praenomen: countWith("praenomen", "praenomen"),
       cognomen: countWith("cognomen", "cognomen"),
     }
-  }, [state, summaries, miniSearch, ctx])
+  }, [state, queryCandidates, ctx])
 
   const filteredHistogram = useMemo(() => {
     // A sort-only URL counts as unfiltered.
@@ -175,11 +184,11 @@ export function useSearchState(bundle: SearchDataBundle) {
       Object.keys(toSearchParams({ ...state, sort: null })).length > 0
     if (!anyFilter) return payload.histogram
     const ranges: [number | null, number | null][] = []
-    for (const p of results) {
+    for (const p of filtered) {
       for (const [, s, e] of payload.careers[p.id] ?? []) ranges.push([s, e])
     }
     return buildHistogram(ranges)
-  }, [state, results, payload])
+  }, [state, filtered, payload])
 
   const updateState = useCallback(
     (updates: Partial<SearchState>) => {

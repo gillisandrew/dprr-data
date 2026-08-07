@@ -11,10 +11,17 @@ export function eraKey(p: {
   return p.eraFrom ?? p.eraTo ?? UNDATED
 }
 
-const stripId = (name: string) => name.replace(/^[A-Z]{4}\d+ /, "")
+// DPRR IDs are normally 4 uppercase letters + digits (e.g. "IUNI0001"), but
+// a handful of uncertain-gens entries use 1-4 letters + a hyphen instead of
+// digits (e.g. "AN-3071", "B-3088").
+const stripId = (name: string) => name.replace(/^[A-Z]{1,4}[-\d]\S* /, "")
 // Roman names are alphabetized by nomen (family name), not by the leading
-// praenomen abbreviation (e.g. "L.", "Ti.", "App.") — drop it before comparing.
-const stripPraenomen = (name: string) => name.replace(/^[A-Za-z]+\.\s+/, "")
+// praenomen abbreviation (e.g. "L.", "Ti.", "App.") — drop it before
+// comparing. Also handles unknown praenomen markers ("-."), the apostrophe
+// in "M'." (Manius), and names with no praenomen at all (left with a
+// leading space after the ID is stripped).
+const stripPraenomen = (name: string) =>
+  name.replace(/^(?:[A-Za-z]+['?]?\.|-\.)?\s*/, "")
 
 export function compareByName(
   a: { name: string },
@@ -23,6 +30,20 @@ export function compareByName(
   return stripPraenomen(stripId(a.name)).localeCompare(
     stripPraenomen(stripId(b.name))
   )
+}
+
+/**
+ * Compare two era keys for a given direction (1 = ascending/earliest-first,
+ * -1 = descending/latest-first). Undated entries (UNDATED) always sort last
+ * regardless of direction — branched explicitly rather than folded into the
+ * numeric subtraction, since negating/comparing against MAX_SAFE_INTEGER via
+ * plain arithmetic is easy to get subtly wrong.
+ */
+function compareEraKeys(ka: number, kb: number, direction: 1 | -1): number {
+  if (ka === UNDATED && kb === UNDATED) return 0
+  if (ka === UNDATED) return 1
+  if (kb === UNDATED) return -1
+  return direction * (ka - kb)
 }
 
 /** sort=null resolves to "relevance" when hasQuery else "earliest". */
@@ -41,11 +62,11 @@ export function sortResults(
     case "latest":
       return copy.sort(
         (a, b) =>
-          (eraKey(b) === UNDATED ? -UNDATED : eraKey(b)) -
-            (eraKey(a) === UNDATED ? -UNDATED : eraKey(a)) ||
-          compareByName(a, b)
+          compareEraKeys(eraKey(a), eraKey(b), -1) || compareByName(a, b)
       )
     case "earliest":
-      return copy.sort((a, b) => eraKey(a) - eraKey(b) || compareByName(a, b))
+      return copy.sort(
+        (a, b) => compareEraKeys(eraKey(a), eraKey(b), 1) || compareByName(a, b)
+      )
   }
 }

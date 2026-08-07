@@ -24,6 +24,22 @@ describe("ordering", () => {
     ).toBeGreaterThan(0)
   })
 
+  test("compareByName normalizes uncertain praenomen markers, apostrophes, empty praenomen, and hyphenated IDs", () => {
+    const list = [
+      { name: "ACIL5133 -. Acilius (2)" }, // unknown-praenomen marker "-."
+      { name: "ACIL0968 M'. Acilius (10)" }, // apostrophe praenomen (Manius)
+      { name: "AEBU5164  Aebutius (1)" }, // empty praenomen, leading space
+      { name: "AN-3071 -. An- (not in RE)" }, // hyphenated short ID
+    ]
+    const sorted = [...list].sort(compareByName)
+    expect(sorted.map((x) => x.name)).toEqual([
+      "ACIL0968 M'. Acilius (10)",
+      "ACIL5133 -. Acilius (2)",
+      "AEBU5164  Aebutius (1)",
+      "AN-3071 -. An- (not in RE)",
+    ])
+  })
+
   test("sortResults: earliest default, latest, name, relevance passthrough", () => {
     const list = [
       p("B", "BBBB0001 B", -100, -90),

@@ -8,11 +8,30 @@ export interface FilterContext {
   officeNames: string[]
 }
 
+// The fixed-point expansion below walks the entire hierarchy (e.g. ~200
+// office nodes), and matchesFacets calls descendantSet once per selected
+// value per candidate person. Without caching, a single filter pass over
+// thousands of people re-walks the hierarchy from scratch for every one of
+// them. Cache per (parentOf object identity, value) so each pair is
+// expanded exactly once for the lifetime of a given hierarchy object.
+const descendantCache = new WeakMap<
+  Record<string, string | null>,
+  Map<string, Set<string>>
+>()
+
 /** Selected value → the set of it plus all hierarchy descendants. */
 export function descendantSet(
   value: string,
   parentOf: Record<string, string | null>
 ): Set<string> {
+  let cache = descendantCache.get(parentOf)
+  if (!cache) {
+    cache = new Map()
+    descendantCache.set(parentOf, cache)
+  }
+  const cached = cache.get(value)
+  if (cached) return cached
+
   const result = new Set<string>([value])
   let added = true
   while (added) {
@@ -24,6 +43,7 @@ export function descendantSet(
       }
     }
   }
+  cache.set(value, result)
   return result
 }
 

@@ -1,5 +1,5 @@
 import { expect, test, describe } from "vite-plus/test"
-import { parseSearchParams, toSearchParams } from "./search"
+import { parseSearchParams, toSearchParams, orderByQueryRank } from "./search"
 
 describe("search param round-trip", () => {
   test("province parses from comma-separated param", () => {
@@ -72,5 +72,23 @@ describe("advanced params round-trip", () => {
 
   test("unknown sort values parse as null", () => {
     expect(parseSearchParams({ sort: "bogus" }).sort).toBeNull()
+  })
+})
+
+describe("orderByQueryRank", () => {
+  test("preserves MiniSearch relevance order, not the candidates' input order", () => {
+    const candidates = [{ id: "A" }, { id: "B" }, { id: "C" }]
+    // MiniSearch ranks C highest, then A, then B — the opposite of ID order.
+    const searchResults = [{ id: "C" }, { id: "A" }, { id: "B" }]
+    expect(
+      orderByQueryRank(candidates, searchResults).map((c) => c.id)
+    ).toEqual(["C", "A", "B"])
+  })
+
+  test("drops candidates absent from the search results", () => {
+    const candidates = [{ id: "A" }, { id: "B" }]
+    expect(
+      orderByQueryRank(candidates, [{ id: "B" }]).map((c) => c.id)
+    ).toEqual(["B"])
   })
 })
