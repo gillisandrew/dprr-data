@@ -143,7 +143,12 @@ function SearchResults({
           initialFocus={initialFocus}
         />
         <main className="min-w-0 flex-1">
-          <ResultsList results={results} />
+          <ResultsList
+            results={results}
+            sort={state.sort}
+            hasQuery={state.q.trim().length > 0}
+            onSortChange={(sort) => updateState({ sort })}
+          />
         </main>
       </div>
     </>

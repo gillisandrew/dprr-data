@@ -1,11 +1,21 @@
 // site/src/components/results-list.tsx
 import { useEffect, useState } from "react"
-import { PersonCard } from "./person-card"
-import type { PersonSummary } from "@/data/types"
+import { FastiRow } from "./fasti-row"
+import type { PersonSummary, SearchState } from "@/data/types"
 
 const PAGE_SIZE = 50
 
-export function ResultsList({ results }: { results: PersonSummary[] }) {
+export function ResultsList({
+  results,
+  sort,
+  hasQuery,
+  onSortChange,
+}: {
+  results: PersonSummary[]
+  sort: SearchState["sort"]
+  hasQuery: boolean
+  onSortChange: (sort: SearchState["sort"]) => void
+}) {
   const [page, setPage] = useState(0)
 
   // Reset to first page when results change (new search/filter)
@@ -18,15 +28,38 @@ export function ResultsList({ results }: { results: PersonSummary[] }) {
 
   return (
     <div>
-      <p className="mb-3 text-sm text-muted-foreground">
-        {results.length.toLocaleString()} result
-        {results.length !== 1 && "s"}
-      </p>
-      <div className="space-y-2">
-        {visible.map((person) => (
-          <PersonCard key={person.id} person={person} />
-        ))}
+      <div className="mb-3 flex items-baseline justify-between">
+        <p className="text-sm text-muted-foreground">
+          {results.length.toLocaleString()} result
+          {results.length !== 1 && "s"}
+        </p>
+        <label className="text-xs text-muted-foreground">
+          Sort{" "}
+          <select
+            value={sort ?? (hasQuery ? "relevance" : "earliest")}
+            onChange={(e) =>
+              onSortChange(e.target.value as SearchState["sort"])
+            }
+            className="rounded-md border bg-transparent px-1 py-0.5"
+          >
+            <option value="earliest">Earliest first</option>
+            <option value="latest">Latest first</option>
+            <option value="name">Name A–Z</option>
+            {hasQuery && <option value="relevance">Relevance</option>}
+          </select>
+        </label>
       </div>
+      {results.length === 0 ? (
+        <p className="py-8 text-center text-sm text-muted-foreground">
+          No persons match — try removing a filter.
+        </p>
+      ) : (
+        <div>
+          {visible.map((person) => (
+            <FastiRow key={person.id} person={person} />
+          ))}
+        </div>
+      )}
       {page + 1 < totalPages && (
         <button
           onClick={() => setPage((p) => p + 1)}
