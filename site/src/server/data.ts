@@ -1,6 +1,14 @@
 import { createServerFn } from "@tanstack/react-start"
 import { loadAllData, toSummaries } from "../data/loader"
 import { buildSearchIndex, MINISEARCH_OPTIONS } from "../data/search-index"
+import {
+  buildOfficeIndex,
+  buildOfficeDetail,
+  buildTribeIndex,
+  buildTribeDetail,
+  buildProvinceIndex,
+  buildProvinceDetail,
+} from "../data/aggregate-references"
 import type { PersonSummary } from "../data/types"
 
 /** Serializable subset of MiniSearch options returned to the client. */
@@ -61,3 +69,51 @@ export const getSearchData = createServerFn({ method: "GET" }).handler(
     }
   }
 )
+
+export const getOfficeIndex = createServerFn({ method: "GET" }).handler(
+  async () => {
+    const { persons } = await loadAllData()
+    return buildOfficeIndex(persons)
+  }
+)
+
+export const getOfficeDetail = createServerFn({ method: "GET" })
+  .inputValidator((slug: string) => slug)
+  .handler(async ({ data: slug }) => {
+    const { persons } = await loadAllData()
+    const detail = buildOfficeDetail(persons, slug)
+    if (!detail) throw new Error(`Office not found: ${slug}`)
+    return detail
+  })
+
+export const getTribeIndex = createServerFn({ method: "GET" }).handler(
+  async () => {
+    const { persons } = await loadAllData()
+    return buildTribeIndex(persons)
+  }
+)
+
+export const getTribeDetail = createServerFn({ method: "GET" })
+  .inputValidator((slug: string) => slug)
+  .handler(async ({ data: slug }) => {
+    const { persons } = await loadAllData()
+    const detail = buildTribeDetail(persons, slug)
+    if (!detail) throw new Error(`Tribe not found: ${slug}`)
+    return detail
+  })
+
+export const getProvinceIndex = createServerFn({ method: "GET" }).handler(
+  async () => {
+    const { persons } = await loadAllData()
+    return buildProvinceIndex(persons)
+  }
+)
+
+export const getProvinceDetail = createServerFn({ method: "GET" })
+  .inputValidator((slug: string) => slug)
+  .handler(async ({ data: slug }) => {
+    const { persons } = await loadAllData()
+    const detail = buildProvinceDetail(persons, slug)
+    if (!detail) throw new Error(`Province not found: ${slug}`)
+    return detail
+  })
