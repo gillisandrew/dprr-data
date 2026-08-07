@@ -45,7 +45,7 @@ function makePerson(over: Partial<Person>): Person {
     highestOffice: null,
     eraFrom: null,
     eraTo: null,
-    tribe: null,
+    tribes: [],
     offices: [],
     provinces: [],
     postAssertions: [],
@@ -77,7 +77,7 @@ const consul90 = makeAssertion({
 const personA = makePerson({
   id: "AAAA0001",
   name: "AAAA0001 A. Aulus",
-  tribe: "Fabia",
+  tribes: ["Fabia"],
   offices: ["consul"],
   provinces: ["Sicilia"],
   postAssertions: [consul100],

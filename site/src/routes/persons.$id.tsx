@@ -144,10 +144,10 @@ function PersonHeader({
             <dd>{person.reNumber}</dd>
           </>
         )}
-        {person.tribe && (
+        {person.tribes.length > 0 && (
           <>
             <dt className="font-medium">Tribe</dt>
-            <dd>{person.tribe}</dd>
+            <dd>{person.tribes.join(", ")}</dd>
           </>
         )}
         {person.highestOffice && (

@@ -130,7 +130,9 @@ export function buildOfficeDetail(
 export function buildTribeIndex(persons: Person[]): TribeIndexEntry[] {
   const byName = new Map<string, number>()
   for (const p of persons) {
-    if (p.tribe) byName.set(p.tribe, (byName.get(p.tribe) ?? 0) + 1)
+    for (const tribe of p.tribes) {
+      byName.set(tribe, (byName.get(tribe) ?? 0) + 1)
+    }
   }
   assertUniqueSlugs(byName.keys(), "Tribe")
   return [...byName]
@@ -142,12 +144,15 @@ export function buildTribeDetail(
   persons: Person[],
   slug: string
 ): TribeDetail | null {
-  const matching = persons.filter((p) => p.tribe && slugify(p.tribe) === slug)
+  const matching = persons.filter((p) =>
+    p.tribes.some((t) => slugify(t) === slug)
+  )
   if (matching.length === 0) return null
   const members = toSummaries(matching).sort((a, b) =>
     a.name.localeCompare(b.name)
   )
-  return { slug, name: matching[0].tribe as string, members }
+  const name = matching[0].tribes.find((t) => slugify(t) === slug) as string
+  return { slug, name, members }
 }
 
 export function buildProvinceIndex(persons: Person[]): ProvinceIndexEntry[] {

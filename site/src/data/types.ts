@@ -14,7 +14,8 @@ export interface PersonSummary {
   highestOffice: string | null
   eraFrom: number | null
   eraTo: number | null
-  tribe: string | null
+  /** Tribe names from TribeAssertion entities (multiple = differing source claims). */
+  tribes: string[]
   /** Flattened list of office names held (for faceting). */
   offices: string[]
   /** Distinct canonical provinces across all post assertions (for faceting). */

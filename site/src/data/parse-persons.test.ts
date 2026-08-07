@@ -90,6 +90,36 @@ describe("parsePersonTtl", () => {
   })
 })
 
+describe("tribe assertions", () => {
+  test("resolves tribes from TribeAssertion entities", () => {
+    const ttl = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/1> a dprr:TribeAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/23> .
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/2> a dprr:TribeAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/24> .
+`
+    const refs = makeRefs()
+    refs.tribes.set("http://romanrepublic.ac.uk/rdf/entity/Tribe/23", {
+      name: "Fabia",
+      abbreviation: "Fab.",
+    })
+    refs.tribes.set("http://romanrepublic.ac.uk/rdf/entity/Tribe/24", {
+      name: "Cornelia",
+      abbreviation: "Cor.",
+    })
+    const persons = parsePersonTtl(ttl, refs, new Map())
+    expect(persons[0].tribes).toEqual(["Fabia", "Cornelia"])
+  })
+})
+
 describe("province extraction", () => {
   test("resolves provinceOriginal through the curated mapping", () => {
     const ttl = `

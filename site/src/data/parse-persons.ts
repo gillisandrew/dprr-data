@@ -21,6 +21,7 @@ const POST_ASSERTION_NOTE_TYPE = `${DPRR}PostAssertionNote`
 const RELATIONSHIP_ASSERTION_TYPE = `${DPRR}RelationshipAssertion`
 const RELATIONSHIP_REF_TYPE = `${DPRR}RelationshipAssertionReference`
 const DATE_INFO_TYPE = `${DPRR}DateInformation`
+const TRIBE_ASSERTION_TYPE = `${DPRR}TribeAssertion`
 const PERSON_NOTE_TYPE = `${DPRR}PersonNote`
 const PRIMARY_SOURCE_REF_TYPE = `${DPRR}PrimarySourceReference`
 const PERSON_PREFIX = "http://romanrepublic.ac.uk/rdf/entity/Person/"
@@ -88,6 +89,7 @@ export function parsePersonTtl(
   const relationshipGroups = new Map<string, QuadGroup>()
   const relationshipRefGroups = new Map<string, QuadGroup>()
   const dateInfoGroups = new Map<string, QuadGroup>()
+  const tribeAssertionGroups = new Map<string, QuadGroup>()
   const personNoteGroups = new Map<string, QuadGroup>()
   const primarySourceRefGroups = new Map<string, QuadGroup>()
   const personGroups = new Map<string, QuadGroup>()
@@ -111,6 +113,9 @@ export function parsePersonTtl(
         break
       case DATE_INFO_TYPE:
         dateInfoGroups.set(uri, group)
+        break
+      case TRIBE_ASSERTION_TYPE:
+        tribeAssertionGroups.set(uri, group)
         break
       case PERSON_NOTE_TYPE:
         personNoteGroups.set(uri, group)
@@ -283,6 +288,18 @@ export function parsePersonTtl(
       .filter((n): n is Note => n !== null)
   }
 
+  // Build tribes for a person URI from TribeAssertion entities
+  function buildTribes(personUri: string): string[] {
+    const names: string[] = []
+    for (const [, g] of tribeAssertionGroups) {
+      if (first(g, "isAboutPerson") !== personUri) continue
+      const tribeUri = first(g, "hasTribe")
+      const name = tribeUri ? refs.tribes.get(tribeUri)?.name : null
+      if (name && !names.includes(name)) names.push(name)
+    }
+    return names
+  }
+
   // Build Person records
   const persons: Person[] = []
   for (const [personUri, g] of personGroups) {
@@ -291,7 +308,6 @@ export function parsePersonTtl(
 
     const sexUri = first(g, "isSex")
     const praenomenUri = first(g, "hasPraenomen")
-    const tribeUri = first(g, "hasTribe")
     const personNumericId = personUri.startsWith(PERSON_PREFIX)
       ? personUri.slice(PERSON_PREFIX.length)
       : ""
@@ -323,7 +339,7 @@ export function parsePersonTtl(
       highestOffice: first(g, "hasHighestOffice"),
       eraFrom: firstNum(g, "hasEraFrom"),
       eraTo: firstNum(g, "hasEraTo"),
-      tribe: (tribeUri && refs.tribes.get(tribeUri)?.name) ?? null,
+      tribes: buildTribes(personUri),
       offices: officeNames,
       provinces: provinceNames,
       postAssertions,

@@ -64,7 +64,7 @@ function matchesFacets(person: PersonSummary, state: SearchState): boolean {
   if (state.nobilis !== null && person.isNobilis !== state.nobilis) return false
   if (
     state.tribe.length > 0 &&
-    (!person.tribe || !state.tribe.includes(person.tribe))
+    !state.tribe.some((t) => person.tribes.includes(t))
   )
     return false
   if (
@@ -154,7 +154,7 @@ export function useSearchState(
       office: countWith("office", "offices"),
       nomen: countWith("nomen", "nomen"),
       sex: countWith("sex", "sex"),
-      tribe: countWith("tribe", "tribe"),
+      tribe: countWith("tribe", "tribes"),
       province: countWith("province", "provinces"),
     }
   }, [state, summaries, miniSearch])
