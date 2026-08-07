@@ -37,11 +37,15 @@ function SearchPage() {
   const rawParams = Route.useSearch() as Record<string, string>
   const hasParams =
     Object.keys(toSearchParams(parseSearchParams(rawParams))).length > 0
-  const [interacted, setInteracted] = useState(false)
+  const [interacted, setInteracted] = useState(() => hasParams)
   const [initialFocus, setInitialFocus] = useState<Focus | undefined>()
   const [pendingQuery, setPendingQuery] = useState<string | null>(null)
   const showLanding = !hasParams && !interacted
   const { bundle, error } = useSearchData(!showLanding)
+
+  useEffect(() => {
+    if (hasParams && !interacted) setInteracted(true)
+  }, [hasParams, interacted])
 
   const content = showLanding ? (
     <SearchLanding
