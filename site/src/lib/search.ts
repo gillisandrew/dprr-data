@@ -1,9 +1,8 @@
 // site/src/lib/search.ts
 import { useCallback, useMemo } from "react"
 import { useNavigate, useSearch } from "@tanstack/react-router"
-import MiniSearch from "minisearch"
+import type MiniSearch from "minisearch"
 import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
-import { MINISEARCH_OPTIONS } from "@/data/search-index"
 
 /** Split a comma-joined, per-value-encoded facet param back into raw values. */
 function splitFacetParam(value: string | undefined): string[] {
@@ -114,18 +113,11 @@ function computeFacetValues(
 
 export function useSearchState(
   summaries: PersonSummary[],
-  searchIndexJson: object
+  miniSearch: MiniSearch<PersonSummary>
 ) {
   const rawParams = useSearch({ strict: false }) as Record<string, string>
   const navigate = useNavigate()
   const state = useMemo(() => parseSearchParams(rawParams), [rawParams])
-
-  const miniSearch = useMemo(() => {
-    return MiniSearch.loadJSON<PersonSummary>(
-      JSON.stringify(searchIndexJson),
-      MINISEARCH_OPTIONS
-    )
-  }, [searchIndexJson])
 
   const results = useMemo(() => {
     let candidates: PersonSummary[]

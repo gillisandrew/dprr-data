@@ -1,6 +1,5 @@
 import { createServerFn } from "@tanstack/react-start"
-import { loadAllData, toSummaries } from "../data/loader"
-import { buildSearchIndex, MINISEARCH_OPTIONS } from "../data/search-index"
+import { loadAllData } from "../data/loader"
 import {
   buildOfficeIndex,
   buildOfficeDetail,
@@ -10,31 +9,6 @@ import {
   buildProvinceDetail,
   buildNameHierarchy,
 } from "../data/aggregate-references"
-import type { PersonSummary } from "../data/types"
-
-/** Serializable subset of MiniSearch options returned to the client. */
-interface SerializableOptions {
-  fields: string[]
-  storeFields: string[]
-  idField: string
-  searchOptions: {
-    prefix: boolean
-    fuzzy: number
-    boost: Record<string, number>
-  }
-}
-
-// Pre-compute serializable options at module load (no function-valued fields).
-const serializableOptions: SerializableOptions = {
-  fields: MINISEARCH_OPTIONS.fields as string[],
-  storeFields: MINISEARCH_OPTIONS.storeFields as string[],
-  idField: MINISEARCH_OPTIONS.idField as string,
-  searchOptions: {
-    prefix: MINISEARCH_OPTIONS.searchOptions?.prefix as boolean,
-    fuzzy: MINISEARCH_OPTIONS.searchOptions?.fuzzy as number,
-    boost: MINISEARCH_OPTIONS.searchOptions?.boost as Record<string, number>,
-  },
-}
 
 export const getPersonById = createServerFn({ method: "GET" })
   .inputValidator((id: string) => id)
@@ -51,27 +25,6 @@ export const getAllPersonIds = createServerFn({ method: "GET" }).handler(
   async () => {
     const { persons } = await loadAllData()
     return persons.map((p) => p.id)
-  }
-)
-
-export const getSearchData = createServerFn({ method: "GET" }).handler(
-  async (): Promise<{
-    summaries: PersonSummary[]
-    searchIndex: object
-    options: SerializableOptions
-    officeHierarchy: Record<string, string | null>
-    provinceHierarchy: Record<string, string | null>
-  }> => {
-    const { persons, refs } = await loadAllData()
-    const summaries = toSummaries(persons)
-    const searchIndex = buildSearchIndex(summaries)
-    return {
-      summaries,
-      searchIndex,
-      options: serializableOptions,
-      officeHierarchy: buildNameHierarchy(refs.offices),
-      provinceHierarchy: buildNameHierarchy(refs.provinces),
-    }
   }
 )
 
