@@ -6,6 +6,7 @@ import viteTsConfigPaths from "vite-tsconfig-paths"
 import tailwindcss from "@tailwindcss/vite"
 
 const config = defineConfig({
+  base: "/dprr-data/",
   lint: { options: { typeAware: true, typeCheck: true } },
   fmt: {
     endOfLine: "lf",

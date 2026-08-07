@@ -52,7 +52,7 @@ function SearchPage() {
       {/* Hidden links for static prerender crawler */}
       <div className="hidden" aria-hidden="true">
         {summaries.map((p) => (
-          <a key={p.id} href={`/persons/${p.id}`}>
+          <a key={p.id} href={`${import.meta.env.BASE_URL}persons/${p.id}`}>
             {p.id}
           </a>
         ))}
