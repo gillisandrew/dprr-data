@@ -1986,7 +1986,490 @@ git commit -m "feat: add JSON-LD structured data to person and search pages"
 
 ---
 
-### Task 17: Full build verification
+### Task 17: Uncertainty markers and chronological careers
+
+The original DPRR renders scholarly uncertainty explicitly (*Tribunus Militum?* 508 — italic, trailing "?") and lists careers chronologically. Our TTL export carries the flags — 6,748 `dprr:isUncertain`, 2,596 `dprr:isDateStartUncertain`, 2,018 `dprr:isDateEndUncertain` on post assertions — but the parser drops them, and careers render in TTL iteration order. Presenting an uncertain magistracy as certain misrepresents the scholarship.
+
+**Files:**
+- Modify: `site/src/data/types.ts` (`PostAssertion`)
+- Modify: `site/src/data/parse-persons.ts`
+- Test: `site/src/data/parse-persons.test.ts`
+- Modify: `site/src/data/aggregate-references.ts` (`OfficeHolder`, `ProvinceAssertion`)
+- Modify: `site/src/data/aggregate-references.test.ts` (fixture defaults)
+- Modify: `site/src/routes/persons.$id.tsx`
+- Modify: `site/src/routes/offices.$slug.tsx`
+- Modify: `site/src/routes/provinces.$slug.tsx`
+
+**Interfaces:**
+- Produces: `PostAssertion.isUncertain: boolean`, `PostAssertion.isDateStartUncertain: boolean`, `PostAssertion.isDateEndUncertain: boolean`; `postAssertions` sorted by `dateStart ?? dateEnd ?? Infinity` ascending; `OfficeHolder.isUncertain: boolean`; `ProvinceAssertion.isUncertain: boolean`.
+
+- [ ] **Step 1: Write the failing test**
+
+Add to `site/src/data/parse-persons.test.ts`:
+
+```ts
+describe("uncertainty and career order", () => {
+  test("reads uncertainty flags and sorts assertions chronologically", () => {
+    const ttl = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateStart "-100"^^xsd:integer ;
+  dprr:isUncertain true ;
+  dprr:isDateStartUncertain true .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateStart "-200"^^xsd:integer .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> .
+`
+    const persons = parsePersonTtl(ttl, emptyRefs(), new Map())
+    const pas = persons[0].postAssertions
+    // Chronological: -200 first, -100 second, undated last
+    expect(pas.map((pa) => pa.dateStart)).toEqual([-200, -100, null])
+    expect(pas[1].isUncertain).toBe(true)
+    expect(pas[1].isDateStartUncertain).toBe(true)
+    expect(pas[1].isDateEndUncertain).toBe(false)
+    expect(pas[0].isUncertain).toBe(false)
+  })
+})
+```
+
+(Reuse the same `emptyRefs()` helper as the province extraction tests.)
+
+- [ ] **Step 2: Run test to verify it fails**
+
+Run: `cd site && vp test src/data/parse-persons.test.ts`
+Expected: FAIL — flags do not exist / order wrong.
+
+- [ ] **Step 3: Implement parser and types**
+
+`site/src/data/types.ts` — add to `PostAssertion`:
+
+```ts
+  /** True when the source scholarship marks this post itself as uncertain. */
+  isUncertain: boolean
+  isDateStartUncertain: boolean
+  isDateEndUncertain: boolean
+```
+
+`site/src/data/parse-persons.ts` — in `buildPostAssertions`, include in the pushed object:
+
+```ts
+        isUncertain: first(g, "isUncertain") === "true",
+        isDateStartUncertain: first(g, "isDateStartUncertain") === "true",
+        isDateEndUncertain: first(g, "isDateEndUncertain") === "true",
+```
+
+and after the loop, before `return results`:
+
+```ts
+    // Chronological career order (undated entries last), matching DPRR
+    results.sort(
+      (a, b) =>
+        (a.dateStart ?? a.dateEnd ?? Number.POSITIVE_INFINITY) -
+        (b.dateStart ?? b.dateEnd ?? Number.POSITIVE_INFINITY)
+    )
+```
+
+- [ ] **Step 4: Run tests to verify they pass**
+
+Run: `cd site && vp test src/data/parse-persons.test.ts`
+Expected: PASS. Then fix the `makeAssertion` fixture in `site/src/data/aggregate-references.test.ts` — add the three new fields to its defaults:
+
+```ts
+    isUncertain: false,
+    isDateStartUncertain: false,
+    isDateEndUncertain: false,
+```
+
+- [ ] **Step 5: Thread through aggregations**
+
+In `site/src/data/aggregate-references.ts`:
+- Add `isUncertain: boolean` to `OfficeHolder` and `ProvinceAssertion`.
+- In `buildOfficeDetail`, add `isUncertain: pa.isUncertain,` to the pushed holder.
+- In `buildProvinceDetail`, add `isUncertain: pa.isUncertain,` to the pushed assertion.
+- Update the province detail test in `aggregate-references.test.ts` (it uses exact `toEqual`) to include `isUncertain: false`.
+
+Run: `cd site && vp test src/data/aggregate-references.test.ts` — expect PASS.
+
+- [ ] **Step 6: Render the "?" convention**
+
+In `persons.$id.tsx` `OfficeEntry` — wrap the office name (the `Link` or plain text from Task 15) so uncertain posts render italic with a trailing "?":
+
+```tsx
+        <span className={assertion.isUncertain ? "italic" : undefined}>
+          {/* existing office-name Link / plain text goes here unchanged */}
+          {assertion.isUncertain && "?"}
+        </span>
+```
+
+and after the date expression inside the date paragraph, append:
+
+```tsx
+          {(assertion.isDateStartUncertain || assertion.isDateEndUncertain) &&
+            "?"}
+```
+
+In `offices.$slug.tsx`, mark the holder line: wrap the `PersonLink` in
+`<span className={h.isUncertain ? "italic" : undefined}>` and render `{h.isUncertain && <span className="text-muted-foreground">?</span>}` immediately after it.
+
+In `provinces.$slug.tsx`, do the same for `a.isUncertain` around its `PersonLink`.
+
+- [ ] **Step 7: Verify, check, commit**
+
+Run: `cd site && vp test src && vp check`. Dev-server spot check: `grep -rl "isUncertain true" persons | head -1` gives a TTL file whose person ID (filename) has an uncertain post — open that person page and confirm the italic name + "?".
+
+```bash
+git add site/src/data 'site/src/routes/persons.$id.tsx' 'site/src/routes/offices.$slug.tsx' 'site/src/routes/provinces.$slug.tsx'
+git commit -m "feat: surface scholarly uncertainty flags and sort careers chronologically"
+```
+
+---
+
+### Task 18: Office and province hierarchy grouping
+
+`reference/offices.ttl` organizes its 204 offices under 8 roots via `hasParent` — Magisterial Posts, Promagisterial Posts, Priesthoods, Non-magisterial Posts, Equestrian Functions, Distinctions, plus two standalone entries (max depth 3, e.g. Magisterial Posts → consul → consul suffectus). Provinces nest under 12 roots (Italia, Africa, Asia, Mediterranean, …; max depth 2). The original DPRR groups its Career and Location facets this way; our flat alphabetical lists should follow.
+
+**Files:**
+- Modify: `site/src/data/aggregate-references.ts` (`buildNameHierarchy`, `categoryOf`, `category` on `OfficeIndexEntry`)
+- Modify: `site/src/data/aggregate-references.test.ts`
+- Modify: `site/src/server/data.ts` (`getOfficeIndex` passes hierarchy; `getSearchData` returns hierarchy maps)
+- Modify: `site/src/routes/offices.index.tsx` (grouped rendering)
+- Create: `site/src/components/facet-hierarchy-group.tsx`
+- Modify: `site/src/components/facet-sidebar.tsx` (Office + Province facets)
+- Modify: `site/src/routes/index.tsx` (thread hierarchy maps)
+
+**Interfaces:**
+- Produces (from `@/data/aggregate-references`):
+
+```ts
+/** child name → parent name (null for roots), from a ReferenceMaps-style map */
+export function buildNameHierarchy(
+  entries: Map<string, { name: string; parent: string | null }>
+): Record<string, string | null>
+/** Walk parentOf to the root; returns the root name (or name itself if unknown). */
+export function categoryOf(
+  name: string,
+  parentOf: Record<string, string | null>
+): string
+```
+
+`OfficeIndexEntry` gains `category: string`; `buildOfficeIndex(persons, parentOf)` gains the second parameter.
+- Produces (from `@/server/data`): `getSearchData()` additionally returns `officeHierarchy: Record<string, string | null>` and `provinceHierarchy: Record<string, string | null>`.
+- Produces: `<FacetHierarchyGroup title items parentOf selected onChange defaultOpen? />`.
+
+- [ ] **Step 1: Write the failing tests**
+
+Add to `site/src/data/aggregate-references.test.ts`:
+
+```ts
+import { buildNameHierarchy, categoryOf } from "./aggregate-references"
+
+describe("hierarchy", () => {
+  const refMap = new Map([
+    ["uri:root", { name: "Magisterial Posts", parent: null }],
+    ["uri:consul", { name: "consul", parent: "uri:root" }],
+    ["uri:suff", { name: "consul suffectus", parent: "uri:consul" }],
+  ])
+
+  test("buildNameHierarchy maps child names to parent names", () => {
+    expect(buildNameHierarchy(refMap)).toEqual({
+      "Magisterial Posts": null,
+      consul: "Magisterial Posts",
+      "consul suffectus": "consul",
+    })
+  })
+
+  test("categoryOf walks to the root", () => {
+    const h = buildNameHierarchy(refMap)
+    expect(categoryOf("consul suffectus", h)).toBe("Magisterial Posts")
+    expect(categoryOf("consul", h)).toBe("Magisterial Posts")
+    expect(categoryOf("unknown office", h)).toBe("unknown office")
+  })
+
+  test("office index carries the category", () => {
+    const h = buildNameHierarchy(refMap)
+    const index = buildOfficeIndex([personA, personB], h)
+    expect(index[0].category).toBe("Magisterial Posts")
+  })
+})
+```
+
+Update the existing `buildOfficeIndex`/`buildOfficeDetail` tests to pass `{}` as the second argument where they don't care about categories, and extend the exact-equality index expectation with `category: "consul"` (with an empty hierarchy an office is its own category).
+
+- [ ] **Step 2: Run tests to verify they fail**
+
+Run: `cd site && vp test src/data/aggregate-references.test.ts`
+Expected: FAIL — exports missing.
+
+- [ ] **Step 3: Implement the data side**
+
+In `site/src/data/aggregate-references.ts`:
+
+```ts
+export function buildNameHierarchy(
+  entries: Map<string, { name: string; parent: string | null }>
+): Record<string, string | null> {
+  const parentOf: Record<string, string | null> = {}
+  for (const { name, parent } of entries.values()) {
+    parentOf[name] = parent ? (entries.get(parent)?.name ?? null) : null
+  }
+  return parentOf
+}
+
+export function categoryOf(
+  name: string,
+  parentOf: Record<string, string | null>
+): string {
+  let current = name
+  const seen = new Set<string>()
+  while (parentOf[current] != null && !seen.has(current)) {
+    seen.add(current)
+    current = parentOf[current] as string
+  }
+  return current
+}
+```
+
+Change `buildOfficeIndex` to `buildOfficeIndex(persons: Person[], parentOf: Record<string, string | null>)` and include `category: categoryOf(name, parentOf),` in the mapped entry. Add `category: string` to `OfficeIndexEntry`.
+
+In `site/src/server/data.ts`:
+- `getOfficeIndex`: `return buildOfficeIndex(persons, buildNameHierarchy(refs.offices))` (destructure `refs` from `loadAllData()`).
+- `getSearchData`: add to the returned object:
+
+```ts
+      officeHierarchy: buildNameHierarchy(refs.offices),
+      provinceHierarchy: buildNameHierarchy(refs.provinces),
+```
+
+(`refs.offices` values have `abbreviation` too — structurally compatible with the `{ name, parent }` parameter type.) The handler has an explicit `Promise<{...}>` return annotation — extend it with `officeHierarchy: Record<string, string | null>` and `provinceHierarchy: Record<string, string | null>`.
+
+Run: `cd site && vp test src/data && vp check` — expect PASS.
+
+- [ ] **Step 4: Group the office index page**
+
+In `site/src/routes/offices.index.tsx`, group entries by `category` and render a heading per group, in DPRR's order:
+
+```tsx
+const CATEGORY_ORDER = [
+  "Magisterial Posts",
+  "Promagisterial Posts",
+  "Priesthoods",
+  "Non-magisterial Posts",
+  "Equestrian Functions",
+  "Distinctions",
+]
+
+function groupByCategory(offices: OfficeIndexEntry[]) {
+  const groups = new Map<string, OfficeIndexEntry[]>()
+  for (const o of offices) {
+    const list = groups.get(o.category) ?? []
+    list.push(o)
+    groups.set(o.category, list)
+  }
+  return [...groups].sort(
+    (a, b) =>
+      (CATEGORY_ORDER.indexOf(a[0]) + 1 || 99) -
+        (CATEGORY_ORDER.indexOf(b[0]) + 1 || 99) ||
+      a[0].localeCompare(b[0])
+  )
+}
+```
+
+(import `type { OfficeIndexEntry } from "@/data/aggregate-references"`). In the component, replace the single `<ul>` with one `<section>` per group: an `<h2 className="mt-8 font-heading text-xl font-semibold">{category}</h2>` followed by the existing `<ul>` markup for that group's entries.
+
+- [ ] **Step 5: Create the hierarchical facet component**
+
+`site/src/components/facet-hierarchy-group.tsx`:
+
+```tsx
+// site/src/components/facet-hierarchy-group.tsx
+import { useMemo, useState } from "react"
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Input } from "@/components/ui/input"
+import type { FacetValue } from "@/data/types"
+
+interface FacetHierarchyGroupProps {
+  title: string
+  items: FacetValue[]
+  /** child name → parent name (null/absent for roots) */
+  parentOf: Record<string, string | null>
+  selected: string[]
+  onChange: (values: string[]) => void
+  defaultOpen?: boolean
+}
+
+interface TreeNode {
+  name: string
+  count: number | null // null → structural label only, not selectable
+  children: TreeNode[]
+}
+
+function buildTree(
+  items: FacetValue[],
+  parentOf: Record<string, string | null>
+): TreeNode[] {
+  const countByName = new Map(items.map((i) => [i.value, i.count]))
+  // Universe: item names plus all their ancestors
+  const keep = new Set<string>()
+  for (const i of items) {
+    let current: string | null = i.value
+    while (current && !keep.has(current)) {
+      keep.add(current)
+      current = parentOf[current] ?? null
+    }
+  }
+  const childrenOf = new Map<string, string[]>()
+  const roots: string[] = []
+  for (const name of keep) {
+    const parent = parentOf[name] ?? null
+    if (parent && keep.has(parent)) {
+      const list = childrenOf.get(parent) ?? []
+      list.push(name)
+      childrenOf.set(parent, list)
+    } else {
+      roots.push(name)
+    }
+  }
+  function toNode(name: string): TreeNode {
+    const children = (childrenOf.get(name) ?? []).map(toNode)
+    children.sort((a, b) => (b.count ?? 0) - (a.count ?? 0))
+    return { name, count: countByName.get(name) ?? null, children }
+  }
+  return roots.map(toNode).sort((a, b) => a.name.localeCompare(b.name))
+}
+
+export function FacetHierarchyGroup({
+  title,
+  items,
+  parentOf,
+  selected,
+  onChange,
+  defaultOpen = true,
+}: FacetHierarchyGroupProps) {
+  const [open, setOpen] = useState(defaultOpen)
+  const [filter, setFilter] = useState("")
+  const tree = useMemo(() => buildTree(items, parentOf), [items, parentOf])
+
+  function toggle(value: string) {
+    onChange(
+      selected.includes(value)
+        ? selected.filter((v) => v !== value)
+        : [...selected, value]
+    )
+  }
+
+  const filtered = filter.trim()
+    ? items.filter((i) =>
+        i.value.toLowerCase().includes(filter.trim().toLowerCase())
+      )
+    : null
+
+  function renderNode(node: TreeNode, depth: number) {
+    return (
+      <div key={node.name} style={{ paddingLeft: depth * 12 }}>
+        {node.count !== null ? (
+          <label className="flex cursor-pointer items-center gap-2 py-0.5 text-sm">
+            <Checkbox
+              checked={selected.includes(node.name)}
+              onCheckedChange={() => toggle(node.name)}
+            />
+            <span className="min-w-0 truncate">{node.name}</span>
+            <span className="ml-auto text-xs text-muted-foreground">
+              {node.count}
+            </span>
+          </label>
+        ) : (
+          <p className="pt-2 pb-0.5 text-xs font-semibold text-muted-foreground uppercase">
+            {node.name}
+          </p>
+        )}
+        {node.children.map((c) => renderNode(c, node.count === null ? depth : depth + 1))}
+      </div>
+    )
+  }
+
+  return (
+    <Collapsible open={open} onOpenChange={setOpen}>
+      <CollapsibleTrigger className="flex w-full items-center gap-1 py-2 text-sm font-semibold">
+        {title}
+      </CollapsibleTrigger>
+      <CollapsibleContent className="pb-3 pl-5">
+        <Input
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          placeholder={`Filter ${title.toLowerCase()}...`}
+          className="mb-1 h-7 text-xs"
+        />
+        {filtered
+          ? filtered.map((i) => (
+              <label
+                key={i.value}
+                className="flex cursor-pointer items-center gap-2 py-0.5 text-sm"
+              >
+                <Checkbox
+                  checked={selected.includes(i.value)}
+                  onCheckedChange={() => toggle(i.value)}
+                />
+                <span className="min-w-0 truncate">{i.value}</span>
+                <span className="ml-auto text-xs text-muted-foreground">
+                  {i.count}
+                </span>
+              </label>
+            ))
+          : tree.map((n) => renderNode(n, 0))}
+      </CollapsibleContent>
+    </Collapsible>
+  )
+}
+```
+
+Match the exact CollapsibleTrigger markup (chevron icon etc.) used in `facet-group.tsx` so the sidebar stays visually consistent — copy its trigger JSX verbatim.
+
+- [ ] **Step 6: Wire into the sidebar and search page**
+
+`site/src/components/facet-sidebar.tsx`:
+- Add to `FacetSidebarProps`: `officeHierarchy: Record<string, string | null>` and `provinceHierarchy: Record<string, string | null>`.
+- Replace the Office `FacetGroup` with:
+
+```tsx
+      <FacetHierarchyGroup
+        title="Office"
+        items={facets.office}
+        parentOf={officeHierarchy}
+        selected={state.office}
+        onChange={(office) => onUpdate({ office })}
+      />
+```
+
+- Replace the Province `FacetGroup` (from Task 8) with the same pattern (`parentOf={provinceHierarchy}`, `defaultOpen={false}`).
+
+`site/src/routes/index.tsx` — destructure `officeHierarchy, provinceHierarchy` from `Route.useLoaderData()` and pass them to `<FacetSidebar />`.
+
+- [ ] **Step 7: Verify, check, commit**
+
+Run: `cd site && vp test src && vp check`. Dev-server: the Office facet should show category labels (MAGISTERIAL POSTS, …) with offices beneath and sub-offices (consul suffectus) indented under their parents; filtering within the facet falls back to a flat list; the `/offices/` page shows grouped headings.
+
+```bash
+git add site/src/data site/src/server 'site/src/routes/offices.index.tsx' site/src/routes/index.tsx site/src/components
+git commit -m "feat: group office and province facets and office index by hierarchy"
+```
+
+---
+
+### Task 19: Full build verification
 
 Prove the complete feature set builds and serves correctly under the deployment prefix.
 
@@ -2042,6 +2525,6 @@ git status   # confirm clean tree; commit any stragglers (routeTree.gen.ts etc.)
 
 ## Execution Notes
 
-- **Task order:** 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 12 → 13 → 14 → 11 → 15 → 16 → 17. Task 11 (SiteHeader) is listed early for interface context but typechecks only after the routes in 12–14 exist — execute it after Task 14 (see its Step 1 note).
-- Tasks 3–6 (pipeline) and 7–8 (search UI) are sequential chains. Tasks 12/13/14 are mutually independent.
+- **Task order:** 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 12 → 13 → 14 → 11 → 15 → 16 → 17 → 18 → 19. Task 11 (SiteHeader) is listed early for interface context but typechecks only after the routes in 12–14 exist — execute it after Task 14 (see its Step 1 note).
+- Tasks 3–6 (pipeline) and 7–8 (search UI) are sequential chains. Tasks 12/13/14 are mutually independent. Tasks 17–18 (scholarly-convention alignment from the romanrepublic.ac.uk review) intentionally revisit files from earlier tasks; running them after Task 16 keeps each earlier task's diff small and reviewable.
 - The province mapping (Task 4) is a **user-review artifact** — flag it explicitly when reporting.

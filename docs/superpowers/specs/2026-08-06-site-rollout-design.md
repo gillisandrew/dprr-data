@@ -42,6 +42,15 @@ Launch is a single merge of `feature/static-site` → `main`, which triggers the
 
 - Resolve provinces via a **curated mapping** checked into the repo: each distinct `hasProvinceOriginal` string maps to one or more canonical province names from `reference/provinces.ttl`. The mapping is a reviewable source file; a test validates every mapping target against the reference data. Unmapped strings produce build-time warnings (not failures) and are excluded from the facet; the raw text is still displayed on person pages.
 - The loader produces `provinces: string[]` (canonical names) on each person summary plus a facet value list.
+- The province facet groups values by the `hasParent` hierarchy in `reference/provinces.ttl` (12 roots — Italia, Africa, Asia, Mediterranean, … — max depth 2), mirroring the original DPRR "Location" facet.
+
+### Scholarly conventions (from review of romanrepublic.ac.uk, 2026-08-06)
+
+A review of the original DPRR faceted search surfaced conventions researchers expect that our build was missing:
+
+- **Uncertainty markers:** the TTL export carries `isUncertain` (6,748 occurrences on post assertions), `isDateStartUncertain` (2,596), and `isDateEndUncertain` (2,018) flags that the parser previously dropped. Parse them and render DPRR's convention — italic office name with a trailing "?" (e.g. *Tribunus Militum?* 508), and "?" after uncertain dates — on person pages and reference-page holder lists.
+- **Chronological careers:** post assertions sort by earliest known date (undated last), matching DPRR's career listing.
+- **Office hierarchy:** `reference/offices.ttl` organizes 204 offices under 8 roots (Magisterial Posts, Promagisterial Posts, Priesthoods, Non-magisterial Posts, Equestrian Functions, Distinctions, plus two standalone entries; max depth 3). The office facet and the `/offices` index group by this hierarchy instead of one flat alphabetical list.
 - Add a `FacetGroup (Province)` to the sidebar as a collapsed secondary facet, a `province=` URL query param in the search state hook (comma-separated multi-value, like `office=`), and removable-chip support.
 - Parser changes get unit tests alongside the existing parser test suites.
 
@@ -67,6 +76,7 @@ Structure committed now; outcomes decided later against the real site.
 
 - **Method:** run the complete site locally, perform a structured review of three areas — search & discovery, person detail pages, visual identity — and turn findings into a concrete polish plan. Implementation uses the frontend-design skill so visual identity is deliberate rather than default-shadcn.
 - **Seed candidates** (inputs to the review, not commitments): landing-page framing so the site reads as a scholarly resource rather than a bare search box; empty/zero-result states; result density and 4,900-result browsing; person-page content density and in-page navigation for long records; typographic hierarchy with the existing Lora/Inter pairing; mobile layout for the facet sidebar.
+- **Seed candidates from the romanrepublic.ac.uk review:** fasti-style result lines (RE number, filiation, relationship context for otherwise-obscure persons — e.g. "VETU5025 Veturia (24) (mother of C. Marcius (50) Coriolanus)"); date-ascending default result sort; structured name-part search with autocomplete (praenomen/nomen/cognomen/father/RE); a life-events facet (birth, death, violent death, proscribed, exiled, adopted, expelled from senate, restored — derivable from DateInformation types); "Time frame: 509 B.C. – 31 B.C." hints on date inputs; collapsed-by-default career notes with expand; print/PDF export of results; "Add all" subtree selection in hierarchical facets; reconsider labeling the province facet "Location" as DPRR does.
 - **Boundary:** polish of existing and Plan-1 features only; no new features enter through this phase.
 
 ## Launch Process
