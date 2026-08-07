@@ -11,8 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TribesIndexRouteImport } from './routes/tribes.index'
+import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
 import { Route as OfficesIndexRouteImport } from './routes/offices.index'
 import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
+import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
 import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 
@@ -26,6 +28,11 @@ const TribesIndexRoute = TribesIndexRouteImport.update({
   path: '/tribes/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProvincesIndexRoute = ProvincesIndexRouteImport.update({
+  id: '/provinces/',
+  path: '/provinces/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OfficesIndexRoute = OfficesIndexRouteImport.update({
   id: '/offices/',
   path: '/offices/',
@@ -34,6 +41,11 @@ const OfficesIndexRoute = OfficesIndexRouteImport.update({
 const TribesSlugRoute = TribesSlugRouteImport.update({
   id: '/tribes/$slug',
   path: '/tribes/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProvincesSlugRoute = ProvincesSlugRouteImport.update({
+  id: '/provinces/$slug',
+  path: '/provinces/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PersonsIdRoute = PersonsIdRouteImport.update({
@@ -51,16 +63,20 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/offices/': typeof OfficesIndexRoute
+  '/provinces/': typeof ProvincesIndexRoute
   '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/offices': typeof OfficesIndexRoute
+  '/provinces': typeof ProvincesIndexRoute
   '/tribes': typeof TribesIndexRoute
 }
 export interface FileRoutesById {
@@ -68,8 +84,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/offices/': typeof OfficesIndexRoute
+  '/provinces/': typeof ProvincesIndexRoute
   '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRouteTypes {
@@ -78,24 +96,30 @@ export interface FileRouteTypes {
     | '/'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/provinces/$slug'
     | '/tribes/$slug'
     | '/offices/'
+    | '/provinces/'
     | '/tribes/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/provinces/$slug'
     | '/tribes/$slug'
     | '/offices'
+    | '/provinces'
     | '/tribes'
   id:
     | '__root__'
     | '/'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/provinces/$slug'
     | '/tribes/$slug'
     | '/offices/'
+    | '/provinces/'
     | '/tribes/'
   fileRoutesById: FileRoutesById
 }
@@ -103,8 +127,10 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
+  ProvincesSlugRoute: typeof ProvincesSlugRoute
   TribesSlugRoute: typeof TribesSlugRoute
   OfficesIndexRoute: typeof OfficesIndexRoute
+  ProvincesIndexRoute: typeof ProvincesIndexRoute
   TribesIndexRoute: typeof TribesIndexRoute
 }
 
@@ -124,6 +150,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TribesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/provinces/': {
+      id: '/provinces/'
+      path: '/provinces'
+      fullPath: '/provinces/'
+      preLoaderRoute: typeof ProvincesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/offices/': {
       id: '/offices/'
       path: '/offices'
@@ -136,6 +169,13 @@ declare module '@tanstack/react-router' {
       path: '/tribes/$slug'
       fullPath: '/tribes/$slug'
       preLoaderRoute: typeof TribesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/provinces/$slug': {
+      id: '/provinces/$slug'
+      path: '/provinces/$slug'
+      fullPath: '/provinces/$slug'
+      preLoaderRoute: typeof ProvincesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/persons/$id': {
@@ -159,8 +199,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
+  ProvincesSlugRoute: ProvincesSlugRoute,
   TribesSlugRoute: TribesSlugRoute,
   OfficesIndexRoute: OfficesIndexRoute,
+  ProvincesIndexRoute: ProvincesIndexRoute,
   TribesIndexRoute: TribesIndexRoute,
 }
 export const routeTree = rootRouteImport
