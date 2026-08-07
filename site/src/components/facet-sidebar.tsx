@@ -1,5 +1,6 @@
 // site/src/components/facet-sidebar.tsx
 import { FacetGroup } from "./facet-group"
+import { FacetHierarchyGroup } from "./facet-hierarchy-group"
 import { FacetRangeGroup } from "./facet-range-group"
 import { Checkbox } from "@/components/ui/checkbox"
 import type { SearchState, FacetValue } from "@/data/types"
@@ -14,18 +15,26 @@ interface FacetSidebarProps {
   }
   state: SearchState
   onUpdate: (updates: Partial<SearchState>) => void
+  officeHierarchy: Record<string, string | null>
+  provinceHierarchy: Record<string, string | null>
 }
 
-export function FacetSidebar({ facets, state, onUpdate }: FacetSidebarProps) {
+export function FacetSidebar({
+  facets,
+  state,
+  onUpdate,
+  officeHierarchy,
+  provinceHierarchy,
+}: FacetSidebarProps) {
   return (
     <aside className="w-56 shrink-0 space-y-1">
       {/* Primary facets — expanded by default */}
-      <FacetGroup
+      <FacetHierarchyGroup
         title="Office"
         items={facets.office}
+        parentOf={officeHierarchy}
         selected={state.office}
         onChange={(office) => onUpdate({ office })}
-        searchable
       />
       <FacetGroup
         title="Gens"
@@ -83,13 +92,13 @@ export function FacetSidebar({ facets, state, onUpdate }: FacetSidebarProps) {
         defaultOpen={false}
         searchable
       />
-      <FacetGroup
+      <FacetHierarchyGroup
         title="Province"
         items={facets.province}
+        parentOf={provinceHierarchy}
         selected={state.province}
         onChange={(province) => onUpdate({ province })}
         defaultOpen={false}
-        searchable
       />
     </aside>
   )

@@ -30,7 +30,8 @@ export const Route = createFileRoute("/")({
 })
 
 function SearchPage() {
-  const { summaries, searchIndex } = Route.useLoaderData()
+  const { summaries, searchIndex, officeHierarchy, provinceHierarchy } =
+    Route.useLoaderData()
   const { state, results, facets, updateState, clearAll } = useSearchState(
     summaries,
     searchIndex
@@ -59,7 +60,13 @@ function SearchPage() {
       </div>
 
       <div className="mt-4 flex gap-6">
-        <FacetSidebar facets={facets} state={state} onUpdate={updateState} />
+        <FacetSidebar
+          facets={facets}
+          state={state}
+          onUpdate={updateState}
+          officeHierarchy={officeHierarchy}
+          provinceHierarchy={provinceHierarchy}
+        />
         <main className="min-w-0 flex-1">
           <ResultsList results={results} />
         </main>

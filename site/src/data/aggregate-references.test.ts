@@ -6,6 +6,8 @@ import {
   buildTribeDetail,
   buildProvinceIndex,
   buildProvinceDetail,
+  buildNameHierarchy,
+  categoryOf,
 } from "./aggregate-references"
 import type { Person, PostAssertion } from "./types"
 
@@ -94,9 +96,15 @@ const personB = makePerson({
 
 describe("offices", () => {
   test("index lists offices alphabetically with distinct-person counts", () => {
-    const index = buildOfficeIndex([personA, personB])
+    const index = buildOfficeIndex([personA, personB], {})
     expect(index).toEqual([
-      { slug: "consul", name: "consul", abbreviation: "cos.", holderCount: 2 },
+      {
+        slug: "consul",
+        name: "consul",
+        abbreviation: "cos.",
+        holderCount: 2,
+        category: "consul",
+      },
     ])
   })
 
@@ -142,5 +150,34 @@ describe("provinces", () => {
         isUncertain: false,
       },
     ])
+  })
+})
+
+describe("hierarchy", () => {
+  const refMap = new Map([
+    ["uri:root", { name: "Magisterial Posts", parent: null }],
+    ["uri:consul", { name: "consul", parent: "uri:root" }],
+    ["uri:suff", { name: "consul suffectus", parent: "uri:consul" }],
+  ])
+
+  test("buildNameHierarchy maps child names to parent names", () => {
+    expect(buildNameHierarchy(refMap)).toEqual({
+      "Magisterial Posts": null,
+      consul: "Magisterial Posts",
+      "consul suffectus": "consul",
+    })
+  })
+
+  test("categoryOf walks to the root", () => {
+    const h = buildNameHierarchy(refMap)
+    expect(categoryOf("consul suffectus", h)).toBe("Magisterial Posts")
+    expect(categoryOf("consul", h)).toBe("Magisterial Posts")
+    expect(categoryOf("unknown office", h)).toBe("unknown office")
+  })
+
+  test("office index carries the category", () => {
+    const h = buildNameHierarchy(refMap)
+    const index = buildOfficeIndex([personA, personB], h)
+    expect(index[0].category).toBe("Magisterial Posts")
   })
 })

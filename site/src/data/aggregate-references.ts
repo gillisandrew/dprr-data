@@ -8,6 +8,7 @@ export interface OfficeIndexEntry {
   name: string
   abbreviation: string | null
   holderCount: number
+  category: string
 }
 export interface OfficeHolder {
   personId: string
@@ -71,7 +72,35 @@ function assertUniqueSlugs(names: Iterable<string>, kind: string): void {
   }
 }
 
-export function buildOfficeIndex(persons: Person[]): OfficeIndexEntry[] {
+/** child name -> parent name (null for roots), from a ReferenceMaps-style map */
+export function buildNameHierarchy(
+  entries: Map<string, { name: string; parent: string | null }>
+): Record<string, string | null> {
+  const parentOf: Record<string, string | null> = {}
+  for (const { name, parent } of entries.values()) {
+    parentOf[name] = parent ? (entries.get(parent)?.name ?? null) : null
+  }
+  return parentOf
+}
+
+/** Walk parentOf to the root; returns the root name (or name itself if unknown). */
+export function categoryOf(
+  name: string,
+  parentOf: Record<string, string | null>
+): string {
+  let current = name
+  const seen = new Set<string>()
+  while (parentOf[current] != null && !seen.has(current)) {
+    seen.add(current)
+    current = parentOf[current] as string
+  }
+  return current
+}
+
+export function buildOfficeIndex(
+  persons: Person[],
+  parentOf: Record<string, string | null>
+): OfficeIndexEntry[] {
   const byName = new Map<
     string,
     { abbreviation: string | null; holderIds: Set<string> }
@@ -95,6 +124,7 @@ export function buildOfficeIndex(persons: Person[]): OfficeIndexEntry[] {
       name,
       abbreviation,
       holderCount: holderIds.size,
+      category: categoryOf(name, parentOf),
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
 }

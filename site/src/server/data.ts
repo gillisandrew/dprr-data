@@ -8,6 +8,7 @@ import {
   buildTribeDetail,
   buildProvinceIndex,
   buildProvinceDetail,
+  buildNameHierarchy,
 } from "../data/aggregate-references"
 import type { PersonSummary } from "../data/types"
 
@@ -58,22 +59,26 @@ export const getSearchData = createServerFn({ method: "GET" }).handler(
     summaries: PersonSummary[]
     searchIndex: object
     options: SerializableOptions
+    officeHierarchy: Record<string, string | null>
+    provinceHierarchy: Record<string, string | null>
   }> => {
-    const { persons } = await loadAllData()
+    const { persons, refs } = await loadAllData()
     const summaries = toSummaries(persons)
     const searchIndex = buildSearchIndex(summaries)
     return {
       summaries,
       searchIndex,
       options: serializableOptions,
+      officeHierarchy: buildNameHierarchy(refs.offices),
+      provinceHierarchy: buildNameHierarchy(refs.provinces),
     }
   }
 )
 
 export const getOfficeIndex = createServerFn({ method: "GET" }).handler(
   async () => {
-    const { persons } = await loadAllData()
-    return buildOfficeIndex(persons)
+    const { persons, refs } = await loadAllData()
+    return buildOfficeIndex(persons, buildNameHierarchy(refs.offices))
   }
 )
 
