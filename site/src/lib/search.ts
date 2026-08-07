@@ -3,6 +3,13 @@ import { useCallback, useMemo } from "react"
 import { useNavigate, useSearch } from "@tanstack/react-router"
 import type MiniSearch from "minisearch"
 import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
+import { matchesFacets, type FilterContext } from "./filter"
+
+const EMPTY_FILTER_CONTEXT: FilterContext = {
+  parentOf: {},
+  careers: {},
+  officeNames: [],
+}
 
 /** Split a comma-joined, per-value-encoded facet param back into raw values. */
 function splitFacetParam(value: string | undefined): string[] {
@@ -76,41 +83,6 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   return params
 }
 
-function matchesFacets(person: PersonSummary, state: SearchState): boolean {
-  if (
-    state.office.length > 0 &&
-    !state.office.some((o) => person.offices.includes(o))
-  )
-    return false
-  if (
-    state.province.length > 0 &&
-    !state.province.some((pr) => person.provinces.includes(pr))
-  )
-    return false
-  if (state.nomen.length > 0 && !state.nomen.includes(person.nomen))
-    return false
-  if (state.sex.length > 0 && !state.sex.includes(person.sex)) return false
-  if (state.patrician !== null && person.isPatrician !== state.patrician)
-    return false
-  if (state.nobilis !== null && person.isNobilis !== state.nobilis) return false
-  if (
-    state.tribe.length > 0 &&
-    !state.tribe.some((t) => person.tribes.includes(t))
-  )
-    return false
-  if (
-    state.eraFrom !== null &&
-    (person.eraTo === null || person.eraTo < state.eraFrom)
-  )
-    return false
-  if (
-    state.eraTo !== null &&
-    (person.eraFrom === null || person.eraFrom > state.eraTo)
-  )
-    return false
-  return true
-}
-
 function computeFacetValues(
   persons: PersonSummary[],
   field: keyof PersonSummary
@@ -150,7 +122,9 @@ export function useSearchState(
       candidates = summaries
     }
 
-    return candidates.filter((p) => matchesFacets(p, state))
+    return candidates.filter((p) =>
+      matchesFacets(p, state, EMPTY_FILTER_CONTEXT)
+    )
   }, [state, summaries, miniSearch])
 
   // Disjunctive facet counting: each facet's counts are computed with
@@ -170,7 +144,9 @@ export function useSearchState(
       } else {
         candidates = summaries
       }
-      const filtered = candidates.filter((p) => matchesFacets(p, relaxed))
+      const filtered = candidates.filter((p) =>
+        matchesFacets(p, relaxed, EMPTY_FILTER_CONTEXT)
+      )
       return computeFacetValues(filtered, field)
     }
 
