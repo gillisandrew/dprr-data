@@ -1,15 +1,11 @@
 // site/src/lib/search.ts
 import { useCallback, useMemo } from "react"
 import { useNavigate, useSearch } from "@tanstack/react-router"
-import type MiniSearch from "minisearch"
 import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
 import { matchesFacets, type FilterContext } from "./filter"
-
-const EMPTY_FILTER_CONTEXT: FilterContext = {
-  parentOf: {},
-  careers: {},
-  officeNames: [],
-}
+import { sortResults } from "./order"
+import { buildHistogram } from "./histogram"
+import type { SearchDataBundle } from "./use-search-data"
 
 /** Split a comma-joined, per-value-encoded facet param back into raw values. */
 function splitFacetParam(value: string | undefined): string[] {
@@ -103,15 +99,23 @@ function computeFacetValues(
     .sort((a, b) => b.count - a.count)
 }
 
-export function useSearchState(
-  summaries: PersonSummary[],
-  miniSearch: MiniSearch<PersonSummary>
-) {
+export function useSearchState(bundle: SearchDataBundle) {
+  const { payload, miniSearch } = bundle
+  const summaries = payload.summaries
   const rawParams = useSearch({ strict: false }) as Record<string, string>
   const navigate = useNavigate()
   const state = useMemo(() => parseSearchParams(rawParams), [rawParams])
 
-  const results = useMemo(() => {
+  const ctx: FilterContext = useMemo(
+    () => ({
+      parentOf: payload.officeHierarchy,
+      careers: payload.careers,
+      officeNames: payload.officeNames,
+    }),
+    [payload]
+  )
+
+  const filtered = useMemo(() => {
     let candidates: PersonSummary[]
 
     if (state.q.trim()) {
@@ -122,10 +126,13 @@ export function useSearchState(
       candidates = summaries
     }
 
-    return candidates.filter((p) =>
-      matchesFacets(p, state, EMPTY_FILTER_CONTEXT)
-    )
-  }, [state, summaries, miniSearch])
+    return candidates.filter((p) => matchesFacets(p, state, ctx))
+  }, [state, summaries, miniSearch, ctx])
+
+  const results = useMemo(
+    () => sortResults(filtered, state.sort, state.q.trim().length > 0),
+    [filtered, state.sort, state.q]
+  )
 
   // Disjunctive facet counting: each facet's counts are computed with
   // that facet's own filter removed but all other filters kept. This
@@ -144,10 +151,10 @@ export function useSearchState(
       } else {
         candidates = summaries
       }
-      const filtered = candidates.filter((p) =>
-        matchesFacets(p, relaxed, EMPTY_FILTER_CONTEXT)
+      const filteredForCount = candidates.filter((p) =>
+        matchesFacets(p, relaxed, ctx)
       )
-      return computeFacetValues(filtered, field)
+      return computeFacetValues(filteredForCount, field)
     }
 
     return {
@@ -156,8 +163,23 @@ export function useSearchState(
       sex: countWith("sex", "sex"),
       tribe: countWith("tribe", "tribes"),
       province: countWith("province", "provinces"),
+      event: countWith("event", "lifeEvents"),
+      praenomen: countWith("praenomen", "praenomen"),
+      cognomen: countWith("cognomen", "cognomen"),
     }
-  }, [state, summaries, miniSearch])
+  }, [state, summaries, miniSearch, ctx])
+
+  const filteredHistogram = useMemo(() => {
+    // A sort-only URL counts as unfiltered.
+    const anyFilter =
+      Object.keys(toSearchParams({ ...state, sort: null })).length > 0
+    if (!anyFilter) return payload.histogram
+    const ranges: [number | null, number | null][] = []
+    for (const p of results) {
+      for (const [, s, e] of payload.careers[p.id] ?? []) ranges.push([s, e])
+    }
+    return buildHistogram(ranges)
+  }, [state, results, payload])
 
   const updateState = useCallback(
     (updates: Partial<SearchState>) => {
@@ -175,5 +197,5 @@ export function useSearchState(
     void navigate({ to: "/", search: {}, replace: true })
   }, [navigate])
 
-  return { state, results, facets, updateState, clearAll }
+  return { state, results, facets, updateState, clearAll, filteredHistogram }
 }

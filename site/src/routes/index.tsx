@@ -4,7 +4,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import MiniSearch from "minisearch"
 import { getAllPersonIds } from "@/server/data"
 import { useSearchState } from "@/lib/search"
-import { useSearchData } from "@/lib/use-search-data"
+import { useSearchData, type SearchDataBundle } from "@/lib/use-search-data"
 import { MINISEARCH_OPTIONS } from "@/data/search-index"
 import type { PersonSummary } from "@/data/types"
 import { SearchInput } from "@/components/search-input"
@@ -34,24 +34,31 @@ export const Route = createFileRoute("/")({
   component: SearchPage,
 })
 
-const EMPTY_SUMMARIES: PersonSummary[] = []
-
 function SearchPage() {
   const personIds = Route.useLoaderData()
   const { bundle, error } = useSearchData(true)
 
   // useSearchState must be called unconditionally (Rules of Hooks) even
   // while the static JSON bundle hasn't loaded yet, so fall back to an
-  // empty summaries array and a freshly-constructed (empty) MiniSearch
-  // instance until it does — the loading/error UI below hides the results
-  // in the meantime.
-  const emptyMiniSearch = useMemo(
-    () => new MiniSearch<PersonSummary>(MINISEARCH_OPTIONS),
+  // empty bundle (empty summaries, freshly-constructed empty MiniSearch)
+  // until it does — the loading/error UI below hides the results in the
+  // meantime.
+  const emptyBundle = useMemo<SearchDataBundle>(
+    () => ({
+      payload: {
+        summaries: [],
+        officeNames: [],
+        careers: {},
+        officeHierarchy: {},
+        provinceHierarchy: {},
+        histogram: { start: 0, binSize: 5, counts: [0] },
+      },
+      miniSearch: new MiniSearch<PersonSummary>(MINISEARCH_OPTIONS),
+    }),
     []
   )
   const { state, results, facets, updateState, clearAll } = useSearchState(
-    bundle?.payload.summaries ?? EMPTY_SUMMARIES,
-    bundle?.miniSearch ?? emptyMiniSearch
+    bundle ?? emptyBundle
   )
 
   return (
