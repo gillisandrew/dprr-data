@@ -57,9 +57,8 @@ function SearchPage() {
     }),
     []
   )
-  const { state, results, facets, updateState, clearAll } = useSearchState(
-    bundle ?? emptyBundle
-  )
+  const { state, results, facets, updateState, clearAll, filteredHistogram } =
+    useSearchState(bundle ?? emptyBundle)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
@@ -97,10 +96,12 @@ function SearchPage() {
           <div className="mt-4 flex gap-6">
             <FacetSidebar
               facets={facets}
+              histogram={filteredHistogram}
               state={state}
               onUpdate={updateState}
               officeHierarchy={bundle.payload.officeHierarchy}
               provinceHierarchy={bundle.payload.provinceHierarchy}
+              initialFocus={undefined}
             />
             <main className="min-w-0 flex-1">
               <ResultsList results={results} />
