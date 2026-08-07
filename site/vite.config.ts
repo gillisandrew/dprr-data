@@ -4,6 +4,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite"
 import viteReact from "@vitejs/plugin-react"
 import viteTsConfigPaths from "vite-tsconfig-paths"
 import tailwindcss from "@tailwindcss/vite"
+import { searchDataPlugin } from "./src/build/search-data-plugin.ts"
 
 const config = defineConfig({
   base: "/dprr-data/",
@@ -28,6 +29,7 @@ const config = defineConfig({
     ],
   },
   plugins: [
+    searchDataPlugin(),
     devtools(),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
