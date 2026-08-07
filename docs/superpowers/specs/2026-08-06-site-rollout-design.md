@@ -38,7 +38,10 @@ Launch is a single merge of `feature/static-site` → `main`, which triggers the
 
 ### Province pipeline + facet
 
-- Extend the build-time data loader to resolve provinces via the PostAssertion→Office→Province chain, producing `provinces: string[]` on each person summary plus a facet value list.
+**Data reality (discovered during planning):** the TTL export contains no structured province links — the `PostAssertionProvince` entities described by the ontology are absent. Post assertions carry only free-text `hasProvinceOriginal` strings (~952 occurrences, 185 distinct values with spelling variants). The structured provinces in `reference/provinces.ttl` are orphaned.
+
+- Resolve provinces via a **curated mapping** checked into the repo: each distinct `hasProvinceOriginal` string maps to one or more canonical province names from `reference/provinces.ttl`. The mapping is a reviewable source file; a test validates every mapping target against the reference data. Unmapped strings produce build-time warnings (not failures) and are excluded from the facet; the raw text is still displayed on person pages.
+- The loader produces `provinces: string[]` (canonical names) on each person summary plus a facet value list.
 - Add a `FacetGroup (Province)` to the sidebar as a collapsed secondary facet, a `province=` URL query param in the search state hook (comma-separated multi-value, like `office=`), and removable-chip support.
 - Parser changes get unit tests alongside the existing parser test suites.
 
