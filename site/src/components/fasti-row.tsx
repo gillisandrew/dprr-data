@@ -13,11 +13,6 @@ export function FastiRow({ person }: { person: PersonSummary }) {
     >
       <p className="font-heading text-sm font-medium">
         {displayName}
-        {person.reNumber && (
-          <span className="ml-1 font-normal text-muted-foreground">
-            ({person.reNumber})
-          </span>
-        )}
         {person.highestOffice && (
           <span className="ml-2 font-normal">— {person.highestOffice}</span>
         )}
