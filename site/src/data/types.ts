@@ -105,6 +105,7 @@ export interface ReferenceMaps {
   dateTypes: Map<string, string>
   sexes: Map<string, string>
   statuses: Map<string, { name: string; abbreviation: string | null }>
+  provinces: Map<string, { name: string; parent: string | null }>
 }
 
 /** A single facet value with its count. */

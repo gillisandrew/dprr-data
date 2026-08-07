@@ -58,6 +58,7 @@ function makeRefs(): ReferenceMaps {
       ["http://romanrepublic.ac.uk/rdf/entity/Sex/Male", "Male"],
     ]),
     statuses: new Map(),
+    provinces: new Map(),
   }
 }
 

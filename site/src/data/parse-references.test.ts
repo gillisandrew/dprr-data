@@ -53,6 +53,32 @@ const MISC_TTL = `
   dprr:hasName "birth" .
 `
 
+const PROVINCE_TTL = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Province/9> rdfs:label "Province: Hispania Citerior" ;
+  a dprr:Province ;
+  dprr:hasParent <http://romanrepublic.ac.uk/rdf/entity/Province/18> ;
+  dprr:hasName "Hispania Citerior" .
+<http://romanrepublic.ac.uk/rdf/entity/Province/99> rdfs:label "Province: Mediterranean" ;
+  a dprr:Province ;
+  dprr:hasName "Mediterranean" .
+<http://romanrepublic.ac.uk/rdf/entity/Province/92> rdfs:label "Province: " ;
+  a dprr:Province .
+`
+
+const emptyInputs = {
+  offices: OFFICE_TTL,
+  sources: SOURCE_TTL,
+  praenomina: PRAENOMEN_TTL,
+  tribes: "",
+  relationships: "",
+  misc: MISC_TTL,
+  provinces: "",
+}
+
 describe("parseReferenceTtl", () => {
   test("parses offices", async () => {
     const refs = await parseReferenceTtl({
@@ -62,6 +88,7 @@ describe("parseReferenceTtl", () => {
       tribes: "",
       relationships: "",
       misc: MISC_TTL,
+      provinces: "",
     })
     const office = refs.offices.get(
       "http://romanrepublic.ac.uk/rdf/entity/Office/3"
@@ -81,6 +108,7 @@ describe("parseReferenceTtl", () => {
       tribes: "",
       relationships: "",
       misc: MISC_TTL,
+      provinces: "",
     })
     const source = refs.sources.get(
       "http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1"
@@ -100,6 +128,7 @@ describe("parseReferenceTtl", () => {
       tribes: "",
       relationships: "",
       misc: MISC_TTL,
+      provinces: "",
     })
     expect(
       refs.praenomina.get(
@@ -116,6 +145,7 @@ describe("parseReferenceTtl", () => {
       tribes: "",
       relationships: "",
       misc: MISC_TTL,
+      provinces: "",
     })
     expect(
       refs.sexes.get("http://romanrepublic.ac.uk/rdf/entity/Sex/Male")
@@ -130,9 +160,29 @@ describe("parseReferenceTtl", () => {
       tribes: "",
       relationships: "",
       misc: MISC_TTL,
+      provinces: "",
     })
     expect(
       refs.noteTypes.get("http://romanrepublic.ac.uk/rdf/entity/NoteType/1")
     ).toBe("Reference Note")
+  })
+})
+
+describe("provinces", () => {
+  test("parses province names and parents, skipping nameless entries", async () => {
+    const refs = await parseReferenceTtl({
+      ...emptyInputs,
+      provinces: PROVINCE_TTL,
+    })
+    expect(refs.provinces.size).toBe(2)
+    expect(
+      refs.provinces.get("http://romanrepublic.ac.uk/rdf/entity/Province/9")
+    ).toEqual({
+      name: "Hispania Citerior",
+      parent: "http://romanrepublic.ac.uk/rdf/entity/Province/18",
+    })
+    expect(
+      refs.provinces.get("http://romanrepublic.ac.uk/rdf/entity/Province/99")
+    ).toEqual({ name: "Mediterranean", parent: null })
   })
 })

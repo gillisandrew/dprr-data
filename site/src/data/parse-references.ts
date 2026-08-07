@@ -11,6 +11,7 @@ interface RawTtlInputs {
   tribes: string
   relationships: string
   misc: string
+  provinces: string
 }
 
 function parseTtl(ttl: string) {
@@ -46,6 +47,7 @@ export async function parseReferenceTtl(
     string,
     { name: string; abbreviation: string | null }
   >()
+  const provinces = new Map<string, { name: string; parent: string | null }>()
 
   // Group quads by subject for each file
   function groupBySubject(quads: ReturnType<typeof parseTtl>) {
@@ -115,6 +117,19 @@ export async function parseReferenceTtl(
     }
   }
 
+  // Provinces
+  if (inputs.provinces) {
+    for (const [uri, props] of groupBySubject(parseTtl(inputs.provinces))) {
+      const name = props.get(`${DPRR}hasName`)
+      if (name) {
+        provinces.set(uri, {
+          name,
+          parent: props.get(`${DPRR}hasParent`) ?? null,
+        })
+      }
+    }
+  }
+
   // Misc: Sex, NoteType, DateType, Status
   if (inputs.misc) {
     const RDF_TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -162,5 +177,6 @@ export async function parseReferenceTtl(
     dateTypes,
     sexes,
     statuses,
+    provinces,
   }
 }

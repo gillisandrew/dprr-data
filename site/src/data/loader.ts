@@ -74,7 +74,7 @@ export async function loadAllData(): Promise<{
   if (_cache) return _cache
 
   // 1. Parse reference files
-  const [offices, sources, praenomina, tribes, relationships, misc] =
+  const [offices, sources, praenomina, tribes, relationships, misc, provinces] =
     await Promise.all([
       readTtl("reference/offices.ttl"),
       readTtl("reference/sources.ttl"),
@@ -82,6 +82,7 @@ export async function loadAllData(): Promise<{
       readTtl("reference/tribes.ttl"),
       readTtl("reference/relationships.ttl"),
       readTtl("reference/misc.ttl"),
+      readTtl("reference/provinces.ttl"),
     ])
 
   const refs = await parseReferenceTtl({
@@ -91,6 +92,7 @@ export async function loadAllData(): Promise<{
     tribes,
     relationships,
     misc,
+    provinces,
   })
 
   // 2. Parse concordances
