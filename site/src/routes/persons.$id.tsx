@@ -1,6 +1,7 @@
 // site/src/routes/persons.$id.tsx
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, Link } from "@tanstack/react-router"
 import { getPersonById } from "@/server/data"
+import { slugify } from "@/lib/slug"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
 import { DateDisplay, EraRange } from "@/components/date-display"
@@ -147,7 +148,20 @@ function PersonHeader({
         {person.tribes.length > 0 && (
           <>
             <dt className="font-medium">Tribe</dt>
-            <dd>{person.tribes.join(", ")}</dd>
+            <dd>
+              {person.tribes.map((t, i) => (
+                <span key={t}>
+                  {i > 0 && ", "}
+                  <Link
+                    to="/tribes/$slug"
+                    params={{ slug: slugify(t) }}
+                    className="hover:underline"
+                  >
+                    {t}
+                  </Link>
+                </span>
+              ))}
+            </dd>
           </>
         )}
         {person.highestOffice && (
@@ -170,7 +184,17 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
   return (
     <div className="border-l-2 pl-4">
       <p className="font-medium">
-        {assertion.officeName}
+        {assertion.officeName ? (
+          <Link
+            to="/offices/$slug"
+            params={{ slug: slugify(assertion.officeName) }}
+            className="hover:underline"
+          >
+            {assertion.officeName}
+          </Link>
+        ) : (
+          assertion.officeName
+        )}
         {assertion.officeAbbreviation && (
           <span className="ml-1 text-sm text-muted-foreground">
             ({assertion.officeAbbreviation})
@@ -190,6 +214,31 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
               year={(assertion.dateStart ?? assertion.dateEnd) as number}
             />
           )}
+        </p>
+      )}
+      {assertion.provinceOriginal && (
+        <p className="text-sm text-muted-foreground">
+          Province:{" "}
+          {assertion.provinces.length > 0 ? (
+            assertion.provinces.map((pr, i) => (
+              <span key={pr}>
+                {i > 0 && ", "}
+                <Link
+                  to="/provinces/$slug"
+                  params={{ slug: slugify(pr) }}
+                  className="hover:underline"
+                >
+                  {pr}
+                </Link>
+              </span>
+            ))
+          ) : (
+            <span>{assertion.provinceOriginal}</span>
+          )}
+          {assertion.provinces.length > 0 &&
+            assertion.provinces.join(", ") !== assertion.provinceOriginal && (
+              <span className="italic"> ({assertion.provinceOriginal})</span>
+            )}
         </p>
       )}
       {assertion.originalText && (
