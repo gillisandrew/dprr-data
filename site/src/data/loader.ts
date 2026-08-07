@@ -72,7 +72,10 @@ export function loadAllData(): Promise<{
   persons: Person[]
   refs: ReferenceMaps
 }> {
-  _cache ??= loadAllDataUncached()
+  _cache ??= loadAllDataUncached().catch((err: unknown) => {
+    _cache = null
+    throw err
+  })
   return _cache
 }
 
