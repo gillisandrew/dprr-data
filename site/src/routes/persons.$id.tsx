@@ -294,7 +294,7 @@ function ConcordanceList({ concordances }: { concordances: Concordance[] }) {
                 href={link.uri}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary break-all hover:underline"
+                className="break-all text-primary hover:underline"
               >
                 {link.uri}
               </a>

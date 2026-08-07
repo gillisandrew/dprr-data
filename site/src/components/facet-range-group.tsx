@@ -71,7 +71,7 @@ export function FacetRangeGroup({
         {title}
       </CollapsibleTrigger>
       <CollapsibleContent className="pb-3 pl-5">
-        <p className="text-muted-foreground mb-2 text-xs">
+        <p className="mb-2 text-xs text-muted-foreground">
           Use negative numbers for BC (e.g., -509)
         </p>
         <div className="flex items-center gap-2">
@@ -82,7 +82,7 @@ export function FacetRangeGroup({
             onChange={from.handleChange}
             className="h-7 text-xs"
           />
-          <span className="text-muted-foreground text-xs">to</span>
+          <span className="text-xs text-muted-foreground">to</span>
           <Input
             type="number"
             placeholder={toPlaceholder}

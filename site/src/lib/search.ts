@@ -35,8 +35,7 @@ function toSearchParams(state: SearchState): Record<string, string> {
   if (state.office.length) params.office = state.office.join(",")
   if (state.nomen.length) params.nomen = state.nomen.join(",")
   if (state.sex.length) params.sex = state.sex.join(",")
-  if (state.patrician !== null)
-    params.patrician = String(state.patrician)
+  if (state.patrician !== null) params.patrician = String(state.patrician)
   if (state.nobilis !== null) params.nobilis = String(state.nobilis)
   if (state.tribe.length) params.tribe = state.tribe.join(",")
   if (state.eraFrom !== null) params.eraFrom = String(state.eraFrom)
@@ -52,12 +51,10 @@ function matchesFacets(person: PersonSummary, state: SearchState): boolean {
     return false
   if (state.nomen.length > 0 && !state.nomen.includes(person.nomen))
     return false
-  if (state.sex.length > 0 && !state.sex.includes(person.sex))
-    return false
+  if (state.sex.length > 0 && !state.sex.includes(person.sex)) return false
   if (state.patrician !== null && person.isPatrician !== state.patrician)
     return false
-  if (state.nobilis !== null && person.isNobilis !== state.nobilis)
-    return false
+  if (state.nobilis !== null && person.isNobilis !== state.nobilis) return false
   if (
     state.tribe.length > 0 &&
     (!person.tribe || !state.tribe.includes(person.tribe))
@@ -130,7 +127,10 @@ export function useSearchState(
   // lets users see how many results other values would produce.
   const facets = useMemo(() => {
     function countWith(exclude: keyof SearchState, field: keyof PersonSummary) {
-      const relaxed = { ...state, [exclude]: Array.isArray(state[exclude]) ? [] : null }
+      const relaxed = {
+        ...state,
+        [exclude]: Array.isArray(state[exclude]) ? [] : null,
+      }
       let candidates: PersonSummary[]
       if (state.q.trim()) {
         const searchResults = miniSearch.search(state.q)

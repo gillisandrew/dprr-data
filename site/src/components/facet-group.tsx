@@ -81,7 +81,7 @@ export function FacetGroup({
                 onCheckedChange={() => toggle(item.value)}
               />
               <span className="min-w-0 truncate">{item.value}</span>
-              <span className="text-muted-foreground ml-auto text-xs">
+              <span className="ml-auto text-xs text-muted-foreground">
                 {item.count}
               </span>
             </label>
@@ -90,7 +90,7 @@ export function FacetGroup({
         {hasMore && !showAll && (
           <button
             onClick={() => setShowAll(true)}
-            className="text-muted-foreground mt-1 text-xs hover:underline"
+            className="mt-1 text-xs text-muted-foreground hover:underline"
           >
             + {filtered.length - DEFAULT_VISIBLE} more...
           </button>
@@ -98,7 +98,7 @@ export function FacetGroup({
         {showAll && hasMore && (
           <button
             onClick={() => setShowAll(false)}
-            className="text-muted-foreground mt-1 text-xs hover:underline"
+            className="mt-1 text-xs text-muted-foreground hover:underline"
           >
             Show less
           </button>

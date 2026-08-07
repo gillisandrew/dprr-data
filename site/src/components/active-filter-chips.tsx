@@ -33,8 +33,7 @@ export function ActiveFilterChips({
   for (const sex of state.sex) {
     chips.push({
       label: sex,
-      onRemove: () =>
-        onRemove({ sex: state.sex.filter((s) => s !== sex) }),
+      onRemove: () => onRemove({ sex: state.sex.filter((s) => s !== sex) }),
     })
   }
   if (state.patrician !== null) {
@@ -75,7 +74,7 @@ export function ActiveFilterChips({
       {chips.length > 1 && (
         <button
           onClick={onClearAll}
-          className="text-muted-foreground hover:text-foreground text-xs underline"
+          className="text-xs text-muted-foreground underline hover:text-foreground"
         >
           Clear all
         </button>

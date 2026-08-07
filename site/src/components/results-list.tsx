@@ -18,7 +18,7 @@ export function ResultsList({ results }: { results: PersonSummary[] }) {
 
   return (
     <div>
-      <p className="text-muted-foreground mb-3 text-sm">
+      <p className="mb-3 text-sm text-muted-foreground">
         {results.length.toLocaleString()} result
         {results.length !== 1 && "s"}
       </p>
@@ -30,7 +30,7 @@ export function ResultsList({ results }: { results: PersonSummary[] }) {
       {page + 1 < totalPages && (
         <button
           onClick={() => setPage((p) => p + 1)}
-          className="text-primary mt-4 text-sm hover:underline"
+          className="mt-4 text-sm text-primary hover:underline"
         >
           Show more ({results.length - visible.length} remaining)
         </button>

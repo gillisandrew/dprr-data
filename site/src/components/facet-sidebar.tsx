@@ -15,11 +15,7 @@ interface FacetSidebarProps {
   onUpdate: (updates: Partial<SearchState>) => void
 }
 
-export function FacetSidebar({
-  facets,
-  state,
-  onUpdate,
-}: FacetSidebarProps) {
+export function FacetSidebar({ facets, state, onUpdate }: FacetSidebarProps) {
   return (
     <aside className="w-56 shrink-0 space-y-1">
       {/* Primary facets — expanded by default */}
