@@ -4,6 +4,7 @@ import { join, basename } from "node:path"
 import { parseReferenceTtl } from "./parse-references"
 import { parseConcordanceTtl } from "./parse-concordances"
 import { parsePersonTtl } from "./parse-persons"
+import { collectUnmappedProvinces } from "./province-mapping"
 import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
 
 // Path from site/src/data/ to repo root (3 levels up)
@@ -138,6 +139,21 @@ export async function loadAllData(): Promise<{
         rel.relatedPersonName = resolved.name
       }
     }
+  }
+
+  // Surface province curation gaps: raw strings not in the curated mapping
+  // are excluded from the facet but still displayed on person pages.
+  const rawProvinceTexts = persons.flatMap((p) =>
+    p.postAssertions
+      .map((pa) => pa.provinceOriginal)
+      .filter((v): v is string => v !== null)
+  )
+  const unmapped = collectUnmappedProvinces(rawProvinceTexts)
+  if (unmapped.length > 0) {
+    console.warn(
+      `[data] ${unmapped.length} unmapped province strings (excluded from facet):`,
+      unmapped.join("; ")
+    )
   }
 
   _cache = { persons, refs }
