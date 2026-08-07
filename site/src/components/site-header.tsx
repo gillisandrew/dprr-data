@@ -4,7 +4,7 @@ import { Link } from "@tanstack/react-router"
 const links = [
   { to: "/offices", label: "Offices" },
   { to: "/tribes", label: "Tribes" },
-  { to: "/provinces", label: "Provinces" },
+  { to: "/provinces", label: "Locations" },
 ] as const
 
 export function SiteHeader() {
