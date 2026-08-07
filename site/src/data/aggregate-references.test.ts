@@ -23,6 +23,9 @@ function makeAssertion(over: Partial<PostAssertion>): PostAssertion {
     primarySourceRefs: [],
     provinceOriginal: null,
     provinces: [],
+    isUncertain: false,
+    isDateStartUncertain: false,
+    isDateEndUncertain: false,
     ...over,
   }
 }
@@ -136,6 +139,7 @@ describe("provinces", () => {
         officeName: "consul",
         dateStart: -100,
         dateEnd: -100,
+        isUncertain: false,
       },
     ])
   })

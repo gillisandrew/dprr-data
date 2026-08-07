@@ -50,6 +50,10 @@ export interface PostAssertion {
   secondarySource: string
   notes: PostAssertionNote[]
   primarySourceRefs: string[]
+  /** True when the source scholarship marks this post itself as uncertain. */
+  isUncertain: boolean
+  isDateStartUncertain: boolean
+  isDateEndUncertain: boolean
 }
 
 export interface PostAssertionNote {

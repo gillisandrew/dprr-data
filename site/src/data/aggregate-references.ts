@@ -15,6 +15,7 @@ export interface OfficeHolder {
   dateStart: number | null
   dateEnd: number | null
   secondarySource: string
+  isUncertain: boolean
 }
 export interface OfficeDetail {
   slug: string
@@ -43,6 +44,7 @@ export interface ProvinceAssertion {
   officeName: string
   dateStart: number | null
   dateEnd: number | null
+  isUncertain: boolean
 }
 export interface ProvinceDetail {
   slug: string
@@ -115,6 +117,7 @@ export function buildOfficeDetail(
         dateStart: pa.dateStart,
         dateEnd: pa.dateEnd,
         secondarySource: pa.secondarySource,
+        isUncertain: pa.isUncertain,
       })
     }
   }
@@ -191,6 +194,7 @@ export function buildProvinceDetail(
         officeName: pa.officeName,
         dateStart: pa.dateStart,
         dateEnd: pa.dateEnd,
+        isUncertain: pa.isUncertain,
       })
     }
   }

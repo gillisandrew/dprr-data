@@ -57,7 +57,10 @@ function OfficePage() {
                 "undated"
               )}
             </span>
-            <PersonLink id={h.personId} name={h.personName} />
+            <span className={h.isUncertain ? "italic" : undefined}>
+              <PersonLink id={h.personId} name={h.personName} />
+            </span>
+            {h.isUncertain && <span className="text-muted-foreground">?</span>}
             <SourceCitation
               name={h.secondarySource}
               className="text-xs text-muted-foreground"

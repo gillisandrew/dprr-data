@@ -50,7 +50,10 @@ function ProvincePage() {
                 "undated"
               )}
             </span>
-            <PersonLink id={a.personId} name={a.personName} />
+            <span className={a.isUncertain ? "italic" : undefined}>
+              <PersonLink id={a.personId} name={a.personName} />
+            </span>
+            {a.isUncertain && <span className="text-muted-foreground">?</span>}
             {a.officeName && (
               <span className="text-sm text-muted-foreground">
                 {a.officeName}

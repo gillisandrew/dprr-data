@@ -147,3 +147,35 @@ describe("province extraction", () => {
     expect(persons[0].provinces).toEqual(["Sicilia"])
   })
 })
+
+describe("uncertainty and career order", () => {
+  test("reads uncertainty flags and sorts assertions chronologically", () => {
+    const ttl = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateStart "-100"^^xsd:integer ;
+  dprr:isUncertain true ;
+  dprr:isDateStartUncertain true .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateStart "-200"^^xsd:integer .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> .
+`
+    const persons = parsePersonTtl(ttl, makeRefs(), new Map())
+    const pas = persons[0].postAssertions
+    // Chronological: -200 first, -100 second, undated last
+    expect(pas.map((pa) => pa.dateStart)).toEqual([-200, -100, null])
+    expect(pas[1].isUncertain).toBe(true)
+    expect(pas[1].isDateStartUncertain).toBe(true)
+    expect(pas[1].isDateEndUncertain).toBe(false)
+    expect(pas[0].isUncertain).toBe(false)
+  })
+})

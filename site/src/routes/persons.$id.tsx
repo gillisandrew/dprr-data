@@ -201,17 +201,20 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
   return (
     <div className="border-l-2 pl-4">
       <p className="font-medium">
-        {assertion.officeName ? (
-          <Link
-            to="/offices/$slug"
-            params={{ slug: slugify(assertion.officeName) }}
-            className="hover:underline"
-          >
-            {assertion.officeName}
-          </Link>
-        ) : (
-          assertion.officeName
-        )}
+        <span className={assertion.isUncertain ? "italic" : undefined}>
+          {assertion.officeName ? (
+            <Link
+              to="/offices/$slug"
+              params={{ slug: slugify(assertion.officeName) }}
+              className="hover:underline"
+            >
+              {assertion.officeName}
+            </Link>
+          ) : (
+            assertion.officeName
+          )}
+          {assertion.isUncertain && "?"}
+        </span>
         {assertion.officeAbbreviation && (
           <span className="ml-1 text-sm text-muted-foreground">
             ({assertion.officeAbbreviation})
@@ -231,6 +234,8 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
               year={(assertion.dateStart ?? assertion.dateEnd) as number}
             />
           )}
+          {(assertion.isDateStartUncertain || assertion.isDateEndUncertain) &&
+            "?"}
         </p>
       )}
       {assertion.provinceOriginal && (

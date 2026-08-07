@@ -195,8 +195,17 @@ export function parsePersonTtl(
         secondarySource: resolveSource(first(g, "hasSecondarySource")),
         notes,
         primarySourceRefs: primaryRefs,
+        isUncertain: first(g, "isUncertain") === "true",
+        isDateStartUncertain: first(g, "isDateStartUncertain") === "true",
+        isDateEndUncertain: first(g, "isDateEndUncertain") === "true",
       })
     }
+    // Chronological career order (undated entries last), matching DPRR
+    results.sort(
+      (a, b) =>
+        (a.dateStart ?? a.dateEnd ?? Number.POSITIVE_INFINITY) -
+        (b.dateStart ?? b.dateEnd ?? Number.POSITIVE_INFINITY)
+    )
     return results
   }
 
