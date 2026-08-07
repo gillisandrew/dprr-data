@@ -2,7 +2,6 @@
 import { useState } from "react"
 import { FacetGroup } from "./facet-group"
 import { FacetHierarchyGroup } from "./facet-hierarchy-group"
-import { EraTimeline } from "./era-timeline"
 import { AdvancedSearch } from "./advanced-search"
 import {
   Collapsible,
@@ -13,7 +12,6 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { SearchState, FacetValue } from "@/data/types"
-import type { Histogram } from "@/lib/histogram"
 
 interface FacetSidebarProps {
   facets: {
@@ -26,7 +24,6 @@ interface FacetSidebarProps {
     praenomen: FacetValue[]
     cognomen: FacetValue[]
   }
-  histogram: Histogram
   officeHierarchy: Record<string, string | null>
   provinceHierarchy: Record<string, string | null>
   state: SearchState
@@ -37,7 +34,6 @@ interface FacetSidebarProps {
 
 export function FacetSidebar({
   facets,
-  histogram,
   officeHierarchy,
   provinceHierarchy,
   state,
@@ -75,15 +71,6 @@ export function FacetSidebar({
         onChange={(office) => onUpdate({ office })}
         defaultOpen={initialFocus === "office"}
       />
-      <div className="space-y-1 py-2">
-        <p className="text-sm font-semibold">Time period</p>
-        <EraTimeline
-          histogram={histogram}
-          from={state.eraFrom}
-          to={state.eraTo}
-          onChange={(eraFrom, eraTo) => onUpdate({ eraFrom, eraTo })}
-        />
-      </div>
 
       {/* Tier 2 — more filters */}
       <Collapsible open={tier2Open} onOpenChange={setTier2Open}>

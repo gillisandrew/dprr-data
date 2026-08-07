@@ -5,6 +5,7 @@ import { parseSearchParams, toSearchParams, useSearchState } from "@/lib/search"
 import { useSearchData, type SearchDataBundle } from "@/lib/use-search-data"
 import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
+import { EraTimeline } from "@/components/era-timeline"
 import { FacetSidebar } from "@/components/facet-sidebar"
 import { ResultsList } from "@/components/results-list"
 import { SearchLanding } from "@/components/search-landing"
@@ -118,10 +119,19 @@ function SearchResults({
         />
       </div>
 
+      <div className="mt-4 space-y-1">
+        <p className="text-sm font-semibold">Time period</p>
+        <EraTimeline
+          histogram={filteredHistogram}
+          from={state.eraFrom}
+          to={state.eraTo}
+          onChange={(eraFrom, eraTo) => updateState({ eraFrom, eraTo })}
+        />
+      </div>
+
       <div className="mt-4 flex gap-6">
         <FacetSidebar
           facets={facets}
-          histogram={filteredHistogram}
           state={state}
           onUpdate={updateState}
           officeHierarchy={bundle.payload.officeHierarchy}

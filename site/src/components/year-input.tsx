@@ -1,7 +1,7 @@
 // site/src/components/year-input.tsx
 import { useEffect, useState } from "react"
 import { Input } from "@/components/ui/input"
-import { toSignedYear, fromSignedYear, type EraLabel } from "@/lib/dates"
+import { fromSignedYear } from "@/lib/dates"
 
 interface YearInputProps {
   value: number | null
@@ -10,26 +10,36 @@ interface YearInputProps {
   "aria-label"?: string
 }
 
-/** Unsigned year + BC/AD selector; emits signed years (BC negative). */
+/**
+ * Unsigned year input; every date in the dataset is BC, so the value it
+ * emits is always a non-positive signed year (never AD). Displays a static
+ * "BC" suffix rather than an era selector. Edits are held in local draft
+ * text and only committed via `onChange` on blur or Enter — not on every
+ * keystroke.
+ */
 export function YearInput({
   value,
   onChange,
   placeholder,
   ...aria
 }: YearInputProps) {
-  const parts = value !== null ? fromSignedYear(value) : null
-  const [text, setText] = useState(parts ? String(parts.year) : "")
-  const [era, setEra] = useState<EraLabel>(parts?.era ?? "BC")
+  const [text, setText] = useState(
+    value !== null ? String(fromSignedYear(value).year) : ""
+  )
 
   useEffect(() => {
-    const next = value !== null ? fromSignedYear(value) : null
-    setText(next ? String(next.year) : "")
-    if (next) setEra(next.era)
+    setText(value !== null ? String(fromSignedYear(value).year) : "")
   }, [value])
 
-  function emit(nextText: string, nextEra: EraLabel) {
-    const year = Number.parseInt(nextText, 10)
-    onChange(Number.isNaN(year) ? null : toSignedYear(year, nextEra))
+  function commit() {
+    if (text === "") {
+      onChange(null)
+      return
+    }
+    const n = Number.parseFloat(text)
+    onChange(
+      Number.isNaN(n) ? null : -Math.max(1, Math.floor(Math.abs(n)) || 1)
+    )
   }
 
   return (
@@ -40,26 +50,15 @@ export function YearInput({
         inputMode="numeric"
         value={text}
         placeholder={placeholder}
-        onChange={(e) => {
-          setText(e.target.value)
-          emit(e.target.value, era)
+        onChange={(e) => setText(e.target.value)}
+        onBlur={commit}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") e.currentTarget.blur()
         }}
         className="h-7 w-20 text-xs"
         {...aria}
       />
-      <select
-        value={era}
-        onChange={(e) => {
-          const next = e.target.value as EraLabel
-          setEra(next)
-          emit(text, next)
-        }}
-        className="h-7 rounded-md border bg-transparent px-1 text-xs"
-        aria-label="era"
-      >
-        <option>BC</option>
-        <option>AD</option>
-      </select>
+      <span className="text-xs text-muted-foreground">BC</span>
     </span>
   )
 }
