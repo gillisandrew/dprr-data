@@ -28,3 +28,20 @@ export function formatEraRange(
   }
   return `${fromStr}\u2013${toStr}`
 }
+
+export type EraLabel = "BC" | "AD"
+
+/** "509 BC" \u2192 -509; "14 AD" \u2192 14. Years < 1 clamp to 1. */
+export function toSignedYear(year: number, era: EraLabel): number {
+  const y = Math.max(1, Math.floor(year))
+  return era === "BC" ? -y : y
+}
+
+/** -509 \u2192 {year: 509, era: "BC"}; 0 \u2192 {year: 1, era: "BC"}; 14 \u2192 {year: 14, era: "AD"}. */
+export function fromSignedYear(signed: number): {
+  year: number
+  era: EraLabel
+} {
+  if (signed <= 0) return { year: Math.abs(signed) || 1, era: "BC" }
+  return { year: signed, era: "AD" }
+}

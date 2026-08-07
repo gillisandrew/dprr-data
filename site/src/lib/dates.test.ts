@@ -1,5 +1,10 @@
 import { expect, test, describe } from "vite-plus/test"
-import { formatYear, formatEraRange } from "./dates"
+import {
+  formatYear,
+  formatEraRange,
+  toSignedYear,
+  fromSignedYear,
+} from "./dates"
 
 describe("formatYear", () => {
   test("negative year displays as BC", () => {
@@ -31,5 +36,23 @@ describe("formatEraRange", () => {
   })
   test("cross BC/AD boundary", () => {
     expect(formatEraRange(-63, 14)).toBe("63 BC\u2013AD 14")
+  })
+})
+
+describe("signed year conversion", () => {
+  test("BC years negate, AD years pass through", () => {
+    expect(toSignedYear(509, "BC")).toBe(-509)
+    expect(toSignedYear(14, "AD")).toBe(14)
+  })
+  test("year zero policy: 0 = 1 BC, inputs below 1 clamp", () => {
+    expect(fromSignedYear(0)).toEqual({ year: 1, era: "BC" })
+    expect(toSignedYear(0, "BC")).toBe(-1)
+    expect(toSignedYear(-5, "AD")).toBe(1)
+  })
+  test("round-trips", () => {
+    expect(
+      toSignedYear(fromSignedYear(-509).year, fromSignedYear(-509).era)
+    ).toBe(-509)
+    expect(fromSignedYear(14)).toEqual({ year: 14, era: "AD" })
   })
 })
