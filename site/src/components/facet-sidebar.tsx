@@ -10,6 +10,7 @@ interface FacetSidebarProps {
     nomen: FacetValue[]
     sex: FacetValue[]
     tribe: FacetValue[]
+    province: FacetValue[]
   }
   state: SearchState
   onUpdate: (updates: Partial<SearchState>) => void
@@ -79,6 +80,14 @@ export function FacetSidebar({ facets, state, onUpdate }: FacetSidebarProps) {
         items={facets.tribe}
         selected={state.tribe}
         onChange={(tribe) => onUpdate({ tribe })}
+        defaultOpen={false}
+        searchable
+      />
+      <FacetGroup
+        title="Province"
+        items={facets.province}
+        selected={state.province}
+        onChange={(province) => onUpdate({ province })}
         defaultOpen={false}
         searchable
       />

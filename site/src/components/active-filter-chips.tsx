@@ -55,6 +55,13 @@ export function ActiveFilterChips({
         onRemove({ tribe: state.tribe.filter((t) => t !== tribe) }),
     })
   }
+  for (const province of state.province) {
+    chips.push({
+      label: `Province: ${province}`,
+      onRemove: () =>
+        onRemove({ province: state.province.filter((p) => p !== province) }),
+    })
+  }
 
   if (chips.length === 0) return null
 
