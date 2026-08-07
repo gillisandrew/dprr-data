@@ -144,12 +144,12 @@ export function FamilyCard({ person }: { person: Person }) {
                   {rel.references.length > 0 && (
                     <ul className="mt-0.5 ml-3 space-y-0.5">
                       {rel.references.map((ref, i) =>
-                        ref.extraInfo ? (
+                        ref.extraInfo || ref.secondarySource ? (
                           <li
                             key={i}
                             className="text-[10px] text-muted-foreground"
                           >
-                            {ref.extraInfo}{" "}
+                            {ref.extraInfo && <>{ref.extraInfo} </>}
                             <SourceCitation name={ref.secondarySource} />
                           </li>
                         ) : null
