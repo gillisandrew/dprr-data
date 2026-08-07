@@ -45,8 +45,10 @@ The search page has two states keyed off the URL:
 ### 1.4 Attestation-density timeline
 
 - Replaces the era number-inputs pair: an **area curve with two drag handles** (chosen over a brushable histogram). Handles write the existing `eraFrom`/`eraTo` params.
+- **Placement (revised 2026-08-07):** the timeline is a full-width band spanning the content container (like the search input), above the sidebar/results split — not inside the 280px sidebar.
+- **Deferred commit (revised 2026-08-07):** dragging adjusts a local visual selection only; the URL/results update once on pointer release. This keeps results from reloading and the scroll position from jumping mid-drag. The exact-year inputs likewise commit on blur/Enter, not per keystroke.
 - Density = count of dated office-assertions per 5-year bin, computed at build time into a small static JSON. With other filters active, the curve recomputes client-side from career tuples to show density within the filtered set.
-- Exact-year inputs remain beneath the curve for precision.
+- Exact-year inputs remain beside the curve for precision.
 
 ### 1.5 Search-data payload diet
 
@@ -58,7 +60,7 @@ Today the search page embeds ~3.6 MB of data plus ~250 KB of hidden crawl links.
 
 ### 1.6 BC-dominant date handling
 
-- Era values are negative (BC) in 92% of cases; assertion dates are BC in all but 7 of 23,330. Year inputs become **unsigned year + BC/AD selector, defaulting BC** ("509 [BC]" → internal −509). URLs keep signed integers, so existing deep links work unchanged.
+- Era values are negative (BC) in 92% of cases; assertion dates are BC in all but 7 of 23,330. Year inputs are **unsigned and BC-only — no BC/AD selector** (revised 2026-08-07: the timeline axis ends at 31 BC, so an AD filter bound is never useful; "509" → internal −509). URLs keep signed integers, so existing deep links work unchanged.
 - Timeline axis is BC-native: spans the actual assertion range (~600 BC → 31 BC), labels without minus signs; the 7 AD outlier assertions fold into the final bin.
 - **Year-zero policy: 0 = 1 BC** (astronomical convention) everywhere — the formatter already does this; histogram binning and input conversion follow the same rule.
 - Sort controls say "Earliest first / Latest first", never "Date ↑/↓".
