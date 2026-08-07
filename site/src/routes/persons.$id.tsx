@@ -5,17 +5,15 @@ import { slugify } from "@/lib/slug"
 import { SITE_URL } from "@/lib/site"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
-import { PersonLink } from "@/components/person-card"
-import type {
-  Person,
-  PostAssertion,
-  Relationship,
-  DateInfo,
-  Note,
-  Concordance,
-} from "@/data/types"
+import { IdentityCard, PersonRail } from "@/components/person-rail"
+import type { PostAssertion, Note } from "@/data/types"
 
 export const Route = createFileRoute("/persons/$id")({
   loader: ({ params }) => getPersonById({ data: params.id }),
@@ -57,143 +55,62 @@ export const Route = createFileRoute("/persons/$id")({
 function PersonPage() {
   const person = Route.useLoaderData()
   const displayName = person.name.replace(/^[A-Z]{4}\d+ /, "")
-
-  return (
-    <div className="mx-auto max-w-3xl px-4 py-8">
-      <PersonHeader person={person} displayName={displayName} />
-
-      {person.postAssertions.length > 0 && (
-        <Section title="Offices" count={person.postAssertions.length}>
-          <div className="space-y-4">
-            {person.postAssertions.map((pa) => (
-              <OfficeEntry key={pa.id} assertion={pa} />
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {person.relationships.length > 0 && (
-        <Section title="Relationships" count={person.relationships.length}>
-          <div className="space-y-3">
-            {person.relationships.map((rel) => (
-              <RelationshipEntry key={rel.id} relationship={rel} />
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {person.dateInformation.length > 0 && (
-        <Section title="Dates" count={person.dateInformation.length}>
-          <div className="space-y-2">
-            {person.dateInformation.map((d, i) => (
-              <DateEntry key={i} dateInfo={d} />
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {person.personNotes.length > 0 && (
-        <Section title="Notes" count={person.personNotes.length}>
-          <div className="space-y-4">
-            {person.personNotes.map((note, i) => (
-              <NoteEntry key={i} note={note} />
-            ))}
-          </div>
-        </Section>
-      )}
-
-      {person.concordances.length > 0 && (
-        <Section title="External Links" count={person.concordances.length}>
-          <ConcordanceList concordances={person.concordances} />
-        </Section>
-      )}
-    </div>
+  const sortedNotes = [...person.personNotes].sort((a, b) =>
+    a.type.localeCompare(b.type)
   )
-}
 
-function PersonHeader({
-  person,
-  displayName,
-}: {
-  person: Person
-  displayName: string
-}) {
   return (
-    <header className="mb-8">
-      <h1 className="font-heading text-3xl font-bold">{displayName}</h1>
-      {(person.eraFrom !== null || person.eraTo !== null) && (
+    <div className="mx-auto max-w-5xl px-4 py-8">
+      <header className="mb-6">
+        <h1 className="font-heading text-3xl font-bold">{displayName}</h1>
         <p className="mt-1 text-lg text-muted-foreground">
           <EraRange from={person.eraFrom} to={person.eraTo} />
+          {person.highestOffice && <span> · {person.highestOffice}</span>}
+          {person.isPatrician && (
+            <Badge variant="secondary" className="ml-2 align-middle">
+              Patrician
+            </Badge>
+          )}
+          {person.isNobilis && (
+            <Badge variant="secondary" className="ml-1 align-middle">
+              Nobilis
+            </Badge>
+          )}
         </p>
-      )}
-      <div className="mt-3 flex flex-wrap gap-2">
-        {person.sex && <Badge variant="outline">{person.sex}</Badge>}
-        {person.isPatrician && <Badge variant="secondary">Patrician</Badge>}
-        {person.isNobilis && <Badge variant="secondary">Nobilis</Badge>}
+      </header>
+
+      <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-8">
+        <div className="min-w-0">
+          <div className="mb-6 lg:hidden">
+            <IdentityCard person={person} />
+          </div>
+
+          {person.postAssertions.length > 0 && (
+            <Section title="Career" count={person.postAssertions.length}>
+              <div className="space-y-4">
+                {person.postAssertions.map((pa) => (
+                  <OfficeEntry key={pa.id} assertion={pa} />
+                ))}
+              </div>
+            </Section>
+          )}
+
+          {sortedNotes.length > 0 && (
+            <Section title="Notes" count={sortedNotes.length}>
+              <div className="space-y-4">
+                {sortedNotes.map((note, i) => (
+                  <NoteEntry key={i} note={note} />
+                ))}
+              </div>
+            </Section>
+          )}
+        </div>
+
+        <aside className="mt-8 lg:sticky lg:top-4 lg:mt-0 lg:self-start">
+          <PersonRail person={person} />
+        </aside>
       </div>
-      <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm text-muted-foreground">
-        {person.praenomen && (
-          <>
-            <dt className="font-medium">Praenomen</dt>
-            <dd>{person.praenomen}</dd>
-          </>
-        )}
-        {person.nomen && (
-          <>
-            <dt className="font-medium">Nomen</dt>
-            <dd>{person.nomen}</dd>
-          </>
-        )}
-        {person.cognomen && (
-          <>
-            <dt className="font-medium">Cognomen</dt>
-            <dd>{person.cognomen}</dd>
-          </>
-        )}
-        {person.filiation && (
-          <>
-            <dt className="font-medium">Filiation</dt>
-            <dd>{person.filiation}</dd>
-          </>
-        )}
-        {person.reNumber && (
-          <>
-            <dt className="font-medium">RE</dt>
-            <dd>{person.reNumber}</dd>
-          </>
-        )}
-        {person.tribes.length > 0 && (
-          <>
-            <dt className="font-medium">Tribe</dt>
-            <dd>
-              {person.tribes.map((t, i) => (
-                <span key={t}>
-                  {i > 0 && ", "}
-                  <Link
-                    to="/tribes/$slug"
-                    params={{ slug: slugify(t) }}
-                    className="hover:underline"
-                  >
-                    {t}
-                  </Link>
-                </span>
-              ))}
-            </dd>
-          </>
-        )}
-        {person.highestOffice && (
-          <>
-            <dt className="font-medium">Highest Office</dt>
-            <dd>{person.highestOffice}</dd>
-          </>
-        )}
-        <dt className="font-medium">DPRR ID</dt>
-        <dd className="font-mono text-xs">{person.id}</dd>
-      </dl>
-      {person.nobilisNotes && (
-        <p className="mt-3 text-sm italic">{person.nobilisNotes}</p>
-      )}
-    </header>
+    </div>
   )
 }
 
@@ -240,7 +157,7 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
       )}
       {assertion.provinceOriginal && (
         <p className="text-sm text-muted-foreground">
-          Province:{" "}
+          Location:{" "}
           {assertion.provinces.length > 0 ? (
             assertion.provinces.map((pr, i) => (
               <span key={pr}>
@@ -279,55 +196,27 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
           ))}
         </div>
       )}
-      {assertion.notes.map((note, i) => (
-        <div key={i} className="mt-2 rounded bg-muted/50 p-3 text-sm">
-          <p className="mb-1 text-xs font-medium text-muted-foreground">
-            {note.type}
-            {note.secondarySource && ` — ${note.secondarySource}`}
-          </p>
-          <p className="leading-relaxed whitespace-pre-wrap">{note.text}</p>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function RelationshipEntry({ relationship }: { relationship: Relationship }) {
-  const relatedDisplayName = relationship.relatedPersonName.replace(
-    /^[A-Z]{4}\d+ /,
-    ""
-  )
-  return (
-    <div className="flex items-baseline gap-2">
-      <span className="text-sm text-muted-foreground capitalize">
-        {relationship.relationshipType}:
-      </span>
-      {relationship.relatedPersonId ? (
-        <PersonLink
-          id={relationship.relatedPersonId}
-          name={relationship.relatedPersonName}
-        />
-      ) : (
-        <span>{relatedDisplayName}</span>
+      {assertion.notes.length > 0 && (
+        <Collapsible>
+          <CollapsibleTrigger className="mt-1 text-xs text-muted-foreground hover:underline">
+            {assertion.notes.length} scholarly note
+            {assertion.notes.length === 1 ? "" : "s"} ▸
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            {assertion.notes.map((note, i) => (
+              <div key={i} className="mt-2 rounded bg-muted/50 p-3 text-sm">
+                <p className="mb-1 text-xs font-medium text-muted-foreground">
+                  {note.type}
+                  {note.secondarySource && ` — ${note.secondarySource}`}
+                </p>
+                <p className="leading-relaxed whitespace-pre-wrap">
+                  {note.text}
+                </p>
+              </div>
+            ))}
+          </CollapsibleContent>
+        </Collapsible>
       )}
-    </div>
-  )
-}
-
-function DateEntry({ dateInfo }: { dateInfo: DateInfo }) {
-  return (
-    <div className="flex items-baseline gap-2 text-sm">
-      <span className="font-medium text-muted-foreground capitalize">
-        {dateInfo.type}:
-      </span>
-      <DateDisplay year={dateInfo.value} uncertain={dateInfo.isUncertain} />
-      {dateInfo.notes && (
-        <span className="text-muted-foreground">— {dateInfo.notes}</span>
-      )}
-      <SourceCitation
-        name={dateInfo.secondarySource}
-        className="text-xs text-muted-foreground"
-      />
     </div>
   )
 }
@@ -341,38 +230,5 @@ function NoteEntry({ note }: { note: Note }) {
       </p>
       <p className="text-sm leading-relaxed whitespace-pre-wrap">{note.text}</p>
     </div>
-  )
-}
-
-function ConcordanceList({ concordances }: { concordances: Concordance[] }) {
-  // Group by system
-  const grouped = new Map<string, Concordance[]>()
-  for (const c of concordances) {
-    const existing = grouped.get(c.system) ?? []
-    existing.push(c)
-    grouped.set(c.system, existing)
-  }
-
-  return (
-    <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
-      {[...grouped].map(([system, links]) => (
-        <div key={system} className="contents">
-          <dt className="font-medium capitalize">{system}</dt>
-          <dd className="flex flex-col gap-1">
-            {links.map((link, i) => (
-              <a
-                key={i}
-                href={link.uri}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="break-all text-primary hover:underline"
-              >
-                {link.uri}
-              </a>
-            ))}
-          </dd>
-        </div>
-      ))}
-    </dl>
   )
 }
