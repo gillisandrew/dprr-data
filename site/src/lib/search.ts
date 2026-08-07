@@ -5,12 +5,24 @@ import MiniSearch from "minisearch"
 import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
 import { MINISEARCH_OPTIONS } from "@/data/search-index"
 
+/** Split a comma-joined, per-value-encoded facet param back into raw values. */
+function splitFacetParam(value: string | undefined): string[] {
+  return value ? value.split(",").map((v) => decodeURIComponent(v)) : []
+}
+
+/** Join facet values into a comma-separated param, encoding each value first
+ * so commas embedded in a value (e.g. an office name) don't corrupt the
+ * split on the way back. */
+function joinFacetParam(values: string[]): string {
+  return values.map((v) => encodeURIComponent(v)).join(",")
+}
+
 export function parseSearchParams(params: Record<string, string>): SearchState {
   return {
     q: params.q ?? "",
-    office: params.office ? params.office.split(",") : [],
-    nomen: params.nomen ? params.nomen.split(",") : [],
-    sex: params.sex ? params.sex.split(",") : [],
+    office: splitFacetParam(params.office),
+    nomen: splitFacetParam(params.nomen),
+    sex: splitFacetParam(params.sex),
     patrician:
       params.patrician === "true"
         ? true
@@ -23,8 +35,8 @@ export function parseSearchParams(params: Record<string, string>): SearchState {
         : params.nobilis === "false"
           ? false
           : null,
-    tribe: params.tribe ? params.tribe.split(",") : [],
-    province: params.province ? params.province.split(",") : [],
+    tribe: splitFacetParam(params.tribe),
+    province: splitFacetParam(params.province),
     eraFrom: params.eraFrom ? Number(params.eraFrom) : null,
     eraTo: params.eraTo ? Number(params.eraTo) : null,
   }
@@ -33,13 +45,13 @@ export function parseSearchParams(params: Record<string, string>): SearchState {
 export function toSearchParams(state: SearchState): Record<string, string> {
   const params: Record<string, string> = {}
   if (state.q) params.q = state.q
-  if (state.office.length) params.office = state.office.join(",")
-  if (state.nomen.length) params.nomen = state.nomen.join(",")
-  if (state.sex.length) params.sex = state.sex.join(",")
+  if (state.office.length) params.office = joinFacetParam(state.office)
+  if (state.nomen.length) params.nomen = joinFacetParam(state.nomen)
+  if (state.sex.length) params.sex = joinFacetParam(state.sex)
   if (state.patrician !== null) params.patrician = String(state.patrician)
   if (state.nobilis !== null) params.nobilis = String(state.nobilis)
-  if (state.tribe.length) params.tribe = state.tribe.join(",")
-  if (state.province.length) params.province = state.province.join(",")
+  if (state.tribe.length) params.tribe = joinFacetParam(state.tribe)
+  if (state.province.length) params.province = joinFacetParam(state.province)
   if (state.eraFrom !== null) params.eraFrom = String(state.eraFrom)
   if (state.eraTo !== null) params.eraTo = String(state.eraTo)
   return params

@@ -35,6 +35,7 @@ export function FacetSidebar({
         parentOf={officeHierarchy}
         selected={state.office}
         onChange={(office) => onUpdate({ office })}
+        defaultOpen={false}
       />
       <FacetGroup
         title="Gens"

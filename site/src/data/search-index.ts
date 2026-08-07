@@ -15,7 +15,7 @@ export const MINISEARCH_OPTIONS: Options<PersonSummary> = {
     "highestOffice",
     "eraFrom",
     "eraTo",
-    "tribe",
+    "tribes",
     "offices",
   ],
   idField: "id",

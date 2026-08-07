@@ -203,8 +203,8 @@ export function parsePersonTtl(
     // Chronological career order (undated entries last), matching DPRR
     results.sort(
       (a, b) =>
-        (a.dateStart ?? a.dateEnd ?? Number.POSITIVE_INFINITY) -
-        (b.dateStart ?? b.dateEnd ?? Number.POSITIVE_INFINITY)
+        (a.dateStart ?? a.dateEnd ?? Number.MAX_SAFE_INTEGER) -
+        (b.dateStart ?? b.dateEnd ?? Number.MAX_SAFE_INTEGER)
     )
     return results
   }

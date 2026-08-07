@@ -10,7 +10,8 @@ export const Route = createFileRoute("/offices/$slug")({
   head: ({ loaderData: office }) => {
     if (!office) return {}
     const title = `${office.name} — Offices — DPRR`
-    const desc = `${office.holders.length} recorded holders of the office of ${office.name} in the Roman Republic`
+    const distinct = new Set(office.holders.map((h) => h.personId)).size
+    const desc = `${office.holders.length} recorded tenures of the office of ${office.name}, held by ${distinct} persons of the Roman Republic`
     return {
       meta: [
         { title },
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/offices/$slug")({
 
 function OfficePage() {
   const office = Route.useLoaderData()
+  const distinct = new Set(office.holders.map((h) => h.personId)).size
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="font-heading text-3xl font-bold">
@@ -36,7 +38,8 @@ function OfficePage() {
         )}
       </h1>
       <p className="mt-1 text-sm text-muted-foreground">
-        {office.holders.length} recorded holders, listed chronologically
+        {office.holders.length} recorded tenures held by {distinct} persons,
+        listed chronologically
       </p>
       <ol className="mt-6 space-y-2">
         {office.holders.map((h, i) => (

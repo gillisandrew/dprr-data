@@ -14,6 +14,13 @@ describe("search param round-trip", () => {
     expect(params.province).toBe("Sicilia")
   })
 
+  test("facet values containing a comma survive the URL round-trip", () => {
+    const state = parseSearchParams({})
+    const params = toSearchParams({ ...state, office: ["a, b office"] })
+    expect(params.office).toBe(encodeURIComponent("a, b office"))
+    expect(parseSearchParams(params).office).toEqual(["a, b office"])
+  })
+
   test("full round-trip preserves all facets", () => {
     const input = {
       q: "brutus",

@@ -37,7 +37,7 @@ function ProvincesPage() {
                 {p.name}
               </span>
               <span className="text-sm text-muted-foreground">
-                {p.assertionCount}
+                {p.personCount}
               </span>
             </Link>
           </li>

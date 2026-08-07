@@ -135,9 +135,9 @@ describe("tribes", () => {
 })
 
 describe("provinces", () => {
-  test("index counts assertions and detail lists them chronologically", () => {
+  test("index counts distinct persons and detail lists assertions chronologically", () => {
     expect(buildProvinceIndex([personA, personB])).toEqual([
-      { slug: "sicilia", name: "Sicilia", assertionCount: 1 },
+      { slug: "sicilia", name: "Sicilia", personCount: 1 },
     ])
     const detail = buildProvinceDetail([personA, personB], "sicilia")
     expect(detail?.assertions).toEqual([

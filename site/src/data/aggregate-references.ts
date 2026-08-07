@@ -37,7 +37,7 @@ export interface TribeDetail {
 export interface ProvinceIndexEntry {
   slug: string
   name: string
-  assertionCount: number
+  personCount: number
 }
 export interface ProvinceAssertion {
   personId: string
@@ -55,7 +55,7 @@ export interface ProvinceDetail {
 
 /** Chronological sort key: earliest known date, undated entries last. */
 function dateKey(dateStart: number | null, dateEnd: number | null): number {
-  return dateStart ?? dateEnd ?? Number.POSITIVE_INFINITY
+  return dateStart ?? dateEnd ?? Number.MAX_SAFE_INTEGER
 }
 
 function assertUniqueSlugs(names: Iterable<string>, kind: string): void {
@@ -189,20 +189,25 @@ export function buildTribeDetail(
 }
 
 export function buildProvinceIndex(persons: Person[]): ProvinceIndexEntry[] {
-  const byName = new Map<string, number>()
+  const byName = new Map<string, Set<string>>()
   for (const p of persons) {
     for (const pa of p.postAssertions) {
       for (const province of pa.provinces) {
-        byName.set(province, (byName.get(province) ?? 0) + 1)
+        let holderIds = byName.get(province)
+        if (!holderIds) {
+          holderIds = new Set()
+          byName.set(province, holderIds)
+        }
+        holderIds.add(p.id)
       }
     }
   }
   assertUniqueSlugs(byName.keys(), "Province")
   return [...byName]
-    .map(([name, assertionCount]) => ({
+    .map(([name, holderIds]) => ({
       slug: slugify(name),
       name,
-      assertionCount,
+      personCount: holderIds.size,
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
 }
