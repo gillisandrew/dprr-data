@@ -53,6 +53,7 @@ function makePerson(over: Partial<Person>): Person {
     tribes: [],
     offices: [],
     provinces: [],
+    lifeEvents: [],
     postAssertions: [],
     relationships: [],
     dateInformation: [],

@@ -20,13 +20,15 @@ export interface PersonSummary {
   offices: string[]
   /** Distinct canonical provinces across all post assertions (for faceting). */
   provinces: string[]
+  reNumber: string | null
+  filiation: string | null
+  /** Distinct DateInformation type names (e.g. "death - violent"), excluding "attested". */
+  lifeEvents: string[]
 }
 
 /** Full person record with all scholarly data. */
 export interface Person extends PersonSummary {
   uri: string
-  filiation: string | null
-  reNumber: string | null
   nobilisNotes: string | null
   postAssertions: PostAssertion[]
   relationships: Relationship[]

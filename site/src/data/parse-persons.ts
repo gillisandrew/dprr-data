@@ -330,6 +330,12 @@ export function parsePersonTtl(
     ]
 
     const filiation = first(g, "hasFiliation")
+    const dateInformation = buildDateInfo(personUri)
+    const lifeEvents = [
+      ...new Set(
+        dateInformation.map((d) => d.type).filter((t) => t && t !== "attested")
+      ),
+    ]
 
     persons.push({
       id: dprrId,
@@ -353,9 +359,10 @@ export function parsePersonTtl(
       provinces: provinceNames,
       postAssertions,
       relationships: buildRelationships(personUri),
-      dateInformation: buildDateInfo(personUri),
+      dateInformation,
       personNotes: buildPersonNotes(personUri),
       concordances: concordanceMap.get(personNumericId) ?? [],
+      lifeEvents,
     })
   }
 

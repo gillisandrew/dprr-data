@@ -21,6 +21,9 @@ const SUMMARIES: PersonSummary[] = [
     tribes: [],
     offices: ["consul"],
     provinces: [],
+    reNumber: null,
+    filiation: null,
+    lifeEvents: [],
   },
   {
     id: "CORN0123",
@@ -38,6 +41,9 @@ const SUMMARIES: PersonSummary[] = [
     tribes: [],
     offices: ["consul", "proconsul"],
     provinces: [],
+    reNumber: null,
+    filiation: null,
+    lifeEvents: [],
   },
 ]
 

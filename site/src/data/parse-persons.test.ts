@@ -148,6 +148,43 @@ describe("province extraction", () => {
   })
 })
 
+describe("life events", () => {
+  test("derives distinct life events from date information, excluding 'attested'", () => {
+    const ttl = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/1> a dprr:DateInformation ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+  dprr:hasValue "-42"^^xsd:integer .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/2> a dprr:DateInformation ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/4> ;
+  dprr:hasValue "-42"^^xsd:integer .
+<http://romanrepublic.ac.uk/rdf/entity/DateInformation/3> a dprr:DateInformation ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasDateType <http://romanrepublic.ac.uk/rdf/entity/DateType/1> ;
+  dprr:hasValue "-60"^^xsd:integer .
+`
+    const refs = makeRefs()
+    refs.dateTypes.set(
+      "http://romanrepublic.ac.uk/rdf/entity/DateType/4",
+      "death - violent"
+    )
+    refs.dateTypes.set(
+      "http://romanrepublic.ac.uk/rdf/entity/DateType/1",
+      "attested"
+    )
+    const persons = parsePersonTtl(ttl, refs, new Map())
+    expect(persons[0].lifeEvents).toEqual(["death - violent"])
+  })
+})
+
 describe("uncertainty and career order", () => {
   test("reads uncertainty flags and sorts assertions chronologically", () => {
     const ttl = `
