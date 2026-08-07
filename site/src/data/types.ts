@@ -139,4 +139,12 @@ export interface SearchState {
   province: string[]
   eraFrom: number | null
   eraTo: number | null
+  event: string[]
+  praenomen: string[]
+  cognomen: string[]
+  /** Case-insensitive substring match against reNumber. */
+  re: string
+  officeMode: "any" | "all"
+  officeInRange: boolean
+  sort: "earliest" | "latest" | "name" | "relevance" | null
 }

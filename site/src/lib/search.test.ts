@@ -39,3 +39,38 @@ describe("search param round-trip", () => {
     })
   })
 })
+
+describe("advanced params round-trip", () => {
+  test("new multi-value and scalar params parse and serialize", () => {
+    const input = {
+      event: "death%20-%20violent,exiled",
+      praenomen: "Lucius",
+      cognomen: "Brutus",
+      re: "46a",
+      officeMode: "all",
+      officeInRange: "true",
+      sort: "latest",
+    }
+    const state = parseSearchParams(input)
+    expect(state.event).toEqual(["death - violent", "exiled"])
+    expect(state.officeMode).toBe("all")
+    expect(state.officeInRange).toBe(true)
+    expect(state.sort).toBe("latest")
+    expect(toSearchParams(state)).toEqual(input)
+  })
+
+  test("defaults are omitted from the URL", () => {
+    const state = parseSearchParams({})
+    expect(state.officeMode).toBe("any")
+    expect(state.officeInRange).toBe(false)
+    expect(state.sort).toBeNull()
+    const params = toSearchParams(state)
+    expect(params.officeMode).toBeUndefined()
+    expect(params.officeInRange).toBeUndefined()
+    expect(params.sort).toBeUndefined()
+  })
+
+  test("unknown sort values parse as null", () => {
+    expect(parseSearchParams({ sort: "bogus" }).sort).toBeNull()
+  })
+})

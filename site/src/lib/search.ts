@@ -38,6 +38,19 @@ export function parseSearchParams(params: Record<string, string>): SearchState {
     province: splitFacetParam(params.province),
     eraFrom: params.eraFrom ? Number(params.eraFrom) : null,
     eraTo: params.eraTo ? Number(params.eraTo) : null,
+    event: splitFacetParam(params.event),
+    praenomen: splitFacetParam(params.praenomen),
+    cognomen: splitFacetParam(params.cognomen),
+    re: params.re ?? "",
+    officeMode: params.officeMode === "all" ? "all" : "any",
+    officeInRange: params.officeInRange === "true",
+    sort:
+      params.sort === "earliest" ||
+      params.sort === "latest" ||
+      params.sort === "name" ||
+      params.sort === "relevance"
+        ? params.sort
+        : null,
   }
 }
 
@@ -53,6 +66,13 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   if (state.province.length) params.province = joinFacetParam(state.province)
   if (state.eraFrom !== null) params.eraFrom = String(state.eraFrom)
   if (state.eraTo !== null) params.eraTo = String(state.eraTo)
+  if (state.event.length) params.event = joinFacetParam(state.event)
+  if (state.praenomen.length) params.praenomen = joinFacetParam(state.praenomen)
+  if (state.cognomen.length) params.cognomen = joinFacetParam(state.cognomen)
+  if (state.re) params.re = state.re
+  if (state.officeMode !== "any") params.officeMode = state.officeMode
+  if (state.officeInRange) params.officeInRange = "true"
+  if (state.sort) params.sort = state.sort
   return params
 }
 
