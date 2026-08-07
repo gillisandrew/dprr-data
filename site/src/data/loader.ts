@@ -12,7 +12,7 @@ import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
 // to bundled output at build time rather than source directory.
 const REPO_ROOT = join(process.cwd(), "..")
 
-let _cache: { persons: Person[]; refs: ReferenceMaps } | null = null
+let _cache: Promise<{ persons: Person[]; refs: ReferenceMaps }> | null = null
 
 async function readTtl(path: string): Promise<string> {
   return readFile(join(REPO_ROOT, path), "utf-8")
@@ -68,12 +68,18 @@ async function loadConcordances(): Promise<Map<string, Concordance[]>> {
   return merged
 }
 
-export async function loadAllData(): Promise<{
+export function loadAllData(): Promise<{
   persons: Person[]
   refs: ReferenceMaps
 }> {
-  if (_cache) return _cache
+  _cache ??= loadAllDataUncached()
+  return _cache
+}
 
+async function loadAllDataUncached(): Promise<{
+  persons: Person[]
+  refs: ReferenceMaps
+}> {
   // 1. Parse reference files
   const [offices, sources, praenomina, tribes, relationships, misc, provinces] =
     await Promise.all([
@@ -156,8 +162,7 @@ export async function loadAllData(): Promise<{
     )
   }
 
-  _cache = { persons, refs }
-  return _cache
+  return { persons, refs }
 }
 
 /** Extract compact summaries for search/faceting. */
