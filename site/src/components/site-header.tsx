@@ -1,0 +1,30 @@
+// site/src/components/site-header.tsx
+import { Link } from "@tanstack/react-router"
+
+const links = [
+  { to: "/offices", label: "Offices" },
+  { to: "/tribes", label: "Tribes" },
+  { to: "/provinces", label: "Provinces" },
+] as const
+
+export function SiteHeader() {
+  return (
+    <header className="border-b">
+      <nav className="mx-auto flex max-w-6xl items-baseline gap-6 px-4 py-3">
+        <Link to="/" className="font-heading font-bold">
+          DPRR
+        </Link>
+        {links.map((l) => (
+          <Link
+            key={l.to}
+            to={l.to}
+            className="text-sm text-muted-foreground hover:text-foreground"
+            activeProps={{ className: "text-sm font-medium text-foreground" }}
+          >
+            {l.label}
+          </Link>
+        ))}
+      </nav>
+    </header>
+  )
+}
