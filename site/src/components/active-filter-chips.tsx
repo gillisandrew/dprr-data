@@ -57,9 +57,50 @@ export function ActiveFilterChips({
   }
   for (const province of state.province) {
     chips.push({
-      label: `Province: ${province}`,
+      label: `Location: ${province}`,
       onRemove: () =>
         onRemove({ province: state.province.filter((p) => p !== province) }),
+    })
+  }
+  for (const event of state.event) {
+    chips.push({
+      label: `Event: ${event}`,
+      onRemove: () =>
+        onRemove({ event: state.event.filter((e) => e !== event) }),
+    })
+  }
+  for (const praenomen of state.praenomen) {
+    chips.push({
+      label: `Praenomen: ${praenomen}`,
+      onRemove: () =>
+        onRemove({
+          praenomen: state.praenomen.filter((p) => p !== praenomen),
+        }),
+    })
+  }
+  for (const cognomen of state.cognomen) {
+    chips.push({
+      label: `Cognomen: ${cognomen}`,
+      onRemove: () =>
+        onRemove({ cognomen: state.cognomen.filter((c) => c !== cognomen) }),
+    })
+  }
+  if (state.officeMode === "all") {
+    chips.push({
+      label: "Offices: all of",
+      onRemove: () => onRemove({ officeMode: "any" }),
+    })
+  }
+  if (state.officeInRange) {
+    chips.push({
+      label: "Offices in time range",
+      onRemove: () => onRemove({ officeInRange: false }),
+    })
+  }
+  if (state.re) {
+    chips.push({
+      label: `RE: ${state.re}`,
+      onRemove: () => onRemove({ re: "" }),
     })
   }
 
