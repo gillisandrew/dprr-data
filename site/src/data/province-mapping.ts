@@ -256,8 +256,9 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
 //   "Laodiceia-ad-Lycum ?"  town in Asia; uncertain and not canonical.
 //   "urbanus or inter peregrinos"
 //                           a genuine disjunction — asserting both would be
-//                           wrong. (Its paired hasProvinceOriginal is "Rome",
-//                           which does resolve, so no post loses its province.)
+//                           wrong. (Q. Maenius, pr. 170: the post carries only
+//                           hasProvinceOriginalExpanded, so it contributes no
+//                           facet value; the raw text still shows on his page.)
 //   "?/?"                   two successive unknown provinces; nothing to map.
 
 export function mapProvinceText(raw: string): string[] | null {
