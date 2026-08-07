@@ -10,11 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as OfficesIndexRouteImport } from './routes/offices.index'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
+import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OfficesIndexRoute = OfficesIndexRouteImport.update({
+  id: '/offices/',
+  path: '/offices/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PersonsIdRoute = PersonsIdRouteImport.update({
@@ -22,31 +29,44 @@ const PersonsIdRoute = PersonsIdRouteImport.update({
   path: '/persons/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OfficesSlugRoute = OfficesSlugRouteImport.update({
+  id: '/offices/$slug',
+  path: '/offices/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/offices/': typeof OfficesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/offices': typeof OfficesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/offices/': typeof OfficesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/persons/$id'
+  fullPaths: '/' | '/offices/$slug' | '/persons/$id' | '/offices/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/persons/$id'
-  id: '__root__' | '/' | '/persons/$id'
+  to: '/' | '/offices/$slug' | '/persons/$id' | '/offices'
+  id: '__root__' | '/' | '/offices/$slug' | '/persons/$id' | '/offices/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
+  OfficesIndexRoute: typeof OfficesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +78,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/offices/': {
+      id: '/offices/'
+      path: '/offices'
+      fullPath: '/offices/'
+      preLoaderRoute: typeof OfficesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/persons/$id': {
       id: '/persons/$id'
       path: '/persons/$id'
@@ -65,12 +92,21 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PersonsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/offices/$slug': {
+      id: '/offices/$slug'
+      path: '/offices/$slug'
+      fullPath: '/offices/$slug'
+      preLoaderRoute: typeof OfficesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
+  OfficesIndexRoute: OfficesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
