@@ -57,6 +57,21 @@ export function parseSearchParams(params: Record<string, string>): SearchState {
   }
 }
 
+/**
+ * Reconcile mutually-inconsistent parts of search state after an update.
+ * An explicit "relevance" sort only makes sense while a query is active —
+ * if the query clears (or was cleared in the same update) while "relevance"
+ * is still selected, drop back to the default sort so the sort <select>
+ * doesn't render with no matching option and `sortResults` doesn't fall
+ * through to an arbitrary passthrough order.
+ */
+export function normalizeState(state: SearchState): SearchState {
+  if (!state.q.trim() && state.sort === "relevance") {
+    return { ...state, sort: null }
+  }
+  return state
+}
+
 export function toSearchParams(state: SearchState): Record<string, string> {
   const params: Record<string, string> = {}
   if (state.q) params.q = state.q
@@ -192,7 +207,7 @@ export function useSearchState(bundle: SearchDataBundle) {
 
   const updateState = useCallback(
     (updates: Partial<SearchState>) => {
-      const newState = { ...state, ...updates }
+      const newState = normalizeState({ ...state, ...updates })
       void navigate({
         to: "/",
         search: toSearchParams(newState),

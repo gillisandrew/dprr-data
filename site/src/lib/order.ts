@@ -15,6 +15,16 @@ export function eraKey(p: {
 // a handful of uncertain-gens entries use 1-4 letters + a hyphen instead of
 // digits (e.g. "AN-3071", "B-3088").
 const stripId = (name: string) => name.replace(/^[A-Z]{1,4}[-\d]\S* /, "")
+
+/** Strip the leading DPRR ID from a display name (e.g. "IUNI0001 L. Iunius"
+ * → "L. Iunius"), without touching the praenomen. Shared by every UI
+ * component that shows a person's name, so ID shapes only need handling
+ * once — see `stripId` above for the shapes covered (standard 4-letter+
+ * digits IDs as well as the shorter hyphenated "uncertain gens" IDs). */
+export function displayName(name: string): string {
+  return stripId(name)
+}
+
 // Roman names are alphabetized by nomen (family name), not by the leading
 // praenomen abbreviation (e.g. "L.", "Ti.", "App.") — drop it before
 // comparing. Also handles unknown praenomen markers ("-."), the apostrophe
@@ -46,13 +56,20 @@ function compareEraKeys(ka: number, kb: number, direction: 1 | -1): number {
   return direction * (ka - kb)
 }
 
-/** sort=null resolves to "relevance" when hasQuery else "earliest". */
+/**
+ * sort=null resolves to "relevance" when hasQuery else "earliest". An
+ * explicit "relevance" sort without an active query is meaningless (there's
+ * no rank to order by) and would otherwise fall through to `copy` below,
+ * silently passing through the filtered-but-unsorted order — resolve it to
+ * "earliest" instead, matching the null-sort/no-query default.
+ */
 export function sortResults(
   results: PersonSummary[],
   sort: SearchState["sort"],
   hasQuery: boolean
 ): PersonSummary[] {
-  const resolved = sort ?? (hasQuery ? "relevance" : "earliest")
+  const effectiveSort = sort === "relevance" && !hasQuery ? null : sort
+  const resolved = effectiveSort ?? (hasQuery ? "relevance" : "earliest")
   const copy = [...results]
   switch (resolved) {
     case "relevance":

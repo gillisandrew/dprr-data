@@ -1,5 +1,10 @@
 import { expect, test, describe } from "vite-plus/test"
-import { parseSearchParams, toSearchParams, orderByQueryRank } from "./search"
+import {
+  parseSearchParams,
+  toSearchParams,
+  orderByQueryRank,
+  normalizeState,
+} from "./search"
 
 describe("search param round-trip", () => {
   test("province parses from comma-separated param", () => {
@@ -72,6 +77,33 @@ describe("advanced params round-trip", () => {
 
   test("unknown sort values parse as null", () => {
     expect(parseSearchParams({ sort: "bogus" }).sort).toBeNull()
+  })
+})
+
+describe("normalizeState", () => {
+  test("drops an explicit relevance sort once the query is empty", () => {
+    const state = parseSearchParams({ sort: "relevance" })
+    expect(normalizeState({ ...state, q: "" }).sort).toBeNull()
+  })
+
+  test("drops relevance when the query is whitespace-only", () => {
+    const state = parseSearchParams({ sort: "relevance" })
+    expect(normalizeState({ ...state, q: "   " }).sort).toBeNull()
+  })
+
+  test("leaves relevance sort intact while a query is active", () => {
+    const state = parseSearchParams({ q: "brutus", sort: "relevance" })
+    expect(normalizeState(state).sort).toBe("relevance")
+  })
+
+  test("leaves non-relevance sorts untouched regardless of query", () => {
+    const state = parseSearchParams({ sort: "latest" })
+    expect(normalizeState({ ...state, q: "" }).sort).toBe("latest")
+  })
+
+  test("is a no-op when there is nothing to reconcile", () => {
+    const state = parseSearchParams({ q: "brutus" })
+    expect(normalizeState(state)).toEqual(state)
   })
 })
 
