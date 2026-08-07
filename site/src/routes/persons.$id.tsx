@@ -2,6 +2,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router"
 import { getPersonById } from "@/server/data"
 import { slugify } from "@/lib/slug"
+import { SITE_URL } from "@/lib/site"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
 import { DateDisplay, EraRange } from "@/components/date-display"
@@ -24,6 +25,19 @@ export const Route = createFileRoute("/persons/$id")({
     const desc = [person.highestOffice, person.isPatrician ? "Patrician" : null]
       .filter(Boolean)
       .join(" · ")
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: displayName,
+      ...(person.otherNames ? { alternateName: person.otherNames } : {}),
+      gender: person.sex,
+      ...(desc ? { description: desc } : {}),
+      identifier: person.id,
+      url: `${SITE_URL}/persons/${person.id}`,
+      ...(person.concordances.length > 0
+        ? { sameAs: person.concordances.map((c) => c.uri) }
+        : {}),
+    }
     return {
       meta: [
         { title: `${displayName} (${person.id}) — DPRR` },
@@ -31,6 +45,9 @@ export const Route = createFileRoute("/persons/$id")({
         { property: "og:title", content: `${displayName} — DPRR` },
         { property: "og:description", content: desc },
         { property: "og:type", content: "profile" },
+      ],
+      scripts: [
+        { type: "application/ld+json", children: JSON.stringify(jsonLd) },
       ],
     }
   },

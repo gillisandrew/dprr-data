@@ -6,10 +6,26 @@ import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
 import { FacetSidebar } from "@/components/facet-sidebar"
 import { ResultsList } from "@/components/results-list"
+import { SITE_URL } from "@/lib/site"
 
 export const Route = createFileRoute("/")({
   validateSearch: (search: Record<string, unknown>) => search,
   loader: () => getSearchData(),
+  head: () => ({
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          name: "Digital Prosopography of the Roman Republic",
+          description:
+            "Prosopographical data for 4,876 persons of the Roman Republic (509–31 BC): offices held, relationships, dates, and sources.",
+          url: SITE_URL,
+        }),
+      },
+    ],
+  }),
   component: SearchPage,
 })
 
