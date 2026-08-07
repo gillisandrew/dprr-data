@@ -89,3 +89,31 @@ describe("parsePersonTtl", () => {
     expect(persons[0].offices).toEqual(["legatus"])
   })
 })
+
+describe("province extraction", () => {
+  test("resolves provinceOriginal through the curated mapping", () => {
+    const ttl = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasProvinceOriginal "Sicily" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasProvinceOriginal "not-a-real-province" .
+`
+    const persons = parsePersonTtl(ttl, makeRefs(), new Map())
+    expect(persons).toHaveLength(1)
+    const byOriginal = Object.fromEntries(
+      persons[0].postAssertions.map((pa) => [pa.provinceOriginal, pa])
+    )
+    expect(byOriginal["Sicily"].provinces).toEqual(["Sicilia"])
+    expect(byOriginal["not-a-real-province"].provinces).toEqual([])
+    expect(persons[0].provinces).toEqual(["Sicilia"])
+  })
+})

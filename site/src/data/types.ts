@@ -17,6 +17,8 @@ export interface PersonSummary {
   tribe: string | null
   /** Flattened list of office names held (for faceting). */
   offices: string[]
+  /** Distinct canonical provinces across all post assertions (for faceting). */
+  provinces: string[]
 }
 
 /** Full person record with all scholarly data. */
@@ -40,6 +42,10 @@ export interface PostAssertion {
   dateEnd: number | null
   dateSecondarySource: string | null
   originalText: string | null
+  /** Raw province text from the secondary source (may be unmapped). */
+  provinceOriginal: string | null
+  /** Canonical province names resolved via the curated mapping. */
+  provinces: string[]
   secondarySource: string
   notes: PostAssertionNote[]
   primarySourceRefs: string[]

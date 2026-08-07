@@ -161,5 +161,6 @@ export function toSummaries(persons: Person[]): PersonSummary[] {
     eraTo: p.eraTo,
     tribe: p.tribe,
     offices: p.offices,
+    provinces: p.provinces,
   }))
 }

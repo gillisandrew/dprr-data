@@ -20,6 +20,7 @@ const SUMMARIES: PersonSummary[] = [
     eraTo: -509,
     tribe: null,
     offices: ["consul"],
+    provinces: [],
   },
   {
     id: "CORN0123",
@@ -36,6 +37,7 @@ const SUMMARIES: PersonSummary[] = [
     eraTo: -183,
     tribe: null,
     offices: ["consul", "proconsul"],
+    provinces: [],
   },
 ]
 

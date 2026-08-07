@@ -1,5 +1,6 @@
 // site/src/data/parse-persons.ts
 import { Parser } from "n3"
+import { mapProvinceText } from "./province-mapping"
 import type {
   Person,
   PostAssertion,
@@ -162,6 +163,20 @@ export function parsePersonTtl(
         }
       }
 
+      // The export carries only free-text province strings; the curated
+      // mapping in province-mapping.ts resolves them to canonical names.
+      const provinceOriginal =
+        first(g, "hasProvinceOriginal") ??
+        first(g, "hasProvinceOriginalExpanded")
+      const provinceExpanded = first(g, "hasProvinceOriginalExpanded")
+      const provinces = [
+        ...new Set(
+          [provinceOriginal, provinceExpanded]
+            .filter((v): v is string => v !== null)
+            .flatMap((v) => mapProvinceText(v) ?? [])
+        ),
+      ]
+
       results.push({
         id: paUri,
         officeName: office?.name ?? "",
@@ -170,6 +185,8 @@ export function parsePersonTtl(
         dateEnd: firstNum(g, "hasDateEnd"),
         dateSecondarySource: resolveSource(first(g, "hasDateSecondarySource")),
         originalText: first(g, "hasOriginalText"),
+        provinceOriginal,
+        provinces,
         secondarySource: resolveSource(first(g, "hasSecondarySource")),
         notes,
         primarySourceRefs: primaryRefs,
@@ -283,6 +300,9 @@ export function parsePersonTtl(
     const officeNames = [
       ...new Set(postAssertions.map((pa) => pa.officeName).filter(Boolean)),
     ]
+    const provinceNames = [
+      ...new Set(postAssertions.flatMap((pa) => pa.provinces)),
+    ]
 
     const filiation = first(g, "hasFiliation")
 
@@ -305,6 +325,7 @@ export function parsePersonTtl(
       eraTo: firstNum(g, "hasEraTo"),
       tribe: (tribeUri && refs.tribes.get(tribeUri)?.name) ?? null,
       offices: officeNames,
+      provinces: provinceNames,
       postAssertions,
       relationships: buildRelationships(personUri),
       dateInformation: buildDateInfo(personUri),
