@@ -125,15 +125,36 @@ export function FamilyCard({ person }: { person: Person }) {
             <ul className="mt-1 space-y-1">
               {rels.map((rel) => (
                 <li key={rel.id} className="text-sm">
-                  {rel.relatedPersonId ? (
-                    <PersonLink
-                      id={rel.relatedPersonId}
-                      name={rel.relatedPersonName}
+                  <div>
+                    {rel.relatedPersonId ? (
+                      <PersonLink
+                        id={rel.relatedPersonId}
+                        name={rel.relatedPersonName}
+                      />
+                    ) : (
+                      <span>
+                        {rel.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
+                      </span>
+                    )}
+                    <SourceCitation
+                      name={rel.secondarySource}
+                      className="ml-1 text-[10px] text-muted-foreground"
                     />
-                  ) : (
-                    <span>
-                      {rel.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
-                    </span>
+                  </div>
+                  {rel.references.length > 0 && (
+                    <ul className="mt-0.5 ml-3 space-y-0.5">
+                      {rel.references.map((ref, i) =>
+                        ref.extraInfo ? (
+                          <li
+                            key={i}
+                            className="text-[10px] text-muted-foreground"
+                          >
+                            {ref.extraInfo}{" "}
+                            <SourceCitation name={ref.secondarySource} />
+                          </li>
+                        ) : null
+                      )}
+                    </ul>
                   )}
                 </li>
               ))}
