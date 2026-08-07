@@ -5,7 +5,7 @@ import MiniSearch from "minisearch"
 import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
 import { MINISEARCH_OPTIONS } from "@/data/search-index"
 
-function parseSearchParams(params: Record<string, string>): SearchState {
+export function parseSearchParams(params: Record<string, string>): SearchState {
   return {
     q: params.q ?? "",
     office: params.office ? params.office.split(",") : [],
@@ -24,12 +24,13 @@ function parseSearchParams(params: Record<string, string>): SearchState {
           ? false
           : null,
     tribe: params.tribe ? params.tribe.split(",") : [],
+    province: params.province ? params.province.split(",") : [],
     eraFrom: params.eraFrom ? Number(params.eraFrom) : null,
     eraTo: params.eraTo ? Number(params.eraTo) : null,
   }
 }
 
-function toSearchParams(state: SearchState): Record<string, string> {
+export function toSearchParams(state: SearchState): Record<string, string> {
   const params: Record<string, string> = {}
   if (state.q) params.q = state.q
   if (state.office.length) params.office = state.office.join(",")
@@ -38,6 +39,7 @@ function toSearchParams(state: SearchState): Record<string, string> {
   if (state.patrician !== null) params.patrician = String(state.patrician)
   if (state.nobilis !== null) params.nobilis = String(state.nobilis)
   if (state.tribe.length) params.tribe = state.tribe.join(",")
+  if (state.province.length) params.province = state.province.join(",")
   if (state.eraFrom !== null) params.eraFrom = String(state.eraFrom)
   if (state.eraTo !== null) params.eraTo = String(state.eraTo)
   return params
@@ -47,6 +49,11 @@ function matchesFacets(person: PersonSummary, state: SearchState): boolean {
   if (
     state.office.length > 0 &&
     !state.office.some((o) => person.offices.includes(o))
+  )
+    return false
+  if (
+    state.province.length > 0 &&
+    !state.province.some((pr) => person.provinces.includes(pr))
   )
     return false
   if (state.nomen.length > 0 && !state.nomen.includes(person.nomen))
@@ -148,6 +155,7 @@ export function useSearchState(
       nomen: countWith("nomen", "nomen"),
       sex: countWith("sex", "sex"),
       tribe: countWith("tribe", "tribe"),
+      province: countWith("province", "provinces"),
     }
   }, [state, summaries, miniSearch])
 

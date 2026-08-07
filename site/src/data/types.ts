@@ -129,6 +129,7 @@ export interface SearchState {
   patrician: boolean | null
   nobilis: boolean | null
   tribe: string[]
+  province: string[]
   eraFrom: number | null
   eraTo: number | null
 }
