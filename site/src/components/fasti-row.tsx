@@ -9,13 +9,15 @@ export function FastiRow({ person }: { person: PersonSummary }) {
   const name = displayName(person.name)
   const gensSlug = person.nomen ? slugify(person.nomen) : ""
   return (
-    <Link
-      to="/persons/$id"
-      params={{ id: person.id }}
-      className="ledger-row block px-1 transition-colors"
-    >
+    <div className="ledger-row relative px-1 transition-colors">
       <p className="font-heading text-[0.95rem] leading-snug">
-        {name}
+        <Link
+          to="/persons/$id"
+          params={{ id: person.id }}
+          className="after:absolute after:inset-0"
+        >
+          {name}
+        </Link>
         {person.highestOffice && (
           <span className="ml-2 font-sans text-sm text-primary">
             — {person.highestOffice}
@@ -42,6 +44,6 @@ export function FastiRow({ person }: { person: PersonSummary }) {
           </>
         )}
       </p>
-    </Link>
+    </div>
   )
 }
