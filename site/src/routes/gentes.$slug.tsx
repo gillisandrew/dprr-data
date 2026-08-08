@@ -1,10 +1,10 @@
 // site/src/routes/gentes.$slug.tsx
 import { createFileRoute } from "@tanstack/react-router"
-import { getGensDetail } from "@/server/data"
+import { fetchGensDetail } from "@/lib/static-data"
 import { PersonCard } from "@/components/person-card"
 
 export const Route = createFileRoute("/gentes/$slug")({
-  loader: ({ params }) => getGensDetail({ data: params.slug }),
+  loader: ({ params }) => fetchGensDetail(params.slug),
   head: ({ loaderData: gens }) => {
     if (!gens) return {}
     const title = `${gens.name} — Gentes — DPRR`

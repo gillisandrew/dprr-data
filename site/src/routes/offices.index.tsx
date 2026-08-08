@@ -1,6 +1,6 @@
 // site/src/routes/offices.index.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { getOfficeIndex } from "@/server/data"
+import { fetchOfficeIndex } from "@/lib/static-data"
 import type { OfficeIndexEntry } from "@/data/aggregate-references"
 
 const CATEGORY_ORDER = [
@@ -27,7 +27,7 @@ function groupByCategory(offices: OfficeIndexEntry[]) {
 }
 
 export const Route = createFileRoute("/offices/")({
-  loader: () => getOfficeIndex(),
+  loader: () => fetchOfficeIndex(),
   head: () => ({
     meta: [
       { title: "Offices — DPRR" },

@@ -1,12 +1,12 @@
 // site/src/routes/offices.$slug.tsx
 import { createFileRoute } from "@tanstack/react-router"
-import { getOfficeDetail } from "@/server/data"
+import { fetchOfficeDetail } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
 import { SourceCitation } from "@/components/source-citation"
 
 export const Route = createFileRoute("/offices/$slug")({
-  loader: ({ params }) => getOfficeDetail({ data: params.slug }),
+  loader: ({ params }) => fetchOfficeDetail(params.slug),
   head: ({ loaderData: office }) => {
     if (!office) return {}
     const title = `${office.name} — Offices — DPRR`

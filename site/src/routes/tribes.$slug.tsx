@@ -1,10 +1,10 @@
 // site/src/routes/tribes.$slug.tsx
 import { createFileRoute } from "@tanstack/react-router"
-import { getTribeDetail } from "@/server/data"
+import { fetchTribeDetail } from "@/lib/static-data"
 import { PersonCard } from "@/components/person-card"
 
 export const Route = createFileRoute("/tribes/$slug")({
-  loader: ({ params }) => getTribeDetail({ data: params.slug }),
+  loader: ({ params }) => fetchTribeDetail(params.slug),
   head: ({ loaderData: tribe }) => {
     if (!tribe) return {}
     const title = `${tribe.name} — Tribes — DPRR`

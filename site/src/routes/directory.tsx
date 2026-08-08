@@ -1,9 +1,9 @@
 // site/src/routes/directory.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { getAllPersonIds } from "@/server/data"
+import { fetchPersonIds } from "@/lib/static-data"
 
 export const Route = createFileRoute("/directory")({
-  loader: () => getAllPersonIds(),
+  loader: () => fetchPersonIds(),
   head: () => ({
     meta: [
       { title: "Directory — DPRR" },

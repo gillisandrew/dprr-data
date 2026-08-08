@@ -1,9 +1,9 @@
 // site/src/routes/tribes.index.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { getTribeIndex } from "@/server/data"
+import { fetchTribeIndex } from "@/lib/static-data"
 
 export const Route = createFileRoute("/tribes/")({
-  loader: () => getTribeIndex(),
+  loader: () => fetchTribeIndex(),
   head: () => ({
     meta: [
       { title: "Tribes — DPRR" },

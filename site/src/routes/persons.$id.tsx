@@ -1,6 +1,6 @@
 // site/src/routes/persons.$id.tsx
 import { createFileRoute, Link } from "@tanstack/react-router"
-import { getPersonById } from "@/server/data"
+import { fetchPerson } from "@/lib/static-data"
 import { slugify } from "@/lib/slug"
 import { displayName } from "@/lib/order"
 import { SITE_URL } from "@/lib/site"
@@ -43,7 +43,7 @@ function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
 }
 
 export const Route = createFileRoute("/persons/$id")({
-  loader: ({ params }) => getPersonById({ data: params.id }),
+  loader: ({ params }) => fetchPerson(params.id),
   head: ({ loaderData: person }) => {
     if (!person) return {}
     const name = displayName(person.name)

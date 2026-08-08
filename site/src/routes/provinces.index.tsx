@@ -1,9 +1,9 @@
 // site/src/routes/provinces.index.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { getProvinceIndex } from "@/server/data"
+import { fetchProvinceIndex } from "@/lib/static-data"
 
 export const Route = createFileRoute("/provinces/")({
-  loader: () => getProvinceIndex(),
+  loader: () => fetchProvinceIndex(),
   head: () => ({
     meta: [
       { title: "Locations — DPRR" },

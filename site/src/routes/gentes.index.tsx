@@ -1,9 +1,9 @@
 // site/src/routes/gentes.index.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { getGensIndex } from "@/server/data"
+import { fetchGensIndex } from "@/lib/static-data"
 
 export const Route = createFileRoute("/gentes/")({
-  loader: () => getGensIndex(),
+  loader: () => fetchGensIndex(),
   head: () => ({
     meta: [
       { title: "Gentes — DPRR" },

@@ -1,11 +1,11 @@
 // site/src/routes/provinces.$slug.tsx
 import { createFileRoute } from "@tanstack/react-router"
-import { getProvinceDetail } from "@/server/data"
+import { fetchProvinceDetail } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
 
 export const Route = createFileRoute("/provinces/$slug")({
-  loader: ({ params }) => getProvinceDetail({ data: params.slug }),
+  loader: ({ params }) => fetchProvinceDetail(params.slug),
   head: ({ loaderData: province }) => {
     if (!province) return {}
     const title = `${province.name} — Locations — DPRR`

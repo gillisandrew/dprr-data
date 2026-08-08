@@ -3,7 +3,7 @@ import { devtools } from "@tanstack/devtools-vite"
 import { tanstackStart } from "@tanstack/react-start/plugin/vite"
 import viteReact from "@vitejs/plugin-react"
 import tailwindcss from "@tailwindcss/vite"
-import { searchDataPlugin } from "./src/build/search-data-plugin.ts"
+import { staticDataPlugin } from "./src/build/static-data-plugin.ts"
 
 const config = defineConfig({
   base: "/dprr-data/",
@@ -31,7 +31,7 @@ const config = defineConfig({
     ],
   },
   plugins: [
-    searchDataPlugin(),
+    staticDataPlugin(),
     devtools(),
     tailwindcss(),
     tanstackStart({
