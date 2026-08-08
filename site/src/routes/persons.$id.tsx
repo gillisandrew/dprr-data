@@ -112,6 +112,12 @@ function PersonPage() {
 
       <PersonRegistry person={person} />
 
+      {person.nobilisNotes && (
+        <p className="mt-2 text-sm text-muted-foreground italic">
+          {person.nobilisNotes}
+        </p>
+      )}
+
       {person.postAssertions.length > 0 && (
         <Section title="Career" count={person.postAssertions.length}>
           <div>

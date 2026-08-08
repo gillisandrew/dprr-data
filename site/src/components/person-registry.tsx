@@ -41,6 +41,7 @@ export function PersonRegistry({ person }: { person: Person }) {
       )}
       {person.cognomen && <Field label="Cognomen">{person.cognomen}</Field>}
       {person.filiation && <Field label="Filiation">{person.filiation}</Field>}
+      {person.sex && <Field label="Sex">{person.sex}</Field>}
       {person.reNumber && <Field label="RE">{person.reNumber}</Field>}
       {person.tribes.length > 0 && (
         <Field label="Tribe">
