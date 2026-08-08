@@ -7,41 +7,41 @@ import type { PersonSummary } from "@/data/types"
 
 export function FastiRow({ person }: { person: PersonSummary }) {
   const name = displayName(person.name)
+  const gensSlug = person.nomen ? slugify(person.nomen) : ""
   return (
-    <div className="relative block border-b px-1 py-2 transition-colors hover:bg-accent">
-      <p className="font-heading text-sm font-medium">
-        <Link
-          to="/persons/$id"
-          params={{ id: person.id }}
-          className="after:absolute after:inset-0"
-        >
-          {name}
-        </Link>
+    <Link
+      to="/persons/$id"
+      params={{ id: person.id }}
+      className="ledger-row block px-1 transition-colors"
+    >
+      <p className="font-heading text-[0.95rem] leading-snug">
+        {name}
         {person.highestOffice && (
-          <span className="ml-2 font-normal">— {person.highestOffice}</span>
-        )}
-      </p>
-      <p className="text-xs text-muted-foreground">
-        {person.filiation && <span>{person.filiation} · </span>}
-        <EraRange from={person.eraFrom} to={person.eraTo} />
-        {person.nomen && (
-          <span>
-            {" "}
-            · gens{" "}
-            {slugify(person.nomen) ? (
-              <Link
-                to="/gentes/$slug"
-                params={{ slug: slugify(person.nomen) }}
-                className="relative z-10 hover:underline"
-              >
-                {person.nomen}
-              </Link>
-            ) : (
-              person.nomen
-            )}
+          <span className="ml-2 font-sans text-sm text-primary">
+            — {person.highestOffice}
           </span>
         )}
       </p>
-    </div>
+      <p className="text-xs leading-snug text-muted-foreground">
+        {person.filiation && <span>{person.filiation} · </span>}
+        <EraRange from={person.eraFrom} to={person.eraTo} />
+        {person.nomen && (
+          <>
+            {" · "}
+            {gensSlug ? (
+              <Link
+                to="/gentes/$slug"
+                params={{ slug: gensSlug }}
+                className="relative z-10 hover:text-primary hover:underline"
+              >
+                gens {person.nomen}
+              </Link>
+            ) : (
+              <span>gens {person.nomen}</span>
+            )}
+          </>
+        )}
+      </p>
+    </Link>
   )
 }

@@ -11,7 +11,7 @@ import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
 import { EraTimeline } from "@/components/era-timeline"
 import { FacetSidebar } from "@/components/facet-sidebar"
-import { ResultsList } from "@/components/results-list"
+import { ResultsHeader, ResultsList } from "@/components/results-list"
 import { SearchLanding } from "@/components/search-landing"
 import { SITE_URL } from "@/lib/site"
 
@@ -104,7 +104,13 @@ function LoadingSearch({
         </h1>
         <p className="text-sm text-muted-foreground">Loading search data…</p>
       </header>
-      <SearchInput value={query} onChange={onQueryChange} autoFocus />
+      <div className="rule-lead pb-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <div className="min-w-64 flex-1">
+            <SearchInput value={query} onChange={onQueryChange} autoFocus />
+          </div>
+        </div>
+      </div>
     </>
   )
 }
@@ -144,18 +150,29 @@ function SearchResults({
         </p>
       </header>
 
-      <SearchInput
-        value={state.q}
-        onChange={(q) => updateState({ q })}
-        autoFocus={pendingQuery !== null}
-      />
-
-      <div className="mt-3">
-        <ActiveFilterChips
-          state={state}
-          onRemove={updateState}
-          onClearAll={clearAll}
-        />
+      <div className="rule-lead pb-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <div className="min-w-64 flex-1">
+            <SearchInput
+              value={state.q}
+              onChange={(q) => updateState({ q })}
+              autoFocus={pendingQuery !== null}
+            />
+          </div>
+          <ResultsHeader
+            count={results.length}
+            sort={state.sort}
+            hasQuery={state.q.trim().length > 0}
+            onSortChange={(sort) => updateState({ sort })}
+          />
+        </div>
+        <div className="mt-2 empty:hidden">
+          <ActiveFilterChips
+            state={state}
+            onRemove={updateState}
+            onClearAll={clearAll}
+          />
+        </div>
       </div>
 
       <div className="mt-4 space-y-1">
@@ -178,12 +195,7 @@ function SearchResults({
           initialFocus={initialFocus}
         />
         <main className="min-w-0 flex-1">
-          <ResultsList
-            results={results}
-            sort={state.sort}
-            hasQuery={state.q.trim().length > 0}
-            onSortChange={(sort) => updateState({ sort })}
-          />
+          <ResultsList results={results} />
         </main>
       </div>
     </>

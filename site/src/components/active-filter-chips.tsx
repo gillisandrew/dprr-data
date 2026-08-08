@@ -1,5 +1,4 @@
 // site/src/components/active-filter-chips.tsx
-import { Badge } from "@/components/ui/badge"
 import { X } from "lucide-react"
 import type { SearchState } from "@/data/types"
 
@@ -109,15 +108,14 @@ export function ActiveFilterChips({
   return (
     <div className="flex flex-wrap items-center gap-2">
       {chips.map((chip) => (
-        <Badge
+        <button
           key={chip.label}
-          variant="secondary"
-          className="cursor-pointer gap-1"
           onClick={chip.onRemove}
+          className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-primary"
         >
           {chip.label}
-          <X className="h-3 w-3" />
-        </Badge>
+          <X className="h-3 w-3 text-muted-foreground" />
+        </button>
       ))}
       {chips.length > 1 && (
         <button

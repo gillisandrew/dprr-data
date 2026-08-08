@@ -5,17 +5,41 @@ import type { PersonSummary, SearchState } from "@/data/types"
 
 const PAGE_SIZE = 50
 
-export function ResultsList({
-  results,
+export function ResultsHeader({
+  count,
   sort,
   hasQuery,
   onSortChange,
 }: {
-  results: PersonSummary[]
+  count: number
   sort: SearchState["sort"]
   hasQuery: boolean
   onSortChange: (sort: SearchState["sort"]) => void
 }) {
+  return (
+    <div className="flex items-baseline gap-3">
+      <p className="text-sm text-muted-foreground">
+        {count.toLocaleString()} result
+        {count !== 1 && "s"}
+      </p>
+      <label className="text-xs text-muted-foreground">
+        Sort{" "}
+        <select
+          value={sort ?? (hasQuery ? "relevance" : "earliest")}
+          onChange={(e) => onSortChange(e.target.value as SearchState["sort"])}
+          className="rounded-md border bg-transparent px-1 py-0.5"
+        >
+          <option value="earliest">Earliest first</option>
+          <option value="latest">Latest first</option>
+          <option value="name">Name A–Z</option>
+          {hasQuery && <option value="relevance">Relevance</option>}
+        </select>
+      </label>
+    </div>
+  )
+}
+
+export function ResultsList({ results }: { results: PersonSummary[] }) {
   const [page, setPage] = useState(0)
 
   // Reset to first page when results change (new search/filter)
@@ -28,27 +52,6 @@ export function ResultsList({
 
   return (
     <div>
-      <div className="mb-3 flex items-baseline justify-between">
-        <p className="text-sm text-muted-foreground">
-          {results.length.toLocaleString()} result
-          {results.length !== 1 && "s"}
-        </p>
-        <label className="text-xs text-muted-foreground">
-          Sort{" "}
-          <select
-            value={sort ?? (hasQuery ? "relevance" : "earliest")}
-            onChange={(e) =>
-              onSortChange(e.target.value as SearchState["sort"])
-            }
-            className="rounded-md border bg-transparent px-1 py-0.5"
-          >
-            <option value="earliest">Earliest first</option>
-            <option value="latest">Latest first</option>
-            <option value="name">Name A–Z</option>
-            {hasQuery && <option value="relevance">Relevance</option>}
-          </select>
-        </label>
-      </div>
       {results.length === 0 ? (
         <p className="py-8 text-center text-sm text-muted-foreground">
           No persons match — try removing a filter.
