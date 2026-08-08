@@ -19,7 +19,7 @@ export function FastiRow({ person }: { person: PersonSummary }) {
           {name}
         </Link>
         {person.highestOffice && (
-          <span className="ml-2 font-sans text-sm text-primary">
+          <span className="ml-2 font-sans text-sm text-accent-ink">
             — {person.highestOffice}
           </span>
         )}
@@ -34,7 +34,7 @@ export function FastiRow({ person }: { person: PersonSummary }) {
               <Link
                 to="/gentes/$slug"
                 params={{ slug: gensSlug }}
-                className="relative z-10 hover:text-primary hover:underline"
+                className="relative z-10 hover:text-accent-ink hover:underline"
               >
                 gens {person.nomen}
               </Link>

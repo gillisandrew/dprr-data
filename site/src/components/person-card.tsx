@@ -15,9 +15,9 @@ export function PersonCard({ person }: { person: PersonSummary }) {
       className="ledger-row group block px-1 transition-colors"
     >
       <p className="font-heading text-[0.95rem] leading-snug">
-        <span className="group-hover:text-primary">{name}</span>
+        <span className="group-hover:text-accent-ink">{name}</span>
         {person.highestOffice && (
-          <span className="ml-2 font-sans text-sm text-primary">
+          <span className="ml-2 font-sans text-sm text-accent-ink">
             — {person.highestOffice}
           </span>
         )}
@@ -45,7 +45,7 @@ export function PersonLink({ id, name }: { id: string; name: string }) {
     <Link
       to="/persons/$id"
       params={{ id }}
-      className="font-medium text-primary hover:underline"
+      className="font-medium text-accent-ink hover:underline"
     >
       {label}
     </Link>

@@ -19,8 +19,8 @@ export function SiteHeader() {
           <Link
             key={l.to}
             to={l.to}
-            className="text-sm text-muted-foreground hover:text-primary"
-            activeProps={{ className: "text-sm text-primary" }}
+            className="text-sm text-muted-foreground hover:text-accent-ink"
+            activeProps={{ className: "text-sm text-accent-ink" }}
           >
             {l.label}
           </Link>

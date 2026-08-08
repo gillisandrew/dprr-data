@@ -66,7 +66,7 @@ export function ResultsList({ results }: { results: PersonSummary[] }) {
       {page + 1 < totalPages && (
         <button
           onClick={() => setPage((p) => p + 1)}
-          className="mt-4 text-sm text-primary hover:underline"
+          className="mt-4 text-sm text-accent-ink hover:underline"
         >
           Show more ({results.length - visible.length} remaining)
         </button>

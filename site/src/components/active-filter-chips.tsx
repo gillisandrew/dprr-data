@@ -111,7 +111,7 @@ export function ActiveFilterChips({
         <button
           key={chip.label}
           onClick={chip.onRemove}
-          className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-primary"
+          className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-accent-ink"
         >
           {chip.label}
           <X className="h-3 w-3 text-muted-foreground" />

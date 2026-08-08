@@ -41,7 +41,7 @@ function DirectoryPage() {
             <Link
               to="/persons/$id"
               params={{ id }}
-              className="block px-1 py-1 hover:text-primary"
+              className="block px-1 py-1 hover:text-accent-ink"
             >
               {id}
             </Link>

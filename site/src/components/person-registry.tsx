@@ -13,7 +13,7 @@ function Field({
   return (
     <div className="min-w-0">
       <p className="micro-label-muted">{label}</p>
-      <p className="truncate text-sm">{children}</p>
+      <p className="text-sm break-words">{children}</p>
     </div>
   )
 }
@@ -30,7 +30,7 @@ export function PersonRegistry({ person }: { person: Person }) {
             <Link
               to="/gentes/$slug"
               params={{ slug: nomenSlug }}
-              className="text-primary hover:underline"
+              className="text-accent-ink hover:underline"
             >
               {person.nomen}
             </Link>
@@ -51,7 +51,7 @@ export function PersonRegistry({ person }: { person: Person }) {
               <Link
                 to="/tribes/$slug"
                 params={{ slug: slugify(t) }}
-                className="text-primary hover:underline"
+                className="text-accent-ink hover:underline"
               >
                 {t}
               </Link>
@@ -73,7 +73,7 @@ export function PersonRegistry({ person }: { person: Person }) {
                 href={c.uri}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary capitalize hover:underline"
+                className="text-accent-ink capitalize hover:underline"
               >
                 {c.system}
               </a>

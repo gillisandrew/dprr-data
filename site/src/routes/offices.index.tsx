@@ -63,7 +63,7 @@ function OfficesPage() {
                 params={{ slug: o.slug }}
                 className="ledger-row group flex items-baseline justify-between gap-2 px-1"
               >
-                <span className="font-heading group-hover:text-primary">
+                <span className="font-heading group-hover:text-accent-ink">
                   {o.name}
                   {o.abbreviation && (
                     <span className="ml-1 text-sm font-normal text-muted-foreground">

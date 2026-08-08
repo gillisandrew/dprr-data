@@ -185,7 +185,7 @@ function PersonPage() {
                       href={link.uri}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="break-all text-primary hover:underline"
+                      className="break-all text-accent-ink hover:underline"
                     >
                       {link.uri}
                     </a>
@@ -238,7 +238,7 @@ function DateEntry({ dateInfo }: { dateInfo: DateInfo }) {
 function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
   return (
     <div className="ledger-row flex gap-3">
-      <span className="year-col text-sm text-muted-foreground">
+      <span className="year-col text-sm">
         {(assertion.dateStart || assertion.dateEnd) && (
           <>
             {assertion.dateStart !== null && assertion.dateEnd !== null ? (

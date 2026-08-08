@@ -39,7 +39,7 @@ export function FacetCombobox({
             <button
               key={s}
               onClick={() => onChange(selected.filter((v) => v !== s))}
-              className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-primary"
+              className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-accent-ink"
             >
               {s}
               <X className="h-3 w-3 text-muted-foreground" />
