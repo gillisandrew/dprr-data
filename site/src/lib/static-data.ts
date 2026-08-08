@@ -25,6 +25,15 @@ import type {
  * createIsomorphicFn is compiled away per environment, so node:fs never
  * reaches the client bundle.
  */
+/** Thrown by readStaticJson when the requested data file is missing/unreachable. */
+export class StaticDataError extends Error {
+  status: number
+  constructor(message: string, status: number) {
+    super(message)
+    this.status = status
+  }
+}
+
 const readStaticJson = createIsomorphicFn()
   .server(async (path: string): Promise<unknown> => {
     const [{ readFile }, { join }] = await Promise.all([
@@ -33,12 +42,25 @@ const readStaticJson = createIsomorphicFn()
     ])
     // Only ever runs under the prerenderer, whose cwd is the site package.
     const file = join(process.cwd(), "public", "data", path)
-    return JSON.parse(await readFile(file, "utf-8")) as unknown
+    try {
+      return JSON.parse(await readFile(file, "utf-8")) as unknown
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code === "ENOENT") {
+        throw new StaticDataError(`Failed to load data/${path}: 404`, 404)
+      }
+      throw err
+    }
   })
   .client(async (path: string): Promise<unknown> => {
-    const res = await fetch(`${import.meta.env.BASE_URL}data/${path}`)
+    // Encode each path segment (not the slashes) — some DPRR ids/slugs
+    // contain URL-unsafe characters (e.g. "PL[A3544").
+    const encodedPath = path.split("/").map(encodeURIComponent).join("/")
+    const res = await fetch(`${import.meta.env.BASE_URL}data/${encodedPath}`)
     if (!res.ok) {
-      throw new Error(`Failed to load data/${path}: ${res.status}`)
+      throw new StaticDataError(
+        `Failed to load data/${path}: ${res.status}`,
+        res.status
+      )
     }
     return res.json() as unknown
   })

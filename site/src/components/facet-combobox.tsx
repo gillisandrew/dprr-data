@@ -37,6 +37,7 @@ export function FacetCombobox({
         <div className="flex flex-wrap items-center gap-2">
           {selected.map((s) => (
             <button
+              type="button"
               key={s}
               onClick={() => onChange(selected.filter((v) => v !== s))}
               className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-accent-ink"
@@ -58,6 +59,7 @@ export function FacetCombobox({
           {suggestions.map((v) => (
             <li key={v.value}>
               <button
+                type="button"
                 className="flex w-full items-baseline justify-between px-2 py-1 text-left hover:bg-accent"
                 onClick={() => {
                   onChange([...selected, v.value])

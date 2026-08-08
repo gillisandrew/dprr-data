@@ -27,23 +27,24 @@ function ProvincesPage() {
           {provinces.length} provinces with recorded office holders
         </p>
       </header>
-      <div className="mt-2">
+      <ul className="mt-2">
         {provinces.map((p) => (
-          <Link
-            key={p.slug}
-            to="/provinces/$slug"
-            params={{ slug: p.slug }}
-            className="ledger-row group flex items-baseline justify-between gap-2 px-1"
-          >
-            <span className="font-heading group-hover:text-accent-ink">
-              {p.name}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {p.personCount}
-            </span>
-          </Link>
+          <li key={p.slug} className="contents">
+            <Link
+              to="/provinces/$slug"
+              params={{ slug: p.slug }}
+              className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+            >
+              <span className="font-heading group-hover:text-accent-ink">
+                {p.name}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {p.personCount}
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

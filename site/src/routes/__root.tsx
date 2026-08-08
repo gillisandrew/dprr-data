@@ -1,9 +1,11 @@
 import {
   HeadContent,
+  Link,
   Outlet,
   Scripts,
   createRootRoute,
 } from "@tanstack/react-router"
+import type { ErrorComponentProps } from "@tanstack/react-router"
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools"
 import { TanStackDevtools } from "@tanstack/react-devtools"
 import { SiteHeader } from "@/components/site-header"
@@ -39,7 +41,45 @@ export const Route = createRootRoute({
   }),
   shellComponent: RootDocument,
   component: RootLayout,
+  // Caught here (not in each leaf route) so SiteHeader/SiteFooter from
+  // RootLayout keep rendering — only the Outlet's content is swapped out.
+  errorComponent: RootError,
+  notFoundComponent: RootNotFound,
 })
+
+function BackToSearch() {
+  return (
+    <Link to="/" className="text-accent-ink hover:underline">
+      Back to search
+    </Link>
+  )
+}
+
+function RootError(_props: ErrorComponentProps) {
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h1 className="font-heading text-2xl font-bold">
+        Something went wrong loading this page.
+      </h1>
+      <p className="mt-4">
+        <BackToSearch />
+      </p>
+    </div>
+  )
+}
+
+function RootNotFound() {
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h1 className="font-heading text-2xl font-bold">
+        Not found — this record doesn't exist.
+      </h1>
+      <p className="mt-4">
+        <BackToSearch />
+      </p>
+    </div>
+  )
+}
 
 function RootLayout() {
   return (

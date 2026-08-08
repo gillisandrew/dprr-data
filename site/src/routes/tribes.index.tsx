@@ -26,23 +26,24 @@ function TribesPage() {
           {tribes.length} voting tribes with known members
         </p>
       </header>
-      <div className="mt-2">
+      <ul className="mt-2">
         {tribes.map((t) => (
-          <Link
-            key={t.slug}
-            to="/tribes/$slug"
-            params={{ slug: t.slug }}
-            className="ledger-row group flex items-baseline justify-between gap-2 px-1"
-          >
-            <span className="font-heading group-hover:text-accent-ink">
-              {t.name}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {t.memberCount}
-            </span>
-          </Link>
+          <li key={t.slug} className="contents">
+            <Link
+              to="/tribes/$slug"
+              params={{ slug: t.slug }}
+              className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+            >
+              <span className="font-heading group-hover:text-accent-ink">
+                {t.name}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {t.memberCount}
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

@@ -1,11 +1,20 @@
 // site/src/routes/provinces.$slug.tsx
-import { createFileRoute } from "@tanstack/react-router"
-import { fetchProvinceDetail } from "@/lib/static-data"
+import { createFileRoute, notFound } from "@tanstack/react-router"
+import { fetchProvinceDetail, StaticDataError } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
 
 export const Route = createFileRoute("/provinces/$slug")({
-  loader: ({ params }) => fetchProvinceDetail(params.slug),
+  loader: async ({ params }) => {
+    try {
+      return await fetchProvinceDetail(params.slug)
+    } catch (err) {
+      if (err instanceof StaticDataError && err.status === 404) {
+        throw notFound()
+      }
+      throw err
+    }
+  },
   head: ({ loaderData: province }) => {
     if (!province) return {}
     const title = `${province.name} — Locations — DPRR`

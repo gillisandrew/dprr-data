@@ -6,7 +6,6 @@ export function Section({
 }: {
   title: string
   children: React.ReactNode
-  defaultOpen?: boolean
   count?: number
 }) {
   return (

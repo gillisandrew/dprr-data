@@ -77,7 +77,9 @@ export function FacetSidebar({
       <Collapsible open={tier2Open} onOpenChange={setTier2Open}>
         <CollapsibleTrigger className="rule-hair flex w-full items-center justify-between pt-4 pb-1 text-sm font-medium">
           More filters
-          <span className="text-muted-foreground">{tier2Open ? "−" : "+"}</span>
+          <span className="text-muted-foreground" aria-hidden="true">
+            {tier2Open ? "−" : "+"}
+          </span>
         </CollapsibleTrigger>
         <CollapsibleContent className="space-y-1">
           <FacetGroup
@@ -147,7 +149,9 @@ export function FacetSidebar({
       <Collapsible open={tier3Open} onOpenChange={setTier3Open}>
         <CollapsibleTrigger className="rule-hair flex w-full items-center justify-between pt-4 pb-1 text-sm font-medium">
           Advanced search
-          <span className="text-muted-foreground">{tier3Open ? "−" : "+"}</span>
+          <span className="text-muted-foreground" aria-hidden="true">
+            {tier3Open ? "−" : "+"}
+          </span>
         </CollapsibleTrigger>
         <CollapsibleContent className="pt-2 pb-3">
           <AdvancedSearch facets={facets} state={state} onUpdate={onUpdate} />

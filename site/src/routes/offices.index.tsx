@@ -55,28 +55,29 @@ function OfficesPage() {
       {groups.map(([category, entries]) => (
         <section key={category} className="mt-7">
           <h2 className="micro-label rule-hair pb-1">{category}</h2>
-          <div className="mt-2">
+          <ul className="mt-2">
             {entries.map((o) => (
-              <Link
-                key={o.slug}
-                to="/offices/$slug"
-                params={{ slug: o.slug }}
-                className="ledger-row group flex items-baseline justify-between gap-2 px-1"
-              >
-                <span className="font-heading group-hover:text-accent-ink">
-                  {o.name}
-                  {o.abbreviation && (
-                    <span className="ml-1 text-sm font-normal text-muted-foreground">
-                      ({o.abbreviation})
-                    </span>
-                  )}
-                </span>
-                <span className="text-sm text-muted-foreground">
-                  {o.holderCount}
-                </span>
-              </Link>
+              <li key={o.slug} className="contents">
+                <Link
+                  to="/offices/$slug"
+                  params={{ slug: o.slug }}
+                  className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+                >
+                  <span className="font-heading group-hover:text-accent-ink">
+                    {o.name}
+                    {o.abbreviation && (
+                      <span className="ml-1 text-sm font-normal text-muted-foreground">
+                        ({o.abbreviation})
+                      </span>
+                    )}
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    {o.holderCount}
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       ))}
     </div>

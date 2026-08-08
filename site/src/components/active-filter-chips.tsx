@@ -109,6 +109,7 @@ export function ActiveFilterChips({
     <div className="flex flex-wrap items-center gap-2">
       {chips.map((chip) => (
         <button
+          type="button"
           key={chip.label}
           onClick={chip.onRemove}
           className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-accent-ink"
@@ -119,6 +120,7 @@ export function ActiveFilterChips({
       ))}
       {chips.length > 1 && (
         <button
+          type="button"
           onClick={onClearAll}
           className="text-xs text-muted-foreground underline hover:text-foreground"
         >

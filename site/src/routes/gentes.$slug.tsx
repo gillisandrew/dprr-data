@@ -1,10 +1,19 @@
 // site/src/routes/gentes.$slug.tsx
-import { createFileRoute } from "@tanstack/react-router"
-import { fetchGensDetail } from "@/lib/static-data"
+import { createFileRoute, notFound } from "@tanstack/react-router"
+import { fetchGensDetail, StaticDataError } from "@/lib/static-data"
 import { PersonCard } from "@/components/person-card"
 
 export const Route = createFileRoute("/gentes/$slug")({
-  loader: ({ params }) => fetchGensDetail(params.slug),
+  loader: async ({ params }) => {
+    try {
+      return await fetchGensDetail(params.slug)
+    } catch (err) {
+      if (err instanceof StaticDataError && err.status === 404) {
+        throw notFound()
+      }
+      throw err
+    }
+  },
   head: ({ loaderData: gens }) => {
     if (!gens) return {}
     const title = `${gens.name} — Gentes — DPRR`

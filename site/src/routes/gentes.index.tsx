@@ -26,23 +26,24 @@ function GentesPage() {
           {gentes.length} gentes with known members
         </p>
       </header>
-      <div className="mt-2">
+      <ul className="mt-2">
         {gentes.map((g) => (
-          <Link
-            key={g.slug}
-            to="/gentes/$slug"
-            params={{ slug: g.slug }}
-            className="ledger-row group flex items-baseline justify-between gap-2 px-1"
-          >
-            <span className="font-heading group-hover:text-accent-ink">
-              {g.name}
-            </span>
-            <span className="text-sm text-muted-foreground">
-              {g.memberCount}
-            </span>
-          </Link>
+          <li key={g.slug} className="contents">
+            <Link
+              to="/gentes/$slug"
+              params={{ slug: g.slug }}
+              className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+            >
+              <span className="font-heading group-hover:text-accent-ink">
+                {g.name}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {g.memberCount}
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

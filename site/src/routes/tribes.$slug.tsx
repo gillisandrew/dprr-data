@@ -1,10 +1,19 @@
 // site/src/routes/tribes.$slug.tsx
-import { createFileRoute } from "@tanstack/react-router"
-import { fetchTribeDetail } from "@/lib/static-data"
+import { createFileRoute, notFound } from "@tanstack/react-router"
+import { fetchTribeDetail, StaticDataError } from "@/lib/static-data"
 import { PersonCard } from "@/components/person-card"
 
 export const Route = createFileRoute("/tribes/$slug")({
-  loader: ({ params }) => fetchTribeDetail(params.slug),
+  loader: async ({ params }) => {
+    try {
+      return await fetchTribeDetail(params.slug)
+    } catch (err) {
+      if (err instanceof StaticDataError && err.status === 404) {
+        throw notFound()
+      }
+      throw err
+    }
+  },
   head: ({ loaderData: tribe }) => {
     if (!tribe) return {}
     const title = `${tribe.name} — Tribes — DPRR`

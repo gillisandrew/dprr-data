@@ -1,6 +1,6 @@
 // site/src/routes/persons.$id.tsx
-import { createFileRoute, Link } from "@tanstack/react-router"
-import { fetchPerson } from "@/lib/static-data"
+import { createFileRoute, Link, notFound } from "@tanstack/react-router"
+import { fetchPerson, StaticDataError } from "@/lib/static-data"
 import { slugify } from "@/lib/slug"
 import { displayName } from "@/lib/order"
 import { SITE_URL } from "@/lib/site"
@@ -43,7 +43,16 @@ function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
 }
 
 export const Route = createFileRoute("/persons/$id")({
-  loader: ({ params }) => fetchPerson(params.id),
+  loader: async ({ params }) => {
+    try {
+      return await fetchPerson(params.id)
+    } catch (err) {
+      if (err instanceof StaticDataError && err.status === 404) {
+        throw notFound()
+      }
+      throw err
+    }
+  },
   head: ({ loaderData: person }) => {
     if (!person) return {}
     const name = displayName(person.name)
@@ -95,8 +104,11 @@ function PersonPage() {
       <header className="rule-lead pb-3">
         <h1 className="font-heading text-3xl font-bold">{name}</h1>
         <p className="mt-1 text-lg text-muted-foreground">
+          {person.highestOffice && (
+            <span className="text-accent-ink">{person.highestOffice}</span>
+          )}
+          {person.highestOffice && " · "}
           <EraRange from={person.eraFrom} to={person.eraTo} />
-          {person.highestOffice && <span> · {person.highestOffice}</span>}
           {person.isPatrician && (
             <span className="small-caps ml-2 text-muted-foreground">
               patrician

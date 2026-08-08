@@ -1,12 +1,21 @@
 // site/src/routes/offices.$slug.tsx
-import { createFileRoute } from "@tanstack/react-router"
-import { fetchOfficeDetail } from "@/lib/static-data"
+import { createFileRoute, notFound } from "@tanstack/react-router"
+import { fetchOfficeDetail, StaticDataError } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
 import { SourceCitation } from "@/components/source-citation"
 
 export const Route = createFileRoute("/offices/$slug")({
-  loader: ({ params }) => fetchOfficeDetail(params.slug),
+  loader: async ({ params }) => {
+    try {
+      return await fetchOfficeDetail(params.slug)
+    } catch (err) {
+      if (err instanceof StaticDataError && err.status === 404) {
+        throw notFound()
+      }
+      throw err
+    }
+  },
   head: ({ loaderData: office }) => {
     if (!office) return {}
     const title = `${office.name} — Offices — DPRR`
