@@ -5,6 +5,8 @@ import {
   buildOfficeDetail,
   buildTribeIndex,
   buildTribeDetail,
+  buildGensIndex,
+  buildGensDetail,
   buildProvinceIndex,
   buildProvinceDetail,
   buildNameHierarchy,
@@ -57,6 +59,22 @@ export const getTribeDetail = createServerFn({ method: "GET" })
     const { persons } = await loadAllData()
     const detail = buildTribeDetail(persons, slug)
     if (!detail) throw new Error(`Tribe not found: ${slug}`)
+    return detail
+  })
+
+export const getGensIndex = createServerFn({ method: "GET" }).handler(
+  async () => {
+    const { persons } = await loadAllData()
+    return buildGensIndex(persons)
+  }
+)
+
+export const getGensDetail = createServerFn({ method: "GET" })
+  .inputValidator((slug: string) => slug)
+  .handler(async ({ data: slug }) => {
+    const { persons } = await loadAllData()
+    const detail = buildGensDetail(persons, slug)
+    if (!detail) throw new Error(`Gens not found: ${slug}`)
     return detail
   })
 

@@ -34,6 +34,16 @@ export interface TribeDetail {
   name: string
   members: PersonSummary[]
 }
+export interface GensIndexEntry {
+  slug: string
+  name: string
+  memberCount: number
+}
+export interface GensDetail {
+  slug: string
+  name: string
+  members: PersonSummary[]
+}
 export interface ProvinceIndexEntry {
   slug: string
   name: string
@@ -185,6 +195,78 @@ export function buildTribeDetail(
     a.name.localeCompare(b.name)
   )
   const name = matching[0].tribes.find((t) => slugify(t) === slug) as string
+  return { slug, name, members }
+}
+
+/**
+ * Assigns unique slugs to a set of names, preferring the plain (no
+ * punctuation) spelling for the bare slug and suffixing variants
+ * (`-2`, `-3`, ...) alphabetically. Gens names in the source data include
+ * uncertain-attribution variants like "(Cornelius)" or "(Cornelius?)" that
+ * slugify identically to the confirmed "Cornelius" — unlike offices, tribes,
+ * and provinces, these are legitimate distinct gentes rather than data
+ * errors, so collisions are disambiguated instead of rejected.
+ */
+function buildDisambiguatedSlugs(names: Iterable<string>): Map<string, string> {
+  const hasPunctuation = (name: string) => /[^A-Za-z0-9 ]/.test(name)
+  const sorted = [...new Set(names)].sort(
+    (a, b) =>
+      Number(hasPunctuation(a)) - Number(hasPunctuation(b)) ||
+      a.localeCompare(b)
+  )
+  const used = new Set<string>()
+  const slugOf = new Map<string, string>()
+  for (const name of sorted) {
+    const base = slugify(name)
+    let slug = base
+    let n = 2
+    while (used.has(slug)) {
+      slug = `${base}-${n}`
+      n++
+    }
+    used.add(slug)
+    slugOf.set(name, slug)
+  }
+  return slugOf
+}
+
+export function buildGensIndex(persons: Person[]): GensIndexEntry[] {
+  const byName = new Map<string, number>()
+  for (const p of persons) {
+    if (!p.nomen) continue
+    byName.set(p.nomen, (byName.get(p.nomen) ?? 0) + 1)
+  }
+  const slugOf = buildDisambiguatedSlugs(byName.keys())
+  return [...byName]
+    .map(([name, memberCount]) => ({
+      slug: slugOf.get(name) as string,
+      name,
+      memberCount,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+}
+
+export function buildGensDetail(
+  persons: Person[],
+  slug: string
+): GensDetail | null {
+  const names = new Set<string>()
+  for (const p of persons) {
+    if (p.nomen) names.add(p.nomen)
+  }
+  const slugOf = buildDisambiguatedSlugs(names)
+  let name: string | null = null
+  for (const [candidate, candidateSlug] of slugOf) {
+    if (candidateSlug === slug) {
+      name = candidate
+      break
+    }
+  }
+  if (name === null) return null
+  const matching = persons.filter((p) => p.nomen === name)
+  const members = toSummaries(matching).sort((a, b) =>
+    a.name.localeCompare(b.name)
+  )
   return { slug, name, members }
 }
 

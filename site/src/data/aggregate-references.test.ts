@@ -4,6 +4,8 @@ import {
   buildOfficeDetail,
   buildTribeIndex,
   buildTribeDetail,
+  buildGensIndex,
+  buildGensDetail,
   buildProvinceIndex,
   buildProvinceDetail,
   buildNameHierarchy,
@@ -132,6 +134,71 @@ describe("tribes", () => {
     expect(detail?.members.map((m) => m.id)).toEqual(["AAAA0001"])
     // members are summaries — no heavy fields
     expect(detail?.members[0]).not.toHaveProperty("postAssertions")
+  })
+})
+
+const personC = makePerson({
+  id: "CCCC0001",
+  name: "CCCC0001 C. Aulius",
+  nomen: "Aulius",
+})
+const personD = makePerson({
+  id: "DDDD0001",
+  name: "DDDD0001 D. Noname",
+  nomen: "",
+})
+
+describe("gentes", () => {
+  test("index lists distinct gentes alphabetically with member counts, excluding blanks", () => {
+    expect(buildGensIndex([personA, personB, personC, personD])).toEqual([
+      { slug: "aulius", name: "Aulius", memberCount: 1 },
+      { slug: "testius", name: "Testius", memberCount: 2 },
+    ])
+  })
+
+  test("detail lists members sorted by name", () => {
+    const detail = buildGensDetail([personA, personB, personC], "testius")
+    expect(detail?.name).toBe("Testius")
+    expect(detail?.members.map((m) => m.id)).toEqual(["AAAA0001", "BBBB0001"])
+    // members are summaries — no heavy fields
+    expect(detail?.members[0]).not.toHaveProperty("postAssertions")
+  })
+
+  test("unknown slug returns null", () => {
+    expect(buildGensDetail([personA], "nosuchgens")).toBeNull()
+  })
+
+  test("disambiguates gentes whose names slugify identically", () => {
+    // Uncertain-attribution variants like "(Testius)" slugify the same as
+    // the plain name — real data has this for e.g. Cornelius/(Cornelius).
+    const personE = makePerson({
+      id: "EEEE0001",
+      name: "EEEE0001 E. Testius",
+      nomen: "(Testius)",
+    })
+    const index = buildGensIndex([personA, personB, personE])
+    const slugs = index.map((g) => g.slug)
+    expect(new Set(slugs).size).toBe(slugs.length)
+
+    const plain = index.find((g) => g.name === "Testius")
+    const uncertain = index.find((g) => g.name === "(Testius)")
+    expect(plain).toEqual({ slug: "testius", name: "Testius", memberCount: 2 })
+    expect(uncertain?.memberCount).toBe(1)
+    expect(uncertain?.slug).not.toBe("testius")
+
+    const plainDetail = buildGensDetail(
+      [personA, personB, personE],
+      plain?.slug as string
+    )
+    expect(plainDetail?.members.map((m) => m.id)).toEqual([
+      "AAAA0001",
+      "BBBB0001",
+    ])
+    const uncertainDetail = buildGensDetail(
+      [personA, personB, personE],
+      uncertain?.slug as string
+    )
+    expect(uncertainDetail?.members.map((m) => m.id)).toEqual(["EEEE0001"])
   })
 })
 
