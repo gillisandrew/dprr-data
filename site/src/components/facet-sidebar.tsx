@@ -9,8 +9,6 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { Checkbox } from "@/components/ui/checkbox"
-import { ChevronRight } from "lucide-react"
-import { cn } from "@/lib/utils"
 import type { SearchState, FacetValue } from "@/data/types"
 
 interface FacetSidebarProps {
@@ -77,16 +75,11 @@ export function FacetSidebar({
 
       {/* Tier 2 — more filters */}
       <Collapsible open={tier2Open} onOpenChange={setTier2Open}>
-        <CollapsibleTrigger className="flex w-full items-center gap-1.5 py-2 text-sm font-semibold">
-          <ChevronRight
-            className={cn(
-              "h-3.5 w-3.5 shrink-0 transition-transform",
-              tier2Open && "rotate-90"
-            )}
-          />
+        <CollapsibleTrigger className="rule-hair flex w-full items-center justify-between pt-4 pb-1 text-sm font-medium">
           More filters
+          <span className="text-muted-foreground">{tier2Open ? "−" : "+"}</span>
         </CollapsibleTrigger>
-        <CollapsibleContent className="space-y-1 pl-2">
+        <CollapsibleContent className="space-y-1">
           <FacetGroup
             title="Gens"
             items={facets.nomen}
@@ -117,10 +110,10 @@ export function FacetSidebar({
             onChange={(sex) => onUpdate({ sex })}
             defaultOpen={false}
           />
-          <div className="space-y-1 py-2">
-            <p className="text-sm font-semibold">Status</p>
-            <div className="space-y-1 pl-5">
-              <label className="flex cursor-pointer items-center gap-2 text-sm">
+          <div className="space-y-1">
+            <p className="micro-label rule-hair pt-3 pb-1">Status</p>
+            <div>
+              <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
                 <Checkbox
                   checked={state.patrician === true}
                   onCheckedChange={(checked) =>
@@ -129,7 +122,7 @@ export function FacetSidebar({
                 />
                 <span>Patrician</span>
               </label>
-              <label className="flex cursor-pointer items-center gap-2 text-sm">
+              <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
                 <Checkbox
                   checked={state.nobilis === true}
                   onCheckedChange={(checked) =>
@@ -152,16 +145,11 @@ export function FacetSidebar({
 
       {/* Tier 3 — advanced search */}
       <Collapsible open={tier3Open} onOpenChange={setTier3Open}>
-        <CollapsibleTrigger className="flex w-full items-center gap-1.5 py-2 text-sm font-semibold">
-          <ChevronRight
-            className={cn(
-              "h-3.5 w-3.5 shrink-0 transition-transform",
-              tier3Open && "rotate-90"
-            )}
-          />
+        <CollapsibleTrigger className="rule-hair flex w-full items-center justify-between pt-4 pb-1 text-sm font-medium">
           Advanced search
+          <span className="text-muted-foreground">{tier3Open ? "−" : "+"}</span>
         </CollapsibleTrigger>
-        <CollapsibleContent className="pb-3 pl-2">
+        <CollapsibleContent className="pt-2 pb-3">
           <AdvancedSearch facets={facets} state={state} onUpdate={onUpdate} />
         </CollapsibleContent>
       </Collapsible>

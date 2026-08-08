@@ -97,7 +97,7 @@ export function FacetHierarchyGroup({
     return (
       <div key={node.name} style={{ paddingLeft: depth * 12 }}>
         {node.count !== null ? (
-          <label className="flex cursor-pointer items-center gap-2 py-0.5 text-sm">
+          <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
             <Checkbox
               checked={selected.includes(node.name)}
               onCheckedChange={() => toggle(node.name)}
@@ -110,12 +110,12 @@ export function FacetHierarchyGroup({
             )}
           </label>
         ) : (
-          <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5 text-sm">
+          <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5">
             <Checkbox
               checked={selected.includes(node.name)}
               onCheckedChange={() => toggle(node.name)}
             />
-            <span className="min-w-0 truncate text-xs font-semibold text-muted-foreground uppercase">
+            <span className="micro-label-muted min-w-0 truncate">
               {node.name}
             </span>
           </label>
@@ -129,27 +129,24 @@ export function FacetHierarchyGroup({
 
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
-      <CollapsibleTrigger className="flex w-full items-center gap-1.5 py-2 text-sm font-semibold">
-        <ChevronRight
-          className={cn(
-            "h-3.5 w-3.5 shrink-0 transition-transform",
-            open && "rotate-90"
-          )}
-        />
+      <CollapsibleTrigger className="micro-label rule-hair flex w-full items-center justify-between pt-3 pb-1">
         {title}
+        <ChevronRight
+          className={cn("h-3 w-3 transition-transform", open && "rotate-90")}
+        />
       </CollapsibleTrigger>
-      <CollapsibleContent className="pb-3 pl-5">
+      <CollapsibleContent className="pb-3 pl-1">
         <Input
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder={`Filter ${title.toLowerCase()}...`}
-          className="mb-1 h-7 text-xs"
+          className="mt-2 mb-1 h-7 text-xs"
         />
         {filtered
           ? filtered.map((i) => (
               <label
                 key={i.value}
-                className="flex cursor-pointer items-center gap-2 py-0.5 text-sm"
+                className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
               >
                 <Checkbox
                   checked={selected.includes(i.value)}

@@ -2,7 +2,6 @@
 import { useState } from "react"
 import { X } from "lucide-react"
 import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
 import type { FacetValue } from "@/data/types"
 
 interface FacetComboboxProps {
@@ -33,19 +32,18 @@ export function FacetCombobox({
 
   return (
     <div className="space-y-1">
-      <p className="text-xs font-medium">{label}</p>
+      <p className="micro-label-muted">{label}</p>
       {selected.length > 0 && (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap items-center gap-2">
           {selected.map((s) => (
-            <Badge
+            <button
               key={s}
-              variant="secondary"
-              className="cursor-pointer gap-1 text-xs"
               onClick={() => onChange(selected.filter((v) => v !== s))}
+              className="rule-hair inline-flex items-center gap-1 pb-0.5 text-xs text-foreground hover:text-primary"
             >
               {s}
-              <X className="h-3 w-3" />
-            </Badge>
+              <X className="h-3 w-3 text-muted-foreground" />
+            </button>
           ))}
         </div>
       )}

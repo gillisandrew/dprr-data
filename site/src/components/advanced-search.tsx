@@ -40,7 +40,7 @@ export function AdvancedSearch({
         onChange={(cognomen) => onUpdate({ cognomen })}
       />
       <div className="space-y-1">
-        <p className="text-xs font-medium">RE number</p>
+        <p className="micro-label-muted">RE number</p>
         <Input
           value={state.re}
           onChange={(e) => onUpdate({ re: e.target.value })}

@@ -175,8 +175,8 @@ function SearchResults({
         </div>
       </div>
 
-      <div className="mt-4 space-y-1">
-        <p className="text-sm font-semibold">Time period</p>
+      <div className="mt-4 border-y border-rule-hair py-2">
+        <p className="micro-label mb-1">Time period</p>
         <EraTimeline
           histogram={filteredHistogram}
           from={state.eraFrom}

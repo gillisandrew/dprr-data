@@ -51,30 +51,27 @@ export function FacetGroup({
 
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
-      <CollapsibleTrigger className="flex w-full items-center gap-1.5 py-2 text-sm font-semibold">
-        <ChevronRight
-          className={cn(
-            "h-3.5 w-3.5 shrink-0 transition-transform",
-            open && "rotate-90"
-          )}
-        />
+      <CollapsibleTrigger className="micro-label rule-hair flex w-full items-center justify-between pt-3 pb-1">
         {title}
+        <ChevronRight
+          className={cn("h-3 w-3 transition-transform", open && "rotate-90")}
+        />
       </CollapsibleTrigger>
-      <CollapsibleContent className="pb-3 pl-5">
+      <CollapsibleContent className="pb-3 pl-1">
         {searchable && (
           <Input
             type="search"
             placeholder={`Filter ${title.toLowerCase()}...`}
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className="mb-2 h-7 text-xs"
+            className="mt-2 mb-1 h-7 text-xs"
           />
         )}
-        <div className="space-y-1">
+        <div>
           {visible.map((item) => (
             <label
               key={item.value}
-              className="flex cursor-pointer items-center gap-2 text-sm"
+              className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
             >
               <Checkbox
                 checked={selected.includes(item.value)}
