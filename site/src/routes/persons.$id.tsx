@@ -4,8 +4,8 @@ import { getPersonById } from "@/server/data"
 import { slugify } from "@/lib/slug"
 import { displayName } from "@/lib/order"
 import { SITE_URL } from "@/lib/site"
-import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
+import { PersonRegistry } from "@/components/person-registry"
 import {
   Collapsible,
   CollapsibleContent,
@@ -14,12 +14,33 @@ import {
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
 import { PersonLink } from "@/components/person-card"
-import {
-  IdentityCard,
-  PersonRail,
-  groupRelationships,
-} from "@/components/person-rail"
-import type { PostAssertion, Note, Relationship } from "@/data/types"
+import type {
+  PostAssertion,
+  Note,
+  Relationship,
+  DateInfo,
+  Concordance,
+} from "@/data/types"
+
+/** Groups relationships by type (alphabetical), people by display name within. */
+function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
+  const byType = new Map<string, Relationship[]>()
+  for (const r of rels) {
+    const list = byType.get(r.relationshipType) ?? []
+    list.push(r)
+    byType.set(r.relationshipType, list)
+  }
+  return [...byType]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([type, list]) => [
+      type,
+      [...list].sort((a, b) =>
+        displayName(a.relatedPersonName).localeCompare(
+          displayName(b.relatedPersonName)
+        )
+      ),
+    ])
+}
 
 export const Route = createFileRoute("/persons/$id")({
   loader: ({ params }) => getPersonById({ data: params.id }),
@@ -64,78 +85,145 @@ function PersonPage() {
   const sortedNotes = [...person.personNotes].sort((a, b) =>
     a.type.localeCompare(b.type)
   )
+  const sortedDates = [...person.dateInformation].sort(
+    (a, b) => a.value - b.value
+  )
+  const groupedConcordances = groupConcordances(person.concordances)
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
-      <header className="mb-6">
+      <header className="rule-lead pb-3">
         <h1 className="font-heading text-3xl font-bold">{name}</h1>
         <p className="mt-1 text-lg text-muted-foreground">
           <EraRange from={person.eraFrom} to={person.eraTo} />
           {person.highestOffice && <span> · {person.highestOffice}</span>}
           {person.isPatrician && (
-            <Badge variant="secondary" className="ml-2 align-middle">
-              Patrician
-            </Badge>
+            <span className="small-caps ml-2 text-muted-foreground">
+              patrician
+            </span>
           )}
           {person.isNobilis && (
-            <Badge variant="secondary" className="ml-1 align-middle">
-              Nobilis
-            </Badge>
+            <span className="small-caps ml-1 text-muted-foreground">
+              nobilis
+            </span>
           )}
         </p>
       </header>
 
-      <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-8">
-        <div className="min-w-0">
-          <div className="mb-6 lg:hidden">
-            <IdentityCard person={person} />
+      <PersonRegistry person={person} />
+
+      {person.postAssertions.length > 0 && (
+        <Section title="Career" count={person.postAssertions.length}>
+          <div>
+            {person.postAssertions.map((pa) => (
+              <OfficeEntry key={pa.id} assertion={pa} />
+            ))}
           </div>
+        </Section>
+      )}
 
-          {person.postAssertions.length > 0 && (
-            <Section title="Career" count={person.postAssertions.length}>
-              <div className="space-y-4">
-                {person.postAssertions.map((pa) => (
-                  <OfficeEntry key={pa.id} assertion={pa} />
-                ))}
+      {person.relationships.length > 0 && (
+        <Section title="Relationships" count={person.relationships.length}>
+          <div className="space-y-4">
+            {groupRelationships(person.relationships).map(([type, rels]) => (
+              <div key={type}>
+                <p className="text-xs font-medium text-muted-foreground capitalize">
+                  {type}
+                </p>
+                <div className="mt-1">
+                  {rels.map((rel) => (
+                    <RelationshipEntry key={rel.id} relationship={rel} />
+                  ))}
+                </div>
               </div>
-            </Section>
-          )}
+            ))}
+          </div>
+        </Section>
+      )}
 
-          {person.relationships.length > 0 && (
-            <Section title="Relationships" count={person.relationships.length}>
-              <div className="space-y-4">
-                {groupRelationships(person.relationships).map(
-                  ([type, rels]) => (
-                    <div key={type}>
-                      <p className="text-xs font-medium text-muted-foreground capitalize">
-                        {type}
-                      </p>
-                      <div className="mt-1 space-y-2">
-                        {rels.map((rel) => (
-                          <RelationshipEntry key={rel.id} relationship={rel} />
-                        ))}
-                      </div>
-                    </div>
-                  )
-                )}
+      {sortedDates.length > 0 && (
+        <Section title="Dates" count={sortedDates.length}>
+          <div>
+            {sortedDates.map((d, i) => (
+              <DateEntry key={i} dateInfo={d} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {sortedNotes.length > 0 && (
+        <Section title="Notes" count={sortedNotes.length}>
+          <div className="space-y-4">
+            {sortedNotes.map((note, i) => (
+              <NoteEntry key={i} note={note} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {groupedConcordances.length > 0 && (
+        <Section title="Links">
+          <dl>
+            {groupedConcordances.map(([system, links]) => (
+              <div
+                key={system}
+                className="ledger-row flex flex-wrap items-baseline gap-x-3 gap-y-1"
+              >
+                <dt className="w-28 shrink-0 text-sm text-muted-foreground capitalize">
+                  {system}
+                </dt>
+                <dd className="flex min-w-0 flex-1 flex-col gap-1">
+                  {links.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link.uri}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="break-all text-primary hover:underline"
+                    >
+                      {link.uri}
+                    </a>
+                  ))}
+                </dd>
               </div>
-            </Section>
-          )}
+            ))}
+          </dl>
+        </Section>
+      )}
+    </div>
+  )
+}
 
-          {sortedNotes.length > 0 && (
-            <Section title="Notes" count={sortedNotes.length}>
-              <div className="space-y-4">
-                {sortedNotes.map((note, i) => (
-                  <NoteEntry key={i} note={note} />
-                ))}
-              </div>
-            </Section>
-          )}
-        </div>
+/** Groups concordances by system (alphabetical). */
+function groupConcordances(
+  concordances: Concordance[]
+): [string, Concordance[]][] {
+  const grouped = new Map<string, Concordance[]>()
+  for (const c of concordances) {
+    const existing = grouped.get(c.system) ?? []
+    existing.push(c)
+    grouped.set(c.system, existing)
+  }
+  return [...grouped].sort((a, b) => a[0].localeCompare(b[0]))
+}
 
-        <aside className="mt-8 lg:sticky lg:top-4 lg:mt-0 lg:self-start">
-          <PersonRail person={person} />
-        </aside>
+function DateEntry({ dateInfo }: { dateInfo: DateInfo }) {
+  return (
+    <div className="ledger-row flex gap-3">
+      <span className="year-col text-sm">
+        <DateDisplay year={dateInfo.value} uncertain={dateInfo.isUncertain} />
+      </span>
+      <div className="min-w-0 flex-1 text-sm">
+        <span className="text-muted-foreground capitalize">
+          {dateInfo.type}
+        </span>
+        {dateInfo.notes && (
+          <span className="text-muted-foreground"> — {dateInfo.notes}</span>
+        )}
+        <SourceCitation
+          name={dateInfo.secondarySource}
+          className="ml-1 text-xs text-muted-foreground"
+        />
       </div>
     </div>
   )
@@ -143,114 +231,118 @@ function PersonPage() {
 
 function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
   return (
-    <div className="border-l-2 pl-4">
-      <p className="font-medium">
-        <span className={assertion.isUncertain ? "italic" : undefined}>
-          {assertion.officeName ? (
-            <Link
-              to="/offices/$slug"
-              params={{ slug: slugify(assertion.officeName) }}
-              className="hover:underline"
-            >
-              {assertion.officeName}
-            </Link>
-          ) : (
-            assertion.officeName
-          )}
-          {assertion.isUncertain && "?"}
-        </span>
-        {assertion.officeAbbreviation && (
-          <span className="ml-1 text-sm text-muted-foreground">
-            ({assertion.officeAbbreviation})
-          </span>
-        )}
-      </p>
-      {(assertion.dateStart || assertion.dateEnd) && (
-        <p className="text-sm text-muted-foreground">
-          {assertion.dateStart !== null && assertion.dateEnd !== null ? (
-            assertion.dateStart === assertion.dateEnd ? (
-              <DateDisplay year={assertion.dateStart} />
+    <div className="ledger-row flex gap-3">
+      <span className="year-col text-sm text-muted-foreground">
+        {(assertion.dateStart || assertion.dateEnd) && (
+          <>
+            {assertion.dateStart !== null && assertion.dateEnd !== null ? (
+              assertion.dateStart === assertion.dateEnd ? (
+                <DateDisplay year={assertion.dateStart} />
+              ) : (
+                <EraRange from={assertion.dateStart} to={assertion.dateEnd} />
+              )
             ) : (
-              <EraRange from={assertion.dateStart} to={assertion.dateEnd} />
-            )
-          ) : (
-            <DateDisplay
-              year={(assertion.dateStart ?? assertion.dateEnd) as number}
-            />
-          )}
-          {(assertion.isDateStartUncertain || assertion.isDateEndUncertain) &&
-            "?"}
-        </p>
-      )}
-      {assertion.provinceOriginal && (
-        <p className="text-sm text-muted-foreground">
-          Location:{" "}
-          {assertion.provinces.length > 0 ? (
-            assertion.provinces.map((pr, i) => (
-              <span key={pr}>
-                {i > 0 && ", "}
-                <Link
-                  to="/provinces/$slug"
-                  params={{ slug: slugify(pr) }}
-                  className="hover:underline"
-                >
-                  {pr}
-                </Link>
-              </span>
-            ))
-          ) : (
-            <span>{assertion.provinceOriginal}</span>
-          )}
-          {assertion.provinces.length > 0 &&
-            assertion.provinces.join(", ") !== assertion.provinceOriginal && (
-              <span className="italic"> ({assertion.provinceOriginal})</span>
+              <DateDisplay
+                year={(assertion.dateStart ?? assertion.dateEnd) as number}
+              />
             )}
+            {(assertion.isDateStartUncertain || assertion.isDateEndUncertain) &&
+              "?"}
+          </>
+        )}
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="font-medium">
+          <span className={assertion.isUncertain ? "italic" : undefined}>
+            {assertion.officeName ? (
+              <Link
+                to="/offices/$slug"
+                params={{ slug: slugify(assertion.officeName) }}
+                className="hover:underline"
+              >
+                {assertion.officeName}
+              </Link>
+            ) : (
+              assertion.officeName
+            )}
+            {assertion.isUncertain && "?"}
+          </span>
+          {assertion.officeAbbreviation && (
+            <span className="ml-1 text-sm text-muted-foreground">
+              ({assertion.officeAbbreviation})
+            </span>
+          )}
         </p>
-      )}
-      {assertion.originalText && (
-        <p className="mt-1 text-sm">{assertion.originalText}</p>
-      )}
-      <SourceCitation
-        name={assertion.secondarySource}
-        className="mt-1 block text-xs text-muted-foreground"
-      />
-      {assertion.primarySourceRefs.length > 0 && (
-        <div className="mt-1">
-          {assertion.primarySourceRefs.map((ref, i) => (
-            <p key={i} className="text-xs text-muted-foreground">
-              {ref}
-            </p>
-          ))}
-        </div>
-      )}
-      {assertion.notes.length > 0 && (
-        <Collapsible>
-          <CollapsibleTrigger className="mt-1 text-xs text-muted-foreground hover:underline">
-            {assertion.notes.length} scholarly note
-            {assertion.notes.length === 1 ? "" : "s"} ▸
-          </CollapsibleTrigger>
-          <CollapsibleContent>
-            {assertion.notes.map((note, i) => (
-              <div key={i} className="mt-2 rounded bg-muted/50 p-3 text-sm">
-                <p className="mb-1 text-xs font-medium text-muted-foreground">
-                  {note.type}
-                  {note.secondarySource && ` — ${note.secondarySource}`}
-                </p>
-                <p className="leading-relaxed whitespace-pre-wrap">
-                  {note.text}
-                </p>
-              </div>
+        {assertion.provinceOriginal && (
+          <p className="text-sm text-muted-foreground">
+            Location:{" "}
+            {assertion.provinces.length > 0 ? (
+              assertion.provinces.map((pr, i) => (
+                <span key={pr}>
+                  {i > 0 && ", "}
+                  <Link
+                    to="/provinces/$slug"
+                    params={{ slug: slugify(pr) }}
+                    className="hover:underline"
+                  >
+                    {pr}
+                  </Link>
+                </span>
+              ))
+            ) : (
+              <span>{assertion.provinceOriginal}</span>
+            )}
+            {assertion.provinces.length > 0 &&
+              assertion.provinces.join(", ") !== assertion.provinceOriginal && (
+                <span className="italic"> ({assertion.provinceOriginal})</span>
+              )}
+          </p>
+        )}
+        {assertion.originalText && (
+          <p className="mt-1 text-sm">{assertion.originalText}</p>
+        )}
+        <SourceCitation
+          name={assertion.secondarySource}
+          className="mt-1 block text-xs text-muted-foreground"
+        />
+        {assertion.primarySourceRefs.length > 0 && (
+          <div className="mt-1">
+            {assertion.primarySourceRefs.map((ref, i) => (
+              <p key={i} className="text-xs text-muted-foreground">
+                {ref}
+              </p>
             ))}
-          </CollapsibleContent>
-        </Collapsible>
-      )}
+          </div>
+        )}
+        {assertion.notes.length > 0 && (
+          <Collapsible>
+            <CollapsibleTrigger className="mt-1 text-xs text-muted-foreground hover:underline">
+              {assertion.notes.length} scholarly note
+              {assertion.notes.length === 1 ? "" : "s"} ▸
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+              {assertion.notes.map((note, i) => (
+                <div key={i} className="mt-2 rounded bg-muted/50 p-3 text-sm">
+                  <p className="mb-1 text-xs font-medium text-muted-foreground">
+                    {note.type}
+                    {note.secondarySource && ` — ${note.secondarySource}`}
+                  </p>
+                  <p className="leading-relaxed whitespace-pre-wrap">
+                    {note.text}
+                  </p>
+                </div>
+              ))}
+            </CollapsibleContent>
+          </Collapsible>
+        )}
+      </div>
     </div>
   )
 }
 
 function RelationshipEntry({ relationship }: { relationship: Relationship }) {
   return (
-    <div className="text-sm">
+    <div className="ledger-row text-sm">
       <p>
         <span className="text-muted-foreground capitalize">
           {relationship.relationshipType}

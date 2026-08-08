@@ -1,17 +1,7 @@
 // site/src/components/section.tsx
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
-import { ChevronRight } from "lucide-react"
-import { useState } from "react"
-import { cn } from "@/lib/utils"
-
 export function Section({
   title,
   children,
-  defaultOpen = true,
   count,
 }: {
   title: string
@@ -19,23 +9,15 @@ export function Section({
   defaultOpen?: boolean
   count?: number
 }) {
-  const [open, setOpen] = useState(defaultOpen)
-
   return (
-    <Collapsible open={open} onOpenChange={setOpen}>
-      <CollapsibleTrigger className="flex w-full items-center gap-2 py-3">
-        <ChevronRight
-          className={cn(
-            "h-4 w-4 shrink-0 transition-transform",
-            open && "rotate-90"
-          )}
-        />
-        <h2 className="font-heading text-lg font-semibold">{title}</h2>
+    <section className="mt-7">
+      <h2 className="micro-label rule-hair flex items-baseline justify-between pb-1">
+        {title}
         {count !== undefined && (
-          <span className="text-sm text-muted-foreground">({count})</span>
+          <span className="micro-label-muted">{count}</span>
         )}
-      </CollapsibleTrigger>
-      <CollapsibleContent className="pb-4 pl-6">{children}</CollapsibleContent>
-    </Collapsible>
+      </h2>
+      <div className="mt-2">{children}</div>
+    </section>
   )
 }
