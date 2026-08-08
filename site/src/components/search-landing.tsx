@@ -56,7 +56,7 @@ export function SearchLanding({ onQueryChange, onBrowse }: SearchLandingProps) {
           <button
             key={c.key}
             onClick={() => onBrowse(c.key)}
-            className="border-t-2 border-rule-lead pt-3 text-left transition-colors hover:text-primary"
+            className="flex flex-col items-start justify-start border-t-2 border-rule-lead pt-3 text-left transition-colors hover:text-primary"
           >
             <p className="font-heading text-base font-semibold">
               Browse by {c.title}
