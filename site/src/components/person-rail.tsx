@@ -57,13 +57,17 @@ export function IdentityCard({ person }: { person: Person }) {
           <>
             <dt className="font-medium">Nomen</dt>
             <dd>
-              <Link
-                to="/gentes/$slug"
-                params={{ slug: slugify(person.nomen) }}
-                className="hover:underline"
-              >
-                {person.nomen}
-              </Link>
+              {slugify(person.nomen) ? (
+                <Link
+                  to="/gentes/$slug"
+                  params={{ slug: slugify(person.nomen) }}
+                  className="hover:underline"
+                >
+                  {person.nomen}
+                </Link>
+              ) : (
+                person.nomen
+              )}
             </dd>
           </>
         )}
@@ -228,7 +232,12 @@ export function LinksCard({ person }: { person: Person }) {
 export function PersonRail({ person }: { person: Person }) {
   return (
     <div className="space-y-4">
-      <IdentityCard person={person} />
+      {/* The route renders its own IdentityCard below lg (see
+       * persons.$id.tsx's `lg:hidden` block) — hide this copy there so the
+       * card isn't duplicated on mobile/tablet viewports. */}
+      <div className="hidden lg:block">
+        <IdentityCard person={person} />
+      </div>
       <FamilyCard person={person} />
       <DatesCard person={person} />
       <LinksCard person={person} />

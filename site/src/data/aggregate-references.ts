@@ -230,11 +230,25 @@ function buildDisambiguatedSlugs(names: Iterable<string>): Map<string, string> {
   return slugOf
 }
 
+/**
+ * Names that slugify to "" (e.g. the bare "-" used for unattributed gentes)
+ * can't produce a usable detail-page URL — trimmed first so the five
+ * trailing-space variants of a name (e.g. "Antestius ") merge with their
+ * clean twin instead of forming a separate one-member group.
+ */
+function nomenGroupingName(nomen: string): string | null {
+  const trimmed = nomen.trim()
+  if (!trimmed || slugify(trimmed) === "") return null
+  return trimmed
+}
+
 export function buildGensIndex(persons: Person[]): GensIndexEntry[] {
   const byName = new Map<string, number>()
   for (const p of persons) {
     if (!p.nomen) continue
-    byName.set(p.nomen, (byName.get(p.nomen) ?? 0) + 1)
+    const name = nomenGroupingName(p.nomen)
+    if (name === null) continue
+    byName.set(name, (byName.get(name) ?? 0) + 1)
   }
   const slugOf = buildDisambiguatedSlugs(byName.keys())
   return [...byName]
@@ -250,9 +264,12 @@ export function buildGensDetail(
   persons: Person[],
   slug: string
 ): GensDetail | null {
+  if (!slug) return null
   const names = new Set<string>()
   for (const p of persons) {
-    if (p.nomen) names.add(p.nomen)
+    if (!p.nomen) continue
+    const name = nomenGroupingName(p.nomen)
+    if (name !== null) names.add(name)
   }
   const slugOf = buildDisambiguatedSlugs(names)
   let name: string | null = null
@@ -263,7 +280,9 @@ export function buildGensDetail(
     }
   }
   if (name === null) return null
-  const matching = persons.filter((p) => p.nomen === name)
+  const matching = persons.filter(
+    (p) => p.nomen && nomenGroupingName(p.nomen) === name
+  )
   const members = toSummaries(matching).sort((a, b) =>
     a.name.localeCompare(b.name)
   )

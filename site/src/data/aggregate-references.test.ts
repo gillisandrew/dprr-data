@@ -168,6 +168,42 @@ describe("gentes", () => {
     expect(buildGensDetail([personA], "nosuchgens")).toBeNull()
   })
 
+  test("excludes nomina that slugify to empty (e.g. the bare '-')", () => {
+    const personDash = makePerson({
+      id: "FFFF0001",
+      name: "FFFF0001 F. Nomen",
+      nomen: "-",
+    })
+    const index = buildGensIndex([personA, personB, personDash])
+    expect(index.some((g) => g.slug === "")).toBe(false)
+    expect(index.map((g) => g.name)).not.toContain("-")
+    // The person is simply excluded from the gens index/detail — they
+    // still exist and are reachable via their own person page.
+    expect(buildGensDetail([personA, personDash], "")).toBeNull()
+  })
+
+  test("merges nomina that differ only by leading/trailing whitespace", () => {
+    const personTrailing = makePerson({
+      id: "GGGG0001",
+      name: "GGGG0001 G. Antestius",
+      nomen: "Antestius ",
+    })
+    const personClean = makePerson({
+      id: "HHHH0001",
+      name: "HHHH0001 H. Antestius",
+      nomen: "Antestius",
+    })
+    const index = buildGensIndex([personTrailing, personClean])
+    expect(index).toEqual([
+      { slug: "antestius", name: "Antestius", memberCount: 2 },
+    ])
+    const detail = buildGensDetail([personTrailing, personClean], "antestius")
+    expect(detail?.members.map((m) => m.id).sort()).toEqual([
+      "GGGG0001",
+      "HHHH0001",
+    ])
+  })
+
   test("disambiguates gentes whose names slugify identically", () => {
     // Uncertain-attribution variants like "(Testius)" slugify the same as
     // the plain name — real data has this for e.g. Cornelius/(Cornelius).

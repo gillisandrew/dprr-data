@@ -1,8 +1,12 @@
 // site/src/routes/index.tsx
-import { useEffect, useState } from "react"
+import { useEffect, useReducer, useState } from "react"
 import { createFileRoute } from "@tanstack/react-router"
 import { parseSearchParams, toSearchParams, useSearchState } from "@/lib/search"
 import { useSearchData, type SearchDataBundle } from "@/lib/use-search-data"
+import {
+  landingBufferReducer,
+  initialLandingBufferState,
+} from "@/lib/landing-state"
 import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
 import { EraTimeline } from "@/components/era-timeline"
@@ -37,25 +41,25 @@ function SearchPage() {
   const rawParams = Route.useSearch() as Record<string, string>
   const hasParams =
     Object.keys(toSearchParams(parseSearchParams(rawParams))).length > 0
-  const [interacted, setInteracted] = useState(() => hasParams)
+  const [{ interacted, pendingQuery }, dispatch] = useReducer(
+    landingBufferReducer,
+    initialLandingBufferState,
+    (init) => (hasParams ? { ...init, interacted: true } : init)
+  )
   const [initialFocus, setInitialFocus] = useState<Focus | undefined>()
-  const [pendingQuery, setPendingQuery] = useState<string | null>(null)
   const showLanding = !hasParams && !interacted
   const { bundle, error } = useSearchData(!showLanding)
 
   useEffect(() => {
-    if (hasParams && !interacted) setInteracted(true)
+    if (hasParams && !interacted) dispatch({ type: "interact" })
   }, [hasParams, interacted])
 
   const content = showLanding ? (
     <SearchLanding
-      onSearch={(q) => {
-        setPendingQuery(q)
-        setInteracted(true)
-      }}
+      onQueryChange={(q) => dispatch({ type: "type", query: q })}
       onBrowse={(focus) => {
         setInitialFocus(focus)
-        setInteracted(true)
+        dispatch({ type: "interact" })
       }}
     />
   ) : error ? (
@@ -63,19 +67,46 @@ function SearchPage() {
       Failed to load search data — please reload. ({error})
     </div>
   ) : !bundle ? (
-    <div className="mx-auto max-w-6xl px-4 py-12 text-center text-muted-foreground">
-      Loading search data…
-    </div>
+    <LoadingSearch
+      query={pendingQuery ?? ""}
+      onQueryChange={(q) => dispatch({ type: "type", query: q })}
+    />
   ) : (
     <SearchResults
       bundle={bundle}
       initialFocus={initialFocus}
       pendingQuery={pendingQuery}
-      onPendingApplied={() => setPendingQuery(null)}
+      onPendingApplied={() => dispatch({ type: "apply-pending" })}
     />
   )
 
   return <div className="mx-auto max-w-6xl px-4 py-6">{content}</div>
+}
+
+/** Loading state after the user has interacted (typed, or asked to browse)
+ * but before the ~600KB search bundle has finished loading. Renders the
+ * same chrome as the results page with a live, autofocused search input
+ * bound to the buffered query — replacing a bare "Loading…" message here
+ * used to strand any characters typed after the first keystroke, since
+ * that message had nowhere for further typing to go. */
+function LoadingSearch({
+  query,
+  onQueryChange,
+}: {
+  query: string
+  onQueryChange: (q: string) => void
+}) {
+  return (
+    <>
+      <header className="mb-6">
+        <h1 className="font-heading text-2xl font-bold">
+          Digital Prosopography of the Roman Republic
+        </h1>
+        <p className="text-sm text-muted-foreground">Loading search data…</p>
+      </header>
+      <SearchInput value={query} onChange={onQueryChange} autoFocus />
+    </>
+  )
 }
 
 function SearchResults({
@@ -113,7 +144,11 @@ function SearchResults({
         </p>
       </header>
 
-      <SearchInput value={state.q} onChange={(q) => updateState({ q })} />
+      <SearchInput
+        value={state.q}
+        onChange={(q) => updateState({ q })}
+        autoFocus={pendingQuery !== null}
+      />
 
       <div className="mt-3">
         <ActiveFilterChips

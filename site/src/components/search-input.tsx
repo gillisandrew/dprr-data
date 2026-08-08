@@ -6,9 +6,11 @@ import { Search } from "lucide-react"
 export function SearchInput({
   value,
   onChange,
+  autoFocus,
 }: {
   value: string
   onChange: (value: string) => void
+  autoFocus?: boolean
 }) {
   const [local, setLocal] = useState(value)
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined)
@@ -35,6 +37,7 @@ export function SearchInput({
         placeholder="Search persons..."
         value={local}
         onChange={handleChange}
+        autoFocus={autoFocus}
         className="pl-9"
       />
     </div>

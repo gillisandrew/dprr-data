@@ -28,13 +28,17 @@ export function FastiRow({ person }: { person: PersonSummary }) {
           <span>
             {" "}
             · gens{" "}
-            <Link
-              to="/gentes/$slug"
-              params={{ slug: slugify(person.nomen) }}
-              className="relative z-10 hover:underline"
-            >
-              {person.nomen}
-            </Link>
+            {slugify(person.nomen) ? (
+              <Link
+                to="/gentes/$slug"
+                params={{ slug: slugify(person.nomen) }}
+                className="relative z-10 hover:underline"
+              >
+                {person.nomen}
+              </Link>
+            ) : (
+              person.nomen
+            )}
           </span>
         )}
       </p>

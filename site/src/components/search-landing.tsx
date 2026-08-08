@@ -3,7 +3,11 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 
 interface SearchLandingProps {
-  onSearch: (q: string) => void
+  /** Fired on every keystroke (not just once non-blank) so the caller's
+   * query buffer always holds this input's current text — the buffer is
+   * what survives the handoff to the loading-state input once this
+   * component unmounts. */
+  onQueryChange: (q: string) => void
   onBrowse: (focus: "office" | "time" | "gens") => void
 }
 
@@ -26,7 +30,7 @@ const cards = [
   },
 ]
 
-export function SearchLanding({ onSearch, onBrowse }: SearchLandingProps) {
+export function SearchLanding({ onQueryChange, onBrowse }: SearchLandingProps) {
   const [q, setQ] = useState("")
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 text-center">
@@ -42,7 +46,7 @@ export function SearchLanding({ onSearch, onBrowse }: SearchLandingProps) {
         value={q}
         onChange={(e) => {
           setQ(e.target.value)
-          if (e.target.value.trim()) onSearch(e.target.value)
+          onQueryChange(e.target.value)
         }}
         placeholder="Search 4,876 persons…"
         className="mx-auto mt-6 h-11 max-w-md text-base"
