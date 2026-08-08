@@ -14,10 +14,12 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as TribesIndexRouteImport } from './routes/tribes.index'
 import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
 import { Route as OfficesIndexRouteImport } from './routes/offices.index'
+import { Route as GentesIndexRouteImport } from './routes/gentes.index'
 import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
 import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
 import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
+import { Route as GentesSlugRouteImport } from './routes/gentes.$slug'
 
 const DirectoryRoute = DirectoryRouteImport.update({
   id: '/directory',
@@ -44,6 +46,11 @@ const OfficesIndexRoute = OfficesIndexRouteImport.update({
   path: '/offices/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GentesIndexRoute = GentesIndexRouteImport.update({
+  id: '/gentes/',
+  path: '/gentes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TribesSlugRoute = TribesSlugRouteImport.update({
   id: '/tribes/$slug',
   path: '/tribes/$slug',
@@ -64,14 +71,21 @@ const OfficesSlugRoute = OfficesSlugRouteImport.update({
   path: '/offices/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GentesSlugRoute = GentesSlugRouteImport.update({
+  id: '/gentes/$slug',
+  path: '/gentes/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/directory': typeof DirectoryRoute
+  '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
+  '/gentes/': typeof GentesIndexRoute
   '/offices/': typeof OfficesIndexRoute
   '/provinces/': typeof ProvincesIndexRoute
   '/tribes/': typeof TribesIndexRoute
@@ -79,10 +93,12 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/directory': typeof DirectoryRoute
+  '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
+  '/gentes': typeof GentesIndexRoute
   '/offices': typeof OfficesIndexRoute
   '/provinces': typeof ProvincesIndexRoute
   '/tribes': typeof TribesIndexRoute
@@ -91,10 +107,12 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/directory': typeof DirectoryRoute
+  '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
+  '/gentes/': typeof GentesIndexRoute
   '/offices/': typeof OfficesIndexRoute
   '/provinces/': typeof ProvincesIndexRoute
   '/tribes/': typeof TribesIndexRoute
@@ -104,10 +122,12 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/directory'
+    | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
     | '/tribes/$slug'
+    | '/gentes/'
     | '/offices/'
     | '/provinces/'
     | '/tribes/'
@@ -115,10 +135,12 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/directory'
+    | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
     | '/tribes/$slug'
+    | '/gentes'
     | '/offices'
     | '/provinces'
     | '/tribes'
@@ -126,10 +148,12 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/directory'
+    | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
     | '/provinces/$slug'
     | '/tribes/$slug'
+    | '/gentes/'
     | '/offices/'
     | '/provinces/'
     | '/tribes/'
@@ -138,10 +162,12 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DirectoryRoute: typeof DirectoryRoute
+  GentesSlugRoute: typeof GentesSlugRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
   ProvincesSlugRoute: typeof ProvincesSlugRoute
   TribesSlugRoute: typeof TribesSlugRoute
+  GentesIndexRoute: typeof GentesIndexRoute
   OfficesIndexRoute: typeof OfficesIndexRoute
   ProvincesIndexRoute: typeof ProvincesIndexRoute
   TribesIndexRoute: typeof TribesIndexRoute
@@ -184,6 +210,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OfficesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gentes/': {
+      id: '/gentes/'
+      path: '/gentes'
+      fullPath: '/gentes/'
+      preLoaderRoute: typeof GentesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tribes/$slug': {
       id: '/tribes/$slug'
       path: '/tribes/$slug'
@@ -212,16 +245,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OfficesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gentes/$slug': {
+      id: '/gentes/$slug'
+      path: '/gentes/$slug'
+      fullPath: '/gentes/$slug'
+      preLoaderRoute: typeof GentesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DirectoryRoute: DirectoryRoute,
+  GentesSlugRoute: GentesSlugRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
   ProvincesSlugRoute: ProvincesSlugRoute,
   TribesSlugRoute: TribesSlugRoute,
+  GentesIndexRoute: GentesIndexRoute,
   OfficesIndexRoute: OfficesIndexRoute,
   ProvincesIndexRoute: ProvincesIndexRoute,
   TribesIndexRoute: TribesIndexRoute,

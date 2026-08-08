@@ -2,18 +2,21 @@
 import { Link } from "@tanstack/react-router"
 import { EraRange } from "@/components/date-display"
 import { displayName } from "@/lib/order"
+import { slugify } from "@/lib/slug"
 import type { PersonSummary } from "@/data/types"
 
 export function FastiRow({ person }: { person: PersonSummary }) {
   const name = displayName(person.name)
   return (
-    <Link
-      to="/persons/$id"
-      params={{ id: person.id }}
-      className="block border-b px-1 py-2 transition-colors hover:bg-accent"
-    >
+    <div className="relative block border-b px-1 py-2 transition-colors hover:bg-accent">
       <p className="font-heading text-sm font-medium">
-        {name}
+        <Link
+          to="/persons/$id"
+          params={{ id: person.id }}
+          className="after:absolute after:inset-0"
+        >
+          {name}
+        </Link>
         {person.highestOffice && (
           <span className="ml-2 font-normal">— {person.highestOffice}</span>
         )}
@@ -21,8 +24,20 @@ export function FastiRow({ person }: { person: PersonSummary }) {
       <p className="text-xs text-muted-foreground">
         {person.filiation && <span>{person.filiation} · </span>}
         <EraRange from={person.eraFrom} to={person.eraTo} />
-        {person.nomen && <span> · gens {person.nomen}</span>}
+        {person.nomen && (
+          <span>
+            {" "}
+            · gens{" "}
+            <Link
+              to="/gentes/$slug"
+              params={{ slug: slugify(person.nomen) }}
+              className="relative z-10 hover:underline"
+            >
+              {person.nomen}
+            </Link>
+          </span>
+        )}
       </p>
-    </Link>
+    </div>
   )
 }

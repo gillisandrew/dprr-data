@@ -56,7 +56,15 @@ export function IdentityCard({ person }: { person: Person }) {
         {person.nomen && (
           <>
             <dt className="font-medium">Nomen</dt>
-            <dd>{person.nomen}</dd>
+            <dd>
+              <Link
+                to="/gentes/$slug"
+                params={{ slug: slugify(person.nomen) }}
+                className="hover:underline"
+              >
+                {person.nomen}
+              </Link>
+            </dd>
           </>
         )}
         {person.cognomen && (
