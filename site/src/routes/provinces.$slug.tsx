@@ -28,18 +28,17 @@ function ProvincePage() {
   const distinct = new Set(province.assertions.map((a) => a.personId)).size
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="font-heading text-3xl font-bold">{province.name}</h1>
-      <p className="mt-1 text-sm text-muted-foreground">
-        {province.assertions.length} recorded assignments held by {distinct}{" "}
-        persons, listed chronologically
-      </p>
-      <ol className="mt-6 space-y-2">
+      <header className="rule-lead pb-3">
+        <h1 className="font-heading text-3xl font-bold">{province.name}</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {province.assertions.length} recorded assignments held by {distinct}{" "}
+          persons, listed chronologically
+        </p>
+      </header>
+      <ol className="mt-2">
         {province.assertions.map((a, i) => (
-          <li
-            key={`${a.personId}-${i}`}
-            className="flex flex-wrap items-baseline gap-x-3 border-l-2 pl-4"
-          >
-            <span className="min-w-24 text-sm text-muted-foreground tabular-nums">
+          <li key={`${a.personId}-${i}`} className="ledger-row flex gap-3">
+            <span className="year-col text-sm">
               {a.dateStart !== null && a.dateEnd !== null ? (
                 a.dateStart === a.dateEnd ? (
                   <DateDisplay year={a.dateStart} />
@@ -52,15 +51,19 @@ function ProvincePage() {
                 "undated"
               )}
             </span>
-            <span className={a.isUncertain ? "italic" : undefined}>
-              <PersonLink id={a.personId} name={a.personName} />
-            </span>
-            {a.isUncertain && <span className="text-muted-foreground">?</span>}
-            {a.officeName && (
-              <span className="text-sm text-muted-foreground">
-                {a.officeName}
+            <span className="min-w-0 flex-1">
+              <span className={a.isUncertain ? "italic" : undefined}>
+                <PersonLink id={a.personId} name={a.personName} />
               </span>
-            )}
+              {a.isUncertain && (
+                <span className="text-muted-foreground">?</span>
+              )}
+              {a.officeName && (
+                <span className="ml-2 text-sm text-muted-foreground">
+                  {a.officeName}
+                </span>
+              )}
+            </span>
           </li>
         ))}
       </ol>

@@ -29,25 +29,24 @@ function OfficePage() {
   const distinct = new Set(office.holders.map((h) => h.personId)).size
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="font-heading text-3xl font-bold">
-        {office.name}
-        {office.abbreviation && (
-          <span className="ml-2 text-xl font-normal text-muted-foreground">
-            ({office.abbreviation})
-          </span>
-        )}
-      </h1>
-      <p className="mt-1 text-sm text-muted-foreground">
-        {office.holders.length} recorded tenures held by {distinct} persons,
-        listed chronologically
-      </p>
-      <ol className="mt-6 space-y-2">
+      <header className="rule-lead pb-3">
+        <h1 className="font-heading text-3xl font-bold">
+          {office.name}
+          {office.abbreviation && (
+            <span className="ml-2 text-xl font-normal text-muted-foreground">
+              ({office.abbreviation})
+            </span>
+          )}
+        </h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {office.holders.length} recorded tenures held by {distinct} persons,
+          listed chronologically
+        </p>
+      </header>
+      <ol className="mt-2">
         {office.holders.map((h, i) => (
-          <li
-            key={`${h.personId}-${i}`}
-            className="flex flex-wrap items-baseline gap-x-3 border-l-2 pl-4"
-          >
-            <span className="min-w-24 text-sm text-muted-foreground tabular-nums">
+          <li key={`${h.personId}-${i}`} className="ledger-row flex gap-3">
+            <span className="year-col text-sm">
               {h.dateStart !== null && h.dateEnd !== null ? (
                 h.dateStart === h.dateEnd ? (
                   <DateDisplay year={h.dateStart} />
@@ -60,14 +59,18 @@ function OfficePage() {
                 "undated"
               )}
             </span>
-            <span className={h.isUncertain ? "italic" : undefined}>
-              <PersonLink id={h.personId} name={h.personName} />
+            <span className="min-w-0 flex-1">
+              <span className={h.isUncertain ? "italic" : undefined}>
+                <PersonLink id={h.personId} name={h.personName} />
+              </span>
+              {h.isUncertain && (
+                <span className="text-muted-foreground">?</span>
+              )}
+              <SourceCitation
+                name={h.secondarySource}
+                className="ml-2 text-xs text-muted-foreground"
+              />
             </span>
-            {h.isUncertain && <span className="text-muted-foreground">?</span>}
-            <SourceCitation
-              name={h.secondarySource}
-              className="text-xs text-muted-foreground"
-            />
           </li>
         ))}
       </ol>

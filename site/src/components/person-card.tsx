@@ -1,11 +1,10 @@
 // site/src/components/person-card.tsx
 import { Link } from "@tanstack/react-router"
-import { Badge } from "@/components/ui/badge"
 import { EraRange } from "@/components/date-display"
 import { displayName } from "@/lib/order"
 import type { PersonSummary } from "@/data/types"
 
-/** Full card for search results — shows office, era, badges. */
+/** Two-line ledger row for tribe/gens member lists — office, era, status. */
 export function PersonCard({ person }: { person: PersonSummary }) {
   const name = displayName(person.name)
 
@@ -13,24 +12,28 @@ export function PersonCard({ person }: { person: PersonSummary }) {
     <Link
       to="/persons/$id"
       params={{ id: person.id }}
-      className="block rounded-md border p-3 transition-colors hover:bg-accent"
+      className="ledger-row group block px-1 transition-colors"
     >
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p className="truncate font-heading font-medium">{name}</p>
-          <p className="text-sm text-muted-foreground">
-            {person.highestOffice && <span>{person.highestOffice}</span>}
-            {person.highestOffice && (person.eraFrom || person.eraTo) && (
-              <span> · </span>
-            )}
-            <EraRange from={person.eraFrom} to={person.eraTo} />
-          </p>
-        </div>
-        <div className="flex shrink-0 gap-1">
-          {person.isPatrician && <Badge variant="secondary">Patrician</Badge>}
-          {person.isNobilis && <Badge variant="secondary">Nobilis</Badge>}
-        </div>
-      </div>
+      <p className="font-heading text-[0.95rem] leading-snug">
+        <span className="group-hover:text-primary">{name}</span>
+        {person.highestOffice && (
+          <span className="ml-2 font-sans text-sm text-primary">
+            — {person.highestOffice}
+          </span>
+        )}
+        {person.isPatrician && (
+          <span className="small-caps ml-2 text-muted-foreground">
+            patrician
+          </span>
+        )}
+        {person.isNobilis && (
+          <span className="small-caps ml-1 text-muted-foreground">nobilis</span>
+        )}
+      </p>
+      <p className="text-xs leading-snug text-muted-foreground">
+        {person.filiation && <span>{person.filiation} · </span>}
+        <EraRange from={person.eraFrom} to={person.eraTo} />
+      </p>
     </Link>
   )
 }

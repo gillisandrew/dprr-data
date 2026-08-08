@@ -20,28 +20,29 @@ function TribesPage() {
   const tribes = Route.useLoaderData()
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="font-heading text-3xl font-bold">Tribes</h1>
-      <p className="mt-1 text-sm text-muted-foreground">
-        {tribes.length} voting tribes with known members
-      </p>
-      <ul className="mt-6 space-y-1">
+      <header className="rule-lead pb-3">
+        <h1 className="font-heading text-3xl font-bold">Tribes</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {tribes.length} voting tribes with known members
+        </p>
+      </header>
+      <div className="mt-2">
         {tribes.map((t) => (
-          <li key={t.slug}>
-            <Link
-              to="/tribes/$slug"
-              params={{ slug: t.slug }}
-              className="group flex items-baseline justify-between gap-2 rounded px-2 py-1.5 hover:bg-accent"
-            >
-              <span className="font-medium group-hover:underline">
-                {t.name}
-              </span>
-              <span className="text-sm text-muted-foreground">
-                {t.memberCount}
-              </span>
-            </Link>
-          </li>
+          <Link
+            key={t.slug}
+            to="/tribes/$slug"
+            params={{ slug: t.slug }}
+            className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+          >
+            <span className="font-heading group-hover:text-primary">
+              {t.name}
+            </span>
+            <span className="text-sm text-muted-foreground">
+              {t.memberCount}
+            </span>
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }

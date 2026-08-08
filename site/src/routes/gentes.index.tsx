@@ -20,28 +20,29 @@ function GentesPage() {
   const gentes = Route.useLoaderData()
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="font-heading text-3xl font-bold">Gentes</h1>
-      <p className="mt-1 text-sm text-muted-foreground">
-        {gentes.length} gentes with known members
-      </p>
-      <ul className="mt-6 space-y-1">
+      <header className="rule-lead pb-3">
+        <h1 className="font-heading text-3xl font-bold">Gentes</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {gentes.length} gentes with known members
+        </p>
+      </header>
+      <div className="mt-2">
         {gentes.map((g) => (
-          <li key={g.slug}>
-            <Link
-              to="/gentes/$slug"
-              params={{ slug: g.slug }}
-              className="group flex items-baseline justify-between gap-2 rounded px-2 py-1.5 hover:bg-accent"
-            >
-              <span className="font-medium group-hover:underline">
-                {g.name}
-              </span>
-              <span className="text-sm text-muted-foreground">
-                {g.memberCount}
-              </span>
-            </Link>
-          </li>
+          <Link
+            key={g.slug}
+            to="/gentes/$slug"
+            params={{ slug: g.slug }}
+            className="ledger-row group flex items-baseline justify-between gap-2 px-1"
+          >
+            <span className="font-heading group-hover:text-primary">
+              {g.name}
+            </span>
+            <span className="text-sm text-muted-foreground">
+              {g.memberCount}
+            </span>
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
