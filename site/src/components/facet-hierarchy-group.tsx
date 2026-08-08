@@ -102,9 +102,15 @@ export function FacetHierarchyGroup({
             </span>
           </label>
         ) : (
-          <p className="pt-2 pb-0.5 text-xs font-semibold text-muted-foreground uppercase">
-            {node.name}
-          </p>
+          <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5 text-sm">
+            <Checkbox
+              checked={selected.includes(node.name)}
+              onCheckedChange={() => toggle(node.name)}
+            />
+            <span className="min-w-0 truncate text-xs font-semibold text-muted-foreground uppercase">
+              {node.name}
+            </span>
+          </label>
         )}
         {node.children.map((c) =>
           renderNode(c, node.count === null ? depth : depth + 1)
