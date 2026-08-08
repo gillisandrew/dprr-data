@@ -13,6 +13,12 @@ import { SiteFooter } from "@/components/site-footer"
 
 import appCss from "../styles.css?url"
 
+// Inline, blocking, and placed before HeadContent so it runs before any
+// stylesheet or paint on every prerendered page — avoids a flash of the
+// wrong theme. Keep in sync with theme-toggle.tsx's storage contract
+// ("theme": "light" | "dark" in localStorage).
+const noFlashThemeScript = `try{var t=localStorage.getItem("theme");var d=t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches);document.documentElement.classList.toggle("dark",d)}catch(e){}`
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -95,6 +101,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        {/* Raw script (not head()'s `scripts`) so it renders ahead of
+            HeadContent in the shell markup. */}
+        <script dangerouslySetInnerHTML={{ __html: noFlashThemeScript }} />
         <HeadContent />
       </head>
       <body>

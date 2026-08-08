@@ -1,5 +1,6 @@
 // site/src/components/site-header.tsx
 import { Link } from "@tanstack/react-router"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const links = [
   { to: "/offices", label: "Offices" },
@@ -25,6 +26,9 @@ export function SiteHeader() {
             {l.label}
           </Link>
         ))}
+        <div className="ml-auto self-center">
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   )
