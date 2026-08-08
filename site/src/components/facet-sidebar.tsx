@@ -62,14 +62,17 @@ export function FacetSidebar({
 
   return (
     <aside className="w-56 shrink-0 space-y-1">
-      {/* Tier 1 — always visible */}
+      {/* Tier 1 — always visible. Always open by default: per spec §1.2 the
+       * Tier-1 tree must be visible, and a deep link must never hide its
+       * own filters. */}
       <FacetHierarchyGroup
         title="Office"
         items={facets.office}
         parentOf={officeHierarchy}
         selected={state.office}
         onChange={(office) => onUpdate({ office })}
-        defaultOpen={initialFocus === "office"}
+        defaultOpen={true}
+        hideCounts={state.officeMode === "all" || state.officeInRange}
       />
 
       {/* Tier 2 — more filters */}

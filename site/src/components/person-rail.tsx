@@ -1,6 +1,7 @@
 // site/src/components/person-rail.tsx
 import { Link } from "@tanstack/react-router"
 import { slugify } from "@/lib/slug"
+import { displayName } from "@/lib/order"
 import { Badge } from "@/components/ui/badge"
 import { DateDisplay } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
@@ -17,13 +18,14 @@ export function groupRelationships(
     list.push(r)
     byType.set(r.relationshipType, list)
   }
-  const strip = (s: string) => s.replace(/^[A-Z]{4}\d+ /, "")
   return [...byType]
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([type, list]) => [
       type,
       [...list].sort((a, b) =>
-        strip(a.relatedPersonName).localeCompare(strip(b.relatedPersonName))
+        displayName(a.relatedPersonName).localeCompare(
+          displayName(b.relatedPersonName)
+        )
       ),
     ])
 }
@@ -145,9 +147,7 @@ export function FamilyCard({ person }: { person: Person }) {
                       name={rel.relatedPersonName}
                     />
                   ) : (
-                    <span>
-                      {rel.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
-                    </span>
+                    <span>{displayName(rel.relatedPersonName)}</span>
                   )}
                 </li>
               ))}

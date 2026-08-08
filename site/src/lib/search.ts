@@ -19,7 +19,20 @@ function joinFacetParam(values: string[]): string {
   return values.map((v) => encodeURIComponent(v)).join(",")
 }
 
-export function parseSearchParams(params: Record<string, string>): SearchState {
+export function parseSearchParams(
+  rawParams: Record<string, string>
+): SearchState {
+  // TanStack Router JSON-parses the search string, so a numeric-looking
+  // value like `?q=509` or a boolean-looking value like `?patrician=true`
+  // arrives here as an actual number/boolean, not a string — coerce
+  // everything to string up front so `.trim()` and the `=== "true"` checks
+  // below don't crash or silently mis-parse. null/undefined are dropped
+  // rather than coerced to the strings "null"/"undefined".
+  const params = Object.fromEntries(
+    Object.entries(rawParams)
+      .filter(([, v]) => v !== null && v !== undefined)
+      .map(([k, v]) => [k, String(v)])
+  ) as Record<string, string>
   return {
     q: params.q ?? "",
     office: splitFacetParam(params.office),
@@ -111,7 +124,10 @@ export function orderByQueryRank<T extends { id: string }>(
     .sort((a, b) => rank.get(a.id)! - rank.get(b.id)!)
 }
 
-function computeFacetValues(
+/** Exported for tests — tie-broken alphabetically so equal-count facet
+ * values render in a stable, predictable order rather than Map iteration
+ * order. */
+export function computeFacetValues(
   persons: PersonSummary[],
   field: keyof PersonSummary
 ): FacetValue[] {
@@ -128,7 +144,7 @@ function computeFacetValues(
   }
   return [...counts]
     .map(([value, count]) => ({ value, count }))
-    .sort((a, b) => b.count - a.count)
+    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
 }
 
 export function useSearchState(bundle: SearchDataBundle) {

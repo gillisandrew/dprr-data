@@ -19,6 +19,11 @@ interface FacetHierarchyGroupProps {
   selected: string[]
   onChange: (values: string[]) => void
   defaultOpen?: boolean
+  /** Suppress the per-value result counts — used when the counts wouldn't
+   * predict what clicking a value actually delivers (e.g. AND-mode or
+   * in-range office filtering, where counts are computed disjunctively but
+   * the applied filter is conjunctive). */
+  hideCounts?: boolean
 }
 
 interface TreeNode {
@@ -68,6 +73,7 @@ export function FacetHierarchyGroup({
   selected,
   onChange,
   defaultOpen = true,
+  hideCounts = false,
 }: FacetHierarchyGroupProps) {
   const [open, setOpen] = useState(defaultOpen)
   const [filter, setFilter] = useState("")
@@ -97,9 +103,11 @@ export function FacetHierarchyGroup({
               onCheckedChange={() => toggle(node.name)}
             />
             <span className="min-w-0 truncate">{node.name}</span>
-            <span className="ml-auto text-xs text-muted-foreground">
-              {node.count}
-            </span>
+            {!hideCounts && (
+              <span className="ml-auto text-xs text-muted-foreground">
+                {node.count}
+              </span>
+            )}
           </label>
         ) : (
           <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5 text-sm">
@@ -148,9 +156,11 @@ export function FacetHierarchyGroup({
                   onCheckedChange={() => toggle(i.value)}
                 />
                 <span className="min-w-0 truncate">{i.value}</span>
-                <span className="ml-auto text-xs text-muted-foreground">
-                  {i.count}
-                </span>
+                {!hideCounts && (
+                  <span className="ml-auto text-xs text-muted-foreground">
+                    {i.count}
+                  </span>
+                )}
               </label>
             ))
           : tree.map((n) => renderNode(n, 0))}

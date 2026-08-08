@@ -2,6 +2,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router"
 import { getPersonById } from "@/server/data"
 import { slugify } from "@/lib/slug"
+import { displayName } from "@/lib/order"
 import { SITE_URL } from "@/lib/site"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
@@ -24,14 +25,14 @@ export const Route = createFileRoute("/persons/$id")({
   loader: ({ params }) => getPersonById({ data: params.id }),
   head: ({ loaderData: person }) => {
     if (!person) return {}
-    const displayName = person.name.replace(/^[A-Z]{4}\d+ /, "")
+    const name = displayName(person.name)
     const desc = [person.highestOffice, person.isPatrician ? "Patrician" : null]
       .filter(Boolean)
       .join(" · ")
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Person",
-      name: displayName,
+      name,
       ...(person.otherNames ? { alternateName: person.otherNames } : {}),
       gender: person.sex,
       ...(desc ? { description: desc } : {}),
@@ -43,9 +44,9 @@ export const Route = createFileRoute("/persons/$id")({
     }
     return {
       meta: [
-        { title: `${displayName} (${person.id}) — DPRR` },
+        { title: `${name} (${person.id}) — DPRR` },
         { name: "description", content: desc },
-        { property: "og:title", content: `${displayName} — DPRR` },
+        { property: "og:title", content: `${name} — DPRR` },
         { property: "og:description", content: desc },
         { property: "og:type", content: "profile" },
       ],
@@ -59,7 +60,7 @@ export const Route = createFileRoute("/persons/$id")({
 
 function PersonPage() {
   const person = Route.useLoaderData()
-  const displayName = person.name.replace(/^[A-Z]{4}\d+ /, "")
+  const name = displayName(person.name)
   const sortedNotes = [...person.personNotes].sort((a, b) =>
     a.type.localeCompare(b.type)
   )
@@ -67,7 +68,7 @@ function PersonPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
       <header className="mb-6">
-        <h1 className="font-heading text-3xl font-bold">{displayName}</h1>
+        <h1 className="font-heading text-3xl font-bold">{name}</h1>
         <p className="mt-1 text-lg text-muted-foreground">
           <EraRange from={person.eraFrom} to={person.eraTo} />
           {person.highestOffice && <span> · {person.highestOffice}</span>}
@@ -260,9 +261,7 @@ function RelationshipEntry({ relationship }: { relationship: Relationship }) {
             name={relationship.relatedPersonName}
           />
         ) : (
-          <span>
-            {relationship.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
-          </span>
+          <span>{displayName(relationship.relatedPersonName)}</span>
         )}
         <SourceCitation
           name={relationship.secondarySource}

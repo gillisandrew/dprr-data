@@ -4,7 +4,33 @@ import {
   toSearchParams,
   orderByQueryRank,
   normalizeState,
+  computeFacetValues,
 } from "./search"
+import type { PersonSummary } from "@/data/types"
+
+function makeSummary(over: Partial<PersonSummary>): PersonSummary {
+  return {
+    id: "TEST0001",
+    name: "TEST0001 T. Testius",
+    praenomen: "Titus",
+    nomen: "Testius",
+    cognomen: null,
+    otherNames: null,
+    sex: "Male",
+    isPatrician: false,
+    isNobilis: false,
+    highestOffice: null,
+    eraFrom: null,
+    eraTo: null,
+    tribes: [],
+    offices: [],
+    provinces: [],
+    reNumber: null,
+    filiation: null,
+    lifeEvents: [],
+    ...over,
+  }
+}
 
 describe("search param round-trip", () => {
   test("province parses from comma-separated param", () => {
@@ -77,6 +103,46 @@ describe("advanced params round-trip", () => {
 
   test("unknown sort values parse as null", () => {
     expect(parseSearchParams({ sort: "bogus" }).sort).toBeNull()
+  })
+})
+
+describe("parseSearchParams coerces non-string values", () => {
+  // TanStack Router JSON-parses the search string, so `?q=509` arrives here
+  // as the number 509, not the string "509" — parseSearchParams used to
+  // call `.trim()` on it directly and crash.
+  test("a numeric-looking q param doesn't crash and parses as a string", () => {
+    expect(parseSearchParams({ q: 509 as unknown as string }).q).toBe("509")
+  })
+
+  test("a boolean patrician param parses as boolean true", () => {
+    expect(
+      parseSearchParams({ patrician: true as unknown as string }).patrician
+    ).toBe(true)
+  })
+
+  test("null/undefined values are omitted rather than coerced to strings", () => {
+    const state = parseSearchParams({
+      q: null as unknown as string,
+      nomen: undefined as unknown as string,
+    })
+    expect(state.q).toBe("")
+    expect(state.nomen).toEqual([])
+  })
+})
+
+describe("computeFacetValues", () => {
+  test("sorts by count descending, then alphabetically for ties", () => {
+    const persons = [
+      makeSummary({ id: "A", offices: ["consul"] }),
+      makeSummary({ id: "B", offices: ["praetor"] }),
+      makeSummary({ id: "C", offices: ["aedile"] }),
+      makeSummary({ id: "D", offices: ["consul"] }),
+    ]
+    expect(computeFacetValues(persons, "offices")).toEqual([
+      { value: "consul", count: 2 },
+      { value: "aedile", count: 1 },
+      { value: "praetor", count: 1 },
+    ])
   })
 })
 
