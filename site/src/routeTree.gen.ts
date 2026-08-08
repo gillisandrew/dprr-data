@@ -9,41 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as DirectoryRouteImport } from './routes/directory'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as TribesIndexRouteImport } from './routes/tribes.index'
-import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
-import { Route as OfficesIndexRouteImport } from './routes/offices.index'
+import { Route as DirectoryRouteImport } from './routes/directory'
 import { Route as GentesIndexRouteImport } from './routes/gentes.index'
-import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
-import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
-import { Route as PersonsIdRouteImport } from './routes/persons.$id'
-import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 import { Route as GentesSlugRouteImport } from './routes/gentes.$slug'
+import { Route as OfficesIndexRouteImport } from './routes/offices.index'
+import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
+import { Route as PersonsIdRouteImport } from './routes/persons.$id'
+import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
+import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
+import { Route as TribesIndexRouteImport } from './routes/tribes.index'
+import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
 
-const DirectoryRoute = DirectoryRouteImport.update({
-  id: '/directory',
-  path: '/directory',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TribesIndexRoute = TribesIndexRouteImport.update({
-  id: '/tribes/',
-  path: '/tribes/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProvincesIndexRoute = ProvincesIndexRouteImport.update({
-  id: '/provinces/',
-  path: '/provinces/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OfficesIndexRoute = OfficesIndexRouteImport.update({
-  id: '/offices/',
-  path: '/offices/',
+const DirectoryRoute = DirectoryRouteImport.update({
+  id: '/directory',
+  path: '/directory',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GentesIndexRoute = GentesIndexRouteImport.update({
@@ -51,19 +36,14 @@ const GentesIndexRoute = GentesIndexRouteImport.update({
   path: '/gentes/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TribesSlugRoute = TribesSlugRouteImport.update({
-  id: '/tribes/$slug',
-  path: '/tribes/$slug',
+const GentesSlugRoute = GentesSlugRouteImport.update({
+  id: '/gentes/$slug',
+  path: '/gentes/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProvincesSlugRoute = ProvincesSlugRouteImport.update({
-  id: '/provinces/$slug',
-  path: '/provinces/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PersonsIdRoute = PersonsIdRouteImport.update({
-  id: '/persons/$id',
-  path: '/persons/$id',
+const OfficesIndexRoute = OfficesIndexRouteImport.update({
+  id: '/offices/',
+  path: '/offices/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OfficesSlugRoute = OfficesSlugRouteImport.update({
@@ -71,9 +51,29 @@ const OfficesSlugRoute = OfficesSlugRouteImport.update({
   path: '/offices/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GentesSlugRoute = GentesSlugRouteImport.update({
-  id: '/gentes/$slug',
-  path: '/gentes/$slug',
+const PersonsIdRoute = PersonsIdRouteImport.update({
+  id: '/persons/$id',
+  path: '/persons/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProvincesIndexRoute = ProvincesIndexRouteImport.update({
+  id: '/provinces/',
+  path: '/provinces/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProvincesSlugRoute = ProvincesSlugRouteImport.update({
+  id: '/provinces/$slug',
+  path: '/provinces/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TribesIndexRoute = TribesIndexRouteImport.update({
+  id: '/tribes/',
+  path: '/tribes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TribesSlugRoute = TribesSlugRouteImport.update({
+  id: '/tribes/$slug',
+  path: '/tribes/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -175,13 +175,6 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/directory': {
-      id: '/directory'
-      path: '/directory'
-      fullPath: '/directory'
-      preLoaderRoute: typeof DirectoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -189,25 +182,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tribes/': {
-      id: '/tribes/'
-      path: '/tribes'
-      fullPath: '/tribes/'
-      preLoaderRoute: typeof TribesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/provinces/': {
-      id: '/provinces/'
-      path: '/provinces'
-      fullPath: '/provinces/'
-      preLoaderRoute: typeof ProvincesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/offices/': {
-      id: '/offices/'
-      path: '/offices'
-      fullPath: '/offices/'
-      preLoaderRoute: typeof OfficesIndexRouteImport
+    '/directory': {
+      id: '/directory'
+      path: '/directory'
+      fullPath: '/directory'
+      preLoaderRoute: typeof DirectoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gentes/': {
@@ -217,25 +196,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GentesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tribes/$slug': {
-      id: '/tribes/$slug'
-      path: '/tribes/$slug'
-      fullPath: '/tribes/$slug'
-      preLoaderRoute: typeof TribesSlugRouteImport
+    '/gentes/$slug': {
+      id: '/gentes/$slug'
+      path: '/gentes/$slug'
+      fullPath: '/gentes/$slug'
+      preLoaderRoute: typeof GentesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/provinces/$slug': {
-      id: '/provinces/$slug'
-      path: '/provinces/$slug'
-      fullPath: '/provinces/$slug'
-      preLoaderRoute: typeof ProvincesSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/persons/$id': {
-      id: '/persons/$id'
-      path: '/persons/$id'
-      fullPath: '/persons/$id'
-      preLoaderRoute: typeof PersonsIdRouteImport
+    '/offices/': {
+      id: '/offices/'
+      path: '/offices'
+      fullPath: '/offices/'
+      preLoaderRoute: typeof OfficesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/offices/$slug': {
@@ -245,11 +217,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OfficesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/gentes/$slug': {
-      id: '/gentes/$slug'
-      path: '/gentes/$slug'
-      fullPath: '/gentes/$slug'
-      preLoaderRoute: typeof GentesSlugRouteImport
+    '/persons/$id': {
+      id: '/persons/$id'
+      path: '/persons/$id'
+      fullPath: '/persons/$id'
+      preLoaderRoute: typeof PersonsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/provinces/': {
+      id: '/provinces/'
+      path: '/provinces'
+      fullPath: '/provinces/'
+      preLoaderRoute: typeof ProvincesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/provinces/$slug': {
+      id: '/provinces/$slug'
+      path: '/provinces/$slug'
+      fullPath: '/provinces/$slug'
+      preLoaderRoute: typeof ProvincesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tribes/': {
+      id: '/tribes/'
+      path: '/tribes'
+      fullPath: '/tribes/'
+      preLoaderRoute: typeof TribesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tribes/$slug': {
+      id: '/tribes/$slug'
+      path: '/tribes/$slug'
+      fullPath: '/tribes/$slug'
+      preLoaderRoute: typeof TribesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

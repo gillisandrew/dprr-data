@@ -2,12 +2,14 @@ import { defineConfig } from "vite-plus"
 import { devtools } from "@tanstack/devtools-vite"
 import { tanstackStart } from "@tanstack/react-start/plugin/vite"
 import viteReact from "@vitejs/plugin-react"
-import viteTsConfigPaths from "vite-tsconfig-paths"
 import tailwindcss from "@tailwindcss/vite"
 import { searchDataPlugin } from "./src/build/search-data-plugin.ts"
 
 const config = defineConfig({
   base: "/dprr-data/",
+  // Vite resolves the `@/*` alias from tsconfig.json natively; the
+  // vite-tsconfig-paths plugin is no longer needed.
+  resolve: { tsconfigPaths: true },
   lint: { options: { typeAware: true, typeCheck: true } },
   fmt: {
     endOfLine: "lf",
@@ -31,10 +33,6 @@ const config = defineConfig({
   plugins: [
     searchDataPlugin(),
     devtools(),
-    // this is the plugin that enables path aliases
-    viteTsConfigPaths({
-      projects: ["./tsconfig.json"],
-    }),
     tailwindcss(),
     tanstackStart({
       prerender: {
