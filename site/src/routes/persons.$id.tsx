@@ -12,8 +12,13 @@ import {
 } from "@/components/ui/collapsible"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
-import { IdentityCard, PersonRail } from "@/components/person-rail"
-import type { PostAssertion, Note } from "@/data/types"
+import { PersonLink } from "@/components/person-card"
+import {
+  IdentityCard,
+  PersonRail,
+  groupRelationships,
+} from "@/components/person-rail"
+import type { PostAssertion, Note, Relationship } from "@/data/types"
 
 export const Route = createFileRoute("/persons/$id")({
   loader: ({ params }) => getPersonById({ data: params.id }),
@@ -91,6 +96,27 @@ function PersonPage() {
                 {person.postAssertions.map((pa) => (
                   <OfficeEntry key={pa.id} assertion={pa} />
                 ))}
+              </div>
+            </Section>
+          )}
+
+          {person.relationships.length > 0 && (
+            <Section title="Relationships" count={person.relationships.length}>
+              <div className="space-y-4">
+                {groupRelationships(person.relationships).map(
+                  ([type, rels]) => (
+                    <div key={type}>
+                      <p className="text-xs font-medium text-muted-foreground capitalize">
+                        {type}
+                      </p>
+                      <div className="mt-1 space-y-2">
+                        {rels.map((rel) => (
+                          <RelationshipEntry key={rel.id} relationship={rel} />
+                        ))}
+                      </div>
+                    </div>
+                  )
+                )}
               </div>
             </Section>
           )}
@@ -214,6 +240,50 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
                 </p>
               </div>
             ))}
+          </CollapsibleContent>
+        </Collapsible>
+      )}
+    </div>
+  )
+}
+
+function RelationshipEntry({ relationship }: { relationship: Relationship }) {
+  return (
+    <div className="text-sm">
+      <p>
+        <span className="text-muted-foreground capitalize">
+          {relationship.relationshipType}
+        </span>{" "}
+        {relationship.relatedPersonId ? (
+          <PersonLink
+            id={relationship.relatedPersonId}
+            name={relationship.relatedPersonName}
+          />
+        ) : (
+          <span>
+            {relationship.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
+          </span>
+        )}
+        <SourceCitation
+          name={relationship.secondarySource}
+          className="ml-1 text-xs text-muted-foreground"
+        />
+      </p>
+      {relationship.references.length > 0 && (
+        <Collapsible>
+          <CollapsibleTrigger className="mt-1 text-xs text-muted-foreground hover:underline">
+            {relationship.references.length} reference
+            {relationship.references.length === 1 ? "" : "s"} ▸
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            {relationship.references.map((ref, i) =>
+              ref.extraInfo || ref.secondarySource ? (
+                <p key={i} className="mt-1 text-xs text-muted-foreground">
+                  {ref.extraInfo && <>{ref.extraInfo} </>}
+                  <SourceCitation name={ref.secondarySource} />
+                </p>
+              ) : null
+            )}
           </CollapsibleContent>
         </Collapsible>
       )}

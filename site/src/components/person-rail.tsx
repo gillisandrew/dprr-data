@@ -8,7 +8,9 @@ import { PersonLink } from "@/components/person-card"
 import type { Person, Relationship, DateInfo, Concordance } from "@/data/types"
 
 /** Groups relationships by type (alphabetical), people by display name within. */
-function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
+export function groupRelationships(
+  rels: Relationship[]
+): [string, Relationship[]][] {
   const byType = new Map<string, Relationship[]>()
   for (const r of rels) {
     const list = byType.get(r.relationshipType) ?? []
@@ -125,36 +127,15 @@ export function FamilyCard({ person }: { person: Person }) {
             <ul className="mt-1 space-y-1">
               {rels.map((rel) => (
                 <li key={rel.id} className="text-sm">
-                  <div>
-                    {rel.relatedPersonId ? (
-                      <PersonLink
-                        id={rel.relatedPersonId}
-                        name={rel.relatedPersonName}
-                      />
-                    ) : (
-                      <span>
-                        {rel.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
-                      </span>
-                    )}
-                    <SourceCitation
-                      name={rel.secondarySource}
-                      className="ml-1 text-[10px] text-muted-foreground"
+                  {rel.relatedPersonId ? (
+                    <PersonLink
+                      id={rel.relatedPersonId}
+                      name={rel.relatedPersonName}
                     />
-                  </div>
-                  {rel.references.length > 0 && (
-                    <ul className="mt-0.5 ml-3 space-y-0.5">
-                      {rel.references.map((ref, i) =>
-                        ref.extraInfo || ref.secondarySource ? (
-                          <li
-                            key={i}
-                            className="text-[10px] text-muted-foreground"
-                          >
-                            {ref.extraInfo && <>{ref.extraInfo} </>}
-                            <SourceCitation name={ref.secondarySource} />
-                          </li>
-                        ) : null
-                      )}
-                    </ul>
+                  ) : (
+                    <span>
+                      {rel.relatedPersonName.replace(/^[A-Z]{4}\d+ /, "")}
+                    </span>
                   )}
                 </li>
               ))}
