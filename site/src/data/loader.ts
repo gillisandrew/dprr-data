@@ -68,6 +68,33 @@ async function loadConcordances(): Promise<Map<string, Concordance[]>> {
   return merged
 }
 
+/** Score a person record by how much data it carries, most-significant field first. */
+function richness(p: Person): number {
+  return (
+    p.postAssertions.length * 1000 +
+    p.relationships.length +
+    p.dateInformation.length +
+    p.personNotes.length
+  )
+}
+
+/**
+ * Deduplicate persons parsed from multiple TTL files (a person can appear
+ * as a related-person stub in relatives' files). Keeps the richest record
+ * per ID, then sorts by ID.
+ */
+export function dedupePersons(persons: Person[]): Person[] {
+  const byId = new Map<string, Person>()
+  for (const p of persons) {
+    const existing = byId.get(p.id)
+    if (!existing || richness(p) > richness(existing)) {
+      byId.set(p.id, p)
+    }
+  }
+
+  return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id))
+}
+
 export function loadAllData(): Promise<{
   persons: Person[]
   refs: ReferenceMaps
@@ -117,17 +144,7 @@ async function loadAllDataUncached(): Promise<{
     allPersons.push(...persons)
   }
 
-  // Deduplicate by DPRR ID (a person can appear in multiple files as
-  // a related person stub — keep the one with the matching filename/most data)
-  const byId = new Map<string, Person>()
-  for (const p of allPersons) {
-    const existing = byId.get(p.id)
-    if (!existing || p.postAssertions.length > existing.postAssertions.length) {
-      byId.set(p.id, p)
-    }
-  }
-
-  const persons = [...byId.values()].sort((a, b) => a.id.localeCompare(b.id))
+  const persons = dedupePersons(allPersons)
 
   // 4. Second pass: resolve cross-file relationship references.
   // Relationships may point to persons in other TTL files whose
