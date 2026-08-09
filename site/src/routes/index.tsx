@@ -1,7 +1,8 @@
 // site/src/routes/index.tsx
 import { useEffect, useReducer, useState } from "react"
 import { createFileRoute } from "@tanstack/react-router"
-import { parseSearchParams, toSearchParams, useSearchState } from "@/lib/search"
+import { parseSearchParams, toSearchParams } from "@/lib/search-params"
+import { useSearchState } from "@/lib/search"
 import { useSearchData, type SearchDataBundle } from "@/lib/use-search-data"
 import {
   landingBufferReducer,

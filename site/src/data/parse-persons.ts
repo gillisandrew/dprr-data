@@ -1,6 +1,7 @@
 // site/src/data/parse-persons.ts
-import { Parser } from "n3"
 import { mapProvinceText } from "./province-mapping"
+import { DPRR, all, first, firstNum, groupSubjects } from "./ttl"
+import type { QuadGroup } from "./ttl"
 import type {
   Person,
   PostAssertion,
@@ -13,8 +14,6 @@ import type {
   ReferenceMaps,
 } from "./types"
 
-const DPRR = "http://romanrepublic.ac.uk/rdf/ontology#"
-const RDF_TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
 const PERSON_TYPE = `${DPRR}Person`
 const POST_ASSERTION_TYPE = `${DPRR}PostAssertion`
 const POST_ASSERTION_NOTE_TYPE = `${DPRR}PostAssertionNote`
@@ -26,49 +25,6 @@ const PERSON_NOTE_TYPE = `${DPRR}PersonNote`
 const PRIMARY_SOURCE_REF_TYPE = `${DPRR}PrimarySourceReference`
 const PERSON_PREFIX = "http://romanrepublic.ac.uk/rdf/entity/Person/"
 
-interface QuadGroup {
-  type: string | null
-  props: Map<string, string[]>
-}
-
-function groupBySubject(
-  quads: {
-    subject: { value: string }
-    predicate: { value: string }
-    object: { value: string }
-  }[]
-): Map<string, QuadGroup> {
-  const map = new Map<string, QuadGroup>()
-  for (const q of quads) {
-    const subj = q.subject.value
-    if (!map.has(subj)) map.set(subj, { type: null, props: new Map() })
-    const entry = map.get(subj)!
-    if (q.predicate.value === RDF_TYPE) {
-      entry.type = q.object.value
-    } else {
-      const pred = q.predicate.value
-      if (!entry.props.has(pred)) entry.props.set(pred, [])
-      entry.props.get(pred)!.push(q.object.value)
-    }
-  }
-  return map
-}
-
-function first(group: QuadGroup, pred: string): string | null {
-  return group.props.get(`${DPRR}${pred}`)?.[0] ?? null
-}
-
-function firstNum(group: QuadGroup, pred: string): number | null {
-  const v = first(group, pred)
-  if (v === null) return null
-  const n = Number(v)
-  return Number.isNaN(n) ? null : n
-}
-
-function all(group: QuadGroup, pred: string): string[] {
-  return group.props.get(`${DPRR}${pred}`) ?? []
-}
-
 /**
  * Parse a person TTL file and return fully resolved Person records.
  * A single TTL file may contain multiple Person entities (e.g., a related
@@ -79,9 +35,7 @@ export function parsePersonTtl(
   refs: ReferenceMaps,
   concordanceMap: Map<string, Concordance[]>
 ): Person[] {
-  const parser = new Parser()
-  const quads = parser.parse(ttl)
-  const grouped = groupBySubject(quads)
+  const grouped = groupSubjects(ttl)
 
   // Collect auxiliary entities by type
   const postAssertionGroups = new Map<string, QuadGroup>()
@@ -132,17 +86,21 @@ export function parsePersonTtl(
     return refs.sources.get(uri)?.name ?? uri
   }
 
-  // Build PostAssertionNote from a note URI
-  function buildPANote(noteUri: string): PostAssertionNote | null {
-    const g = postAssertionNoteGroups.get(noteUri)
-    if (!g) return null
+  // Shared shape of PersonNote and PostAssertionNote entities
+  function buildNoteFields(g: QuadGroup): Note {
     const noteTypeUri = first(g, "hasNoteType")
     return {
       type: (noteTypeUri && refs.noteTypes.get(noteTypeUri)) ?? "",
       text: first(g, "hasNoteText") ?? "",
       secondarySource: resolveSource(first(g, "hasSecondarySourceForNote")),
-      extraInfo: first(g, "hasExtraInfo"),
     }
+  }
+
+  // Build PostAssertionNote from a note URI
+  function buildPANote(noteUri: string): PostAssertionNote | null {
+    const g = postAssertionNoteGroups.get(noteUri)
+    if (!g) return null
+    return { ...buildNoteFields(g), extraInfo: first(g, "hasExtraInfo") }
   }
 
   // Build PostAssertions for a person URI
@@ -286,13 +244,7 @@ export function parsePersonTtl(
     return noteUris
       .map((uri) => {
         const g = personNoteGroups.get(uri)
-        if (!g) return null
-        const noteTypeUri = first(g, "hasNoteType")
-        return {
-          type: (noteTypeUri && refs.noteTypes.get(noteTypeUri)) ?? "",
-          text: first(g, "hasNoteText") ?? "",
-          secondarySource: resolveSource(first(g, "hasSecondarySourceForNote")),
-        }
+        return g ? buildNoteFields(g) : null
       })
       .filter((n): n is Note => n !== null)
   }

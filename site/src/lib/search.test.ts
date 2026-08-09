@@ -2,10 +2,9 @@ import { expect, test, describe } from "vite-plus/test"
 import {
   parseSearchParams,
   toSearchParams,
-  orderByQueryRank,
   normalizeState,
-  computeFacetValues,
-} from "./search"
+} from "./search-params"
+import { orderByQueryRank, computeFacetValues } from "./search"
 import type { PersonSummary } from "@/data/types"
 
 function makeSummary(over: Partial<PersonSummary>): PersonSummary {

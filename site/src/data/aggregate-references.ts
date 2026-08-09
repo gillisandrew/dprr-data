@@ -68,6 +68,17 @@ function dateKey(dateStart: number | null, dateEnd: number | null): number {
   return dateStart ?? dateEnd ?? Number.MAX_SAFE_INTEGER
 }
 
+/** Chronological order, ties broken by person name. */
+function byDateThenName(
+  a: { dateStart: number | null; dateEnd: number | null; personName: string },
+  b: { dateStart: number | null; dateEnd: number | null; personName: string }
+): number {
+  return (
+    dateKey(a.dateStart, a.dateEnd) - dateKey(b.dateStart, b.dateEnd) ||
+    a.personName.localeCompare(b.personName)
+  )
+}
+
 function assertUniqueSlugs(names: Iterable<string>, kind: string): void {
   const seen = new Map<string, string>()
   for (const name of names) {
@@ -162,11 +173,7 @@ export function buildOfficeDetail(
     }
   }
   if (officeName === null) return null
-  holders.sort(
-    (a, b) =>
-      dateKey(a.dateStart, a.dateEnd) - dateKey(b.dateStart, b.dateEnd) ||
-      a.personName.localeCompare(b.personName)
-  )
+  holders.sort(byDateThenName)
   return { slug, name: officeName, abbreviation, holders }
 }
 
@@ -335,10 +342,6 @@ export function buildProvinceDetail(
     }
   }
   if (provinceName === null) return null
-  assertions.sort(
-    (a, b) =>
-      dateKey(a.dateStart, a.dateEnd) - dateKey(b.dateStart, b.dateEnd) ||
-      a.personName.localeCompare(b.personName)
-  )
+  assertions.sort(byDateThenName)
   return { slug, name: provinceName, assertions }
 }

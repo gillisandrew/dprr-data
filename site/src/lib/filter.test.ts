@@ -1,6 +1,6 @@
 import { expect, test, describe } from "vite-plus/test"
 import { descendantSet, matchesFacets, type FilterContext } from "./filter"
-import { parseSearchParams } from "./search"
+import { parseSearchParams } from "./search-params"
 import type { PersonSummary } from "@/data/types"
 
 const parentOf = {

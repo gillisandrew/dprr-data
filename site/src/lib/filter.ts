@@ -77,82 +77,87 @@ function assertionMatches(
   return false
 }
 
+/** Empty selection matches everyone; otherwise the value must be selected. */
+function matchesSelection(selected: string[], value: string): boolean {
+  return selected.length === 0 || selected.includes(value)
+}
+
+/** Empty selection matches everyone; a person with no cognomen never matches. */
+function matchesCognomen(selected: string[], cognomen: string | null): boolean {
+  if (selected.length === 0) return true
+  return !!cognomen && selected.includes(cognomen)
+}
+
+/** Empty selection matches everyone; otherwise any person value must be selected. */
+function matchesAnySelection(selected: string[], values: string[]): boolean {
+  return selected.length === 0 || selected.some((v) => values.includes(v))
+}
+
+/** null = facet not active. */
+function matchesFlag(selected: boolean | null, value: boolean): boolean {
+  return selected === null || value === selected
+}
+
+function matchesReNumber(query: string, reNumber: string | null): boolean {
+  return !query || (reNumber ?? "").toLowerCase().includes(query.toLowerCase())
+}
+
+/** The person's attested era must overlap the selected [from, to] range. */
+function matchesEra(
+  person: PersonSummary,
+  from: number | null,
+  to: number | null
+): boolean {
+  if (from !== null && (person.eraTo === null || person.eraTo < from))
+    return false
+  if (to !== null && (person.eraFrom === null || person.eraFrom > to))
+    return false
+  return true
+}
+
+function matchesOffices(
+  person: PersonSummary,
+  state: SearchState,
+  ctx: FilterContext,
+  inRangeMode: boolean
+): boolean {
+  if (state.office.length === 0) return true
+  const sets = officeSelectionSets(state.office, ctx.parentOf)
+  let check: (set: Set<string>) => boolean
+  if (inRangeMode) {
+    const tuples = ctx.careers[person.id] ?? []
+    check = (set) =>
+      assertionMatches(set, tuples, ctx.officeNames, state.eraFrom, state.eraTo)
+  } else {
+    check = (set) => intersects(set, person.offices)
+  }
+  return state.officeMode === "all" ? sets.every(check) : sets.some(check)
+}
+
 export function matchesFacets(
   person: PersonSummary,
   state: SearchState,
   ctx: FilterContext
 ): boolean {
+  // In-range mode scopes the era filter to the selected offices' dates
+  // (handled inside matchesOffices) instead of the person's overall era.
   const inRangeMode =
     state.officeInRange &&
     state.office.length > 0 &&
     (state.eraFrom !== null || state.eraTo !== null)
 
-  if (state.office.length > 0) {
-    const sets = officeSelectionSets(state.office, ctx.parentOf)
-    if (inRangeMode) {
-      const tuples = ctx.careers[person.id] ?? []
-      const check = (set: Set<string>) =>
-        assertionMatches(
-          set,
-          tuples,
-          ctx.officeNames,
-          state.eraFrom,
-          state.eraTo
-        )
-      if (state.officeMode === "all" ? !sets.every(check) : !sets.some(check))
-        return false
-    } else {
-      const check = (set: Set<string>) => intersects(set, person.offices)
-      if (state.officeMode === "all" ? !sets.every(check) : !sets.some(check))
-        return false
-    }
-  }
-
-  if (state.nomen.length > 0 && !state.nomen.includes(person.nomen))
-    return false
-  if (state.sex.length > 0 && !state.sex.includes(person.sex)) return false
-  if (state.patrician !== null && person.isPatrician !== state.patrician)
-    return false
-  if (state.nobilis !== null && person.isNobilis !== state.nobilis) return false
-  if (
-    state.tribe.length > 0 &&
-    !state.tribe.some((t) => person.tribes.includes(t))
+  return (
+    matchesOffices(person, state, ctx, inRangeMode) &&
+    matchesSelection(state.nomen, person.nomen) &&
+    matchesSelection(state.sex, person.sex) &&
+    matchesFlag(state.patrician, person.isPatrician) &&
+    matchesFlag(state.nobilis, person.isNobilis) &&
+    matchesAnySelection(state.tribe, person.tribes) &&
+    matchesAnySelection(state.province, person.provinces) &&
+    matchesAnySelection(state.event, person.lifeEvents) &&
+    matchesSelection(state.praenomen, person.praenomen) &&
+    matchesCognomen(state.cognomen, person.cognomen) &&
+    matchesReNumber(state.re, person.reNumber) &&
+    (inRangeMode || matchesEra(person, state.eraFrom, state.eraTo))
   )
-    return false
-  if (
-    state.province.length > 0 &&
-    !state.province.some((pr) => person.provinces.includes(pr))
-  )
-    return false
-  if (
-    state.event.length > 0 &&
-    !state.event.some((e) => person.lifeEvents.includes(e))
-  )
-    return false
-  if (state.praenomen.length > 0 && !state.praenomen.includes(person.praenomen))
-    return false
-  if (
-    state.cognomen.length > 0 &&
-    (!person.cognomen || !state.cognomen.includes(person.cognomen))
-  )
-    return false
-  if (
-    state.re &&
-    !(person.reNumber ?? "").toLowerCase().includes(state.re.toLowerCase())
-  )
-    return false
-
-  if (!inRangeMode) {
-    if (
-      state.eraFrom !== null &&
-      (person.eraTo === null || person.eraTo < state.eraFrom)
-    )
-      return false
-    if (
-      state.eraTo !== null &&
-      (person.eraFrom === null || person.eraFrom > state.eraTo)
-    )
-      return false
-  }
-  return true
 }
