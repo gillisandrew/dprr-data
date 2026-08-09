@@ -25,6 +25,7 @@ export function FastiRow({ person }: { person: PersonSummary }) {
         )}
       </p>
       <p className="text-xs leading-snug text-muted-foreground">
+        {person.contextLine && <span>{person.contextLine} · </span>}
         {person.filiation && <span>{person.filiation} · </span>}
         <EraRange from={person.eraFrom} to={person.eraTo} />
         {person.nomen && (
