@@ -35,6 +35,9 @@ jobs:
       - name: Build static site
         run: cd site && vp build
 
+      - name: Normalize sitemap URLs
+        run: cd site && node scripts/normalize-sitemap.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
