@@ -150,8 +150,8 @@ export function matchesFacets(
     matchesOffices(person, state, ctx, inRangeMode) &&
     matchesSelection(state.nomen, person.nomen) &&
     matchesSelection(state.sex, person.sex) &&
-    matchesFlag(state.patrician, person.isPatrician) &&
-    matchesFlag(state.nobilis, person.isNobilis) &&
+    matchesFlag(state.patrician, person.statuses.includes("Patrician")) &&
+    matchesFlag(state.nobilis, person.statuses.includes("Nobilis")) &&
     matchesAnySelection(state.tribe, person.tribes) &&
     matchesAnySelection(state.province, person.provinces) &&
     matchesAnySelection(state.event, person.lifeEvents) &&

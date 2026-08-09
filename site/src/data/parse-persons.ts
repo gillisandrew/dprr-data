@@ -1,5 +1,6 @@
 // site/src/data/parse-persons.ts
 import { mapProvinceText } from "./province-mapping"
+import { parseFiliation } from "./parse-filiation"
 import { DPRR, all, first, firstNum, groupSubjects } from "./ttl"
 import type { QuadGroup } from "./ttl"
 import type {
@@ -21,6 +22,7 @@ const RELATIONSHIP_ASSERTION_TYPE = `${DPRR}RelationshipAssertion`
 const RELATIONSHIP_REF_TYPE = `${DPRR}RelationshipAssertionReference`
 const DATE_INFO_TYPE = `${DPRR}DateInformation`
 const TRIBE_ASSERTION_TYPE = `${DPRR}TribeAssertion`
+const STATUS_ASSERTION_TYPE = `${DPRR}StatusAssertion`
 const PERSON_NOTE_TYPE = `${DPRR}PersonNote`
 const PRIMARY_SOURCE_REF_TYPE = `${DPRR}PrimarySourceReference`
 const PERSON_PREFIX = "http://romanrepublic.ac.uk/rdf/entity/Person/"
@@ -44,6 +46,7 @@ export function parsePersonTtl(
   const relationshipRefGroups = new Map<string, QuadGroup>()
   const dateInfoGroups = new Map<string, QuadGroup>()
   const tribeAssertionGroups = new Map<string, QuadGroup>()
+  const statusAssertionGroups = new Map<string, QuadGroup>()
   const personNoteGroups = new Map<string, QuadGroup>()
   const primarySourceRefGroups = new Map<string, QuadGroup>()
   const personGroups = new Map<string, QuadGroup>()
@@ -70,6 +73,9 @@ export function parsePersonTtl(
         break
       case TRIBE_ASSERTION_TYPE:
         tribeAssertionGroups.set(uri, group)
+        break
+      case STATUS_ASSERTION_TYPE:
+        statusAssertionGroups.set(uri, group)
         break
       case PERSON_NOTE_TYPE:
         personNoteGroups.set(uri, group)
@@ -261,6 +267,18 @@ export function parsePersonTtl(
     return names
   }
 
+  // Build raw status names for a person URI from StatusAssertion entities
+  function buildStatusAssertions(personUri: string): string[] {
+    const names: string[] = []
+    for (const [, g] of statusAssertionGroups) {
+      if (first(g, "isAboutPerson") !== personUri) continue
+      const statusUri = first(g, "hasStatus")
+      const name = statusUri ? refs.statuses.get(statusUri)?.name : null
+      if (name && !names.includes(name)) names.push(name)
+    }
+    return names
+  }
+
   // Build Person records
   const persons: Person[] = []
   for (const [personUri, g] of personGroups) {
@@ -289,6 +307,19 @@ export function parsePersonTtl(
       ),
     ]
 
+    const isPatrician = first(g, "isPatrician") === "true"
+    const isNobilis = first(g, "isNobilis") === "true"
+    const isNovus = first(g, "isNovus") === "true"
+    const statusAssertions = buildStatusAssertions(personUri)
+    const statuses = [
+      ...(isPatrician ? ["Patrician"] : []),
+      ...(isNobilis ? ["Nobilis"] : []),
+      ...(isNovus ? ["Novus"] : []),
+      // "eques Romanus" → "Eques Romanus"
+      ...statusAssertions.map((s) => s.charAt(0).toUpperCase() + s.slice(1)),
+    ]
+    const { father, grandfather } = parseFiliation(filiation || null)
+
     persons.push({
       id: dprrId,
       uri: personUri,
@@ -300,8 +331,14 @@ export function parsePersonTtl(
       filiation: filiation || null,
       reNumber: first(g, "hasReNumber"),
       sex: ((sexUri && refs.sexes.get(sexUri)) ?? "Male") as "Male" | "Female",
-      isPatrician: first(g, "isPatrician") === "true",
-      isNobilis: first(g, "isNobilis") === "true",
+      isPatrician,
+      isNobilis,
+      isNovus,
+      statusAssertions,
+      statuses,
+      father,
+      grandfather,
+      contextLine: null,
       nobilisNotes: first(g, "hasNobilisNotes"),
       highestOffice: first(g, "hasHighestOffice"),
       eraFrom: firstNum(g, "hasEraFrom"),

@@ -57,7 +57,12 @@ function makeRefs(): ReferenceMaps {
     sexes: new Map([
       ["http://romanrepublic.ac.uk/rdf/entity/Sex/Male", "Male"],
     ]),
-    statuses: new Map(),
+    statuses: new Map([
+      [
+        "http://romanrepublic.ac.uk/rdf/entity/Status/1",
+        { name: "eques Romanus", abbreviation: null },
+      ],
+    ]),
     provinces: new Map(),
   }
 }
@@ -214,5 +219,39 @@ describe("uncertainty and career order", () => {
     expect(pas[1].isDateStartUncertain).toBe(true)
     expect(pas[1].isDateEndUncertain).toBe(false)
     expect(pas[0].isUncertain).toBe(false)
+  })
+})
+
+describe("statuses and ancestors", () => {
+  test("parses StatusAssertions and isNovus into statuses", () => {
+    const ttl = `
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/1> a dprr:StatusAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/1> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" ;
+  dprr:isPatrician "true" ;
+  dprr:isNovus "true" .
+`
+    const [person] = parsePersonTtl(ttl, makeRefs(), new Map())
+    expect(person.statusAssertions).toEqual(["eques Romanus"])
+    expect(person.isNovus).toBe(true)
+    expect(person.statuses).toEqual(["Patrician", "Novus", "Eques Romanus"])
+  })
+
+  test("parses father and grandfather from filiation", () => {
+    const ttl = `
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" ;
+  dprr:hasFiliation "Q. f. Ser. n." .
+`
+    const [person] = parsePersonTtl(ttl, makeRefs(), new Map())
+    expect(person.father).toBe("Quintus")
+    expect(person.grandfather).toBe("Servius")
+    expect(person.contextLine).toBeNull()
   })
 })

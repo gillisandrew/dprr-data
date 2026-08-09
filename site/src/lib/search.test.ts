@@ -16,8 +16,6 @@ function makeSummary(over: Partial<PersonSummary>): PersonSummary {
     cognomen: null,
     otherNames: null,
     sex: "Male",
-    isPatrician: false,
-    isNobilis: false,
     highestOffice: null,
     eraFrom: null,
     eraTo: null,
@@ -27,6 +25,10 @@ function makeSummary(over: Partial<PersonSummary>): PersonSummary {
     reNumber: null,
     filiation: null,
     lifeEvents: [],
+    statuses: [],
+    father: null,
+    grandfather: null,
+    contextLine: null,
     ...over,
   }
 }

@@ -9,8 +9,6 @@ export interface PersonSummary {
   cognomen: string | null
   otherNames: string | null
   sex: "Male" | "Female"
-  isPatrician: boolean
-  isNobilis: boolean
   highestOffice: string | null
   eraFrom: number | null
   eraTo: number | null
@@ -24,11 +22,23 @@ export interface PersonSummary {
   filiation: string | null
   /** Distinct DateInformation type names (e.g. "death - violent"), excluding "attested". */
   lifeEvents: string[]
+  /** Display statuses for faceting: Patrician, Nobilis, Novus, Eques Romanus, Senator. */
+  statuses: string[]
+  /** Father's / grandfather's praenomen parsed from the filiation string. */
+  father: string | null
+  grandfather: string | null
+  /** "father of Ap. Claudius (321), cos. 495" for career-less persons; null otherwise. */
+  contextLine: string | null
 }
 
 /** Full person record with all scholarly data. */
 export interface Person extends PersonSummary {
   uri: string
+  isPatrician: boolean
+  isNobilis: boolean
+  isNovus: boolean
+  /** Raw StatusAssertion names ("eques Romanus", "senator"). */
+  statusAssertions: string[]
   nobilisNotes: string | null
   postAssertions: PostAssertion[]
   relationships: Relationship[]

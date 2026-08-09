@@ -21,12 +21,12 @@ export function PersonCard({ person }: { person: PersonSummary }) {
             — {person.highestOffice}
           </span>
         )}
-        {person.isPatrician && (
+        {person.statuses.includes("Patrician") && (
           <span className="small-caps ml-2 text-muted-foreground">
             patrician
           </span>
         )}
-        {person.isNobilis && (
+        {person.statuses.includes("Nobilis") && (
           <span className="small-caps ml-1 text-muted-foreground">nobilis</span>
         )}
       </p>

@@ -195,8 +195,6 @@ export function toSummaries(persons: Person[]): PersonSummary[] {
     cognomen: p.cognomen,
     otherNames: p.otherNames,
     sex: p.sex,
-    isPatrician: p.isPatrician,
-    isNobilis: p.isNobilis,
     highestOffice: p.highestOffice,
     eraFrom: p.eraFrom,
     eraTo: p.eraTo,
@@ -206,5 +204,9 @@ export function toSummaries(persons: Person[]): PersonSummary[] {
     reNumber: p.reNumber,
     filiation: p.filiation,
     lifeEvents: p.lifeEvents,
+    statuses: p.statuses,
+    father: p.father,
+    grandfather: p.grandfather,
+    contextLine: null,
   }))
 }
