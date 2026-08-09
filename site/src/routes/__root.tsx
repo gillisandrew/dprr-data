@@ -43,6 +43,27 @@ export const Route = createRootRoute({
         rel: "stylesheet",
         href: appCss,
       },
+      // Explicit icon links are required: without them browsers request
+      // /favicon.ico from the origin root, which this /dprr-data/ project
+      // page never serves.
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: `${import.meta.env.BASE_URL}icon.svg`,
+      },
+      {
+        rel: "icon",
+        sizes: "32x32 16x16",
+        href: `${import.meta.env.BASE_URL}favicon.ico`,
+      },
+      {
+        rel: "apple-touch-icon",
+        href: `${import.meta.env.BASE_URL}apple-touch-icon.png`,
+      },
+      {
+        rel: "manifest",
+        href: `${import.meta.env.BASE_URL}manifest.json`,
+      },
     ],
   }),
   shellComponent: RootDocument,
