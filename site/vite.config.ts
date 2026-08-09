@@ -39,6 +39,12 @@ const config = defineConfig({
         enabled: true,
         crawlLinks: true,
       },
+      sitemap: {
+        enabled: true,
+        // The generator joins host + route path and is unaware of Vite's
+        // `base`, so the project-page prefix has to live in the host.
+        host: "https://gillisandrew.github.io/dprr-data",
+      },
     }),
     viteReact(),
   ],
