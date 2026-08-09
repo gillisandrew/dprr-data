@@ -42,16 +42,10 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
   Campania: ["Campania"],
   Cilicia: ["Cilicia"],
   Crete: ["Crete"],
-  // OPEN JUDGMENT CALL — facet split, unresolved (like Macedonia/Achaea and
-  // Illyricum/Illyria elsewhere in this file): "Cyrenaica" is the plain-name
-  // form used in the conjunction "Crete and Cyrenaica" (2 occurrences), while
-  // the provincia code "Cy" and its expansion "Cyrene" (used in "Crete and
-  // Cyrene", 1 occurrence, and the coded successive-provinciae forms below)
-  // map to the distinct canonical value "Cyrene". The facet will therefore
-  // carry both "Cyrene" and "Cyrenaica" for what may be the same province;
-  // filtering on one misses the other. Unifying would map all of these
-  // occurrences to "Cyrenaica" (or, alternatively, all to "Cyrene") — left
-  // open for the project owner's mapping review.
+  // RESOLVED (mapping review, 2026-08-09): the provincia code "Cy" and its
+  // expansion "Cyrene" denote the same province as the plain-name
+  // "Cyrenaica"; all occurrences unify to the conventional province name
+  // "Cyrenaica" (cf. Creta et Cyrenaica) so the facet carries one value.
   Cyrenaica: ["Cyrenaica"],
   Dalmatia: ["Dalmatia"],
   Etruria: ["Etruria"],
@@ -62,15 +56,10 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
   Hispania: ["Hispania"],
   "Hispania Citerior": ["Hispania Citerior"],
   "Hispania Ulterior": ["Hispania Ulterior"],
-  // OPEN JUDGMENT CALL — facet split, unresolved (like Macedonia/Achaea
-  // below): the plain name "Illyricum" (4 occurrences) maps to itself here,
-  // but the provincia code "III" and its expansion "Illyria" map to the
-  // distinct canonical value ["Illyria"] (see "?/III" / "?/Illyria" further
-  // down). The facet will therefore carry both "Illyria" and "Illyricum" for
-  // what may be the same province; filtering on one misses occurrences under
-  // the other. Unifying would map all of these occurrences to "Illyricum"
-  // (or, alternatively, all to "Illyria") — left open for the project
-  // owner's mapping review.
+  // RESOLVED (mapping review, 2026-08-09): the provincia code "III" and its
+  // expansion "Illyria" denote the same province as the plain-name
+  // "Illyricum"; all occurrences unify to the standard province name
+  // "Illyricum" so the facet carries one value.
   Illyricum: ["Illyricum"],
   Italia: ["Italia"],
   Iudaea: ["Iudaea"],
@@ -125,11 +114,9 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
   "Greece and Macedonia": ["Achaea", "Macedonia"],
   "Macedonia and Thrace": ["Macedonia", "Thracia"],
   "Crete and Achaea": ["Crete", "Achaea"],
-  // See the OPEN JUDGMENT CALL note at "Cyrenaica" above: these two
-  // conjunctions resolve to different canonical values (Cyrenaica vs.
-  // Cyrene) for what may be the same province.
+  // Both conjunctions unify to Cyrenaica (see the RESOLVED note above).
   "Crete and Cyrenaica": ["Crete", "Cyrenaica"],
-  "Crete and Cyrene": ["Crete", "Cyrene"],
+  "Crete and Cyrene": ["Crete", "Cyrenaica"],
   "Cilicia and Syria": ["Cilicia", "Syria"],
   "Cilicia, Cyprus": ["Cilicia", "Cyprus"],
   "Bithynia, Cappadocia": ["Bithynia", "Cappadocia"],
@@ -226,11 +213,9 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
   "?/?HC": ["Hispania Citerior"],
   "?/Hispania Citerior": ["Hispania Citerior"],
   "?/?Hispania Citerior": ["Hispania Citerior"],
-  // OPEN JUDGMENT CALL: see the note at "Illyricum" above — this code and
-  // its expansion resolve to "Illyria", a different canonical value than the
-  // plain-name "Illyricum" entry, producing a facet split.
-  "?/III": ["Illyria"],
-  "?/Illyria": ["Illyria"],
+  // III/Illyria unifies to Illyricum (see the RESOLVED note above).
+  "?/III": ["Illyricum"],
+  "?/Illyria": ["Illyricum"],
   "?/M": ["Macedonia/Achaea"],
   "?/Macedonia/Achaea": ["Macedonia/Achaea"],
   "?/Si": ["Sicilia"],
@@ -242,9 +227,9 @@ export const PROVINCE_MAPPING: Record<string, string[]> = {
   ],
   "?/?Z/A": ["provincia declined", "Asia"],
   "?/?provincia declined/Asia": ["provincia declined", "Asia"],
-  // Cy = Cyrene (see the OPEN JUDGMENT CALL note at "Cyrenaica" above).
-  "?/?Z/?Cy": ["provincia declined", "Cyrene"],
-  "?/?provincia declined/?Cyrene": ["provincia declined", "Cyrene"],
+  // Cy = Cyrene, unified to Cyrenaica (see the RESOLVED note above).
+  "?/?Z/?Cy": ["provincia declined", "Cyrenaica"],
+  "?/?provincia declined/?Cyrene": ["provincia declined", "Cyrenaica"],
   "amb/?Z": ["ambitus", "provincia declined"],
   "ambitus/?provincia declined": ["ambitus", "provincia declined"],
   "U/?Z": ["urbanus", "provincia declined"],

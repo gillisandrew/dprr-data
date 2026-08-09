@@ -1,6 +1,7 @@
 // site/src/routes/gentes.index.tsx
 import { Link, createFileRoute } from "@tanstack/react-router"
 import { fetchGensIndex } from "@/lib/static-data"
+import { gensDisplayName } from "@/lib/gens-name"
 
 export const Route = createFileRoute("/gentes/")({
   loader: () => fetchGensIndex(),
@@ -35,7 +36,7 @@ function GentesPage() {
               className="ledger-row group flex items-baseline justify-between gap-2 px-1"
             >
               <span className="font-heading group-hover:text-accent-ink">
-                {g.name}
+                {gensDisplayName(g.name)}
               </span>
               <span className="text-sm text-muted-foreground">
                 {g.memberCount}

@@ -14,19 +14,37 @@ export function SearchInput({
 }) {
   const [local, setLocal] = useState(value)
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined)
+  // Latest keystroke the debounce hasn't delivered yet; null when settled.
+  const pendingRef = useRef<string | null>(null)
+  const onChangeRef = useRef(onChange)
+  onChangeRef.current = onChange
 
   useEffect(() => {
     setLocal(value)
+    // An external value change (chip removal, clear-all, navigation)
+    // supersedes any in-flight keystroke — don't flush stale text over it.
+    pendingRef.current = null
   }, [value])
 
-  // Clear pending debounce on unmount
-  useEffect(() => () => clearTimeout(timeoutRef.current), [])
+  // Flush (not drop) a pending keystroke on unmount, so a query typed just
+  // before navigating away still lands in the URL.
+  useEffect(
+    () => () => {
+      clearTimeout(timeoutRef.current)
+      if (pendingRef.current !== null) onChangeRef.current(pendingRef.current)
+    },
+    []
+  )
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const v = e.target.value
     setLocal(v)
+    pendingRef.current = v
     clearTimeout(timeoutRef.current)
-    timeoutRef.current = setTimeout(() => onChange(v), 200)
+    timeoutRef.current = setTimeout(() => {
+      pendingRef.current = null
+      onChange(v)
+    }, 200)
   }
 
   return (
