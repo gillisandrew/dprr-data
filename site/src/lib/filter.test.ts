@@ -139,6 +139,14 @@ describe("status, father, grandfather facets", () => {
     expect(matchesFacets(plainSenator, s, ctx())).toBe(false)
   })
 
+  test("legacy patrician alias filters end-to-end via matchesFacets", () => {
+    const s = parseSearchParams({ patrician: "true" })
+    const patrician = makeSummary({ statuses: ["Patrician"] })
+    const nonPatrician = makeSummary({ id: "TEST0002", statuses: [] })
+    expect(matchesFacets(patrician, s, ctx())).toBe(true)
+    expect(matchesFacets(nonPatrician, s, ctx())).toBe(false)
+  })
+
   test("father and grandfather facets match parsed ancestors", () => {
     const person = makeSummary({ father: "Quintus", grandfather: "Servius" })
     expect(matchesFacets(person, state({ father: "Quintus" }), ctx())).toBe(

@@ -71,7 +71,10 @@ export function FilterPopover({
       <DialogPrimitive.Trigger asChild>{trigger}</DialogPrimitive.Trigger>
       <DialogPrimitive.Portal>
         <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/30" />
-        <DialogPrimitive.Content className="fixed inset-x-0 bottom-0 z-50 max-h-[75vh] overflow-y-auto border-t border-border bg-background p-4">
+        <DialogPrimitive.Content
+          aria-describedby={undefined}
+          className="fixed inset-x-0 bottom-0 z-50 max-h-[75vh] overflow-y-auto border-t border-border bg-background p-4"
+        >
           <DialogPrimitive.Title className="micro-label pb-2">
             {label}
           </DialogPrimitive.Title>

@@ -5,6 +5,7 @@ import {
   normalizeState,
 } from "./search-params"
 import { orderByQueryRank, computeFacetValues } from "./search"
+import { matchesFacets, type FilterContext } from "./filter"
 import type { PersonSummary } from "@/data/types"
 
 function makeSummary(over: Partial<PersonSummary>): PersonSummary {
@@ -175,6 +176,43 @@ describe("computeFacetValues", () => {
       { value: "aedile", count: 1 },
       { value: "praetor", count: 1 },
     ])
+  })
+})
+
+describe("conjunctive status facet counts", () => {
+  // Mirrors the `facets.status` computation in useSearchState: counting the
+  // relaxed (status-ignored) candidate set — as every other, disjunctive,
+  // facet does via countWith — would show Eques Romanus's count as if
+  // Senator weren't selected. Since matchesAllStatuses is an AND, the
+  // correct "count if added" is computeFacetValues over the persons that
+  // already satisfy the full, un-relaxed state.
+  const ctx: FilterContext = { parentOf: {}, careers: {}, officeNames: [] }
+
+  test("status counts reflect AND semantics, not the fully-relaxed OR count", () => {
+    const persons = [
+      makeSummary({ id: "A", statuses: ["Senator", "Eques Romanus"] }),
+      makeSummary({ id: "B", statuses: ["Senator"] }),
+      makeSummary({ id: "C", statuses: ["Eques Romanus"] }),
+    ]
+    const state = parseSearchParams({ status: "Senator" })
+
+    // Disjunctive (relaxed) counting, as the other facets use — this is
+    // the misleading count the fix replaces for `status`.
+    const relaxedCounts = computeFacetValues(persons, "statuses")
+    expect(relaxedCounts.find((f) => f.value === "Eques Romanus")?.count).toBe(
+      2
+    )
+
+    // Conjunctive (un-relaxed) counting: only persons who already satisfy
+    // the full current state (Senator selected) are counted, so Eques
+    // Romanus correctly shows 1 (A), not 2.
+    const fullyMatching = persons.filter((p) => matchesFacets(p, state, ctx))
+    const conjunctiveCounts = computeFacetValues(fullyMatching, "statuses")
+    expect(
+      conjunctiveCounts.find((f) => f.value === "Eques Romanus")?.count
+    ).toBe(1)
+    // The already-selected value collapses to the current result count.
+    expect(conjunctiveCounts.find((f) => f.value === "Senator")?.count).toBe(2)
   })
 })
 

@@ -102,11 +102,22 @@ export function useSearchState(bundle: SearchDataBundle) {
       return computeFacetValues(filteredForCount, field)
     }
 
+    // Status is conjunctive (matchesAllStatuses requires every selected
+    // value), so relaxing it like the OR facets above would be misleading:
+    // e.g. with "Senator" selected, "Eques Romanus" would show its
+    // fully-relaxed (disjunctive) count even though clicking it applies
+    // Senator ∧ Eques Romanus, a far smaller set. Instead we count
+    // "if added": since `filtered` already satisfies the full (un-relaxed)
+    // current state, the count for each status value already selected or
+    // not is simply how many of those already-matching persons carry it —
+    // for an unselected value that's exactly the size of the result set
+    // after also requiring it; for an already-selected value it correctly
+    // collapses to the current result count.
     return {
       office: countWith("office", "offices"),
       nomen: countWith("nomen", "nomen"),
       sex: countWith("sex", "sex"),
-      status: countWith("status", "statuses"),
+      status: computeFacetValues(filtered, "statuses"),
       father: countWith("father", "father"),
       grandfather: countWith("grandfather", "grandfather"),
       tribe: countWith("tribe", "tribes"),
@@ -115,7 +126,7 @@ export function useSearchState(bundle: SearchDataBundle) {
       praenomen: countWith("praenomen", "praenomen"),
       cognomen: countWith("cognomen", "cognomen"),
     }
-  }, [state, queryCandidates, ctx])
+  }, [state, queryCandidates, ctx, filtered])
 
   const filteredHistogram = useMemo(() => {
     // A sort-only URL counts as unfiltered.
