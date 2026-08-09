@@ -99,7 +99,7 @@ function RootLayout() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Raw script (not head()'s `scripts`) so it renders ahead of
             HeadContent in the shell markup. */}
