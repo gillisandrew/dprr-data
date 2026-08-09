@@ -82,10 +82,18 @@ function matchesSelection(selected: string[], value: string): boolean {
   return selected.length === 0 || selected.includes(value)
 }
 
-/** Empty selection matches everyone; a person with no cognomen never matches. */
-function matchesCognomen(selected: string[], cognomen: string | null): boolean {
+/** Empty selection matches everyone; a null value never matches. */
+function matchesNullableSelection(
+  selected: string[],
+  value: string | null
+): boolean {
   if (selected.length === 0) return true
-  return !!cognomen && selected.includes(cognomen)
+  return !!value && selected.includes(value)
+}
+
+/** Statuses are attributes, not alternatives: every selected one must hold. */
+function matchesAllStatuses(selected: string[], statuses: string[]): boolean {
+  return selected.every((s) => statuses.includes(s))
 }
 
 /** Empty selection matches everyone; otherwise any person value must be selected. */
@@ -145,12 +153,14 @@ export function matchesFacets(
     matchesOffices(person, state, ctx, inRangeMode) &&
     matchesSelection(state.nomen, person.nomen) &&
     matchesSelection(state.sex, person.sex) &&
-    state.status.every((s) => person.statuses.includes(s)) &&
+    matchesAllStatuses(state.status, person.statuses) &&
+    matchesNullableSelection(state.father, person.father) &&
+    matchesNullableSelection(state.grandfather, person.grandfather) &&
     matchesAnySelection(state.tribe, person.tribes) &&
     matchesAnySelection(state.province, person.provinces) &&
     matchesAnySelection(state.event, person.lifeEvents) &&
     matchesSelection(state.praenomen, person.praenomen) &&
-    matchesCognomen(state.cognomen, person.cognomen) &&
+    matchesNullableSelection(state.cognomen, person.cognomen) &&
     matchesReNumber(state.re, person.reNumber) &&
     (inRangeMode || matchesEra(person, state.eraFrom, state.eraTo))
   )

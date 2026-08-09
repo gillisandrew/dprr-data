@@ -128,6 +128,38 @@ describe("office matching", () => {
   })
 })
 
+describe("status, father, grandfather facets", () => {
+  test("status facet requires every selected status", () => {
+    const patricianSenator = makeSummary({
+      statuses: ["Patrician", "Senator"],
+    })
+    const plainSenator = makeSummary({ id: "TEST0002", statuses: ["Senator"] })
+    const s = state({ status: "Patrician,Senator" })
+    expect(matchesFacets(patricianSenator, s, ctx())).toBe(true)
+    expect(matchesFacets(plainSenator, s, ctx())).toBe(false)
+  })
+
+  test("father and grandfather facets match parsed ancestors", () => {
+    const person = makeSummary({ father: "Quintus", grandfather: "Servius" })
+    expect(matchesFacets(person, state({ father: "Quintus" }), ctx())).toBe(
+      true
+    )
+    expect(matchesFacets(person, state({ father: "Lucius" }), ctx())).toBe(
+      false
+    )
+    expect(
+      matchesFacets(
+        makeSummary({ father: null }),
+        state({ father: "Quintus" }),
+        ctx()
+      )
+    ).toBe(false)
+    expect(
+      matchesFacets(person, state({ grandfather: "Servius" }), ctx())
+    ).toBe(true)
+  })
+})
+
 describe("events and name parts", () => {
   test("life events filter disjunctively", () => {
     const p = makeSummary({ lifeEvents: ["exiled"] })
