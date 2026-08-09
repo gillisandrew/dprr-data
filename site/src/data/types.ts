@@ -143,8 +143,10 @@ export interface SearchState {
   office: string[]
   nomen: string[]
   sex: string[]
-  patrician: boolean | null
-  nobilis: boolean | null
+  /** AND-semantics status facet (Patrician, Nobilis, Novus, Eques Romanus, Senator). */
+  status: string[]
+  father: string[]
+  grandfather: string[]
   tribe: string[]
   province: string[]
   eraFrom: number | null

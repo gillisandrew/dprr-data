@@ -33,18 +33,15 @@ export function parseSearchParams(
     office: splitFacetParam(params.office),
     nomen: splitFacetParam(params.nomen),
     sex: splitFacetParam(params.sex),
-    patrician:
-      params.patrician === "true"
-        ? true
-        : params.patrician === "false"
-          ? false
-          : null,
-    nobilis:
-      params.nobilis === "true"
-        ? true
-        : params.nobilis === "false"
-          ? false
-          : null,
+    status: [
+      ...splitFacetParam(params.status),
+      // Pre-status-facet URLs used boolean patrician/nobilis params;
+      // keep shipped links working by folding them in.
+      ...(params.patrician === "true" ? ["Patrician"] : []),
+      ...(params.nobilis === "true" ? ["Nobilis"] : []),
+    ],
+    father: splitFacetParam(params.father),
+    grandfather: splitFacetParam(params.grandfather),
     tribe: splitFacetParam(params.tribe),
     province: splitFacetParam(params.province),
     eraFrom: params.eraFrom ? Number(params.eraFrom) : null,
@@ -86,8 +83,10 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   if (state.office.length) params.office = joinFacetParam(state.office)
   if (state.nomen.length) params.nomen = joinFacetParam(state.nomen)
   if (state.sex.length) params.sex = joinFacetParam(state.sex)
-  if (state.patrician !== null) params.patrician = String(state.patrician)
-  if (state.nobilis !== null) params.nobilis = String(state.nobilis)
+  if (state.status.length) params.status = joinFacetParam(state.status)
+  if (state.father.length) params.father = joinFacetParam(state.father)
+  if (state.grandfather.length)
+    params.grandfather = joinFacetParam(state.grandfather)
   if (state.tribe.length) params.tribe = joinFacetParam(state.tribe)
   if (state.province.length) params.province = joinFacetParam(state.province)
   if (state.eraFrom !== null) params.eraFrom = String(state.eraFrom)

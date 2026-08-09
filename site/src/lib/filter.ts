@@ -93,11 +93,6 @@ function matchesAnySelection(selected: string[], values: string[]): boolean {
   return selected.length === 0 || selected.some((v) => values.includes(v))
 }
 
-/** null = facet not active. */
-function matchesFlag(selected: boolean | null, value: boolean): boolean {
-  return selected === null || value === selected
-}
-
 function matchesReNumber(query: string, reNumber: string | null): boolean {
   return !query || (reNumber ?? "").toLowerCase().includes(query.toLowerCase())
 }
@@ -150,8 +145,7 @@ export function matchesFacets(
     matchesOffices(person, state, ctx, inRangeMode) &&
     matchesSelection(state.nomen, person.nomen) &&
     matchesSelection(state.sex, person.sex) &&
-    matchesFlag(state.patrician, person.statuses.includes("Patrician")) &&
-    matchesFlag(state.nobilis, person.statuses.includes("Nobilis")) &&
+    state.status.every((s) => person.statuses.includes(s)) &&
     matchesAnySelection(state.tribe, person.tribes) &&
     matchesAnySelection(state.province, person.provinces) &&
     matchesAnySelection(state.event, person.lifeEvents) &&

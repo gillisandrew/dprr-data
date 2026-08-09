@@ -43,8 +43,7 @@ export function FacetSidebar({
     state.tribe.length > 0 ||
     state.province.length > 0 ||
     state.sex.length > 0 ||
-    state.patrician !== null ||
-    state.nobilis !== null ||
+    state.status.length > 0 ||
     state.event.length > 0
   const tier3Active =
     state.officeMode !== "any" ||
@@ -117,18 +116,26 @@ export function FacetSidebar({
             <div>
               <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
                 <Checkbox
-                  checked={state.patrician === true}
+                  checked={state.status.includes("Patrician")}
                   onCheckedChange={(checked) =>
-                    onUpdate({ patrician: checked ? true : null })
+                    onUpdate({
+                      status: checked
+                        ? [...state.status, "Patrician"]
+                        : state.status.filter((s) => s !== "Patrician"),
+                    })
                   }
                 />
                 <span>Patrician</span>
               </label>
               <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
                 <Checkbox
-                  checked={state.nobilis === true}
+                  checked={state.status.includes("Nobilis")}
                   onCheckedChange={(checked) =>
-                    onUpdate({ nobilis: checked ? true : null })
+                    onUpdate({
+                      status: checked
+                        ? [...state.status, "Nobilis"]
+                        : state.status.filter((s) => s !== "Nobilis"),
+                    })
                   }
                 />
                 <span>Nobilis</span>

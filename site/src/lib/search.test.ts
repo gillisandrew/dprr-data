@@ -60,15 +60,40 @@ describe("search param round-trip", () => {
       province: "Sicilia",
       tribe: "Fabia",
       sex: "Male",
-      patrician: "true",
+      status: "Patrician",
       eraFrom: "-200",
       eraTo: "-100",
     }
     expect(toSearchParams(parseSearchParams(input))).toEqual({
       ...input,
       nomen: undefined,
-      nobilis: undefined,
     })
+  })
+})
+
+describe("status, father, grandfather round-trip", () => {
+  test("round-trips status, father, grandfather", () => {
+    const state = parseSearchParams({
+      status: "Patrician,Eques%20Romanus",
+      father: "Quintus",
+      grandfather: "Servius",
+    })
+    expect(state.status).toEqual(["Patrician", "Eques Romanus"])
+    expect(state.father).toEqual(["Quintus"])
+    expect(state.grandfather).toEqual(["Servius"])
+    const params = toSearchParams(state)
+    expect(params.status).toBe("Patrician,Eques%20Romanus")
+    expect(params.father).toBe("Quintus")
+    expect(params.grandfather).toBe("Servius")
+  })
+
+  test("legacy patrician/nobilis params alias into status", () => {
+    const state = parseSearchParams({ patrician: "true", nobilis: "true" })
+    expect(state.status).toEqual(["Patrician", "Nobilis"])
+    const params = toSearchParams(state)
+    expect(params.status).toBe("Patrician,Nobilis")
+    expect(params.patrician).toBeUndefined()
+    expect(params.nobilis).toBeUndefined()
   })
 })
 
@@ -115,10 +140,10 @@ describe("parseSearchParams coerces non-string values", () => {
     expect(parseSearchParams({ q: 509 as unknown as string }).q).toBe("509")
   })
 
-  test("a boolean patrician param parses as boolean true", () => {
+  test("a boolean patrician param parses into the status facet", () => {
     expect(
-      parseSearchParams({ patrician: true as unknown as string }).patrician
-    ).toBe(true)
+      parseSearchParams({ patrician: true as unknown as string }).status
+    ).toEqual(["Patrician"])
   })
 
   test("null/undefined values are omitted rather than coerced to strings", () => {

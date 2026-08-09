@@ -35,16 +35,27 @@ export function ActiveFilterChips({
       onRemove: () => onRemove({ sex: state.sex.filter((s) => s !== sex) }),
     })
   }
-  if (state.patrician !== null) {
+  for (const status of state.status) {
     chips.push({
-      label: state.patrician ? "Patrician" : "Non-Patrician",
-      onRemove: () => onRemove({ patrician: null }),
+      label: status,
+      onRemove: () =>
+        onRemove({ status: state.status.filter((s) => s !== status) }),
     })
   }
-  if (state.nobilis !== null) {
+  for (const father of state.father) {
     chips.push({
-      label: state.nobilis ? "Nobilis" : "Non-Nobilis",
-      onRemove: () => onRemove({ nobilis: null }),
+      label: `Father: ${father}`,
+      onRemove: () =>
+        onRemove({ father: state.father.filter((f) => f !== father) }),
+    })
+  }
+  for (const grandfather of state.grandfather) {
+    chips.push({
+      label: `Grandfather: ${grandfather}`,
+      onRemove: () =>
+        onRemove({
+          grandfather: state.grandfather.filter((g) => g !== grandfather),
+        }),
     })
   }
   for (const tribe of state.tribe) {
