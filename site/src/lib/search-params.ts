@@ -34,11 +34,14 @@ export function parseSearchParams(
     nomen: splitFacetParam(params.nomen),
     sex: splitFacetParam(params.sex),
     status: [
-      ...splitFacetParam(params.status),
-      // Pre-status-facet URLs used boolean patrician/nobilis params;
-      // keep shipped links working by folding them in.
-      ...(params.patrician === "true" ? ["Patrician"] : []),
-      ...(params.nobilis === "true" ? ["Nobilis"] : []),
+      ...new Set([
+        ...splitFacetParam(params.status),
+        // Pre-status-facet URLs used boolean patrician/nobilis params;
+        // keep shipped links working by folding them in. Dedup since a URL
+        // could combine both spellings (?status=Patrician&patrician=true).
+        ...(params.patrician === "true" ? ["Patrician"] : []),
+        ...(params.nobilis === "true" ? ["Nobilis"] : []),
+      ]),
     ],
     father: splitFacetParam(params.father),
     grandfather: splitFacetParam(params.grandfather),

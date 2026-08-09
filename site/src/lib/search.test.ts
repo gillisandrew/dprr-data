@@ -95,6 +95,12 @@ describe("status, father, grandfather round-trip", () => {
     expect(params.patrician).toBeUndefined()
     expect(params.nobilis).toBeUndefined()
   })
+
+  test("combining the new status param with the legacy alias dedupes", () => {
+    const state = parseSearchParams({ status: "Patrician", patrician: "true" })
+    expect(state.status).toEqual(["Patrician"])
+    expect(toSearchParams(state).status).toBe("Patrician")
+  })
 })
 
 describe("advanced params round-trip", () => {
