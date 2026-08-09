@@ -11,7 +11,7 @@ import {
 import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
 import { EraTimeline } from "@/components/era-timeline"
-import { FacetSidebar } from "@/components/facet-sidebar"
+import { FilterBand } from "@/components/filter-band"
 import { ResultsHeader, ResultsList } from "@/components/results-list"
 import { SearchLanding } from "@/components/search-landing"
 import { SITE_URL } from "@/lib/site"
@@ -186,19 +186,23 @@ function SearchResults({
         />
       </div>
 
-      <div className="mt-4 flex gap-6">
-        <FacetSidebar
+      <div className="mt-3">
+        <FilterBand
           facets={facets}
           state={state}
           onUpdate={updateState}
           officeHierarchy={bundle.payload.officeHierarchy}
           provinceHierarchy={bundle.payload.provinceHierarchy}
-          initialFocus={initialFocus}
+          initialFocus={
+            initialFocus === "office" || initialFocus === "gens"
+              ? initialFocus
+              : undefined
+          }
         />
-        <main className="min-w-0 flex-1">
-          <ResultsList results={results} />
-        </main>
       </div>
+      <main className="mt-2 min-w-0">
+        <ResultsList results={results} />
+      </main>
     </>
   )
 }
