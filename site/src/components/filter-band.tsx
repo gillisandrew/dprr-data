@@ -66,7 +66,7 @@ export function FilterBand({
   const statusCount = state.status.length + state.sex.length
 
   return (
-    <div className="rule-lead flex flex-wrap items-baseline gap-x-5 gap-y-1 pt-2 pb-1">
+    <div className="rule-lead flex flex-wrap items-center gap-x-2 gap-y-1.5 pt-2.5 pb-2">
       <FilterPopover
         label="Office"
         activeCount={officeCount}
@@ -78,10 +78,10 @@ export function FilterBand({
           parentOf={officeHierarchy}
           selected={state.office}
           onChange={(office) => onUpdate({ office })}
-          defaultOpen={true}
+          frameless
           hideCounts={state.officeMode === "all" || state.officeInRange}
         />
-        <div className="mt-3 space-y-2">
+        <div className="mt-3 space-y-2 border-t border-rule-hair pt-3">
           <label className="flex cursor-pointer items-center gap-2 text-xs">
             <Checkbox
               checked={state.officeMode === "all"}
@@ -155,14 +155,17 @@ export function FilterBand({
           items={facets.status}
           selected={state.status}
           onChange={(status) => onUpdate({ status })}
-          defaultOpen={true}
+          frameless
         />
+        <p className="micro-label-muted mt-3 mb-1 border-t border-rule-hair pt-3">
+          Sex
+        </p>
         <FacetGroup
           title="Sex"
           items={facets.sex}
           selected={state.sex}
           onChange={(sex) => onUpdate({ sex })}
-          defaultOpen={true}
+          frameless
         />
       </FilterPopover>
 
@@ -176,7 +179,7 @@ export function FilterBand({
           items={facets.tribe}
           selected={state.tribe}
           onChange={(tribe) => onUpdate({ tribe })}
-          defaultOpen={true}
+          frameless
           searchable
         />
       </FilterPopover>
@@ -192,7 +195,7 @@ export function FilterBand({
           parentOf={provinceHierarchy}
           selected={state.province}
           onChange={(province) => onUpdate({ province })}
-          defaultOpen={true}
+          frameless
         />
       </FilterPopover>
 
@@ -206,7 +209,7 @@ export function FilterBand({
           items={facets.event}
           selected={state.event}
           onChange={(event) => onUpdate({ event })}
-          defaultOpen={true}
+          frameless
         />
       </FilterPopover>
     </div>

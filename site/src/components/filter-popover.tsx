@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 import { Dialog as DialogPrimitive } from "radix-ui"
+import { ChevronDown } from "lucide-react"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { cn } from "@/lib/utils"
 
 function useIsDesktop(): boolean {
   const [isDesktop, setIsDesktop] = useState(true)
@@ -40,18 +42,25 @@ export function FilterPopover({
 }: FilterPopoverProps) {
   const isDesktop = useIsDesktop()
 
+  // Bordered pill per the approved band mockup; accent ink when the group
+  // carries active selections, quiet otherwise. Radix stamps data-state on
+  // the trigger, driving the chevron rotation.
   const trigger = (
     <button
       type="button"
-      className={
+      className={cn(
+        "group inline-flex items-center gap-1.5 rounded-[4px] border px-2.5 py-1 text-[0.6875rem] font-medium tracking-[0.1em] uppercase transition-colors",
         activeCount > 0
-          ? "micro-label rule-hair pb-0.5"
-          : "micro-label-muted rule-hair pb-0.5 hover:text-foreground"
-      }
+          ? "border-accent-ink text-accent-ink"
+          : "border-border text-muted-foreground hover:border-muted-foreground hover:text-foreground"
+      )}
     >
       {label}
-      {activeCount > 0 && ` (${activeCount})`}
-      <span aria-hidden="true"> ▾</span>
+      {activeCount > 0 && <span>({activeCount})</span>}
+      <ChevronDown
+        aria-hidden="true"
+        className="h-3 w-3 transition-transform group-data-[state=open]:rotate-180"
+      />
     </button>
   )
 

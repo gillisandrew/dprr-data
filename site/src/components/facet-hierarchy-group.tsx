@@ -24,6 +24,9 @@ interface FacetHierarchyGroupProps {
    * in-range office filtering, where counts are computed disjunctively but
    * the applied filter is conjunctive). */
   hideCounts?: boolean
+  /** Body only — no collapsible header or rule. For popovers, where the
+   * trigger pill already names the facet. */
+  frameless?: boolean
 }
 
 interface TreeNode {
@@ -74,6 +77,7 @@ export function FacetHierarchyGroup({
   onChange,
   defaultOpen = true,
   hideCounts = false,
+  frameless = false,
 }: FacetHierarchyGroupProps) {
   const [open, setOpen] = useState(defaultOpen)
   const [filter, setFilter] = useState("")
@@ -127,6 +131,38 @@ export function FacetHierarchyGroup({
     )
   }
 
+  const body = (
+    <>
+      <Input
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
+        placeholder={`Filter ${title.toLowerCase()}...`}
+        className={cn("mb-1 h-7 text-xs", !frameless && "mt-2")}
+      />
+      {filtered
+        ? filtered.map((i) => (
+            <label
+              key={i.value}
+              className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
+            >
+              <Checkbox
+                checked={selected.includes(i.value)}
+                onCheckedChange={() => toggle(i.value)}
+              />
+              <span className="min-w-0 truncate">{i.value}</span>
+              {!hideCounts && (
+                <span className="ml-auto text-xs text-muted-foreground">
+                  {i.count}
+                </span>
+              )}
+            </label>
+          ))
+        : tree.map((n) => renderNode(n, 0))}
+    </>
+  )
+
+  if (frameless) return <div>{body}</div>
+
   return (
     <Collapsible open={open} onOpenChange={setOpen}>
       <CollapsibleTrigger className="micro-label rule-hair flex w-full items-center justify-between pt-3 pb-1">
@@ -135,33 +171,7 @@ export function FacetHierarchyGroup({
           className={cn("h-3 w-3 transition-transform", open && "rotate-90")}
         />
       </CollapsibleTrigger>
-      <CollapsibleContent className="pb-3 pl-1">
-        <Input
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          placeholder={`Filter ${title.toLowerCase()}...`}
-          className="mt-2 mb-1 h-7 text-xs"
-        />
-        {filtered
-          ? filtered.map((i) => (
-              <label
-                key={i.value}
-                className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
-              >
-                <Checkbox
-                  checked={selected.includes(i.value)}
-                  onCheckedChange={() => toggle(i.value)}
-                />
-                <span className="min-w-0 truncate">{i.value}</span>
-                {!hideCounts && (
-                  <span className="ml-auto text-xs text-muted-foreground">
-                    {i.count}
-                  </span>
-                )}
-              </label>
-            ))
-          : tree.map((n) => renderNode(n, 0))}
-      </CollapsibleContent>
+      <CollapsibleContent className="pb-3 pl-1">{body}</CollapsibleContent>
     </Collapsible>
   )
 }

@@ -147,6 +147,10 @@ export function useSearchState(bundle: SearchDataBundle) {
         to: "/",
         search: toSearchParams(newState),
         replace: true,
+        // Filter changes are in-place refinements: without this the
+        // router's scrollRestoration resets the page to the top on every
+        // facet click (resetScroll defaults to true on any navigation).
+        resetScroll: false,
       })
     },
     [state, navigate]
