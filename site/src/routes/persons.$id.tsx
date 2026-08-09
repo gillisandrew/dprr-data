@@ -56,7 +56,7 @@ export const Route = createFileRoute("/persons/$id")({
   head: ({ loaderData: person }) => {
     if (!person) return {}
     const name = displayName(person.name)
-    const desc = [person.highestOffice, person.isPatrician ? "Patrician" : null]
+    const desc = [person.highestOffice, ...person.statuses]
       .filter(Boolean)
       .join(" · ")
     const jsonLd = {
@@ -109,16 +109,14 @@ function PersonPage() {
           )}
           {person.highestOffice && " · "}
           <EraRange from={person.eraFrom} to={person.eraTo} />
-          {person.isPatrician && (
-            <span className="small-caps ml-2 text-muted-foreground">
-              patrician
+          {person.statuses.map((status, i) => (
+            <span
+              key={status}
+              className={`small-caps ${i === 0 ? "ml-2" : "ml-1"} text-muted-foreground`}
+            >
+              {status}
             </span>
-          )}
-          {person.isNobilis && (
-            <span className="small-caps ml-1 text-muted-foreground">
-              nobilis
-            </span>
-          )}
+          ))}
         </p>
       </header>
 
