@@ -5,6 +5,7 @@ import { parseReferenceTtl } from "./parse-references"
 import { parseConcordanceTtl } from "./parse-concordances"
 import { parsePersonTtl } from "./parse-persons"
 import { collectUnmappedProvinces } from "./province-mapping"
+import { buildContextLine } from "./context-line"
 import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
 
 // Path from site/src/data/ to repo root (3 levels up)
@@ -187,6 +188,7 @@ async function loadAllDataUncached(): Promise<{
 
 /** Extract compact summaries for search/faceting. */
 export function toSummaries(persons: Person[]): PersonSummary[] {
+  const byId = new Map(persons.map((p) => [p.id, p]))
   return persons.map((p) => ({
     id: p.id,
     name: p.name,
@@ -207,6 +209,6 @@ export function toSummaries(persons: Person[]): PersonSummary[] {
     statuses: p.statuses,
     father: p.father,
     grandfather: p.grandfather,
-    contextLine: null,
+    contextLine: buildContextLine(p, byId),
   }))
 }
