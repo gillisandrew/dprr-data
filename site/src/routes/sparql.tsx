@@ -18,6 +18,7 @@ import {
   parseSelectResults,
   personRouteForIri,
   shortenIri,
+  toCsv,
   type ResultTerm,
   type SelectResults,
 } from "@/lib/sparql"
@@ -280,13 +281,35 @@ function SelectTable({
   personMap: Map<number, string>
 }) {
   const shown = results.rows.slice(0, MAX_ROWS)
+  const downloadCsv = () => {
+    const blob = new Blob([toCsv(results)], {
+      type: "text/csv;charset=utf-8",
+    })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement("a")
+    a.href = url
+    a.download = "sparql-results.csv"
+    a.click()
+    URL.revokeObjectURL(url)
+  }
   return (
     <div>
-      <p className="mb-2 text-xs text-muted-foreground">
-        {results.rows.length.toLocaleString()} result
-        {results.rows.length === 1 ? "" : "s"}
-        {results.rows.length > MAX_ROWS &&
-          ` (showing first ${MAX_ROWS.toLocaleString()})`}
+      <p className="mb-2 flex items-baseline gap-3 text-xs text-muted-foreground">
+        <span>
+          {results.rows.length.toLocaleString()} result
+          {results.rows.length === 1 ? "" : "s"}
+          {results.rows.length > MAX_ROWS &&
+            ` (showing first ${MAX_ROWS.toLocaleString()})`}
+        </span>
+        {results.rows.length > 0 && (
+          <button
+            type="button"
+            onClick={downloadCsv}
+            className="underline hover:text-foreground"
+          >
+            Download CSV
+          </button>
+        )}
       </p>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
@@ -294,7 +317,7 @@ function SelectTable({
             <tr className="border-b border-rule-hair text-left">
               {results.vars.map((v) => (
                 <th key={v} className="small-caps py-1.5 pr-4 font-medium">
-                  ?{v}
+                  {v}
                 </th>
               ))}
             </tr>

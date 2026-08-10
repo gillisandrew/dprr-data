@@ -132,6 +132,24 @@ ASK {
 }`,
   },
   {
+    label: "Uncertain consulships, with sources",
+    query: `${QUERY_PREFIX_BLOCK}
+# Post assertions flagged dprr:isUncertain true, with the modern source
+# (dprr:hasSecondarySource) each claim rests on.
+SELECT ?name ?year ?source ?biblio WHERE {
+  ?post dprr:isAboutPerson ?person ;
+        dprr:hasOffice ?o ;
+        dprr:isUncertain true ;
+        dprr:hasSecondarySource ?src .
+  ?o dprr:hasName "consul" .
+  ?person dprr:hasPersonName ?name .
+  ?src dprr:hasAbbreviation ?source ;
+       dprr:hasBiblio ?biblio .
+  OPTIONAL { ?post dprr:hasDateStart ?year }
+}
+ORDER BY ?year`,
+  },
+  {
     label: "Wikidata links (CONSTRUCT)",
     query: `${QUERY_PREFIX_BLOCK}
 CONSTRUCT { ?person owl:sameAs ?wd } WHERE {
@@ -143,3 +161,16 @@ LIMIT 10`,
 ]
 
 export const DEFAULT_QUERY = EXAMPLE_QUERIES[0].query
+
+function csvField(value: string): string {
+  return /[",\n\r]/.test(value) ? `"${value.replaceAll('"', '""')}"` : value
+}
+
+/** SELECT results as RFC 4180 CSV; unbound cells are empty. */
+export function toCsv(results: SelectResults): string {
+  const lines = [results.vars.map(csvField).join(",")]
+  for (const row of results.rows) {
+    lines.push(results.vars.map((v) => csvField(row[v]?.value ?? "")).join(","))
+  }
+  return lines.join("\r\n")
+}

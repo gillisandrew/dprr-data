@@ -4,6 +4,7 @@ import {
   parseSelectResults,
   buildPersonNumberMap,
   personRouteForIri,
+  toCsv,
 } from "./sparql"
 
 describe("shortenIri", () => {
@@ -50,6 +51,22 @@ describe("parseSelectResults", () => {
     expect(result.rows).toHaveLength(2)
     expect(result.rows[0].year?.value).toBe("-118")
     expect(result.rows[1].year).toBeUndefined()
+  })
+})
+
+describe("toCsv", () => {
+  test("emits header row, escapes reserved characters, blanks unbound cells", () => {
+    const csv = toCsv({
+      vars: ["name", "year"],
+      rows: [
+        {
+          name: { type: "literal", value: 'Quoted "Cos.", note' },
+          year: { type: "literal", value: "-100" },
+        },
+        { name: { type: "literal", value: "Plain" } },
+      ],
+    })
+    expect(csv).toBe('name,year\r\n"Quoted ""Cos."", note",-100\r\nPlain,')
   })
 })
 
