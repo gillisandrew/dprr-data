@@ -4,6 +4,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite"
 import viteReact from "@vitejs/plugin-react"
 import tailwindcss from "@tailwindcss/vite"
 import { staticDataPlugin } from "./src/build/static-data-plugin.ts"
+import { sparqlDumpPlugin } from "./src/build/sparql-dump-plugin.ts"
 
 const config = defineConfig({
   base: "/dprr-data/",
@@ -32,12 +33,17 @@ const config = defineConfig({
   },
   plugins: [
     staticDataPlugin(),
+    sparqlDumpPlugin(),
     devtools(),
     tailwindcss(),
     tanstackStart({
       prerender: {
         enabled: true,
         crawlLinks: true,
+        // The crawler follows the /sparql page's dump download link and
+        // would overwrite public/dump/dprr.nt.gz in dist with a
+        // transport-decompressed copy; only HTML routes should prerender.
+        filter: (page) => !page.path.includes("/dump/"),
       },
       sitemap: {
         enabled: true,

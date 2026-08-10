@@ -21,9 +21,17 @@ export function SiteFooter() {
             About
           </Link>
         </span>
-        <Link to="/directory" className="hover:text-foreground hover:underline">
-          Directory
-        </Link>
+        <span className="flex gap-4">
+          <Link to="/sparql" className="hover:text-foreground hover:underline">
+            SPARQL
+          </Link>
+          <Link
+            to="/directory"
+            className="hover:text-foreground hover:underline"
+          >
+            Directory
+          </Link>
+        </span>
       </div>
     </footer>
   )

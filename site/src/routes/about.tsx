@@ -1,5 +1,5 @@
 // site/src/routes/about.tsx
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, Link } from "@tanstack/react-router"
 
 const REPO_URL = "https://github.com/gillisandrew/dprr-data"
 
@@ -93,6 +93,20 @@ function AboutPage() {
             </ExternalLink>
             , and the site adds its own curation (for example the mapping of
             free-text province strings to canonical provinces).
+          </p>
+          <p className="mt-3">
+            The full dataset can be queried with SPARQL on the{" "}
+            <Link to="/sparql" className="text-accent-ink hover:underline">
+              query page
+            </Link>{" "}
+            (runs entirely in your browser) or downloaded as a{" "}
+            <a
+              href={`${import.meta.env.BASE_URL}dump/dprr.nt.gz`}
+              className="text-accent-ink hover:underline"
+            >
+              N-Triples dump
+            </a>
+            .
           </p>
         </section>
       </div>

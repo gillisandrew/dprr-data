@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as DirectoryRouteImport } from './routes/directory'
+import { Route as SparqlRouteImport } from './routes/sparql'
 import { Route as GentesIndexRouteImport } from './routes/gentes.index'
 import { Route as GentesSlugRouteImport } from './routes/gentes.$slug'
 import { Route as OfficesIndexRouteImport } from './routes/offices.index'
@@ -35,6 +36,11 @@ const AboutRoute = AboutRouteImport.update({
 const DirectoryRoute = DirectoryRouteImport.update({
   id: '/directory',
   path: '/directory',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SparqlRoute = SparqlRouteImport.update({
+  id: '/sparql',
+  path: '/sparql',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GentesIndexRoute = GentesIndexRouteImport.update({
@@ -87,6 +93,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/directory': typeof DirectoryRoute
+  '/sparql': typeof SparqlRoute
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
@@ -101,6 +108,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/directory': typeof DirectoryRoute
+  '/sparql': typeof SparqlRoute
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
@@ -116,6 +124,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/directory': typeof DirectoryRoute
+  '/sparql': typeof SparqlRoute
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
@@ -132,6 +141,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/directory'
+    | '/sparql'
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
@@ -146,6 +156,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/directory'
+    | '/sparql'
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
@@ -160,6 +171,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/directory'
+    | '/sparql'
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
@@ -175,6 +187,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   DirectoryRoute: typeof DirectoryRoute
+  SparqlRoute: typeof SparqlRoute
   GentesSlugRoute: typeof GentesSlugRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
@@ -207,6 +220,13 @@ declare module '@tanstack/react-router' {
       path: '/directory'
       fullPath: '/directory'
       preLoaderRoute: typeof DirectoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sparql': {
+      id: '/sparql'
+      path: '/sparql'
+      fullPath: '/sparql'
+      preLoaderRoute: typeof SparqlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gentes/': {
@@ -279,6 +299,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   DirectoryRoute: DirectoryRoute,
+  SparqlRoute: SparqlRoute,
   GentesSlugRoute: GentesSlugRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
