@@ -9,6 +9,8 @@ on:
       - 'reference/**'
       - 'concordances/**'
       - 'ontology.ttl'
+      - '.github/workflows/deploy-site.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,14 +25,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
+      # working-directory points lockfile auto-detection (and the action's
+      # built-in `vp install`) at site/, where the project actually lives.
       - uses: voidzero-dev/setup-vp@v1
         with:
           cache: true
-
-      - name: Install dependencies
-        run: cd site && vp install
+          working-directory: site
 
       - name: Build static site
         run: cd site && vp build
@@ -39,7 +41,7 @@ jobs:
         run: cd site && node scripts/normalize-sitemap.mjs
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist/client
 
@@ -52,4 +54,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
