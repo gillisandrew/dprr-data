@@ -18,8 +18,8 @@ reference/
   misc.ttl                # Sex, Status, DateType, NoteType
 persons/
   CORN/                   # Cornelii (grouped by gens)
-    CORN0017.ttl          # C. Cornelius (17) Cinna
-    CORN0076.ttl          # P. Cornelius (76) Scipio
+    CORN0878.ttl          # P. Cornelius (336) Scipio Africanus
+    CORN1871.ttl          # L. Cornelius (106) Cinna
     ...
   IUNI/
     IUNI0001.ttl          # L. Iunius Brutus
