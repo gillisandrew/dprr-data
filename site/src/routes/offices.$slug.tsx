@@ -4,6 +4,8 @@ import { fetchOfficeDetail, StaticDataError } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
 import { SourceCitation } from "@/components/source-citation"
+import { ReportIssueLink } from "@/components/report-issue-link"
+import { REFERENCE_TTL } from "@/lib/report-issue"
 
 export const Route = createFileRoute("/offices/$slug")({
   loader: async ({ params }) => {
@@ -83,6 +85,10 @@ function OfficePage() {
           </li>
         ))}
       </ol>
+      <ReportIssueLink
+        entityLabel={`Office: ${office.name}`}
+        ttlPath={REFERENCE_TTL.office}
+      />
     </div>
   )
 }

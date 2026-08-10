@@ -3,6 +3,8 @@ import { createFileRoute, notFound } from "@tanstack/react-router"
 import { fetchProvinceDetail, StaticDataError } from "@/lib/static-data"
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { PersonLink } from "@/components/person-card"
+import { ReportIssueLink } from "@/components/report-issue-link"
+import { REFERENCE_TTL } from "@/lib/report-issue"
 
 export const Route = createFileRoute("/provinces/$slug")({
   loader: async ({ params }) => {
@@ -76,6 +78,10 @@ function ProvincePage() {
           </li>
         ))}
       </ol>
+      <ReportIssueLink
+        entityLabel={`Province: ${province.name}`}
+        ttlPath={REFERENCE_TTL.province}
+      />
     </div>
   )
 }

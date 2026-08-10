@@ -14,6 +14,8 @@ import {
 import { DateDisplay, EraRange } from "@/components/date-display"
 import { SourceCitation } from "@/components/source-citation"
 import { PersonLink } from "@/components/person-card"
+import { ReportIssueLink } from "@/components/report-issue-link"
+import { personTtlPath } from "@/lib/report-issue"
 import type {
   PostAssertion,
   Note,
@@ -206,6 +208,11 @@ function PersonPage() {
           </dl>
         </Section>
       )}
+
+      <ReportIssueLink
+        entityLabel={`${person.id} — ${name}`}
+        ttlPath={personTtlPath(person.id)}
+      />
     </div>
   )
 }

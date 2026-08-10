@@ -1,0 +1,57 @@
+name: Data issue
+description: Report a problem with a person, office, province, tribe, or gens record
+title: "[data] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the data. The **entity** and **source file**
+        fields below are prefilled when you arrive from a record page — please
+        leave them as they are. Note that most content derives from the
+        [Digital Prosopography of the Roman Republic](https://romanrepublic.ac.uk);
+        this tracker covers errors in this site's rendering and curation, and
+        upstream data problems worth documenting here.
+  - type: input
+    id: entity
+    attributes:
+      label: Entity
+      description: The record this issue is about (ID and/or name).
+      placeholder: "CORN0017 — C. Cornelius (17) Cinna"
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Source file
+      description: Repo-relative path of the TTL file (or directory) backing the record.
+      placeholder: "persons/CORN/CORN0017.ttl"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Problem type
+      options:
+        - Wrong or missing date
+        - Wrong office or post
+        - Missing or wrong relationship
+        - Mapping or curation error
+        - Rendering bug (site, not data)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong?
+      description: Describe the problem. Quote the incorrect value and, if you can, the expected one.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Optional — citations (MRR, RE, ancient sources) supporting the correction.
+    validations:
+      required: false

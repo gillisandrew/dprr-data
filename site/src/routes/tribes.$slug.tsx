@@ -2,6 +2,8 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
 import { fetchTribeDetail, StaticDataError } from "@/lib/static-data"
 import { PersonCard } from "@/components/person-card"
+import { ReportIssueLink } from "@/components/report-issue-link"
+import { REFERENCE_TTL } from "@/lib/report-issue"
 
 export const Route = createFileRoute("/tribes/$slug")({
   loader: async ({ params }) => {
@@ -45,6 +47,10 @@ function TribePage() {
           <PersonCard key={m.id} person={m} />
         ))}
       </div>
+      <ReportIssueLink
+        entityLabel={`Tribe: ${tribe.name}`}
+        ttlPath={REFERENCE_TTL.tribe}
+      />
     </div>
   )
 }

@@ -3,6 +3,8 @@ import { createFileRoute, notFound } from "@tanstack/react-router"
 import { fetchGensDetail, StaticDataError } from "@/lib/static-data"
 import { gensDisplayName } from "@/lib/gens-name"
 import { PersonCard } from "@/components/person-card"
+import { ReportIssueLink } from "@/components/report-issue-link"
+import { gensTtlPath } from "@/lib/report-issue"
 
 export const Route = createFileRoute("/gentes/$slug")({
   loader: async ({ params }) => {
@@ -49,6 +51,12 @@ function GensPage() {
           <PersonCard key={m.id} person={m} />
         ))}
       </div>
+      {gens.members.length > 0 && (
+        <ReportIssueLink
+          entityLabel={`Gens: ${gensDisplayName(gens.name)}`}
+          ttlPath={gensTtlPath(gens.members[0].id)}
+        />
+      )}
     </div>
   )
 }
