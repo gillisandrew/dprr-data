@@ -214,7 +214,7 @@ export function parsePersonTtl(
       results.push({
         id: raUri,
         relationshipType:
-          (relTypeUri && refs.relationships.get(relTypeUri)) ?? "",
+          (relTypeUri && refs.relationships.get(relTypeUri)?.name) ?? "",
         relatedPersonId,
         relatedPersonName,
         secondarySource: resolveSource(first(g, "hasSecondarySource")),

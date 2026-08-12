@@ -123,7 +123,7 @@ export interface ReferenceMaps {
   >
   praenomina: Map<string, string>
   tribes: Map<string, { name: string; abbreviation: string | null }>
-  relationships: Map<string, string>
+  relationships: Map<string, { name: string; orderNumber: number | null }>
   noteTypes: Map<string, string>
   dateTypes: Map<string, string>
   sexes: Map<string, string>

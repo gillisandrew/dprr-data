@@ -1,5 +1,5 @@
 // site/src/data/parse-references.ts
-import { DPRR, first, groupSubjects } from "./ttl"
+import { DPRR, first, firstNum, groupSubjects } from "./ttl"
 import type { QuadGroup } from "./ttl"
 import type { ReferenceMaps } from "./types"
 
@@ -75,7 +75,10 @@ export async function parseReferenceTtl(
       name,
       abbreviation: first(g, "hasAbbreviation"),
     })),
-    relationships: namedMap(inputs.relationships, (name) => name),
+    relationships: namedMap(inputs.relationships, (name, g) => ({
+      name,
+      orderNumber: firstNum(g, "hasOrderNumber"),
+    })),
     provinces: namedMap(inputs.provinces, (name, g) => ({
       name,
       parent: first(g, "hasParent"),

@@ -168,6 +168,38 @@ describe("parseReferenceTtl", () => {
   })
 })
 
+const REL_TTL = `@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/12> a dprr:Relationship ;
+  dprr:hasName "son of" ;
+  dprr:hasOrderNumber 3 .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/13> a dprr:Relationship ;
+  dprr:hasName "brother of" .
+`
+
+describe("relationship reference map", () => {
+  test("carries name and orderNumber (null when absent)", async () => {
+    const refs = await parseReferenceTtl({
+      offices: "",
+      sources: "",
+      praenomina: "",
+      tribes: "",
+      relationships: REL_TTL,
+      misc: "",
+      provinces: "",
+    })
+    expect(
+      refs.relationships.get(
+        "http://romanrepublic.ac.uk/rdf/entity/Relationship/12"
+      )
+    ).toEqual({ name: "son of", orderNumber: 3 })
+    expect(
+      refs.relationships.get(
+        "http://romanrepublic.ac.uk/rdf/entity/Relationship/13"
+      )
+    ).toEqual({ name: "brother of", orderNumber: null })
+  })
+})
+
 describe("provinces", () => {
   test("parses province names and parents, skipping nameless entries", async () => {
     const refs = await parseReferenceTtl({
