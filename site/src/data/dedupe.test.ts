@@ -1,5 +1,5 @@
 import { expect, test, describe } from "vite-plus/test"
-import { dedupePersons } from "./loader"
+import { dedupePersons, resolveCrossFileRelationships } from "./loader"
 import type { Person, PostAssertion, Relationship } from "./types"
 
 function makeAssertion(over: Partial<PostAssertion>): PostAssertion {
@@ -134,5 +134,41 @@ describe("dedupePersons", () => {
     ])
     expect(result).toHaveLength(1)
     expect(result[0].uri).toBe("http://example.org/assertions")
+  })
+})
+
+describe("resolveCrossFileRelationships", () => {
+  test("resolves a raw-URI relationship target to DPRR ID and name", () => {
+    const target = makePerson({
+      id: "MINU2466",
+      uri: "http://romanrepublic.ac.uk/rdf/entity/Person/2466",
+      name: "MINU2466 L. Minucius (38) Vel. Basilus",
+    })
+    const source = makePerson({
+      id: "SATR4945",
+      uri: "http://romanrepublic.ac.uk/rdf/entity/Person/4945",
+      relationships: [
+        makeRelationship({
+          relatedPersonId: "http://romanrepublic.ac.uk/rdf/entity/Person/2466",
+          relatedPersonName: "",
+        }),
+      ],
+    })
+    resolveCrossFileRelationships([source, target])
+    expect(source.relationships[0].relatedPersonId).toBe("MINU2466")
+    expect(source.relationships[0].relatedPersonName).toBe(
+      "MINU2466 L. Minucius (38) Vel. Basilus"
+    )
+  })
+
+  test("leaves already-resolved relationships untouched", () => {
+    const source = makePerson({
+      relationships: [makeRelationship({})],
+    })
+    resolveCrossFileRelationships([source])
+    expect(source.relationships[0].relatedPersonId).toBe("TEST0002")
+    expect(source.relationships[0].relatedPersonName).toBe(
+      "TEST0002 T. Testius"
+    )
   })
 })

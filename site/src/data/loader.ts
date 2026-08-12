@@ -80,9 +80,10 @@ function richness(p: Person): number {
 }
 
 /**
- * Deduplicate persons parsed from multiple TTL files (a person can appear
- * as a related-person stub in relatives' files). Keeps the richest record
- * per ID, then sorts by ID.
+ * Deduplicate persons by ID, keeping the richest record, then sort by ID.
+ * Since the data was normalized (one Person per TTL file, no related-person
+ * stubs) this is an invariant guard rather than a workhorse — it only acts
+ * if duplicate person records ever reappear in the data.
  */
 export function dedupePersons(persons: Person[]): Person[] {
   const byId = new Map<string, Person>()
@@ -94,6 +95,31 @@ export function dedupePersons(persons: Person[]): Person[] {
   }
 
   return [...byId.values()].sort((a, b) => a.id.localeCompare(b.id))
+}
+
+/**
+ * Resolve relationship targets that live in other TTL files: the parser
+ * stores the raw person URI in relatedPersonId when the target isn't in
+ * the same file (always, now that person files are normalized); this pass
+ * swaps in the target's DPRR ID and display name from the full set.
+ * Mutates the relationship records in place.
+ */
+export function resolveCrossFileRelationships(persons: Person[]): void {
+  const personByUri = new Map<string, Person>()
+  for (const p of persons) {
+    personByUri.set(p.uri, p)
+  }
+  for (const p of persons) {
+    for (const rel of p.relationships) {
+      if (rel.relatedPersonName && rel.relatedPersonId) continue
+      // relatedPersonId may contain a raw URI if unresolved
+      const resolved = personByUri.get(rel.relatedPersonId)
+      if (resolved) {
+        rel.relatedPersonId = resolved.id
+        rel.relatedPersonName = resolved.name
+      }
+    }
+  }
 }
 
 export function loadAllData(): Promise<{
@@ -147,26 +173,10 @@ async function loadAllDataUncached(): Promise<{
 
   const persons = dedupePersons(allPersons)
 
-  // 4. Second pass: resolve cross-file relationship references.
-  // Relationships may point to persons in other TTL files whose
-  // names/IDs were unavailable during the first parse. The parser
-  // stores the raw person URI in relatedPersonId when it can't
-  // resolve the name locally. Now we can resolve using the full set.
-  const personByUri = new Map<string, Person>()
-  for (const p of persons) {
-    personByUri.set(p.uri, p)
-  }
-  for (const p of persons) {
-    for (const rel of p.relationships) {
-      if (rel.relatedPersonName && rel.relatedPersonId) continue
-      // relatedPersonId may contain a raw URI if unresolved
-      const resolved = personByUri.get(rel.relatedPersonId)
-      if (resolved) {
-        rel.relatedPersonId = resolved.id
-        rel.relatedPersonName = resolved.name
-      }
-    }
-  }
+  // 4. Second pass: resolve cross-file relationship references. With
+  // normalized person files this is how every relationship gets its
+  // related person's name and DPRR ID.
+  resolveCrossFileRelationships(persons)
 
   // Surface province curation gaps: raw strings not in the curated mapping
   // are excluded from the facet but still displayed on person pages.
