@@ -107,9 +107,9 @@ export function ActiveFilterChips({
       onRemove: () => onRemove({ officeInRange: false }),
     })
   }
-  if (state.re) {
+  if (state.re.trim()) {
     chips.push({
-      label: `RE: ${state.re}`,
+      label: `RE: ${state.re.trim()}`,
       onRemove: () => onRemove({ re: "" }),
     })
   }

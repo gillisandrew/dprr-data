@@ -102,7 +102,10 @@ function matchesAnySelection(selected: string[], values: string[]): boolean {
 }
 
 function matchesReNumber(query: string, reNumber: string | null): boolean {
-  return !query || (reNumber ?? "").toLowerCase().includes(query.toLowerCase())
+  // Trimmed so a whitespace-only query is inert, matching how the filter
+  // panel counts the RE field as active.
+  const q = query.trim()
+  return !q || (reNumber ?? "").toLowerCase().includes(q.toLowerCase())
 }
 
 /** The person's attested era must overlap the selected [from, to] range. */

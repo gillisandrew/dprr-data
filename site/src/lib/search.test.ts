@@ -54,6 +54,13 @@ describe("search param round-trip", () => {
     expect(parseSearchParams(params).office).toEqual(["a, b office"])
   })
 
+  test("whitespace-only RE number is inert everywhere", () => {
+    expect(parseSearchParams({ re: "  " }).re).toBe("")
+    const state = parseSearchParams({})
+    expect(toSearchParams({ ...state, re: "  " }).re).toBeUndefined()
+    expect(toSearchParams({ ...state, re: " 46a " }).re).toBe("46a")
+  })
+
   test("full round-trip preserves all facets", () => {
     const input = {
       q: "brutus",

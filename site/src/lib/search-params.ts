@@ -52,7 +52,7 @@ export function parseSearchParams(
     event: splitFacetParam(params.event),
     praenomen: splitFacetParam(params.praenomen),
     cognomen: splitFacetParam(params.cognomen),
-    re: params.re ?? "",
+    re: (params.re ?? "").trim(),
     officeMode: params.officeMode === "all" ? "all" : "any",
     officeInRange: params.officeInRange === "true",
     sort:
@@ -97,7 +97,7 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   if (state.event.length) params.event = joinFacetParam(state.event)
   if (state.praenomen.length) params.praenomen = joinFacetParam(state.praenomen)
   if (state.cognomen.length) params.cognomen = joinFacetParam(state.cognomen)
-  if (state.re) params.re = state.re
+  if (state.re.trim()) params.re = state.re.trim()
   if (state.officeMode !== "any") params.officeMode = state.officeMode
   if (state.officeInRange) params.officeInRange = "true"
   if (state.sort) params.sort = state.sort
