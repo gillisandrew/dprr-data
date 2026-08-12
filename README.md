@@ -42,9 +42,6 @@ This dataset is derived from the [DPRR RDF dump](https://romanrepublic.ac.uk). A
 | Predicate | Reason |
 |-----------|--------|
 | `dprr:hasID` | Redundant — always equals the numeric suffix of the entity URI |
-| `dprr:hasPosition` | UI display ordering for post assertions on the DPRR website |
-| `dprr:hasOrderNumber` | UI display ordering for relationship types |
-| `dprr:hasRelationshipNumber` | UI sorting for relationship display |
 | `dprr:hasAssociatedWebpage` | Derivable from the entity URI (`http://www.romanrepublic.ac.uk/person/{id}`) |
 | `dprr:hasDateDisplayText` | Defined in ontology but never populated (0 instances) |
 | `dprr:hasEraDisplayText` | Never populated |
@@ -54,6 +51,10 @@ This dataset is derived from the [DPRR RDF dump](https://romanrepublic.ac.uk). A
 | `dprr:hasRelatedRelationship` | Never populated |
 | `dprr:hasStatusAssertion` | Never populated |
 | `dprr:hasAssertedRelationshipInverse` | Never populated |
+
+- `hasPosition`, `hasOrderNumber`, and `hasRelationshipNumber` (DPRR's
+  display ordering for careers and relationships) are **kept** — the site
+  uses them to order person-page sections the way DPRR curated them.
 
 ### Stripped values
 

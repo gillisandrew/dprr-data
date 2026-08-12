@@ -35,14 +35,15 @@ VOCAB = "http://romanrepublic.ac.uk/rdf/ontology#"
 ENTITY = "http://romanrepublic.ac.uk/rdf/entity/"
 RDF_TYPE = NamedNode("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
+# NOTE: hasPosition (PostAssertion career order), hasOrderNumber
+# (Relationship-type order), and hasRelationshipNumber (order within a
+# relationship group) were originally stripped as "UI display ordering".
+# They are DPRR's canonical display ordering and the site consumes them;
+# they are deliberately KEPT.
 # Predicates to strip — implementation details with no semantic value for consumers.
 STRIP_PREDICATES = frozenset({
     # Redundant: always equals the numeric suffix of the entity URI
     NamedNode(VOCAB + "hasID"),
-    # UI display ordering: controls list position on the DPRR website
-    NamedNode(VOCAB + "hasOrderNumber"),
-    NamedNode(VOCAB + "hasPosition"),
-    NamedNode(VOCAB + "hasRelationshipNumber"),
     # Derivable: always http://www.romanrepublic.ac.uk/person/{id}
     NamedNode(VOCAB + "hasAssociatedWebpage"),
     # Never populated in upstream data (defined in ontology but zero instances)

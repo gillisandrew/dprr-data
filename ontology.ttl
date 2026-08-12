@@ -111,6 +111,11 @@ dprr:hasSecondarySource rdfs:range dprr:SecondarySource ;
 dprr:hasRelationshipReference rdfs:range dprr:RelationshipAssertionReference ;
 	rdfs:domain dprr:RelationshipAssertion ;
 	a owl:ObjectProperty , rdf:Property .
+dprr:hasRelationshipNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "RelationshipAssertion relationship_number" ;
+	rdfs:domain dprr:RelationshipAssertion ;
+	rdfs:comment "allows collection of relationahip assertions for a particular person to be sorted in the most temporarily appropriate order: sons usually after brothers, wives in the right order, etc etc." ;
+	a owl:DatatypeProperty , rdf:Property .
 dprr:hasRelationship rdfs:range dprr:Relationship ;
 	rdfs:domain dprr:RelationshipAssertion ;
 	rdfs:comment "points to the particular :Relationship that this relationahip assertion is making." ;
@@ -161,6 +166,11 @@ dprr:hasPostAssertion rdfs:range dprr:PostAssertion ;
 	rdfs:domain dprr:PostAssertionProvince ;
 	rdfs:comment "A :PostAssertionProvince class is mean to link a :PostAssertion to a :Province.  This is the pointer to the :PostAssertion" ;
 	a owl:ObjectProperty , rdf:Property .
+dprr:hasPosition rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "PostAssertion position" ;
+	rdfs:domain dprr:PostAssertion ;
+	rdfs:comment "A numeric value provided to assist web display mechanism to order posts in the most historically useful order." ;
+	a owl:DatatypeProperty , rdf:Property .
 dprr:hasPersonNote rdfs:range dprr:PersonNote ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "links to one or more notes about the person that DPRR has recorded as :PersonNote instances." ;
@@ -189,6 +199,11 @@ dprr:hasOrigin rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "Person origin" ;
 	rdfs:domain dprr:Person ;
 	rdfs:comment "A short bit of text that specifies what DPRR believes to be a plausible geographic origin for the person, as provided in the secondary and primary sources." ;
+	a owl:DatatypeProperty , rdf:Property .
+dprr:hasOrderNumber rdfs:range <http://www.w3.org/2001/XMLSchema#integer> ;
+	rdfs:label "Relationship order number" ;
+	rdfs:domain dprr:Relationship ;
+	rdfs:comment "A number that provides a mechanism which provides a helpful ordering of a list of relationships from this table. If a list of relationships are generated, this number can be used to order them." ;
 	a owl:DatatypeProperty , rdf:Property .
 dprr:hasOfficeXref rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
 	rdfs:label "PostAssertion office_xref" ;
