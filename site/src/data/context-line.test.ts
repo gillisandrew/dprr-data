@@ -36,6 +36,13 @@ function makePerson(over: Partial<Person>): Person {
     dateInformation: [],
     personNotes: [],
     concordances: [],
+    origin: null,
+    novusNotes: null,
+    isNomenUncertain: false,
+    isCognomenUncertain: false,
+    isPraenomenUncertain: false,
+    isFiliationUncertain: false,
+    isOtherNamesUncertain: false,
     ...over,
   }
 }
@@ -48,6 +55,8 @@ function makeRel(over: Partial<Relationship>): Relationship {
     relatedPersonName: "TEST0002 A. Testius",
     secondarySource: "",
     references: [],
+    typeOrderNumber: null,
+    relationshipNumber: null,
     ...over,
   }
 }

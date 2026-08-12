@@ -37,14 +37,22 @@ export interface Person extends PersonSummary {
   isPatrician: boolean
   isNobilis: boolean
   isNovus: boolean
-  /** Raw StatusAssertion names ("eques Romanus", "senator"). */
-  statusAssertions: string[]
+  /** Full StatusAssertion records with dates, sources, and notes. */
+  statusAssertions: StatusAssertion[]
   nobilisNotes: string | null
   postAssertions: PostAssertion[]
   relationships: Relationship[]
   dateInformation: DateInfo[]
   personNotes: Note[]
   concordances: Concordance[]
+  /** Plausible geographic origin per DPRR ("hasOrigin"). */
+  origin: string | null
+  novusNotes: string | null
+  isNomenUncertain: boolean
+  isCognomenUncertain: boolean
+  isPraenomenUncertain: boolean
+  isFiliationUncertain: boolean
+  isOtherNamesUncertain: boolean
 }
 
 export interface PostAssertion {
@@ -66,6 +74,12 @@ export interface PostAssertion {
   isUncertain: boolean
   isDateStartUncertain: boolean
   isDateEndUncertain: boolean
+  /** DPRR's canonical career-display position (lower = earlier in list). */
+  position: number | null
+  /** Broughton's abbreviated post label, e.g. "Pr. Peregrinus", "cos. 63". */
+  officeXref: string | null
+  /** The source's original wording for the date, e.g. "ca. 51 BC". */
+  dateSourceText: string | null
 }
 
 export interface PostAssertionNote {
@@ -75,6 +89,19 @@ export interface PostAssertionNote {
   extraInfo: string | null
 }
 
+export interface StatusAssertion {
+  id: string
+  /** Raw status name from the authority list, e.g. "eques Romanus". */
+  statusName: string
+  dateStart: number | null
+  dateEnd: number | null
+  isDateStartUncertain: boolean
+  isDateEndUncertain: boolean
+  isUncertain: boolean
+  secondarySource: string
+  notes: Note[]
+}
+
 export interface Relationship {
   id: string
   relationshipType: string
@@ -82,6 +109,10 @@ export interface Relationship {
   relatedPersonName: string
   secondarySource: string
   references: RelationshipReference[]
+  /** The relationship TYPE's curated display order (hasOrderNumber). */
+  typeOrderNumber: number | null
+  /** Order within the group (hasRelationshipNumber). */
+  relationshipNumber: number | null
 }
 
 export interface RelationshipReference {

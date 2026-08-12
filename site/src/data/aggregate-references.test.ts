@@ -30,6 +30,9 @@ function makeAssertion(over: Partial<PostAssertion>): PostAssertion {
     isUncertain: false,
     isDateStartUncertain: false,
     isDateEndUncertain: false,
+    position: null,
+    officeXref: null,
+    dateSourceText: null,
     ...over,
   }
 }
@@ -67,6 +70,13 @@ function makePerson(over: Partial<Person>): Person {
     dateInformation: [],
     personNotes: [],
     concordances: [],
+    origin: null,
+    novusNotes: null,
+    isNomenUncertain: false,
+    isCognomenUncertain: false,
+    isPraenomenUncertain: false,
+    isFiliationUncertain: false,
+    isOtherNamesUncertain: false,
     ...over,
   }
 }

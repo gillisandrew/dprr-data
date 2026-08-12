@@ -236,7 +236,9 @@ describe("statuses and ancestors", () => {
   dprr:isNovus "true" .
 `
     const [person] = parsePersonTtl(ttl, makeRefs(), new Map())
-    expect(person.statusAssertions).toEqual(["eques Romanus"])
+    expect(person.statusAssertions.map((sa) => sa.statusName)).toEqual([
+      "eques Romanus",
+    ])
     expect(person.isNovus).toBe(true)
     expect(person.statuses).toEqual(["Patrician", "Novus", "Eques Romanus"])
   })
@@ -253,5 +255,129 @@ describe("statuses and ancestors", () => {
     expect(person.father).toBe("Quintus")
     expect(person.grandfather).toBe("Servius")
     expect(person.contextLine).toBeNull()
+  })
+})
+
+const ENRICHED_TTL = `@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/42> a dprr:Person ;
+  dprr:hasDprrID "TEST0042" ;
+  dprr:hasNomen "Testius" ;
+  dprr:isNomenUncertain true ;
+  dprr:isCognomenUncertain true ;
+  dprr:hasOrigin "Tusculum" ;
+  dprr:isNovus true ;
+  dprr:hasNovusNotes "Cic. Mur. 17" ;
+  dprr:hasEraFrom -100 ;
+  dprr:hasEraTo -50 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/42> ;
+  dprr:hasPosition 2 ;
+  dprr:hasOfficeXref "Pr. 66" ;
+  dprr:hasDateSourceText "before Kal. Ian." ;
+  dprr:hasDateStart -66 ; dprr:hasDateEnd -66 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/42> ;
+  dprr:hasPosition 1 ;
+  dprr:hasDateStart -63 ; dprr:hasDateEnd -63 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/42> ;
+  dprr:hasDateStart -70 ; dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/9> a dprr:StatusAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/42> ;
+  dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+  dprr:hasDateStart -70 ; dprr:hasDateEnd -65 ;
+  dprr:isDateStartUncertain true ;
+  dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+  dprr:hasStatusAssertionNote <http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/5> .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertionNote/5> a dprr:StatusAssertionNote ;
+  dprr:hasNoteText "listed among the equites" ;
+  dprr:hasSecondarySourceForNote <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> .
+`
+
+function makeEnrichedRefs(): ReferenceMaps {
+  const refs = makeRefs()
+  refs.statuses.set("http://romanrepublic.ac.uk/rdf/entity/Status/2", {
+    name: "eques Romanus",
+    abbreviation: null,
+  })
+  refs.sources.set("http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1", {
+    name: "Broughton MRR",
+    abbreviation: "MRR",
+    biblio: null,
+  })
+  return refs
+}
+
+describe("career position, Broughton labels, and status details", () => {
+  test("career sorts by position, positionless fall back chronologically after", () => {
+    const [p] = parsePersonTtl(ENRICHED_TTL, makeEnrichedRefs(), new Map())
+    expect(p.postAssertions.map((pa) => pa.id)).toEqual([
+      "http://romanrepublic.ac.uk/rdf/entity/PostAssertion/2", // position 1
+      "http://romanrepublic.ac.uk/rdf/entity/PostAssertion/1", // position 2
+      "http://romanrepublic.ac.uk/rdf/entity/PostAssertion/3", // no position
+    ])
+    expect(p.postAssertions[1].officeXref).toBe("Pr. 66")
+    expect(p.postAssertions[1].dateSourceText).toBe("before Kal. Ian.")
+    expect(p.postAssertions[0].officeXref).toBeNull()
+  })
+
+  test("status assertions carry dates, uncertainty, source, and notes", () => {
+    const [p] = parsePersonTtl(ENRICHED_TTL, makeEnrichedRefs(), new Map())
+    expect(p.statusAssertions).toHaveLength(1)
+    const sa = p.statusAssertions[0]
+    expect(sa.statusName).toBe("eques Romanus")
+    expect(sa.dateStart).toBe(-70)
+    expect(sa.isDateStartUncertain).toBe(true)
+    expect(sa.notes[0].text).toBe("listed among the equites")
+    // statuses summary still derives capitalized names + boolean flags
+    expect(p.statuses).toContain("Eques Romanus")
+    expect(p.statuses).toContain("Novus")
+  })
+
+  test("origin, novusNotes, and name-part uncertainty flags parse", () => {
+    const [p] = parsePersonTtl(ENRICHED_TTL, makeEnrichedRefs(), new Map())
+    expect(p.origin).toBe("Tusculum")
+    expect(p.novusNotes).toBe("Cic. Mur. 17")
+    expect(p.isNomenUncertain).toBe(true)
+    expect(p.isCognomenUncertain).toBe(true)
+    expect(p.isPraenomenUncertain).toBe(false)
+  })
+})
+
+describe("relationship order numbers", () => {
+  test("parses relationshipNumber and typeOrderNumber from the reference map", () => {
+    const ttl = `
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/1> a dprr:Person ;
+  dprr:hasDprrID "TEST0001" ;
+  dprr:hasPersonName "TEST0001 T. Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1> a dprr:RelationshipAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+  dprr:hasRelationshipNumber 2 .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2> a dprr:RelationshipAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/1> ;
+  dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/12> ;
+  dprr:hasRelationshipNumber 1 .
+`
+    const refs = makeRefs()
+    refs.relationships.set(
+      "http://romanrepublic.ac.uk/rdf/entity/Relationship/12",
+      { name: "son of", orderNumber: 3 }
+    )
+    const [p] = parsePersonTtl(ttl, refs, new Map())
+    const byId = Object.fromEntries(p.relationships.map((r) => [r.id, r]))
+    expect(
+      byId["http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1"]
+        .relationshipNumber
+    ).toBe(2)
+    expect(
+      byId["http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/2"]
+        .relationshipNumber
+    ).toBe(1)
+    expect(
+      byId["http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/1"]
+        .typeOrderNumber
+    ).toBe(3)
   })
 })

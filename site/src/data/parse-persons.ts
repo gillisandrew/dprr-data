@@ -13,6 +13,7 @@ import type {
   Note,
   Concordance,
   ReferenceMaps,
+  StatusAssertion,
 } from "./types"
 
 const PERSON_TYPE = `${DPRR}Person`
@@ -23,6 +24,7 @@ const RELATIONSHIP_REF_TYPE = `${DPRR}RelationshipAssertionReference`
 const DATE_INFO_TYPE = `${DPRR}DateInformation`
 const TRIBE_ASSERTION_TYPE = `${DPRR}TribeAssertion`
 const STATUS_ASSERTION_TYPE = `${DPRR}StatusAssertion`
+const STATUS_ASSERTION_NOTE_TYPE = `${DPRR}StatusAssertionNote`
 const PERSON_NOTE_TYPE = `${DPRR}PersonNote`
 const PRIMARY_SOURCE_REF_TYPE = `${DPRR}PrimarySourceReference`
 const PERSON_PREFIX = "http://romanrepublic.ac.uk/rdf/entity/Person/"
@@ -47,6 +49,7 @@ export function parsePersonTtl(
   const dateInfoGroups = new Map<string, QuadGroup>()
   const tribeAssertionGroups = new Map<string, QuadGroup>()
   const statusAssertionGroups = new Map<string, QuadGroup>()
+  const statusAssertionNoteGroups = new Map<string, QuadGroup>()
   const personNoteGroups = new Map<string, QuadGroup>()
   const primarySourceRefGroups = new Map<string, QuadGroup>()
   const personGroups = new Map<string, QuadGroup>()
@@ -76,6 +79,9 @@ export function parsePersonTtl(
         break
       case STATUS_ASSERTION_TYPE:
         statusAssertionGroups.set(uri, group)
+        break
+      case STATUS_ASSERTION_NOTE_TYPE:
+        statusAssertionNoteGroups.set(uri, group)
         break
       case PERSON_NOTE_TYPE:
         personNoteGroups.set(uri, group)
@@ -162,14 +168,22 @@ export function parsePersonTtl(
         isUncertain: first(g, "isUncertain") === "true",
         isDateStartUncertain: first(g, "isDateStartUncertain") === "true",
         isDateEndUncertain: first(g, "isDateEndUncertain") === "true",
+        position: firstNum(g, "hasPosition"),
+        officeXref: first(g, "hasOfficeXref"),
+        dateSourceText: first(g, "hasDateSourceText"),
       })
     }
-    // Chronological career order (undated entries last), matching DPRR
-    results.sort(
-      (a, b) =>
+    // DPRR's canonical career order (hasPosition) first; entries without
+    // a position fall back to chronological and sort after positioned ones.
+    results.sort((a, b) => {
+      const pa = a.position ?? Number.MAX_SAFE_INTEGER
+      const pb = b.position ?? Number.MAX_SAFE_INTEGER
+      if (pa !== pb) return pa - pb
+      return (
         (a.dateStart ?? a.dateEnd ?? Number.MAX_SAFE_INTEGER) -
         (b.dateStart ?? b.dateEnd ?? Number.MAX_SAFE_INTEGER)
-    )
+      )
+    })
     return results
   }
 
@@ -219,6 +233,10 @@ export function parsePersonTtl(
         relatedPersonName,
         secondarySource: resolveSource(first(g, "hasSecondarySource")),
         references,
+        typeOrderNumber: relTypeUri
+          ? (refs.relationships.get(relTypeUri)?.orderNumber ?? null)
+          : null,
+        relationshipNumber: firstNum(g, "hasRelationshipNumber"),
       })
     }
     return results
@@ -267,16 +285,39 @@ export function parsePersonTtl(
     return names
   }
 
-  // Build raw status names for a person URI from StatusAssertion entities
-  function buildStatusAssertions(personUri: string): string[] {
-    const names: string[] = []
-    for (const [, g] of statusAssertionGroups) {
+  // Build StatusAssertions (with dates, sources, notes) for a person URI
+  function buildStatusAssertions(personUri: string): StatusAssertion[] {
+    const results: StatusAssertion[] = []
+    for (const [saUri, g] of statusAssertionGroups) {
       if (first(g, "isAboutPerson") !== personUri) continue
       const statusUri = first(g, "hasStatus")
-      const name = statusUri ? refs.statuses.get(statusUri)?.name : null
-      if (name && !names.includes(name)) names.push(name)
+      const statusName = (statusUri && refs.statuses.get(statusUri)?.name) ?? ""
+      if (!statusName) continue
+      const notes = all(g, "hasStatusAssertionNote")
+        .map((uri) => {
+          const ng = statusAssertionNoteGroups.get(uri)
+          return ng ? buildNoteFields(ng) : null
+        })
+        .filter((n): n is Note => n !== null)
+      results.push({
+        id: saUri,
+        statusName,
+        dateStart: firstNum(g, "hasDateStart"),
+        dateEnd: firstNum(g, "hasDateEnd"),
+        isDateStartUncertain: first(g, "isDateStartUncertain") === "true",
+        isDateEndUncertain: first(g, "isDateEndUncertain") === "true",
+        isUncertain: first(g, "isUncertain") === "true",
+        secondarySource: resolveSource(first(g, "hasSecondarySource")),
+        notes,
+      })
     }
-    return names
+    // Chronological, undated last
+    results.sort(
+      (a, b) =>
+        (a.dateStart ?? a.dateEnd ?? Number.MAX_SAFE_INTEGER) -
+        (b.dateStart ?? b.dateEnd ?? Number.MAX_SAFE_INTEGER)
+    )
+    return results
   }
 
   // Build Person records
@@ -311,12 +352,15 @@ export function parsePersonTtl(
     const isNobilis = first(g, "isNobilis") === "true"
     const isNovus = first(g, "isNovus") === "true"
     const statusAssertions = buildStatusAssertions(personUri)
+    const statusNames = [
+      ...new Set(statusAssertions.map((sa) => sa.statusName)),
+    ]
     const statuses = [
       ...(isPatrician ? ["Patrician"] : []),
       ...(isNobilis ? ["Nobilis"] : []),
       ...(isNovus ? ["Novus"] : []),
       // "eques Romanus" → "Eques Romanus"
-      ...statusAssertions.map((s) => s.charAt(0).toUpperCase() + s.slice(1)),
+      ...statusNames.map((s) => s.charAt(0).toUpperCase() + s.slice(1)),
     ]
     const { father, grandfather } = parseFiliation(filiation || null)
 
@@ -352,6 +396,13 @@ export function parsePersonTtl(
       personNotes: buildPersonNotes(personUri),
       concordances: concordanceMap.get(personNumericId) ?? [],
       lifeEvents,
+      origin: first(g, "hasOrigin"),
+      novusNotes: first(g, "hasNovusNotes"),
+      isNomenUncertain: first(g, "isNomenUncertain") === "true",
+      isCognomenUncertain: first(g, "isCognomenUncertain") === "true",
+      isPraenomenUncertain: first(g, "isPraenomenUncertain") === "true",
+      isFiliationUncertain: first(g, "isFiliationUncertain") === "true",
+      isOtherNamesUncertain: first(g, "isOtherNamesUncertain") === "true",
     })
   }
 

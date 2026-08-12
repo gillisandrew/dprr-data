@@ -19,6 +19,9 @@ function makeAssertion(over: Partial<PostAssertion>): PostAssertion {
     isUncertain: false,
     isDateStartUncertain: false,
     isDateEndUncertain: false,
+    position: null,
+    officeXref: null,
+    dateSourceText: null,
     ...over,
   }
 }
@@ -31,6 +34,8 @@ function makeRelationship(over: Partial<Relationship>): Relationship {
     relatedPersonName: "TEST0002 T. Testius",
     secondarySource: "Broughton MRR",
     references: [],
+    typeOrderNumber: null,
+    relationshipNumber: null,
     ...over,
   }
 }
@@ -68,6 +73,13 @@ function makePerson(over: Partial<Person>): Person {
     dateInformation: [],
     personNotes: [],
     concordances: [],
+    origin: null,
+    novusNotes: null,
+    isNomenUncertain: false,
+    isCognomenUncertain: false,
+    isPraenomenUncertain: false,
+    isFiliationUncertain: false,
+    isOtherNamesUncertain: false,
     ...over,
   }
 }
