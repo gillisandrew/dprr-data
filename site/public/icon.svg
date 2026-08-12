@@ -1,4 +1,19 @@
-<svg width="550" height="420" viewBox="0 0 550 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id="dprr-icon" width="550" height="420" viewBox="0 0 550 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  /* Fill attributes below stay as the light-mode values so rasterizers
+     that ignore this style block (sharp/librsvg) still emit the light
+     artwork. Selectors are #dprr-icon-scoped because the site inlines
+     this file into the page, where an unscoped rule would leak. */
+  #dprr-icon { --dprr-icon-accent: #C10007; --dprr-icon-ink: black; }
+  @media (prefers-color-scheme: dark) {
+    #dprr-icon {
+      --dprr-icon-accent: oklch(0.68 0.177 26.9);
+      --dprr-icon-ink: oklch(0.986 0.002 67.8);
+    }
+  }
+  #dprr-icon path[fill="#C10007"] { fill: var(--dprr-icon-accent); }
+  #dprr-icon path[fill="black"] { fill: var(--dprr-icon-ink); }
+</style>
 <path d="M181.306 410.71C203.63 390.699 228.007 373.003 257.369 393.156C240.642 422.052 210.124 418.513 181.306 410.71Z" fill="#C10007"/>
 <path d="M292.941 393.156C322.303 373.003 346.68 390.699 369.004 410.71C340.186 418.513 309.668 422.052 292.941 393.156Z" fill="#C10007"/>
 <path d="M127.731 388.237C151.672 370.178 177.462 354.599 205.011 377.153C185.894 404.538 155.784 398.44 127.731 388.237Z" fill="#C10007"/>

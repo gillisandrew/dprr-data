@@ -144,6 +144,16 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* Inlined nav logo (icon.svg?raw in site-header): bind its colors to the
+   site tokens so it follows the .dark toggle, not the OS scheme. The
+   `html` prefix outranks the SVG's internal #dprr-icon
+   prefers-color-scheme fallback (which serves the standalone favicon
+   context) regardless of stylesheet order. */
+html #dprr-icon {
+  --dprr-icon-accent: var(--accent-ink);
+  --dprr-icon-ink: var(--foreground);
+}
+
 @layer components {
   .rule-lead {
     border-bottom: 2px solid var(--rule-lead);

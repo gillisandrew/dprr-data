@@ -1,6 +1,10 @@
 // site/src/components/site-header.tsx
 import { Link } from "@tanstack/react-router"
 import { ThemeToggle } from "@/components/theme-toggle"
+// Inlined (not <img>) so page CSS can retheme it with the site's .dark
+// class — an embedded image only sees the OS color scheme, which the
+// theme toggle can override. Single source shared with the favicon.
+import iconSvg from "../../public/icon.svg?raw"
 
 const links = [
   { to: "/offices", label: "Offices" },
@@ -14,10 +18,10 @@ export function SiteHeader() {
     <header className="rule-hair">
       <nav className="mx-auto flex max-w-6xl items-baseline gap-6 px-4 py-3">
         <Link to="/" aria-label="DPRR — home" className="self-center">
-          <img
-            src={`${import.meta.env.BASE_URL}icon.svg`}
-            alt=""
-            className="-my-1 block h-7 w-auto"
+          <span
+            aria-hidden="true"
+            className="-my-1 block h-7 [&>svg]:h-full [&>svg]:w-auto"
+            dangerouslySetInnerHTML={{ __html: iconSvg }}
           />
         </Link>
         {links.map((l) => (
