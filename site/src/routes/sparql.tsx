@@ -5,10 +5,11 @@ import { EditorView, keymap, lineNumbers } from "@codemirror/view"
 import { EditorState } from "@codemirror/state"
 import { defaultKeymap, history, historyKeymap } from "@codemirror/commands"
 import {
+  HighlightStyle,
   StreamLanguage,
   syntaxHighlighting,
-  defaultHighlightStyle,
 } from "@codemirror/language"
+import { tags } from "@lezer/highlight"
 import { sparql as sparqlMode } from "@codemirror/legacy-modes/mode/sparql"
 import { fetchPersonIds } from "@/lib/static-data"
 import {
@@ -53,6 +54,19 @@ type QueryResult =
   | { kind: "error"; message: string }
 
 const MAX_ROWS = 2000
+
+// Token colors read the site's CSS variables, so both themes (and live
+// theme toggles) are handled without recreating the editor.
+const sparqlHighlight = HighlightStyle.define([
+  { tag: tags.keyword, color: "var(--accent-ink)", fontWeight: "500" },
+  { tag: tags.string, color: "var(--chart-2)" },
+  { tag: tags.number, color: "var(--chart-2)" },
+  { tag: tags.variableName, color: "var(--foreground)", fontWeight: "500" },
+  { tag: tags.comment, color: "var(--muted-foreground)", fontStyle: "italic" },
+  { tag: tags.operator, color: "var(--muted-foreground)" },
+  { tag: tags.bracket, color: "var(--muted-foreground)" },
+  { tag: tags.atom, color: "var(--accent-ink)" },
+])
 
 function SparqlPage() {
   const editorRef = useRef<HTMLDivElement>(null)
@@ -116,7 +130,7 @@ function SparqlPage() {
           lineNumbers(),
           history(),
           StreamLanguage.define(sparqlMode),
-          syntaxHighlighting(defaultHighlightStyle, { fallback: true }),
+          syntaxHighlighting(sparqlHighlight, { fallback: true }),
           keymap.of([
             {
               key: "Mod-Enter",

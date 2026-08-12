@@ -144,6 +144,13 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* Reserve scrollbar space so short pages (landing) and long pages
+   (results) keep identical centering — no shift when the scrollbar
+   appears. No-op where overlay scrollbars are in use. */
+html {
+  scrollbar-gutter: stable;
+}
+
 /* Inlined nav logo (icon.svg?raw in site-header): bind its colors to the
    site tokens so it follows the .dark toggle, not the OS scheme. The
    `html` prefix outranks the SVG's internal #dprr-icon
