@@ -1,11 +1,7 @@
 // site/src/components/info-hint.tsx
 // Small ⓘ (or custom mark) trigger opening a glossary explanation.
 import { Info } from "lucide-react"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { HoverPopover } from "./hover-popover"
 import { GLOSSARY, type GlossaryTermId } from "@/lib/glossary"
 
 export function InfoHint({
@@ -18,8 +14,9 @@ export function InfoHint({
 }) {
   const entry = GLOSSARY[term]
   return (
-    <Popover>
-      <PopoverTrigger asChild>
+    <HoverPopover
+      contentClassName="max-w-72 text-xs"
+      trigger={
         <button
           type="button"
           aria-label={`What does ${entry.label} mean?`}
@@ -27,11 +24,10 @@ export function InfoHint({
         >
           {mark ?? <Info aria-hidden="true" className="h-3 w-3" />}
         </button>
-      </PopoverTrigger>
-      <PopoverContent className="max-w-72 text-xs">
-        <p className="micro-label mb-1">{entry.label}</p>
-        <p>{entry.text}</p>
-      </PopoverContent>
-    </Popover>
+      }
+    >
+      <p className="micro-label mb-1">{entry.label}</p>
+      <p>{entry.text}</p>
+    </HoverPopover>
   )
 }

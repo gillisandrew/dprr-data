@@ -463,14 +463,17 @@ function RelationshipEntry({ relationship }: { relationship: Relationship }) {
         <span className="text-muted-foreground capitalize">
           {relationship.relationshipType}
         </span>{" "}
-        {relationship.relatedPersonId ? (
-          <PersonLink
-            id={relationship.relatedPersonId}
-            name={relationship.relatedPersonName}
-          />
-        ) : (
-          <span>{displayName(relationship.relatedPersonName)}</span>
-        )}
+        <span className={relationship.isUncertain ? "italic" : undefined}>
+          {relationship.relatedPersonId ? (
+            <PersonLink
+              id={relationship.relatedPersonId}
+              name={relationship.relatedPersonName}
+            />
+          ) : (
+            <span>{displayName(relationship.relatedPersonName)}</span>
+          )}
+          {relationship.isUncertain && "?"}
+        </span>
         <SourceCitation
           name={relationship.secondarySource}
           className="ml-1 text-xs text-muted-foreground"

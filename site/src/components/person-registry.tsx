@@ -2,8 +2,25 @@
 import { Link } from "@tanstack/react-router"
 import { slugify } from "@/lib/slug"
 import { InfoHint } from "@/components/info-hint"
+import { SourceHint } from "@/components/source-hint"
 import type { GlossaryTermId } from "@/lib/glossary"
-import type { Person } from "@/data/types"
+import type { Person, TribeAssertionRecord } from "@/data/types"
+
+/** Groups tribe assertions by tribe name, preserving first-seen order. */
+function groupTribeAssertions(
+  assertions: TribeAssertionRecord[]
+): Map<string, TribeAssertionRecord[]> {
+  const groups = new Map<string, TribeAssertionRecord[]>()
+  for (const assertion of assertions) {
+    const existing = groups.get(assertion.tribeName)
+    if (existing) {
+      existing.push(assertion)
+    } else {
+      groups.set(assertion.tribeName, [assertion])
+    }
+  }
+  return groups
+}
 
 function Field({
   label,
@@ -91,20 +108,29 @@ export function PersonRegistry({ person }: { person: Person }) {
           {person.reNumber}
         </Field>
       )}
-      {person.tribes.length > 0 && (
+      {person.tribeAssertions.length > 0 && (
         <Field label="Tribe" hint="tribe">
-          {person.tribes.map((t, i) => (
-            <span key={t}>
-              {i > 0 && ", "}
-              <Link
-                to="/tribes/$slug"
-                params={{ slug: slugify(t) }}
-                className="text-accent-ink hover:underline"
-              >
-                {t}
-              </Link>
-            </span>
-          ))}
+          {[...groupTribeAssertions(person.tribeAssertions)].map(
+            ([name, asserts], i) => (
+              <span key={name}>
+                {i > 0 && ", "}
+                <Link
+                  to="/tribes/$slug"
+                  params={{ slug: slugify(name) }}
+                  className="text-accent-ink hover:underline"
+                >
+                  {name}
+                </Link>
+                {asserts.some((a) => a.isUncertain) && (
+                  <InfoHint term="uncertain" mark="?" />
+                )}
+                <SourceHint
+                  sources={asserts}
+                  label={`Sources for tribe ${name}`}
+                />
+              </span>
+            )
+          )}
         </Field>
       )}
       <Field label="DPRR ID">
