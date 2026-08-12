@@ -67,8 +67,34 @@ describe("landingBufferReducer", () => {
 
   test("'apply-pending' clears the buffer but keeps interacted latched", () => {
     const typed = typeChars(initialLandingBufferState, "brutus")
-    const applied = landingBufferReducer(typed, { type: "apply-pending" })
+    const applied = landingBufferReducer(typed, {
+      type: "apply-pending",
+      applied: "brutus",
+    })
     expect(applied.pendingQuery).toBeNull()
     expect(applied.interacted).toBe(true)
+  })
+
+  test("stale 'apply-pending' does not erase newer buffered text", () => {
+    // The race that dropped keystrokes: the results view's mount effect
+    // captured pendingQuery="c" while the unmounting loading input's
+    // debounce flush pushed "cicero" into the buffer. The stale
+    // acknowledgment for "c" must leave "cicero" in place so the effect
+    // re-fires for it.
+    const typedC = typeChars(initialLandingBufferState, "c")
+    const flushed = landingBufferReducer(typedC, {
+      type: "type",
+      query: "cicero",
+    })
+    const afterStaleApply = landingBufferReducer(flushed, {
+      type: "apply-pending",
+      applied: "c",
+    })
+    expect(afterStaleApply.pendingQuery).toBe("cicero")
+    const afterRealApply = landingBufferReducer(afterStaleApply, {
+      type: "apply-pending",
+      applied: "cicero",
+    })
+    expect(afterRealApply.pendingQuery).toBeNull()
   })
 })

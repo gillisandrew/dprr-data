@@ -18,8 +18,13 @@ export type LandingBufferAction =
   /** Fired by a non-typing interaction (e.g. a "Browse by" card) that
    * should also leave the landing screen. */
   | { type: "interact" }
-  /** Fired once the buffered query has been applied to real search state. */
-  | { type: "apply-pending" }
+  /** Fired once the buffered query has been applied to real search state.
+   * Carries the value that was applied: the buffer only clears if it still
+   * holds that exact value. An unconditional clear loses keystrokes — the
+   * loading input's unmount flush can push newer text into the buffer
+   * after the applying effect captured the older value, and the stale
+   * acknowledgment must not erase it. */
+  | { type: "apply-pending"; applied: string }
 
 export const initialLandingBufferState: LandingBufferState = {
   interacted: false,
@@ -51,6 +56,10 @@ export function landingBufferReducer(
     case "interact":
       return { ...state, interacted: true }
     case "apply-pending":
-      return { ...state, pendingQuery: null }
+      // Compare-and-clear: only consume the buffer if it still holds the
+      // value that was actually applied; newer text keeps waiting.
+      return state.pendingQuery === action.applied
+        ? { ...state, pendingQuery: null }
+        : state
   }
 }

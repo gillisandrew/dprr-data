@@ -77,7 +77,9 @@ function SearchPage() {
       bundle={bundle}
       initialFocus={initialFocus}
       pendingQuery={pendingQuery}
-      onPendingApplied={() => dispatch({ type: "apply-pending" })}
+      onPendingApplied={(applied) =>
+        dispatch({ type: "apply-pending", applied })
+      }
     />
   )
 
@@ -125,7 +127,7 @@ function SearchResults({
   bundle: SearchDataBundle
   initialFocus: Focus | undefined
   pendingQuery: string | null
-  onPendingApplied: () => void
+  onPendingApplied: (applied: string) => void
 }) {
   const { state, results, facets, updateState, clearAll, filteredHistogram } =
     useSearchState(bundle)
@@ -133,7 +135,7 @@ function SearchResults({
   useEffect(() => {
     if (pendingQuery === null) return
     updateState({ q: pendingQuery })
-    onPendingApplied()
+    onPendingApplied(pendingQuery)
     // Runs once per buffered query — updateState/onPendingApplied identity
     // isn't relevant to when this should fire.
     // eslint-disable-next-line react-hooks/exhaustive-deps
