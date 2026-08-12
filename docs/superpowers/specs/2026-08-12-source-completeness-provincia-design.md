@@ -84,7 +84,7 @@ provinciae have no per-link source beyond the assertion's own citation;
 
 ## 6. Hover-reveal hints
 
-- New `HoverPopover` wrapper (in `info-hint.tsx` or its own file) used by
+- New `HoverPopover` wrapper (`site/src/components/hover-popover.tsx`) used by
   `InfoHint` and `SourceHint`: controlled Radix popover that opens on
   pointer-enter of the trigger (~150ms delay) or keyboard focus, stays
   open while the pointer is over trigger or content, closes on
