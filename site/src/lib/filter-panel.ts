@@ -41,7 +41,7 @@ export function sectionCount(state: SearchState, key: PanelSection): number {
   }
 }
 
-/** Combined active count of the advanced tier (Tribe, Location, Events);
+/** Combined active count of the advanced tier (Tribe, Provincia, Events);
  * shown on the collapsed "More filters" trigger and used to force the tier
  * open on deep links. */
 export function advancedActiveCount(state: SearchState): number {

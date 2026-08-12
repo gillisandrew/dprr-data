@@ -12,7 +12,7 @@ const links = [
   { to: "/offices", label: "Offices" },
   { to: "/gentes", label: "Gentes" },
   { to: "/tribes", label: "Tribes" },
-  { to: "/provinces", label: "Locations" },
+  { to: "/provinces", label: "Provinciae" },
 ] as const
 
 export function SiteHeader() {

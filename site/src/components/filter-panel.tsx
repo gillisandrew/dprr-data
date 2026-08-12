@@ -2,7 +2,7 @@
 // Collapsible filter sections for the search page: a header row of pill
 // triggers with the single open section expanding in place below it.
 // Progressive disclosure at two levels — the advanced tier (Tribe,
-// Location, Events) sits behind "More filters", and Name/Office tuck their
+// Provincia, Events) sits behind "More filters", and Name/Office tuck their
 // rarely-used fields behind in-section reveals. Replaces the popover band.
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
@@ -30,7 +30,7 @@ const BASIC: { key: PanelSection; label: string }[] = [
 ]
 const ADVANCED: { key: PanelSection; label: string }[] = [
   { key: "tribe", label: "Tribe" },
-  { key: "location", label: "Location" },
+  { key: "location", label: "Provincia" },
   { key: "events", label: "Events" },
 ]
 
@@ -81,7 +81,7 @@ export function FilterPanel({
         ? "name"
         : null
   )
-  // Deep links into Tribe/Location/Events must not hide their own filters.
+  // Deep links into Tribe/Provincia/Events must not hide their own filters.
   const [advancedRevealed, setAdvancedRevealed] = useState(
     () => advancedActiveCount(state) > 0
   )
@@ -374,13 +374,13 @@ function SectionBody({
     case "location":
       return (
         <FacetHierarchyGroup
-          title="Location"
+          title="Provincia"
           items={facets.province}
           parentOf={provinceHierarchy}
           selected={state.province}
           onChange={(province) => onUpdate({ province })}
           frameless
-          childNoun="sub-locations"
+          childNoun="sub-provinciae"
         />
       )
     case "events":

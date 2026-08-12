@@ -30,7 +30,7 @@ function DirectoryPage() {
           </Link>
           , and{" "}
           <Link to="/provinces" className="underline">
-            locations
+            provinciae
           </Link>{" "}
           have their own indexes.
         </p>

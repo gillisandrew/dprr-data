@@ -71,9 +71,11 @@ export function ActiveFilterChips({
     })
   }
   for (const province of state.province) {
-    const suffix = provincesWithChildren.has(province) ? " + sub-locations" : ""
+    const suffix = provincesWithChildren.has(province)
+      ? " + sub-provinciae"
+      : ""
     chips.push({
-      label: `Location: ${province}${suffix}`,
+      label: `Provincia: ${province}${suffix}`,
       onRemove: () =>
         onRemove({ province: state.province.filter((p) => p !== province) }),
     })

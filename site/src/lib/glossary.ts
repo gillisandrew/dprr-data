@@ -66,8 +66,8 @@ export const GLOSSARY = {
     text: 'A political or religious post in the Roman state (consul, praetor, tribune, pontifex…). Offices form a hierarchy — selecting a parent like "Magisterial Posts" includes every office beneath it.',
   },
   location: {
-    label: "Location",
-    text: "The province or region a recorded post was connected to, as identified from the secondary source. Locations form a hierarchy; selecting a parent includes the regions beneath it.",
+    label: "Provincia",
+    text: "The sphere of responsibility assigned with a post — often a territory (Sicilia, Hispania), but equally a task or command: a war, a fleet, the courts, the grain supply. DPRR records the provincia as given in the sources; the geographic grouping used for browsing is this site's curation.",
   },
   "life-events": {
     label: "Life events",

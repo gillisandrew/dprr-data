@@ -19,7 +19,7 @@ export const Route = createFileRoute("/provinces/$slug")({
   },
   head: ({ loaderData: province }) => {
     if (!province) return {}
-    const title = `${province.name} — Locations — DPRR`
+    const title = `${province.name} — Provinciae — DPRR`
     const distinct = new Set(province.assertions.map((a) => a.personId)).size
     const desc = `${province.assertions.length} recorded assignments in ${province.name}, held by ${distinct} persons of the Roman Republic`
     return {

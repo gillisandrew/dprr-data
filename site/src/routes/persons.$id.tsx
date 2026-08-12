@@ -378,7 +378,7 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
         </p>
         {assertion.provinceOriginal && (
           <p className="text-sm text-muted-foreground">
-            Location:{" "}
+            Provincia:{" "}
             {assertion.provinces.length > 0 ? (
               assertion.provinces.map((pr, i) => (
                 <span key={pr}>
