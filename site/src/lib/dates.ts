@@ -45,3 +45,19 @@ export function fromSignedYear(signed: number): {
   if (signed <= 0) return { year: Math.abs(signed) || 1, era: "BC" }
   return { year: signed, era: "AD" }
 }
+
+/**
+ * Format a year with its DateInformation interval qualifier:
+ * "B" = before, "A" = after, "S"/null = a single year (plain formatYear).
+ * The uncertainty "c." prefix composes inside: "before c. 216 BC".
+ */
+export function formatYearWithInterval(
+  year: number,
+  interval: string | null,
+  uncertain: boolean = false
+): string {
+  const base = formatYear(year, uncertain)
+  if (interval === "B") return `before ${base}`
+  if (interval === "A") return `after ${base}`
+  return base
+}

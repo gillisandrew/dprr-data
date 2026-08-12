@@ -4,6 +4,7 @@ import {
   formatEraRange,
   toSignedYear,
   fromSignedYear,
+  formatYearWithInterval,
 } from "./dates"
 
 describe("formatYear", () => {
@@ -54,5 +55,22 @@ describe("signed year conversion", () => {
       toSignedYear(fromSignedYear(-509).year, fromSignedYear(-509).era)
     ).toBe(-509)
     expect(fromSignedYear(14)).toEqual({ year: 14, era: "AD" })
+  })
+})
+
+describe("formatYearWithInterval", () => {
+  test("B prefixes before, A prefixes after", () => {
+    expect(formatYearWithInterval(-216, "B")).toBe("before 216 BC")
+    expect(formatYearWithInterval(-216, "A")).toBe("after 216 BC")
+  })
+
+  test("S and null defer to formatYear exactly", () => {
+    expect(formatYearWithInterval(-216, "S")).toBe(formatYear(-216))
+    expect(formatYearWithInterval(-216, null)).toBe(formatYear(-216))
+  })
+
+  test("uncertainty composes with the interval", () => {
+    expect(formatYearWithInterval(-216, "B", true)).toBe("before c. 216 BC")
+    expect(formatYearWithInterval(14, "A", true)).toBe("after c. AD 14")
   })
 })

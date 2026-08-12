@@ -13,6 +13,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { DateDisplay, EraRange } from "@/components/date-display"
+import { formatYearWithInterval } from "@/lib/dates"
 import { SourceCitation } from "@/components/source-citation"
 import { PersonLink } from "@/components/person-card"
 import { ReportIssueLink } from "@/components/report-issue-link"
@@ -265,7 +266,11 @@ function DateEntry({ dateInfo }: { dateInfo: DateInfo }) {
   return (
     <div className="ledger-row flex gap-3">
       <span className="year-col text-sm">
-        <DateDisplay year={dateInfo.value} uncertain={dateInfo.isUncertain} />
+        {formatYearWithInterval(
+          dateInfo.value,
+          dateInfo.interval,
+          dateInfo.isUncertain
+        )}
       </span>
       <div className="min-w-0 flex-1 text-sm">
         <span className="text-muted-foreground capitalize">
@@ -399,9 +404,17 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
         {assertion.originalText && (
           <p className="mt-1 text-sm">{assertion.originalText}</p>
         )}
-        {assertion.dateSourceText && (
+        {(assertion.dateSourceText ||
+          (assertion.dateSecondarySource &&
+            assertion.dateSecondarySource !== assertion.secondarySource)) && (
           <p className="text-xs text-muted-foreground italic">
-            date: {assertion.dateSourceText}
+            {assertion.dateSourceText
+              ? `date: ${assertion.dateSourceText}`
+              : "date"}
+            {assertion.dateSecondarySource &&
+              assertion.dateSecondarySource !== assertion.secondarySource && (
+                <> per {assertion.dateSecondarySource}</>
+              )}
           </p>
         )}
         <SourceCitation
