@@ -27,12 +27,18 @@ interface FacetHierarchyGroupProps {
   /** Body only — no collapsible header or rule. For the filter panel's
    * sections, where the section trigger already names the facet. */
   frameless?: boolean
+  /** Noun used in the "— incl. N {childNoun}" annotation for a selected
+   * parent with selectable descendants. */
+  childNoun?: string
 }
 
 interface TreeNode {
   name: string
   count: number | null // null → structural label only, not selectable
   children: TreeNode[]
+  /** Count of selectable (non-structural) descendants, for the "included
+   * via this selection" annotation. */
+  selectableDescendants: number
 }
 
 function buildTree(
@@ -64,7 +70,16 @@ function buildTree(
   function toNode(name: string): TreeNode {
     const children = (childrenOf.get(name) ?? []).map(toNode)
     children.sort((a, b) => (b.count ?? 0) - (a.count ?? 0))
-    return { name, count: countByName.get(name) ?? null, children }
+    const selectableDescendants = children.reduce(
+      (sum, c) => sum + c.selectableDescendants + (c.count !== null ? 1 : 0),
+      0
+    )
+    return {
+      name,
+      count: countByName.get(name) ?? null,
+      children,
+      selectableDescendants,
+    }
   }
   return roots.map(toNode).sort((a, b) => a.name.localeCompare(b.name))
 }
@@ -78,6 +93,7 @@ export function FacetHierarchyGroup({
   defaultOpen = true,
   hideCounts = false,
   frameless = false,
+  childNoun = "sub-offices",
 }: FacetHierarchyGroupProps) {
   const [open, setOpen] = useState(defaultOpen)
   const [filter, setFilter] = useState("")
@@ -91,6 +107,16 @@ export function FacetHierarchyGroup({
     )
   }
 
+  /** Nearest selected ancestor of `name`, or null. */
+  function selectedAncestor(name: string): string | null {
+    let cur = parentOf[name] ?? null
+    while (cur) {
+      if (selected.includes(cur)) return cur
+      cur = parentOf[cur] ?? null
+    }
+    return null
+  }
+
   const filtered = filter.trim()
     ? items.filter((i) =>
         i.value.toLowerCase().includes(filter.trim().toLowerCase())
@@ -100,30 +126,81 @@ export function FacetHierarchyGroup({
   function renderNode(node: TreeNode, depth: number) {
     return (
       <div key={node.name} style={{ paddingLeft: depth * 12 }}>
-        {node.count !== null ? (
-          <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
-            <Checkbox
-              checked={selected.includes(node.name)}
-              onCheckedChange={() => toggle(node.name)}
-            />
-            <span className="min-w-0 truncate">{node.name}</span>
-            {!hideCounts && (
-              <span className="ml-auto text-xs text-muted-foreground">
-                {node.count}
-              </span>
-            )}
-          </label>
-        ) : (
-          <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5">
-            <Checkbox
-              checked={selected.includes(node.name)}
-              onCheckedChange={() => toggle(node.name)}
-            />
-            <span className="micro-label-muted min-w-0 truncate">
-              {node.name}
-            </span>
-          </label>
-        )}
+        {node.count !== null
+          ? (() => {
+              const ancestor = selectedAncestor(node.name)
+              const isSelected = selected.includes(node.name)
+              if (ancestor && !isSelected) {
+                return (
+                  <label
+                    className="flex items-center gap-2 py-0.5 text-[0.8125rem] leading-6 opacity-55"
+                    title={`Included via ${ancestor}`}
+                  >
+                    <Checkbox
+                      checked
+                      disabled
+                      aria-label={`${node.name} — included via ${ancestor}`}
+                    />
+                    <span className="min-w-0 truncate">{node.name}</span>
+                    {!hideCounts && (
+                      <span className="ml-auto text-xs text-muted-foreground">
+                        {node.count}
+                      </span>
+                    )}
+                  </label>
+                )
+              }
+              return (
+                <label className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6">
+                  <Checkbox
+                    checked={isSelected}
+                    onCheckedChange={() => toggle(node.name)}
+                  />
+                  <span className="min-w-0 truncate">{node.name}</span>
+                  {isSelected && node.selectableDescendants > 0 && (
+                    <span className="text-xs text-muted-foreground italic">
+                      — incl. {node.selectableDescendants} {childNoun}
+                    </span>
+                  )}
+                  {!hideCounts && (
+                    <span className="ml-auto text-xs text-muted-foreground">
+                      {node.count}
+                    </span>
+                  )}
+                </label>
+              )
+            })()
+          : (() => {
+              const ancestor = selectedAncestor(node.name)
+              if (ancestor) {
+                return (
+                  <label
+                    className="flex items-center gap-2 pt-2 pb-0.5 opacity-55"
+                    title={`Included via ${ancestor}`}
+                  >
+                    <Checkbox
+                      checked
+                      disabled
+                      aria-label={`${node.name} — included via ${ancestor}`}
+                    />
+                    <span className="micro-label-muted min-w-0 truncate">
+                      {node.name}
+                    </span>
+                  </label>
+                )
+              }
+              return (
+                <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5">
+                  <Checkbox
+                    checked={selected.includes(node.name)}
+                    onCheckedChange={() => toggle(node.name)}
+                  />
+                  <span className="micro-label-muted min-w-0 truncate">
+                    {node.name}
+                  </span>
+                </label>
+              )
+            })()}
         {node.children.map((c) =>
           renderNode(c, node.count === null ? depth : depth + 1)
         )}

@@ -380,6 +380,7 @@ function SectionBody({
           selected={state.province}
           onChange={(province) => onUpdate({ province })}
           frameless
+          childNoun="sub-locations"
         />
       )
     case "events":

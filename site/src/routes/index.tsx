@@ -1,5 +1,5 @@
 // site/src/routes/index.tsx
-import { useEffect, useReducer, useState } from "react"
+import { useEffect, useMemo, useReducer, useState } from "react"
 import { createFileRoute } from "@tanstack/react-router"
 import { parseSearchParams, toSearchParams } from "@/lib/search-params"
 import { useSearchState } from "@/lib/search"
@@ -132,6 +132,25 @@ function SearchResults({
   const { state, results, facets, updateState, clearAll, filteredHistogram } =
     useSearchState(bundle)
 
+  const officesWithChildren = useMemo(
+    () =>
+      new Set(
+        Object.values(bundle.payload.officeHierarchy).filter(
+          (p): p is string => p !== null
+        )
+      ),
+    [bundle]
+  )
+  const provincesWithChildren = useMemo(
+    () =>
+      new Set(
+        Object.values(bundle.payload.provinceHierarchy).filter(
+          (p): p is string => p !== null
+        )
+      ),
+    [bundle]
+  )
+
   useEffect(() => {
     if (pendingQuery === null) return
     updateState({ q: pendingQuery })
@@ -174,6 +193,8 @@ function SearchResults({
             state={state}
             onRemove={updateState}
             onClearAll={clearAll}
+            officesWithChildren={officesWithChildren}
+            provincesWithChildren={provincesWithChildren}
           />
         </div>
       </div>

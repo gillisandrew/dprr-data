@@ -6,18 +6,23 @@ interface ActiveFilterChipsProps {
   state: SearchState
   onRemove: (updates: Partial<SearchState>) => void
   onClearAll: () => void
+  officesWithChildren?: Set<string>
+  provincesWithChildren?: Set<string>
 }
 
 export function ActiveFilterChips({
   state,
   onRemove,
   onClearAll,
+  officesWithChildren = new Set(),
+  provincesWithChildren = new Set(),
 }: ActiveFilterChipsProps) {
   const chips: { label: string; onRemove: () => void }[] = []
 
   for (const office of state.office) {
+    const suffix = officesWithChildren.has(office) ? " + sub-offices" : ""
     chips.push({
-      label: `Office: ${office}`,
+      label: `Office: ${office}${suffix}`,
       onRemove: () =>
         onRemove({ office: state.office.filter((o) => o !== office) }),
     })
@@ -66,8 +71,9 @@ export function ActiveFilterChips({
     })
   }
   for (const province of state.province) {
+    const suffix = provincesWithChildren.has(province) ? " + sub-locations" : ""
     chips.push({
-      label: `Location: ${province}`,
+      label: `Location: ${province}${suffix}`,
       onRemove: () =>
         onRemove({ province: state.province.filter((p) => p !== province) }),
     })
