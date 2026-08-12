@@ -42,6 +42,9 @@ export interface Person extends PersonSummary {
   nobilisNotes: string | null
   postAssertions: PostAssertion[]
   relationships: Relationship[]
+  /** Full tribe assertions with sources and notes; `tribes` on the summary
+   * is the deduped name list derived from these. */
+  tribeAssertions: TribeAssertionRecord[]
   dateInformation: DateInfo[]
   personNotes: Note[]
   concordances: Concordance[]
@@ -113,6 +116,16 @@ export interface Relationship {
   typeOrderNumber: number | null
   /** Order within the group (hasRelationshipNumber). */
   relationshipNumber: number | null
+  /** True when the source scholarship marks the relationship itself as
+   * uncertain. */
+  isUncertain: boolean
+}
+
+export interface TribeAssertionRecord {
+  tribeName: string
+  secondarySource: string
+  notes: string | null
+  isUncertain: boolean
 }
 
 export interface RelationshipReference {

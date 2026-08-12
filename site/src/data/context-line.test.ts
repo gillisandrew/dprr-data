@@ -33,6 +33,7 @@ function makePerson(over: Partial<Person>): Person {
     nobilisNotes: null,
     postAssertions: [],
     relationships: [],
+    tribeAssertions: [],
     dateInformation: [],
     personNotes: [],
     concordances: [],
@@ -57,6 +58,7 @@ function makeRel(over: Partial<Relationship>): Relationship {
     references: [],
     typeOrderNumber: null,
     relationshipNumber: null,
+    isUncertain: false,
     ...over,
   }
 }

@@ -14,6 +14,7 @@ import type {
   Concordance,
   ReferenceMaps,
   StatusAssertion,
+  TribeAssertionRecord,
 } from "./types"
 
 const PERSON_TYPE = `${DPRR}Person`
@@ -237,6 +238,7 @@ export function parsePersonTtl(
           ? (refs.relationships.get(relTypeUri)?.orderNumber ?? null)
           : null,
         relationshipNumber: firstNum(g, "hasRelationshipNumber"),
+        isUncertain: first(g, "isUncertain") === "true",
       })
     }
     return results
@@ -273,16 +275,22 @@ export function parsePersonTtl(
       .filter((n): n is Note => n !== null)
   }
 
-  // Build tribes for a person URI from TribeAssertion entities
-  function buildTribes(personUri: string): string[] {
-    const names: string[] = []
+  // Build tribe assertion records (with sources/notes) for a person URI
+  function buildTribeAssertions(personUri: string): TribeAssertionRecord[] {
+    const results: TribeAssertionRecord[] = []
     for (const [, g] of tribeAssertionGroups) {
       if (first(g, "isAboutPerson") !== personUri) continue
       const tribeUri = first(g, "hasTribe")
-      const name = tribeUri ? refs.tribes.get(tribeUri)?.name : null
-      if (name && !names.includes(name)) names.push(name)
+      const tribeName = tribeUri ? refs.tribes.get(tribeUri)?.name : null
+      if (!tribeName) continue
+      results.push({
+        tribeName,
+        secondarySource: resolveSource(first(g, "hasSecondarySource")),
+        notes: first(g, "hasNotes"),
+        isUncertain: first(g, "isUncertain") === "true",
+      })
     }
-    return names
+    return results
   }
 
   // Build StatusAssertions (with dates, sources, notes) for a person URI
@@ -341,6 +349,7 @@ export function parsePersonTtl(
     ]
 
     const filiation = first(g, "hasFiliation")
+    const tribeAssertions = buildTribeAssertions(personUri)
     const dateInformation = buildDateInfo(personUri)
     const lifeEvents = [
       ...new Set(
@@ -387,7 +396,8 @@ export function parsePersonTtl(
       highestOffice: first(g, "hasHighestOffice"),
       eraFrom: firstNum(g, "hasEraFrom"),
       eraTo: firstNum(g, "hasEraTo"),
-      tribes: buildTribes(personUri),
+      tribes: [...new Set(tribeAssertions.map((t) => t.tribeName))],
+      tribeAssertions,
       offices: officeNames,
       provinces: provinceNames,
       postAssertions,

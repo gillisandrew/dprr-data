@@ -374,6 +374,64 @@ describe("career position, Broughton labels, and status details", () => {
   })
 })
 
+const TRIBE_REL_TTL = `@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/50> a dprr:Person ;
+  dprr:hasDprrID "TEST0050" ;
+  dprr:hasNomen "Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/Person/51> a dprr:Person ;
+  dprr:hasDprrID "TEST0051" ;
+  dprr:hasPersonName "TEST0051 T. Testius Junior" ;
+  dprr:hasNomen "Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/TribeAssertion/7> a dprr:TribeAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/50> ;
+  dprr:hasTribe <http://romanrepublic.ac.uk/rdf/entity/Tribe/38> ;
+  dprr:hasSecondarySource <http://romanrepublic.ac.uk/rdf/entity/SecondarySource/1> ;
+  dprr:hasNotes "p187." ;
+  dprr:isUncertain true .
+<http://romanrepublic.ac.uk/rdf/entity/RelationshipAssertion/8> a dprr:RelationshipAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/50> ;
+  dprr:isUncertain true ;
+  dprr:hasRelationship <http://romanrepublic.ac.uk/rdf/entity/Relationship/3> ;
+  dprr:hasRelatedPerson <http://romanrepublic.ac.uk/rdf/entity/Person/51> .
+`
+
+describe("tribe assertion records and relationship uncertainty", () => {
+  function tribeRefs(): ReferenceMaps {
+    const refs = makeRefs()
+    refs.tribes.set("http://romanrepublic.ac.uk/rdf/entity/Tribe/38", {
+      name: "Camilia",
+      abbreviation: "Cam.",
+    })
+    refs.relationships.set(
+      "http://romanrepublic.ac.uk/rdf/entity/Relationship/3",
+      { name: "father of", orderNumber: 1 }
+    )
+    return refs
+  }
+
+  test("tribe assertions carry source, notes, and uncertainty", () => {
+    const persons = parsePersonTtl(TRIBE_REL_TTL, tribeRefs(), new Map())
+    const p = persons.find((x) => x.id === "TEST0050")!
+    expect(p.tribeAssertions).toEqual([
+      {
+        tribeName: "Camilia",
+        secondarySource: "Broughton MRR",
+        notes: "p187.",
+        isUncertain: true,
+      },
+    ])
+    // Flat facet list still derives from the same assertions
+    expect(p.tribes).toEqual(["Camilia"])
+  })
+
+  test("relationship isUncertain parses", () => {
+    const persons = parsePersonTtl(TRIBE_REL_TTL, tribeRefs(), new Map())
+    const p = persons.find((x) => x.id === "TEST0050")!
+    expect(p.relationships).toHaveLength(1)
+    expect(p.relationships[0].isUncertain).toBe(true)
+  })
+})
+
 describe("relationship order numbers", () => {
   test("parses relationshipNumber and typeOrderNumber from the reference map", () => {
     const ttl = `

@@ -71,6 +71,7 @@ function makePerson(over: Partial<Person>): Person {
     lifeEvents: [],
     postAssertions: [],
     relationships: [],
+    tribeAssertions: [],
     dateInformation: [],
     personNotes: [],
     concordances: [],

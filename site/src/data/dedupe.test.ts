@@ -36,6 +36,7 @@ function makeRelationship(over: Partial<Relationship>): Relationship {
     references: [],
     typeOrderNumber: null,
     relationshipNumber: null,
+    isUncertain: false,
     ...over,
   }
 }
@@ -70,6 +71,7 @@ function makePerson(over: Partial<Person>): Person {
     lifeEvents: [],
     postAssertions: [],
     relationships: [],
+    tribeAssertions: [],
     dateInformation: [],
     personNotes: [],
     concordances: [],
