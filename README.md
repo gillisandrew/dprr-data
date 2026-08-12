@@ -31,7 +31,7 @@ concordances/             # Wikidata-derived cross-references
   ...                     # + GND, LoC, British Museum, etc.
 ```
 
-Files are named by DPRR ID (e.g., `IUNI0001`) and grouped into directories by the 4-letter nomen code. Each person file includes the person's triples plus all related assertions, notes, and references. Shared reference data (offices, sources, etc.) is not duplicated — person files contain URI references to entities in `reference/`.
+Files are named by DPRR ID (e.g., `IUNI0001`) and grouped into directories by the 4-letter nomen code. Each person file contains exactly one `dprr:Person` plus that person's assertions, notes, and references. Nothing is duplicated across files: shared reference data (offices, sources, etc.) lives in `reference/`, and other persons — e.g. a `dprr:hasRelatedPerson` target in a relationship assertion — appear as bare `entity:Person/N` URIs whose own data lives in their own file. Consumers that need related-person names should load the relevant files and join on the URI.
 
 ## Changes from upstream
 

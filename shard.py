@@ -173,10 +173,15 @@ def collect_person_triples(store: Store, person: NamedNode) -> list[Quad]:
                 collect_subject(q.object)
         # Follow links to per-assertion entities (e.g., PostAssertionProvince)
         # but NOT to shared reference data (those live in reference/*.ttl)
+        # and NOT to other persons (hasRelatedPerson targets): each person
+        # has their own canonical file, and consumers resolve related-person
+        # names from the full set at build time. Embedding stub copies here
+        # denormalized every relationship into both parties' files.
         ref_type_names = set()
         for types in REFERENCE_FILES.values():
             ref_type_names.update(types)
         ref_type_uris = {NamedNode(VOCAB + t) for t in ref_type_names}
+        skip_type_uris = ref_type_uris | {NamedNode(VOCAB + "Person")}
         for q in store.quads_for_pattern(assertion, None, None, None):
             obj_str = str(q.object)
             if "/entity/" in obj_str and obj_str not in collected:
@@ -184,8 +189,8 @@ def collect_person_triples(store: Store, person: NamedNode) -> list[Quad]:
                     tq.object
                     for tq in store.quads_for_pattern(q.object, RDF_TYPE, None, None)
                 }
-                # Skip if any of its types are reference types
-                if not obj_types & ref_type_uris:
+                # Skip if any of its types are reference types or Person
+                if not obj_types & skip_type_uris:
                     collect_subject(q.object)
 
     # References that point back to our assertions (ref → forAssertion → assertion)
