@@ -144,7 +144,11 @@ function PersonPage() {
       )}
 
       {person.postAssertions.length > 0 && (
-        <Section title="Career" count={person.postAssertions.length}>
+        <Section
+          title="Career"
+          count={person.postAssertions.length}
+          hint="broughton-label"
+        >
           <div>
             {person.postAssertions.map((pa) => (
               <OfficeEntry key={pa.id} assertion={pa} />
@@ -154,7 +158,11 @@ function PersonPage() {
       )}
 
       {person.statusAssertions.length > 0 && (
-        <Section title="Status" count={person.statusAssertions.length}>
+        <Section
+          title="Status"
+          count={person.statusAssertions.length}
+          hint="status"
+        >
           <div>
             {person.statusAssertions.map((sa) => (
               <StatusEntry key={sa.id} assertion={sa} />
@@ -183,7 +191,7 @@ function PersonPage() {
       )}
 
       {sortedDates.length > 0 && (
-        <Section title="Dates" count={sortedDates.length}>
+        <Section title="Dates" count={sortedDates.length} hint="life-events">
           <div>
             {sortedDates.map((d, i) => (
               <DateEntry key={i} dateInfo={d} />

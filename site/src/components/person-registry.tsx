@@ -1,18 +1,29 @@
 // site/src/components/person-registry.tsx
 import { Link } from "@tanstack/react-router"
 import { slugify } from "@/lib/slug"
+import { InfoHint } from "@/components/info-hint"
+import type { GlossaryTermId } from "@/lib/glossary"
 import type { Person } from "@/data/types"
 
 function Field({
   label,
+  hint,
   children,
 }: {
   label: string
+  hint?: GlossaryTermId
   children: React.ReactNode
 }) {
   return (
     <div className="min-w-0">
-      <p className="micro-label-muted">{label}</p>
+      <p className="micro-label-muted">
+        {label}
+        {hint && (
+          <span className="ml-1">
+            <InfoHint term={hint} />
+          </span>
+        )}
+      </p>
       <p className="text-sm break-words">{children}</p>
     </div>
   )
@@ -24,13 +35,15 @@ export function PersonRegistry({ person }: { person: Person }) {
   return (
     <div className="rule-hair flex flex-wrap gap-x-8 gap-y-2 pt-2 pb-3">
       {person.praenomen && (
-        <Field label="Praenomen">
+        <Field label="Praenomen" hint="praenomen">
           {person.praenomen}
-          {person.isPraenomenUncertain && "?"}
+          {person.isPraenomenUncertain && (
+            <InfoHint term="uncertain" mark="?" />
+          )}
         </Field>
       )}
       {person.nomen && (
-        <Field label="Nomen">
+        <Field label="Nomen" hint="nomen">
           {nomenSlug ? (
             <Link
               to="/gentes/$slug"
@@ -42,26 +55,36 @@ export function PersonRegistry({ person }: { person: Person }) {
           ) : (
             person.nomen
           )}
-          {person.isNomenUncertain && "?"}
+          {person.isNomenUncertain && <InfoHint term="uncertain" mark="?" />}
         </Field>
       )}
       {person.cognomen && (
-        <Field label="Cognomen">
+        <Field label="Cognomen" hint="cognomen">
           {person.cognomen}
-          {person.isCognomenUncertain && "?"}
+          {person.isCognomenUncertain && <InfoHint term="uncertain" mark="?" />}
         </Field>
       )}
       {person.filiation && (
-        <Field label="Filiation">
+        <Field label="Filiation" hint="filiation">
           {person.filiation}
-          {person.isFiliationUncertain && "?"}
+          {person.isFiliationUncertain && (
+            <InfoHint term="uncertain" mark="?" />
+          )}
         </Field>
       )}
-      {person.origin && <Field label="Origin">{person.origin}</Field>}
+      {person.origin && (
+        <Field label="Origin" hint="origin">
+          {person.origin}
+        </Field>
+      )}
       {person.sex && <Field label="Sex">{person.sex}</Field>}
-      {person.reNumber && <Field label="RE">{person.reNumber}</Field>}
+      {person.reNumber && (
+        <Field label="RE" hint="re-number">
+          {person.reNumber}
+        </Field>
+      )}
       {person.tribes.length > 0 && (
-        <Field label="Tribe">
+        <Field label="Tribe" hint="tribe">
           {person.tribes.map((t, i) => (
             <span key={t}>
               {i > 0 && ", "}

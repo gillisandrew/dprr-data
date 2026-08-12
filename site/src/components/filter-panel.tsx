@@ -9,6 +9,7 @@ import { ChevronDown } from "lucide-react"
 import { FacetGroup } from "./facet-group"
 import { FacetHierarchyGroup } from "./facet-hierarchy-group"
 import { FacetCombobox } from "./facet-combobox"
+import { InfoHint } from "./info-hint"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { cn } from "@/lib/utils"
@@ -19,6 +20,7 @@ import {
   officeOptionsActive,
   type PanelSection,
 } from "@/lib/filter-panel"
+import type { GlossaryTermId } from "@/lib/glossary"
 import type { SearchState, FacetValue } from "@/data/types"
 
 const BASIC: { key: PanelSection; label: string }[] = [
@@ -31,6 +33,15 @@ const ADVANCED: { key: PanelSection; label: string }[] = [
   { key: "location", label: "Location" },
   { key: "events", label: "Events" },
 ]
+
+const SECTION_TERM: Record<PanelSection, GlossaryTermId> = {
+  office: "office",
+  name: "nomen",
+  status: "status",
+  tribe: "tribe",
+  location: "location",
+  events: "life-events",
+}
 
 interface FilterPanelProps {
   facets: {
@@ -124,6 +135,12 @@ export function FilterPanel({
           aria-labelledby={`filter-trigger-${openKey}`}
           className="mt-2 max-h-[45vh] overflow-y-auto rounded-[4px] border border-rule-hair p-3"
         >
+          <div className="mb-2 flex items-center gap-1.5">
+            <span className="micro-label-muted">
+              {[...BASIC, ...ADVANCED].find((s) => s.key === openKey)!.label}
+            </span>
+            <InfoHint term={SECTION_TERM[openKey]} />
+          </div>
           <SectionBody
             section={openKey}
             facets={facets}
@@ -250,6 +267,7 @@ function SectionBody({
                   }
                 />
                 <span>Require every selected office (AND)</span>
+                <InfoHint term="office-and-mode" />
               </label>
               <label className="flex cursor-pointer items-center gap-2 text-xs">
                 <Checkbox
@@ -259,6 +277,7 @@ function SectionBody({
                   }
                 />
                 <span>Apply time period to offices (held in range)</span>
+                <InfoHint term="office-in-range" />
               </label>
             </div>
           </InSectionReveal>

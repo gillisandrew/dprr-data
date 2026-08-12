@@ -1,5 +1,6 @@
 // site/src/routes/about.tsx
 import { createFileRoute, Link } from "@tanstack/react-router"
+import { GLOSSARY } from "@/lib/glossary"
 
 const REPO_URL = "https://github.com/gillisandrew/dprr-data"
 
@@ -108,6 +109,18 @@ function AboutPage() {
             </a>
             .
           </p>
+        </section>
+
+        <section>
+          <h2 className="mb-2 font-heading text-xl font-semibold">Glossary</h2>
+          <dl className="space-y-3">
+            {Object.entries(GLOSSARY).map(([id, entry]) => (
+              <div key={id}>
+                <dt className="text-sm font-medium">{entry.label}</dt>
+                <dd className="text-sm text-muted-foreground">{entry.text}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
       </div>
     </div>
