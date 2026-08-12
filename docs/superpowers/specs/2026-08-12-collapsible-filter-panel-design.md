@@ -111,8 +111,23 @@ is a presentation-layer change only.
 
 `site/public/icon.svg` was updated on 2026-08-12 but its raster derivatives
 (`favicon.ico`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png`) are
-stale (2026-08-09). Regenerate all four from the new SVG and commit them
-together with the SVG as a separate commit in the same batch.
+stale (2026-08-09). The new SVG is 550×420 — landscape, unlike the previous
+square artwork — so regeneration must letterbox it: render the SVG centered
+on a square canvas at each target size (transparent background for the PNGs
+and .ico; `apple-touch-icon.png` gets an opaque background matching the
+site's light theme, since iOS composites transparency onto black). Commit
+the SVG and all four derivatives together as a separate commit in the batch.
+
+### Nav wordmark
+
+Replace the bare "DPRR" text link in `site/src/components/site-header.tsx`
+with the icon: an `<img src="/icon.svg">` inside the home `Link`, sized to
+roughly the nav's current text height (~28px tall; width follows the 550:420
+ratio) with negative top/bottom margins (e.g. `-my-1`) so the header does not
+grow taller. The nav row uses `items-baseline`; the logo link switches to
+`self-center` (or equivalent) so the image aligns without disturbing the
+text links' baseline alignment. The link keeps an accessible name
+(`aria-label="DPRR — home"` on the link or `alt="DPRR"` on the image).
 
 ## Testing
 
@@ -122,3 +137,6 @@ together with the SVG as a separate commit in the same batch.
   filters reveal + collapsed active count, deep-link auto-reveal of the
   advanced tier and tucked fields, landing-card `initialFocus` paths, tall
   tree internal scroll.
+- Icon: verify header height is unchanged with the logo in place (desktop
+  and mobile), and that regenerated raster icons render the full artwork
+  centered (favicon in a browser tab, manifest icons at 192/512).
