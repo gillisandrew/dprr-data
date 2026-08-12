@@ -3,8 +3,10 @@ import { Link } from "@tanstack/react-router"
 import { ThemeToggle } from "@/components/theme-toggle"
 // Inlined (not <img>) so page CSS can retheme it with the site's .dark
 // class — an embedded image only sees the OS color scheme, which the
-// theme toggle can override. Single source shared with the favicon.
-import iconSvg from "../../public/icon.svg?raw"
+// theme toggle can override. Single source shared with the favicon link
+// in __root.tsx (Vite forbids ?raw imports from public/, so it lives in
+// src/assets and the favicon uses the hashed asset URL).
+import iconSvg from "@/assets/icon.svg?raw"
 
 const links = [
   { to: "/offices", label: "Offices" },

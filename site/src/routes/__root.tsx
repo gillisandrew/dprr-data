@@ -12,6 +12,9 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
 import appCss from "../styles.css?url"
+// Hashed asset URL — the SVG lives in src/assets (single source with the
+// inlined nav logo), not public/, so Vite fingerprints it like any asset.
+import iconSvgHref from "@/assets/icon.svg"
 
 // Inline, blocking, and placed before HeadContent so it runs before any
 // stylesheet or paint on every prerendered page — avoids a flash of the
@@ -49,7 +52,7 @@ export const Route = createRootRoute({
       {
         rel: "icon",
         type: "image/svg+xml",
-        href: `${import.meta.env.BASE_URL}icon.svg`,
+        href: iconSvgHref,
       },
       {
         rel: "icon",
