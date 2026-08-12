@@ -21,6 +21,7 @@ export function FacetGroup({
   defaultOpen = true,
   searchable = false,
   frameless = false,
+  listClassName,
 }: {
   title: string
   items: FacetValue[]
@@ -31,6 +32,9 @@ export function FacetGroup({
   /** Body only — no collapsible header or rule. For popovers, where the
    * trigger pill already names the facet. */
   frameless?: boolean
+  /** Extra classes on the checkbox-list container — used by the filter
+   * panel to flow long flat lists into CSS columns. */
+  listClassName?: string
 }) {
   const [open, setOpen] = useState(defaultOpen)
   const [filter, setFilter] = useState("")
@@ -64,11 +68,11 @@ export function FacetGroup({
           className={cn("mb-1 h-7 text-xs", !frameless && "mt-2")}
         />
       )}
-      <div>
+      <div className={listClassName}>
         {visible.map((item) => (
           <label
             key={item.value}
-            className="flex cursor-pointer items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
+            className="flex cursor-pointer break-inside-avoid items-center gap-2 py-0.5 text-[0.8125rem] leading-6"
           >
             <Checkbox
               checked={selected.includes(item.value)}
