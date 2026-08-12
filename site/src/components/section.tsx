@@ -16,11 +16,13 @@ export function Section({
   return (
     <section className="mt-7">
       <h2 className="micro-label rule-hair flex items-baseline justify-between pb-1">
-        {title}
+        <span className="flex items-baseline gap-1.5">
+          {title}
+          {hint && <InfoHint term={hint} />}
+        </span>
         {count !== undefined && (
           <span className="micro-label-muted">{count}</span>
         )}
-        {hint && <InfoHint term={hint} />}
       </h2>
       <div className="mt-2">{children}</div>
     </section>

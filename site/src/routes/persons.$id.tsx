@@ -315,7 +315,7 @@ function StatusEntry({ assertion }: { assertion: StatusAssertion }) {
         ))}
         <SourceCitation
           name={assertion.secondarySource}
-          className="text-xs text-muted-foreground"
+          className="mt-1 block text-xs text-muted-foreground"
         />
       </div>
     </div>

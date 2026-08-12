@@ -189,15 +189,21 @@ export function FacetHierarchyGroup({
                   </label>
                 )
               }
+              const isSelected = selected.includes(node.name)
               return (
                 <label className="flex cursor-pointer items-center gap-2 pt-2 pb-0.5">
                   <Checkbox
-                    checked={selected.includes(node.name)}
+                    checked={isSelected}
                     onCheckedChange={() => toggle(node.name)}
                   />
                   <span className="micro-label-muted min-w-0 truncate">
                     {node.name}
                   </span>
+                  {isSelected && node.selectableDescendants > 0 && (
+                    <span className="text-xs text-muted-foreground italic">
+                      — incl. {node.selectableDescendants} {childNoun}
+                    </span>
+                  )}
                 </label>
               )
             })()}
