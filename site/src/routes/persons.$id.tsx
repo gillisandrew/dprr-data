@@ -4,6 +4,7 @@ import { fetchPerson, StaticDataError } from "@/lib/static-data"
 import { slugify } from "@/lib/slug"
 import { displayName } from "@/lib/order"
 import { SITE_URL } from "@/lib/site"
+import { cn } from "@/lib/utils"
 import { Section } from "@/components/section"
 import { PersonRegistry } from "@/components/person-registry"
 import {
@@ -18,13 +19,15 @@ import { ReportIssueLink } from "@/components/report-issue-link"
 import { personTtlPath } from "@/lib/report-issue"
 import type {
   PostAssertion,
+  StatusAssertion,
   Note,
   Relationship,
   DateInfo,
   Concordance,
 } from "@/data/types"
 
-/** Groups relationships by type (alphabetical), people by display name within. */
+/** Groups relationships by type in DPRR's curated order (hasOrderNumber,
+ * alphabetical fallback); members by hasRelationshipNumber, then name. */
 function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
   const byType = new Map<string, Relationship[]>()
   for (const r of rels) {
@@ -32,14 +35,19 @@ function groupRelationships(rels: Relationship[]): [string, Relationship[]][] {
     list.push(r)
     byType.set(r.relationshipType, list)
   }
+  const orderOf = (list: Relationship[]) =>
+    list[0].typeOrderNumber ?? Number.MAX_SAFE_INTEGER
   return [...byType]
-    .sort((a, b) => a[0].localeCompare(b[0]))
+    .sort((a, b) => orderOf(a[1]) - orderOf(b[1]) || a[0].localeCompare(b[0]))
     .map(([type, list]) => [
       type,
-      [...list].sort((a, b) =>
-        displayName(a.relatedPersonName).localeCompare(
-          displayName(b.relatedPersonName)
-        )
+      [...list].sort(
+        (a, b) =>
+          (a.relationshipNumber ?? Number.MAX_SAFE_INTEGER) -
+            (b.relationshipNumber ?? Number.MAX_SAFE_INTEGER) ||
+          displayName(a.relatedPersonName).localeCompare(
+            displayName(b.relatedPersonName)
+          )
       ),
     ])
 }
@@ -129,12 +137,27 @@ function PersonPage() {
           {person.nobilisNotes}
         </p>
       )}
+      {person.novusNotes && (
+        <p className="mt-2 text-sm text-muted-foreground italic">
+          {person.novusNotes}
+        </p>
+      )}
 
       {person.postAssertions.length > 0 && (
         <Section title="Career" count={person.postAssertions.length}>
           <div>
             {person.postAssertions.map((pa) => (
               <OfficeEntry key={pa.id} assertion={pa} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {person.statusAssertions.length > 0 && (
+        <Section title="Status" count={person.statusAssertions.length}>
+          <div>
+            {person.statusAssertions.map((sa) => (
+              <StatusEntry key={sa.id} assertion={sa} />
             ))}
           </div>
         </Section>
@@ -252,6 +275,45 @@ function DateEntry({ dateInfo }: { dateInfo: DateInfo }) {
   )
 }
 
+function StatusEntry({ assertion }: { assertion: StatusAssertion }) {
+  return (
+    <div className="ledger-row flex gap-3">
+      <span className="year-col text-sm">
+        {(assertion.dateStart !== null || assertion.dateEnd !== null) && (
+          <>
+            {assertion.dateStart !== null &&
+            assertion.dateEnd !== null &&
+            assertion.dateStart !== assertion.dateEnd ? (
+              <EraRange from={assertion.dateStart} to={assertion.dateEnd} />
+            ) : (
+              <DateDisplay
+                year={(assertion.dateStart ?? assertion.dateEnd) as number}
+              />
+            )}
+            {(assertion.isDateStartUncertain || assertion.isDateEndUncertain) &&
+              "?"}
+          </>
+        )}
+      </span>
+      <div className="min-w-0 flex-1 text-sm">
+        <span className={cn("small-caps", assertion.isUncertain && "italic")}>
+          {assertion.statusName}
+          {assertion.isUncertain && "?"}
+        </span>
+        {assertion.notes.map((note, i) => (
+          <p key={i} className="text-sm text-muted-foreground">
+            {note.text}
+          </p>
+        ))}
+        <SourceCitation
+          name={assertion.secondarySource}
+          className="text-xs text-muted-foreground"
+        />
+      </div>
+    </div>
+  )
+}
+
 function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
   return (
     <div className="ledger-row flex gap-3">
@@ -295,6 +357,11 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
               ({assertion.officeAbbreviation})
             </span>
           )}
+          {assertion.officeXref && (
+            <span className="ml-1 text-sm text-muted-foreground italic">
+              {assertion.officeXref}
+            </span>
+          )}
         </p>
         {assertion.provinceOriginal && (
           <p className="text-sm text-muted-foreground">
@@ -323,6 +390,11 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
         )}
         {assertion.originalText && (
           <p className="mt-1 text-sm">{assertion.originalText}</p>
+        )}
+        {assertion.dateSourceText && (
+          <p className="text-xs text-muted-foreground italic">
+            date: {assertion.dateSourceText}
+          </p>
         )}
         <SourceCitation
           name={assertion.secondarySource}

@@ -23,7 +23,12 @@ export function PersonRegistry({ person }: { person: Person }) {
   const nomenSlug = person.nomen ? slugify(person.nomen) : ""
   return (
     <div className="rule-hair flex flex-wrap gap-x-8 gap-y-2 pt-2 pb-3">
-      {person.praenomen && <Field label="Praenomen">{person.praenomen}</Field>}
+      {person.praenomen && (
+        <Field label="Praenomen">
+          {person.praenomen}
+          {person.isPraenomenUncertain && "?"}
+        </Field>
+      )}
       {person.nomen && (
         <Field label="Nomen">
           {nomenSlug ? (
@@ -37,10 +42,22 @@ export function PersonRegistry({ person }: { person: Person }) {
           ) : (
             person.nomen
           )}
+          {person.isNomenUncertain && "?"}
         </Field>
       )}
-      {person.cognomen && <Field label="Cognomen">{person.cognomen}</Field>}
-      {person.filiation && <Field label="Filiation">{person.filiation}</Field>}
+      {person.cognomen && (
+        <Field label="Cognomen">
+          {person.cognomen}
+          {person.isCognomenUncertain && "?"}
+        </Field>
+      )}
+      {person.filiation && (
+        <Field label="Filiation">
+          {person.filiation}
+          {person.isFiliationUncertain && "?"}
+        </Field>
+      )}
+      {person.origin && <Field label="Origin">{person.origin}</Field>}
       {person.sex && <Field label="Sex">{person.sex}</Field>}
       {person.reNumber && <Field label="RE">{person.reNumber}</Field>}
       {person.tribes.length > 0 && (
