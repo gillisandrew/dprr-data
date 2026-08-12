@@ -29,6 +29,10 @@ export const GLOSSARY = {
     label: "Senator",
     text: "Attested membership of the Senate, recorded as a dated status assertion with its supporting source — used chiefly where a person is known as a senator without a specific recorded magistracy.",
   },
+  "roman-names": {
+    label: "Roman names",
+    text: "Roman men carried up to three names — a personal praenomen, the clan's nomen, and a branch cognomen — often cited with a filiation (father's and grandfather's praenomina) and, in modern scholarship, an RE number. Any part can be searched here; gens (nomen) finds every recorded member of a clan.",
+  },
   praenomen: {
     label: "Praenomen",
     text: "The Roman personal name (Marcus, Gaius, Lucius…), conventionally abbreviated (M., C., L.). Only a small set was in use, so it rarely identifies a person on its own.",
@@ -40,6 +44,10 @@ export const GLOSSARY = {
   cognomen: {
     label: "Cognomen",
     text: "The surname distinguishing branches of a gens (Caesar, Scipio, Cicero…). Not every person carries one, especially in the early Republic.",
+  },
+  "other-names": {
+    label: "Other names",
+    text: "Names DPRR records for the person beyond the usual three-part praenomen–nomen–cognomen convention — adoptive names, agnomina, or alternative identifications found in the sources.",
   },
   filiation: {
     label: "Filiation",

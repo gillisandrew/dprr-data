@@ -36,7 +36,7 @@ const ADVANCED: { key: PanelSection; label: string }[] = [
 
 const SECTION_TERM: Record<PanelSection, GlossaryTermId> = {
   office: "office",
-  name: "nomen",
+  name: "roman-names",
   status: "status",
   tribe: "tribe",
   location: "location",

@@ -308,7 +308,37 @@ function makeEnrichedRefs(): ReferenceMaps {
   return refs
 }
 
+const TIE_TTL = `@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+<http://romanrepublic.ac.uk/rdf/entity/Person/43> a dprr:Person ;
+  dprr:hasDprrID "TEST0043" ;
+  dprr:hasNomen "Testius" .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/11> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/43> ;
+  dprr:hasPosition 1 ;
+  dprr:hasDateStart -60 ; dprr:hasDateEnd -60 .
+<http://romanrepublic.ac.uk/rdf/entity/PostAssertion/12> a dprr:PostAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/43> ;
+  dprr:hasPosition 1 ;
+  dprr:hasDateStart -70 ; dprr:hasDateEnd -70 .
+<http://romanrepublic.ac.uk/rdf/entity/StatusAssertion/13> a dprr:StatusAssertion ;
+  dprr:isAboutPerson <http://romanrepublic.ac.uk/rdf/entity/Person/43> ;
+  dprr:hasStatus <http://romanrepublic.ac.uk/rdf/entity/Status/2> ;
+  dprr:isUncertain true .
+`
+
 describe("career position, Broughton labels, and status details", () => {
+  test("equal positions fall back to chronological order", () => {
+    const [p] = parsePersonTtl(TIE_TTL, makeEnrichedRefs(), new Map())
+    expect(p.postAssertions.map((pa) => pa.dateStart)).toEqual([-70, -60])
+  })
+
+  test("status assertion isUncertain parses", () => {
+    const [p] = parsePersonTtl(TIE_TTL, makeEnrichedRefs(), new Map())
+    expect(p.statusAssertions).toHaveLength(1)
+    expect(p.statusAssertions[0].isUncertain).toBe(true)
+    expect(p.statusAssertions[0].dateStart).toBeNull()
+  })
+
   test("career sorts by position, positionless fall back chronologically after", () => {
     const [p] = parsePersonTtl(ENRICHED_TTL, makeEnrichedRefs(), new Map())
     expect(p.postAssertions.map((pa) => pa.id)).toEqual([

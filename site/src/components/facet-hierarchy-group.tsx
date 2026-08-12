@@ -9,6 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { buildTree, selectedAncestor, type TreeNode } from "@/lib/facet-tree"
 import type { FacetValue } from "@/data/types"
 
 interface FacetHierarchyGroupProps {
@@ -30,58 +31,6 @@ interface FacetHierarchyGroupProps {
   /** Noun used in the "— incl. N {childNoun}" annotation for a selected
    * parent with selectable descendants. */
   childNoun?: string
-}
-
-interface TreeNode {
-  name: string
-  count: number | null // null → structural label only, not selectable
-  children: TreeNode[]
-  /** Count of selectable (non-structural) descendants, for the "included
-   * via this selection" annotation. */
-  selectableDescendants: number
-}
-
-function buildTree(
-  items: FacetValue[],
-  parentOf: Record<string, string | null>
-): TreeNode[] {
-  const countByName = new Map(items.map((i) => [i.value, i.count]))
-  // Universe: item names plus all their ancestors
-  const keep = new Set<string>()
-  for (const i of items) {
-    let current: string | null = i.value
-    while (current && !keep.has(current)) {
-      keep.add(current)
-      current = parentOf[current] ?? null
-    }
-  }
-  const childrenOf = new Map<string, string[]>()
-  const roots: string[] = []
-  for (const name of keep) {
-    const parent = parentOf[name] ?? null
-    if (parent && keep.has(parent)) {
-      const list = childrenOf.get(parent) ?? []
-      list.push(name)
-      childrenOf.set(parent, list)
-    } else {
-      roots.push(name)
-    }
-  }
-  function toNode(name: string): TreeNode {
-    const children = (childrenOf.get(name) ?? []).map(toNode)
-    children.sort((a, b) => (b.count ?? 0) - (a.count ?? 0))
-    const selectableDescendants = children.reduce(
-      (sum, c) => sum + c.selectableDescendants + (c.count !== null ? 1 : 0),
-      0
-    )
-    return {
-      name,
-      count: countByName.get(name) ?? null,
-      children,
-      selectableDescendants,
-    }
-  }
-  return roots.map(toNode).sort((a, b) => a.name.localeCompare(b.name))
 }
 
 export function FacetHierarchyGroup({
@@ -107,16 +56,6 @@ export function FacetHierarchyGroup({
     )
   }
 
-  /** Nearest selected ancestor of `name`, or null. */
-  function selectedAncestor(name: string): string | null {
-    let cur = parentOf[name] ?? null
-    while (cur) {
-      if (selected.includes(cur)) return cur
-      cur = parentOf[cur] ?? null
-    }
-    return null
-  }
-
   const filtered = filter.trim()
     ? items.filter((i) =>
         i.value.toLowerCase().includes(filter.trim().toLowerCase())
@@ -128,7 +67,7 @@ export function FacetHierarchyGroup({
       <div key={node.name} style={{ paddingLeft: depth * 12 }}>
         {node.count !== null
           ? (() => {
-              const ancestor = selectedAncestor(node.name)
+              const ancestor = selectedAncestor(node.name, parentOf, selected)
               const isSelected = selected.includes(node.name)
               if (ancestor && !isSelected) {
                 return (
@@ -171,7 +110,7 @@ export function FacetHierarchyGroup({
               )
             })()
           : (() => {
-              const ancestor = selectedAncestor(node.name)
+              const ancestor = selectedAncestor(node.name, parentOf, selected)
               if (ancestor) {
                 return (
                   <label

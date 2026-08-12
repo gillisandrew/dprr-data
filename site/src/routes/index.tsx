@@ -15,6 +15,7 @@ import { FilterPanel } from "@/components/filter-panel"
 import { ResultsHeader, ResultsList } from "@/components/results-list"
 import { SearchLanding } from "@/components/search-landing"
 import { SITE_URL } from "@/lib/site"
+import { valuesWithDescendantsInUniverse } from "@/lib/facet-tree"
 
 type Focus = "office" | "time" | "gens"
 
@@ -132,23 +133,25 @@ function SearchResults({
   const { state, results, facets, updateState, clearAll, filteredHistogram } =
     useSearchState(bundle)
 
+  // Same facet universe the tree renders, so chip "+ sub-offices" wording
+  // never disagrees with the tree's "incl. N" annotations.
   const officesWithChildren = useMemo(
     () =>
-      new Set(
-        Object.values(bundle.payload.officeHierarchy).filter(
-          (p): p is string => p !== null
-        )
+      valuesWithDescendantsInUniverse(
+        state.office,
+        bundle.payload.officeHierarchy,
+        facets.office
       ),
-    [bundle]
+    [state.office, bundle, facets.office]
   )
   const provincesWithChildren = useMemo(
     () =>
-      new Set(
-        Object.values(bundle.payload.provinceHierarchy).filter(
-          (p): p is string => p !== null
-        )
+      valuesWithDescendantsInUniverse(
+        state.province,
+        bundle.payload.provinceHierarchy,
+        facets.province
       ),
-    [bundle]
+    [state.province, bundle, facets.province]
   )
 
   useEffect(() => {

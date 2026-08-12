@@ -64,6 +64,14 @@ export function PersonRegistry({ person }: { person: Person }) {
           {person.isCognomenUncertain && <InfoHint term="uncertain" mark="?" />}
         </Field>
       )}
+      {person.otherNames && (
+        <Field label="Other names" hint="other-names">
+          {person.otherNames}
+          {person.isOtherNamesUncertain && (
+            <InfoHint term="uncertain" mark="?" />
+          )}
+        </Field>
+      )}
       {person.filiation && (
         <Field label="Filiation" hint="filiation">
           {person.filiation}
