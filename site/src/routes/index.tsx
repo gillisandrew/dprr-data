@@ -11,7 +11,7 @@ import {
 import { SearchInput } from "@/components/search-input"
 import { ActiveFilterChips } from "@/components/active-filter-chips"
 import { EraTimeline } from "@/components/era-timeline"
-import { FilterBand } from "@/components/filter-band"
+import { FilterPanel } from "@/components/filter-panel"
 import { ResultsHeader, ResultsList } from "@/components/results-list"
 import { SearchLanding } from "@/components/search-landing"
 import { SITE_URL } from "@/lib/site"
@@ -187,7 +187,7 @@ function SearchResults({
       </div>
 
       <div className="mt-3">
-        <FilterBand
+        <FilterPanel
           facets={facets}
           state={state}
           onUpdate={updateState}
