@@ -173,7 +173,12 @@ function SparqlPage() {
       sparql: view.state.doc.toString(),
     } satisfies WorkerRequest)
   }
-  runRef.current = run
+  // Assigned after commit, not during render: render must stay pure. The
+  // editor's Ctrl-Enter keymap only fires on user input, which is always
+  // after a commit, so it never sees a stale `run`.
+  useEffect(() => {
+    runRef.current = run
+  })
 
   const loadExample = (query: string) => {
     const view = viewRef.current

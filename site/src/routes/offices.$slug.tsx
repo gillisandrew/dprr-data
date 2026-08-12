@@ -55,8 +55,8 @@ function OfficePage() {
         </p>
       </header>
       <ol className="mt-2">
-        {office.holders.map((h, i) => (
-          <li key={`${h.personId}-${i}`} className="ledger-row flex gap-3">
+        {office.holders.map((h) => (
+          <li key={h.id} className="ledger-row flex gap-3">
             <span className="year-col text-sm">
               {h.dateStart !== null && h.dateEnd !== null ? (
                 h.dateStart === h.dateEnd ? (

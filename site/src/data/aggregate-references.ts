@@ -11,6 +11,9 @@ export interface OfficeIndexEntry {
   category: string
 }
 export interface OfficeHolder {
+  /** The source PostAssertion id — unique per tenure, so rows keep their
+   * identity across renders (a person can hold the same office twice). */
+  id: string
   personId: string
   personName: string
   dateStart: number | null
@@ -50,6 +53,8 @@ export interface ProvinceIndexEntry {
   personCount: number
 }
 export interface ProvinceAssertion {
+  /** The source PostAssertion id — unique per assignment (see OfficeHolder). */
+  id: string
   personId: string
   personName: string
   officeName: string
@@ -163,6 +168,7 @@ export function buildOfficeDetail(
       officeName = pa.officeName
       abbreviation ??= pa.officeAbbreviation
       holders.push({
+        id: pa.id,
         personId: p.id,
         personName: p.name,
         dateStart: pa.dateStart,
@@ -332,6 +338,7 @@ export function buildProvinceDetail(
       if (!match) continue
       provinceName = match
       assertions.push({
+        id: pa.id,
         personId: p.id,
         personName: p.name,
         officeName: pa.officeName,

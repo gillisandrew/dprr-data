@@ -263,6 +263,7 @@ describe("provinces", () => {
     const detail = buildProvinceDetail([personA, personB], "sicilia")
     expect(detail?.assertions).toEqual([
       {
+        id: "pa-consul-100",
         personId: "AAAA0001",
         personName: "AAAA0001 A. Aulus",
         officeName: "consul",

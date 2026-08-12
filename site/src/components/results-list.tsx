@@ -1,5 +1,5 @@
 // site/src/components/results-list.tsx
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { FastiRow } from "./fasti-row"
 import type { PersonSummary, SearchState } from "@/data/types"
 
@@ -42,10 +42,15 @@ export function ResultsHeader({
 export function ResultsList({ results }: { results: PersonSummary[] }) {
   const [page, setPage] = useState(0)
 
-  // Reset to first page when results change (new search/filter)
-  useEffect(() => {
+  // Reset to first page when results change (new search/filter). Done during
+  // render rather than in an effect so the first page is what commits — an
+  // effect would paint page N of the old list for a frame first. `prevResults`
+  // is only ever compared, never rendered.
+  const [prevResults, setPrevResults] = useState(results)
+  if (results !== prevResults) {
+    setPrevResults(results)
     setPage(0)
-  }, [results])
+  }
 
   const totalPages = Math.ceil(results.length / PAGE_SIZE)
   const visible = results.slice(0, (page + 1) * PAGE_SIZE)

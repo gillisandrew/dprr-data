@@ -27,8 +27,8 @@ export function SourceHint({
       }
     >
       <div className="space-y-2">
-        {sources.map((s, i) => (
-          <div key={i}>
+        {sources.map((s) => (
+          <div key={`${s.secondarySource}|${s.notes ?? ""}`}>
             <SourceCitation name={s.secondarySource} className="text-xs" />
             {s.notes && <p className="text-muted-foreground">{s.notes}</p>}
           </div>

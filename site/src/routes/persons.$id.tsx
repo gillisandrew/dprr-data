@@ -194,8 +194,11 @@ function PersonPage() {
       {sortedDates.length > 0 && (
         <Section title="Dates" count={sortedDates.length} hint="life-events">
           <div>
-            {sortedDates.map((d, i) => (
-              <DateEntry key={i} dateInfo={d} />
+            {sortedDates.map((d) => (
+              <DateEntry
+                key={`${d.type}|${d.value}|${d.secondarySource}`}
+                dateInfo={d}
+              />
             ))}
           </div>
         </Section>
@@ -204,8 +207,11 @@ function PersonPage() {
       {sortedNotes.length > 0 && (
         <Section title="Notes" count={sortedNotes.length}>
           <div className="space-y-4">
-            {sortedNotes.map((note, i) => (
-              <NoteEntry key={i} note={note} />
+            {sortedNotes.map((note) => (
+              <NoteEntry
+                key={`${note.type}|${note.secondarySource}|${note.text}`}
+                note={note}
+              />
             ))}
           </div>
         </Section>
@@ -223,9 +229,9 @@ function PersonPage() {
                   {system}
                 </dt>
                 <dd className="flex min-w-0 flex-1 flex-col gap-1">
-                  {links.map((link, i) => (
+                  {links.map((link) => (
                     <a
-                      key={i}
+                      key={link.uri}
                       href={link.uri}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -313,8 +319,11 @@ function StatusEntry({ assertion }: { assertion: StatusAssertion }) {
           {assertion.statusName}
           {assertion.isUncertain && "?"}
         </span>
-        {assertion.notes.map((note, i) => (
-          <p key={i} className="text-sm text-muted-foreground">
+        {assertion.notes.map((note) => (
+          <p
+            key={`${note.type}|${note.secondarySource}|${note.text}`}
+            className="text-sm text-muted-foreground"
+          >
             {note.text}
           </p>
         ))}
@@ -423,8 +432,8 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
         />
         {assertion.primarySourceRefs.length > 0 && (
           <div className="mt-1">
-            {assertion.primarySourceRefs.map((ref, i) => (
-              <p key={i} className="text-xs text-muted-foreground">
+            {assertion.primarySourceRefs.map((ref) => (
+              <p key={ref} className="text-xs text-muted-foreground">
                 {ref}
               </p>
             ))}
@@ -437,8 +446,11 @@ function OfficeEntry({ assertion }: { assertion: PostAssertion }) {
               {assertion.notes.length === 1 ? "" : "s"} ▸
             </CollapsibleTrigger>
             <CollapsibleContent>
-              {assertion.notes.map((note, i) => (
-                <div key={i} className="mt-2 rounded bg-muted/50 p-3 text-sm">
+              {assertion.notes.map((note) => (
+                <div
+                  key={`${note.type}|${note.secondarySource}|${note.text}`}
+                  className="mt-2 rounded bg-muted/50 p-3 text-sm"
+                >
                   <p className="mb-1 text-xs font-medium text-muted-foreground">
                     {note.type}
                     {note.secondarySource && ` — ${note.secondarySource}`}
@@ -486,9 +498,12 @@ function RelationshipEntry({ relationship }: { relationship: Relationship }) {
             {relationship.references.length === 1 ? "" : "s"} ▸
           </CollapsibleTrigger>
           <CollapsibleContent>
-            {relationship.references.map((ref, i) =>
+            {relationship.references.map((ref) =>
               ref.extraInfo || ref.secondarySource ? (
-                <p key={i} className="mt-1 text-xs text-muted-foreground">
+                <p
+                  key={`${ref.type}|${ref.secondarySource}|${ref.extraInfo ?? ""}`}
+                  className="mt-1 text-xs text-muted-foreground"
+                >
                   {ref.extraInfo && <>{ref.extraInfo} </>}
                   <SourceCitation name={ref.secondarySource} />
                 </p>

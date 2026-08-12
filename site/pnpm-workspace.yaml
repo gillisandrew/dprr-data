@@ -1,0 +1,15 @@
+# Supply-chain hardening for dependency installs.
+# minimumReleaseAge: refuse versions published less than 7 days ago, so a
+# compromised release has time to be reported and unpublished before it
+# ever reaches this lockfile.
+# trustPolicy: never accept a package whose trust signals (provenance
+# attestations, signatures) are weaker than the version it replaces.
+minimumReleaseAge: 10080
+trustPolicy: no-downgrade
+
+# Moved here from the `pnpm` field in package.json, which pnpm 10 no longer
+# reads (it warned: "the following keys were ignored: pnpm.overrides"), so
+# this had been silently inert. Forces every transitive `vite` onto the
+# Vite+ core build.
+overrides:
+  vite: npm:@voidzero-dev/vite-plus-core@latest

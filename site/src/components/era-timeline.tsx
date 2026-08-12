@@ -111,9 +111,12 @@ export function EraTimeline({
           onPointerUp={commitDraft}
           onPointerCancel={commitDraft}
           onLostPointerCapture={commitDraft}
-          role="slider"
-          aria-label="Time period"
-          aria-valuetext={`${axisYear(selFrom)} to ${axisYear(selTo)}`}
+          // Not `role="slider"`: this is a two-ended range with no keyboard
+          // affordance, and one slider role can only carry one value. The
+          // YearInput fields below are the real accessible controls; this
+          // graphic reports the distribution and the current selection.
+          role="img"
+          aria-label={`Records over time. Showing ${axisYear(selFrom)} to ${axisYear(selTo)}; adjust with the from and to year fields.`}
         >
           <path d={areaPath} className="fill-muted-foreground/25" />
           <rect

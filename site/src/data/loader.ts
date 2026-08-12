@@ -162,7 +162,10 @@ async function loadAllDataUncached(): Promise<{
   // 2. Parse concordances
   const concordanceMap = await loadConcordances()
 
-  // 3. Parse all person files
+  // 3. Parse all person files. Deliberately sequential, not Promise.all'd
+  // with the reads above: these steps are independent in dataflow terms, but
+  // running them concurrently exhausts file descriptors (see BATCH_SIZE) and
+  // starves the prerender server, which fails the build with ETIMEDOUT.
   const personTtls = await loadAllPersonFiles()
   const allPersons: Person[] = []
 

@@ -137,7 +137,7 @@ export function FilterPanel({
         >
           <div className="mb-2 flex items-center gap-1.5">
             <span className="micro-label-muted">
-              {[...BASIC, ...ADVANCED].find((s) => s.key === openKey)!.label}
+              {[...BASIC, ...ADVANCED].find((s) => s.key === openKey)?.label}
             </span>
             <InfoHint term={SECTION_TERM[openKey]} />
           </div>

@@ -17,7 +17,12 @@ export function SearchInput({
   // Latest keystroke the debounce hasn't delivered yet; null when settled.
   const pendingRef = useRef<string | null>(null)
   const onChangeRef = useRef(onChange)
-  onChangeRef.current = onChange
+  // Assigned after commit, not during render: render must stay pure because
+  // React may replay or discard it. The unmount cleanup below runs after the
+  // last commit's effects, so it always reads the current onChange.
+  useEffect(() => {
+    onChangeRef.current = onChange
+  })
 
   useEffect(() => {
     setLocal(value)

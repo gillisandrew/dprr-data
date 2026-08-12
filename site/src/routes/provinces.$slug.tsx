@@ -47,8 +47,8 @@ function ProvincePage() {
         </p>
       </header>
       <ol className="mt-2">
-        {province.assertions.map((a, i) => (
-          <li key={`${a.personId}-${i}`} className="ledger-row flex gap-3">
+        {province.assertions.map((a) => (
+          <li key={a.id} className="ledger-row flex gap-3">
             <span className="year-col text-sm">
               {a.dateStart !== null && a.dateEnd !== null ? (
                 a.dateStart === a.dateEnd ? (
