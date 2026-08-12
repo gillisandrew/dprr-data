@@ -13,8 +13,12 @@ export function SiteHeader() {
   return (
     <header className="rule-hair">
       <nav className="mx-auto flex max-w-6xl items-baseline gap-6 px-4 py-3">
-        <Link to="/" className="font-heading font-bold">
-          DPRR
+        <Link to="/" aria-label="DPRR — home" className="self-center">
+          <img
+            src={`${import.meta.env.BASE_URL}icon.svg`}
+            alt=""
+            className="-my-1 block h-7 w-auto"
+          />
         </Link>
         {links.map((l) => (
           <Link
