@@ -29,8 +29,8 @@ export function FacetGroup({
   onChange: (selected: string[]) => void
   defaultOpen?: boolean
   searchable?: boolean
-  /** Body only — no collapsible header or rule. For popovers, where the
-   * trigger pill already names the facet. */
+  /** Body only — no collapsible header or rule. For the filter panel's
+   * sections, where the section trigger already names the facet. */
   frameless?: boolean
   /** Extra classes on the checkbox-list container — used by the filter
    * panel to flow long flat lists into CSS columns. */

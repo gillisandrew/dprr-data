@@ -181,7 +181,9 @@ function SectionTrigger({
 
 /** In-section reveal for rarely-used fields. Forced open (with the button
  * hidden) while any tucked field is active, so no active filter is ever
- * invisible; once clicked it stays open for the component's lifetime. */
+ * invisible. Once revealed — by a click, or by mounting already forced —
+ * it stays revealed for as long as the section stays open; closing the
+ * section unmounts this component and resets the latch. */
 function InSectionReveal({
   label,
   forced,
@@ -191,7 +193,11 @@ function InSectionReveal({
   forced: boolean
   children: React.ReactNode
 }) {
-  const [revealed, setRevealed] = useState(false)
+  // Seed from `forced` so a deep link that mounts already-forced-open
+  // latches revealed=true. Without this, clearing the last forcing value
+  // (e.g. deleting the RE number) would flip `forced` false with `revealed`
+  // still false, unmounting the field group out from under the user.
+  const [revealed, setRevealed] = useState(forced)
   if (!revealed && !forced) {
     return (
       <button

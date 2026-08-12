@@ -24,8 +24,8 @@ interface FacetHierarchyGroupProps {
    * in-range office filtering, where counts are computed disjunctively but
    * the applied filter is conjunctive). */
   hideCounts?: boolean
-  /** Body only — no collapsible header or rule. For popovers, where the
-   * trigger pill already names the facet. */
+  /** Body only — no collapsible header or rule. For the filter panel's
+   * sections, where the section trigger already names the facet. */
   frameless?: boolean
 }
 
