@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev --port 3000",
-    "build": "vp build && node scripts/normalize-sitemap.mjs",
+    "build": "vp build && node scripts/normalize-sitemap.mjs && node scripts/emit-id-redirects.mjs",
     "preview": "vp preview",
     "lint": "eslint",
     "format": "vp fmt \"**/*.{ts,tsx,js,jsx}\"",

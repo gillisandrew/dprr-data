@@ -2,6 +2,9 @@
 
 Date: 2026-08-12
 
+**Status (2026-08-12):** Part 1 is implemented and deployed. Part 2 is
+designed but **not built** — Andrew scoped this round to the redirect only.
+
 Two independent additions to the DPRR static site:
 
 1. Short URLs that redirect a bare numeric ID to its canonical person page
@@ -39,16 +42,16 @@ that pattern rather than inventing a new one.
 
 ### Aliases
 
-For each canonical ID (e.g. `VALE0522`), two aliases redirect to it:
+For each canonical ID (e.g. `VALE0522`), one alias redirects to it:
 
 | Alias | Example | Rationale |
 | --- | --- | --- |
 | Bare four-digit suffix | `0522` | Short citation form; the feature request. |
-| All-lowercase full ID | `vale0522` | Common paste/typing error. |
 
-Only the all-lowercase form is generated. Mixed-case variants such as
-`Vale0522` are combinatorial and deliberately out of scope — they cannot be
-prerendered exhaustively.
+Case-insensitive aliases were considered and **dropped** (decision,
+2026-08-12): generating `vale0522` would have doubled the redirect output to
+catch only the all-lowercase paste error, while mixed-case variants such as
+`Vale0522` are combinatorial and cannot be prerendered exhaustively anyway.
 
 Alias URLs live under the existing persons path only: `/persons/<alias>`.
 Root-level aliases (`/0522`) are out of scope; they would claim the root
@@ -62,6 +65,11 @@ the build after the existing sitemap step:
 ```
 "build": "vp build && node scripts/normalize-sitemap.mjs && node scripts/emit-id-redirects.mjs"
 ```
+
+That `package.json` script is **not** what deploys. `deploy-site.yml` runs
+the `vp build` built-in and then lists each post-build pass as its own step,
+so the new script must be added to the workflow as well or it never reaches
+production. Both are kept in step, with a comment in the workflow saying so.
 
 It reads `dist/client/data/person-ids.json` and writes one file per alias to
 `dist/client/persons/<alias>/index.html`. Because it runs after prerender,
@@ -92,10 +100,10 @@ exported function so they can be unit-tested without running a build.
 
 ### Cost
 
-~9,750 additional files (4,876 bare + 4,876 lowercase), roughly 400 bytes
-each — about 4 MB of build output. These are written directly, not rendered:
-the prerendered page count rises only by the 126 pages from Part 2 (~6,133 →
-~6,259), while total files in `dist/client` grows by ~9,750.
+4,876 additional files, roughly 400 bytes each — about 2 MB of build output.
+These are written directly, not rendered: the prerendered page count rises
+only by the 126 pages from Part 2, while total files in `dist/client` grows
+by 4,876.
 
 ## Part 2 — Reference index and detail pages
 

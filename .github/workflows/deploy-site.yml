@@ -40,6 +40,12 @@ jobs:
       - name: Normalize sitemap URLs
         run: cd site && node scripts/normalize-sitemap.mjs
 
+      # Keep in step with the `build` script in site/package.json: this job
+      # runs the `vp build` built-in, not that script, so post-build passes
+      # have to be listed here too or they never reach the deploy.
+      - name: Emit bare-ID redirects
+        run: cd site && node scripts/emit-id-redirects.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
