@@ -6,7 +6,13 @@ import { parseConcordanceTtl } from "./parse-concordances"
 import { parsePersonTtl } from "./parse-persons"
 import { collectUnmappedProvinces } from "./province-mapping"
 import { buildContextLine } from "./context-line"
-import type { Person, PersonSummary, ReferenceMaps, Concordance } from "./types"
+import type {
+  Person,
+  PersonSummary,
+  ReferenceMaps,
+  Concordance,
+  FastiRowSummary,
+} from "./types"
 
 // Path from site/src/data/ to repo root (3 levels up)
 // Using process.cwd() as fallback since import.meta.dirname may point
@@ -197,6 +203,24 @@ async function loadAllDataUncached(): Promise<{
   }
 
   return { persons, refs }
+}
+
+/**
+ * Project down to just the fields FastiRow renders. Reference detail pages
+ * can list thousands of persons, where the unused array fields on a full
+ * PersonSummary dominate the payload.
+ */
+export function toRowSummaries(persons: Person[]): FastiRowSummary[] {
+  return toSummaries(persons).map((p) => ({
+    id: p.id,
+    name: p.name,
+    highestOffice: p.highestOffice,
+    contextLine: p.contextLine,
+    filiation: p.filiation,
+    eraFrom: p.eraFrom,
+    eraTo: p.eraTo,
+    nomen: p.nomen,
+  }))
 }
 
 /** Extract compact summaries for search/faceting. */

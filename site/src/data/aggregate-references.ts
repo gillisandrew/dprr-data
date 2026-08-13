@@ -1,7 +1,12 @@
 // site/src/data/aggregate-references.ts
 import { slugify } from "../lib/slug"
-import { toSummaries } from "./loader"
-import type { Person, PersonSummary } from "./types"
+import { toSummaries, toRowSummaries } from "./loader"
+import type {
+  Person,
+  PersonSummary,
+  FastiRowSummary,
+  ReferenceMaps,
+} from "./types"
 
 export interface OfficeIndexEntry {
   slug: string
@@ -66,6 +71,216 @@ export interface ProvinceDetail {
   slug: string
   name: string
   assertions: ProvinceAssertion[]
+}
+
+export interface SourceIndexEntry {
+  slug: string
+  name: string
+  abbreviation: string | null
+  personCount: number
+}
+export interface SourceDetail {
+  slug: string
+  name: string
+  abbreviation: string | null
+  biblio: string | null
+  persons: FastiRowSummary[]
+}
+
+/**
+ * Every secondary source a person cites, anywhere in their record. Sources
+ * appear on posts, statuses, relationships, dates, notes and tribes, so a
+ * "cited by" list that only looked at careers would undercount badly.
+ */
+function citedSources(p: Person): Set<string> {
+  const cited = new Set<string>()
+  const add = (s: string | null | undefined) => {
+    if (s) cited.add(s)
+  }
+  for (const pa of p.postAssertions) add(pa.secondarySource)
+  for (const sa of p.statusAssertions) add(sa.secondarySource)
+  for (const rel of p.relationships) add(rel.secondarySource)
+  for (const d of p.dateInformation) add(d.secondarySource)
+  for (const n of p.personNotes) add(n.secondarySource)
+  for (const t of p.tribeAssertions) add(t.secondarySource)
+  return cited
+}
+
+export function buildSourceIndex(
+  persons: Person[],
+  sources: ReferenceMaps["sources"]
+): SourceIndexEntry[] {
+  const counts = new Map<string, number>()
+  for (const p of persons) {
+    for (const name of citedSources(p)) {
+      counts.set(name, (counts.get(name) ?? 0) + 1)
+    }
+  }
+  const names = [...sources.values()].map((s) => s.name)
+  assertUniqueSlugs(names, "Source")
+  return [...sources.values()]
+    .map((s) => ({
+      slug: slugify(s.name),
+      name: s.name,
+      abbreviation: s.abbreviation,
+      personCount: counts.get(s.name) ?? 0,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+}
+
+export function buildSourceDetail(
+  persons: Person[],
+  sources: ReferenceMaps["sources"],
+  slug: string
+): SourceDetail | null {
+  const source = [...sources.values()].find((s) => slugify(s.name) === slug)
+  if (!source) return null
+  const matching = persons.filter((p) => citedSources(p).has(source.name))
+  return {
+    slug,
+    name: source.name,
+    abbreviation: source.abbreviation,
+    biblio: source.biblio,
+    persons: toRowSummaries(matching).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    ),
+  }
+}
+
+export interface PraenomenIndexEntry {
+  slug: string
+  name: string
+  abbreviation: string | null
+  personCount: number
+}
+export interface PraenomenDetail {
+  slug: string
+  name: string
+  abbreviation: string | null
+  persons: FastiRowSummary[]
+}
+
+export function buildPraenomenIndex(
+  persons: Person[],
+  praenomina: ReferenceMaps["praenomina"]
+): PraenomenIndexEntry[] {
+  const counts = new Map<string, number>()
+  for (const p of persons) {
+    if (!p.praenomen) continue
+    counts.set(p.praenomen, (counts.get(p.praenomen) ?? 0) + 1)
+  }
+  assertUniqueSlugs(
+    [...praenomina.values()].map((p) => p.name),
+    "Praenomen"
+  )
+  return [...praenomina.values()]
+    .map((p) => ({
+      slug: slugify(p.name),
+      name: p.name,
+      abbreviation: p.abbreviation,
+      personCount: counts.get(p.name) ?? 0,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+}
+
+export function buildPraenomenDetail(
+  persons: Person[],
+  praenomina: ReferenceMaps["praenomina"],
+  slug: string
+): PraenomenDetail | null {
+  const praenomen = [...praenomina.values()].find(
+    (p) => slugify(p.name) === slug
+  )
+  if (!praenomen) return null
+  const matching = persons.filter((p) => p.praenomen === praenomen.name)
+  return {
+    slug,
+    name: praenomen.name,
+    abbreviation: praenomen.abbreviation,
+    persons: toRowSummaries(matching).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    ),
+  }
+}
+
+export interface RelationshipIndexEntry {
+  slug: string
+  name: string
+  inverseName: string | null
+  pairCount: number
+}
+export interface RelationshipPair {
+  personId: string
+  personName: string
+  relatedPersonId: string
+  relatedPersonName: string
+  isUncertain: boolean
+}
+export interface RelationshipDetail {
+  slug: string
+  name: string
+  inverseName: string | null
+  pairs: RelationshipPair[]
+}
+
+/** Curated display order (hasOrderNumber); unordered types sort last. */
+function byOrderNumber(
+  a: { orderNumber: number | null; name: string },
+  b: { orderNumber: number | null; name: string }
+): number {
+  return (
+    (a.orderNumber ?? Number.MAX_SAFE_INTEGER) -
+      (b.orderNumber ?? Number.MAX_SAFE_INTEGER) || a.name.localeCompare(b.name)
+  )
+}
+
+export function buildRelationshipIndex(
+  persons: Person[],
+  relationships: ReferenceMaps["relationships"]
+): RelationshipIndexEntry[] {
+  const counts = new Map<string, number>()
+  for (const p of persons) {
+    for (const rel of p.relationships) {
+      counts.set(
+        rel.relationshipType,
+        (counts.get(rel.relationshipType) ?? 0) + 1
+      )
+    }
+  }
+  assertUniqueSlugs(
+    [...relationships.values()].map((r) => r.name),
+    "Relationship"
+  )
+  return [...relationships.values()].sort(byOrderNumber).map((r) => ({
+    slug: slugify(r.name),
+    name: r.name,
+    inverseName: r.inverseName,
+    pairCount: counts.get(r.name) ?? 0,
+  }))
+}
+
+export function buildRelationshipDetail(
+  persons: Person[],
+  relationships: ReferenceMaps["relationships"],
+  slug: string
+): RelationshipDetail | null {
+  const type = [...relationships.values()].find((r) => slugify(r.name) === slug)
+  if (!type) return null
+  const pairs: RelationshipPair[] = []
+  for (const p of persons) {
+    for (const rel of p.relationships) {
+      if (rel.relationshipType !== type.name) continue
+      pairs.push({
+        personId: p.id,
+        personName: p.name,
+        relatedPersonId: rel.relatedPersonId,
+        relatedPersonName: rel.relatedPersonName,
+        isUncertain: rel.isUncertain,
+      })
+    }
+  }
+  pairs.sort((a, b) => a.personName.localeCompare(b.personName))
+  return { slug, name: type.name, inverseName: type.inverseName, pairs }
 }
 
 /** Chronological sort key: earliest known date, undated entries last. */

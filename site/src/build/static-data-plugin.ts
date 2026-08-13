@@ -31,6 +31,12 @@ export function staticDataPlugin(): Plugin {
       buildProvinceIndex,
       buildProvinceDetail,
       buildNameHierarchy,
+      buildSourceIndex,
+      buildSourceDetail,
+      buildPraenomenIndex,
+      buildPraenomenDetail,
+      buildRelationshipIndex,
+      buildRelationshipDetail,
     } = await import("../data/aggregate-references")
 
     const { persons, refs } = await loadAllData()
@@ -81,23 +87,40 @@ export function staticDataPlugin(): Plugin {
     const tribes = buildTribeIndex(persons)
     const gentes = buildGensIndex(persons)
     const provinces = buildProvinceIndex(persons)
+    const sources = buildSourceIndex(persons, refs.sources)
+    const praenomina = buildPraenomenIndex(persons, refs.praenomina)
+    const relationships = buildRelationshipIndex(persons, refs.relationships)
     await Promise.all([
       write("offices.json", offices),
       write("tribes.json", tribes),
       write("gentes.json", gentes),
       write("provinces.json", provinces),
+      write("sources.json", sources),
+      write("praenomina.json", praenomina),
+      write("relationships.json", relationships),
       writeDetails("offices", offices, (s) => buildOfficeDetail(persons, s)),
       writeDetails("tribes", tribes, (s) => buildTribeDetail(persons, s)),
       writeDetails("gentes", gentes, (s) => buildGensDetail(persons, s)),
       writeDetails("provinces", provinces, (s) =>
         buildProvinceDetail(persons, s)
       ),
+      writeDetails("sources", sources, (s) =>
+        buildSourceDetail(persons, refs.sources, s)
+      ),
+      writeDetails("praenomina", praenomina, (s) =>
+        buildPraenomenDetail(persons, refs.praenomina, s)
+      ),
+      writeDetails("relationships", relationships, (s) =>
+        buildRelationshipDetail(persons, refs.relationships, s)
+      ),
     ])
 
     console.log(
       `[static-data] wrote public/data/ (${persons.length} persons, ` +
         `${offices.length} offices, ${tribes.length} tribes, ` +
-        `${gentes.length} gentes, ${provinces.length} provinces)`
+        `${gentes.length} gentes, ${provinces.length} provinces, ` +
+        `${sources.length} sources, ${praenomina.length} praenomina, ` +
+        `${relationships.length} relationship types)`
     )
   }
 

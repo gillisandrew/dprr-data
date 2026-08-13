@@ -26,6 +26,34 @@ function namedMap<T>(
   return map
 }
 
+const OWL_INVERSE_OF = "http://www.w3.org/2002/07/owl#inverseOf"
+
+/**
+ * Relationship types, resolving owl:inverseOf to the partner's name. Only
+ * one side of each pair carries the property in the source data, so the
+ * inverse is recorded on that side alone.
+ */
+function relationshipMap(ttl: string): ReferenceMaps["relationships"] {
+  const groups = groupSubjects(ttl)
+  const nameOf = new Map<string, string>()
+  for (const [uri, g] of groups) {
+    const name = first(g, "hasName")
+    if (name !== null) nameOf.set(uri, name)
+  }
+  const map: ReferenceMaps["relationships"] = new Map()
+  for (const [uri, g] of groups) {
+    const name = nameOf.get(uri)
+    if (name === undefined) continue
+    const inverseUri = g.props.get(OWL_INVERSE_OF)?.[0]
+    map.set(uri, {
+      name,
+      orderNumber: firstNum(g, "hasOrderNumber"),
+      inverseName: (inverseUri && nameOf.get(inverseUri)) ?? null,
+    })
+  }
+  return map
+}
+
 /** Sex, NoteType, DateType, and Status entities co-located in one file. */
 function parseMisc(ttl: string) {
   const sexes = new Map<string, string>()
@@ -70,15 +98,17 @@ export async function parseReferenceTtl(
       abbreviation: first(g, "hasAbbreviation"),
       biblio: first(g, "hasBiblio"),
     })),
-    praenomina: namedMap(inputs.praenomina, (name) => name),
+    // Note the predicate: the praenomina file spells it `dprr:Abbreviation`,
+    // not `hasAbbreviation` like every other reference file.
+    praenomina: namedMap(inputs.praenomina, (name, g) => ({
+      name,
+      abbreviation: first(g, "Abbreviation"),
+    })),
     tribes: namedMap(inputs.tribes, (name, g) => ({
       name,
       abbreviation: first(g, "hasAbbreviation"),
     })),
-    relationships: namedMap(inputs.relationships, (name, g) => ({
-      name,
-      orderNumber: firstNum(g, "hasOrderNumber"),
-    })),
+    relationships: relationshipMap(inputs.relationships),
     provinces: namedMap(inputs.provinces, (name, g) => ({
       name,
       parent: first(g, "hasParent"),

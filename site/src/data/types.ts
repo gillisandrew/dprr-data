@@ -155,6 +155,24 @@ export interface Concordance {
   predicate: "owl:sameAs" | "skos:exactMatch"
 }
 
+/**
+ * Exactly the fields FastiRow renders. Reference detail payloads carry this
+ * instead of a full PersonSummary: some lists are enormous (Broughton MRR I
+ * is cited by ~4,200 of the 4,876 persons) and the unused array fields
+ * dominate the bytes.
+ */
+export type FastiRowSummary = Pick<
+  PersonSummary,
+  | "id"
+  | "name"
+  | "highestOffice"
+  | "contextLine"
+  | "filiation"
+  | "eraFrom"
+  | "eraTo"
+  | "nomen"
+>
+
 /** Lookup maps built from reference/*.ttl files. */
 export interface ReferenceMaps {
   offices: Map<
@@ -165,9 +183,17 @@ export interface ReferenceMaps {
     string,
     { name: string; abbreviation: string | null; biblio: string | null }
   >
-  praenomina: Map<string, string>
+  praenomina: Map<string, { name: string; abbreviation: string | null }>
   tribes: Map<string, { name: string; abbreviation: string | null }>
-  relationships: Map<string, { name: string; orderNumber: number | null }>
+  relationships: Map<
+    string,
+    {
+      name: string
+      orderNumber: number | null
+      /** Resolved from owl:inverseOf, e.g. "brother of" -> "sister of". */
+      inverseName: string | null
+    }
+  >
   noteTypes: Map<string, string>
   dateTypes: Map<string, string>
   sexes: Map<string, string>

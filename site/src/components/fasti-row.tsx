@@ -3,9 +3,9 @@ import { Link } from "@tanstack/react-router"
 import { EraRange } from "@/components/date-display"
 import { displayName } from "@/lib/order"
 import { slugify } from "@/lib/slug"
-import type { PersonSummary } from "@/data/types"
+import type { FastiRowSummary } from "@/data/types"
 
-export function FastiRow({ person }: { person: PersonSummary }) {
+export function FastiRow({ person }: { person: FastiRowSummary }) {
   const name = displayName(person.name)
   const gensSlug = person.nomen ? slugify(person.nomen) : ""
   return (

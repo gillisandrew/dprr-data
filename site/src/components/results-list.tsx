@@ -1,7 +1,7 @@
 // site/src/components/results-list.tsx
 import { useState } from "react"
 import { FastiRow } from "./fasti-row"
-import type { PersonSummary, SearchState } from "@/data/types"
+import type { FastiRowSummary, SearchState } from "@/data/types"
 
 const PAGE_SIZE = 50
 
@@ -39,7 +39,7 @@ export function ResultsHeader({
   )
 }
 
-export function ResultsList({ results }: { results: PersonSummary[] }) {
+export function ResultsList({ results }: { results: FastiRowSummary[] }) {
   const [page, setPage] = useState(0)
 
   // Reset to first page when results change (new search/filter). Done during

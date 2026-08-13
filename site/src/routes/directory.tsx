@@ -31,6 +31,18 @@ function DirectoryPage() {
           , and{" "}
           <Link to="/provinces" className="underline">
             provinciae
+          </Link>
+          ,{" "}
+          <Link to="/sources" className="underline">
+            sources
+          </Link>
+          ,{" "}
+          <Link to="/praenomina" className="underline">
+            praenomina
+          </Link>
+          , and{" "}
+          <Link to="/relationships" className="underline">
+            relationships
           </Link>{" "}
           have their own indexes.
         </p>

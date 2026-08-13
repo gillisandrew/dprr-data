@@ -10,6 +10,12 @@ import {
   buildProvinceDetail,
   buildNameHierarchy,
   categoryOf,
+  buildSourceIndex,
+  buildSourceDetail,
+  buildPraenomenIndex,
+  buildPraenomenDetail,
+  buildRelationshipIndex,
+  buildRelationshipDetail,
 } from "./aggregate-references"
 import type { Person, PostAssertion } from "./types"
 
@@ -272,6 +278,172 @@ describe("provinces", () => {
         isUncertain: false,
       },
     ])
+  })
+})
+
+const sourceMap = new Map([
+  [
+    "uri:mrr1",
+    {
+      name: "Broughton MRR",
+      abbreviation: "MRR I",
+      biblio: "Broughton, T.R.S. …",
+    },
+  ],
+  [
+    "uri:uncited",
+    { name: "Nobody Cites This", abbreviation: "Nemo", biblio: "Nemo, 1900." },
+  ],
+])
+
+describe("sources", () => {
+  test("index counts persons citing each source and keeps uncited ones", () => {
+    expect(buildSourceIndex([personA, personB], sourceMap)).toEqual([
+      {
+        slug: "broughton-mrr",
+        name: "Broughton MRR",
+        abbreviation: "MRR I",
+        personCount: 2,
+      },
+      {
+        slug: "nobody-cites-this",
+        name: "Nobody Cites This",
+        abbreviation: "Nemo",
+        personCount: 0,
+      },
+    ])
+  })
+
+  test("counts a person once even when it cites the source repeatedly", () => {
+    const twice = makePerson({
+      id: "CCCC0001",
+      name: "CCCC0001 C. Cassius",
+      postAssertions: [consul100, consul90],
+    })
+    const entry = buildSourceIndex([twice], sourceMap)[0]
+    expect(entry.personCount).toBe(1)
+  })
+
+  test("detail carries trimmed row summaries, not full person summaries", () => {
+    const detail = buildSourceDetail([personA], sourceMap, "broughton-mrr")
+    expect(detail?.biblio).toBe("Broughton, T.R.S. …")
+    expect(detail?.persons).toEqual([
+      {
+        id: "AAAA0001",
+        name: "AAAA0001 A. Aulus",
+        highestOffice: null,
+        contextLine: null,
+        filiation: null,
+        eraFrom: null,
+        eraTo: null,
+        nomen: "Testius",
+      },
+    ])
+  })
+
+  test("detail returns null for an unknown slug", () => {
+    expect(buildSourceDetail([personA], sourceMap, "nope")).toBeNull()
+  })
+})
+
+const praenomenMap = new Map([
+  ["uri:t", { name: "Titus", abbreviation: "T." }],
+  ["uri:vop", { name: "Vopiscus", abbreviation: "Vop." }],
+])
+
+describe("praenomina", () => {
+  test("index counts bearers and keeps praenomina nobody bears", () => {
+    expect(buildPraenomenIndex([personA, personB], praenomenMap)).toEqual([
+      { slug: "titus", name: "Titus", abbreviation: "T.", personCount: 2 },
+      {
+        slug: "vopiscus",
+        name: "Vopiscus",
+        abbreviation: "Vop.",
+        personCount: 0,
+      },
+    ])
+  })
+
+  test("detail lists bearers as trimmed rows", () => {
+    const detail = buildPraenomenDetail([personA], praenomenMap, "titus")
+    expect(detail?.abbreviation).toBe("T.")
+    expect(detail?.persons.map((p) => p.id)).toEqual(["AAAA0001"])
+  })
+
+  test("detail returns null for an unknown slug", () => {
+    expect(buildPraenomenDetail([personA], praenomenMap, "nope")).toBeNull()
+  })
+})
+
+const relationshipMapFixture = new Map([
+  [
+    "uri:bro",
+    { name: "brother of", orderNumber: 31, inverseName: "sister of" },
+  ],
+  ["uri:son", { name: "son of", orderNumber: 21, inverseName: null }],
+])
+
+const relatedA = makePerson({
+  id: "DDDD0001",
+  name: "DDDD0001 D. Decimus",
+  relationships: [
+    {
+      id: "rel1",
+      relationshipType: "brother of",
+      relatedPersonId: "EEEE0001",
+      relatedPersonName: "EEEE0001 E. Ennius",
+      secondarySource: "Broughton MRR",
+      references: [],
+      typeOrderNumber: 31,
+      relationshipNumber: 1,
+      isUncertain: true,
+    },
+  ],
+})
+
+describe("relationships", () => {
+  test("index orders by curated orderNumber, not alphabetically", () => {
+    expect(
+      buildRelationshipIndex([relatedA], relationshipMapFixture).map(
+        (r) => r.name
+      )
+    ).toEqual(["son of", "brother of"])
+  })
+
+  test("index carries pair counts and the inverse name", () => {
+    const [, brother] = buildRelationshipIndex(
+      [relatedA],
+      relationshipMapFixture
+    )
+    expect(brother).toEqual({
+      slug: "brother-of",
+      name: "brother of",
+      inverseName: "sister of",
+      pairCount: 1,
+    })
+  })
+
+  test("detail lists both ends of each pair and preserves uncertainty", () => {
+    const detail = buildRelationshipDetail(
+      [relatedA],
+      relationshipMapFixture,
+      "brother-of"
+    )
+    expect(detail?.pairs).toEqual([
+      {
+        personId: "DDDD0001",
+        personName: "DDDD0001 D. Decimus",
+        relatedPersonId: "EEEE0001",
+        relatedPersonName: "EEEE0001 E. Ennius",
+        isUncertain: true,
+      },
+    ])
+  })
+
+  test("detail returns null for an unknown slug", () => {
+    expect(
+      buildRelationshipDetail([relatedA], relationshipMapFixture, "nope")
+    ).toBeNull()
   })
 })
 

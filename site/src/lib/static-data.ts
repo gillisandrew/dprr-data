@@ -10,6 +10,12 @@ import type {
   ProvinceIndexEntry,
   TribeDetail,
   TribeIndexEntry,
+  SourceDetail,
+  SourceIndexEntry,
+  PraenomenDetail,
+  PraenomenIndexEntry,
+  RelationshipDetail,
+  RelationshipIndexEntry,
 } from "@/data/aggregate-references"
 
 /**
@@ -107,4 +113,30 @@ export function fetchProvinceIndex(): Promise<ProvinceIndexEntry[]> {
 
 export function fetchProvinceDetail(slug: string): Promise<ProvinceDetail> {
   return readJson<ProvinceDetail>(`provinces/${slug}.json`)
+}
+
+export function fetchSourceIndex(): Promise<SourceIndexEntry[]> {
+  return readJson<SourceIndexEntry[]>("sources.json")
+}
+
+export function fetchSourceDetail(slug: string): Promise<SourceDetail> {
+  return readJson<SourceDetail>(`sources/${slug}.json`)
+}
+
+export function fetchPraenomenIndex(): Promise<PraenomenIndexEntry[]> {
+  return readJson<PraenomenIndexEntry[]>("praenomina.json")
+}
+
+export function fetchPraenomenDetail(slug: string): Promise<PraenomenDetail> {
+  return readJson<PraenomenDetail>(`praenomina/${slug}.json`)
+}
+
+export function fetchRelationshipIndex(): Promise<RelationshipIndexEntry[]> {
+  return readJson<RelationshipIndexEntry[]>("relationships.json")
+}
+
+export function fetchRelationshipDetail(
+  slug: string
+): Promise<RelationshipDetail> {
+  return readJson<RelationshipDetail>(`relationships/${slug}.json`)
 }

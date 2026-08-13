@@ -377,7 +377,8 @@ export function parsePersonTtl(
       id: dprrId,
       uri: personUri,
       name: first(g, "hasPersonName") ?? dprrId,
-      praenomen: (praenomenUri && refs.praenomina.get(praenomenUri)) ?? "",
+      praenomen:
+        (praenomenUri && refs.praenomina.get(praenomenUri)?.name) ?? "",
       nomen: first(g, "hasNomen") ?? "",
       cognomen: first(g, "hasCognomen"),
       otherNames: first(g, "hasOtherNames"),

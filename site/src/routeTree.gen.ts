@@ -18,8 +18,14 @@ import { Route as GentesSlugRouteImport } from './routes/gentes.$slug'
 import { Route as OfficesIndexRouteImport } from './routes/offices.index'
 import { Route as OfficesSlugRouteImport } from './routes/offices.$slug'
 import { Route as PersonsIdRouteImport } from './routes/persons.$id'
+import { Route as PraenominaIndexRouteImport } from './routes/praenomina.index'
+import { Route as PraenominaSlugRouteImport } from './routes/praenomina.$slug'
 import { Route as ProvincesIndexRouteImport } from './routes/provinces.index'
 import { Route as ProvincesSlugRouteImport } from './routes/provinces.$slug'
+import { Route as RelationshipsIndexRouteImport } from './routes/relationships.index'
+import { Route as RelationshipsSlugRouteImport } from './routes/relationships.$slug'
+import { Route as SourcesIndexRouteImport } from './routes/sources.index'
+import { Route as SourcesSlugRouteImport } from './routes/sources.$slug'
 import { Route as TribesIndexRouteImport } from './routes/tribes.index'
 import { Route as TribesSlugRouteImport } from './routes/tribes.$slug'
 
@@ -68,6 +74,16 @@ const PersonsIdRoute = PersonsIdRouteImport.update({
   path: '/persons/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PraenominaIndexRoute = PraenominaIndexRouteImport.update({
+  id: '/praenomina/',
+  path: '/praenomina/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PraenominaSlugRoute = PraenominaSlugRouteImport.update({
+  id: '/praenomina/$slug',
+  path: '/praenomina/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProvincesIndexRoute = ProvincesIndexRouteImport.update({
   id: '/provinces/',
   path: '/provinces/',
@@ -76,6 +92,26 @@ const ProvincesIndexRoute = ProvincesIndexRouteImport.update({
 const ProvincesSlugRoute = ProvincesSlugRouteImport.update({
   id: '/provinces/$slug',
   path: '/provinces/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RelationshipsIndexRoute = RelationshipsIndexRouteImport.update({
+  id: '/relationships/',
+  path: '/relationships/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RelationshipsSlugRoute = RelationshipsSlugRouteImport.update({
+  id: '/relationships/$slug',
+  path: '/relationships/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SourcesIndexRoute = SourcesIndexRouteImport.update({
+  id: '/sources/',
+  path: '/sources/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SourcesSlugRoute = SourcesSlugRouteImport.update({
+  id: '/sources/$slug',
+  path: '/sources/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TribesIndexRoute = TribesIndexRouteImport.update({
@@ -97,11 +133,17 @@ export interface FileRoutesByFullPath {
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/praenomina/$slug': typeof PraenominaSlugRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
+  '/relationships/$slug': typeof RelationshipsSlugRoute
+  '/sources/$slug': typeof SourcesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/gentes/': typeof GentesIndexRoute
   '/offices/': typeof OfficesIndexRoute
+  '/praenomina/': typeof PraenominaIndexRoute
   '/provinces/': typeof ProvincesIndexRoute
+  '/relationships/': typeof RelationshipsIndexRoute
+  '/sources/': typeof SourcesIndexRoute
   '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRoutesByTo {
@@ -112,11 +154,17 @@ export interface FileRoutesByTo {
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/praenomina/$slug': typeof PraenominaSlugRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
+  '/relationships/$slug': typeof RelationshipsSlugRoute
+  '/sources/$slug': typeof SourcesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/gentes': typeof GentesIndexRoute
   '/offices': typeof OfficesIndexRoute
+  '/praenomina': typeof PraenominaIndexRoute
   '/provinces': typeof ProvincesIndexRoute
+  '/relationships': typeof RelationshipsIndexRoute
+  '/sources': typeof SourcesIndexRoute
   '/tribes': typeof TribesIndexRoute
 }
 export interface FileRoutesById {
@@ -128,11 +176,17 @@ export interface FileRoutesById {
   '/gentes/$slug': typeof GentesSlugRoute
   '/offices/$slug': typeof OfficesSlugRoute
   '/persons/$id': typeof PersonsIdRoute
+  '/praenomina/$slug': typeof PraenominaSlugRoute
   '/provinces/$slug': typeof ProvincesSlugRoute
+  '/relationships/$slug': typeof RelationshipsSlugRoute
+  '/sources/$slug': typeof SourcesSlugRoute
   '/tribes/$slug': typeof TribesSlugRoute
   '/gentes/': typeof GentesIndexRoute
   '/offices/': typeof OfficesIndexRoute
+  '/praenomina/': typeof PraenominaIndexRoute
   '/provinces/': typeof ProvincesIndexRoute
+  '/relationships/': typeof RelationshipsIndexRoute
+  '/sources/': typeof SourcesIndexRoute
   '/tribes/': typeof TribesIndexRoute
 }
 export interface FileRouteTypes {
@@ -145,11 +199,17 @@ export interface FileRouteTypes {
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/praenomina/$slug'
     | '/provinces/$slug'
+    | '/relationships/$slug'
+    | '/sources/$slug'
     | '/tribes/$slug'
     | '/gentes/'
     | '/offices/'
+    | '/praenomina/'
     | '/provinces/'
+    | '/relationships/'
+    | '/sources/'
     | '/tribes/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -160,11 +220,17 @@ export interface FileRouteTypes {
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/praenomina/$slug'
     | '/provinces/$slug'
+    | '/relationships/$slug'
+    | '/sources/$slug'
     | '/tribes/$slug'
     | '/gentes'
     | '/offices'
+    | '/praenomina'
     | '/provinces'
+    | '/relationships'
+    | '/sources'
     | '/tribes'
   id:
     | '__root__'
@@ -175,11 +241,17 @@ export interface FileRouteTypes {
     | '/gentes/$slug'
     | '/offices/$slug'
     | '/persons/$id'
+    | '/praenomina/$slug'
     | '/provinces/$slug'
+    | '/relationships/$slug'
+    | '/sources/$slug'
     | '/tribes/$slug'
     | '/gentes/'
     | '/offices/'
+    | '/praenomina/'
     | '/provinces/'
+    | '/relationships/'
+    | '/sources/'
     | '/tribes/'
   fileRoutesById: FileRoutesById
 }
@@ -191,11 +263,17 @@ export interface RootRouteChildren {
   GentesSlugRoute: typeof GentesSlugRoute
   OfficesSlugRoute: typeof OfficesSlugRoute
   PersonsIdRoute: typeof PersonsIdRoute
+  PraenominaSlugRoute: typeof PraenominaSlugRoute
   ProvincesSlugRoute: typeof ProvincesSlugRoute
+  RelationshipsSlugRoute: typeof RelationshipsSlugRoute
+  SourcesSlugRoute: typeof SourcesSlugRoute
   TribesSlugRoute: typeof TribesSlugRoute
   GentesIndexRoute: typeof GentesIndexRoute
   OfficesIndexRoute: typeof OfficesIndexRoute
+  PraenominaIndexRoute: typeof PraenominaIndexRoute
   ProvincesIndexRoute: typeof ProvincesIndexRoute
+  RelationshipsIndexRoute: typeof RelationshipsIndexRoute
+  SourcesIndexRoute: typeof SourcesIndexRoute
   TribesIndexRoute: typeof TribesIndexRoute
 }
 
@@ -264,6 +342,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PersonsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/praenomina/': {
+      id: '/praenomina/'
+      path: '/praenomina'
+      fullPath: '/praenomina/'
+      preLoaderRoute: typeof PraenominaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/praenomina/$slug': {
+      id: '/praenomina/$slug'
+      path: '/praenomina/$slug'
+      fullPath: '/praenomina/$slug'
+      preLoaderRoute: typeof PraenominaSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/provinces/': {
       id: '/provinces/'
       path: '/provinces'
@@ -276,6 +368,34 @@ declare module '@tanstack/react-router' {
       path: '/provinces/$slug'
       fullPath: '/provinces/$slug'
       preLoaderRoute: typeof ProvincesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/relationships/': {
+      id: '/relationships/'
+      path: '/relationships'
+      fullPath: '/relationships/'
+      preLoaderRoute: typeof RelationshipsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/relationships/$slug': {
+      id: '/relationships/$slug'
+      path: '/relationships/$slug'
+      fullPath: '/relationships/$slug'
+      preLoaderRoute: typeof RelationshipsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sources/': {
+      id: '/sources/'
+      path: '/sources'
+      fullPath: '/sources/'
+      preLoaderRoute: typeof SourcesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sources/$slug': {
+      id: '/sources/$slug'
+      path: '/sources/$slug'
+      fullPath: '/sources/$slug'
+      preLoaderRoute: typeof SourcesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tribes/': {
@@ -303,11 +423,17 @@ const rootRouteChildren: RootRouteChildren = {
   GentesSlugRoute: GentesSlugRoute,
   OfficesSlugRoute: OfficesSlugRoute,
   PersonsIdRoute: PersonsIdRoute,
+  PraenominaSlugRoute: PraenominaSlugRoute,
   ProvincesSlugRoute: ProvincesSlugRoute,
+  RelationshipsSlugRoute: RelationshipsSlugRoute,
+  SourcesSlugRoute: SourcesSlugRoute,
   TribesSlugRoute: TribesSlugRoute,
   GentesIndexRoute: GentesIndexRoute,
   OfficesIndexRoute: OfficesIndexRoute,
+  PraenominaIndexRoute: PraenominaIndexRoute,
   ProvincesIndexRoute: ProvincesIndexRoute,
+  RelationshipsIndexRoute: RelationshipsIndexRoute,
+  SourcesIndexRoute: SourcesIndexRoute,
   TribesIndexRoute: TribesIndexRoute,
 }
 export const routeTree = rootRouteImport

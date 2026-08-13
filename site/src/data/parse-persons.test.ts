@@ -48,7 +48,10 @@ function makeRefs(): ReferenceMaps {
       ],
     ]),
     praenomina: new Map([
-      ["http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius", "Gaius"],
+      [
+        "http://romanrepublic.ac.uk/rdf/entity/Praenomen/Gaius",
+        { name: "Gaius", abbreviation: "C." },
+      ],
     ]),
     tribes: new Map(),
     relationships: new Map(),
@@ -404,7 +407,7 @@ describe("tribe assertion records and relationship uncertainty", () => {
     })
     refs.relationships.set(
       "http://romanrepublic.ac.uk/rdf/entity/Relationship/3",
-      { name: "father of", orderNumber: 1 }
+      { name: "father of", orderNumber: 1, inverseName: null }
     )
     return refs
   }
@@ -451,7 +454,7 @@ describe("relationship order numbers", () => {
     const refs = makeRefs()
     refs.relationships.set(
       "http://romanrepublic.ac.uk/rdf/entity/Relationship/12",
-      { name: "son of", orderNumber: 3 }
+      { name: "son of", orderNumber: 3, inverseName: null }
     )
     const [p] = parsePersonTtl(ttl, refs, new Map())
     const byId = Object.fromEntries(p.relationships.map((r) => [r.id, r]))

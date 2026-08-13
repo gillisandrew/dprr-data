@@ -2,8 +2,23 @@
 
 Date: 2026-08-12
 
-**Status (2026-08-12):** Part 1 is implemented and deployed. Part 2 is
-designed but **not built** — Andrew scoped this round to the redirect only.
+**Status (2026-08-12):** both parts implemented and deployed.
+
+Two deviations from the design as written, both discovered during
+implementation:
+
+- `reference/praenomina.ttl` spells its abbreviation predicate
+  `dprr:Abbreviation`, not `hasAbbreviation` like every other reference
+  file, so the parser had never read it (and `parse-filiation.ts` carries a
+  stale comment claiming the property does not exist). `ReferenceMaps
+  .praenomina` changed from `Map<string, string>` to
+  `Map<string, {name, abbreviation}>` to surface it.
+- `ReferenceMaps.relationships` gained `inverseName`, resolved from
+  `owl:inverseOf`. 21 of the 44 types carry one.
+
+Measured payload outcome: the largest detail file is 404 KB, better than the
+~700 KB the trimmed-summary decision predicted and well under the ~2 MB a
+full `PersonSummary` would have cost.
 
 Two independent additions to the DPRR static site:
 

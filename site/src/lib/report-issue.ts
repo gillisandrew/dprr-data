@@ -12,6 +12,9 @@ export const REFERENCE_TTL = {
   office: "reference/offices.ttl",
   province: "reference/provinces.ttl",
   tribe: "reference/tribes.ttl",
+  source: "reference/sources.ttl",
+  praenomen: "reference/praenomina.ttl",
+  relationship: "reference/relationships.ttl",
 } as const
 
 /** shard.py places each person at persons/<id[:4]>/<id>.ttl */

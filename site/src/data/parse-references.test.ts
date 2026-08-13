@@ -34,7 +34,25 @@ const PRAENOMEN_TTL = `
 <http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius> rdfs:label "Praenomen: Lucius" ;
   a dprr:Praenomen ;
   dprr:hasName "Lucius" ;
-  dprr:hasAbbreviation "L." .
+  dprr:Abbreviation "L." .
+`
+
+// The relationships file is the only reference file using owl:inverseOf.
+const RELATIONSHIP_TTL = `
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dprr: <http://romanrepublic.ac.uk/rdf/ontology#> .
+
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/6> rdfs:label "Relationship: brother of" ;
+  owl:inverseOf <http://romanrepublic.ac.uk/rdf/entity/Relationship/9> ;
+  a dprr:Relationship ;
+  dprr:hasOrderNumber 31 ;
+  dprr:hasName "brother of" .
+<http://romanrepublic.ac.uk/rdf/entity/Relationship/9> rdfs:label "Relationship: sister of" ;
+  a dprr:Relationship ;
+  dprr:hasOrderNumber 32 ;
+  dprr:hasName "sister of" .
 `
 
 const MISC_TTL = `
@@ -130,11 +148,28 @@ describe("parseReferenceTtl", () => {
       misc: MISC_TTL,
       provinces: "",
     })
+    // The praenomina file spells this predicate `dprr:Abbreviation`, not
+    // `dprr:hasAbbreviation` like every other reference file.
     expect(
       refs.praenomina.get(
         "http://romanrepublic.ac.uk/rdf/entity/Praenomen/Lucius"
       )
-    ).toBe("Lucius")
+    ).toEqual({ name: "Lucius", abbreviation: "L." })
+  })
+
+  test("parses relationship inverses", async () => {
+    const refs = await parseReferenceTtl({
+      ...emptyInputs,
+      relationships: RELATIONSHIP_TTL,
+    })
+    const brother = refs.relationships.get(
+      "http://romanrepublic.ac.uk/rdf/entity/Relationship/6"
+    )
+    expect(brother?.inverseName).toBe("sister of")
+    const sister = refs.relationships.get(
+      "http://romanrepublic.ac.uk/rdf/entity/Relationship/9"
+    )
+    expect(sister?.inverseName).toBeNull()
   })
 
   test("parses sexes from misc", async () => {
@@ -191,12 +226,12 @@ describe("relationship reference map", () => {
       refs.relationships.get(
         "http://romanrepublic.ac.uk/rdf/entity/Relationship/12"
       )
-    ).toEqual({ name: "son of", orderNumber: 3 })
+    ).toEqual({ name: "son of", orderNumber: 3, inverseName: null })
     expect(
       refs.relationships.get(
         "http://romanrepublic.ac.uk/rdf/entity/Relationship/13"
       )
-    ).toEqual({ name: "brother of", orderNumber: null })
+    ).toEqual({ name: "brother of", orderNumber: null, inverseName: null })
   })
 })
 
