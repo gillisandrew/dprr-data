@@ -51,6 +51,8 @@ export function parseSearchParams(
     eraTo: params.eraTo ? Number(params.eraTo) : null,
     event: splitFacetParam(params.event),
     praenomen: splitFacetParam(params.praenomen),
+    source: splitFacetParam(params.source),
+    relationship: splitFacetParam(params.relationship),
     cognomen: splitFacetParam(params.cognomen),
     re: (params.re ?? "").trim(),
     officeMode: params.officeMode === "all" ? "all" : "any",
@@ -96,6 +98,9 @@ export function toSearchParams(state: SearchState): Record<string, string> {
   if (state.eraTo !== null) params.eraTo = String(state.eraTo)
   if (state.event.length) params.event = joinFacetParam(state.event)
   if (state.praenomen.length) params.praenomen = joinFacetParam(state.praenomen)
+  if (state.source.length) params.source = joinFacetParam(state.source)
+  if (state.relationship.length)
+    params.relationship = joinFacetParam(state.relationship)
   if (state.cognomen.length) params.cognomen = joinFacetParam(state.cognomen)
   if (state.re.trim()) params.re = state.re.trim()
   if (state.officeMode !== "any") params.officeMode = state.officeMode

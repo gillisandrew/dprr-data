@@ -97,6 +97,14 @@ export const GLOSSARY = {
     label: "Origin",
     text: "A plausible geographic origin for the person — a town or region — as suggested by the primary and secondary sources and recorded by DPRR.",
   },
+  source: {
+    label: "Source",
+    text: "The modern scholarly work a statement is drawn from — DPRR records who asserted each office, date, status or relationship, not just the claim itself. Filtering by source finds every person a given work documents, wherever it is cited in their record. Labels here are the short form; the Sources index gives full bibliography.",
+  },
+  relationship: {
+    label: "Relationship",
+    text: "A recorded link between two persons — kinship (son of, brother of), marriage, or adoption. Filtering here finds persons who have at least one link of that kind; the Relationships index lists both ends of every pair. Distinct from the Father and Grandfather name filters, which read praenomina out of the filiation formula rather than recorded links.",
+  },
   "broughton-label": {
     label: "Source label",
     text: 'The abbreviated post as it appears in the source scholarship (chiefly Broughton\'s Magistrates of the Roman Republic), e.g. "cos. 63" or "Pr. Peregrinus" — sometimes more specific than the standardized office name.',

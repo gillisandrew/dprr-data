@@ -18,9 +18,26 @@ describe("sectionCount", () => {
       "tribe",
       "location",
       "events",
+      "source",
+      "relationship",
     ] as const) {
       expect(sectionCount(blank(), key)).toBe(0)
     }
+  })
+
+  test("counts the source and relationship facets", () => {
+    const state = {
+      ...blank(),
+      source: ["Broughton MRR I", "RE"],
+      relationship: ["brother of"],
+    }
+    expect(sectionCount(state, "source")).toBe(2)
+    expect(sectionCount(state, "relationship")).toBe(1)
+  })
+
+  test("advancedActiveCount includes source and relationship", () => {
+    const state = { ...blank(), source: ["RE"], relationship: ["brother of"] }
+    expect(advancedActiveCount(state)).toBe(2)
   })
 
   test("office counts selections plus non-default options", () => {

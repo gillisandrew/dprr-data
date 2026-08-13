@@ -1,6 +1,7 @@
 // site/src/data/aggregate-references.ts
 import { slugify } from "../lib/slug"
 import { toSummaries, toRowSummaries } from "./loader"
+import { citedSources } from "./cited-sources"
 import type {
   Person,
   PersonSummary,
@@ -85,25 +86,6 @@ export interface SourceDetail {
   abbreviation: string | null
   biblio: string | null
   persons: FastiRowSummary[]
-}
-
-/**
- * Every secondary source a person cites, anywhere in their record. Sources
- * appear on posts, statuses, relationships, dates, notes and tribes, so a
- * "cited by" list that only looked at careers would undercount badly.
- */
-function citedSources(p: Person): Set<string> {
-  const cited = new Set<string>()
-  const add = (s: string | null | undefined) => {
-    if (s) cited.add(s)
-  }
-  for (const pa of p.postAssertions) add(pa.secondarySource)
-  for (const sa of p.statusAssertions) add(sa.secondarySource)
-  for (const rel of p.relationships) add(rel.secondarySource)
-  for (const d of p.dateInformation) add(d.secondarySource)
-  for (const n of p.personNotes) add(n.secondarySource)
-  for (const t of p.tribeAssertions) add(t.secondarySource)
-  return cited
 }
 
 export function buildSourceIndex(

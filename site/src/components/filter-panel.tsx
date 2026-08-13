@@ -32,6 +32,8 @@ const ADVANCED: { key: PanelSection; label: string }[] = [
   { key: "tribe", label: "Tribe" },
   { key: "location", label: "Provincia" },
   { key: "events", label: "Events" },
+  { key: "source", label: "Source" },
+  { key: "relationship", label: "Relationship" },
 ]
 
 const SECTION_TERM: Record<PanelSection, GlossaryTermId> = {
@@ -41,6 +43,8 @@ const SECTION_TERM: Record<PanelSection, GlossaryTermId> = {
   tribe: "tribe",
   location: "location",
   events: "life-events",
+  source: "source",
+  relationship: "relationship",
 }
 
 interface FilterPanelProps {
@@ -56,6 +60,8 @@ interface FilterPanelProps {
     status: FacetValue[]
     father: FacetValue[]
     grandfather: FacetValue[]
+    source: FacetValue[]
+    relationship: FacetValue[]
   }
   officeHierarchy: Record<string, string | null>
   provinceHierarchy: Record<string, string | null>
@@ -381,6 +387,28 @@ function SectionBody({
           onChange={(province) => onUpdate({ province })}
           frameless
           childNoun="sub-provinciae"
+        />
+      )
+    case "source":
+      return (
+        <FacetCombobox
+          label="Secondary source"
+          values={facets.source}
+          selected={state.source}
+          onChange={(source) => onUpdate({ source })}
+          placeholder="Search sources…"
+        />
+      )
+    case "relationship":
+      return (
+        <FacetGroup
+          title="Relationship"
+          items={facets.relationship}
+          selected={state.relationship}
+          onChange={(relationship) => onUpdate({ relationship })}
+          frameless
+          searchable
+          listClassName="sm:columns-2 md:columns-3 gap-x-6"
         />
       )
     case "events":

@@ -1,5 +1,5 @@
 // site/src/lib/filter.ts
-import type { PersonSummary, SearchState } from "@/data/types"
+import type { SearchSummary, SearchState } from "@/data/types"
 
 export interface FilterContext {
   /** office child name → parent name (from payload.officeHierarchy). */
@@ -110,7 +110,7 @@ function matchesReNumber(query: string, reNumber: string | null): boolean {
 
 /** The person's attested era must overlap the selected [from, to] range. */
 function matchesEra(
-  person: PersonSummary,
+  person: SearchSummary,
   from: number | null,
   to: number | null
 ): boolean {
@@ -122,7 +122,7 @@ function matchesEra(
 }
 
 function matchesOffices(
-  person: PersonSummary,
+  person: SearchSummary,
   state: SearchState,
   ctx: FilterContext,
   inRangeMode: boolean
@@ -141,7 +141,7 @@ function matchesOffices(
 }
 
 export function matchesFacets(
-  person: PersonSummary,
+  person: SearchSummary,
   state: SearchState,
   ctx: FilterContext
 ): boolean {
@@ -163,6 +163,8 @@ export function matchesFacets(
     matchesAnySelection(state.province, person.provinces) &&
     matchesAnySelection(state.event, person.lifeEvents) &&
     matchesSelection(state.praenomen, person.praenomen) &&
+    matchesAnySelection(state.source, person.sources) &&
+    matchesAnySelection(state.relationship, person.relationshipTypes) &&
     matchesNullableSelection(state.cognomen, person.cognomen) &&
     matchesReNumber(state.re, person.reNumber) &&
     (inRangeMode || matchesEra(person, state.eraFrom, state.eraTo))

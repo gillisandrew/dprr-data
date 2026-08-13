@@ -1,7 +1,7 @@
 import { expect, test, describe } from "vite-plus/test"
 import { descendantSet, matchesFacets, type FilterContext } from "./filter"
 import { parseSearchParams } from "./search-params"
-import type { PersonSummary } from "@/data/types"
+import type { SearchSummary } from "@/data/types"
 
 const parentOf = {
   "Magisterial Posts": null,
@@ -10,7 +10,7 @@ const parentOf = {
   praetor: "Magisterial Posts",
 }
 
-function makeSummary(over: Partial<PersonSummary>): PersonSummary {
+function makeSummary(over: Partial<SearchSummary>): SearchSummary {
   return {
     id: "TEST0001",
     name: "TEST0001 T. Testius",
@@ -32,6 +32,8 @@ function makeSummary(over: Partial<PersonSummary>): PersonSummary {
     father: null,
     grandfather: null,
     contextLine: null,
+    sources: [],
+    relationshipTypes: [],
     ...over,
   }
 }
@@ -43,6 +45,36 @@ function ctx(over: Partial<FilterContext> = {}): FilterContext {
 function state(params: Record<string, string>) {
   return parseSearchParams(params)
 }
+
+describe("source and relationship facets", () => {
+  const broughton = makeSummary({
+    id: "AAAA0001",
+    sources: ["Broughton MRR I", "RE"],
+    relationshipTypes: ["brother of"],
+  })
+  const zmeskal = makeSummary({
+    id: "BBBB0001",
+    sources: ["Zmeskal 2009"],
+    relationshipTypes: [],
+  })
+
+  test("matches a person cited by the selected source", () => {
+    expect(matchesFacets(broughton, state({ source: "RE" }), ctx())).toBe(true)
+    expect(matchesFacets(zmeskal, state({ source: "RE" }), ctx())).toBe(false)
+  })
+
+  test("selecting several sources is OR, not AND", () => {
+    const s = state({ source: "RE,Zmeskal 2009" })
+    expect(matchesFacets(broughton, s, ctx())).toBe(true)
+    expect(matchesFacets(zmeskal, s, ctx())).toBe(true)
+  })
+
+  test("matches persons having a relationship of the selected type", () => {
+    const s = state({ relationship: "brother of" })
+    expect(matchesFacets(broughton, s, ctx())).toBe(true)
+    expect(matchesFacets(zmeskal, s, ctx())).toBe(false)
+  })
+})
 
 describe("descendantSet", () => {
   test("includes the value and all descendants", () => {

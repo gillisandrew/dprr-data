@@ -201,6 +201,18 @@ export interface ReferenceMaps {
   provinces: Map<string, { name: string; parent: string | null }>
 }
 
+/**
+ * A summary carrying the extra arrays the search facets need. Kept separate
+ * from PersonSummary because the gens and tribe detail payloads reuse that
+ * verbatim and would otherwise carry two always-empty arrays per record.
+ */
+export interface SearchSummary extends PersonSummary {
+  /** Source abbreviations, gathered from every part of the record. */
+  sources: string[]
+  /** Distinct relationship types recorded for this person. */
+  relationshipTypes: string[]
+}
+
 /** A single facet value with its count. */
 export interface FacetValue {
   value: string
@@ -224,6 +236,10 @@ export interface SearchState {
   event: string[]
   praenomen: string[]
   cognomen: string[]
+  /** Source abbreviations; matches a person cited by any of them. */
+  source: string[]
+  /** Relationship type names; matches a person having any of them. */
+  relationship: string[]
   /** Case-insensitive substring match against reNumber. */
   re: string
   officeMode: "any" | "all"

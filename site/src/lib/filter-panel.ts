@@ -11,6 +11,8 @@ export type PanelSection =
   | "tribe"
   | "location"
   | "events"
+  | "source"
+  | "relationship"
 
 /** Active-filter count shown on a section's trigger pill. */
 export function sectionCount(state: SearchState, key: PanelSection): number {
@@ -38,14 +40,25 @@ export function sectionCount(state: SearchState, key: PanelSection): number {
       return state.province.length
     case "events":
       return state.event.length
+    case "source":
+      return state.source.length
+    case "relationship":
+      return state.relationship.length
   }
 }
 
-/** Combined active count of the advanced tier (Tribe, Provincia, Events);
+/** Combined active count of the advanced tier (Tribe, Provincia, Events,
+ * Source, Relationship);
  * shown on the collapsed "More filters" trigger and used to force the tier
  * open on deep links. */
 export function advancedActiveCount(state: SearchState): number {
-  return state.tribe.length + state.province.length + state.event.length
+  return (
+    state.tribe.length +
+    state.province.length +
+    state.event.length +
+    state.source.length +
+    state.relationship.length
+  )
 }
 
 /** True when any tucked Name field (praenomen, father, grandfather, RE)

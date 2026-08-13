@@ -1,7 +1,7 @@
 // site/src/lib/search.ts
 import { useCallback, useMemo } from "react"
 import { useNavigate, useSearch } from "@tanstack/react-router"
-import type { PersonSummary, SearchState, FacetValue } from "@/data/types"
+import type { SearchSummary, SearchState, FacetValue } from "@/data/types"
 import { matchesFacets, type FilterContext } from "./filter"
 import { sortResults } from "./order"
 import { buildHistogram } from "./histogram"
@@ -33,8 +33,8 @@ export function orderByQueryRank<T extends { id: string }>(
  * values render in a stable, predictable order rather than Map iteration
  * order. */
 export function computeFacetValues(
-  persons: PersonSummary[],
-  field: keyof PersonSummary
+  persons: SearchSummary[],
+  field: keyof SearchSummary
 ): FacetValue[] {
   const counts = new Map<string, number>()
   for (const p of persons) {
@@ -91,7 +91,7 @@ export function useSearchState(bundle: SearchDataBundle) {
   // that facet's own filter removed but all other filters kept. This
   // lets users see how many results other values would produce.
   const facets = useMemo(() => {
-    function countWith(exclude: keyof SearchState, field: keyof PersonSummary) {
+    function countWith(exclude: keyof SearchState, field: keyof SearchSummary) {
       const relaxed = {
         ...state,
         [exclude]: Array.isArray(state[exclude]) ? [] : null,
@@ -125,6 +125,8 @@ export function useSearchState(bundle: SearchDataBundle) {
       event: countWith("event", "lifeEvents"),
       praenomen: countWith("praenomen", "praenomen"),
       cognomen: countWith("cognomen", "cognomen"),
+      source: countWith("source", "sources"),
+      relationship: countWith("relationship", "relationshipTypes"),
     }
   }, [state, queryCandidates, ctx, filtered])
 

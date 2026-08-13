@@ -1,12 +1,18 @@
 // site/src/data/search-payload.ts
 import { toSummaries } from "./loader"
+import { citedSources } from "./cited-sources"
 import { buildSearchIndex, MINISEARCH_OPTIONS } from "./search-index"
 import { buildNameHierarchy } from "./aggregate-references"
 import { buildHistogram, type Histogram } from "../lib/histogram"
-import type { Person, PersonSummary, ReferenceMaps } from "./types"
+import type {
+  Person,
+  PersonSummary,
+  ReferenceMaps,
+  SearchSummary,
+} from "./types"
 
 export interface SearchPayload {
-  summaries: PersonSummary[]
+  summaries: SearchSummary[]
   /** Office name table; career tuples index into it. */
   officeNames: string[]
   /** personId → [officeNameIndex, dateStart, dateEnd][] (dated + undated assertions). */
@@ -30,6 +36,42 @@ export interface SerializableOptions {
 export interface SearchIndexPayload {
   index: object
   options: SerializableOptions
+}
+
+/**
+ * Summaries plus the two arrays the source/relationship facets need.
+ *
+ * Sources are stored as abbreviations ("Broughton MRR I"), not the full
+ * titles that reach 108 characters: they are what the facet list displays,
+ * and full titles would cost 450 KB here instead of 184 KB.
+ */
+function withFacetArrays(
+  persons: Person[],
+  refs: ReferenceMaps
+): SearchSummary[] {
+  const abbreviationOf = new Map<string, string>()
+  for (const s of refs.sources.values()) {
+    if (s.abbreviation) abbreviationOf.set(s.name, s.abbreviation)
+  }
+  const byId = new Map(persons.map((p) => [p.id, p]))
+  return toSummaries(persons).map((summary) => {
+    const person = byId.get(summary.id) as Person
+    return {
+      ...summary,
+      sources: [...citedSources(person)]
+        // Fall back to the full name so a source that loses its
+        // abbreviation drops out of the label, not out of the facet.
+        .map((name) => abbreviationOf.get(name) ?? name)
+        .sort(),
+      relationshipTypes: [
+        ...new Set(
+          person.relationships
+            .map((r) => r.relationshipType)
+            .filter((t) => t !== "")
+        ),
+      ].sort(),
+    }
+  })
 }
 
 export function buildSearchPayload(
@@ -66,7 +108,7 @@ export function buildSearchPayload(
   }
 
   return {
-    summaries: toSummaries(persons),
+    summaries: withFacetArrays(persons, refs),
     officeNames,
     careers,
     officeHierarchy: buildNameHierarchy(refs.offices),

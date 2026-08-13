@@ -6,9 +6,9 @@ import {
 } from "./search-params"
 import { orderByQueryRank, computeFacetValues } from "./search"
 import { matchesFacets, type FilterContext } from "./filter"
-import type { PersonSummary } from "@/data/types"
+import type { SearchSummary } from "@/data/types"
 
-function makeSummary(over: Partial<PersonSummary>): PersonSummary {
+function makeSummary(over: Partial<SearchSummary>): SearchSummary {
   return {
     id: "TEST0001",
     name: "TEST0001 T. Testius",
@@ -30,6 +30,8 @@ function makeSummary(over: Partial<PersonSummary>): PersonSummary {
     father: null,
     grandfather: null,
     contextLine: null,
+    sources: [],
+    relationshipTypes: [],
     ...over,
   }
 }
