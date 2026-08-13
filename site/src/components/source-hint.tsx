@@ -23,7 +23,9 @@ export function SourceHint({
         <button
           type="button"
           aria-label={label}
-          className="ml-0.5 inline-flex cursor-help items-center align-baseline text-muted-foreground hover:text-foreground"
+          // See InfoHint: ::after widens the 12px icon's hit area to ~24px
+          // without taking layout space.
+          className="relative ml-0.5 inline-flex cursor-help items-center align-baseline text-muted-foreground after:absolute after:-inset-1.5 after:content-[''] hover:text-foreground"
         >
           <BookOpen aria-hidden="true" className="h-3 w-3" />
         </button>

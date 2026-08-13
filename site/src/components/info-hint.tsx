@@ -20,7 +20,10 @@ export function InfoHint({
         <button
           type="button"
           aria-label={`What does ${entry.label} mean?`}
-          className="inline-flex cursor-help items-center align-baseline text-muted-foreground hover:text-foreground"
+          // The icon is 12px square; the ::after overlay widens the hit area
+          // to ~24px (the WCAG 2.5.8 minimum) without occupying any layout
+          // space, so surrounding text is unmoved.
+          className="relative inline-flex cursor-help items-center align-baseline text-muted-foreground after:absolute after:-inset-1.5 after:content-[''] hover:text-foreground"
         >
           {mark ?? <Info aria-hidden="true" className="h-3 w-3" />}
         </button>
