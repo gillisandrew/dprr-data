@@ -66,4 +66,18 @@ describe("parseFiliation", () => {
       grandfather: null,
     })
   })
+
+  test("resolves V., which reference/praenomina.ttl expands unambiguously", () => {
+    expect(parseFiliation("V. f.")).toEqual({
+      father: "Vibius",
+      grandfather: null,
+    })
+  })
+
+  test("still refuses abbreviations the reference data cannot expand", () => {
+    // "S." and "Stat." appear in filiations but have no entry in
+    // reference/praenomina.ttl, so guessing would invent ancestry.
+    expect(parseFiliation("S. f.").father).toBeNull()
+    expect(parseFiliation("Stat. f.").father).toBeNull()
+  })
 })

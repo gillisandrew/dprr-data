@@ -2,10 +2,21 @@
 
 // Canonical praenomen abbreviations as they appear in DPRR filiation
 // strings ("Q. f. Ser. n." = son of Quintus, grandson of Servius).
-// The praenomina reference file carries no abbreviation property, so the
-// standard epigraphic table is encoded here. Abbreviations observed in
-// the export but with no unambiguous expansion (e.g. "S.", "Stat.",
-// "Ann.", "V.") are deliberately absent — unknown slots resolve to null.
+//
+// reference/praenomina.ttl DOES carry abbreviations — under `dprr:Abbreviation`
+// rather than the `hasAbbreviation` every other reference file uses, which is
+// why an earlier note here claimed it didn't. That file was checked against
+// this table (2026-08-12): the two never disagree, and of the 2,149 filiation
+// slots in the data it would resolve exactly one more ("V." -> Vibius, now
+// included). Its remaining ~19 extra entries are praenomina that never appear
+// in a filiation slot, and it lacks the variant spellings "Agripp." and
+// "Opit." that the data does use — so this stays a hand-maintained table
+// rather than being derived from the reference file.
+//
+// Abbreviations with no entry in the reference file either (e.g. "S.",
+// "Stat.") are deliberately absent — unknown slots resolve to null rather
+// than inventing ancestry. So are the 231 "-" slots recorded as unknown, and
+// genitive cognomina like "Vopisci" or "Aemiliani", which are not praenomina.
 const PRAENOMEN_ABBREVIATIONS: Record<string, string> = {
   "A.": "Aulus",
   "Agripp.": "Agrippa",
@@ -30,6 +41,7 @@ const PRAENOMEN_ABBREVIATIONS: Record<string, string> = {
   "Sp.": "Spurius",
   "T.": "Titus",
   "Ti.": "Tiberius",
+  "V.": "Vibius",
   "Voler.": "Volero",
   "Volus.": "Volusus",
   "Vop.": "Vopiscus",

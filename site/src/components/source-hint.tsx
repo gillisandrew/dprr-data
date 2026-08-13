@@ -4,15 +4,18 @@
 import { BookOpen } from "lucide-react"
 import { HoverPopover } from "./hover-popover"
 import { SourceCitation } from "./source-citation"
+import { hasRenderableSources, type HintSource } from "@/lib/source-hint"
 
 export function SourceHint({
   sources,
   label,
 }: {
-  sources: { secondarySource: string; notes: string | null }[]
+  sources: HintSource[]
   label: string
 }) {
-  if (sources.length === 0) return null
+  // Not just `length === 0`: entries whose source name and notes are both
+  // blank render nothing, so the icon would open onto an empty popover.
+  if (!hasRenderableSources(sources)) return null
   return (
     <HoverPopover
       contentClassName="max-w-72 text-xs"

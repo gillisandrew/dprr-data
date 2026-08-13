@@ -2,7 +2,7 @@
 // Popover that opens on hover (with a short delay) or keyboard focus, and
 // still toggles on click/tap so touch devices work. Content stays open
 // while the pointer is over the trigger or the content.
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {
   Popover,
   PopoverContent,
@@ -21,6 +21,10 @@ export function HoverPopover({
 }) {
   const [open, setOpen] = useState(false)
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined)
+
+  // A pending open/close firing after unmount would set state on a gone
+  // component; navigating away mid-hover is enough to hit it.
+  useEffect(() => () => clearTimeout(timer.current), [])
 
   const openSoon = () => {
     clearTimeout(timer.current)
